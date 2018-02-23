@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package common.entity.v1;
+option java_package = "com.kik.entity.model";
+option java_generate_equals_and_hash = true;
+option objc_class_prefix = "ENT";
+option go_package = "github.com/kikinteractive/xiphias-model-common/generated/go/entity/v1;entity";
+
+import "protobuf_validation.proto";
+import "google/protobuf/timestamp.proto";
+
+//**************************************************
+//
+// Contains a dictionary of all elements that are 
+// managed by the entity warehouse and 
+// communicatied from server to mobile client
+//
+//**************************************************
+
+message BioElement {
+    // a biography or short biographical profile of someone or some group
+    string bio = 1 [(kik.validation.field_validation) = { max_byte_length: 5000 }];
+}
+
+message RegistrationElement {
+
+    // System time of when the user/group is creted or registered
+    google.protobuf.Timestamp creation_date = 2;
+}
+
+// Original Profile Pic Extension
+message OriginalProfilePicExtensionElement {
+    // The details of this profile pic extension
+    ProfilePicExtensionDetail extension_detail = 1;
+}
+
+// Background Pic Extension
+message BackgroundProfilePicExtensionElement {
+    // The details of this profile pic extension
+    ProfilePicExtensionDetail extension_detail = 1;
+}
+
+message ProfilePicExtensionDetail {
+    oneof kind {
+        // A picture element. If the user uploads a picture use this
+        InnerPicElement pic = 2;
+        // A Kik Asset element. If the original pic is something we provide, use this
+        InnerKikAssetElement kik_asset = 3;
+    }
+}
+
+// Contains the details of any pic that is accessible by URL
+message InnerPicElement {
+    // Full Sized Pic URL
+    string full_sized_url = 1 [(kik.validation.field_validation) = { max_byte_length: 1000 }];
+
+    // Thumbnail Sized Pic URL
+    string thumbnail_url = 2 [(kik.validation.field_validation) = { max_byte_length: 1000 }];
+}
+
+// Contains an kik asset id. A Kik Asset is something that is premade by us and provided to users
+// A kik_asset_id might be something like SMILEY_FACE or FLAG_USA if those assets existed
+message InnerKikAssetElement {
+    // The id of a Kik Asset
+    string kik_asset_id = 1 [(kik.validation.field_validation) = { max_byte_length: 500 }];
+}
