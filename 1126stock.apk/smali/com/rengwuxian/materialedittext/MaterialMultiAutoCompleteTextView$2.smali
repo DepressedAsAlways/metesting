@@ -43,7 +43,6 @@
     .line 833
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->floatingLabelEnabled:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$200(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Z
 
     move-result v0
@@ -60,7 +59,6 @@
     .line 835
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$300(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Z
 
     move-result v0
@@ -72,13 +70,11 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0, v1}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$302(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;Z)Z
 
     .line 837
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -94,7 +90,6 @@
     :cond_1
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$300(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Z
 
     move-result v0
@@ -106,13 +101,11 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0, v1}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$302(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;Z)Z
 
     .line 841
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -126,7 +119,6 @@
     .line 842
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -139,7 +131,6 @@
     :cond_2
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0

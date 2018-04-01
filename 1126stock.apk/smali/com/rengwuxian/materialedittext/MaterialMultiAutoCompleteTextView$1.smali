@@ -43,13 +43,11 @@
     .line 463
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$1;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->checkCharactersCount()V
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$000(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)V
 
     .line 464
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView$1;->this$0:Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->autoValidate:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;->access$100(Lcom/rengwuxian/materialedittext/MaterialMultiAutoCompleteTextView;)Z
 
     move-result v0

@@ -43,7 +43,6 @@
     .line 857
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$3;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->floatingLabelEnabled:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$200(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Z
 
     move-result v0
@@ -52,7 +51,6 @@
 
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$3;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->highlightFloatingLabel:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$500(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Z
 
     move-result v0
@@ -65,7 +63,6 @@
     .line 859
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$3;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelFocusAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$600(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -79,7 +76,6 @@
     .line 862
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$3;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelFocusAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$600(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -110,7 +106,6 @@
     :cond_2
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$3;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelFocusAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$600(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0

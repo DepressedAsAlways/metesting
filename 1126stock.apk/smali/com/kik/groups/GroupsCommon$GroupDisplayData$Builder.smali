@@ -287,7 +287,6 @@
 
     .prologue
     .line 3099
-    # getter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->alwaysUseFieldBuilders:Z
     invoke-static {}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2300()Z
 
     .line 3101
@@ -424,13 +423,11 @@
     .line 3146
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$GroupDisplayData$Builder;->hashtag_:Ljava/lang/Object;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->hashtag_:Ljava/lang/Object;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2502(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3147
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$GroupDisplayData$Builder;->displayName_:Ljava/lang/Object;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->displayName_:Ljava/lang/Object;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2602(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3148
@@ -441,7 +438,6 @@
     .line 3149
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$GroupDisplayData$Builder;->groupCode_:Lcom/kik/groups/GroupsCommon$GroupCode;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->groupCode_:Lcom/kik/groups/GroupsCommon$GroupCode;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2702(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Lcom/kik/groups/GroupsCommon$GroupCode;)Lcom/kik/groups/GroupsCommon$GroupCode;
 
     .line 3153
@@ -453,20 +449,17 @@
     .line 3154
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$GroupDisplayData$Builder;->groupName_:Lcom/kik/groups/GroupsCommon$GroupName;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->groupName_:Lcom/kik/groups/GroupsCommon$GroupName;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2802(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Lcom/kik/groups/GroupsCommon$GroupName;)Lcom/kik/groups/GroupsCommon$GroupName;
 
     .line 3158
     :goto_1
     iget-object v0, p0, Lcom/kik/groups/GroupsCommon$GroupDisplayData$Builder;->displayPicBaseUrl_:Ljava/lang/Object;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->displayPicBaseUrl_:Ljava/lang/Object;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2902(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3159
     iget-wide v2, p0, Lcom/kik/groups/GroupsCommon$GroupDisplayData$Builder;->displayPicLastModified_:J
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->displayPicLastModified_:J
     invoke-static {v1, v2, v3}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$3002(Lcom/kik/groups/GroupsCommon$GroupDisplayData;J)J
 
     .line 3160
@@ -485,7 +478,6 @@
 
     check-cast v0, Lcom/kik/groups/GroupsCommon$GroupCode;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->groupCode_:Lcom/kik/groups/GroupsCommon$GroupCode;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2702(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Lcom/kik/groups/GroupsCommon$GroupCode;)Lcom/kik/groups/GroupsCommon$GroupCode;
 
     goto :goto_0
@@ -500,7 +492,6 @@
 
     check-cast v0, Lcom/kik/groups/GroupsCommon$GroupName;
 
-    # setter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->groupName_:Lcom/kik/groups/GroupsCommon$GroupName;
     invoke-static {v1, v0}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2802(Lcom/kik/groups/GroupsCommon$GroupDisplayData;Lcom/kik/groups/GroupsCommon$GroupName;)Lcom/kik/groups/GroupsCommon$GroupName;
 
     goto :goto_1
@@ -1608,7 +1599,6 @@
 
     .line 3236
     :try_start_0
-    # getter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->PARSER:Lcom/google/protobuf/Parser;
     invoke-static {}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$3100()Lcom/google/protobuf/Parser;
 
     move-result-object v0
@@ -1741,7 +1731,6 @@
     if-nez v0, :cond_1
 
     .line 3202
-    # getter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->hashtag_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2500(Lcom/kik/groups/GroupsCommon$GroupDisplayData;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1764,7 +1753,6 @@
     if-nez v0, :cond_2
 
     .line 3206
-    # getter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->displayName_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2600(Lcom/kik/groups/GroupsCommon$GroupDisplayData;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1817,7 +1805,6 @@
     if-nez v0, :cond_5
 
     .line 3216
-    # getter for: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->displayPicBaseUrl_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$2900(Lcom/kik/groups/GroupsCommon$GroupDisplayData;)Ljava/lang/Object;
 
     move-result-object v0
@@ -2052,7 +2039,6 @@
 
     .line 3434
     :cond_0
-    # invokes: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
     invoke-static {p1}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$3300(Lcom/google/protobuf/ByteString;)V
 
     .line 3436
@@ -2106,7 +2092,6 @@
 
     .line 3869
     :cond_0
-    # invokes: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
     invoke-static {p1}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$3400(Lcom/google/protobuf/ByteString;)V
 
     .line 3871
@@ -2366,7 +2351,6 @@
 
     .line 3340
     :cond_0
-    # invokes: Lcom/kik/groups/GroupsCommon$GroupDisplayData;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
     invoke-static {p1}, Lcom/kik/groups/GroupsCommon$GroupDisplayData;->access$3200(Lcom/google/protobuf/ByteString;)V
 
     .line 3342

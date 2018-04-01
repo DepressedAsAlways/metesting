@@ -3392,23 +3392,6 @@
     return-object p0
 .end method
 
-.method public final a(Lkik/android/voice/i;)Lcom/kik/components/c$a;
-    .locals 1
-
-    .prologue
-    .line 5582
-    invoke-static {p1}, Ldagger/internal/c;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/android/voice/i;
-
-    iput-object v0, p0, Lcom/kik/components/c$a;->ak:Lkik/android/voice/i;
-
-    .line 5583
-    return-object p0
-.end method
-
 .method public final a(Lkik/core/e;)Lcom/kik/components/c$a;
     .locals 1
 
@@ -3440,5 +3423,22 @@
     iput-object v0, p0, Lcom/kik/components/c$a;->I:Lkik/core/manager/ai;
 
     .line 5368
+    return-object p0
+.end method
+
+.method public final a(Lkik/android/voice/i;)Lcom/kik/components/c$a;
+    .locals 1
+
+    .prologue
+    .line 5582
+    invoke-static {p1}, Ldagger/internal/c;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/voice/i;
+
+    iput-object v0, p0, Lcom/kik/components/c$a;->ak:Lkik/android/voice/i;
+
+    .line 5583
     return-object p0
 .end method

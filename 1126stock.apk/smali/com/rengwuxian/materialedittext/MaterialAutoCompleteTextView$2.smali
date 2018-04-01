@@ -43,7 +43,6 @@
     .line 836
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->floatingLabelEnabled:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$200(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Z
 
     move-result v0
@@ -60,7 +59,6 @@
     .line 838
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$300(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Z
 
     move-result v0
@@ -72,13 +70,11 @@
 
     const/4 v1, 0x0
 
-    # setter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0, v1}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$302(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;Z)Z
 
     .line 840
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -94,7 +90,6 @@
     :cond_1
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # getter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$300(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Z
 
     move-result v0
@@ -106,13 +101,11 @@
 
     const/4 v1, 0x1
 
-    # setter for: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->floatingLabelShown:Z
     invoke-static {v0, v1}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$302(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;Z)Z
 
     .line 844
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -126,7 +119,6 @@
     .line 845
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
@@ -139,7 +131,6 @@
     :cond_2
     iget-object v0, p0, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView$2;->this$0:Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;
 
-    # invokes: Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->getLabelAnimator()Lcom/a/a/h;
     invoke-static {v0}, Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;->access$400(Lcom/rengwuxian/materialedittext/MaterialAutoCompleteTextView;)Lcom/a/a/h;
 
     move-result-object v0
