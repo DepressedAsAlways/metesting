@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BlueTheme">
+        <item name="Night_PrimaryColor">@color/NIGHT_PrimaryColor</item>
+        <item name="Night_PrimaryColorDark">@color/NIGHT_PrimaryColorDark</item>
+    </style>
+    <style name="RedTheme">
+        <item name="Night_PrimaryColor">@color/nightRed</item>
+        <item name="Night_PrimaryColorDark">@color/nightRed2</item>
+    </style>
+</resources>

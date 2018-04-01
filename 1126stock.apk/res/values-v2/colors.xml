@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="NIGHT_PrimaryColor">@color/nightBlue</color>
+    <color name="NIGHT_PrimaryColorDark">@color/nightBlue2</color>
+</resources>
