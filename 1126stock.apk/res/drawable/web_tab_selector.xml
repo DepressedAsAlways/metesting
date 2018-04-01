@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:kik="http://schemas.android.com/apk/res/kik.android">
-    <item android:state_selected="true" android:drawable="@drawable/ic_web_active" />
-    <item android:state_focused="true" android:drawable="@drawable/ic_web_down" />
-    <item android:state_pressed="true" android:drawable="@drawable/ic_web_down" />
-    <item android:drawable="@drawable/ic_web_inactive" />
+  xmlns:kik="http://schemas.android.com/apk/res/pi.kek">
+    <item android:state_selected="true">
+        <bitmap android:src="@drawable/ic_web_active" android:tint="@color/kinky_black" />
+    </item>
+    <item android:state_focused="true">
+        <bitmap android:src="@drawable/ic_web_active" android:tint="@color/kinky_black" />
+    </item>
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/ic_web_active" android:tint="@color/kinky_black" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/ic_web_active" android:tint="@color/pikek_blue" />
+    </item>
 </selector>

@@ -67,14 +67,6 @@
         <item name="android:dialogTheme">@android:style/Theme.Holo.Dialog</item>
         <item name="android:alertDialogTheme">@style/AlertFrameFix</item>
     </style>
-    <style name="InstabugSdkTheme.Base.Dark" parent="@android:style/Theme.Holo">
-        <item name="android:editTextStyle">@android:style/Widget.Holo.EditText</item>
-        <item name="android:editTextBackground">@drawable/instabug_bg_edit_text</item>
-    </style>
-    <style name="InstabugSdkTheme.Base.Light" parent="@android:style/Theme.Holo.Light">
-        <item name="android:editTextStyle">@android:style/Widget.Holo.Light.EditText</item>
-        <item name="android:editTextBackground">@drawable/instabug_bg_edit_text</item>
-    </style>
     <style name="KikTheme.Light" parent="@android:style/Theme.Holo.Light">
         <item name="android:buttonStyle">@android:style/Widget.Button</item>
         <item name="android:windowActionBar">false</item>

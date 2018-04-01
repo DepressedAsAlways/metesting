@@ -7,14 +7,14 @@
     <item type="id" name="dataBinding" />
     <item type="id" name="fab_label" />
     <item type="id" name="home" />
-    <item type="id" name="instabug_decor_view" />
-    <item type="id" name="instabug_fab_expand_menu_button" />
-    <item type="id" name="instabug_fab_label" />
-    <item type="id" name="instabug_floating_button" />
-    <item type="id" name="instabug_in_app_notification" />
-    <item type="id" name="instabug_intro_dialog" />
-    <item type="id" name="instabug_video_mute_button" />
-    <item type="id" name="instabug_video_stop_button" />
+    <item type="id" name="APKTOOL_DUMMY_7">false</item>
+    <item type="id" name="APKTOOL_DUMMY_8">false</item>
+    <item type="id" name="APKTOOL_DUMMY_9">false</item>
+    <item type="id" name="APKTOOL_DUMMY_a">false</item>
+    <item type="id" name="APKTOOL_DUMMY_b">false</item>
+    <item type="id" name="APKTOOL_DUMMY_c">false</item>
+    <item type="id" name="APKTOOL_DUMMY_d">false</item>
+    <item type="id" name="APKTOOL_DUMMY_e">false</item>
     <item type="id" name="item_touch_helper_previous_elevation" />
     <item type="id" name="onAttachStateChangeListener" />
     <item type="id" name="onDateChanged" />
@@ -27,6 +27,33 @@
     <item type="id" name="transition_current_scene" />
     <item type="id" name="transition_scene_layoutid_cache" />
     <item type="id" name="view_offset_helper" />
+    <item type="id" name="APKTOOL_DUMMY_51">false</item>
+    <item type="id" name="APKTOOL_DUMMY_52">false</item>
+    <item type="id" name="APKTOOL_DUMMY_53">false</item>
+    <item type="id" name="APKTOOL_DUMMY_54">false</item>
+    <item type="id" name="APKTOOL_DUMMY_55">false</item>
+    <item type="id" name="APKTOOL_DUMMY_56">false</item>
+    <item type="id" name="APKTOOL_DUMMY_57">false</item>
+    <item type="id" name="APKTOOL_DUMMY_58">false</item>
+    <item type="id" name="APKTOOL_DUMMY_59">false</item>
+    <item type="id" name="APKTOOL_DUMMY_5a">false</item>
+    <item type="id" name="APKTOOL_DUMMY_5b">false</item>
+    <item type="id" name="APKTOOL_DUMMY_5c">false</item>
+    <item type="id" name="APKTOOL_DUMMY_5d">false</item>
+    <item type="id" name="APKTOOL_DUMMY_5e">false</item>
+    <item type="id" name="APKTOOL_DUMMY_5f">false</item>
+    <item type="id" name="APKTOOL_DUMMY_60">false</item>
+    <item type="id" name="APKTOOL_DUMMY_61">false</item>
+    <item type="id" name="APKTOOL_DUMMY_62">false</item>
+    <item type="id" name="APKTOOL_DUMMY_63">false</item>
+    <item type="id" name="APKTOOL_DUMMY_64">false</item>
+    <item type="id" name="APKTOOL_DUMMY_65">false</item>
+    <item type="id" name="APKTOOL_DUMMY_66">false</item>
+    <item type="id" name="APKTOOL_DUMMY_67">false</item>
+    <item type="id" name="APKTOOL_DUMMY_68">false</item>
+    <item type="id" name="APKTOOL_DUMMY_69">false</item>
+    <item type="id" name="APKTOOL_DUMMY_6a">false</item>
+    <item type="id" name="APKTOOL_DUMMY_6b">false</item>
     <item type="id" name="action_bar_title">false</item>
     <item type="id" name="action_bar_subtitle">false</item>
     <item type="id" name="action_mode_close_button">false</item>
@@ -522,15 +549,15 @@
     <item type="id" name="title_text">false</item>
     <item type="id" name="attribution_action">false</item>
     <item type="id" name="reply_button">false</item>
-    <item type="id" name="instabug_fragment_container">false</item>
-    <item type="id" name="instabug_pbi_footer">false</item>
+    <item type="id" name="APKTOOL_DUMMY_26e">false</item>
+    <item type="id" name="APKTOOL_DUMMY_26f">false</item>
     <item type="id" name="text_view_pb">false</item>
-    <item type="id" name="instabug_annotation_image_container">false</item>
+    <item type="id" name="APKTOOL_DUMMY_271">false</item>
     <item type="id" name="divider">false</item>
-    <item type="id" name="instabug_annotation_image_border">false</item>
-    <item type="id" name="instabug_annotation_image">false</item>
-    <item type="id" name="instabug_color_picker">false</item>
-    <item type="id" name="instabug_annotation_actions_container">false</item>
+    <item type="id" name="APKTOOL_DUMMY_273">false</item>
+    <item type="id" name="APKTOOL_DUMMY_274">false</item>
+    <item type="id" name="APKTOOL_DUMMY_275">false</item>
+    <item type="id" name="APKTOOL_DUMMY_276">false</item>
     <item type="id" name="icon_brush_layout">false</item>
     <item type="id" name="icon_brush">false</item>
     <item type="id" name="brush_indicator">false</item>
@@ -538,127 +565,127 @@
     <item type="id" name="icon_blur">false</item>
     <item type="id" name="icon_undo">false</item>
     <item type="id" name="HorizontalScrollActionBar">false</item>
-    <item type="id" name="instabug_attach_video">false</item>
-    <item type="id" name="instabug_attach_video_icon">false</item>
-    <item type="id" name="instabug_attach_video_label">false</item>
-    <item type="id" name="instabug_attach_screenshot">false</item>
-    <item type="id" name="instabug_attach_screenshot_icon">false</item>
-    <item type="id" name="instabug_attach_screenshot_label">false</item>
-    <item type="id" name="instabug_attach_gallery_image">false</item>
-    <item type="id" name="instabug_attach_gallery_image_icon">false</item>
-    <item type="id" name="instabug_attach_gallery_image_label">false</item>
-    <item type="id" name="instabug_attach_voice_note">false</item>
-    <item type="id" name="instabug_attach_audio_icon">false</item>
-    <item type="id" name="instabug_attach_audio_label">false</item>
+    <item type="id" name="APKTOOL_DUMMY_27e">false</item>
+    <item type="id" name="APKTOOL_DUMMY_27f">false</item>
+    <item type="id" name="APKTOOL_DUMMY_280">false</item>
+    <item type="id" name="APKTOOL_DUMMY_281">false</item>
+    <item type="id" name="APKTOOL_DUMMY_282">false</item>
+    <item type="id" name="APKTOOL_DUMMY_283">false</item>
+    <item type="id" name="APKTOOL_DUMMY_284">false</item>
+    <item type="id" name="APKTOOL_DUMMY_285">false</item>
+    <item type="id" name="APKTOOL_DUMMY_286">false</item>
+    <item type="id" name="APKTOOL_DUMMY_287">false</item>
+    <item type="id" name="APKTOOL_DUMMY_288">false</item>
+    <item type="id" name="APKTOOL_DUMMY_289">false</item>
     <item type="id" name="conversation_list_item_container">false</item>
-    <item type="id" name="instabug_message_sender_avatar">false</item>
-    <item type="id" name="instabug_conversation_item">false</item>
-    <item type="id" name="instabug_txt_message_sender">false</item>
-    <item type="id" name="instabug_txt_message_snippet">false</item>
-    <item type="id" name="instabug_txt_message_time">false</item>
-    <item type="id" name="instabug_unread_messages_count">false</item>
-    <item type="id" name="instabug_survey_dialog_container">false</item>
-    <item type="id" name="instabug_dialog_survey_container">false</item>
-    <item type="id" name="ib_dialog_survey_scrollview_container">false</item>
-    <item type="id" name="instabug_text_view_question">false</item>
-    <item type="id" name="instabug_radio_group_answers">false</item>
-    <item type="id" name="instabug_btn_submit_container">false</item>
-    <item type="id" name="instabug_survey_bottom_separator">false</item>
-    <item type="id" name="instabug_btn_dismiss">false</item>
-    <item type="id" name="instabug_btn_submit">false</item>
-    <item type="id" name="instabug_survey_top_separator">false</item>
-    <item type="id" name="instabug_ic_survey_logo">false</item>
-    <item type="id" name="instabug_container_edit_text_answer">false</item>
-    <item type="id" name="instabug_edit_text_answer">false</item>
-    <item type="id" name="instabug_floating_bar_container">false</item>
-    <item type="id" name="instabug_btn_floating_bar">false</item>
-    <item type="id" name="instabug_toolbar">false</item>
-    <item type="id" name="instabug_content">false</item>
-    <item type="id" name="instabug_option_report_bug">false</item>
-    <item type="id" name="instabug_icon">false</item>
-    <item type="id" name="instabug_label">false</item>
-    <item type="id" name="instabug_container">false</item>
-    <item type="id" name="instabug_actions_list_container">false</item>
-    <item type="id" name="instabug_fragment_title">false</item>
-    <item type="id" name="instabug_actions_list">false</item>
-    <item type="id" name="instabug_attachments_bottom_sheet_dim_view">false</item>
-    <item type="id" name="instabug_attachments_actions_bottom_sheet">false</item>
-    <item type="id" name="instabug_attach_screenshot_text">false</item>
-    <item type="id" name="instabug_attach_video_text">false</item>
-    <item type="id" name="instabug_attach_gallery_image_text">false</item>
-    <item type="id" name="instabug_attach_voice_note_text">false</item>
-    <item type="id" name="instabug_attachment_progress_bar">false</item>
-    <item type="id" name="instabug_img_attachment">false</item>
-    <item type="id" name="instabug_btn_add_attachment">false</item>
-    <item type="id" name="instabug_grid_audio_item">false</item>
-    <item type="id" name="instabug_img_audio_attachment">false</item>
-    <item type="id" name="instabug_btn_audio_play_attachment">false</item>
-    <item type="id" name="instabug_txt_attachment_length">false</item>
-    <item type="id" name="instabug_btn_remove_attachment">false</item>
-    <item type="id" name="instabug_grid_img_item">false</item>
-    <item type="id" name="instabug_grid_video_item">false</item>
-    <item type="id" name="instabug_img_video_attachment">false</item>
-    <item type="id" name="instabug_btn_video_play_attachment">false</item>
+    <item type="id" name="APKTOOL_DUMMY_28b">false</item>
+    <item type="id" name="APKTOOL_DUMMY_28c">false</item>
+    <item type="id" name="APKTOOL_DUMMY_28d">false</item>
+    <item type="id" name="APKTOOL_DUMMY_28e">false</item>
+    <item type="id" name="APKTOOL_DUMMY_28f">false</item>
+    <item type="id" name="APKTOOL_DUMMY_290">false</item>
+    <item type="id" name="APKTOOL_DUMMY_291">false</item>
+    <item type="id" name="APKTOOL_DUMMY_292">false</item>
+    <item type="id" name="APKTOOL_DUMMY_293">false</item>
+    <item type="id" name="APKTOOL_DUMMY_294">false</item>
+    <item type="id" name="APKTOOL_DUMMY_295">false</item>
+    <item type="id" name="APKTOOL_DUMMY_296">false</item>
+    <item type="id" name="APKTOOL_DUMMY_297">false</item>
+    <item type="id" name="APKTOOL_DUMMY_298">false</item>
+    <item type="id" name="APKTOOL_DUMMY_299">false</item>
+    <item type="id" name="APKTOOL_DUMMY_29a">false</item>
+    <item type="id" name="APKTOOL_DUMMY_29b">false</item>
+    <item type="id" name="APKTOOL_DUMMY_29c">false</item>
+    <item type="id" name="APKTOOL_DUMMY_29d">false</item>
+    <item type="id" name="APKTOOL_DUMMY_29e">false</item>
+    <item type="id" name="APKTOOL_DUMMY_29f">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a0">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a1">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a2">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a3">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a4">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a5">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a6">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a7">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a8">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2a9">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2aa">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ab">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ac">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ad">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ae">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2af">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b0">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b1">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b2">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b3">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b4">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b5">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b6">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b7">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b8">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2b9">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ba">false</item>
     <item type="id" name="toolbar_chat">false</item>
-    <item type="id" name="instabug_lst_messages">false</item>
-    <item type="id" name="instabug_new_message_container">false</item>
-    <item type="id" name="instabug_btn_attach">false</item>
-    <item type="id" name="instabug_edit_text_new_message">false</item>
-    <item type="id" name="instabug_btn_send">false</item>
-    <item type="id" name="instabug_attachments_bottom_sheet_container">false</item>
-    <item type="id" name="instabug_lst_conversations">false</item>
-    <item type="id" name="instabug_btn_new_chat">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2bc">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2bd">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2be">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2bf">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2c0">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2c1">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2c2">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2c3">false</item>
     <item type="id" name="animation_frame">false</item>
     <item type="id" name="animation_description">false</item>
     <item type="id" name="animation_container">false</item>
     <item type="id" name="touchesImageView">false</item>
     <item type="id" name="fingersImageView">false</item>
-    <item type="id" name="instabug_disclaimer_list">false</item>
-    <item type="id" name="instabug_disclaimer_details">false</item>
-    <item type="id" name="instabug_extra_field">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2c9">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ca">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2cb">false</item>
     <item type="id" name="linearLayout">false</item>
-    <item type="id" name="instabug_edit_text_email">false</item>
-    <item type="id" name="instabug_edit_text_message">false</item>
-    <item type="id" name="instabug_text_view_disclaimer">false</item>
-    <item type="id" name="instabug_lyt_attachments_grid">false</item>
-    <item type="id" name="instabug_invocation_dialog_container">false</item>
-    <item type="id" name="instabug_invocation_dialog_items_container_scrollView">false</item>
-    <item type="id" name="instabug_invocation_dialog_items_container">false</item>
-    <item type="id" name="instabug_option_talk_to_us">false</item>
-    <item type="id" name="instabug_option_talk_to_us_text">false</item>
-    <item type="id" name="instabug_inbox_messages_count">false</item>
-    <item type="id" name="instabug_option_report_bug_text">false</item>
-    <item type="id" name="instabug_option_send_feedback">false</item>
-    <item type="id" name="instabug_option_send_feedback_text">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2cd">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ce">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2cf">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d0">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d1">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d2">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d3">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d4">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d5">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d6">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d7">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d8">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2d9">false</item>
     <item type="id" name="tvKey">false</item>
     <item type="id" name="tvValue">false</item>
     <item type="id" name="notificationLinearLayout">false</item>
     <item type="id" name="senderAvatarImageView">false</item>
     <item type="id" name="senderNameTextView">false</item>
     <item type="id" name="messageTextView">false</item>
-    <item type="id" name="instabug_pbi_container">false</item>
-    <item type="id" name="image_instabug_logo">false</item>
-    <item type="id" name="instabug_recording_audio_dialog_container">false</item>
-    <item type="id" name="instabug_txt_recording_title">false</item>
-    <item type="id" name="instabug_txt_timer">false</item>
-    <item type="id" name="instabug_btn_record_audio">false</item>
-    <item type="id" name="instabug_bk_record_audio">false</item>
-    <item type="id" name="instabug_img_record_audio">false</item>
-    <item type="id" name="instabug_success_dialog_container">false</item>
-    <item type="id" name="instabug_success_dialog_items_container">false</item>
-    <item type="id" name="instabug_txt_success_note">false</item>
-    <item type="id" name="instabug_option_ok">false</item>
-    <item type="id" name="instabug_btn_toolbar_left">false</item>
-    <item type="id" name="instabug_btn_toolbar_right">false</item>
-    <item type="id" name="instabug_img_message_sender">false</item>
-    <item type="id" name="instabug_txt_message_body">false</item>
-    <item type="id" name="instabug_message_actions_container">false</item>
-    <item type="id" name="instabug_video_attachment">false</item>
-    <item type="id" name="instabug_video_attachment_progress_bar">false</item>
-    <item type="id" name="instabug_btn_play_video">false</item>
-    <item type="id" name="instabug_audio_attachment">false</item>
-    <item type="id" name="instabug_btn_play_audio">false</item>
-    <item type="id" name="instabug_audio_attachment_progress_bar">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e0">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e1">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e2">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e3">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e4">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e5">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e6">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e7">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e8">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2e9">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ea">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2eb">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ec">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ed">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ee">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2ef">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f0">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f1">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f2">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f3">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f4">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f5">false</item>
+    <item type="id" name="APKTOOL_DUMMY_2f6">false</item>
     <item type="id" name="interests_textview_pill">false</item>
     <item type="id" name="deeplink_spinner">false</item>
     <item type="id" name="group_count_view">false</item>
@@ -976,4 +1003,5 @@
     <item type="id" name="visible">false</item>
     <item type="id" name="masked">false</item>
     <item type="id" name="floating_search_background_shadow">false</item>
+    <item type="id" name="mod_tab">false</item>
 </resources>

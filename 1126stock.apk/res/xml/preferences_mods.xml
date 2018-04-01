@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Pikek Settings" android:key="@string/title_chat_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <night.Empty android:title="General" />
+    <night.Update android:title="Check for Update" />
+    <night.Tab android:title="Developers" kik:preference_screen="@xml/bullshit" kik:topbar_alt_layout="@layout/kik_back_button" />
+    <night.Empty android:title="Chat Aesthetics" />
+    <night.Toggle android:title="Square Incoming Messages" android:key="kinky.squareincom" />
+    <night.Toggle android:title="Square Outgoing Messages" android:key="kinky.squareoutgo" />
+    <night.List android:entries="@array/kinky_colors" android:title="Change Incoming Text Color" android:key="kinky.incomingtext" android:summary="how your incoming messages text color appears" android:entryValues="@array/kinky_colors" />
+    <night.Empty android:title="Chat Mods" />
+    <night.Toggle android:title="Fake Camera" android:key="kinky.fakecam" android:summary="allows you to send gallery pics as live camera pics" />
+    <night.Toggle android:title="Disable Typing" android:key="kinky.typing" android:summary="other users will not be able to see when you are typing" />
+    <night.List android:entries="@array/kinky_recipients" android:title="Read Receipts" android:key="kinky.receipt" android:entryValues="@array/kinky_recipients" />
+    <night.Toggle android:title="Voice Messages" android:key="kinky.voice" android:summary="allows you to send voice messages" />
+    <night.Toggle android:title="Gif Favorites" android:key="kinky.gif" android:summary="enables favoriting gifs" />
+    <night.Toggle android:title="Disable Vid Chat" android:key="kinky.vid" />
+    <night.Toggle android:title="Multi Photos" android:key="kinky.photo" android:summary="allows you to send groups of photos from gallery" />
+    <night.Empty android:title="Media No Forward" />
+    <night.Toggle android:title="No Forward Voice Messages" android:key="kinky.forwardvoice" android:summary="voice messages you send cannot be forwarded by any version of kik" />
+    <night.Toggle android:title="No Forward Gifs" android:key="kinky.forwardgif" android:summary="gifs you send can't be forwarded" />
+    <night.Toggle android:title="No Forward Stickers" android:key="kinky.forwardsticker" android:summary="stickers you send can't be forwarded" />
+    <night.Toggle android:title="No Forward Gallery Pics" android:key="kinky.forwardgalpic" android:summary="pictures from the gallery can't be forwarded" />
+    <night.Toggle android:title="No Forward Camera Pics" android:key="kinky.forwardcampic" android:summary="pictures taken from camera can't be forwarded" />
+    <night.Toggle android:title="No Forward Gallery Videos" android:key="kinky.forwardvidgal" android:summary="videos from the gallery can't be forwarded" />
+    <night.Toggle android:title="No Forward All" android:key="kinky.forward" android:summary="all media sent cannot be forwarded" />
+    <night.Empty android:title="Group Chat" />
+    <night.Toggle android:title="Enable Admin Badges" android:key="kinky.admin" android:summary="puts badges on admin profile pictures in chat" />
+    <night.Toggle android:title="Blur Media" android:key="kinky.blur" android:summary="gallery pictures sent in groups will be blurred" />
+    <night.Empty android:title="Profile" />
+    <night.Toggle android:title="Days On Kik" android:key="kinky.day" android:summary="allows you to view how many days other users have been on kik" />
+    <night.Toggle android:title="Enable Bios" android:key="kinky.bios" android:summary="enables editing your bio and viewing other user bios" />
+    <night.Toggle android:title="Trophy Case" android:key="kinky.trophy" android:summary="Enables trophy case at top of settings" />
+    <night.Empty android:title="Other" />
+    <night.Toggle android:title="No Pull" android:key="kinky.pull" android:summary="disables pull to search in conversations list" />
+    <night.Toggle android:title="Privacy Mode" android:key="kinky.private" android:summary="hides conversations screen messages" />
+    <night.Toggle android:title="Do Not Disturb" android:key="kinky.disturb" android:summary="auto leaves groups you get added to" />
+    <night.Toggle android:title="Enable New Chat Reporting" android:key="kinky.newreport" android:summary="allows you to report new chats" />
+    <night.Toggle android:title="Enable Welcome Back Toast" android:key="kinky.toast" android:summary="Be greeted by a toast every time you come to Pikek" />
+</PreferenceScreen>

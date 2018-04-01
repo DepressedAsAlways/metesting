@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Pikek Rebaked Team" android:key="@string/title_chat_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <kinky.Empty android:title="Dev Kiks" />
+    <pluto.Dev android:title="Pluto" android:key="kik.help" android:summary="I'm pluto lolll">
+        <intent android:action="android.intent.action.VIEW" android:data="kik://users/otter/profile" />
+    </pluto.Dev>
+    <pluto.Dev android:title="Kinky" android:key="kik.help" android:summary="I'm almost as good as rab">
+        <intent android:action="android.intent.action.VIEW" android:data="kik://users/.no_u/profile" />
+    </pluto.Dev>
+    <kinky.Empty android:title="Dev Instagrams" />
+    <kinky.Empty android:title="(click to be linked to the page)" />
+    <pluto.Dev android:title="Pluto" android:key="kik.help" android:summary="p1u7o">
+        <intent android:action="android.intent.action.VIEW" android:data="http://www.instagram.com/p1u7o" />
+    </pluto.Dev>
+    <pluto.Dev android:title="The Pikek Rebaked Page" android:key="kik.help" android:summary="PikekRebaked">
+        <intent android:action="android.intent.action.VIEW" android:data="http://www.instagram.com/pikekrebaked" />
+    </pluto.Dev>
+</PreferenceScreen>

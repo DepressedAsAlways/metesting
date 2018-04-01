@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="abc_alert_dialog_button_bar_height">48.0dip</dimen>
-    <dimen name="Instabug_text_medium">18.0sp</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_1">false</item>
     <dimen name="abc_action_bar_default_height_material">56.0dip</dimen>
     <dimen name="abc_action_bar_progress_bar_size">40.0dip</dimen>
     <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
-    <dimen name="instabug_button_text_size">12.0sp</dimen>
-    <dimen name="instabug_date_text_size">10.0sp</dimen>
-    <dimen name="instabug_dialog_padding_left_right">24.0dip</dimen>
-    <dimen name="instabug_dialog_padding_top_bottom">40.0dip</dimen>
-    <dimen name="instabug_normal_text_size">14.0sp</dimen>
-    <dimen name="instabug_question_text_size">16.0sp</dimen>
-    <dimen name="instabug_remove_attachment_button_padding">8.0dip</dimen>
-    <dimen name="instabug_remove_attachment_button_size">34.0dip</dimen>
-    <dimen name="instabug_toolbar_button_padding">18.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_a">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_b">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_e">false</item>
     <dimen name="abc_config_prefDialogWidth">320.0dip</dimen>
     <item type="dimen" name="abc_dialog_fixed_height_major">79.99999%</item>
     <item type="dimen" name="abc_dialog_fixed_height_minor">100.0%</item>
@@ -34,6 +34,7 @@
     <dimen name="design_snackbar_min_width">-1.0px</dimen>
     <dimen name="design_snackbar_padding_vertical_2lines">24.0dip</dimen>
     <dimen name="design_tab_scrollable_min_width">72.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_22">false</item>
     <dimen name="notification_right_side_padding_top">2.0dip</dimen>
     <dimen name="abc_switch_padding">3.0dip</dimen>
     <dimen name="notification_content_margin_start">8.0dip</dimen>
@@ -195,25 +196,25 @@
     <dimen name="inner_components_spacing">8.0dip</dimen>
     <dimen name="inner_padding_left">0.0dip</dimen>
     <dimen name="inner_padding_right">0.0dip</dimen>
-    <dimen name="instabug_attachment_placeholder_margin">4.0dip</dimen>
-    <dimen name="instabug_bottom_sheet_padding">8.0dip</dimen>
-    <dimen name="instabug_chat_item_avatar_size">40.0dip</dimen>
-    <dimen name="instabug_container_padding">16.0dip</dimen>
-    <dimen name="instabug_dialog_container_padding">24.0dip</dimen>
-    <dimen name="instabug_fab_actions_spacing">16.0dip</dimen>
-    <dimen name="instabug_fab_circle_icon_size">14.0dip</dimen>
-    <dimen name="instabug_fab_circle_icon_stroke">2.0dip</dimen>
-    <dimen name="instabug_fab_distance">2.0dip</dimen>
-    <dimen name="instabug_fab_icon_size_mini">18.0dip</dimen>
-    <dimen name="instabug_fab_icon_size_normal">26.0dip</dimen>
-    <dimen name="instabug_fab_labels_margin">8.0dip</dimen>
-    <dimen name="instabug_fab_shadow_offset">3.0dip</dimen>
-    <dimen name="instabug_fab_shadow_radius">9.0dip</dimen>
-    <dimen name="instabug_fab_size_mini">42.0dip</dimen>
-    <dimen name="instabug_fab_size_normal">60.0dip</dimen>
-    <dimen name="instabug_fab_stroke_width">1.0dip</dimen>
-    <dimen name="instabug_fab_text_size">16.0sp</dimen>
-    <dimen name="instabug_vertical_separator_height">1.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_c4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_c5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_c6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_c7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_c8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_c9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_ca">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_cb">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_cc">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_cd">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_ce">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_cf">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d1">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d2">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d3">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_d6">false</item>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20.0dip</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800.0dip</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120.0dip</dimen>

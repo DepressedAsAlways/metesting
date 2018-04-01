@@ -8,5 +8,5 @@
             <solid android:color="@color/background_downstate_pressed" />
         </shape>
     </item>
-    <item android:drawable="@xml/interests_pill_background_selector" />
+    <item android:drawable="@xml/OBB9" />
 </selector>
