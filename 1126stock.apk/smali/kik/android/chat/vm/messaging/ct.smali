@@ -839,6 +839,45 @@
     goto :goto_0
 .end method
 
+.method static synthetic b(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ljava/lang/Boolean;
+    .locals 2
+
+    .prologue
+    .line 767
+    const-string v0, "png-preview"
+
+    invoke-virtual {p0, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
+
+    move-result-object v0
+
+    .line 768
+    const-string v1, "preview"
+
+    invoke-virtual {p0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
+
+    move-result-object v1
+
+    .line 770
+    if-nez v0, :cond_0
+
+    if-eqz v1, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
 .method static synthetic b(Lkik/android/chat/vm/messaging/IContentMessageViewModel$ItemUploadState;)Ljava/lang/Boolean;
     .locals 1
 
@@ -891,45 +930,6 @@
     return-object v0
 
     :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method static synthetic b(Lkik/core/datatypes/messageExtensions/ContentMessage;)Ljava/lang/Boolean;
-    .locals 2
-
-    .prologue
-    .line 767
-    const-string v0, "png-preview"
-
-    invoke-virtual {p0, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
-
-    move-result-object v0
-
-    .line 768
-    const-string v1, "preview"
-
-    invoke-virtual {p0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
-
-    move-result-object v1
-
-    .line 770
-    if-nez v0, :cond_0
-
-    if-eqz v1, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
@@ -3024,7 +3024,7 @@
 
     .line 11598
     :cond_2
-    const-string v4, "com.kik.ext.video-gallery"
+    const-string v4, "com.kik.ext-video-camera"
 
     invoke-virtual {v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->v()Ljava/lang/String;
 
@@ -3835,7 +3835,7 @@
 
     if-nez v2, :cond_0
 
-    const-string v2, "com.kik.ext.video-gallery"
+    const-string v2, "com.kik.ext-video-camera"
 
     .line 244
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3911,7 +3911,7 @@
 
     if-nez v2, :cond_0
 
-    const-string v2, "com.kik.ext.video-gallery"
+    const-string v2, "com.kik.ext-video-camera"
 
     .line 268
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

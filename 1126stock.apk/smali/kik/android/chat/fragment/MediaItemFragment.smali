@@ -385,7 +385,7 @@
     goto :goto_1
 
     :sswitch_2
-    const-string v4, "com.kik.ext.video-gallery"
+    const-string v4, "com.kik.ext-video-camera"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -898,6 +898,9 @@
     return-void
 .end method
 
+.method protected abstract a(Lkik/core/datatypes/b;)V
+.end method
+
 .method public final a(Lkik/android/f/f;)V
     .locals 0
 
@@ -907,9 +910,6 @@
 
     .line 132
     return-void
-.end method
-
-.method protected abstract a(Lkik/core/datatypes/b;)V
 .end method
 
 .method public a(ZZ)V

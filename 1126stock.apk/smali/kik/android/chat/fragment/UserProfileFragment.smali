@@ -1331,6 +1331,12 @@
 
     move-result v3
 
+    const-string v3, "kinky.bios"
+
+    invoke-static {v3}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v3
+
     if-eqz v3, :cond_3
 
     .line 143
@@ -1465,6 +1471,24 @@
     invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
 
     .line 395
+    return-void
+.end method
+
+.method public onModzTapped()V
+    .locals 1
+    .annotation build Lbutterknife/OnClick;
+        value = {
+            0x7f100434
+        }
+    .end annotation
+
+    .prologue
+    .line 453
+    const v0, 0x7f070031
+
+    invoke-direct {p0, v0}, Lkik/android/chat/fragment/UserProfileFragment;->a(I)V
+
+    .line 454
     return-void
 .end method
 

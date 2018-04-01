@@ -374,6 +374,12 @@
 
     move-result v0
 
+    const-string v0, "kinky.gif"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v0
+
     if-eqz v0, :cond_0
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -518,6 +524,17 @@
     return-void
 .end method
 
+.method public final a(Lkik/core/interfaces/h;)V
+    .locals 0
+
+    .prologue
+    .line 85
+    iput-object p1, p0, Lkik/android/gifs/vm/t;->j:Lkik/core/interfaces/h;
+
+    .line 86
+    return-void
+.end method
+
 .method public final a(Lkik/android/gifs/vm/bo;Lkik/android/widget/GifTrayPage;)V
     .locals 4
 
@@ -625,17 +642,6 @@
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
-.end method
-
-.method public final a(Lkik/core/interfaces/h;)V
-    .locals 0
-
-    .prologue
-    .line 85
-    iput-object p1, p0, Lkik/android/gifs/vm/t;->j:Lkik/core/interfaces/h;
-
-    .line 86
-    return-void
 .end method
 
 .method public final al_()V

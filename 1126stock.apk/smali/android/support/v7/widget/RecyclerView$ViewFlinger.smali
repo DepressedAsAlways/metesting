@@ -813,7 +813,6 @@
     :cond_d
     iget-object v0, p0, Landroid/support/v7/widget/RecyclerView$ViewFlinger;->b:Landroid/support/v7/widget/RecyclerView;
 
-    # invokes: Landroid/support/v7/widget/RecyclerView;->awakenScrollBars()Z
     invoke-static {v0}, Landroid/support/v7/widget/RecyclerView;->access$500(Landroid/support/v7/widget/RecyclerView;)Z
 
     move-result v0
@@ -896,7 +895,6 @@
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->setScrollState(I)V
 
     .line 4800
-    # getter for: Landroid/support/v7/widget/RecyclerView;->ALLOW_THREAD_GAP_WORK:Z
     invoke-static {}, Landroid/support/v7/widget/RecyclerView;->access$600()Z
 
     move-result v0

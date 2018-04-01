@@ -1553,6 +1553,12 @@
 
     move-result v0
 
+    const-string v0, "kinky.voice"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v0
+
     .line 10224
     if-eqz v0, :cond_1
 

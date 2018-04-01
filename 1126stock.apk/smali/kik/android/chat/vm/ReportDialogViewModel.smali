@@ -220,22 +220,22 @@
     return-object p1
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/ReportDialogViewModel;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-    .locals 0
-
-    .prologue
-    .line 30
-    iput-object p1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    return-object p1
-.end method
-
 .method static synthetic a(Lkik/android/chat/vm/ReportDialogViewModel;Lkik/core/datatypes/k;)Lkik/core/datatypes/k;
     .locals 0
 
     .prologue
     .line 30
     iput-object p1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->k:Lkik/core/datatypes/k;
+
+    return-object p1
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/ReportDialogViewModel;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+    .locals 0
+
+    .prologue
+    .line 30
+    iput-object p1, p0, Lkik/android/chat/vm/ReportDialogViewModel;->g:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
 
     return-object p1
 .end method

@@ -162,6 +162,71 @@
     return-void
 .end method
 
+.method private a(Lkik/core/manager/n$c;)V
+    .locals 3
+
+    .prologue
+    .line 150
+    iget-object v0, p1, Lkik/core/manager/n$c;->a:Ljava/lang/String;
+
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lkik/android/chat/fragment/KikWelcomeFragment;->isAdded()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 151
+    new-instance v0, Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
+
+    const v1, 0x7f09055e
+
+    .line 152
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v0
+
+    const v1, 0x7f09055d
+
+    .line 153
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v0
+
+    const v1, 0x7f09027d
+
+    .line 154
+    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikWelcomeFragment;->getStringFromResource(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0}, Lkik/android/chat/fragment/el;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v0
+
+    .line 155
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikWelcomeFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
+
+    .line 157
+    :cond_0
+    return-void
+.end method
+
 .method static synthetic a(Lkik/android/chat/fragment/KikWelcomeFragment;)V
     .locals 6
 
@@ -248,71 +313,6 @@
 
     invoke-direct {p0, p1}, Lkik/android/chat/fragment/KikWelcomeFragment;->a(Lkik/core/manager/n$c;)V
 
-    return-void
-.end method
-
-.method private a(Lkik/core/manager/n$c;)V
-    .locals 3
-
-    .prologue
-    .line 150
-    iget-object v0, p1, Lkik/core/manager/n$c;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikWelcomeFragment;->isAdded()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 151
-    new-instance v0, Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
-
-    const v1, 0x7f09055e
-
-    .line 152
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v0
-
-    const v1, 0x7f09055d
-
-    .line 153
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v0
-
-    const v1, 0x7f09027d
-
-    .line 154
-    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/KikWelcomeFragment;->getStringFromResource(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {p0}, Lkik/android/chat/fragment/el;->a(Lkik/android/chat/fragment/KikWelcomeFragment;)Landroid/content/DialogInterface$OnClickListener;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v0
-
-    .line 155
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikWelcomeFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
-
-    .line 157
-    :cond_0
     return-void
 .end method
 

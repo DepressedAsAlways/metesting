@@ -62,7 +62,6 @@
 
     .prologue
     .line 1251
-    # getter for: Landroid/databinding/ViewDataBinding;->sReferenceQueue:Ljava/lang/ref/ReferenceQueue;
     invoke-static {}, Landroid/databinding/ViewDataBinding;->access$600()Ljava/lang/ref/ReferenceQueue;
 
     move-result-object v0

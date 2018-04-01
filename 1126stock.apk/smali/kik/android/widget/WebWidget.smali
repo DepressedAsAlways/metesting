@@ -40,6 +40,14 @@
     return-void
 .end method
 
+.method public final a(Lkik/core/interfaces/h;)V
+    .locals 0
+
+    .prologue
+    .line 79
+    return-void
+.end method
+
 .method public final a(Lkik/android/chat/fragment/KikChatFragment$b;)V
     .locals 0
 
@@ -48,14 +56,6 @@
     iput-object p1, p0, Lkik/android/widget/WebWidget;->b:Lkik/android/chat/fragment/KikChatFragment$b;
 
     .line 99
-    return-void
-.end method
-
-.method public final a(Lkik/core/interfaces/h;)V
-    .locals 0
-
-    .prologue
-    .line 79
     return-void
 .end method
 

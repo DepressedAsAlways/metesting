@@ -314,6 +314,160 @@
     return-void
 .end method
 
+.method private a(Lkik/core/datatypes/l;ZZ)V
+    .locals 8
+
+    .prologue
+    const/4 v7, 0x0
+
+    const/4 v6, 0x1
+
+    .line 786
+    if-eqz p3, :cond_0
+
+    const v0, 0x7f0903d2
+
+    move v2, v0
+
+    .line 787
+    :goto_0
+    if-eqz p3, :cond_2
+
+    const v0, 0x7f090071
+
+    move v1, v0
+
+    .line 788
+    :goto_1
+    if-eqz p3, :cond_4
+
+    const v0, 0x7f0903d1
+
+    .line 789
+    :goto_2
+    new-instance v3, Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    invoke-direct {v3}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
+
+    new-array v4, v6, [Ljava/lang/Object;
+
+    .line 790
+    invoke-static {p1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/l;)Ljava/lang/String;
+
+    move-result-object v5
+
+    aput-object v5, v4, v7
+
+    invoke-virtual {p0, v2, v4}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->getStringFromResource(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(Ljava/lang/String;)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v2
+
+    new-array v3, v6, [Ljava/lang/Object;
+
+    .line 791
+    invoke-static {p1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/l;)Ljava/lang/String;
+
+    move-result-object v4
+
+    aput-object v4, v3, v7
+
+    invoke-virtual {p0, v1, v3}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->getStringFromResource(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Ljava/lang/String;)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v1
+
+    .line 792
+    invoke-virtual {v1, v6}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Z)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v1
+
+    new-instance v2, Lkik/android/chat/fragment/KikGroupMembersListFragment$2;
+
+    invoke-direct {v2, p0, p1, p2, p3}, Lkik/android/chat/fragment/KikGroupMembersListFragment$2;-><init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Lkik/core/datatypes/l;ZZ)V
+
+    .line 793
+    invoke-virtual {v1, v0, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v0
+
+    const v1, 0x7f0903d7
+
+    const/4 v2, 0x0
+
+    .line 802
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
+
+    move-result-object v0
+
+    .line 804
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
+
+    move-result-object v0
+
+    sget-object v1, Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;->DialogScopeFragmentModal:Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;
+
+    const-string v2, "build"
+
+    invoke-virtual {p0, v0, v1, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->show(Lkik/android/chat/fragment/KikDialogFragment;Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;Ljava/lang/String;)V
+
+    .line 805
+    return-void
+
+    .line 786
+    :cond_0
+    if-eqz p2, :cond_1
+
+    const v0, 0x7f090448
+
+    move v2, v0
+
+    goto :goto_0
+
+    :cond_1
+    const v0, 0x7f090470
+
+    move v2, v0
+
+    goto :goto_0
+
+    .line 787
+    :cond_2
+    if-eqz p2, :cond_3
+
+    const v0, 0x7f090075
+
+    move v1, v0
+
+    goto :goto_1
+
+    :cond_3
+    const v0, 0x7f090076
+
+    move v1, v0
+
+    goto :goto_1
+
+    .line 788
+    :cond_4
+    if-eqz p2, :cond_5
+
+    const v0, 0x7f090447
+
+    goto :goto_2
+
+    :cond_5
+    const v0, 0x7f09049e
+
+    goto :goto_2
+.end method
+
 .method static synthetic a(Lkik/android/chat/fragment/KikGroupMembersListFragment;)V
     .locals 2
 
@@ -1023,160 +1177,6 @@
 
     .line 763
     return-void
-.end method
-
-.method private a(Lkik/core/datatypes/l;ZZ)V
-    .locals 8
-
-    .prologue
-    const/4 v7, 0x0
-
-    const/4 v6, 0x1
-
-    .line 786
-    if-eqz p3, :cond_0
-
-    const v0, 0x7f0903d2
-
-    move v2, v0
-
-    .line 787
-    :goto_0
-    if-eqz p3, :cond_2
-
-    const v0, 0x7f090071
-
-    move v1, v0
-
-    .line 788
-    :goto_1
-    if-eqz p3, :cond_4
-
-    const v0, 0x7f0903d1
-
-    .line 789
-    :goto_2
-    new-instance v3, Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    invoke-direct {v3}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
-
-    new-array v4, v6, [Ljava/lang/Object;
-
-    .line 790
-    invoke-static {p1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/l;)Ljava/lang/String;
-
-    move-result-object v5
-
-    aput-object v5, v4, v7
-
-    invoke-virtual {p0, v2, v4}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->getStringFromResource(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v3, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(Ljava/lang/String;)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v2
-
-    new-array v3, v6, [Ljava/lang/Object;
-
-    .line 791
-    invoke-static {p1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/l;)Ljava/lang/String;
-
-    move-result-object v4
-
-    aput-object v4, v3, v7
-
-    invoke-virtual {p0, v1, v3}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->getStringFromResource(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Ljava/lang/String;)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v1
-
-    .line 792
-    invoke-virtual {v1, v6}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(Z)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v1
-
-    new-instance v2, Lkik/android/chat/fragment/KikGroupMembersListFragment$2;
-
-    invoke-direct {v2, p0, p1, p2, p3}, Lkik/android/chat/fragment/KikGroupMembersListFragment$2;-><init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Lkik/core/datatypes/l;ZZ)V
-
-    .line 793
-    invoke-virtual {v1, v0, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v0
-
-    const v1, 0x7f0903d7
-
-    const/4 v2, 0x0
-
-    .line 802
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
-
-    move-result-object v0
-
-    .line 804
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;
-
-    move-result-object v0
-
-    sget-object v1, Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;->DialogScopeFragmentModal:Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;
-
-    const-string v2, "build"
-
-    invoke-virtual {p0, v0, v1, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->show(Lkik/android/chat/fragment/KikDialogFragment;Lkik/android/chat/fragment/KikScopedDialogFragment$DialogScope;Ljava/lang/String;)V
-
-    .line 805
-    return-void
-
-    .line 786
-    :cond_0
-    if-eqz p2, :cond_1
-
-    const v0, 0x7f090448
-
-    move v2, v0
-
-    goto :goto_0
-
-    :cond_1
-    const v0, 0x7f090470
-
-    move v2, v0
-
-    goto :goto_0
-
-    .line 787
-    :cond_2
-    if-eqz p2, :cond_3
-
-    const v0, 0x7f090075
-
-    move v1, v0
-
-    goto :goto_1
-
-    :cond_3
-    const v0, 0x7f090076
-
-    move v1, v0
-
-    goto :goto_1
-
-    .line 788
-    :cond_4
-    if-eqz p2, :cond_5
-
-    const v0, 0x7f090447
-
-    goto :goto_2
-
-    :cond_5
-    const v0, 0x7f09049e
-
-    goto :goto_2
 .end method
 
 .method static synthetic a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Ljava/util/List;Ljava/util/List;Lkik/core/datatypes/GroupContactInfoHolder;Landroid/view/MenuItem;)Z

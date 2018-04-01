@@ -435,6 +435,12 @@
 
     move-result v0
 
+    const-string v0, "kinky.bios"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v0
+
     if-eqz v0, :cond_0
 
     .line 166
@@ -499,6 +505,12 @@
     const-string v2, "show-profile-bios"
 
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    const-string v0, "kinky.bios"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -779,6 +791,12 @@
     const-string v2, "show-profile-bios"
 
     invoke-interface {v0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    const-string v0, "kinky.bios"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
 
     move-result v0
 

@@ -184,20 +184,6 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/t;)V
-    .locals 1
-
-    .prologue
-    .line 200
-    invoke-virtual {p0}, Lkik/android/chat/vm/t;->F_()Lkik/android/chat/vm/ay;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lkik/android/chat/vm/ay;->k()V
-
-    return-void
-.end method
-
 .method public static a(Lorg/apmem/tools/layouts/FlowLayout;Lkik/android/chat/vm/chats/profile/bi;)V
     .locals 6
     .annotation build Landroid/databinding/BindingAdapter;
@@ -323,6 +309,20 @@
 
     .line 104
     :cond_2
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/t;)V
+    .locals 1
+
+    .prologue
+    .line 200
+    invoke-virtual {p0}, Lkik/android/chat/vm/t;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->k()V
+
     return-void
 .end method
 

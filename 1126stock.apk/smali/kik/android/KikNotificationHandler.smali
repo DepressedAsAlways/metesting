@@ -1549,16 +1549,6 @@
     goto :goto_1
 .end method
 
-.method static synthetic a(Lkik/android/KikNotificationHandler;Lkik/core/datatypes/l;)V
-    .locals 0
-
-    .prologue
-    .line 292
-    invoke-virtual {p0, p1}, Lkik/android/KikNotificationHandler;->a(Lkik/core/datatypes/l;)V
-
-    return-void
-.end method
-
 .method private a(Lkik/core/datatypes/Message;Z)V
     .locals 16
 
@@ -2079,6 +2069,16 @@
     move-result-object v2
 
     goto/16 :goto_4
+.end method
+
+.method static synthetic a(Lkik/android/KikNotificationHandler;Lkik/core/datatypes/l;)V
+    .locals 0
+
+    .prologue
+    .line 292
+    invoke-virtual {p0, p1}, Lkik/android/KikNotificationHandler;->a(Lkik/core/datatypes/l;)V
+
+    return-void
 .end method
 
 .method private a(ZZLkik/core/datatypes/Message;ZZ)V
@@ -3862,18 +3862,6 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lkik/android/KikNotificationHandler;)V
-    .locals 1
-
-    .prologue
-    .line 91
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lkik/android/KikNotificationHandler;->b(Z)V
-
-    return-void
-.end method
-
 .method private b(Lkik/core/datatypes/l;I)V
     .locals 3
 
@@ -3907,6 +3895,18 @@
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
+.end method
+
+.method static synthetic b(Lkik/android/KikNotificationHandler;)V
+    .locals 1
+
+    .prologue
+    .line 91
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lkik/android/KikNotificationHandler;->b(Z)V
+
+    return-void
 .end method
 
 .method private b(Z)V
@@ -4716,6 +4716,12 @@
     const-string v6, "hide"
 
     invoke-interface {v0, v5, v6}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    const-string v0, "kinky.vid"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
 
     move-result v0
 

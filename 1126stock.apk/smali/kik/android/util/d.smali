@@ -672,7 +672,7 @@
 
     if-nez v6, :cond_6
 
-    const-string v6, "com.kik.ext.video-gallery"
+    const-string v6, "com.kik.ext-video-camera"
 
     invoke-static/range {p1 .. p1}, Lkik/android/util/d$a;->g(Lkik/android/util/d$a;)Ljava/lang/String;
 

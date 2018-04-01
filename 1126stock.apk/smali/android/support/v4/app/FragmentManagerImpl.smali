@@ -1369,7 +1369,6 @@
     .line 2086
     if-eqz p1, :cond_1
 
-    # getter for: Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->mIsBack:Z
     invoke-static {v0}, Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->access$000(Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;)Z
 
     move-result v1
@@ -1377,7 +1376,6 @@
     if-nez v1, :cond_1
 
     .line 2087
-    # getter for: Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->mRecord:Landroid/support/v4/app/BackStackRecord;
     invoke-static {v0}, Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->access$100(Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;)Landroid/support/v4/app/BackStackRecord;
 
     move-result-object v1
@@ -1437,7 +1435,6 @@
     if-eqz p1, :cond_4
 
     .line 2094
-    # getter for: Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->mRecord:Landroid/support/v4/app/BackStackRecord;
     invoke-static {v0}, Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->access$100(Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;)Landroid/support/v4/app/BackStackRecord;
 
     move-result-object v1
@@ -1467,7 +1464,6 @@
     .line 2099
     if-eqz p1, :cond_3
 
-    # getter for: Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->mIsBack:Z
     invoke-static {v0}, Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->access$000(Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;)Z
 
     move-result v1
@@ -1475,7 +1471,6 @@
     if-nez v1, :cond_3
 
     .line 2100
-    # getter for: Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->mRecord:Landroid/support/v4/app/BackStackRecord;
     invoke-static {v0}, Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;->access$100(Landroid/support/v4/app/FragmentManagerImpl$StartEnterTransitionListener;)Landroid/support/v4/app/BackStackRecord;
 
     move-result-object v1

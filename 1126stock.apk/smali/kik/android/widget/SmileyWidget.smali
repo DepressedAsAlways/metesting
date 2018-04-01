@@ -158,6 +158,25 @@
     return-void
 .end method
 
+.method public final a(Lkik/core/interfaces/h;)V
+    .locals 1
+
+    .prologue
+    .line 106
+    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->a:Lcom/kik/android/b/g;
+
+    if-eqz v0, :cond_0
+
+    .line 107
+    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->a:Lcom/kik/android/b/g;
+
+    invoke-virtual {v0}, Lcom/kik/android/b/g;->h()V
+
+    .line 109
+    :cond_0
+    return-void
+.end method
+
 .method public final a(Lkik/android/chat/fragment/KikChatFragment$b;)V
     .locals 0
 
@@ -177,25 +196,6 @@
     iput-object p1, p0, Lkik/android/widget/SmileyWidget;->e:Lkik/android/f/b;
 
     .line 192
-    return-void
-.end method
-
-.method public final a(Lkik/core/interfaces/h;)V
-    .locals 1
-
-    .prologue
-    .line 106
-    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->a:Lcom/kik/android/b/g;
-
-    if-eqz v0, :cond_0
-
-    .line 107
-    iget-object v0, p0, Lkik/android/widget/SmileyWidget;->a:Lcom/kik/android/b/g;
-
-    invoke-virtual {v0}, Lcom/kik/android/b/g;->h()V
-
-    .line 109
-    :cond_0
     return-void
 .end method
 

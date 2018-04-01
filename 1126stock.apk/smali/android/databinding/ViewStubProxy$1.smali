@@ -45,7 +45,6 @@
     .line 38
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # setter for: Landroid/databinding/ViewStubProxy;->mRoot:Landroid/view/View;
     invoke-static {v0, p2}, Landroid/databinding/ViewStubProxy;->access$002(Landroid/databinding/ViewStubProxy;Landroid/view/View;)Landroid/view/View;
 
     .line 39
@@ -53,7 +52,6 @@
 
     iget-object v1, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # getter for: Landroid/databinding/ViewStubProxy;->mContainingBinding:Landroid/databinding/ViewDataBinding;
     invoke-static {v1}, Landroid/databinding/ViewStubProxy;->access$200(Landroid/databinding/ViewStubProxy;)Landroid/databinding/ViewDataBinding;
 
     move-result-object v1
@@ -70,19 +68,16 @@
 
     move-result-object v1
 
-    # setter for: Landroid/databinding/ViewStubProxy;->mViewDataBinding:Landroid/databinding/ViewDataBinding;
     invoke-static {v0, v1}, Landroid/databinding/ViewStubProxy;->access$102(Landroid/databinding/ViewStubProxy;Landroid/databinding/ViewDataBinding;)Landroid/databinding/ViewDataBinding;
 
     .line 41
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # setter for: Landroid/databinding/ViewStubProxy;->mViewStub:Landroid/view/ViewStub;
     invoke-static {v0, v3}, Landroid/databinding/ViewStubProxy;->access$302(Landroid/databinding/ViewStubProxy;Landroid/view/ViewStub;)Landroid/view/ViewStub;
 
     .line 43
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # getter for: Landroid/databinding/ViewStubProxy;->mOnInflateListener:Landroid/view/ViewStub$OnInflateListener;
     invoke-static {v0}, Landroid/databinding/ViewStubProxy;->access$400(Landroid/databinding/ViewStubProxy;)Landroid/view/ViewStub$OnInflateListener;
 
     move-result-object v0
@@ -92,7 +87,6 @@
     .line 44
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # getter for: Landroid/databinding/ViewStubProxy;->mOnInflateListener:Landroid/view/ViewStub$OnInflateListener;
     invoke-static {v0}, Landroid/databinding/ViewStubProxy;->access$400(Landroid/databinding/ViewStubProxy;)Landroid/view/ViewStub$OnInflateListener;
 
     move-result-object v0
@@ -102,14 +96,12 @@
     .line 45
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # setter for: Landroid/databinding/ViewStubProxy;->mOnInflateListener:Landroid/view/ViewStub$OnInflateListener;
     invoke-static {v0, v3}, Landroid/databinding/ViewStubProxy;->access$402(Landroid/databinding/ViewStubProxy;Landroid/view/ViewStub$OnInflateListener;)Landroid/view/ViewStub$OnInflateListener;
 
     .line 47
     :cond_0
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # getter for: Landroid/databinding/ViewStubProxy;->mContainingBinding:Landroid/databinding/ViewDataBinding;
     invoke-static {v0}, Landroid/databinding/ViewStubProxy;->access$200(Landroid/databinding/ViewStubProxy;)Landroid/databinding/ViewDataBinding;
 
     move-result-object v0
@@ -119,7 +111,6 @@
     .line 48
     iget-object v0, p0, Landroid/databinding/ViewStubProxy$1;->this$0:Landroid/databinding/ViewStubProxy;
 
-    # getter for: Landroid/databinding/ViewStubProxy;->mContainingBinding:Landroid/databinding/ViewDataBinding;
     invoke-static {v0}, Landroid/databinding/ViewStubProxy;->access$200(Landroid/databinding/ViewStubProxy;)Landroid/databinding/ViewDataBinding;
 
     move-result-object v0

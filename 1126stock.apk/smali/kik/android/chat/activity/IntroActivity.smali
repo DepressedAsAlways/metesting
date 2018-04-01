@@ -315,6 +315,8 @@
     .prologue
     const/4 v1, 0x0
 
+    invoke-virtual {p0}, Lkik/android/chat/activity/IntroActivity;->welcomeToast()V
+
     .line 58
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -407,4 +409,106 @@
     invoke-direct {p0}, Lkik/android/chat/activity/IntroActivity;->a()V
 
     goto :goto_1
+.end method
+
+.method public welcomeToast()V
+    .locals 5
+
+    .prologue
+    const/4 v3, 0x1
+
+    .line 69
+    const-string v0, "kinky.toast"
+
+    invoke-static {v0}, Lnight/values;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    new-instance v1, Ljava/text/SimpleDateFormat;
+
+    const-string v2, "EEE:MM-dd:HH-mm"
+
+    invoke-direct {v1, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .local v0, "date4toast":Ljava/lang/String;
+    const-string v1, "Wed:.+"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string v2, "it is wednesday my dudes"
+
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    :cond_0
+    const-string v1, "\\w{3}:\\d{2}-\\d{2}:(04|16)-20"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const-string v2, "it is 420"
+
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    return-void
+
+    :cond_1
+    const-string v1, "\\w{3}:04-20:\\d{2}-\\d{2}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const-string v2, "happy 4/20"
+
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    return-void
+
+    const-string v2, "Welcome back"
+
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    return-void
+
+    :cond_2
+    return-void
 .end method

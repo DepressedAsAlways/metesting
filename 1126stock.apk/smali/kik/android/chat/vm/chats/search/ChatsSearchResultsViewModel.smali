@@ -329,6 +329,69 @@
     throw v0
 .end method
 
+.method private a(Lkik/core/datatypes/l;Ljava/lang/String;Z)Z
+    .locals 1
+
+    .prologue
+    .line 382
+    if-nez p1, :cond_0
+
+    .line 383
+    const/4 v0, 0x0
+
+    .line 392
+    :goto_0
+    return v0
+
+    .line 385
+    :cond_0
+    if-eqz p3, :cond_1
+
+    .line 387
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/android/util/bs;->c(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, p2}, Lkik/android/util/bs;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 389
+    :cond_1
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, p2}, Lkik/android/util/bs;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 390
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    .line 392
+    :cond_2
+    invoke-direct {p0, p1}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->a(Lkik/core/datatypes/l;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, p2}, Lkik/android/util/bs;->a([Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    goto :goto_0
+.end method
+
 .method static synthetic a(Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;)Z
     .locals 1
 
@@ -609,69 +672,6 @@
     move-result v0
 
     goto/16 :goto_0
-.end method
-
-.method private a(Lkik/core/datatypes/l;Ljava/lang/String;Z)Z
-    .locals 1
-
-    .prologue
-    .line 382
-    if-nez p1, :cond_0
-
-    .line 383
-    const/4 v0, 0x0
-
-    .line 392
-    :goto_0
-    return v0
-
-    .line 385
-    :cond_0
-    if-eqz p3, :cond_1
-
-    .line 387
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/android/util/bs;->c(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0, p2}, Lkik/android/util/bs;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    goto :goto_0
-
-    .line 389
-    :cond_1
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0, p2}, Lkik/android/util/bs;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 390
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    .line 392
-    :cond_2
-    invoke-direct {p0, p1}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->a(Lkik/core/datatypes/l;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0, p2}, Lkik/android/util/bs;->a([Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    goto :goto_0
 .end method
 
 .method private a(Lkik/core/datatypes/l;)[Ljava/lang/String;

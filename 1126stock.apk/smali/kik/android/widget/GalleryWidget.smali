@@ -93,28 +93,6 @@
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/fragment/KikChatFragment$b;)V
-    .locals 0
-
-    .prologue
-    .line 79
-    iput-object p1, p0, Lkik/android/widget/GalleryWidget;->c:Lkik/android/chat/fragment/KikChatFragment$b;
-
-    .line 80
-    return-void
-.end method
-
-.method public final a(Lkik/android/gallery/b;)V
-    .locals 0
-
-    .prologue
-    .line 84
-    iput-object p1, p0, Lkik/android/widget/GalleryWidget;->g:Lkik/android/gallery/b;
-
-    .line 85
-    return-void
-.end method
-
 .method public final a(Lkik/core/interfaces/h;)V
     .locals 1
 
@@ -136,6 +114,28 @@
 
     .line 152
     :cond_0
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/fragment/KikChatFragment$b;)V
+    .locals 0
+
+    .prologue
+    .line 79
+    iput-object p1, p0, Lkik/android/widget/GalleryWidget;->c:Lkik/android/chat/fragment/KikChatFragment$b;
+
+    .line 80
+    return-void
+.end method
+
+.method public final a(Lkik/android/gallery/b;)V
+    .locals 0
+
+    .prologue
+    .line 84
+    iput-object p1, p0, Lkik/android/widget/GalleryWidget;->g:Lkik/android/gallery/b;
+
+    .line 85
     return-void
 .end method
 

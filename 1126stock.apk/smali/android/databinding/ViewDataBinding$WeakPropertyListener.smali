@@ -140,7 +140,6 @@
 
     iget v0, v0, Landroid/databinding/ViewDataBinding$WeakListener;->mLocalFieldId:I
 
-    # invokes: Landroid/databinding/ViewDataBinding;->handleFieldChange(ILjava/lang/Object;I)V
     invoke-static {v1, v0, p1, p2}, Landroid/databinding/ViewDataBinding;->access$700(Landroid/databinding/ViewDataBinding;ILjava/lang/Object;I)V
 
     goto :goto_0

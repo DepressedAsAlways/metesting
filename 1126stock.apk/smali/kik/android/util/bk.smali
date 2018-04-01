@@ -873,6 +873,419 @@
     return-void
 .end method
 
+.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    .locals 8
+
+    .prologue
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    .line 191
+    invoke-static {p0, p1}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 202
+    :goto_0
+    return-void
+
+    .line 195
+    :cond_0
+    const v0, 0x7f090368
+
+    new-array v1, v3, [Ljava/lang/Object;
+
+    iget-object v2, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    aput-object v2, v1, v4
+
+    invoke-static {v0, v1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 196
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const v1, 0x7f0900e0
+
+    new-array v2, v3, [Ljava/lang/Object;
+
+    iget-object v3, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    aput-object v3, v2, v4
+
+    invoke-static {v1, v2}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 197
+    const v0, 0x7f09035f
+
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 199
+    new-instance v0, Lkik/android/util/bk;
+
+    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    move-object v1, p1
+
+    move-object v2, p4
+
+    move-object v3, p2
+
+    move-object v5, p3
+
+    invoke-direct/range {v0 .. v5}, Lkik/android/util/bk;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/core/interfaces/b;)V
+
+    .line 200
+    new-instance v1, Lkik/android/util/bp;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v6, v2, v7}, Lkik/android/util/bp;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 201
+    invoke-direct {v0, v1, p5}, Lkik/android/util/bk;->a(Lkik/android/util/bp;Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
+.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
+    .locals 9
+
+    .prologue
+    const/4 v5, 0x1
+
+    const/4 v4, 0x0
+
+    .line 164
+    invoke-static {p0, p1}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 187
+    :goto_0
+    return-void
+
+    .line 170
+    :cond_0
+    :try_start_0
+    invoke-static {p0, p1, p4, p2}, Lkik/android/util/f;->a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    .line 171
+    iget-object v1, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    invoke-virtual {v0, v2, v3}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    invoke-static {p1, v1, v0}, Lkik/android/util/f;->a(Landroid/content/Context;Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v2
+
+    .line 180
+    const v0, 0x7f09036a
+
+    new-array v1, v5, [Ljava/lang/Object;
+
+    iget-object v3, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    aput-object v3, v1, v4
+
+    invoke-static {v0, v1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 181
+    const v0, 0x7f090122
+
+    new-array v1, v5, [Ljava/lang/Object;
+
+    iget-object v3, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    aput-object v3, v1, v4
+
+    invoke-static {v0, v1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 182
+    const v0, 0x7f09036d
+
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 184
+    new-instance v0, Lkik/android/util/bk;
+
+    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    move-object v1, p1
+
+    move-object v3, p2
+
+    move-object v5, p3
+
+    invoke-direct/range {v0 .. v5}, Lkik/android/util/bk;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/core/interfaces/b;)V
+
+    .line 185
+    new-instance v1, Lkik/android/util/bp;
+
+    invoke-direct {v1, v6, v7, v8}, Lkik/android/util/bp;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 186
+    invoke-direct {v0, v1}, Lkik/android/util/bk;->a(Lkik/android/util/bp;)V
+
+    goto :goto_0
+
+    .line 175
+    :catch_0
+    move-exception v0
+
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    .line 176
+    const v0, 0x7f090293
+
+    invoke-static {p1, v0, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    goto :goto_0
+.end method
+
+.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/events/Promise;Lkik/android/f/i;Ljava/lang/String;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkik/core/datatypes/ac;",
+            "Landroid/content/Context;",
+            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/b;",
+            "Lcom/kik/events/Promise",
+            "<",
+            "Lkik/core/net/outgoing/GetGroupKikCodeRequest;",
+            ">;",
+            "Lkik/android/f/i;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    .prologue
+    .line 220
+    invoke-static {p0, p1}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 226
+    :goto_0
+    return-void
+
+    .line 224
+    :cond_0
+    new-instance v0, Lkik/android/util/bk;
+
+    const/4 v2, 0x0
+
+    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
+
+    move-object v1, p1
+
+    move-object v3, p2
+
+    move-object v5, p3
+
+    invoke-direct/range {v0 .. v5}, Lkik/android/util/bk;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/core/interfaces/b;)V
+
+    .line 1347
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.SEND"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 1348
+    const-string v2, "text/plain"
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 1349
+    iget-object v2, v0, Lkik/android/util/bk;->e:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v1, v3}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+
+    move-result-object v1
+
+    .line 1350
+    sget-object v2, Lkik/android/util/bk;->b:Ljava/util/Set;
+
+    invoke-static {v1, v2}, Lkik/android/util/bk;->a(Ljava/util/List;Ljava/util/Collection;)V
+
+    .line 1351
+    sget-object v2, Lkik/android/util/bk;->c:Ljava/util/List;
+
+    invoke-static {v1, v2}, Lkik/android/util/bk;->a(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
+
+    move-result-object v2
+
+    .line 1252
+    new-instance v7, Landroid/support/v7/app/AlertDialog$Builder;
+
+    new-instance v1, Landroid/view/ContextThemeWrapper;
+
+    iget-object v3, v0, Lkik/android/util/bk;->e:Landroid/content/Context;
+
+    const v4, 0x7f0b0113
+
+    invoke-direct {v1, v3, v4}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    invoke-direct {v7, v1}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    .line 1253
+    const v1, 0x7f090362
+
+    invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v7, v1}, Landroid/support/v7/app/AlertDialog$Builder;->a(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
+
+    .line 1254
+    new-instance v3, Lcom/kik/view/adapters/y;
+
+    iget-object v1, v0, Lkik/android/util/bk;->e:Landroid/content/Context;
+
+    check-cast v1, Landroid/app/Activity;
+
+    invoke-direct {v3, v1, v2}, Lcom/kik/view/adapters/y;-><init>(Landroid/app/Activity;Ljava/util/List;)V
+
+    .line 1255
+    new-instance v1, Lkik/android/util/bk$1;
+
+    move-object v2, v0
+
+    move-object v4, p5
+
+    move-object v5, p4
+
+    move-object v6, p6
+
+    invoke-direct/range {v1 .. v6}, Lkik/android/util/bk$1;-><init>(Lkik/android/util/bk;Lcom/kik/view/adapters/y;Lkik/android/f/i;Lcom/kik/events/Promise;Ljava/lang/String;)V
+
+    invoke-virtual {v7, v3, v1}, Landroid/support/v7/app/AlertDialog$Builder;->a(Landroid/widget/ListAdapter;Landroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
+
+    .line 1285
+    invoke-virtual {v7}, Landroid/support/v7/app/AlertDialog$Builder;->d()Landroid/support/v7/app/AlertDialog;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/support/v7/app/AlertDialog;->show()V
+
+    goto :goto_0
+.end method
+
+.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lrx/d;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkik/core/datatypes/ac;",
+            "Landroid/content/Context;",
+            "Lcom/kik/android/Mixpanel;",
+            "Lrx/d",
+            "<",
+            "Lkik/core/interfaces/o",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;)V"
+        }
+    .end annotation
+
+    .prologue
+    const/4 v2, 0x1
+
+    .line 131
+    invoke-virtual {p3, v2}, Lrx/d;->a(I)Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {}, Lkik/android/util/bm;->a()Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Lrx/d;->a(I)Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {p1, p0, p2}, Lkik/android/util/bn;->a(Landroid/content/Context;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;)Lrx/functions/b;
+
+    move-result-object v1
+
+    invoke-static {p1}, Lkik/android/util/bo;->a(Landroid/content/Context;)Lrx/functions/b;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lrx/d;->a(Lrx/functions/b;Lrx/functions/b;)Lrx/k;
+
+    .line 160
+    return-void
+.end method
+
 .method public static a(Lkik/android/chat/fragment/KikScopedDialogFragment;Ljava/lang/String;Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
     .locals 9
 
@@ -1489,419 +1902,6 @@
     invoke-virtual {v0}, Landroid/support/v7/app/AlertDialog;->show()V
 
     .line 426
-    return-void
-.end method
-
-.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Landroid/graphics/Bitmap;Ljava/lang/String;)V
-    .locals 8
-
-    .prologue
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    .line 191
-    invoke-static {p0, p1}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 202
-    :goto_0
-    return-void
-
-    .line 195
-    :cond_0
-    const v0, 0x7f090368
-
-    new-array v1, v3, [Ljava/lang/Object;
-
-    iget-object v2, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    aput-object v2, v1, v4
-
-    invoke-static {v0, v1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 196
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, " "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const v1, 0x7f0900e0
-
-    new-array v2, v3, [Ljava/lang/Object;
-
-    iget-object v3, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    aput-object v3, v2, v4
-
-    invoke-static {v1, v2}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 197
-    const v0, 0x7f09035f
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 199
-    new-instance v0, Lkik/android/util/bk;
-
-    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    move-object v1, p1
-
-    move-object v2, p4
-
-    move-object v3, p2
-
-    move-object v5, p3
-
-    invoke-direct/range {v0 .. v5}, Lkik/android/util/bk;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/core/interfaces/b;)V
-
-    .line 200
-    new-instance v1, Lkik/android/util/bp;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v6, v2, v7}, Lkik/android/util/bp;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 201
-    invoke-direct {v0, v1, p5}, Lkik/android/util/bk;->a(Lkik/android/util/bp;Ljava/lang/String;)V
-
-    goto :goto_0
-.end method
-
-.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
-    .locals 9
-
-    .prologue
-    const/4 v5, 0x1
-
-    const/4 v4, 0x0
-
-    .line 164
-    invoke-static {p0, p1}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 187
-    :goto_0
-    return-void
-
-    .line 170
-    :cond_0
-    :try_start_0
-    invoke-static {p0, p1, p4, p2}, Lkik/android/util/f;->a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 171
-    iget-object v1, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v0, v2, v3}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    invoke-static {p1, v1, v0}, Lkik/android/util/f;->a(Landroid/content/Context;Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-    :try_end_0
-    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result-object v2
-
-    .line 180
-    const v0, 0x7f09036a
-
-    new-array v1, v5, [Ljava/lang/Object;
-
-    iget-object v3, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    aput-object v3, v1, v4
-
-    invoke-static {v0, v1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 181
-    const v0, 0x7f090122
-
-    new-array v1, v5, [Ljava/lang/Object;
-
-    iget-object v3, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    aput-object v3, v1, v4
-
-    invoke-static {v0, v1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 182
-    const v0, 0x7f09036d
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 184
-    new-instance v0, Lkik/android/util/bk;
-
-    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    move-object v1, p1
-
-    move-object v3, p2
-
-    move-object v5, p3
-
-    invoke-direct/range {v0 .. v5}, Lkik/android/util/bk;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/core/interfaces/b;)V
-
-    .line 185
-    new-instance v1, Lkik/android/util/bp;
-
-    invoke-direct {v1, v6, v7, v8}, Lkik/android/util/bp;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 186
-    invoke-direct {v0, v1}, Lkik/android/util/bk;->a(Lkik/android/util/bp;)V
-
-    goto :goto_0
-
-    .line 175
-    :catch_0
-    move-exception v0
-
-    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
-
-    .line 176
-    const v0, 0x7f090293
-
-    invoke-static {p1, v0, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
-
-    goto :goto_0
-.end method
-
-.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lcom/kik/events/Promise;Lkik/android/f/i;Ljava/lang/String;)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/core/datatypes/ac;",
-            "Landroid/content/Context;",
-            "Lcom/kik/android/Mixpanel;",
-            "Lkik/core/interfaces/b;",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Lkik/core/net/outgoing/GetGroupKikCodeRequest;",
-            ">;",
-            "Lkik/android/f/i;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    .prologue
-    .line 220
-    invoke-static {p0, p1}, Lkik/android/util/bk;->a(Lkik/core/datatypes/ac;Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 226
-    :goto_0
-    return-void
-
-    .line 224
-    :cond_0
-    new-instance v0, Lkik/android/util/bk;
-
-    const/4 v2, 0x0
-
-    iget-object v4, p0, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
-
-    move-object v1, p1
-
-    move-object v3, p2
-
-    move-object v5, p3
-
-    invoke-direct/range {v0 .. v5}, Lkik/android/util/bk;-><init>(Landroid/content/Context;Landroid/graphics/Bitmap;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/core/interfaces/b;)V
-
-    .line 1347
-    new-instance v1, Landroid/content/Intent;
-
-    const-string v2, "android.intent.action.SEND"
-
-    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 1348
-    const-string v2, "text/plain"
-
-    invoke-virtual {v1, v2}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 1349
-    iget-object v2, v0, Lkik/android/util/bk;->e:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v2, v1, v3}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
-
-    move-result-object v1
-
-    .line 1350
-    sget-object v2, Lkik/android/util/bk;->b:Ljava/util/Set;
-
-    invoke-static {v1, v2}, Lkik/android/util/bk;->a(Ljava/util/List;Ljava/util/Collection;)V
-
-    .line 1351
-    sget-object v2, Lkik/android/util/bk;->c:Ljava/util/List;
-
-    invoke-static {v1, v2}, Lkik/android/util/bk;->a(Ljava/util/List;Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v2
-
-    .line 1252
-    new-instance v7, Landroid/support/v7/app/AlertDialog$Builder;
-
-    new-instance v1, Landroid/view/ContextThemeWrapper;
-
-    iget-object v3, v0, Lkik/android/util/bk;->e:Landroid/content/Context;
-
-    const v4, 0x7f0b0113
-
-    invoke-direct {v1, v3, v4}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
-
-    invoke-direct {v7, v1}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    .line 1253
-    const v1, 0x7f090362
-
-    invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v7, v1}, Landroid/support/v7/app/AlertDialog$Builder;->a(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    .line 1254
-    new-instance v3, Lcom/kik/view/adapters/y;
-
-    iget-object v1, v0, Lkik/android/util/bk;->e:Landroid/content/Context;
-
-    check-cast v1, Landroid/app/Activity;
-
-    invoke-direct {v3, v1, v2}, Lcom/kik/view/adapters/y;-><init>(Landroid/app/Activity;Ljava/util/List;)V
-
-    .line 1255
-    new-instance v1, Lkik/android/util/bk$1;
-
-    move-object v2, v0
-
-    move-object v4, p5
-
-    move-object v5, p4
-
-    move-object v6, p6
-
-    invoke-direct/range {v1 .. v6}, Lkik/android/util/bk$1;-><init>(Lkik/android/util/bk;Lcom/kik/view/adapters/y;Lkik/android/f/i;Lcom/kik/events/Promise;Ljava/lang/String;)V
-
-    invoke-virtual {v7, v3, v1}, Landroid/support/v7/app/AlertDialog$Builder;->a(Landroid/widget/ListAdapter;Landroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    .line 1285
-    invoke-virtual {v7}, Landroid/support/v7/app/AlertDialog$Builder;->d()Landroid/support/v7/app/AlertDialog;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/support/v7/app/AlertDialog;->show()V
-
-    goto :goto_0
-.end method
-
-.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/android/Mixpanel;Lrx/d;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/core/datatypes/ac;",
-            "Landroid/content/Context;",
-            "Lcom/kik/android/Mixpanel;",
-            "Lrx/d",
-            "<",
-            "Lkik/core/interfaces/o",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;>;)V"
-        }
-    .end annotation
-
-    .prologue
-    const/4 v2, 0x1
-
-    .line 131
-    invoke-virtual {p3, v2}, Lrx/d;->a(I)Lrx/d;
-
-    move-result-object v0
-
-    invoke-static {}, Lkik/android/util/bm;->a()Lrx/functions/g;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lrx/d;->a(I)Lrx/d;
-
-    move-result-object v0
-
-    invoke-static {p1, p0, p2}, Lkik/android/util/bn;->a(Landroid/content/Context;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;)Lrx/functions/b;
-
-    move-result-object v1
-
-    invoke-static {p1}, Lkik/android/util/bo;->a(Landroid/content/Context;)Lrx/functions/b;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lrx/d;->a(Lrx/functions/b;Lrx/functions/b;)Lrx/k;
-
-    .line 160
     return-void
 .end method
 

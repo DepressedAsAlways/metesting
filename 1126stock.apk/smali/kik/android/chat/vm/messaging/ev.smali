@@ -410,6 +410,12 @@
 
     move-result v0
 
+    const-string v0, "kinky.newreport"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v0
+
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
@@ -586,6 +592,82 @@
 
     :cond_0
     const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private a(Lkik/core/datatypes/Message;)V
+    .locals 4
+
+    .prologue
+    .line 437
+    if-nez p1, :cond_1
+
+    .line 453
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 441
+    :cond_1
+    invoke-virtual {p1}, Lkik/core/datatypes/Message;->e()J
+
+    move-result-wide v0
+
+    .line 443
+    iget-wide v2, p0, Lkik/android/chat/vm/messaging/ev;->H:J
+
+    invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->min(JJ)J
+
+    move-result-wide v2
+
+    iput-wide v2, p0, Lkik/android/chat/vm/messaging/ev;->H:J
+
+    .line 444
+    iget-wide v2, p0, Lkik/android/chat/vm/messaging/ev;->J:J
+
+    invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->max(JJ)J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lkik/android/chat/vm/messaging/ev;->J:J
+
+    .line 446
+    iget-wide v0, p0, Lkik/android/chat/vm/messaging/ev;->J:J
+
+    invoke-virtual {p1}, Lkik/core/datatypes/Message;->e()J
+
+    move-result-wide v2
+
+    cmp-long v0, v0, v2
+
+    if-nez v0, :cond_2
+
+    .line 447
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/ev;->e:Lkik/core/interfaces/ad;
+
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/ev;->s:Lkik/core/datatypes/f;
+
+    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/ad;->a(Lkik/core/datatypes/f;Lkik/core/datatypes/Message;)V
+
+    .line 450
+    :cond_2
+    invoke-direct {p0}, Lkik/android/chat/vm/messaging/ev;->u()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 451
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/ev;->z:Lrx/subjects/a;
+
+    const/4 v1, 0x0
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
     goto :goto_0
 .end method
@@ -1192,82 +1274,6 @@
     move v2, v0
 
     goto/16 :goto_0
-.end method
-
-.method private a(Lkik/core/datatypes/Message;)V
-    .locals 4
-
-    .prologue
-    .line 437
-    if-nez p1, :cond_1
-
-    .line 453
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 441
-    :cond_1
-    invoke-virtual {p1}, Lkik/core/datatypes/Message;->e()J
-
-    move-result-wide v0
-
-    .line 443
-    iget-wide v2, p0, Lkik/android/chat/vm/messaging/ev;->H:J
-
-    invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->min(JJ)J
-
-    move-result-wide v2
-
-    iput-wide v2, p0, Lkik/android/chat/vm/messaging/ev;->H:J
-
-    .line 444
-    iget-wide v2, p0, Lkik/android/chat/vm/messaging/ev;->J:J
-
-    invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->max(JJ)J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Lkik/android/chat/vm/messaging/ev;->J:J
-
-    .line 446
-    iget-wide v0, p0, Lkik/android/chat/vm/messaging/ev;->J:J
-
-    invoke-virtual {p1}, Lkik/core/datatypes/Message;->e()J
-
-    move-result-wide v2
-
-    cmp-long v0, v0, v2
-
-    if-nez v0, :cond_2
-
-    .line 447
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/ev;->e:Lkik/core/interfaces/ad;
-
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/ev;->s:Lkik/core/datatypes/f;
-
-    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/ad;->a(Lkik/core/datatypes/f;Lkik/core/datatypes/Message;)V
-
-    .line 450
-    :cond_2
-    invoke-direct {p0}, Lkik/android/chat/vm/messaging/ev;->u()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 451
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/ev;->z:Lrx/subjects/a;
-
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    goto :goto_0
 .end method
 
 .method static synthetic b(Lkik/android/chat/vm/messaging/ev;Ljava/lang/String;)Ljava/lang/Boolean;

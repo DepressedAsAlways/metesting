@@ -400,6 +400,27 @@
     return-void
 .end method
 
+.method private a(Lkik/core/net/outgoing/MatchingRequest;)V
+    .locals 2
+
+    .prologue
+    .line 595
+    iget-object v0, p0, Lkik/android/addressbook/a;->k:Lkik/core/interfaces/ICommunication;
+
+    invoke-interface {v0, p1}, Lkik/core/interfaces/ICommunication;->a(Lkik/core/net/outgoing/j;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    new-instance v1, Lkik/android/addressbook/a$6;
+
+    invoke-direct {v1, p0, p1}, Lkik/android/addressbook/a$6;-><init>(Lkik/android/addressbook/a;Lkik/core/net/outgoing/MatchingRequest;)V
+
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
+    .line 637
+    return-void
+.end method
+
 .method static synthetic a(Lkik/android/addressbook/a;Ljava/lang/String;)V
     .locals 7
 
@@ -698,27 +719,6 @@
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
-.end method
-
-.method private a(Lkik/core/net/outgoing/MatchingRequest;)V
-    .locals 2
-
-    .prologue
-    .line 595
-    iget-object v0, p0, Lkik/android/addressbook/a;->k:Lkik/core/interfaces/ICommunication;
-
-    invoke-interface {v0, p1}, Lkik/core/interfaces/ICommunication;->a(Lkik/core/net/outgoing/j;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    new-instance v1, Lkik/android/addressbook/a$6;
-
-    invoke-direct {v1, p0, p1}, Lkik/android/addressbook/a$6;-><init>(Lkik/android/addressbook/a;Lkik/core/net/outgoing/MatchingRequest;)V
-
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
-
-    .line 637
-    return-void
 .end method
 
 .method static synthetic b(Lkik/android/addressbook/a;)Lkik/core/interfaces/ag;

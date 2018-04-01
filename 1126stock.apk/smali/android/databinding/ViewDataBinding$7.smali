@@ -43,7 +43,6 @@
     .line 251
     iget-object v0, p0, Landroid/databinding/ViewDataBinding$7;->this$0:Landroid/databinding/ViewDataBinding;
 
-    # getter for: Landroid/databinding/ViewDataBinding;->mRebindRunnable:Ljava/lang/Runnable;
     invoke-static {v0}, Landroid/databinding/ViewDataBinding;->access$100(Landroid/databinding/ViewDataBinding;)Ljava/lang/Runnable;
 
     move-result-object v0

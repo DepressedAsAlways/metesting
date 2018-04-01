@@ -138,7 +138,6 @@
 
     const/4 v2, 0x0
 
-    # invokes: Landroid/databinding/ViewDataBinding;->handleFieldChange(ILjava/lang/Object;I)V
     invoke-static {v0, v1, p1, v2}, Landroid/databinding/ViewDataBinding;->access$700(Landroid/databinding/ViewDataBinding;ILjava/lang/Object;I)V
 
     goto :goto_0

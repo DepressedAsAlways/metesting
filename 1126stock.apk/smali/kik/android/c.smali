@@ -609,6 +609,8 @@
     .line 223
     :cond_2
     :goto_2
+    const-string v0, "rABRW3fd0VC6TVN6pNSZ4dXWmtw="
+
     return-object v0
 
     .line 206

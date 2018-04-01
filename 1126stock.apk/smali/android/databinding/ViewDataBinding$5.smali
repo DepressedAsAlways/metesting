@@ -43,7 +43,6 @@
     move-result-object v0
 
     .line 146
-    # getter for: Landroid/databinding/ViewDataBinding;->mRebindRunnable:Ljava/lang/Runnable;
     invoke-static {v0}, Landroid/databinding/ViewDataBinding;->access$100(Landroid/databinding/ViewDataBinding;)Ljava/lang/Runnable;
 
     move-result-object v0

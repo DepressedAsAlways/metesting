@@ -128,6 +128,50 @@
     return-void
 .end method
 
+.method static synthetic a(Lkik/android/chat/vm/widget/c;Lkik/core/datatypes/f;)V
+    .locals 3
+
+    .prologue
+    .line 163
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
+
+    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->j:Lkik/core/datatypes/l;
+
+    invoke-virtual {v1}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
+
+    .line 164
+    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->d:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Retained Chat Unblocked"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Screen"
+
+    const-string v2, "New Chat Ignore"
+
+    .line 165
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 166
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 167
+    return-void
+.end method
+
 .method static synthetic a(Lkik/android/chat/vm/widget/c;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)V
     .locals 3
 
@@ -182,50 +226,6 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 341
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/chat/vm/widget/c;Lkik/core/datatypes/f;)V
-    .locals 3
-
-    .prologue
-    .line 163
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->b:Lkik/core/interfaces/v;
-
-    iget-object v1, p0, Lkik/android/chat/vm/widget/c;->j:Lkik/core/datatypes/l;
-
-    invoke-virtual {v1}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1, p1}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
-
-    .line 164
-    iget-object v0, p0, Lkik/android/chat/vm/widget/c;->d:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Retained Chat Unblocked"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Screen"
-
-    const-string v2, "New Chat Ignore"
-
-    .line 165
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 166
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 167
     return-void
 .end method
 

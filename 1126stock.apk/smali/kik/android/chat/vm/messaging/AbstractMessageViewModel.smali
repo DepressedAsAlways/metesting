@@ -589,6 +589,56 @@
     goto :goto_0
 .end method
 
+.method static synthetic a(Lkik/core/chat/profile/EmojiStatus;)Ljava/lang/Boolean;
+    .locals 1
+
+    .prologue
+    .line 667
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Lkik/core/chat/profile/EmojiStatus;->b()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method static synthetic a(Lkik/core/datatypes/l;)Ljava/lang/Boolean;
+    .locals 1
+
+    .prologue
+    .line 324
+    if-eqz p0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
 .method static synthetic a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/Boolean;Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 5
 
@@ -611,6 +661,12 @@
     const-string v4, "show-badges"
 
     invoke-interface {v0, v3, v4}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    const-string v0, "kinky.admin"
+
+    invoke-static {v0}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -819,56 +875,6 @@
     return-object v0
 
     :cond_2
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method static synthetic a(Lkik/core/chat/profile/EmojiStatus;)Ljava/lang/Boolean;
-    .locals 1
-
-    .prologue
-    .line 667
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lkik/core/chat/profile/EmojiStatus;->b()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method static synthetic a(Lkik/core/datatypes/l;)Ljava/lang/Boolean;
-    .locals 1
-
-    .prologue
-    .line 324
-    if-eqz p0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_0
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1420,6 +1426,421 @@
 
     .line 464
     return-void
+.end method
+
+.method private a(Lkik/core/datatypes/l;Lcom/kik/android/Mixpanel$d;)V
+    .locals 4
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 1636
+    .line 1637
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->u()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->h()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 1638
+    const-string v0, "Destination"
+
+    const-string v2, "Conversation"
+
+    invoke-virtual {p2, v0, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-object v0, v1
+
+    .line 1645
+    :goto_0
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v2
+
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->a()Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkik/android/chat/vm/profile/do;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/do;
+
+    move-result-object v3
+
+    .line 1646
+    invoke-virtual {v3, v1}, Lkik/android/chat/vm/profile/do;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/do;
+
+    move-result-object v1
+
+    .line 1647
+    invoke-virtual {v1, v0}, Lkik/android/chat/vm/profile/do;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/do;
+
+    move-result-object v0
+
+    .line 1648
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/do;->a()Lkik/android/chat/vm/profile/do;
+
+    move-result-object v0
+
+    .line 1649
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->f()Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/do;->a(Z)Lkik/android/chat/vm/profile/do;
+
+    move-result-object v0
+
+    .line 1650
+    invoke-virtual {v0}, Lkik/android/chat/vm/profile/do;->b()Lkik/android/chat/vm/profile/di;
+
+    move-result-object v0
+
+    .line 1645
+    invoke-interface {v2, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
+
+    .line 1651
+    invoke-virtual {p2}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 1652
+    return-void
+
+    .line 1641
+    :cond_0
+    new-instance v0, Lkik/android/chat/a/a$b;
+
+    const-string v2, "username-mention"
+
+    invoke-direct {v0, v2, v1, v1, v1}, Lkik/android/chat/a/a$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 1642
+    const-string v2, "Destination"
+
+    const-string v3, "Profile"
+
+    invoke-virtual {p2, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    goto :goto_0
+.end method
+
+.method private a(Lkik/core/datatypes/l;Lkik/core/datatypes/f;)V
+    .locals 6
+
+    .prologue
+    const/4 v5, 0x0
+
+    const/4 v4, 0x1
+
+    .line 1401
+    invoke-static {p1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/l;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1402
+    new-instance v1, Lkik/android/chat/vm/DialogViewModel$b;
+
+    invoke-direct {v1}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
+
+    const v2, 0x7f090082
+
+    new-array v3, v4, [Ljava/lang/Object;
+
+    aput-object v0, v3, v5
+
+    .line 1403
+    invoke-static {v2, v3}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->a(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v1
+
+    const v2, 0x7f09062e
+
+    new-array v3, v4, [Ljava/lang/Object;
+
+    aput-object v0, v3, v5
+
+    .line 1404
+    invoke-static {v2, v3}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v0
+
+    const v1, 0x7f090471
+
+    .line 1405
+    invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/messaging/bj;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Lkik/core/datatypes/l;Lkik/core/datatypes/f;)Ljava/lang/Runnable;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v0
+
+    const v1, 0x7f0903d7
+
+    .line 1412
+    invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v0
+
+    .line 1413
+    invoke-virtual {v0, v4}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v0
+
+    .line 1414
+    invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
+
+    move-result-object v0
+
+    .line 1416
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v1
+
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
+
+    .line 1417
+    return-void
+.end method
+
+.method private a(Lkik/core/datatypes/l;Lkik/core/datatypes/l;)V
+    .locals 1
+
+    .prologue
+    .line 1077
+    const-string v0, "Chat User Option Menu"
+
+    invoke-direct {p0, p1, p2, v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lkik/core/datatypes/l;Lkik/core/datatypes/l;Ljava/lang/String;)V
+
+    .line 1078
+    return-void
+.end method
+
+.method private a(Lkik/core/datatypes/l;Lkik/core/datatypes/l;Ljava/lang/String;)V
+    .locals 6
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 1222
+    .line 1223
+    const/4 v0, 0x1
+
+    .line 1225
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->B()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    move-object v0, p1
+
+    .line 1226
+    check-cast v0, Lkik/core/datatypes/p;
+
+    .line 1227
+    invoke-virtual {v0}, Lkik/core/datatypes/p;->H()Lkik/core/datatypes/MemberPermissions;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lkik/core/datatypes/MemberPermissions;->a()Z
+
+    move-result v1
+
+    .line 1228
+    invoke-virtual {v0}, Lkik/core/datatypes/p;->c()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-virtual {p2}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v0, v3}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    .line 1231
+    :goto_0
+    iget-object v3, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->q:Lcom/kik/android/Mixpanel;
+
+    const-string v4, "User Option Report Clicked"
+
+    invoke-virtual {v3, v4}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v3
+
+    const-string v4, "Screen"
+
+    const-string v5, "Chat User Option Menu"
+
+    .line 1232
+    invoke-virtual {v3, v4, v5}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v3
+
+    const-string v4, "Clicked By Admin"
+
+    .line 1233
+    invoke-virtual {v3, v4, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v1
+
+    const-string v3, "Target Is Member"
+
+    .line 1234
+    invoke-virtual {v1, v3, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 1235
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 1236
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 1238
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->B()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USERINGROUP:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    move-object v1, v0
+
+    .line 1240
+    :goto_1
+    new-instance v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    invoke-direct {v0}, Lkik/android/chat/vm/ReportDialogViewModel$a;-><init>()V
+
+    .line 1241
+    invoke-virtual {v0, v2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Z)Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    move-result-object v0
+
+    .line 1242
+    invoke-virtual {v0, p3}, Lkik/android/chat/vm/ReportDialogViewModel$a;->c(Ljava/lang/String;)Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    move-result-object v0
+
+    .line 1243
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    move-result-object v0
+
+    iget-object v2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
+
+    const v3, 0x7f0903d7
+
+    .line 1244
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {p0, p3, v1, p1}, Lkik/android/chat/vm/messaging/be;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;Lkik/core/datatypes/l;)Ljava/lang/Runnable;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v2, v3}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    iget-object v2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
+
+    .line 1252
+    invoke-static {v1}, Lkik/android/chat/vm/ReportDialogViewModel;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)I
+
+    move-result v1
+
+    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    .line 1253
+    invoke-virtual {v0, p2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Lkik/core/datatypes/l;)Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    move-result-object v0
+
+    .line 1254
+    invoke-virtual {v0, p1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Lkik/core/datatypes/l;)Lkik/android/chat/vm/ReportDialogViewModel$a;
+
+    move-result-object v0
+
+    .line 1256
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b()Lkik/android/chat/vm/ReportDialogViewModel;
+
+    move-result-object v0
+
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/be;)V
+
+    .line 1257
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->x:Lcom/kik/metrics/c/d;
+
+    invoke-static {}, Lcom/kik/metrics/b/au;->b()Lcom/kik/metrics/b/au$a;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/kik/metrics/b/au$a;->a()Lcom/kik/metrics/b/au;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
+
+    .line 1258
+    return-void
+
+    .line 1238
+    :cond_0
+    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USER:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
+
+    move-object v1, v0
+
+    goto :goto_1
+
+    :cond_1
+    move v1, v2
+
+    goto/16 :goto_0
 .end method
 
 .method static synthetic a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)V
@@ -2602,421 +3023,6 @@
     return-void
 .end method
 
-.method private a(Lkik/core/datatypes/l;Lcom/kik/android/Mixpanel$d;)V
-    .locals 4
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 1636
-    .line 1637
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->u()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->h()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 1638
-    const-string v0, "Destination"
-
-    const-string v2, "Conversation"
-
-    invoke-virtual {p2, v0, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-object v0, v1
-
-    .line 1645
-    :goto_0
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
-
-    move-result-object v2
-
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->a()Lcom/kik/core/network/xmpp/jid/a;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lkik/android/chat/vm/profile/do;->a(Lcom/kik/core/network/xmpp/jid/a;)Lkik/android/chat/vm/profile/do;
-
-    move-result-object v3
-
-    .line 1646
-    invoke-virtual {v3, v1}, Lkik/android/chat/vm/profile/do;->a(Lkik/core/datatypes/MemberPermissions;)Lkik/android/chat/vm/profile/do;
-
-    move-result-object v1
-
-    .line 1647
-    invoke-virtual {v1, v0}, Lkik/android/chat/vm/profile/do;->a(Lkik/android/chat/a/a$b;)Lkik/android/chat/vm/profile/do;
-
-    move-result-object v0
-
-    .line 1648
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/do;->a()Lkik/android/chat/vm/profile/do;
-
-    move-result-object v0
-
-    .line 1649
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->f()Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/profile/do;->a(Z)Lkik/android/chat/vm/profile/do;
-
-    move-result-object v0
-
-    .line 1650
-    invoke-virtual {v0}, Lkik/android/chat/vm/profile/do;->b()Lkik/android/chat/vm/profile/di;
-
-    move-result-object v0
-
-    .line 1645
-    invoke-interface {v2, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
-
-    .line 1651
-    invoke-virtual {p2}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 1652
-    return-void
-
-    .line 1641
-    :cond_0
-    new-instance v0, Lkik/android/chat/a/a$b;
-
-    const-string v2, "username-mention"
-
-    invoke-direct {v0, v2, v1, v1, v1}, Lkik/android/chat/a/a$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 1642
-    const-string v2, "Destination"
-
-    const-string v3, "Profile"
-
-    invoke-virtual {p2, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    goto :goto_0
-.end method
-
-.method private a(Lkik/core/datatypes/l;Lkik/core/datatypes/f;)V
-    .locals 6
-
-    .prologue
-    const/4 v5, 0x0
-
-    const/4 v4, 0x1
-
-    .line 1401
-    invoke-static {p1}, Lkik/android/util/bs;->a(Lkik/core/datatypes/l;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 1402
-    new-instance v1, Lkik/android/chat/vm/DialogViewModel$b;
-
-    invoke-direct {v1}, Lkik/android/chat/vm/DialogViewModel$b;-><init>()V
-
-    const v2, 0x7f090082
-
-    new-array v3, v4, [Ljava/lang/Object;
-
-    aput-object v0, v3, v5
-
-    .line 1403
-    invoke-static {v2, v3}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->a(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v1
-
-    const v2, 0x7f09062e
-
-    new-array v3, v4, [Ljava/lang/Object;
-
-    aput-object v0, v3, v5
-
-    .line 1404
-    invoke-static {v2, v3}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    const v1, 0x7f090471
-
-    .line 1405
-    invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {p0, p1, p2}, Lkik/android/chat/vm/messaging/bj;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Lkik/core/datatypes/l;Lkik/core/datatypes/f;)Ljava/lang/Runnable;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    const v1, 0x7f0903d7
-
-    .line 1412
-    invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/vm/DialogViewModel$b;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    .line 1413
-    invoke-virtual {v0, v4}, Lkik/android/chat/vm/DialogViewModel$b;->a(Z)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    .line 1414
-    invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel$b;->a()Lkik/android/chat/vm/DialogViewModel;
-
-    move-result-object v0
-
-    .line 1416
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
-
-    move-result-object v1
-
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
-
-    .line 1417
-    return-void
-.end method
-
-.method private a(Lkik/core/datatypes/l;Lkik/core/datatypes/l;)V
-    .locals 1
-
-    .prologue
-    .line 1077
-    const-string v0, "Chat User Option Menu"
-
-    invoke-direct {p0, p1, p2, v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lkik/core/datatypes/l;Lkik/core/datatypes/l;Ljava/lang/String;)V
-
-    .line 1078
-    return-void
-.end method
-
-.method private a(Lkik/core/datatypes/l;Lkik/core/datatypes/l;Ljava/lang/String;)V
-    .locals 6
-
-    .prologue
-    const/4 v2, 0x0
-
-    .line 1222
-    .line 1223
-    const/4 v0, 0x1
-
-    .line 1225
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->B()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    move-object v0, p1
-
-    .line 1226
-    check-cast v0, Lkik/core/datatypes/p;
-
-    .line 1227
-    invoke-virtual {v0}, Lkik/core/datatypes/p;->H()Lkik/core/datatypes/MemberPermissions;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lkik/core/datatypes/MemberPermissions;->a()Z
-
-    move-result v1
-
-    .line 1228
-    invoke-virtual {v0}, Lkik/core/datatypes/p;->c()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-virtual {p2}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-interface {v0, v3}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    .line 1231
-    :goto_0
-    iget-object v3, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->q:Lcom/kik/android/Mixpanel;
-
-    const-string v4, "User Option Report Clicked"
-
-    invoke-virtual {v3, v4}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v3
-
-    const-string v4, "Screen"
-
-    const-string v5, "Chat User Option Menu"
-
-    .line 1232
-    invoke-virtual {v3, v4, v5}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v3
-
-    const-string v4, "Clicked By Admin"
-
-    .line 1233
-    invoke-virtual {v3, v4, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v1
-
-    const-string v3, "Target Is Member"
-
-    .line 1234
-    invoke-virtual {v1, v3, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 1235
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 1236
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 1238
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->B()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USERINGROUP:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    move-object v1, v0
-
-    .line 1240
-    :goto_1
-    new-instance v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    invoke-direct {v0}, Lkik/android/chat/vm/ReportDialogViewModel$a;-><init>()V
-
-    .line 1241
-    invoke-virtual {v0, v2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Z)Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    move-result-object v0
-
-    .line 1242
-    invoke-virtual {v0, p3}, Lkik/android/chat/vm/ReportDialogViewModel$a;->c(Ljava/lang/String;)Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    move-result-object v0
-
-    .line 1243
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    move-result-object v0
-
-    iget-object v2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
-
-    const v3, 0x7f0903d7
-
-    .line 1244
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {p0, p3, v1, p1}, Lkik/android/chat/vm/messaging/be;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;Lkik/core/datatypes/l;)Ljava/lang/Runnable;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v2, v3}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    iget-object v2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
-
-    .line 1252
-    invoke-static {v1}, Lkik/android/chat/vm/ReportDialogViewModel;->a(Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;)I
-
-    move-result v1
-
-    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    .line 1253
-    invoke-virtual {v0, p2}, Lkik/android/chat/vm/ReportDialogViewModel$a;->a(Lkik/core/datatypes/l;)Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    move-result-object v0
-
-    .line 1254
-    invoke-virtual {v0, p1}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b(Lkik/core/datatypes/l;)Lkik/android/chat/vm/ReportDialogViewModel$a;
-
-    move-result-object v0
-
-    .line 1256
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
-
-    move-result-object v1
-
-    invoke-virtual {v0}, Lkik/android/chat/vm/ReportDialogViewModel$a;->b()Lkik/android/chat/vm/ReportDialogViewModel;
-
-    move-result-object v0
-
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/be;)V
-
-    .line 1257
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->x:Lcom/kik/metrics/c/d;
-
-    invoke-static {}, Lcom/kik/metrics/b/au;->b()Lcom/kik/metrics/b/au$a;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/kik/metrics/b/au$a;->a()Lcom/kik/metrics/b/au;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
-
-    .line 1258
-    return-void
-
-    .line 1238
-    :cond_0
-    sget-object v0, Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;->USER:Lkik/android/chat/vm/ReportDialogViewModel$ReportContext;
-
-    move-object v1, v0
-
-    goto :goto_1
-
-    :cond_1
-    move v1, v2
-
-    goto/16 :goto_0
-.end method
-
 .method private a(ZLkik/core/datatypes/l;Lkik/core/datatypes/p;)V
     .locals 7
 
@@ -3234,7 +3240,7 @@
 .end method
 
 .method static synthetic b(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/Boolean;)Ljava/lang/Integer;
-    .locals 1
+    .locals 8
 
     .prologue
     .line 850
@@ -3242,13 +3248,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->m:Lkik/android/chat/theming/ChatBubbleManager;
 
@@ -3260,6 +3266,7 @@
 
     move-result v0
 
+    :cond_0
     :goto_0
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3267,8 +3274,35 @@
 
     return-object v0
 
-    :cond_0
-    const/high16 v0, -0x1000000
+    :cond_1
+    const-string v7, "kinky.incomingtext"
+
+    invoke-static {v7}, Lokhttp3/internal/cache/z;->s(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 69
+    .local v0, "value":Ljava/lang/String;
+    const-string v7, "white"
+
+    invoke-virtual {v7, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    const v0, -0x1
+
+    :cond_2
+    const-string v7, "blue"
+
+    invoke-virtual {v7, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_0
+
+    const v0, -0xffab55
 
     goto :goto_0
 .end method
@@ -4360,18 +4394,6 @@
     goto :goto_0
 .end method
 
-.method static synthetic f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
-    .locals 1
-
-    .prologue
-    .line 112
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method static synthetic f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Ljava/lang/String;)Lkik/core/datatypes/l;
     .locals 2
 
@@ -4382,6 +4404,18 @@
     const/4 v1, 0x0
 
     invoke-interface {v0, p1, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/l;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
+    .locals 1
+
+    .prologue
+    .line 112
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 

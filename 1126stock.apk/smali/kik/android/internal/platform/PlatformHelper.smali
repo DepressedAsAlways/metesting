@@ -306,29 +306,6 @@
     return-object v0
 .end method
 
-.method public static a()Lkik/android/internal/platform/PlatformHelper;
-    .locals 1
-
-    .prologue
-    .line 211
-    sget-object v0, Lkik/android/internal/platform/PlatformHelper;->p:Lkik/android/internal/platform/PlatformHelper;
-
-    if-nez v0, :cond_0
-
-    .line 212
-    new-instance v0, Lkik/android/internal/platform/PlatformHelper;
-
-    invoke-direct {v0}, Lkik/android/internal/platform/PlatformHelper;-><init>()V
-
-    sput-object v0, Lkik/android/internal/platform/PlatformHelper;->p:Lkik/android/internal/platform/PlatformHelper;
-
-    .line 214
-    :cond_0
-    sget-object v0, Lkik/android/internal/platform/PlatformHelper;->p:Lkik/android/internal/platform/PlatformHelper;
-
-    return-object v0
-.end method
-
 .method private a(Landroid/content/Intent;)Lkik/core/datatypes/messageExtensions/ContentMessage;
     .locals 14
 
@@ -862,13 +839,13 @@
 .end method
 
 .method public static a(Ljava/lang/String;I)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 4
+    .locals 9
 
     .prologue
     .line 548
     new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    const-string v1, "com.kik.ext.video-gallery"
+    const-string v1, "com.kik.ext-video-camera"
 
     invoke-direct {v0, v1, p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -882,8 +859,30 @@
     .line 550
     const-string v1, "allow-forward"
 
+    const-string v2, "true"
+
+    const-string v8, "kinky.forwardvoice"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
     const-string v2, "false"
 
+    :cond_0
+    const-string v8, "kinky.forward"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    const-string v2, "false"
+
+    :cond_1
     invoke-virtual {v0, v1, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 551
@@ -1094,205 +1093,8 @@
     goto :goto_1
 .end method
 
-.method public static a(Lkik/android/gifs/api/GifResponseData;Landroid/graphics/Bitmap;)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 7
-
-    .prologue
-    .line 924
-    :try_start_0
-    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    const-string v0, "com.kik.ext.gif"
-
-    invoke-direct {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;-><init>(Ljava/lang/String;)V
-
-    .line 925
-    invoke-static {p1}, Lkik/android/util/h;->d(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 926
-    sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
-
-    const/16 v3, 0x50
-
-    invoke-static {v0, v2, v3}, Lcom/kik/util/cr;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
-
-    move-result-object v0
-
-    .line 928
-    const-string v2, "layout"
-
-    sget-object v3, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
-
-    invoke-virtual {v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->layoutString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 929
-    const-string v2, "preview"
-
-    new-instance v3, Lkik/core/datatypes/b;
-
-    invoke-direct {v3, v0}, Lkik/core/datatypes/b;-><init>([B)V
-
-    invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
-
-    .line 930
-    const-string v0, "icon"
-
-    new-instance v2, Lkik/core/datatypes/b;
-
-    const v3, 0x7f0200d2
-
-    invoke-static {v3}, Lkik/android/chat/KikApplication;->b(I)Landroid/graphics/Bitmap;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lkik/android/util/f;->a(Landroid/graphics/Bitmap;)[B
-
-    move-result-object v3
-
-    invoke-direct {v2, v3}, Lkik/core/datatypes/b;-><init>([B)V
-
-    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
-
-    .line 931
-    const-string v0, "allow-forward"
-
-    const-string v2, "true"
-
-    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 932
-    const-string v0, "true"
-
-    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->k(Ljava/lang/String;)V
-
-    .line 933
-    const-string v0, "true"
-
-    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->l(Ljava/lang/String;)V
-
-    .line 934
-    const-string v0, "true"
-
-    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->j(Ljava/lang/String;)V
-
-    .line 935
-    const-string v0, "true"
-
-    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->m(Ljava/lang/String;)V
-
-    .line 937
-    const-string v0, "sponsored-action"
-
-    invoke-virtual {p0}, Lkik/android/gifs/api/GifResponseData;->d()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 938
-    const-string v0, "sponsored-title"
-
-    invoke-virtual {p0}, Lkik/android/gifs/api/GifResponseData;->c()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 939
-    const-string v0, "sponsored-url"
-
-    invoke-virtual {p0}, Lkik/android/gifs/api/GifResponseData;->e()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 941
-    sget-object v3, Lkik/android/internal/platform/PlatformHelper;->d:[Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;
-
-    array-length v4, v3
-
-    const/4 v0, 0x0
-
-    move v2, v0
-
-    :goto_0
-    if-ge v2, v4, :cond_1
-
-    aget-object v5, v3, v2
-
-    .line 942
-    sget-object v0, Lkik/android/internal/platform/PlatformHelper;->e:Ljava/util/Map;
-
-    invoke-interface {v0, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/android/gifs/api/GifResponseData$MediaType;
-
-    invoke-virtual {p0, v0}, Lkik/android/gifs/api/GifResponseData;->a(Lkik/android/gifs/api/GifResponseData$MediaType;)Lkik/android/gifs/api/e;
-
-    move-result-object v0
-
-    .line 943
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lkik/android/gifs/api/e;->a()Ljava/lang/String;
-
-    move-result-object v6
-
-    if-eqz v6, :cond_0
-
-    .line 944
-    invoke-virtual {v0}, Lkik/android/gifs/api/e;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v6, "video"
-
-    invoke-virtual {v1, v0, v6, v5}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;)V
-    :try_end_0
-    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 941
-    :cond_0
-    add-int/lit8 v0, v2, 0x1
-
-    move v2, v0
-
-    goto :goto_0
-
-    :cond_1
-    move-object v0, v1
-
-    .line 951
-    :goto_1
-    return-object v0
-
-    .line 950
-    :catch_0
-    move-exception v0
-
-    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
-
-    .line 951
-    const/4 v0, 0x0
-
-    goto :goto_1
-.end method
-
 .method public static a(Lkik/core/datatypes/y;[BLkik/android/internal/platform/PlatformHelper$StickerSource;)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 3
+    .locals 9
 
     .prologue
     .line 968
@@ -1375,8 +1177,30 @@
     .line 984
     const-string v1, "allow-forward"
 
+    const-string v2, "true"
+
+    const-string v8, "kinky.forwardsticker"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
     const-string v2, "false"
 
+    :cond_0
+    const-string v8, "kinky.forward"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    const-string v2, "false"
+
+    :cond_1
     invoke-virtual {v0, v1, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 985
@@ -1407,6 +1231,248 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method public static a(Lkik/android/gifs/api/GifResponseData;Landroid/graphics/Bitmap;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .locals 9
+
+    .prologue
+    .line 924
+    :try_start_0
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage;
+
+    const-string v0, "com.kik.ext.gif"
+
+    invoke-direct {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;-><init>(Ljava/lang/String;)V
+
+    .line 925
+    invoke-static {p1}, Lkik/android/util/h;->d(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    .line 926
+    sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
+
+    const/16 v3, 0x50
+
+    invoke-static {v0, v2, v3}, Lcom/kik/util/cr;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
+
+    move-result-object v0
+
+    .line 928
+    const-string v2, "layout"
+
+    sget-object v3, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    invoke-virtual {v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->layoutString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 929
+    const-string v2, "preview"
+
+    new-instance v3, Lkik/core/datatypes/b;
+
+    invoke-direct {v3, v0}, Lkik/core/datatypes/b;-><init>([B)V
+
+    invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
+
+    .line 930
+    const-string v0, "icon"
+
+    new-instance v2, Lkik/core/datatypes/b;
+
+    const v3, 0x7f0200d2
+
+    invoke-static {v3}, Lkik/android/chat/KikApplication;->b(I)Landroid/graphics/Bitmap;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkik/android/internal/platform/PlatformHelper;->a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkik/android/util/f;->a(Landroid/graphics/Bitmap;)[B
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Lkik/core/datatypes/b;-><init>([B)V
+
+    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
+
+    .line 931
+    const-string v0, "allow-forward"
+
+    const-string v2, "true"
+
+    const-string v8, "kinky.forwardgif"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    const-string v2, "false"
+
+    :cond_0
+    const-string v8, "kinky.forward"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    const-string v2, "false"
+
+    :cond_1
+    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 932
+    const-string v0, "true"
+
+    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->k(Ljava/lang/String;)V
+
+    .line 933
+    const-string v0, "true"
+
+    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->l(Ljava/lang/String;)V
+
+    .line 934
+    const-string v0, "true"
+
+    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->j(Ljava/lang/String;)V
+
+    .line 935
+    const-string v0, "true"
+
+    invoke-virtual {v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->m(Ljava/lang/String;)V
+
+    .line 937
+    const-string v0, "sponsored-action"
+
+    invoke-virtual {p0}, Lkik/android/gifs/api/GifResponseData;->d()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 938
+    const-string v0, "sponsored-title"
+
+    invoke-virtual {p0}, Lkik/android/gifs/api/GifResponseData;->c()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 939
+    const-string v0, "sponsored-url"
+
+    invoke-virtual {p0}, Lkik/android/gifs/api/GifResponseData;->e()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 941
+    sget-object v3, Lkik/android/internal/platform/PlatformHelper;->d:[Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;
+
+    array-length v4, v3
+
+    const/4 v0, 0x0
+
+    move v2, v0
+
+    :goto_0
+    if-ge v2, v4, :cond_3
+
+    aget-object v5, v3, v2
+
+    .line 942
+    sget-object v0, Lkik/android/internal/platform/PlatformHelper;->e:Ljava/util/Map;
+
+    invoke-interface {v0, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/android/gifs/api/GifResponseData$MediaType;
+
+    invoke-virtual {p0, v0}, Lkik/android/gifs/api/GifResponseData;->a(Lkik/android/gifs/api/GifResponseData$MediaType;)Lkik/android/gifs/api/e;
+
+    move-result-object v0
+
+    .line 943
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Lkik/android/gifs/api/e;->a()Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_2
+
+    .line 944
+    invoke-virtual {v0}, Lkik/android/gifs/api/e;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v6, "video"
+
+    invoke-virtual {v1, v0, v6, v5}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;)V
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 941
+    :cond_2
+    add-int/lit8 v0, v2, 0x1
+
+    move v2, v0
+
+    goto :goto_0
+
+    :cond_3
+    move-object v0, v1
+
+    .line 951
+    :goto_1
+    return-object v0
+
+    .line 950
+    :catch_0
+    move-exception v0
+
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    .line 951
+    const/4 v0, 0x0
+
+    goto :goto_1
+.end method
+
+.method public static a()Lkik/android/internal/platform/PlatformHelper;
+    .locals 1
+
+    .prologue
+    .line 211
+    sget-object v0, Lkik/android/internal/platform/PlatformHelper;->p:Lkik/android/internal/platform/PlatformHelper;
+
+    if-nez v0, :cond_0
+
+    .line 212
+    new-instance v0, Lkik/android/internal/platform/PlatformHelper;
+
+    invoke-direct {v0}, Lkik/android/internal/platform/PlatformHelper;-><init>()V
+
+    sput-object v0, Lkik/android/internal/platform/PlatformHelper;->p:Lkik/android/internal/platform/PlatformHelper;
+
+    .line 214
+    :cond_0
+    sget-object v0, Lkik/android/internal/platform/PlatformHelper;->p:Lkik/android/internal/platform/PlatformHelper;
+
+    return-object v0
 .end method
 
 .method private static a(ILkik/core/datatypes/messageExtensions/ContentMessage;)V
@@ -2123,30 +2189,6 @@
     goto :goto_1
 .end method
 
-.method static synthetic a(Lkik/android/internal/platform/PlatformHelper;Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Lkik/core/interfaces/ad;)Z
-    .locals 1
-
-    .prologue
-    .line 125
-    invoke-direct {p0, p1, p2, p3, p4}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Lkik/core/interfaces/ad;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method static synthetic a(Lkik/android/internal/platform/PlatformHelper;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;)Z
-    .locals 1
-
-    .prologue
-    .line 125
-    invoke-direct {p0, p1, p2}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
 .method private a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;)Z
     .locals 10
 
@@ -2602,6 +2644,30 @@
     goto :goto_2
 .end method
 
+.method static synthetic a(Lkik/android/internal/platform/PlatformHelper;Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Lkik/core/interfaces/ad;)Z
+    .locals 1
+
+    .prologue
+    .line 125
+    invoke-direct {p0, p1, p2, p3, p4}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/lang/String;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;Lkik/core/interfaces/ad;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic a(Lkik/android/internal/platform/PlatformHelper;Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;)Z
+    .locals 1
+
+    .prologue
+    .line 125
+    invoke-direct {p0, p1, p2}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Landroid/content/Context;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method private static b(Landroid/content/Intent;)Ljava/io/File;
     .locals 3
 
@@ -2783,7 +2849,7 @@
 
     if-nez v1, :cond_2
 
-    const-string v1, "com.kik.ext.video-gallery"
+    const-string v1, "com.kik.ext-video-camera"
 
     .line 2107
     invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->v()Ljava/lang/String;
@@ -3718,7 +3784,7 @@
 
     .line 337
     :cond_4
-    const-string v4, "com.kik.ext.video-gallery"
+    const-string v4, "com.kik.ext-video-camera"
 
     invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3841,7 +3907,7 @@
 .end method
 
 .method public final a(Landroid/app/Activity;Ljava/lang/String;JLjava/lang/String;)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 7
+    .locals 9
     .annotation build Landroid/annotation/TargetApi;
         value = 0xe
     .end annotation
@@ -3874,7 +3940,7 @@
 .end method
 
 .method public final a(Landroid/app/Activity;[BLkik/core/interfaces/ad;)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 6
+    .locals 9
 
     .prologue
     const/4 v1, 0x0
@@ -3939,7 +4005,7 @@
 
     invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    if-nez v4, :cond_5
+    if-nez v4, :cond_7
 
     const/4 v0, 0x0
 
@@ -3983,6 +4049,28 @@
 
     const-string v4, "true"
 
+    const-string v8, "kinky.forwardcampic"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    const-string v4, "false"
+
+    :cond_1
+    const-string v8, "kinky.forward"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_2
+
+    const-string v4, "false"
+
+    :cond_2
     invoke-virtual {v2, v0, v4}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 477
@@ -4021,7 +4109,7 @@
     move-result-object v0
 
     .line 485
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
     .line 486
     const-string v4, "sha1-original"
@@ -4031,7 +4119,7 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 494
-    :cond_1
+    :cond_3
     :goto_2
     :try_start_1
     invoke-static {v3}, Lkik/core/util/p;->a(Ljava/io/File;)Ljava/lang/String;
@@ -4039,7 +4127,7 @@
     move-result-object v0
 
     .line 496
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
     .line 497
     const-string v4, "sha1-scaled"
@@ -4050,14 +4138,14 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_2
 
     .line 507
-    :cond_2
+    :cond_4
     :goto_3
     invoke-static {v3}, Lcom/kik/util/ci;->a(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 509
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
     .line 510
     const-string v4, "blockhash-scaled"
@@ -4065,7 +4153,7 @@
     invoke-virtual {v2, v4, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 515
-    :cond_3
+    :cond_5
     :try_start_2
     invoke-virtual {v3}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
     :try_end_2
@@ -4075,7 +4163,7 @@
 
     .line 520
     :goto_4
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_6
 
     .line 521
     const-string v0, "int-file-url-local"
@@ -4106,21 +4194,21 @@
     move-result-object v0
 
     .line 526
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_6
 
     .line 527
     const-string v1, "file-url"
 
     invoke-virtual {v2, v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_4
+    :cond_6
     move-object v0, v2
 
     .line 530
     goto/16 :goto_0
 
     .line 472
-    :cond_5
+    :cond_7
     array-length v0, v4
 
     goto/16 :goto_1
@@ -4159,7 +4247,7 @@
 .end method
 
 .method public final a(Ljava/io/File;Lkik/core/interfaces/ad;)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 8
+    .locals 9
 
     .prologue
     const/4 v2, 0x0
@@ -4172,6 +4260,17 @@
 
     const-string v3, "com.kik.ext.gallery"
 
+    const-string v8, "kinky.fakecam"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    const-string v3, "com.kik.ext.camera"
+
+    :cond_0
     invoke-direct {v1, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;-><init>(Ljava/lang/String;)V
 
     move v4, v2
@@ -4184,7 +4283,7 @@
 
     array-length v5, v5
 
-    if-lt v4, v5, :cond_0
+    if-lt v4, v5, :cond_1
 
     .line 810
     new-instance v4, Ljava/lang/Throwable;
@@ -4199,14 +4298,14 @@
 
     .line 821
     :goto_1
-    if-nez v4, :cond_1
+    if-nez v4, :cond_2
 
     .line 879
     :goto_2
     return-object v0
 
     .line 814
-    :cond_0
+    :cond_1
     invoke-virtual {v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v3
@@ -4222,7 +4321,7 @@
     move-result-object v3
 
     .line 815
-    if-nez v3, :cond_a
+    if-nez v3, :cond_d
 
     .line 818
     add-int/lit8 v4, v4, 0x1
@@ -4230,7 +4329,7 @@
     goto :goto_0
 
     .line 3885
-    :cond_1
+    :cond_2
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
@@ -4240,7 +4339,7 @@
     move-result-object v3
 
     .line 3886
-    if-nez v3, :cond_2
+    if-nez v3, :cond_3
 
     .line 3887
     const-string v5, "PlatformHelper.getGalleryImageContentMessage() - CameraUtils.makeBitmapWithMaxSide returned null."
@@ -4248,7 +4347,7 @@
     invoke-static {v5}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
     .line 3889
-    :cond_2
+    :cond_3
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
@@ -4258,7 +4357,7 @@
     move-result v5
 
     .line 3890
-    if-ltz v5, :cond_3
+    if-ltz v5, :cond_4
 
     .line 3891
     invoke-static {v3, v5}, Lkik/android/util/h;->b(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
@@ -4266,8 +4365,8 @@
     move-result-object v3
 
     .line 3893
-    :cond_3
-    if-nez v3, :cond_4
+    :cond_4
+    if-nez v3, :cond_5
 
     .line 3894
     const-string v5, "PlatformHelper.getGalleryImageContentMessage() - BitmapUtils.rotateBitmap returned null."
@@ -4275,7 +4374,7 @@
     invoke-static {v5}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
     .line 3896
-    :cond_4
+    :cond_5
     sget-object v5, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v6, 0x50
@@ -4291,13 +4390,13 @@
 
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    if-nez v3, :cond_9
+    if-nez v3, :cond_c
 
     :goto_3
     invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 3899
-    if-nez v3, :cond_5
+    if-nez v3, :cond_6
 
     .line 3900
     const-string v2, "PlatformHelper.getGalleryImageContentMessage() - ImageUtil.bitmapToBytes returned null."
@@ -4305,7 +4404,7 @@
     invoke-static {v2}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
     .line 825
-    :cond_5
+    :cond_6
     const-string v2, "preview"
 
     new-instance v5, Lkik/core/datatypes/q;
@@ -4342,6 +4441,28 @@
 
     const-string v3, "true"
 
+    const-string v8, "kinky.forwardgalpic"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_7
+
+    const-string v3, "false"
+
+    :cond_7
+    const-string v8, "kinky.forward"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_8
+
+    const-string v3, "false"
+
+    :cond_8
     invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 829
@@ -4379,7 +4500,7 @@
 
     .line 839
     :goto_4
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_9
 
     .line 840
     :try_start_2
@@ -4411,7 +4532,7 @@
     move-result-object v2
 
     .line 845
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_9
 
     .line 846
     const-string v3, "file-url"
@@ -4419,7 +4540,7 @@
     invoke-virtual {v1, v3, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 853
-    :cond_6
+    :cond_9
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v2
@@ -4435,7 +4556,7 @@
     move-result-object v2
 
     .line 858
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_a
 
     .line 859
     const-string v3, "sha1-scaled"
@@ -4446,7 +4567,7 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 870
-    :cond_7
+    :cond_a
     :goto_5
     :try_start_4
     invoke-static {v4}, Lcom/kik/util/ci;->a(Ljava/io/File;)Ljava/lang/String;
@@ -4454,21 +4575,21 @@
     move-result-object v2
 
     .line 872
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_b
 
     .line 873
     const-string v3, "blockhash-scaled"
 
     invoke-virtual {v1, v3, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_8
+    :cond_b
     move-object v0, v1
 
     .line 875
     goto/16 :goto_2
 
     .line 3897
-    :cond_9
+    :cond_c
     array-length v2, v3
 
     goto/16 :goto_3
@@ -4512,14 +4633,14 @@
 
     goto :goto_5
 
-    :cond_a
+    :cond_d
     move-object v4, v3
 
     goto/16 :goto_1
 .end method
 
 .method public final a(Ljava/lang/String;JZLcom/kik/storage/s;)Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 6
+    .locals 9
 
     .prologue
     const/4 v0, 0x0
@@ -4527,7 +4648,7 @@
     .line 1029
     new-instance v2, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    const-string v1, "com.kik.ext.video-gallery"
+    const-string v1, "com.kik.ext-video-camera"
 
     invoke-direct {v2, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;-><init>(Ljava/lang/String;)V
 
@@ -4547,7 +4668,7 @@
     move-result-object v1
 
     .line 4021
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_6
 
     .line 4022
     sget-object v4, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
@@ -4611,6 +4732,28 @@
 
     const-string v4, "true"
 
+    const-string v8, "kinky.forwardvidgal"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    const-string v4, "false"
+
+    :cond_1
+    const-string v8, "kinky.forward"
+
+    invoke-static {v8}, Lokhttp3/internal/cache/z;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_2
+
+    const-string v4, "false"
+
+    :cond_2
     invoke-virtual {v2, v1, v4}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1041
@@ -4662,7 +4805,7 @@
 
     .line 1056
     :goto_1
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
     .line 1057
     const-string v1, "int-file-url-local"
@@ -4693,7 +4836,7 @@
     move-result-object v0
 
     .line 1062
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
     .line 1063
     const-string v1, "file-url"
@@ -4701,11 +4844,11 @@
     invoke-virtual {v2, v1, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1067
-    :cond_1
+    :cond_3
     const/4 v0, 0x0
 
     .line 1068
-    if-nez p4, :cond_2
+    if-nez p4, :cond_4
 
     .line 1069
     invoke-virtual {v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
@@ -4731,14 +4874,14 @@
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
     .line 1071
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     .line 1074
-    :cond_2
-    if-eqz v0, :cond_3
+    :cond_4
+    if-eqz v0, :cond_5
 
     .line 1075
     invoke-virtual {v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
@@ -4750,16 +4893,16 @@
     move-result-object v0
 
     .line 1076
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_5
 
     .line 1077
     invoke-virtual {v2, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/io/File;)V
 
     .line 1080
-    :cond_3
+    :cond_5
     return-object v2
 
-    :cond_4
+    :cond_6
     move-object v1, v0
 
     .line 4024

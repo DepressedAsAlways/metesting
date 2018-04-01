@@ -573,6 +573,25 @@
     goto :goto_0
 .end method
 
+.method private a(Lkik/core/datatypes/p;)V
+    .locals 1
+
+    .prologue
+    .line 710
+    new-instance v0, Lkik/android/chat/fragment/KikChatFragment$a;
+
+    invoke-direct {v0}, Lkik/android/chat/fragment/KikChatFragment$a;-><init>()V
+
+    invoke-virtual {v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Lkik/core/datatypes/l;)Lkik/android/chat/fragment/KikChatFragment$a;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
+
+    .line 711
+    return-void
+.end method
+
 .method static synthetic a(Lkik/android/chat/fragment/KikStartGroupFragment;)V
     .locals 3
 
@@ -592,25 +611,6 @@
     invoke-static {v1, v2, v0, v2, v2}, Lkik/android/util/ca;->a(Landroid/view/View;IIII)V
 
     .line 814
-    return-void
-.end method
-
-.method private a(Lkik/core/datatypes/p;)V
-    .locals 1
-
-    .prologue
-    .line 710
-    new-instance v0, Lkik/android/chat/fragment/KikChatFragment$a;
-
-    invoke-direct {v0}, Lkik/android/chat/fragment/KikChatFragment$a;-><init>()V
-
-    invoke-virtual {v0, p1}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Lkik/core/datatypes/l;)Lkik/android/chat/fragment/KikChatFragment$a;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
-
-    .line 711
     return-void
 .end method
 

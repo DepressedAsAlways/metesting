@@ -268,24 +268,6 @@
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/presentation/MediaTrayPresenter;)V
-    .locals 1
-
-    .prologue
-    .line 142
-    iput-object p1, p0, Lkik/android/chat/vm/widget/bm;->n:Lkik/android/chat/presentation/MediaTrayPresenter;
-
-    .line 143
-    invoke-static {p0}, Lkik/android/chat/vm/widget/bn;->a(Lkik/android/chat/vm/widget/bm;)Lkik/core/interfaces/h;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bm;->a(Lkik/core/interfaces/h;)V
-
-    .line 150
-    return-void
-.end method
-
 .method public final a(Lkik/core/datatypes/y;)V
     .locals 13
 
@@ -514,6 +496,24 @@
 
     .line 156
     :cond_5
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/presentation/MediaTrayPresenter;)V
+    .locals 1
+
+    .prologue
+    .line 142
+    iput-object p1, p0, Lkik/android/chat/vm/widget/bm;->n:Lkik/android/chat/presentation/MediaTrayPresenter;
+
+    .line 143
+    invoke-static {p0}, Lkik/android/chat/vm/widget/bn;->a(Lkik/android/chat/vm/widget/bm;)Lkik/core/interfaces/h;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bm;->a(Lkik/core/interfaces/h;)V
+
+    .line 150
     return-void
 .end method
 

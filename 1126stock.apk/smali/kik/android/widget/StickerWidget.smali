@@ -142,6 +142,21 @@
     return-void
 .end method
 
+.method public final a(Lkik/core/interfaces/h;)V
+    .locals 1
+
+    .prologue
+    .line 97
+    invoke-direct {p0}, Lkik/android/widget/StickerWidget;->d()Lkik/android/chat/vm/widget/StickerWidgetViewModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->a(Lkik/core/interfaces/h;)V
+
+    .line 98
+    return-void
+.end method
+
 .method public final a(Lkik/android/chat/fragment/KikChatFragment$b;)V
     .locals 0
 
@@ -161,21 +176,6 @@
     iput-object p1, p0, Lkik/android/widget/StickerWidget;->f:Lkik/android/chat/fragment/PopUpResultCallback;
 
     .line 145
-    return-void
-.end method
-
-.method public final a(Lkik/core/interfaces/h;)V
-    .locals 1
-
-    .prologue
-    .line 97
-    invoke-direct {p0}, Lkik/android/widget/StickerWidget;->d()Lkik/android/chat/vm/widget/StickerWidgetViewModel;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lkik/android/chat/vm/widget/StickerWidgetViewModel;->a(Lkik/core/interfaces/h;)V
-
-    .line 98
     return-void
 .end method
 

@@ -1408,17 +1408,6 @@
     return-object v0
 .end method
 
-.method public final a(Lcom/kik/android/Mixpanel;)V
-    .locals 0
-
-    .prologue
-    .line 902
-    iput-object p1, p0, Lkik/android/net/communicator/a;->d:Lcom/kik/android/Mixpanel;
-
-    .line 903
-    return-void
-.end method
-
 .method public final a(Lcom/kik/components/CoreComponent;)V
     .locals 2
 
@@ -1438,6 +1427,17 @@
     invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/c/a;)V
 
     .line 917
+    return-void
+.end method
+
+.method public final a(Lcom/kik/android/Mixpanel;)V
+    .locals 0
+
+    .prologue
+    .line 902
+    iput-object p1, p0, Lkik/android/net/communicator/a;->d:Lcom/kik/android/Mixpanel;
+
+    .line 903
     return-void
 .end method
 

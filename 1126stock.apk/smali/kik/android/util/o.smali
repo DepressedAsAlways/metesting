@@ -89,7 +89,7 @@
 
     .line 46
     :cond_3
-    const-string v0, "com.kik.ext.video-gallery"
+    const-string v0, "com.kik.ext-video-camera"
 
     invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->v()Ljava/lang/String;
 
@@ -304,7 +304,7 @@
 
     .line 89
     :cond_4
-    const-string v1, "com.kik.ext.video-gallery"
+    const-string v1, "com.kik.ext-video-camera"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

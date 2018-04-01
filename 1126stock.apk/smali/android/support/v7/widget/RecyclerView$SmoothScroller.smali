@@ -253,7 +253,6 @@
 
     iget v1, p0, Landroid/support/v7/widget/RecyclerView$SmoothScroller;->a:I
 
-    # setter for: Landroid/support/v7/widget/RecyclerView$State;->mTargetPosition:I
     invoke-static {v0, v1}, Landroid/support/v7/widget/RecyclerView$State;->access$1102(Landroid/support/v7/widget/RecyclerView$State;I)I
 
     .line 10953
@@ -352,7 +351,6 @@
 
     iget-object v0, v0, Landroid/support/v7/widget/RecyclerView;->mState:Landroid/support/v7/widget/RecyclerView$State;
 
-    # setter for: Landroid/support/v7/widget/RecyclerView$State;->mTargetPosition:I
     invoke-static {v0, v2}, Landroid/support/v7/widget/RecyclerView$State;->access$1102(Landroid/support/v7/widget/RecyclerView$State;I)I
 
     .line 10985

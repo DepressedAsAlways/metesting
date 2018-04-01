@@ -895,6 +895,46 @@
     return-void
 .end method
 
+.method public final a(Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
+    .locals 3
+
+    .prologue
+    .line 159
+    iput-object p1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
+
+    .line 160
+    iput-object p2, p0, Lkik/android/util/SponsoredUsersManager;->j:Lcom/kik/android/Mixpanel;
+
+    .line 162
+    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->k:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
+
+    invoke-interface {v1}, Lkik/core/interfaces/v;->e()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/util/SponsoredUsersManager;->m:Lcom/kik/events/e;
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
+
+    .line 163
+    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->k:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/util/SponsoredUsersManager;->f:Lkik/core/interfaces/l;
+
+    invoke-interface {v1}, Lkik/core/interfaces/l;->f()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/util/SponsoredUsersManager;->m:Lcom/kik/events/e;
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
+
+    .line 164
+    return-void
+.end method
+
 .method public final a(Lkik/android/util/SponsoredUsersManager$PromotionType;)V
     .locals 5
 
@@ -1003,46 +1043,6 @@
     invoke-interface {v0, v2}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
 
     goto :goto_0
-.end method
-
-.method public final a(Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
-    .locals 3
-
-    .prologue
-    .line 159
-    iput-object p1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
-
-    .line 160
-    iput-object p2, p0, Lkik/android/util/SponsoredUsersManager;->j:Lcom/kik/android/Mixpanel;
-
-    .line 162
-    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->k:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/util/SponsoredUsersManager;->i:Lkik/core/interfaces/v;
-
-    invoke-interface {v1}, Lkik/core/interfaces/v;->e()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/util/SponsoredUsersManager;->m:Lcom/kik/events/e;
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
-
-    .line 163
-    iget-object v0, p0, Lkik/android/util/SponsoredUsersManager;->k:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/util/SponsoredUsersManager;->f:Lkik/core/interfaces/l;
-
-    invoke-interface {v1}, Lkik/core/interfaces/l;->f()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/util/SponsoredUsersManager;->m:Lcom/kik/events/e;
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
-
-    .line 164
-    return-void
 .end method
 
 .method public final a(Lkik/core/datatypes/k;Lkik/android/util/SponsoredUsersManager$PromotionType;)Z

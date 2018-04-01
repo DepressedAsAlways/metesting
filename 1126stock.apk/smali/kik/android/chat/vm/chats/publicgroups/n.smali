@@ -327,6 +327,39 @@
     return-void
 .end method
 
+.method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/n;Lkik/core/a/j;)V
+    .locals 2
+
+    .prologue
+    .line 38
+    .line 4263
+    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->o:Lkik/core/a/j;
+
+    .line 4264
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/n;->j:Ljava/lang/String;
+
+    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->g:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 4265
+    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->p:Lkik/core/a/j;
+
+    .line 4267
+    :cond_0
+    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->l()V
+
+    .line 4268
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->aI_()V
+
+    .line 38
+    return-void
+.end method
+
 .method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/n;Lkik/android/chat/vm/chats/publicgroups/h$a;)V
     .locals 2
 
@@ -429,39 +462,6 @@
     invoke-direct {p0, v0}, Lkik/android/chat/vm/chats/publicgroups/n;->a(Lcom/kik/events/Promise;)V
 
     goto :goto_1
-.end method
-
-.method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/n;Lkik/core/a/j;)V
-    .locals 2
-
-    .prologue
-    .line 38
-    .line 4263
-    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->o:Lkik/core/a/j;
-
-    .line 4264
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/n;->j:Ljava/lang/String;
-
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->g:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 4265
-    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/n;->p:Lkik/core/a/j;
-
-    .line 4267
-    :cond_0
-    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->l()V
-
-    .line 4268
-    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/n;->aI_()V
-
-    .line 38
-    return-void
 .end method
 
 .method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/n;Z)V

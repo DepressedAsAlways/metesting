@@ -97,22 +97,6 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/messaging/ea;)Lrx/d;
-    .locals 2
-
-    .prologue
-    .line 111
-    sget-object v0, Lkik/android/gifs/a;->b:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;
-
-    sget-object v1, Lkik/android/gifs/a;->d:Lkik/android/gifs/api/GifResponseData$MediaType;
-
-    invoke-direct {p0, v0, v1}, Lkik/android/chat/vm/messaging/ea;->a(Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;Lkik/android/gifs/api/GifResponseData$MediaType;)Lrx/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method private a(Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;Lkik/android/gifs/api/GifResponseData$MediaType;)Lrx/d;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
@@ -158,6 +142,22 @@
 
     .line 81
     invoke-static {v0}, Lkik/core/b/a;->a(Lcom/kik/events/Promise;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/messaging/ea;)Lrx/d;
+    .locals 2
+
+    .prologue
+    .line 111
+    sget-object v0, Lkik/android/gifs/a;->b:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;
+
+    sget-object v1, Lkik/android/gifs/a;->d:Lkik/android/gifs/api/GifResponseData$MediaType;
+
+    invoke-direct {p0, v0, v1}, Lkik/android/chat/vm/messaging/ea;->a(Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLinkFileType;Lkik/android/gifs/api/GifResponseData$MediaType;)Lrx/d;
 
     move-result-object v0
 

@@ -415,30 +415,6 @@
     throw v0
 .end method
 
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
-    .locals 1
-
-    .prologue
-    .line 90
-    invoke-direct {p0, p1}, Lkik/android/scan/fragment/ScanFragment;->a(Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/core/datatypes/p;Lkik/android/scan/a/c;)Lcom/kik/events/Promise;
-    .locals 1
-
-    .prologue
-    .line 90
-    invoke-direct {p0, p1, p2}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/core/datatypes/p;Lkik/android/scan/a/c;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 .method private a(Lkik/core/datatypes/p;Lkik/android/scan/a/c;)Lcom/kik/events/Promise;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
@@ -527,6 +503,30 @@
     move-exception v0
 
     goto :goto_1
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
+    .locals 1
+
+    .prologue
+    .line 90
+    invoke-direct {p0, p1}, Lkik/android/scan/fragment/ScanFragment;->a(Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/core/datatypes/p;Lkik/android/scan/a/c;)Lcom/kik/events/Promise;
+    .locals 1
+
+    .prologue
+    .line 90
+    invoke-direct {p0, p1, p2}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/core/datatypes/p;Lkik/android/scan/a/c;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/scan/d$a;)Lkik/android/scan/d$a;
@@ -699,215 +699,6 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 482
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;)V
-    .locals 0
-
-    .prologue
-    .line 537
-    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->finish()V
-
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
-    .locals 2
-
-    .prologue
-    .line 90
-    .line 3587
-    iget-boolean v0, p0, Lkik/android/scan/fragment/ScanFragment;->s:Z
-
-    if-nez v0, :cond_0
-
-    if-nez p1, :cond_1
-
-    .line 3588
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 3590
-    :cond_1
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lkik/android/scan/fragment/ScanFragment;->s:Z
-
-    .line 3592
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->g:Lkik/android/scan/d;
-
-    invoke-virtual {v0}, Lkik/android/scan/d;->d()V
-
-    .line 3593
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->k:Landroid/hardware/Camera;
-
-    if-eqz v0, :cond_2
-
-    .line 3594
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->k:Landroid/hardware/Camera;
-
-    invoke-virtual {v0}, Landroid/hardware/Camera;->stopPreview()V
-
-    .line 3596
-    :cond_2
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->_animationContainer:Landroid/view/View;
-
-    new-instance v1, Lkik/android/scan/fragment/ScanFragment$5;
-
-    invoke-direct {v1, p0, p1}, Lkik/android/scan/fragment/ScanFragment$5;-><init>(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    goto :goto_0
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 90
-    invoke-direct {p0, p1, p2, p3}, Lkik/android/scan/fragment/ScanFragment;->a(Lcom/kik/scan/KikCode;Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 90
-    invoke-direct {p0, p1, p2}, Lkik/android/scan/fragment/ScanFragment;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/p;)V
-    .locals 1
-
-    .prologue
-    .line 548
-    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/ay;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/ae;)V
-
-    .line 549
-    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->finish()V
-
-    .line 550
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/profile/di;)V
-    .locals 2
-
-    .prologue
-    .line 537
-    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/ay;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
-
-    move-result-object v0
-
-    invoke-static {p0}, Lkik/android/scan/fragment/c;->a(Lkik/android/scan/fragment/ScanFragment;)Lrx/functions/b;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lkik/android/scan/fragment/ScanFragment;->safeSubscribe(Lrx/k;)Lrx/k;
-
-    .line 538
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/scan/a/b;)V
-    .locals 4
-
-    .prologue
-    .line 8296
-    if-eqz p1, :cond_0
-
-    .line 8299
-    instance-of v0, p1, Lkik/android/scan/a/a;
-
-    if-eqz v0, :cond_0
-
-    .line 8300
-    check-cast p1, Lkik/android/scan/a/a;
-
-    .line 8301
-    invoke-virtual {p1}, Lkik/android/scan/a/a;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 8302
-    invoke-virtual {p1}, Lkik/android/scan/a/a;->c()Lcom/kik/scan/RemoteKikCode;
-
-    move-result-object v1
-
-    .line 8303
-    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
-
-    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
-
-    move-result-object v2
-
-    .line 8304
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Lkik/core/datatypes/l;->o()Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    .line 8305
-    invoke-static {p1}, Lkik/android/scan/a/c;->a(Lkik/android/scan/a/a;)Lkik/android/scan/a/c;
-
-    move-result-object v0
-
-    invoke-direct {p0, v2, v0}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/core/datatypes/l;Lkik/android/scan/a/c;)V
-
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 8309
-    :cond_1
-    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
-
-    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lkik/android/scan/fragment/ScanFragment;->a(Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    new-instance v2, Lkik/android/scan/fragment/ScanFragment$12;
-
-    invoke-direct {v2, p0, p1, v1}, Lkik/android/scan/fragment/ScanFragment$12;-><init>(Lkik/android/scan/fragment/ScanFragment;Lkik/android/scan/a/a;Lcom/kik/scan/KikCode;)V
-
-    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
-
-    goto :goto_0
-.end method
-
-.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/core/datatypes/l;Lkik/android/scan/a/c;)V
-    .locals 0
-
-    .prologue
-    .line 90
-    invoke-direct {p0, p1, p2}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/core/datatypes/l;Lkik/android/scan/a/c;)V
-
     return-void
 .end method
 
@@ -1176,6 +967,215 @@
     invoke-virtual {v1, v0, v6, v7}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto/16 :goto_0
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;)V
+    .locals 0
+
+    .prologue
+    .line 537
+    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->finish()V
+
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
+    .locals 2
+
+    .prologue
+    .line 90
+    .line 3587
+    iget-boolean v0, p0, Lkik/android/scan/fragment/ScanFragment;->s:Z
+
+    if-nez v0, :cond_0
+
+    if-nez p1, :cond_1
+
+    .line 3588
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 3590
+    :cond_1
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lkik/android/scan/fragment/ScanFragment;->s:Z
+
+    .line 3592
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->g:Lkik/android/scan/d;
+
+    invoke-virtual {v0}, Lkik/android/scan/d;->d()V
+
+    .line 3593
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->k:Landroid/hardware/Camera;
+
+    if-eqz v0, :cond_2
+
+    .line 3594
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->k:Landroid/hardware/Camera;
+
+    invoke-virtual {v0}, Landroid/hardware/Camera;->stopPreview()V
+
+    .line 3596
+    :cond_2
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment;->_animationContainer:Landroid/view/View;
+
+    new-instance v1, Lkik/android/scan/fragment/ScanFragment$5;
+
+    invoke-direct {v1, p0, p1}, Lkik/android/scan/fragment/ScanFragment$5;-><init>(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    goto :goto_0
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 90
+    invoke-direct {p0, p1, p2, p3}, Lkik/android/scan/fragment/ScanFragment;->a(Lcom/kik/scan/KikCode;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 90
+    invoke-direct {p0, p1, p2}, Lkik/android/scan/fragment/ScanFragment;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/core/datatypes/l;Lkik/android/scan/a/c;)V
+    .locals 0
+
+    .prologue
+    .line 90
+    invoke-direct {p0, p1, p2}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/core/datatypes/l;Lkik/android/scan/a/c;)V
+
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/p;)V
+    .locals 1
+
+    .prologue
+    .line 548
+    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/ay;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/ae;)V
+
+    .line 549
+    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->finish()V
+
+    .line 550
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/chat/vm/profile/di;)V
+    .locals 2
+
+    .prologue
+    .line 537
+    invoke-virtual {p0}, Lkik/android/scan/fragment/ScanFragment;->getNavigator()Lkik/android/chat/vm/ay;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/profile/di;)Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {p0}, Lkik/android/scan/fragment/c;->a(Lkik/android/scan/fragment/ScanFragment;)Lrx/functions/b;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lkik/android/scan/fragment/ScanFragment;->safeSubscribe(Lrx/k;)Lrx/k;
+
+    .line 538
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/scan/fragment/ScanFragment;Lkik/android/scan/a/b;)V
+    .locals 4
+
+    .prologue
+    .line 8296
+    if-eqz p1, :cond_0
+
+    .line 8299
+    instance-of v0, p1, Lkik/android/scan/a/a;
+
+    if-eqz v0, :cond_0
+
+    .line 8300
+    check-cast p1, Lkik/android/scan/a/a;
+
+    .line 8301
+    invoke-virtual {p1}, Lkik/android/scan/a/a;->b()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 8302
+    invoke-virtual {p1}, Lkik/android/scan/a/a;->c()Lcom/kik/scan/RemoteKikCode;
+
+    move-result-object v1
+
+    .line 8303
+    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
+
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
+
+    move-result-object v2
+
+    .line 8304
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Lkik/core/datatypes/l;->o()Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    .line 8305
+    invoke-static {p1}, Lkik/android/scan/a/c;->a(Lkik/android/scan/a/a;)Lkik/android/scan/a/c;
+
+    move-result-object v0
+
+    invoke-direct {p0, v2, v0}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/core/datatypes/l;Lkik/android/scan/a/c;)V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 8309
+    :cond_1
+    iget-object v2, p0, Lkik/android/scan/fragment/ScanFragment;->c:Lkik/core/interfaces/v;
+
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lkik/android/scan/fragment/ScanFragment;->a(Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    new-instance v2, Lkik/android/scan/fragment/ScanFragment$12;
+
+    invoke-direct {v2, p0, p1, v1}, Lkik/android/scan/fragment/ScanFragment$12;-><init>(Lkik/android/scan/fragment/ScanFragment;Lkik/android/scan/a/a;Lcom/kik/scan/KikCode;)V
+
+    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
+    goto :goto_0
 .end method
 
 .method static synthetic b(Lkik/android/scan/fragment/ScanFragment;)Lkik/android/scan/d;

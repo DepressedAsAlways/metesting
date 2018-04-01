@@ -61,7 +61,6 @@
     .line 119
     const/4 v0, 0x1
 
-    # setter for: Landroid/databinding/ViewDataBinding;->mRebindHalted:Z
     invoke-static {p2, v0}, Landroid/databinding/ViewDataBinding;->access$002(Landroid/databinding/ViewDataBinding;Z)Z
 
     goto :goto_0

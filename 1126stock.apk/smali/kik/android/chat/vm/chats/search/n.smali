@@ -342,6 +342,67 @@
     goto :goto_0
 .end method
 
+.method private a(Lkik/core/datatypes/l;)V
+    .locals 3
+
+    .prologue
+    .line 210
+    new-instance v0, Lkik/android/chat/vm/profile/q;
+
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->a()Lcom/kik/core/network/xmpp/jid/a;
+
+    move-result-object v1
+
+    sget-object v2, Lkik/android/chat/vm/IBadgeViewModel$BadgeSize;->BADGE_SIZE_SMALL:Lkik/android/chat/vm/IBadgeViewModel$BadgeSize;
+
+    invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/profile/q;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/android/chat/vm/IBadgeViewModel$BadgeSize;)V
+
+    iput-object v0, p0, Lkik/android/chat/vm/chats/search/n;->m:Lkik/android/chat/vm/IBadgeViewModel;
+
+    .line 212
+    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->e:Lrx/subjects/a;
+
+    const/4 v1, 0x1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 213
+    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->g:Lrx/subjects/a;
+
+    const/4 v1, 0x0
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 214
+    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->i:Lrx/subjects/a;
+
+    invoke-virtual {v0, p1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 215
+    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->j:Lrx/subjects/a;
+
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->f()Z
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 216
+    return-void
+.end method
+
 .method static synthetic a(Lkik/android/chat/vm/chats/search/n;Lcom/kik/core/network/xmpp/jid/a;Lkik/android/chat/a/a$b;Ljava/lang/Boolean;)V
     .locals 3
 
@@ -402,67 +463,6 @@
     .line 36
     invoke-direct {p0, p1}, Lkik/android/chat/vm/chats/search/n;->a(Lkik/core/datatypes/l;)V
 
-    return-void
-.end method
-
-.method private a(Lkik/core/datatypes/l;)V
-    .locals 3
-
-    .prologue
-    .line 210
-    new-instance v0, Lkik/android/chat/vm/profile/q;
-
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->a()Lcom/kik/core/network/xmpp/jid/a;
-
-    move-result-object v1
-
-    sget-object v2, Lkik/android/chat/vm/IBadgeViewModel$BadgeSize;->BADGE_SIZE_SMALL:Lkik/android/chat/vm/IBadgeViewModel$BadgeSize;
-
-    invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/profile/q;-><init>(Lcom/kik/core/network/xmpp/jid/a;Lkik/android/chat/vm/IBadgeViewModel$BadgeSize;)V
-
-    iput-object v0, p0, Lkik/android/chat/vm/chats/search/n;->m:Lkik/android/chat/vm/IBadgeViewModel;
-
-    .line 212
-    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->e:Lrx/subjects/a;
-
-    const/4 v1, 0x1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 213
-    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->g:Lrx/subjects/a;
-
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 214
-    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->i:Lrx/subjects/a;
-
-    invoke-virtual {v0, p1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 215
-    iget-object v0, p0, Lkik/android/chat/vm/chats/search/n;->j:Lrx/subjects/a;
-
-    invoke-virtual {p1}, Lkik/core/datatypes/l;->f()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 216
     return-void
 .end method
 

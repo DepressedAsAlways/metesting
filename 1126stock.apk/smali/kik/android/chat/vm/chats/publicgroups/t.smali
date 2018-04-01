@@ -228,26 +228,6 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/t;)V
-    .locals 0
-
-    .prologue
-    .line 33
-    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->t()V
-
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/t;Lkik/core/a/j;)V
-    .locals 0
-
-    .prologue
-    .line 33
-    invoke-direct {p0, p1}, Lkik/android/chat/vm/chats/publicgroups/t;->a(Lkik/core/a/j;)V
-
-    return-void
-.end method
-
 .method private a(Lkik/core/a/j;)V
     .locals 3
 
@@ -323,6 +303,26 @@
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
     goto :goto_0
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/t;)V
+    .locals 0
+
+    .prologue
+    .line 33
+    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/t;->t()V
+
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/chats/publicgroups/t;Lkik/core/a/j;)V
+    .locals 0
+
+    .prologue
+    .line 33
+    invoke-direct {p0, p1}, Lkik/android/chat/vm/chats/publicgroups/t;->a(Lkik/core/a/j;)V
+
+    return-void
 .end method
 
 .method private t()V

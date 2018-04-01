@@ -2561,16 +2561,6 @@
     return v0
 .end method
 
-.method static synthetic O(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/android/chat/fragment/fe;
-    .locals 1
-
-    .prologue
-    .line 189
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->G:Lkik/android/chat/fragment/fe;
-
-    return-object v0
-.end method
-
 .method private O()Lkik/core/datatypes/messageExtensions/ContentMessage;
     .locals 2
 
@@ -2625,6 +2615,16 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method static synthetic O(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/android/chat/fragment/fe;
+    .locals 1
+
+    .prologue
+    .line 189
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->G:Lkik/android/chat/fragment/fe;
+
+    return-object v0
 .end method
 
 .method static synthetic P(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lcom/nhaarman/supertooltips/a;
@@ -3934,6 +3934,325 @@
     goto :goto_2
 .end method
 
+.method private a(Lkik/core/datatypes/Message$MessageSource;)V
+    .locals 5
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 1125
+    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->N()V
+
+    .line 1127
+    invoke-virtual {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->A()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/core/util/z;->f(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1128
+    invoke-virtual {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->A()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/core/util/z;->e(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1129
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->i:Lkik/core/interfaces/v;
+
+    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    new-instance v2, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;
+
+    invoke-direct {v2, p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;-><init>(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
+
+    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
+    .line 1149
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getText()Landroid/text/Editable;
+
+    move-result-object v0
+
+    .line 16739
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "\u200b"
+
+    const-string v4, ""
+
+    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {p0, v2, p1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;)Lkik/core/datatypes/Message;
+
+    move-result-object v2
+
+    .line 16740
+    if-eqz v2, :cond_1
+
+    .line 16741
+    invoke-static {v0}, Lcom/kik/android/b/g;->b(Landroid/text/Spannable;)Lcom/kik/message/model/attachments/RenderInstructionSet;
+
+    move-result-object v0
+
+    .line 16742
+    if-eqz v0, :cond_1
+
+    .line 16743
+    new-instance v3, Lkik/core/net/messageExtensions/RenderInstructionAttachment;
+
+    invoke-direct {v3, v0}, Lkik/core/net/messageExtensions/RenderInstructionAttachment;-><init>(Lcom/kik/message/model/attachments/RenderInstructionSet;)V
+
+    invoke-virtual {v2, v3}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
+
+    .line 1151
+    :cond_1
+    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->Z()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 1153
+    if-eqz v2, :cond_7
+
+    invoke-virtual {v2}, Lkik/core/datatypes/Message;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/core/util/z;->f(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 1154
+    invoke-virtual {v2}, Lkik/core/datatypes/Message;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/core/util/z;->e(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1158
+    :goto_0
+    invoke-direct {p0, v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->e(Ljava/lang/String;)V
+
+    .line 1161
+    :cond_2
+    iget-boolean v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ar:Z
+
+    if-nez v0, :cond_3
+
+    .line 1162
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->D:Lkik/android/chat/k;
+
+    invoke-interface {v0, v2}, Lkik/android/chat/k;->a(Lkik/core/datatypes/Message;)V
+
+    .line 1166
+    :cond_3
+    invoke-virtual {v2}, Lkik/core/datatypes/Message;->o()Lkik/core/datatypes/Message$MessageSource;
+
+    move-result-object v0
+
+    sget-object v3, Lkik/core/datatypes/Message$MessageSource;->DEFAULT:Lkik/core/datatypes/Message$MessageSource;
+
+    if-eq v0, v3, :cond_4
+
+    .line 1167
+    invoke-virtual {v2}, Lkik/core/datatypes/Message;->o()Lkik/core/datatypes/Message$MessageSource;
+
+    move-result-object v0
+
+    sget-object v3, Lkik/core/datatypes/Message$MessageSource;->SUGGESTED_RESPONSE_REPLY:Lkik/core/datatypes/Message$MessageSource;
+
+    if-ne v0, v3, :cond_6
+
+    :cond_4
+    const/4 v0, 0x1
+
+    .line 1168
+    :goto_1
+    if-eqz v2, :cond_5
+
+    if-eqz v0, :cond_5
+
+    .line 1169
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    const-string v2, ""
+
+    invoke-virtual {v0, v2}, Lkik/android/widget/MediaBarEditText;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1170
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-virtual {v0, v1, v1, v1, v1}, Lkik/android/widget/MediaBarEditText;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    .line 1172
+    :cond_5
+    return-void
+
+    .line 1167
+    :cond_6
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_7
+    move-object v0, v1
+
+    goto :goto_0
+.end method
+
+.method private a(Lkik/core/datatypes/c$b;Ljava/lang/String;)V
+    .locals 5
+
+    .prologue
+    const/4 v4, 0x0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    .line 1866
+    .line 26861
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->c()[Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/core/util/l;->a(Ljava/util/List;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    move v0, v1
+
+    .line 1866
+    :goto_0
+    if-nez v0, :cond_2
+
+    .line 27856
+    iput-boolean v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->aK:Z
+
+    .line 1887
+    :cond_0
+    :goto_1
+    return-void
+
+    :cond_1
+    move v0, v2
+
+    .line 26861
+    goto :goto_0
+
+    .line 1871
+    :cond_2
+    const-string v0, "Reply Button"
+
+    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ai:Ljava/lang/String;
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 1876
+    iput-boolean v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->aK:Z
+
+    .line 1877
+    iput-object p2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ai:Ljava/lang/String;
+
+    .line 1878
+    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v3, "suggested"
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 1879
+    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->c()[Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->b()Z
+
+    move-result v3
+
+    .line 28642
+    invoke-direct {p0, v0, v3, v4}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Ljava/util/List;ZLkik/core/datatypes/Message;)V
+
+    .line 29891
+    :goto_2
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Landroid/view/View;
+
+    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_sendButton:Landroid/view/View;
+
+    aput-object v3, v0, v2
+
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_showSRButton:Landroid/view/View;
+
+    aput-object v2, v0, v1
+
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+
+    goto :goto_1
+
+    .line 1883
+    :cond_3
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;->g()Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->a()Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 29642
+    invoke-direct {p0, v0, v2, v4}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Ljava/util/List;ZLkik/core/datatypes/Message;)V
+
+    goto :goto_2
+.end method
+
 .method static synthetic a(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
     .locals 0
 
@@ -4509,325 +4828,6 @@
     invoke-virtual {p1, v0}, Lkik/android/widget/ImeAwareEditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     goto :goto_0
-.end method
-
-.method private a(Lkik/core/datatypes/Message$MessageSource;)V
-    .locals 5
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 1125
-    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->N()V
-
-    .line 1127
-    invoke-virtual {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->A()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/util/z;->f(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 1128
-    invoke-virtual {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->A()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/util/z;->e(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 1129
-    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->i:Lkik/core/interfaces/v;
-
-    invoke-interface {v2, v0}, Lkik/core/interfaces/v;->e(Ljava/lang/String;)Lcom/kik/events/Promise;
-
-    move-result-object v0
-
-    new-instance v2, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;
-
-    invoke-direct {v2, p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;-><init>(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
-
-    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
-
-    .line 1149
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getText()Landroid/text/Editable;
-
-    move-result-object v0
-
-    .line 16739
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "\u200b"
-
-    const-string v4, ""
-
-    invoke-virtual {v2, v3, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {p0, v2, p1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;)Lkik/core/datatypes/Message;
-
-    move-result-object v2
-
-    .line 16740
-    if-eqz v2, :cond_1
-
-    .line 16741
-    invoke-static {v0}, Lcom/kik/android/b/g;->b(Landroid/text/Spannable;)Lcom/kik/message/model/attachments/RenderInstructionSet;
-
-    move-result-object v0
-
-    .line 16742
-    if-eqz v0, :cond_1
-
-    .line 16743
-    new-instance v3, Lkik/core/net/messageExtensions/RenderInstructionAttachment;
-
-    invoke-direct {v3, v0}, Lkik/core/net/messageExtensions/RenderInstructionAttachment;-><init>(Lcom/kik/message/model/attachments/RenderInstructionSet;)V
-
-    invoke-virtual {v2, v3}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
-
-    .line 1151
-    :cond_1
-    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->Z()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 1153
-    if-eqz v2, :cond_7
-
-    invoke-virtual {v2}, Lkik/core/datatypes/Message;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/util/z;->f(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_7
-
-    .line 1154
-    invoke-virtual {v2}, Lkik/core/datatypes/Message;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/util/z;->e(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 1158
-    :goto_0
-    invoke-direct {p0, v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->e(Ljava/lang/String;)V
-
-    .line 1161
-    :cond_2
-    iget-boolean v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ar:Z
-
-    if-nez v0, :cond_3
-
-    .line 1162
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->D:Lkik/android/chat/k;
-
-    invoke-interface {v0, v2}, Lkik/android/chat/k;->a(Lkik/core/datatypes/Message;)V
-
-    .line 1166
-    :cond_3
-    invoke-virtual {v2}, Lkik/core/datatypes/Message;->o()Lkik/core/datatypes/Message$MessageSource;
-
-    move-result-object v0
-
-    sget-object v3, Lkik/core/datatypes/Message$MessageSource;->DEFAULT:Lkik/core/datatypes/Message$MessageSource;
-
-    if-eq v0, v3, :cond_4
-
-    .line 1167
-    invoke-virtual {v2}, Lkik/core/datatypes/Message;->o()Lkik/core/datatypes/Message$MessageSource;
-
-    move-result-object v0
-
-    sget-object v3, Lkik/core/datatypes/Message$MessageSource;->SUGGESTED_RESPONSE_REPLY:Lkik/core/datatypes/Message$MessageSource;
-
-    if-ne v0, v3, :cond_6
-
-    :cond_4
-    const/4 v0, 0x1
-
-    .line 1168
-    :goto_1
-    if-eqz v2, :cond_5
-
-    if-eqz v0, :cond_5
-
-    .line 1169
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    const-string v2, ""
-
-    invoke-virtual {v0, v2}, Lkik/android/widget/MediaBarEditText;->setText(Ljava/lang/CharSequence;)V
-
-    .line 1170
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-virtual {v0, v1, v1, v1, v1}, Lkik/android/widget/MediaBarEditText;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    .line 1172
-    :cond_5
-    return-void
-
-    .line 1167
-    :cond_6
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_7
-    move-object v0, v1
-
-    goto :goto_0
-.end method
-
-.method private a(Lkik/core/datatypes/c$b;Ljava/lang/String;)V
-    .locals 5
-
-    .prologue
-    const/4 v4, 0x0
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    .line 1866
-    .line 26861
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->c()[Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/core/util/l;->a(Ljava/util/List;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    move v0, v1
-
-    .line 1866
-    :goto_0
-    if-nez v0, :cond_2
-
-    .line 27856
-    iput-boolean v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->aK:Z
-
-    .line 1887
-    :cond_0
-    :goto_1
-    return-void
-
-    :cond_1
-    move v0, v2
-
-    .line 26861
-    goto :goto_0
-
-    .line 1871
-    :cond_2
-    const-string v0, "Reply Button"
-
-    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ai:Ljava/lang/String;
-
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 1876
-    iput-boolean v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->aK:Z
-
-    .line 1877
-    iput-object p2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ai:Ljava/lang/String;
-
-    .line 1878
-    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v3, "suggested"
-
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 1879
-    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->c()[Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lkik/core/datatypes/c$b;->b()Z
-
-    move-result v3
-
-    .line 28642
-    invoke-direct {p0, v0, v3, v4}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Ljava/util/List;ZLkik/core/datatypes/Message;)V
-
-    .line 29891
-    :goto_2
-    const/4 v0, 0x2
-
-    new-array v0, v0, [Landroid/view/View;
-
-    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_sendButton:Landroid/view/View;
-
-    aput-object v3, v0, v2
-
-    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_showSRButton:Landroid/view/View;
-
-    aput-object v2, v0, v1
-
-    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
-
-    goto :goto_1
-
-    .line 1883
-    :cond_3
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;->g()Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->a()Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    .line 29642
-    invoke-direct {p0, v0, v2, v4}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Ljava/util/List;ZLkik/core/datatypes/Message;)V
-
-    goto :goto_2
 .end method
 
 .method static synthetic a(Landroid/view/GestureDetector;Landroid/view/MotionEvent;)Z
@@ -6446,165 +6446,6 @@
     goto :goto_0
 .end method
 
-.method static synthetic d(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
-    .locals 5
-
-    .prologue
-    const/4 v4, 0x1
-
-    const/4 v1, 0x0
-
-    .line 2579
-    .line 51036
-    invoke-virtual {p0, v4}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Z)V
-
-    .line 51037
-    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->V()V
-
-    .line 51041
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->aV:Ljava/lang/Runnable;
-
-    invoke-virtual {v0, v2}, Landroid/support/v4/view/ViewPager;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 51069
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_suggestedRecyclerView:Lkik/android/chat/view/SuggestedResponseRecyclerView;
-
-    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
-
-    move-result v0
-
-    .line 51043
-    if-eqz v0, :cond_0
-
-    .line 51044
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v2, "Suggested Responses Hidden"
-
-    invoke-virtual {v0, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v2, "Source"
-
-    const-string v3, "Media Tray"
-
-    invoke-virtual {v0, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 51045
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_suggestedRecyclerView:Lkik/android/chat/view/SuggestedResponseRecyclerView;
-
-    invoke-virtual {v0}, Lkik/android/chat/view/SuggestedResponseRecyclerView;->getMeasuredHeight()I
-
-    move-result v0
-
-    .line 51046
-    invoke-direct {p0, v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->i(Z)V
-
-    .line 51052
-    :goto_0
-    if-lez v0, :cond_1
-
-    .line 51053
-    new-array v2, v4, [Landroid/view/View;
-
-    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    aput-object v3, v2, v1
-
-    invoke-static {v2}, Lkik/android/util/ca;->d([Landroid/view/View;)V
-
-    .line 51054
-    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    invoke-static {v1, v0}, Lkik/android/util/ca;->e(Landroid/view/View;I)V
-
-    .line 51062
-    :goto_1
-    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->S()V
-
-    .line 51064
-    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->G:Lkik/android/chat/fragment/fe;
-
-    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaBarView:Landroid/view/ViewGroup;
-
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getMeasuredHeight()I
-
-    move-result v2
-
-    add-int/2addr v0, v2
-
-    invoke-interface {v1, v0}, Lkik/android/chat/fragment/fe;->a(I)V
-
-    .line 51065
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->am:Lkik/android/util/KeyboardManipulator;
-
-    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-interface {v0, v1}, Lkik/android/util/KeyboardManipulator;->hideKeyBoard(Landroid/view/View;)V
-
-    .line 51067
-    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->W()V
-
-    .line 2579
-    return-void
-
-    .line 51070
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
-
-    move-result v0
-
-    .line 51048
-    if-eqz v0, :cond_2
-
-    .line 51049
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getMeasuredHeight()I
-
-    move-result v0
-
-    goto :goto_0
-
-    .line 51057
-    :cond_1
-    new-array v0, v4, [Landroid/view/View;
-
-    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    aput-object v2, v0, v1
-
-    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
-
-    .line 51058
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
-
-    invoke-direct {p0, v0, v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Landroid/view/View;Z)V
-
-    .line 51059
-    iget v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ae:I
-
-    goto :goto_1
-
-    :cond_2
-    move v0, v1
-
-    goto :goto_0
-.end method
-
 .method private d(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
     .locals 6
 
@@ -6862,6 +6703,165 @@
     move-result-object v0
 
     goto :goto_2
+.end method
+
+.method static synthetic d(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
+    .locals 5
+
+    .prologue
+    const/4 v4, 0x1
+
+    const/4 v1, 0x0
+
+    .line 2579
+    .line 51036
+    invoke-virtual {p0, v4}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Z)V
+
+    .line 51037
+    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->V()V
+
+    .line 51041
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->aV:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v2}, Landroid/support/v4/view/ViewPager;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    .line 51069
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_suggestedRecyclerView:Lkik/android/chat/view/SuggestedResponseRecyclerView;
+
+    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+
+    move-result v0
+
+    .line 51043
+    if-eqz v0, :cond_0
+
+    .line 51044
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a:Lcom/kik/android/Mixpanel;
+
+    const-string v2, "Suggested Responses Hidden"
+
+    invoke-virtual {v0, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v2, "Source"
+
+    const-string v3, "Media Tray"
+
+    invoke-virtual {v0, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 51045
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_suggestedRecyclerView:Lkik/android/chat/view/SuggestedResponseRecyclerView;
+
+    invoke-virtual {v0}, Lkik/android/chat/view/SuggestedResponseRecyclerView;->getMeasuredHeight()I
+
+    move-result v0
+
+    .line 51046
+    invoke-direct {p0, v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->i(Z)V
+
+    .line 51052
+    :goto_0
+    if-lez v0, :cond_1
+
+    .line 51053
+    new-array v2, v4, [Landroid/view/View;
+
+    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    aput-object v3, v2, v1
+
+    invoke-static {v2}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+
+    .line 51054
+    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    invoke-static {v1, v0}, Lkik/android/util/ca;->e(Landroid/view/View;I)V
+
+    .line 51062
+    :goto_1
+    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->S()V
+
+    .line 51064
+    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->G:Lkik/android/chat/fragment/fe;
+
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaBarView:Landroid/view/ViewGroup;
+
+    invoke-virtual {v2}, Landroid/view/ViewGroup;->getMeasuredHeight()I
+
+    move-result v2
+
+    add-int/2addr v0, v2
+
+    invoke-interface {v1, v0}, Lkik/android/chat/fragment/fe;->a(I)V
+
+    .line 51065
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->am:Lkik/android/util/KeyboardManipulator;
+
+    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-interface {v0, v1}, Lkik/android/util/KeyboardManipulator;->hideKeyBoard(Landroid/view/View;)V
+
+    .line 51067
+    invoke-direct {p0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->W()V
+
+    .line 2579
+    return-void
+
+    .line 51070
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
+
+    move-result v0
+
+    .line 51048
+    if-eqz v0, :cond_2
+
+    .line 51049
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    invoke-virtual {v0}, Landroid/support/v4/view/ViewPager;->getMeasuredHeight()I
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 51057
+    :cond_1
+    new-array v0, v4, [Landroid/view/View;
+
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    aput-object v2, v0, v1
+
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
+
+    .line 51058
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    invoke-direct {p0, v0, v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Landroid/view/View;Z)V
+
+    .line 51059
+    iget v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->ae:I
+
+    goto :goto_1
+
+    :cond_2
+    move v0, v1
+
+    goto :goto_0
 .end method
 
 .method private e(Lkik/core/datatypes/messageExtensions/ContentMessage;)Lkik/core/datatypes/Message;
@@ -7173,20 +7173,6 @@
     goto :goto_0
 .end method
 
-.method static synthetic f(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
-    .locals 1
-
-    .prologue
-    .line 1608
-    .line 51108
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->g(Z)V
-
-    .line 1608
-    return-void
-.end method
-
 .method private f(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
     .locals 8
 
@@ -7334,6 +7320,20 @@
     invoke-direct {p0, v1, v0, p1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Landroid/view/View;Landroid/view/View;Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
     goto :goto_0
+.end method
+
+.method static synthetic f(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
+    .locals 1
+
+    .prologue
+    .line 1608
+    .line 51108
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->g(Z)V
+
+    .line 1608
+    return-void
 .end method
 
 .method private f(Z)V
@@ -8457,151 +8457,6 @@
     return-void
 .end method
 
-.method public final a(Lcom/kik/android/b/f;Z)V
-    .locals 6
-
-    .prologue
-    .line 3478
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Z)V
-
-    .line 3480
-    if-nez p1, :cond_1
-
-    .line 50984
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 3485
-    :cond_1
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->c:Lcom/kik/android/b/g;
-
-    invoke-virtual {v0, p1}, Lcom/kik/android/b/g;->a(Lcom/kik/android/b/f;)V
-
-    .line 3487
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Smiley Clicked"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Smiley"
-
-    .line 3488
-    invoke-virtual {p1}, Lcom/kik/android/b/f;->f()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Is Alternate Smiley Tray"
-
-    .line 3489
-    invoke-virtual {v0, v1, p2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Smiley Identifier"
-
-    .line 3490
-    invoke-virtual {p1}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 3491
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 3492
-    invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 50982
-    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->c:Lcom/kik/android/b/g;
-
-    invoke-virtual {v1, v0}, Lcom/kik/android/b/g;->c(Ljava/lang/String;)Lcom/kik/android/b/f;
-
-    move-result-object v0
-
-    .line 50983
-    if-eqz v0, :cond_0
-
-    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    if-eqz v1, :cond_0
-
-    .line 50987
-    new-instance v3, Landroid/text/SpannableStringBuilder;
-
-    invoke-direct {v3}, Landroid/text/SpannableStringBuilder;-><init>()V
-
-    .line 50988
-    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-virtual {v1}, Lkik/android/widget/MediaBarEditText;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v1, v0}, Lcom/kik/android/b/g;->a(Landroid/content/Context;Lcom/kik/android/b/f;)Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {v3, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
-
-    .line 50990
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getSelectionStart()I
-
-    move-result v2
-
-    .line 50991
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getSelectionEnd()I
-
-    move-result v4
-
-    .line 50992
-    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
-
-    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getText()Landroid/text/Editable;
-
-    move-result-object v0
-
-    .line 50993
-    if-eqz v0, :cond_0
-
-    .line 50994
-    invoke-static {v2, v4}, Ljava/lang/Math;->min(II)I
-
-    move-result v1
-
-    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v3}, Landroid/text/SpannableStringBuilder;->length()I
-
-    move-result v5
-
-    invoke-interface/range {v0 .. v5}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;II)Landroid/text/Editable;
-
-    goto :goto_0
-.end method
-
 .method public final a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)V
     .locals 3
 
@@ -8931,6 +8786,151 @@
 
     .line 2245
     return-void
+.end method
+
+.method public final a(Lcom/kik/android/b/f;Z)V
+    .locals 6
+
+    .prologue
+    .line 3478
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Z)V
+
+    .line 3480
+    if-nez p1, :cond_1
+
+    .line 50984
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 3485
+    :cond_1
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->c:Lcom/kik/android/b/g;
+
+    invoke-virtual {v0, p1}, Lcom/kik/android/b/g;->a(Lcom/kik/android/b/f;)V
+
+    .line 3487
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Smiley Clicked"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Smiley"
+
+    .line 3488
+    invoke-virtual {p1}, Lcom/kik/android/b/f;->f()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Is Alternate Smiley Tray"
+
+    .line 3489
+    invoke-virtual {v0, v1, p2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Smiley Identifier"
+
+    .line 3490
+    invoke-virtual {p1}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 3491
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 3492
+    invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 50982
+    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->c:Lcom/kik/android/b/g;
+
+    invoke-virtual {v1, v0}, Lcom/kik/android/b/g;->c(Ljava/lang/String;)Lcom/kik/android/b/f;
+
+    move-result-object v0
+
+    .line 50983
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    if-eqz v1, :cond_0
+
+    .line 50987
+    new-instance v3, Landroid/text/SpannableStringBuilder;
+
+    invoke-direct {v3}, Landroid/text/SpannableStringBuilder;-><init>()V
+
+    .line 50988
+    iget-object v1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-virtual {v1}, Lkik/android/widget/MediaBarEditText;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-static {v1, v0}, Lcom/kik/android/b/g;->a(Landroid/content/Context;Lcom/kik/android/b/f;)Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    invoke-virtual {v3, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 50990
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getSelectionStart()I
+
+    move-result v2
+
+    .line 50991
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getSelectionEnd()I
+
+    move-result v4
+
+    .line 50992
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
+
+    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->getText()Landroid/text/Editable;
+
+    move-result-object v0
+
+    .line 50993
+    if-eqz v0, :cond_0
+
+    .line 50994
+    invoke-static {v2, v4}, Ljava/lang/Math;->min(II)I
+
+    move-result v1
+
+    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
+
+    move-result v2
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v3}, Landroid/text/SpannableStringBuilder;->length()I
+
+    move-result v5
+
+    invoke-interface/range {v0 .. v5}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;II)Landroid/text/Editable;
+
+    goto :goto_0
 .end method
 
 .method public final a(Ljava/lang/String;)V

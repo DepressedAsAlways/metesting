@@ -491,6 +491,17 @@
 
 
 # virtual methods
+.method public final a(Lkik/core/interfaces/ag;)V
+    .locals 0
+
+    .prologue
+    .line 80
+    iput-object p1, p0, Lkik/android/util/g;->f:Lkik/core/interfaces/ag;
+
+    .line 81
+    return-void
+.end method
+
 .method public final a(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
     .locals 0
 
@@ -587,17 +598,6 @@
     aput-object v2, v0, v3
 
     goto :goto_0
-.end method
-
-.method public final a(Lkik/core/interfaces/ag;)V
-    .locals 0
-
-    .prologue
-    .line 80
-    iput-object p1, p0, Lkik/android/util/g;->f:Lkik/core/interfaces/ag;
-
-    .line 81
-    return-void
 .end method
 
 .method public final a(Landroid/support/v4/app/Fragment;Landroid/content/Context;ILandroid/content/Intent;Lkik/core/interfaces/n;)Z

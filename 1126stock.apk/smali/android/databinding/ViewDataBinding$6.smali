@@ -49,7 +49,6 @@
 
     const/4 v1, 0x0
 
-    # setter for: Landroid/databinding/ViewDataBinding;->mPendingRebind:Z
     invoke-static {v0, v1}, Landroid/databinding/ViewDataBinding;->access$202(Landroid/databinding/ViewDataBinding;Z)Z
 
     .line 165
@@ -58,7 +57,6 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 166
-    # invokes: Landroid/databinding/ViewDataBinding;->processReferenceQueue()V
     invoke-static {}, Landroid/databinding/ViewDataBinding;->access$300()V
 
     .line 168
@@ -71,7 +69,6 @@
     .line 170
     iget-object v0, p0, Landroid/databinding/ViewDataBinding$6;->this$0:Landroid/databinding/ViewDataBinding;
 
-    # getter for: Landroid/databinding/ViewDataBinding;->mRoot:Landroid/view/View;
     invoke-static {v0}, Landroid/databinding/ViewDataBinding;->access$400(Landroid/databinding/ViewDataBinding;)Landroid/view/View;
 
     move-result-object v0
@@ -85,12 +82,10 @@
     .line 173
     iget-object v0, p0, Landroid/databinding/ViewDataBinding$6;->this$0:Landroid/databinding/ViewDataBinding;
 
-    # getter for: Landroid/databinding/ViewDataBinding;->mRoot:Landroid/view/View;
     invoke-static {v0}, Landroid/databinding/ViewDataBinding;->access$400(Landroid/databinding/ViewDataBinding;)Landroid/view/View;
 
     move-result-object v0
 
-    # getter for: Landroid/databinding/ViewDataBinding;->ROOT_REATTACHED_LISTENER:Landroid/view/View$OnAttachStateChangeListener;
     invoke-static {}, Landroid/databinding/ViewDataBinding;->access$500()Landroid/view/View$OnAttachStateChangeListener;
 
     move-result-object v1
@@ -100,12 +95,10 @@
     .line 174
     iget-object v0, p0, Landroid/databinding/ViewDataBinding$6;->this$0:Landroid/databinding/ViewDataBinding;
 
-    # getter for: Landroid/databinding/ViewDataBinding;->mRoot:Landroid/view/View;
     invoke-static {v0}, Landroid/databinding/ViewDataBinding;->access$400(Landroid/databinding/ViewDataBinding;)Landroid/view/View;
 
     move-result-object v0
 
-    # getter for: Landroid/databinding/ViewDataBinding;->ROOT_REATTACHED_LISTENER:Landroid/view/View$OnAttachStateChangeListener;
     invoke-static {}, Landroid/databinding/ViewDataBinding;->access$500()Landroid/view/View$OnAttachStateChangeListener;
 
     move-result-object v1
