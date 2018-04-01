@@ -8,27 +8,27 @@
     <attr name="file" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="hasMarkdown" format="boolean" />
     <attr name="height" format="integer" />
-    <attr name="instabug_attachment_bg_color" format="reference|color" />
-    <attr name="instabug_attachment_bg_icon_color" format="reference|color" />
-    <attr name="instabug_background_color" format="reference|color" />
-    <attr name="instabug_bg_with_bottom_border_for_edit_text" format="reference" />
-    <attr name="instabug_dialog_button_text_color" format="color" />
-    <attr name="instabug_dialog_item_text_color" format="color" />
-    <attr name="instabug_divider" format="reference" />
-    <attr name="instabug_divider_color" format="color" />
-    <attr name="instabug_foreground_color" format="reference|color" />
-    <attr name="instabug_item_border" format="reference" />
-    <attr name="instabug_message_date_text_color" format="color" />
-    <attr name="instabug_message_sender_text_color" format="color" />
-    <attr name="instabug_message_snippet_text_color" format="color" />
-    <attr name="instabug_primary_color" format="reference|color" />
-    <attr name="instabug_received_message_text_color" format="reference|color" />
-    <attr name="instabug_sent_message_text_color" format="reference|color" />
-    <attr name="instabug_survey_dialog_footer_transition" format="reference" />
-    <attr name="instabug_survey_dialog_header_transition" format="reference" />
-    <attr name="instabug_theme_hint_text_color" format="reference|color" />
-    <attr name="instabug_theme_tinting_color" format="reference|color" />
-    <attr name="instabug_unread_message_background_color" format="color" />
+    <attr name="Night_PrimaryColor" format="color" />
+    <attr name="Night_PrimaryColorDark" format="color" />
+    <item type="attr" name="APKTOOL_DUMMY_a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_10">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_11">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_12">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_13">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_15">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_16">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_17">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_19">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c">false</item>
     <attr name="interestsList" format="reference" />
     <attr name="interestsListEditable" format="reference" />
     <attr name="interestsModel" format="reference" />
@@ -461,16 +461,13 @@
     <attr name="fab_progress_max" format="integer" />
     <attr name="fab_progress" format="integer" />
     <attr name="fab_progress_showBackground" format="boolean" />
-    <attr name="instabug_fab_colorPressed" format="color" />
-    <attr name="instabug_fab_colorDisabled" format="color" />
-    <attr name="instabug_fab_colorNormal" format="color" />
-    <attr name="instabug_fab_icon" format="reference" />
-    <attr name="instabug_fab_size">
-        <enum name="normal" value="0" />
-        <enum name="mini" value="1" />
-    </attr>
-    <attr name="instabug_fab_title" format="string" />
-    <attr name="instabug_fab_stroke_visible" format="boolean" />
+    <item type="attr" name="APKTOOL_DUMMY_151">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_152">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_153">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_154">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_155">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_156">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_157">false</item>
     <attr name="behavior_autoHide" format="boolean" />
     <attr name="menu_showShadow" format="boolean" />
     <attr name="menu_buttonSpacing" format="dimension" />
@@ -545,35 +542,7 @@
     <attr name="height_const" format="dimension" />
     <attr name="constant_height" format="dimension" />
     <attr name="mask" format="reference" />
-    <attr name="instabug_icon">
-        <enum name="audio" value="1" />
-        <enum name="avatar" value="2" />
-        <enum name="back" value="3" />
-        <enum name="blur" value="22" />
-        <enum name="brush" value="23" />
-        <enum name="bug" value="4" />
-        <enum name="cancel" value="5" />
-        <enum name="capture_screenshot" value="6" />
-        <enum name="capture_video" value="7" />
-        <enum name="close" value="8" />
-        <enum name="erase" value="9" />
-        <enum name="feedback" value="10" />
-        <enum name="floating_bubble" value="11" />
-        <enum name="instabug" value="0" />
-        <enum name="magnify" value="24" />
-        <enum name="next" value="12" />
-        <enum name="pause" value="13" />
-        <enum name="photo_library" value="14" />
-        <enum name="play" value="15" />
-        <enum name="plus" value="17" />
-        <enum name="plus_attach" value="16" />
-        <enum name="send" value="18" />
-        <enum name="stop" value="19" />
-        <enum name="survey" value="26" />
-        <enum name="talk_to_us" value="20" />
-        <enum name="tick" value="21" />
-        <enum name="undo" value="25" />
-    </attr>
+    <item type="attr" name="APKTOOL_DUMMY_190">false</item>
     <attr name="minLength" format="dimension" />
     <attr name="animateLoading" format="boolean" />
     <attr name="pref_icon" format="reference" />

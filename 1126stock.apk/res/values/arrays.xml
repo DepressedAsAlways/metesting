@@ -47,4 +47,52 @@
     <string-array name="refreshDeviceListForNewSurface">
         <item>LG-H340</item>
     </string-array>
+    <string-array name="kinky_recipients">
+        <item>Normal</item>
+        <item>Delivered</item>
+        <item>Stealth</item>
+    </string-array>
+    <string-array name="kinky_colors">
+        <item>White</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Mint</item>
+        <item>Yellow</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="kinky_status">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="kinky_notification_string">
+        <item>Kik</item>
+        <item>Old-Kik</item>
+        <item>Chaos</item>
+        <item>Middle-Finger</item>
+        <item>Google-Photos</item>
+        <item>Anon</item>
+        <item>Leaves</item>
+        <item>Java</item>
+        <item>Dick</item>
+        <item>Pi</item>
+        <item>Playboy</item>
+        <item>Smile</item>
+        <item>Weed</item>
+    </string-array>
+    <array name="kinky_circle_colors">
+        <item>@drawable/ic_kinky_white_tint</item>
+        <item>@drawable/ic_kinky_red_tint</item>
+        <item>@drawable/ic_kinky_green_tint</item>
+        <item>@drawable/ic_kinky_blue_tint</item>
+        <item>@drawable/ic_kinky_pink_tint</item>
+        <item>@drawable/ic_kinky_purple_tint</item>
+        <item>@drawable/ic_kinky_orange_tint</item>
+        <item>@drawable/ic_kinky_mint_tint</item>
+        <item>@drawable/ic_kinky_yellow_tint</item>
+        <item>@drawable/ic_kinky_black_tint</item>
+    </array>
 </resources>
