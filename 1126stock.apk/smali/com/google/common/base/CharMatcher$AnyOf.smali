@@ -141,7 +141,6 @@
     aget-char v4, v2, v0
 
     .line 1850
-    # invokes: Lcom/google/common/base/CharMatcher;->showCharacter(C)Ljava/lang/String;
     invoke-static {v4}, Lcom/google/common/base/CharMatcher;->access$100(C)Ljava/lang/String;
 
     move-result-object v4

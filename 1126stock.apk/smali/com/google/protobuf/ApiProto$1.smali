@@ -35,7 +35,6 @@
 
     .prologue
     .line 64
-    # setter for: Lcom/google/protobuf/ApiProto;->descriptor:Lcom/google/protobuf/Descriptors$FileDescriptor;
     invoke-static {p1}, Lcom/google/protobuf/ApiProto;->access$002(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     .line 65

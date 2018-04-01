@@ -1409,7 +1409,6 @@
     const/4 v6, 0x1
 
     .line 1323
-    # getter for: Lcom/google/protobuf/CodedOutputStream;->HAS_UNSAFE_ARRAY_OPERATIONS:Z
     invoke-static {}, Lcom/google/protobuf/CodedOutputStream;->access$100()Z
 
     move-result v0
@@ -1425,7 +1424,6 @@
     if-lt v0, v1, :cond_2
 
     .line 1324
-    # getter for: Lcom/google/protobuf/CodedOutputStream;->ARRAY_BASE_OFFSET:J
     invoke-static {}, Lcom/google/protobuf/CodedOutputStream;->access$200()J
 
     move-result-wide v0
@@ -1623,7 +1621,6 @@
     const/4 v6, 0x1
 
     .line 1369
-    # getter for: Lcom/google/protobuf/CodedOutputStream;->HAS_UNSAFE_ARRAY_OPERATIONS:Z
     invoke-static {}, Lcom/google/protobuf/CodedOutputStream;->access$100()Z
 
     move-result v0
@@ -1639,7 +1636,6 @@
     if-lt v0, v1, :cond_2
 
     .line 1370
-    # getter for: Lcom/google/protobuf/CodedOutputStream;->ARRAY_BASE_OFFSET:J
     invoke-static {}, Lcom/google/protobuf/CodedOutputStream;->access$200()J
 
     move-result-wide v0

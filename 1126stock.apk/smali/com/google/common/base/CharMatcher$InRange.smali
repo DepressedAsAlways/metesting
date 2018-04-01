@@ -109,7 +109,6 @@
     iget-char v1, p0, Lcom/google/common/base/CharMatcher$InRange;->startInclusive:C
 
     .line 1883
-    # invokes: Lcom/google/common/base/CharMatcher;->showCharacter(C)Ljava/lang/String;
     invoke-static {v1}, Lcom/google/common/base/CharMatcher;->access$100(C)Ljava/lang/String;
 
     move-result-object v1
@@ -127,7 +126,6 @@
     iget-char v1, p0, Lcom/google/common/base/CharMatcher$InRange;->endInclusive:C
 
     .line 1885
-    # invokes: Lcom/google/common/base/CharMatcher;->showCharacter(C)Ljava/lang/String;
     invoke-static {v1}, Lcom/google/common/base/CharMatcher;->access$100(C)Ljava/lang/String;
 
     move-result-object v1

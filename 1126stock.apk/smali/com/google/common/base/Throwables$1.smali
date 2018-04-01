@@ -59,12 +59,10 @@
 
     .prologue
     .line 386
-    # getter for: Lcom/google/common/base/Throwables;->getStackTraceElementMethod:Ljava/lang/reflect/Method;
     invoke-static {}, Lcom/google/common/base/Throwables;->access$000()Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    # getter for: Lcom/google/common/base/Throwables;->jla:Ljava/lang/Object;
     invoke-static {}, Lcom/google/common/base/Throwables;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -87,7 +85,6 @@
 
     aput-object v4, v2, v3
 
-    # invokes: Lcom/google/common/base/Throwables;->invokeAccessibleNonThrowingMethod(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Throwables;->access$200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -103,12 +100,10 @@
 
     .prologue
     .line 391
-    # getter for: Lcom/google/common/base/Throwables;->getStackTraceDepthMethod:Ljava/lang/reflect/Method;
     invoke-static {}, Lcom/google/common/base/Throwables;->access$300()Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    # getter for: Lcom/google/common/base/Throwables;->jla:Ljava/lang/Object;
     invoke-static {}, Lcom/google/common/base/Throwables;->access$100()Ljava/lang/Object;
 
     move-result-object v1
@@ -123,7 +118,6 @@
 
     aput-object v4, v2, v3
 
-    # invokes: Lcom/google/common/base/Throwables;->invokeAccessibleNonThrowingMethod(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Throwables;->access$200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0

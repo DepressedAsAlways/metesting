@@ -338,11 +338,9 @@
 
     move-result-object v1
 
-    # setter for: Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/MapField;
     invoke-static {v0, v1}, Lcom/google/protobuf/Struct;->access$302(Lcom/google/protobuf/Struct;Lcom/google/protobuf/MapField;)Lcom/google/protobuf/MapField;
 
     .line 436
-    # getter for: Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/MapField;
     invoke-static {v0}, Lcom/google/protobuf/Struct;->access$300(Lcom/google/protobuf/Struct;)Lcom/google/protobuf/MapField;
 
     move-result-object v1
@@ -1110,7 +1108,6 @@
 
     .line 494
     :try_start_0
-    # getter for: Lcom/google/protobuf/Struct;->PARSER:Lcom/google/protobuf/Parser;
     invoke-static {}, Lcom/google/protobuf/Struct;->access$500()Lcom/google/protobuf/Parser;
 
     move-result-object v0
@@ -1237,7 +1234,6 @@
     move-result-object v0
 
     .line 479
-    # invokes: Lcom/google/protobuf/Struct;->internalGetFields()Lcom/google/protobuf/MapField;
     invoke-static {p1}, Lcom/google/protobuf/Struct;->access$400(Lcom/google/protobuf/Struct;)Lcom/google/protobuf/MapField;
 
     move-result-object v1

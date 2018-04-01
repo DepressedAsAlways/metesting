@@ -217,7 +217,6 @@
     .line 295
     iget-object v1, p0, Lcom/google/protobuf/BytesValue$Builder;->value_:Lcom/google/protobuf/ByteString;
 
-    # setter for: Lcom/google/protobuf/BytesValue;->value_:Lcom/google/protobuf/ByteString;
     invoke-static {v0, v1}, Lcom/google/protobuf/BytesValue;->access$302(Lcom/google/protobuf/BytesValue;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
 
     .line 296
@@ -700,7 +699,6 @@
 
     .line 354
     :try_start_0
-    # getter for: Lcom/google/protobuf/BytesValue;->PARSER:Lcom/google/protobuf/Parser;
     invoke-static {}, Lcom/google/protobuf/BytesValue;->access$400()Lcom/google/protobuf/Parser;
 
     move-result-object v0

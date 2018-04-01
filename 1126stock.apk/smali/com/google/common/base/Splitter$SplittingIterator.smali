@@ -49,7 +49,6 @@
     iput v0, p0, Lcom/google/common/base/Splitter$SplittingIterator;->offset:I
 
     .line 528
-    # getter for: Lcom/google/common/base/Splitter;->trimmer:Lcom/google/common/base/CharMatcher;
     invoke-static {p1}, Lcom/google/common/base/Splitter;->access$200(Lcom/google/common/base/Splitter;)Lcom/google/common/base/CharMatcher;
 
     move-result-object v0
@@ -57,7 +56,6 @@
     iput-object v0, p0, Lcom/google/common/base/Splitter$SplittingIterator;->trimmer:Lcom/google/common/base/CharMatcher;
 
     .line 529
-    # getter for: Lcom/google/common/base/Splitter;->omitEmptyStrings:Z
     invoke-static {p1}, Lcom/google/common/base/Splitter;->access$300(Lcom/google/common/base/Splitter;)Z
 
     move-result v0
@@ -65,7 +63,6 @@
     iput-boolean v0, p0, Lcom/google/common/base/Splitter$SplittingIterator;->omitEmptyStrings:Z
 
     .line 530
-    # getter for: Lcom/google/common/base/Splitter;->limit:I
     invoke-static {p1}, Lcom/google/common/base/Splitter;->access$400(Lcom/google/common/base/Splitter;)I
 
     move-result v0

@@ -148,7 +148,6 @@
 
     iget-char v1, p0, Lcom/google/common/base/CharMatcher$IsNot;->match:C
 
-    # invokes: Lcom/google/common/base/CharMatcher;->showCharacter(C)Ljava/lang/String;
     invoke-static {v1}, Lcom/google/common/base/CharMatcher;->access$100(C)Ljava/lang/String;
 
     move-result-object v1

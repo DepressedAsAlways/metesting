@@ -1537,7 +1537,6 @@
     .line 800
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->name_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/Api;->name_:Ljava/lang/Object;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$302(Lcom/google/protobuf/Api;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 801
@@ -1574,7 +1573,6 @@
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->methods_:Ljava/util/List;
 
-    # setter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$402(Lcom/google/protobuf/Api;Ljava/util/List;)Ljava/util/List;
 
     .line 810
@@ -1612,14 +1610,12 @@
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->options_:Ljava/util/List;
 
-    # setter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$502(Lcom/google/protobuf/Api;Ljava/util/List;)Ljava/util/List;
 
     .line 819
     :goto_1
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->version_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/Api;->version_:Ljava/lang/Object;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$602(Lcom/google/protobuf/Api;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 820
@@ -1630,7 +1626,6 @@
     .line 821
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->sourceContext_:Lcom/google/protobuf/SourceContext;
 
-    # setter for: Lcom/google/protobuf/Api;->sourceContext_:Lcom/google/protobuf/SourceContext;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$702(Lcom/google/protobuf/Api;Lcom/google/protobuf/SourceContext;)Lcom/google/protobuf/SourceContext;
 
     .line 825
@@ -1668,20 +1663,17 @@
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->mixins_:Ljava/util/List;
 
-    # setter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$802(Lcom/google/protobuf/Api;Ljava/util/List;)Ljava/util/List;
 
     .line 834
     :goto_3
     iget v0, p0, Lcom/google/protobuf/Api$Builder;->syntax_:I
 
-    # setter for: Lcom/google/protobuf/Api;->syntax_:I
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$902(Lcom/google/protobuf/Api;I)I
 
     .line 835
     const/4 v0, 0x0
 
-    # setter for: Lcom/google/protobuf/Api;->bitField0_:I
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$1002(Lcom/google/protobuf/Api;I)I
 
     .line 836
@@ -1698,7 +1690,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$402(Lcom/google/protobuf/Api;Ljava/util/List;)Ljava/util/List;
 
     goto :goto_0
@@ -1711,7 +1702,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$502(Lcom/google/protobuf/Api;Ljava/util/List;)Ljava/util/List;
 
     goto :goto_1
@@ -1726,7 +1716,6 @@
 
     check-cast v0, Lcom/google/protobuf/SourceContext;
 
-    # setter for: Lcom/google/protobuf/Api;->sourceContext_:Lcom/google/protobuf/SourceContext;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$702(Lcom/google/protobuf/Api;Lcom/google/protobuf/SourceContext;)Lcom/google/protobuf/SourceContext;
 
     goto :goto_2
@@ -1739,7 +1728,6 @@
 
     move-result-object v0
 
-    # setter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {v1, v0}, Lcom/google/protobuf/Api;->access$802(Lcom/google/protobuf/Api;Ljava/util/List;)Ljava/util/List;
 
     goto :goto_3
@@ -3432,7 +3420,6 @@
     if-nez v0, :cond_1
 
     .line 878
-    # getter for: Lcom/google/protobuf/Api;->name_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$300(Lcom/google/protobuf/Api;)Ljava/lang/Object;
 
     move-result-object v0
@@ -3449,7 +3436,6 @@
     if-nez v0, :cond_9
 
     .line 882
-    # getter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$400(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3470,7 +3456,6 @@
     if-eqz v0, :cond_8
 
     .line 884
-    # getter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$400(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3496,7 +3481,6 @@
     if-nez v0, :cond_d
 
     .line 908
-    # getter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$500(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3517,7 +3501,6 @@
     if-eqz v0, :cond_c
 
     .line 910
-    # getter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$500(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3549,7 +3532,6 @@
     if-nez v0, :cond_4
 
     .line 934
-    # getter for: Lcom/google/protobuf/Api;->version_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$600(Lcom/google/protobuf/Api;)Ljava/lang/Object;
 
     move-result-object v0
@@ -3581,7 +3563,6 @@
     if-nez v0, :cond_11
 
     .line 941
-    # getter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$800(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3602,7 +3583,6 @@
     if-eqz v0, :cond_10
 
     .line 943
-    # getter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$800(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3623,7 +3603,6 @@
     .line 966
     :cond_6
     :goto_6
-    # getter for: Lcom/google/protobuf/Api;->syntax_:I
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$900(Lcom/google/protobuf/Api;)I
 
     move-result v0
@@ -3650,7 +3629,6 @@
     .line 888
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->methods_:Ljava/util/List;
 
-    # getter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$400(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v2
@@ -3661,7 +3639,6 @@
 
     .line 893
     :cond_9
-    # getter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$400(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3690,7 +3667,6 @@
     iput-object v1, p0, Lcom/google/protobuf/Api$Builder;->methodsBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
     .line 897
-    # getter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$400(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3728,7 +3704,6 @@
     :cond_b
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->methodsBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
-    # getter for: Lcom/google/protobuf/Api;->methods_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$400(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v2
@@ -3744,7 +3719,6 @@
     .line 914
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->options_:Ljava/util/List;
 
-    # getter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$500(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v2
@@ -3755,7 +3729,6 @@
 
     .line 919
     :cond_d
-    # getter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$500(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3784,7 +3757,6 @@
     iput-object v1, p0, Lcom/google/protobuf/Api$Builder;->optionsBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
     .line 923
-    # getter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$500(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3822,7 +3794,6 @@
     :cond_f
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->optionsBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
-    # getter for: Lcom/google/protobuf/Api;->options_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$500(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v2
@@ -3838,7 +3809,6 @@
     .line 947
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->mixins_:Ljava/util/List;
 
-    # getter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$800(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v1
@@ -3849,7 +3819,6 @@
 
     .line 952
     :cond_11
-    # getter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$800(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3878,7 +3847,6 @@
     iput-object v1, p0, Lcom/google/protobuf/Api$Builder;->mixinsBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
     .line 956
-    # getter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$800(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v0
@@ -3911,7 +3879,6 @@
     :cond_13
     iget-object v0, p0, Lcom/google/protobuf/Api$Builder;->mixinsBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
-    # getter for: Lcom/google/protobuf/Api;->mixins_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/Api;->access$800(Lcom/google/protobuf/Api;)Ljava/util/List;
 
     move-result-object v1
@@ -3935,7 +3902,6 @@
 
     .line 983
     :try_start_0
-    # getter for: Lcom/google/protobuf/Api;->PARSER:Lcom/google/protobuf/Parser;
     invoke-static {}, Lcom/google/protobuf/Api;->access$1100()Lcom/google/protobuf/Parser;
 
     move-result-object v0

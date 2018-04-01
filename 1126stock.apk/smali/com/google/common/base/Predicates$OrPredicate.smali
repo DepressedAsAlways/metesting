@@ -205,7 +205,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    # getter for: Lcom/google/common/base/Predicates;->COMMA_JOINER:Lcom/google/common/base/Joiner;
     invoke-static {}, Lcom/google/common/base/Predicates;->access$800()Lcom/google/common/base/Joiner;
 
     move-result-object v1

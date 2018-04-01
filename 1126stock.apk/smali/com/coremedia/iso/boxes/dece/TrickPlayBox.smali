@@ -235,7 +235,6 @@
     check-cast v0, Lcom/coremedia/iso/boxes/dece/TrickPlayBox$Entry;
 
     .line 98
-    # getter for: Lcom/coremedia/iso/boxes/dece/TrickPlayBox$Entry;->value:I
     invoke-static {v0}, Lcom/coremedia/iso/boxes/dece/TrickPlayBox$Entry;->access$0(Lcom/coremedia/iso/boxes/dece/TrickPlayBox$Entry;)I
 
     move-result v0

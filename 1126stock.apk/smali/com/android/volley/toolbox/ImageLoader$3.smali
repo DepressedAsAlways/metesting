@@ -69,7 +69,6 @@
     check-cast v0, Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;
 
     .line 469
-    # getter for: Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;->mContainers:Ljava/util/LinkedList;
     invoke-static {v0}, Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;->access$200(Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;)Ljava/util/LinkedList;
 
     move-result-object v1
@@ -107,7 +106,6 @@
     if-nez v4, :cond_2
 
     .line 477
-    # getter for: Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;->mResponseBitmap:Landroid/graphics/Bitmap;
     invoke-static {v0}, Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;->access$000(Lcom/android/volley/toolbox/ImageLoader$BatchedImageRequest;)Landroid/graphics/Bitmap;
 
     move-result-object v4

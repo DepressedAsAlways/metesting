@@ -44,7 +44,6 @@
 
     .prologue
     .line 90
-    # invokes: Lcom/google/common/base/CaseFormat;->firstCharOnlyToUpper(Ljava/lang/String;)Ljava/lang/String;
     invoke-static {p1}, Lcom/google/common/base/CaseFormat;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0

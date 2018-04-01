@@ -229,13 +229,11 @@
     .line 561
     iget-object v1, p0, Lcom/google/protobuf/Any$Builder;->typeUrl_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/Any;->typeUrl_:Ljava/lang/Object;
     invoke-static {v0, v1}, Lcom/google/protobuf/Any;->access$302(Lcom/google/protobuf/Any;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 562
     iget-object v1, p0, Lcom/google/protobuf/Any$Builder;->value_:Lcom/google/protobuf/ByteString;
 
-    # setter for: Lcom/google/protobuf/Any;->value_:Lcom/google/protobuf/ByteString;
     invoke-static {v0, v1}, Lcom/google/protobuf/Any;->access$402(Lcom/google/protobuf/Any;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
 
     .line 563
@@ -786,7 +784,6 @@
     if-nez v0, :cond_1
 
     .line 605
-    # getter for: Lcom/google/protobuf/Any;->typeUrl_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/Any;->access$300(Lcom/google/protobuf/Any;)Ljava/lang/Object;
 
     move-result-object v0
@@ -834,7 +831,6 @@
 
     .line 625
     :try_start_0
-    # getter for: Lcom/google/protobuf/Any;->PARSER:Lcom/google/protobuf/Parser;
     invoke-static {}, Lcom/google/protobuf/Any;->access$500()Lcom/google/protobuf/Parser;
 
     move-result-object v0

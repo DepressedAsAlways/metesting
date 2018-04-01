@@ -235,7 +235,6 @@
     check-cast v0, Lcom/coremedia/iso/boxes/SampleDependencyTypeBox$Entry;
 
     .line 127
-    # getter for: Lcom/coremedia/iso/boxes/SampleDependencyTypeBox$Entry;->value:I
     invoke-static {v0}, Lcom/coremedia/iso/boxes/SampleDependencyTypeBox$Entry;->access$0(Lcom/coremedia/iso/boxes/SampleDependencyTypeBox$Entry;)I
 
     move-result v0

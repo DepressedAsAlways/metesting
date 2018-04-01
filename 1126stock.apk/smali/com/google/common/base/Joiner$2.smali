@@ -109,7 +109,6 @@
     .line 260
     iget-object v1, p0, Lcom/google/common/base/Joiner$2;->this$0:Lcom/google/common/base/Joiner;
 
-    # getter for: Lcom/google/common/base/Joiner;->separator:Ljava/lang/String;
     invoke-static {v1}, Lcom/google/common/base/Joiner;->access$100(Lcom/google/common/base/Joiner;)Ljava/lang/String;
 
     move-result-object v1

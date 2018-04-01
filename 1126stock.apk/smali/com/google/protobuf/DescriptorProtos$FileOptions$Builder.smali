@@ -770,7 +770,6 @@
     :goto_0
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->javaPackage_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaPackage_:Ljava/lang/Object;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13502(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19168
@@ -787,7 +786,6 @@
     :cond_0
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->javaOuterClassname_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaOuterClassname_:Ljava/lang/Object;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13602(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19172
@@ -804,7 +802,6 @@
     :cond_1
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->javaMultipleFiles_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaMultipleFiles_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13702(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19176
@@ -821,7 +818,6 @@
     :cond_2
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->javaGenerateEqualsAndHash_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaGenerateEqualsAndHash_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13802(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19180
@@ -838,7 +834,6 @@
     :cond_3
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->javaStringCheckUtf8_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaStringCheckUtf8_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13902(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19184
@@ -855,7 +850,6 @@
     :cond_4
     iget v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->optimizeFor_:I
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->optimizeFor_:I
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14002(Lcom/google/protobuf/DescriptorProtos$FileOptions;I)I
 
     .line 19188
@@ -872,7 +866,6 @@
     :cond_5
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->goPackage_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->goPackage_:Ljava/lang/Object;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14102(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19192
@@ -889,7 +882,6 @@
     :cond_6
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->ccGenericServices_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->ccGenericServices_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14202(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19196
@@ -906,7 +898,6 @@
     :cond_7
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->javaGenericServices_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaGenericServices_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14302(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19200
@@ -923,7 +914,6 @@
     :cond_8
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->pyGenericServices_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->pyGenericServices_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14402(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19204
@@ -940,7 +930,6 @@
     :cond_9
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->deprecated_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->deprecated_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14502(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19208
@@ -957,7 +946,6 @@
     :cond_a
     iget-boolean v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->ccEnableArenas_:Z
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->ccEnableArenas_:Z
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14602(Lcom/google/protobuf/DescriptorProtos$FileOptions;Z)Z
 
     .line 19212
@@ -974,7 +962,6 @@
     :cond_b
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->objcClassPrefix_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->objcClassPrefix_:Ljava/lang/Object;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14702(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19216
@@ -991,7 +978,6 @@
     :cond_c
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->csharpNamespace_:Ljava/lang/Object;
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->csharpNamespace_:Ljava/lang/Object;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14802(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19220
@@ -1028,12 +1014,10 @@
     :cond_d
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->uninterpretedOption_:Ljava/util/List;
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14902(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/util/List;)Ljava/util/List;
 
     .line 19229
     :goto_1
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->bitField0_:I
     invoke-static {v2, v0}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$15002(Lcom/google/protobuf/DescriptorProtos$FileOptions;I)I
 
     .line 19230
@@ -1050,7 +1034,6 @@
 
     move-result-object v1
 
-    # setter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {v2, v1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14902(Lcom/google/protobuf/DescriptorProtos$FileOptions;Ljava/util/List;)Ljava/util/List;
 
     goto :goto_1
@@ -3298,7 +3281,6 @@
     iput v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->bitField0_:I
 
     .line 19296
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaPackage_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13500(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3324,7 +3306,6 @@
     iput v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->bitField0_:I
 
     .line 19301
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->javaOuterClassname_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$13600(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3410,7 +3391,6 @@
     iput v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->bitField0_:I
 
     .line 19318
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->goPackage_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14100(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3511,7 +3491,6 @@
     iput v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->bitField0_:I
 
     .line 19338
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->objcClassPrefix_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14700(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3537,7 +3516,6 @@
     iput v1, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->bitField0_:I
 
     .line 19343
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->csharpNamespace_:Ljava/lang/Object;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14800(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/lang/Object;
 
     move-result-object v1
@@ -3554,7 +3532,6 @@
     if-nez v1, :cond_11
 
     .line 19347
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14900(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/util/List;
 
     move-result-object v0
@@ -3575,7 +3552,6 @@
     if-eqz v0, :cond_10
 
     .line 19349
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14900(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/util/List;
 
     move-result-object v0
@@ -3615,7 +3591,6 @@
     .line 19353
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->uninterpretedOption_:Ljava/util/List;
 
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14900(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/util/List;
 
     move-result-object v1
@@ -3626,7 +3601,6 @@
 
     .line 19358
     :cond_11
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14900(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/util/List;
 
     move-result-object v1
@@ -3655,7 +3629,6 @@
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->uninterpretedOptionBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
     .line 19362
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14900(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/util/List;
 
     move-result-object v1
@@ -3688,7 +3661,6 @@
     :cond_13
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$FileOptions$Builder;->uninterpretedOptionBuilder_:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
-    # getter for: Lcom/google/protobuf/DescriptorProtos$FileOptions;->uninterpretedOption_:Ljava/util/List;
     invoke-static {p1}, Lcom/google/protobuf/DescriptorProtos$FileOptions;->access$14900(Lcom/google/protobuf/DescriptorProtos$FileOptions;)Ljava/util/List;
 
     move-result-object v1

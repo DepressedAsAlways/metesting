@@ -207,7 +207,6 @@
     .line 296
     iget-boolean v1, p0, Lcom/google/protobuf/BoolValue$Builder;->value_:Z
 
-    # setter for: Lcom/google/protobuf/BoolValue;->value_:Z
     invoke-static {v0, v1}, Lcom/google/protobuf/BoolValue;->access$302(Lcom/google/protobuf/BoolValue;Z)Z
 
     .line 297
@@ -682,7 +681,6 @@
 
     .line 355
     :try_start_0
-    # getter for: Lcom/google/protobuf/BoolValue;->PARSER:Lcom/google/protobuf/Parser;
     invoke-static {}, Lcom/google/protobuf/BoolValue;->access$400()Lcom/google/protobuf/Parser;
 
     move-result-object v0

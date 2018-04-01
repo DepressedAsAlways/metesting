@@ -175,7 +175,6 @@
     .line 381
     iget-object v0, p0, Lcom/google/common/base/Joiner$MapJoiner;->joiner:Lcom/google/common/base/Joiner;
 
-    # getter for: Lcom/google/common/base/Joiner;->separator:Ljava/lang/String;
     invoke-static {v0}, Lcom/google/common/base/Joiner;->access$100(Lcom/google/common/base/Joiner;)Ljava/lang/String;
 
     move-result-object v0

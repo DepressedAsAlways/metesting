@@ -38,7 +38,6 @@
     .line 2129
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->pos:I
     invoke-static {v0}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$400(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)I
 
     move-result v0
@@ -62,7 +61,6 @@
     .line 2144
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->buffer:[B
     invoke-static {v0}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$500(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)[B
 
     move-result-object v0
@@ -71,7 +69,6 @@
 
     iget-object v2, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->pos:I
     invoke-static {v2}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$400(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)I
 
     move-result v2
@@ -94,7 +91,6 @@
 
     iget-object v1, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->buffer:[B
     invoke-static {v1}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$500(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)[B
 
     move-result-object v1
@@ -103,7 +99,6 @@
 
     iget-object v3, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->pos:I
     invoke-static {v3}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$400(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)I
 
     move-result v3
@@ -146,7 +141,6 @@
 
     iget-object v1, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->buffer:[B
     invoke-static {v1}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$500(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)[B
 
     move-result-object v1
@@ -155,7 +149,6 @@
 
     iget-object v3, p0, Lcom/google/protobuf/CodedInputStream$StreamDecoder$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream$StreamDecoder;
 
-    # getter for: Lcom/google/protobuf/CodedInputStream$StreamDecoder;->pos:I
     invoke-static {v3}, Lcom/google/protobuf/CodedInputStream$StreamDecoder;->access$400(Lcom/google/protobuf/CodedInputStream$StreamDecoder;)I
 
     move-result v3
