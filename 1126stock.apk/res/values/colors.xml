@@ -48,7 +48,7 @@
     <color name="chat_bubble_colour_black">#ff000000</color>
     <color name="chat_bubble_colour_charcoal">#ff373a4b</color>
     <color name="chat_info_background">#ffeeeeee</color>
-    <color name="chats_is_typing">#ff828285</color>
+    <color name="chats_is_typing">#ff002a55</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1f000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -89,7 +89,7 @@
     <color name="edit_text_underline_resting">@color/gray_3</color>
     <color name="expression_bar_background_color">#21a9adc1</color>
     <color name="expression_text_color">@color/hashtags_divider</color>
-    <color name="fab_menu_screen_overlay">#ccffffff</color>
+    <color name="fab_menu_screen_overlay">#cc000000</color>
     <color name="fab_shadow">#1f000000</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
@@ -113,20 +113,17 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="http_emphasis">#ff8a8a8a</color>
     <color name="https_emphasis">#ff71d15b</color>
-    <color name="instabug_annotation_color_blue">#ff2d8cd5</color>
-    <color name="instabug_annotation_color_default">@color/instabug_annotation_color_red</color>
-    <color name="instabug_annotation_color_gray">#ff273646</color>
-    <color name="instabug_annotation_color_green">#ff00a388</color>
-    <color name="instabug_annotation_color_red">#ffe16152</color>
-    <color name="instabug_annotation_color_yellow">#ffefca4c</color>
-    <color name="instabug_dark_theme_hint_text_color">#ff888888</color>
-    <color name="instabug_dialog_bg_color">#90000000</color>
-    <color name="instabug_light_theme_hint_text_color">#ffacacac</color>
-    <color name="instabug_text_color_grey">#ff737373</color>
-    <color name="instabug_theme_tinting_color_dark">#fffdfdfd</color>
-    <color name="instabug_theme_tinting_color_light">#ff737373</color>
-    <color name="instabug_transparent_color">#00000000</color>
-    <color name="instabug_url_color_blue">#ff365899</color>
+    <item type="color" name="APKTOOL_DUMMY_74">false</item>
+    <item type="color" name="APKTOOL_DUMMY_75">false</item>
+    <item type="color" name="APKTOOL_DUMMY_76">false</item>
+    <item type="color" name="APKTOOL_DUMMY_77">false</item>
+    <item type="color" name="APKTOOL_DUMMY_78">false</item>
+    <item type="color" name="APKTOOL_DUMMY_79">false</item>
+    <item type="color" name="APKTOOL_DUMMY_7a">false</item>
+    <item type="color" name="APKTOOL_DUMMY_7b">false</item>
+    <item type="color" name="APKTOOL_DUMMY_7c">false</item>
+    <item type="color" name="APKTOOL_DUMMY_7d">false</item>
+    <item type="color" name="APKTOOL_DUMMY_7e">false</item>
     <color name="kik_blue">#ff26beff</color>
     <color name="kik_blue_50pc_opacity">#8026beff</color>
     <color name="kik_code_username">#ccffffff</color>
@@ -135,7 +132,7 @@
     <color name="kik_star_rating_yellow">#ffffb922</color>
     <color name="light_gray">#ffeeeeee</color>
     <color name="light_theme_status_bar_color">#ffc5c6c7</color>
-    <color name="list_divider_color">@color/gray_2</color>
+    <color name="list_divider_color">#ffd3d3d3</color>
     <color name="mask_bg">#80000000</color>
     <color name="material_blue">#ff2196f3</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -204,8 +201,8 @@
     <color name="smiley_notification_grey">#ffd9dce3</color>
     <color name="smiley_shadow_color">#140c445c</color>
     <color name="smiley_tray_overlay">@color/kik_code_username</color>
-    <color name="status_bar_grey">#ff999999</color>
-    <color name="status_bar_grey_v2">#3d37394b</color>
+    <color name="status_bar_grey">#ff007dad</color>
+    <color name="status_bar_grey_v2">#ff1d1d1d</color>
     <color name="stripe_label_color">#ffb2b1b6</color>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
@@ -236,4 +233,31 @@
     <color name="white">#ffffffff</color>
     <color name="white_transparent">#00ffffff</color>
     <color name="wubble_overlay">#80888888</color>
+    <color name="pikek_blue">#ff0099d4</color>
+    <item type="color" name="APKTOOL_DUMMY_112">false</item>
+    <item type="color" name="APKTOOL_DUMMY_113">false</item>
+    <item type="color" name="APKTOOL_DUMMY_114">false</item>
+    <item type="color" name="APKTOOL_DUMMY_115">false</item>
+    <item type="color" name="APKTOOL_DUMMY_116">false</item>
+    <item type="color" name="APKTOOL_DUMMY_117">false</item>
+    <item type="color" name="APKTOOL_DUMMY_118">false</item>
+    <item type="color" name="APKTOOL_DUMMY_119">false</item>
+    <item type="color" name="APKTOOL_DUMMY_11a">false</item>
+    <item type="color" name="APKTOOL_DUMMY_11b">false</item>
+    <color name="pluto_period_blood">#ffff0000</color>
+    <color name="pikek_black">#ff000000</color>
+    <color name="pikek_white">#ffffffff</color>
+    <color name="pikek_grey">#ff7a7d8e</color>
+    <item type="color" name="APKTOOL_DUMMY_120">false</item>
+    <color name="kinky_black">#ff000000</color>
+    <color name="kinky_white">#ffffffff</color>
+    <color name="kinky_green">#ff15db1b</color>
+    <color name="kinky_purple">#ff8515db</color>
+    <color name="kinky_pink">#ffdb15ca</color>
+    <color name="kinky_mint">#ff15dbbd</color>
+    <color name="kinky_orange">#ffdb8515</color>
+    <color name="kinky_yellow">#ffe0e018</color>
+    <color name="kinky_blue">#ff1e15db</color>
+    <color name="kinky_red">#ffdb1515</color>
+    <color name="thatblueshit">#ff0099d2</color>
 </resources>
