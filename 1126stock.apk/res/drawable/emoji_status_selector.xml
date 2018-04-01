@@ -8,5 +8,5 @@
             <size android:height="56.0dip" android:width="56.0dip" />
         </shape>
     </item>
-    <item android:drawable="@xml/emoji_status_item_background_selector" />
+    <item android:drawable="@xml/OBB4" />
 </selector>
