@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/e/k;
+.implements Lkik/android/f/l;
 
 
 # instance fields
@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f100102
+    const v1, 0x7f100128
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentManager;->findFragmentById(I)Landroid/support/v4/app/Fragment;
 
@@ -145,14 +145,14 @@
     move-result-object v0
 
     .line 58
-    instance-of v1, v0, Lcom/kik/c/a;
+    instance-of v1, v0, Lcom/kik/d/a;
 
     if-eqz v1, :cond_0
 
     .line 59
-    check-cast v0, Lcom/kik/c/a;
+    check-cast v0, Lcom/kik/d/a;
 
-    invoke-interface {v0}, Lcom/kik/c/a;->n()Z
+    invoke-interface {v0}, Lcom/kik/d/a;->handleBackPress()Z
 
     move-result v0
 
@@ -193,7 +193,7 @@
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;)V
 
     .line 84
-    const v0, 0x7f04002c
+    const v0, 0x7f04002d
 
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;->setContentView(I)V
 
@@ -312,7 +312,7 @@
     .line 110
     check-cast v0, Lcom/kik/ui/fragment/FragmentBase;
 
-    invoke-virtual {v0}, Lcom/kik/ui/fragment/FragmentBase;->w()Lcom/kik/events/Promise;
+    invoke-virtual {v0}, Lcom/kik/ui/fragment/FragmentBase;->getResultPromise()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -321,7 +321,7 @@
 
     invoke-direct {v2, p0}, Lkik/android/chat/fragment/SimpleFragmentWrapperActivity$2;-><init>(Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;)V
 
-    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 138
     :cond_1
@@ -333,7 +333,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f100102
+    const v2, 0x7f100128
 
     invoke-virtual {v0, v2, v1}, Landroid/support/v4/app/FragmentTransaction;->replace(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
 
@@ -368,7 +368,7 @@
     .line 157
     check-cast v0, Lkik/android/chat/fragment/KikScopedDialogFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->an()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->handleActivityDestroy()V
 
     .line 160
     :cond_0
@@ -436,16 +436,16 @@
     .line 1180
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/kik/c/c;
+    instance-of v1, v0, Lcom/kik/d/c;
 
     if-eqz v1, :cond_0
 
     .line 1181
-    check-cast v0, Lcom/kik/c/c;
+    check-cast v0, Lcom/kik/d/c;
 
     iget-boolean v1, p0, Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;->a:Z
 
-    invoke-interface {v0, v1}, Lcom/kik/c/c;->c(Z)V
+    invoke-interface {v0, v1}, Lcom/kik/d/c;->onWindowFocusChanged(Z)V
 
     .line 148
     :cond_0

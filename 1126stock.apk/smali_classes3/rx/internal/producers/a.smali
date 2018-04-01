@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/e;
+.implements Lrx/f;
 
 
 # static fields
-.field static final g:Lrx/e;
+.field static final g:Lrx/f;
 
 
 # instance fields
 .field a:J
 
-.field b:Lrx/e;
+.field b:Lrx/f;
 
 .field c:Z
 
@@ -21,7 +21,7 @@
 
 .field e:J
 
-.field f:Lrx/e;
+.field f:Lrx/f;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0}, Lrx/internal/producers/a$1;-><init>()V
 
-    sput-object v0, Lrx/internal/producers/a;->g:Lrx/e;
+    sput-object v0, Lrx/internal/producers/a;->g:Lrx/f;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     iget-wide v6, p0, Lrx/internal/producers/a;->e:J
 
     .line 148
-    iget-object v8, p0, Lrx/internal/producers/a;->f:Lrx/e;
+    iget-object v8, p0, Lrx/internal/producers/a;->f:Lrx/f;
 
     .line 149
     cmp-long v0, v4, v10
@@ -109,7 +109,7 @@
     .line 157
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lrx/internal/producers/a;->f:Lrx/e;
+    iput-object v0, p0, Lrx/internal/producers/a;->f:Lrx/f;
 
     .line 158
     monitor-exit p0
@@ -148,12 +148,12 @@
     if-eqz v8, :cond_7
 
     .line 177
-    sget-object v4, Lrx/internal/producers/a;->g:Lrx/e;
+    sget-object v4, Lrx/internal/producers/a;->g:Lrx/f;
 
     if-ne v8, v4, :cond_6
 
     .line 178
-    iput-object v12, p0, Lrx/internal/producers/a;->b:Lrx/e;
+    iput-object v12, p0, Lrx/internal/producers/a;->b:Lrx/f;
 
     goto :goto_0
 
@@ -194,16 +194,16 @@
 
     .line 180
     :cond_6
-    iput-object v8, p0, Lrx/internal/producers/a;->b:Lrx/e;
+    iput-object v8, p0, Lrx/internal/producers/a;->b:Lrx/f;
 
     .line 181
-    invoke-interface {v8, v0, v1}, Lrx/e;->a(J)V
+    invoke-interface {v8, v0, v1}, Lrx/f;->a(J)V
 
     goto :goto_0
 
     .line 184
     :cond_7
-    iget-object v0, p0, Lrx/internal/producers/a;->b:Lrx/e;
+    iget-object v0, p0, Lrx/internal/producers/a;->b:Lrx/f;
 
     .line 185
     if-eqz v0, :cond_0
@@ -213,7 +213,7 @@
     if-eqz v1, :cond_0
 
     .line 186
-    invoke-interface {v0, v4, v5}, Lrx/e;->a(J)V
+    invoke-interface {v0, v4, v5}, Lrx/f;->a(J)V
 
     goto :goto_0
 .end method
@@ -314,13 +314,13 @@
     iput-wide v0, p0, Lrx/internal/producers/a;->a:J
 
     .line 64
-    iget-object v0, p0, Lrx/internal/producers/a;->b:Lrx/e;
+    iget-object v0, p0, Lrx/internal/producers/a;->b:Lrx/f;
 
     .line 65
     if-eqz v0, :cond_4
 
     .line 66
-    invoke-interface {v0, p1, p2}, Lrx/e;->a(J)V
+    invoke-interface {v0, p1, p2}, Lrx/f;->a(J)V
 
     .line 69
     :cond_4
@@ -361,7 +361,7 @@
     throw v0
 .end method
 
-.method public final a(Lrx/e;)V
+.method public final a(Lrx/f;)V
     .locals 2
 
     .prologue
@@ -377,10 +377,10 @@
     .line 117
     if-nez p1, :cond_0
 
-    sget-object p1, Lrx/internal/producers/a;->g:Lrx/e;
+    sget-object p1, Lrx/internal/producers/a;->g:Lrx/f;
 
     :cond_0
-    iput-object p1, p0, Lrx/internal/producers/a;->f:Lrx/e;
+    iput-object p1, p0, Lrx/internal/producers/a;->f:Lrx/f;
 
     .line 118
     monitor-exit p0
@@ -402,7 +402,7 @@
 
     .line 124
     :try_start_1
-    iput-object p1, p0, Lrx/internal/producers/a;->b:Lrx/e;
+    iput-object p1, p0, Lrx/internal/producers/a;->b:Lrx/f;
 
     .line 125
     if-eqz p1, :cond_2
@@ -410,7 +410,7 @@
     .line 126
     iget-wide v0, p0, Lrx/internal/producers/a;->a:J
 
-    invoke-interface {p1, v0, v1}, Lrx/e;->a(J)V
+    invoke-interface {p1, v0, v1}, Lrx/f;->a(J)V
 
     .line 129
     :cond_2

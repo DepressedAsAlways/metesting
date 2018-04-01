@@ -71,21 +71,21 @@
     .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 126
+    .line 139
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
 
-    .line 127
+    .line 140
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lkik/core/manager/n;->c:Ljava/util/Set;
 
-    .line 128
+    .line 141
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -113,10 +113,10 @@
     .locals 0
 
     .prologue
-    .line 137
+    .line 150
     invoke-static {p0}, Lio/branch/referral/Branch;->c(Landroid/content/Context;)Lio/branch/referral/Branch;
 
-    .line 138
+    .line 151
     return-void
 .end method
 
@@ -124,7 +124,7 @@
     .locals 2
 
     .prologue
-    .line 286
+    .line 347
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -135,14 +135,14 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 287
+    .line 348
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    .line 292
+    .line 353
     :goto_0
     return-void
 
-    .line 290
+    .line 351
     :cond_0
     iget-object v0, p0, Lkik/core/manager/n;->d:Landroid/os/Handler;
 
@@ -155,18 +155,18 @@
     .locals 2
 
     .prologue
-    .line 210
+    .line 240
     invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/core/manager/q;->a(Lkik/core/manager/n$b;)Lio/branch/referral/Branch$h;
+    invoke-static {p0}, Lkik/core/manager/r;->a(Lkik/core/manager/n$b;)Lio/branch/referral/Branch$h;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lio/branch/referral/Branch;->a(Lio/branch/referral/Branch$h;)V
 
-    .line 211
+    .line 241
     return-void
 .end method
 
@@ -174,10 +174,10 @@
     .locals 3
 
     .prologue
-    .line 1268
+    .line 328
     if-eqz p1, :cond_0
 
-    .line 1269
+    .line 329
     sget-object v0, Lkik/core/manager/n;->a:Lorg/slf4j/b;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -196,7 +196,7 @@
 
     invoke-interface {v0, v1}, Lorg/slf4j/b;->error(Ljava/lang/String;)V
 
-    .line 1274
+    .line 334
     :cond_0
     if-eqz p2, :cond_1
 
@@ -206,23 +206,25 @@
 
     if-nez v0, :cond_2
 
-    .line 1275
+    .line 335
     :cond_1
     invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lio/branch/referral/Branch;->e()Lorg/json/JSONObject;
+    invoke-virtual {v0}, Lio/branch/referral/Branch;->f()Lorg/json/JSONObject;
 
     move-result-object p2
 
-    .line 1277
+    .line 337
     :cond_2
     new-instance v1, Lkik/core/manager/n$c;
 
-    invoke-direct {v1, p2, p0}, Lkik/core/manager/n$c;-><init>(Lorg/json/JSONObject;Lkik/core/manager/n;)V
+    const/4 v0, 0x1
 
-    .line 1278
+    invoke-direct {v1, p2, p0, v0}, Lkik/core/manager/n$c;-><init>(Lorg/json/JSONObject;Lkik/core/manager/n;Z)V
+
+    .line 338
     iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -242,18 +244,18 @@
 
     check-cast v0, Lkik/core/manager/n$a;
 
-    .line 1279
+    .line 339
     invoke-interface {v0, v1}, Lkik/core/manager/n$a;->a(Lkik/core/manager/n$c;)V
 
     goto :goto_0
 
-    .line 1281
+    .line 341
     :cond_3
     iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 0
+    .line 342
     return-void
 .end method
 
@@ -261,38 +263,37 @@
     .locals 2
 
     .prologue
-    .line 0
-    .line 1165
+    .line 178
     iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
 
-    .line 1166
+    .line 179
     if-eqz p1, :cond_0
 
-    .line 1167
+    .line 180
     iget-object v1, p0, Lkik/core/manager/n;->b:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1169
+    .line 182
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 1170
+    .line 183
     invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/core/manager/s;->a(Lkik/core/manager/n;)Lio/branch/referral/Branch$e;
+    invoke-static {p0}, Lkik/core/manager/v;->a(Lkik/core/manager/n;)Lio/branch/referral/Branch$e;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lio/branch/referral/Branch;->a(Lio/branch/referral/Branch$e;)Z
 
-    .line 0
+    .line 185
     :cond_1
     return-void
 .end method
@@ -301,21 +302,21 @@
     .locals 3
 
     .prologue
-    .line 1151
+    .line 197
     if-eqz p1, :cond_0
 
-    .line 1152
+    .line 198
     iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1154
+    .line 201
     :cond_0
     invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/core/manager/t;->a(Lkik/core/manager/n;)Lio/branch/referral/Branch$e;
+    invoke-static {p0}, Lkik/core/manager/u;->a(Lkik/core/manager/n;)Lio/branch/referral/Branch$e;
 
     move-result-object v1
 
@@ -325,15 +326,23 @@
 
     invoke-virtual {v0, v1, v2, p3}, Lio/branch/referral/Branch;->a(Lio/branch/referral/Branch$e;Landroid/net/Uri;Landroid/app/Activity;)Z
 
-    .line 0
+    .line 202
     return-void
 .end method
 
 .method static synthetic a(Lkik/core/manager/n;Lorg/json/JSONObject;Lio/branch/referral/e;)V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0, p1, p2}, Lkik/core/manager/n;->a(Lorg/json/JSONObject;Lio/branch/referral/e;)V
+    .prologue
+    .line 0
+    .line 1327
+    invoke-static {p0, p2, p1}, Lkik/core/manager/t;->a(Lkik/core/manager/n;Lio/branch/referral/e;Lorg/json/JSONObject;)Ljava/lang/Runnable;
 
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lkik/core/manager/n;->a(Ljava/lang/Runnable;)V
+
+    .line 0
     return-void
 .end method
 
@@ -341,14 +350,14 @@
     .locals 1
 
     .prologue
-    .line 267
-    invoke-static {p0, p2, p1}, Lkik/core/manager/r;->a(Lkik/core/manager/n;Lio/branch/referral/e;Lorg/json/JSONObject;)Ljava/lang/Runnable;
+    .line 307
+    invoke-static {p0, p2, p1}, Lkik/core/manager/s;->a(Lkik/core/manager/n;Lio/branch/referral/e;Lorg/json/JSONObject;)Ljava/lang/Runnable;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lkik/core/manager/n;->a(Ljava/lang/Runnable;)V
 
-    .line 283
+    .line 323
     return-void
 .end method
 
@@ -356,15 +365,140 @@
     .locals 0
 
     .prologue
-    .line 0
-    .line 1210
+    .line 240
     invoke-interface {p0}, Lkik/core/manager/n$b;->a()V
 
-    .line 0
+    return-void
+.end method
+
+.method static synthetic b(Lkik/core/manager/n;Lio/branch/referral/e;Lorg/json/JSONObject;)V
+    .locals 3
+
+    .prologue
+    .line 308
+    if-eqz p1, :cond_0
+
+    .line 309
+    sget-object v0, Lkik/core/manager/n;->a:Lorg/slf4j/b;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Error initializing branch session "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lorg/slf4j/b;->error(Ljava/lang/String;)V
+
+    .line 314
+    :cond_0
+    if-eqz p2, :cond_1
+
+    invoke-virtual {p2}, Lorg/json/JSONObject;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    .line 315
+    :cond_1
+    invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lio/branch/referral/Branch;->f()Lorg/json/JSONObject;
+
+    move-result-object p2
+
+    .line 317
+    :cond_2
+    new-instance v1, Lkik/core/manager/n$c;
+
+    invoke-direct {v1, p2, p0}, Lkik/core/manager/n$c;-><init>(Lorg/json/JSONObject;Lkik/core/manager/n;)V
+
+    .line 318
+    iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/manager/n$a;
+
+    .line 319
+    invoke-interface {v0, v1}, Lkik/core/manager/n$a;->a(Lkik/core/manager/n$c;)V
+
+    goto :goto_0
+
+    .line 321
+    :cond_3
+    iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->clear()V
+
+    .line 322
+    return-void
+.end method
+
+.method static synthetic b(Lkik/core/manager/n;Lkik/core/manager/n$a;Landroid/content/Intent;Landroid/app/Activity;)V
+    .locals 3
+
+    .prologue
+    .line 164
+    if-eqz p1, :cond_0
+
+    .line 165
+    iget-object v0, p0, Lkik/core/manager/n;->b:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 167
+    :cond_0
+    invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
+
+    move-result-object v0
+
+    invoke-static {p0}, Lkik/core/manager/w;->a(Lkik/core/manager/n;)Lio/branch/referral/Branch$e;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2, p3}, Lio/branch/referral/Branch;->a(Lio/branch/referral/Branch$e;Landroid/net/Uri;Landroid/app/Activity;)Z
+
+    .line 168
     return-void
 .end method
 
 .method static synthetic b(Lkik/core/manager/n;Lorg/json/JSONObject;Lio/branch/referral/e;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lkik/core/manager/n;->a(Lorg/json/JSONObject;Lio/branch/referral/e;)V
+
+    return-void
+.end method
+
+.method static synthetic c(Lkik/core/manager/n;Lorg/json/JSONObject;Lio/branch/referral/e;)V
     .locals 0
 
     invoke-direct {p0, p1, p2}, Lkik/core/manager/n;->a(Lorg/json/JSONObject;Lio/branch/referral/e;)V
@@ -378,14 +512,14 @@
     .locals 2
 
     .prologue
-    .line 180
+    .line 210
     new-instance v0, Lkik/core/manager/n$c;
 
     invoke-static {}, Lio/branch/referral/Branch;->a()Lio/branch/referral/Branch;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lio/branch/referral/Branch;->e()Lorg/json/JSONObject;
+    invoke-virtual {v1}, Lio/branch/referral/Branch;->f()Lorg/json/JSONObject;
 
     move-result-object v1
 
@@ -398,12 +532,12 @@
     .locals 1
 
     .prologue
-    .line 205
+    .line 235
     iget-object v0, p0, Lkik/core/manager/n;->c:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 206
+    .line 236
     return-void
 .end method
 
@@ -411,14 +545,14 @@
     .locals 1
 
     .prologue
-    .line 160
+    .line 173
     invoke-static {p0, p1}, Lkik/core/manager/p;->a(Lkik/core/manager/n;Lkik/core/manager/n$a;)Ljava/lang/Runnable;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lkik/core/manager/n;->a(Ljava/lang/Runnable;)V
 
-    .line 173
+    .line 186
     return-void
 .end method
 
@@ -426,13 +560,28 @@
     .locals 1
 
     .prologue
-    .line 150
+    .line 163
     invoke-static {p0, p1, p2, p3}, Lkik/core/manager/o;->a(Lkik/core/manager/n;Lkik/core/manager/n$a;Landroid/content/Intent;Landroid/app/Activity;)Ljava/lang/Runnable;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lkik/core/manager/n;->a(Ljava/lang/Runnable;)V
 
-    .line 156
+    .line 169
+    return-void
+.end method
+
+.method public final b(Lkik/core/manager/n$a;Landroid/content/Intent;Landroid/app/Activity;)V
+    .locals 1
+
+    .prologue
+    .line 196
+    invoke-static {p0, p1, p2, p3}, Lkik/core/manager/q;->a(Lkik/core/manager/n;Lkik/core/manager/n$a;Landroid/content/Intent;Landroid/app/Activity;)Ljava/lang/Runnable;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lkik/core/manager/n;->a(Ljava/lang/Runnable;)V
+
+    .line 203
     return-void
 .end method

@@ -62,7 +62,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lkik/core/util/n;->a(Ljava/lang/String;Ljava/lang/String;)D
+    invoke-static {v0, v1}, Lkik/core/util/m;->a(Ljava/lang/String;Ljava/lang/String;)D
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -99,7 +99,7 @@
 
     move-result-wide v6
 
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v8
 
@@ -111,7 +111,7 @@
 
     move-result-wide v6
 
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v8
 

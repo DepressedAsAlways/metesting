@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/events/e;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/kik/cards/web/CardsWebViewFragment;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/kik/cards/web/CardsWebViewFragment;->f(Ljava/lang/String;)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,28 +16,22 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/kik/events/e",
-        "<",
-        "Landroid/os/Message;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic a:Lcom/kik/cards/web/CardsWebViewFragment;
+.field final synthetic a:Lcom/kik/events/Promise;
+
+.field final synthetic b:Lcom/kik/cards/web/CardsWebViewFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;)V
+.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;Lcom/kik/events/Promise;)V
     .locals 0
 
     .prologue
-    .line 340
-    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$41;->a:Lcom/kik/cards/web/CardsWebViewFragment;
+    .line 2291
+    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$41;->b:Lcom/kik/cards/web/CardsWebViewFragment;
+
+    iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$41;->a:Lcom/kik/events/Promise;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,37 +40,15 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 3
+.method public final onCancel(Landroid/content/DialogInterface;)V
+    .locals 1
 
     .prologue
-    .line 340
-    check-cast p2, Landroid/os/Message;
+    .line 2295
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$41;->a:Lcom/kik/events/Promise;
 
-    .line 1344
-    sput-object p2, Lcom/kik/cards/web/CardsWebViewFragment;->c:Landroid/os/Message;
+    invoke-virtual {v0}, Lcom/kik/events/Promise;->f()V
 
-    .line 1346
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$41;->a:Lcom/kik/cards/web/CardsWebViewFragment;
-
-    new-instance v1, Lcom/kik/cards/web/CardsWebViewFragment$a;
-
-    invoke-direct {v1}, Lcom/kik/cards/web/CardsWebViewFragment$a;-><init>()V
-
-    iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$41;->a:Lcom/kik/cards/web/CardsWebViewFragment;
-
-    .line 1347
-    invoke-virtual {v2}, Lcom/kik/cards/web/CardsWebViewFragment;->getUrl()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment$a;->c(Ljava/lang/String;)Lcom/kik/cards/web/CardsWebViewFragment$a;
-
-    move-result-object v1
-
-    .line 1346
-    invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lkik/android/util/af;)Lcom/kik/events/Promise;
-
-    .line 340
+    .line 2296
     return-void
 .end method

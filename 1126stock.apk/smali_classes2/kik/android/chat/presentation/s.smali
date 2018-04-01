@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Lkik/android/chat/presentation/bv",
         "<",
-        "Lkik/android/chat/view/u;",
+        "Lkik/android/chat/view/w;",
         ">;"
     }
 .end annotation
@@ -22,8 +22,32 @@
 .method public abstract a()V
 .end method
 
-.method public abstract a(Ljava/lang/String;)V
+.method public abstract a(Ljava/lang/CharSequence;)V
 .end method
 
-.method public abstract b(Ljava/lang/String;)V
+.method public abstract a(Ljava/lang/CharSequence;II)V
+.end method
+
+.method public abstract a(Lkik/core/datatypes/Message;)V
+.end method
+
+.method public abstract a(Lkik/core/datatypes/l;I)V
+.end method
+
+.method public abstract a(Z)V
+.end method
+
+.method public abstract b()V
+.end method
+
+.method public abstract d()Z
+.end method
+
+.method public abstract e()Z
+.end method
+
+.method public abstract f()Ljava/lang/String;
+.end method
+
+.method public abstract g()V
 .end method

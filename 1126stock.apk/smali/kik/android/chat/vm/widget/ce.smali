@@ -1,5 +1,5 @@
 .class public final Lkik/android/chat/vm/widget/ce;
-.super Lkik/android/chat/vm/b;
+.super Lkik/android/chat/vm/c;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/chat/vm/b",
+        "Lkik/android/chat/vm/c",
         "<",
         "Lkik/android/chat/vm/widget/ah;",
         ">;",
@@ -46,7 +46,7 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lkik/android/chat/vm/b;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
 
     .line 34
     new-instance v0, Ljava/util/ArrayList;
@@ -72,8 +72,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 0
-    .line 1073
+    .line 73
     iget-object v1, p0, Lkik/android/chat/vm/widget/ce;->c:Lkik/android/chat/fragment/KikChatFragment$b;
 
     if-eqz v1, :cond_0
@@ -99,10 +98,8 @@
 
     move-result-object v0
 
-    .line 0
     return-object v0
 
-    .line 1073
     :cond_0
     const/4 v0, 0x0
 
@@ -111,7 +108,7 @@
 
 
 # virtual methods
-.method protected final synthetic a(I)Lkik/android/chat/vm/u;
+.method protected final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 5
 
     .prologue
@@ -131,7 +128,7 @@
 
     iget-object v3, p0, Lkik/android/chat/vm/widget/ce;->a:Landroid/content/res/Resources;
 
-    const v4, 0x7f0a00d8
+    const v4, 0x7f0a011b
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -145,7 +142,7 @@
     return-object v1
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -153,7 +150,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/ce;)V
 
     .line 42
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/b;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 43
     return-void
@@ -169,7 +166,7 @@
     if-eq v0, p1, :cond_1
 
     .line 79
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/ce;->d()Ljava/util/List;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/ce;->q_()Ljava/util/List;
 
     move-result-object v0
 
@@ -204,12 +201,12 @@
     return-void
 .end method
 
-.method public final aP_()Lrx/b/h;
+.method public final aO_()Lrx/functions/h;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/b/h",
+            "Lrx/functions/h",
             "<",
             "Ljava/lang/Integer;",
             "Ljava/lang/Float;",
@@ -220,19 +217,19 @@
 
     .prologue
     .line 73
-    invoke-static {p0}, Lkik/android/chat/vm/widget/cf;->a(Lkik/android/chat/vm/widget/ce;)Lrx/b/h;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/cf;->a(Lkik/android/chat/vm/widget/ce;)Lrx/functions/h;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final c()V
+.method public final al_()V
     .locals 1
 
     .prologue
     .line 48
-    invoke-super {p0}, Lkik/android/chat/vm/b;->c()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->al_()V
 
     .line 49
     iget-object v0, p0, Lkik/android/chat/vm/widget/ce;->b:Ljava/util/List;
@@ -263,7 +260,7 @@
     return-object v0
 .end method
 
-.method public final h()I
+.method public final g()I
     .locals 1
 
     .prologue

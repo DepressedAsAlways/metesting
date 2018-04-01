@@ -1,133 +1,83 @@
 .class final Lcom/instabug/library/migration/b$1;
-.super Lrx/i;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lrx/d$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/instabug/library/migration/b;->a(Landroid/content/Context;)V
+    value = Lcom/instabug/library/migration/b;->migrate()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lrx/i",
+        "Ljava/lang/Object;",
+        "Lrx/d$a",
         "<",
-        "Ljava/lang/String;",
+        "Lcom/instabug/library/migration/AbstractMigration;",
         ">;"
     }
 .end annotation
 
 
+# instance fields
+.field final synthetic a:Lcom/instabug/library/migration/b;
+
+
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lcom/instabug/library/migration/b;)V
     .locals 0
 
     .prologue
-    .line 27
-    invoke-direct {p0}, Lrx/i;-><init>()V
+    .line 48
+    iput-object p1, p0, Lcom/instabug/library/migration/b$1;->a:Lcom/instabug/library/migration/b;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
-    .locals 3
-
-    .prologue
-    .line 27
-    check-cast p1, Ljava/lang/String;
-
-    .line 2046
-    const-class v0, Lcom/instabug/library/migration/b;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Migration "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " done"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 27
-    return-void
-.end method
-
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 3
-
-    .prologue
-    .line 41
-    const-class v0, Lcom/instabug/library/migration/b;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Migration failed"
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 42
-    return-void
-.end method
-
-.method public final b()V
-    .locals 0
-
-    .prologue
-    .line 30
-    invoke-super {p0}, Lrx/i;->b()V
-
-    .line 31
-    return-void
-.end method
-
-.method public final bb_()V
+.method public final synthetic call(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 35
-    const-class v0, Lcom/instabug/library/migration/b;
+    .line 48
+    check-cast p1, Lrx/j;
 
-    const-string v1, "All Migrations completed, setting lastMigrationVersion to 1"
+    .line 1051
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
 
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {}, Lcom/instabug/library/g/d;->w()J
 
-    .line 1240
-    invoke-static {}, Lcom/instabug/library/s;->j()V
+    move-result-wide v0
 
-    .line 37
+    .line 1052
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {v0, v1}, Lcom/instabug/library/g/d;->c(J)V
+
+    .line 1053
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {v0, v1}, Lcom/instabug/library/g/d;->d(J)V
+
+    .line 1054
+    iget-object v0, p0, Lcom/instabug/library/migration/b$1;->a:Lcom/instabug/library/migration/b;
+
+    invoke-virtual {p1, v0}, Lrx/j;->a(Ljava/lang/Object;)V
+
+    .line 1055
+    invoke-virtual {p1}, Lrx/j;->b()V
+
+    .line 48
     return-void
 .end method

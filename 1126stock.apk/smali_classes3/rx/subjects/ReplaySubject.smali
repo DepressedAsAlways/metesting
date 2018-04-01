@@ -1,5 +1,5 @@
 .class public final Lrx/subjects/ReplaySubject;
-.super Lrx/subjects/b;
+.super Lrx/subjects/c;
 .source "SourceFile"
 
 
@@ -18,7 +18,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lrx/subjects/b",
+        "Lrx/subjects/c",
         "<TT;TT;>;"
     }
 .end annotation
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 59
+    .line 58
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -65,17 +65,17 @@
     .end annotation
 
     .prologue
-    .line 237
-    invoke-direct {p0, p1}, Lrx/subjects/b;-><init>(Lrx/c$a;)V
+    .line 236
+    invoke-direct {p0, p1}, Lrx/subjects/c;-><init>(Lrx/d$a;)V
 
-    .line 238
+    .line 237
     iput-object p1, p0, Lrx/subjects/ReplaySubject;->b:Lrx/subjects/ReplaySubject$ReplayState;
 
-    .line 239
+    .line 238
     return-void
 .end method
 
-.method public static a(I)Lrx/subjects/ReplaySubject;
+.method public static b(I)Lrx/subjects/ReplaySubject;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -88,10 +88,10 @@
     .end annotation
 
     .prologue
-    .line 93
+    .line 92
     if-gtz p0, :cond_0
 
-    .line 94
+    .line 93
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -112,18 +112,18 @@
 
     throw v0
 
-    .line 96
+    .line 95
     :cond_0
     new-instance v0, Lrx/subjects/ReplaySubject$b;
 
     invoke-direct {v0, p0}, Lrx/subjects/ReplaySubject$b;-><init>(I)V
 
-    .line 97
+    .line 96
     new-instance v1, Lrx/subjects/ReplaySubject$ReplayState;
 
     invoke-direct {v1, v0}, Lrx/subjects/ReplaySubject$ReplayState;-><init>(Lrx/subjects/ReplaySubject$a;)V
 
-    .line 98
+    .line 97
     new-instance v0, Lrx/subjects/ReplaySubject;
 
     invoke-direct {v0, v1}, Lrx/subjects/ReplaySubject;-><init>(Lrx/subjects/ReplaySubject$ReplayState;)V
@@ -131,7 +131,7 @@
     return-object v0
 .end method
 
-.method public static k()Lrx/subjects/ReplaySubject;
+.method public static l()Lrx/subjects/ReplaySubject;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -144,10 +144,10 @@
     .end annotation
 
     .prologue
-    .line 74
+    .line 73
     const/16 v0, 0x10
 
-    invoke-static {v0}, Lrx/subjects/ReplaySubject;->a(I)Lrx/subjects/ReplaySubject;
+    invoke-static {v0}, Lrx/subjects/ReplaySubject;->b(I)Lrx/subjects/ReplaySubject;
 
     move-result-object v0
 
@@ -165,12 +165,12 @@
     .end annotation
 
     .prologue
-    .line 243
+    .line 242
     iget-object v0, p0, Lrx/subjects/ReplaySubject;->b:Lrx/subjects/ReplaySubject$ReplayState;
 
     invoke-virtual {v0, p1}, Lrx/subjects/ReplaySubject$ReplayState;->a(Ljava/lang/Object;)V
 
-    .line 244
+    .line 243
     return-void
 .end method
 
@@ -178,24 +178,24 @@
     .locals 1
 
     .prologue
-    .line 248
+    .line 247
     iget-object v0, p0, Lrx/subjects/ReplaySubject;->b:Lrx/subjects/ReplaySubject$ReplayState;
 
     invoke-virtual {v0, p1}, Lrx/subjects/ReplaySubject$ReplayState;->a(Ljava/lang/Throwable;)V
 
-    .line 249
+    .line 248
     return-void
 .end method
 
-.method public final bb_()V
+.method public final b()V
     .locals 1
 
     .prologue
-    .line 253
+    .line 252
     iget-object v0, p0, Lrx/subjects/ReplaySubject;->b:Lrx/subjects/ReplaySubject$ReplayState;
 
-    invoke-virtual {v0}, Lrx/subjects/ReplaySubject$ReplayState;->bb_()V
+    invoke-virtual {v0}, Lrx/subjects/ReplaySubject$ReplayState;->b()V
 
-    .line 254
+    .line 253
     return-void
 .end method

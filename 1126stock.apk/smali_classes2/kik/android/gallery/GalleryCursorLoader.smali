@@ -111,7 +111,7 @@
     iput-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->e:Ljava/lang/String;
 
     .line 61
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
@@ -191,8 +191,8 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 246
-    .line 248
+    .line 263
+    .line 265
     const/4 v0, 0x1
 
     new-array v2, v0, [Ljava/lang/String;
@@ -203,7 +203,7 @@
 
     aput-object v1, v2, v0
 
-    .line 253
+    .line 270
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -223,7 +223,7 @@
 
     move-result-object v1
 
-    .line 255
+    .line 272
     if-eqz v1, :cond_1
 
     :try_start_1
@@ -233,58 +233,58 @@
 
     if-eqz v0, :cond_1
 
-    .line 256
+    .line 273
     const-string v0, "_data"
 
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 257
+    .line 274
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     move-result-object v0
 
-    .line 261
+    .line 278
     if-eqz v1, :cond_0
 
-    .line 262
+    .line 279
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 265
+    .line 282
     :cond_0
     :goto_0
     return-object v0
 
-    .line 261
+    .line 278
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 262
+    .line 279
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
     :cond_2
     move-object v0, v6
 
-    .line 265
+    .line 282
     goto :goto_0
 
-    .line 261
+    .line 278
     :catchall_0
     move-exception v0
 
     :goto_1
     if-eqz v6, :cond_3
 
-    .line 262
+    .line 279
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
     :cond_3
     throw v0
 
-    .line 261
+    .line 278
     :catchall_1
     move-exception v0
 
@@ -294,7 +294,7 @@
 .end method
 
 .method private a(Landroid/net/Uri;)Ljava/lang/String;
-    .locals 8
+    .locals 10
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -304,9 +304,9 @@
     .prologue
     const/4 v5, 0x0
 
-    const/4 v7, 0x0
-
     const/4 v4, 0x1
+
+    const/4 v8, 0x0
 
     .line 156
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -339,128 +339,161 @@
     .line 161
     invoke-static {p1}, Landroid/provider/DocumentsContract;->getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 1220
+    .line 168
     :try_start_0
-    const-string v2, "com.google.android.apps.docs.storage"
+    const-string v1, ":"
+
+    .line 1237
+    const-string v3, "com.google.android.apps.docs.storage"
 
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    .line 170
+    if-eqz v3, :cond_0
+
+    .line 171
+    const-string v1, ";"
+
+    .line 174
+    :cond_0
+    invoke-virtual {v2, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const/4 v6, 0x0
 
-    move-result v2
+    aget-object v3, v3, v6
 
-    .line 167
-    if-eqz v2, :cond_3
-
-    .line 168
-    const-string v2, ";"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    .line 175
+    invoke-virtual {v2, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    aget-object v1, v1, v2
+    aget-object v9, v1, v2
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-object v6, v1
+    .line 184
+    const-string v7, ""
 
-    .line 179
-    :goto_1
+    .line 186
+    const-string v1, "video"
+
+    invoke-virtual {v3, v1}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 187
     new-array v2, v4, [Ljava/lang/String;
 
     const-string v1, "_data"
 
-    aput-object v1, v2, v7
+    aput-object v1, v2, v8
 
-    .line 182
+    .line 188
+    aget-object v6, v2, v8
+
+    .line 190
     const-string v3, "_id=?"
 
-    .line 184
-    sget-object v1, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    .line 192
+    sget-object v1, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     new-array v4, v4, [Ljava/lang/String;
 
-    aput-object v6, v4, v7
+    aput-object v9, v4, v8
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 186
-    const-string v0, ""
+    move-object v1, v6
 
-    .line 188
-    aget-object v2, v2, v7
+    .line 205
+    :goto_1
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
-    invoke-interface {v1, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    move-result v1
+
+    .line 207
+    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
-    .line 190
-    invoke-interface {v1}, Landroid/database/Cursor;->moveToFirst()Z
+    if-eqz v2, :cond_7
 
-    move-result v3
+    .line 208
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    if-eqz v3, :cond_0
-
-    .line 191
-    invoke-interface {v1, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 194
-    :cond_0
-    invoke-interface {v1}, Landroid/database/Cursor;->close()V
-
-    move-object v5, v0
+    move-result-object v1
 
     .line 211
-    :cond_1
     :goto_2
+    invoke-interface {v0}, Landroid/database/Cursor;->close()V
+
+    move-object v5, v1
+
+    .line 228
+    :cond_1
+    :goto_3
     return-object v5
 
     :cond_2
-    move v0, v7
+    move v0, v8
 
     .line 156
     goto :goto_0
 
-    .line 171
-    :cond_3
-    :try_start_1
-    const-string v2, ":"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    aget-object v1, v1, v2
-    :try_end_1
-    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_0
-
-    move-object v6, v1
-
-    .line 177
-    goto :goto_1
-
-    .line 175
+    .line 178
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
-    goto :goto_2
+    goto :goto_3
+
+    .line 196
+    :cond_3
+    new-array v2, v4, [Ljava/lang/String;
+
+    const-string v1, "_data"
+
+    aput-object v1, v2, v8
 
     .line 197
+    aget-object v6, v2, v8
+
+    .line 199
+    const-string v3, "_id=?"
+
+    .line 201
+    sget-object v1, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    new-array v4, v4, [Ljava/lang/String;
+
+    aput-object v9, v4, v8
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v0
+
+    move-object v1, v6
+
+    goto :goto_1
+
+    .line 214
     :cond_4
     const-string v0, "content"
 
@@ -474,7 +507,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 1229
+    .line 1246
     const-string v0, "com.google.android.apps.photos.content"
 
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
@@ -485,17 +518,17 @@
 
     move-result v0
 
-    .line 200
+    .line 217
     if-eqz v0, :cond_5
 
-    .line 201
+    .line 218
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object v5
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 204
+    .line 221
     :cond_5
     iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
 
@@ -503,9 +536,9 @@
 
     move-result-object v5
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 207
+    .line 224
     :cond_6
     const-string v0, "file"
 
@@ -519,35 +552,50 @@
 
     if-eqz v0, :cond_1
 
-    .line 208
+    .line 225
     invoke-virtual {p1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v5
+
+    goto :goto_3
+
+    :cond_7
+    move-object v1, v7
 
     goto :goto_2
 .end method
 
 
 # virtual methods
-.method public final a(Lkik/android/gallery/a;Landroid/graphics/BitmapFactory$Options;)Lcom/kik/cache/u;
-    .locals 1
+.method public final a(Lkik/android/gallery/a;Landroid/graphics/BitmapFactory$Options;)Lcom/kik/cache/GalleryImageRequest;
+    .locals 6
 
     .prologue
+    const/4 v4, 0x0
+
     .line 146
+    const/4 v1, 0x0
+
     iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-static {p1, p2, v0}, Lcom/kik/cache/u;->a(Lkik/android/gallery/a;Landroid/graphics/BitmapFactory$Options;Landroid/content/ContentResolver;)Lcom/kik/cache/u;
+    move-object v0, p1
+
+    move-object v2, p2
+
+    move-object v5, v4
+
+    invoke-static/range {v0 .. v5}, Lcom/kik/cache/GalleryImageRequest;->getGalleryImageRequest(Lkik/android/gallery/a;ILandroid/graphics/BitmapFactory$Options;Landroid/content/ContentResolver;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)Lcom/kik/cache/GalleryImageRequest;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final a(Landroid/content/Intent;ILkik/android/chat/vm/z;)Lkik/android/gallery/a;
+.method public final a(Landroid/content/Intent;ILkik/android/chat/vm/ay;)Lkik/android/gallery/a;
     .locals 10
 
     .prologue
@@ -555,20 +603,20 @@
 
     const/4 v8, 0x0
 
-    .line 271
+    .line 288
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 272
+    .line 289
     invoke-direct {p0, v1}, Lkik/android/gallery/GalleryCursorLoader;->a(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 274
+    .line 291
     if-eqz v5, :cond_4
 
-    .line 275
+    .line 292
     invoke-virtual {p1}, Landroid/content/Intent;->getFlags()I
 
     move-result v2
@@ -579,18 +627,18 @@
 
     move-result-object v3
 
-    .line 2073
+    .line 2077
     const/4 v4, 0x2
 
     if-ne p2, v4, :cond_0
 
-    .line 2074
+    .line 2078
     and-int/lit8 v2, v2, 0x3
 
-    .line 2078
+    .line 2082
     invoke-virtual {v3, v1, v2}, Landroid/content/ContentResolver;->takePersistableUriPermission(Landroid/net/Uri;I)V
 
-    .line 276
+    .line 293
     :cond_0
     iget-object v2, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
 
@@ -602,8 +650,8 @@
 
     move-result-object v2
 
-    .line 277
-    invoke-static {v2}, Lkik/core/util/v;->a(Ljava/lang/CharSequence;)Z
+    .line 294
+    invoke-static {v2}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
@@ -619,7 +667,7 @@
 
     const/4 v6, 0x1
 
-    .line 280
+    .line 297
     :goto_0
     :try_start_0
     const-string v2, "temp_"
@@ -632,11 +680,11 @@
 
     move-result-object v9
 
-    .line 281
+    .line 298
     :try_start_1
     invoke-virtual {v9}, Ljava/io/File;->deleteOnExit()V
 
-    .line 283
+    .line 300
     iget-object v2, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -649,19 +697,19 @@
 
     if-eqz v1, :cond_3
 
-    .line 284
+    .line 301
     invoke-virtual {v9}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 285
+    .line 302
     if-eqz v6, :cond_2
 
-    invoke-static {v4}, Lkik/android/util/ce;->c(Ljava/lang/String;)I
+    invoke-static {v4}, Lkik/android/util/bx;->c(Ljava/lang/String;)I
 
     move-result v7
 
-    .line 287
+    .line 304
     :goto_1
     new-instance v1, Lkik/android/gallery/a;
 
@@ -671,20 +719,20 @@
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 300
+    .line 317
     :goto_2
     return-object v1
 
     :cond_1
     move v6, v0
 
-    .line 277
+    .line 294
     goto :goto_0
 
     :cond_2
     move v7, v0
 
-    .line 285
+    .line 302
     goto :goto_1
 
     :catch_0
@@ -695,28 +743,28 @@
     :goto_3
     move-object v9, v0
 
-    .line 295
+    .line 312
     :cond_3
     if-eqz v9, :cond_4
 
-    .line 296
+    .line 313
     invoke-virtual {v9}, Ljava/io/File;->delete()Z
 
-    .line 299
+    .line 316
     :cond_4
     iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
 
-    const v1, 0x7f0901b4
+    const v1, 0x7f0901b5
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-interface {p3, v0}, Lkik/android/chat/vm/z;->a(Ljava/lang/String;)V
+    invoke-interface {p3, v0}, Lkik/android/chat/vm/ay;->b(Ljava/lang/String;)V
 
     move-object v1, v8
 
-    .line 300
+    .line 317
     goto :goto_2
 
     :catch_1
@@ -744,19 +792,6 @@
     return-void
 .end method
 
-.method public final a(Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
-    .locals 1
-
-    .prologue
-    .line 312
-    iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
-
-    invoke-static {v0, p1}, Lcom/rounds/kik/analytics/Reporter;->report(Landroid/content/Context;Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
-
-    .line 313
-    return-void
-.end method
-
 .method public final b()V
     .locals 2
 
@@ -768,7 +803,7 @@
 
     iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->f:Lrx/subjects/a;
 
-    invoke-virtual {v0}, Lrx/subjects/a;->m()Z
+    invoke-virtual {v0}, Lrx/subjects/a;->n()Z
 
     move-result v0
 
@@ -776,7 +811,7 @@
 
     iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->f:Lrx/subjects/a;
 
-    invoke-virtual {v0}, Lrx/subjects/a;->l()Z
+    invoke-virtual {v0}, Lrx/subjects/a;->m()Z
 
     move-result v0
 
@@ -787,7 +822,7 @@
 
     iget-object v1, p0, Lkik/android/gallery/GalleryCursorLoader;->f:Lrx/subjects/a;
 
-    invoke-virtual {v1}, Lrx/subjects/a;->n()Ljava/lang/Object;
+    invoke-virtual {v1}, Lrx/subjects/a;->o()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -844,12 +879,12 @@
     return-void
 .end method
 
-.method public final d()Lrx/c;
+.method public final d()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/database/Cursor;",
             ">;"
@@ -867,7 +902,7 @@
     .locals 3
 
     .prologue
-    .line 306
+    .line 323
     iget-object v0, p0, Lkik/android/gallery/GalleryCursorLoader;->h:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -880,7 +915,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
 
-    .line 307
+    .line 324
     return-void
 .end method
 

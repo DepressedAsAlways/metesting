@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 384
+    .line 390
     iput-object p1, p0, Lcom/rounds/kik/VideoController$3;->a:Lcom/rounds/kik/VideoController;
 
     invoke-direct {p0}, Lcom/rounds/kik/Concurrency$CancelableTask;-><init>()V
@@ -37,7 +37,7 @@
     .locals 1
 
     .prologue
-    .line 388
+    .line 394
     iget-object v0, p0, Lcom/rounds/kik/VideoController$3;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConferenceObserver:Lcom/rounds/kik/VideoController$a;
@@ -47,6 +47,6 @@
 
     invoke-static {v0}, Lcom/rounds/kik/VideoController$a;->a(Lcom/rounds/kik/VideoController$a;)V
 
-    .line 389
+    .line 395
     return-void
 .end method

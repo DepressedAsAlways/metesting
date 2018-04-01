@@ -23,7 +23,7 @@
 
 .field d:Landroid/view/View;
 
-.field e:Lcom/kik/cards/usermedia/h;
+.field e:Lcom/kik/cards/usermedia/g;
 
 .field final synthetic f:Lcom/kik/cards/usermedia/CustomGalleryActivity$a;
 

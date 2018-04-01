@@ -1,5 +1,5 @@
 .class public final Lkik/android/chat/vm/widget/at;
-.super Lkik/android/chat/vm/b;
+.super Lkik/android/chat/vm/c;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/chat/vm/b",
+        "Lkik/android/chat/vm/c",
         "<",
         "Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel;",
         ">;",
@@ -28,7 +28,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ac;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -83,7 +83,7 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lkik/android/chat/vm/b;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
 
     .line 30
     const-string v0, "DEFAULT_SMILEY"
@@ -123,7 +123,7 @@
 
 
 # virtual methods
-.method protected final synthetic a(I)Lkik/android/chat/vm/u;
+.method protected final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 8
 
     .prologue
@@ -135,7 +135,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/at;->h()I
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/at;->g()I
 
     move-result v0
 
@@ -180,19 +180,19 @@
     .line 1066
     new-instance v0, Lcom/kik/android/b/g$b;
 
-    iget-object v2, p0, Lkik/android/chat/vm/widget/at;->b:Lkik/core/interfaces/ac;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/at;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v2}, Lkik/core/interfaces/ac;->f()J
+    invoke-interface {v2}, Lkik/core/interfaces/ad;->f()J
 
     move-result-wide v2
 
-    iget-object v4, p0, Lkik/android/chat/vm/widget/at;->b:Lkik/core/interfaces/ac;
+    iget-object v4, p0, Lkik/android/chat/vm/widget/at;->b:Lkik/core/interfaces/ad;
 
     invoke-virtual {v1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-interface {v4, v5}, Lkik/core/interfaces/ac;->m(Ljava/lang/String;)J
+    invoke-interface {v4, v5}, Lkik/core/interfaces/ad;->n(Ljava/lang/String;)J
 
     move-result-wide v4
 
@@ -215,7 +215,7 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
@@ -234,13 +234,13 @@
     iput-object v0, p0, Lkik/android/chat/vm/widget/at;->e:Ljava/util/List;
 
     .line 45
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/b;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 46
     return-void
 .end method
 
-.method public final c()V
+.method public final al_()V
     .locals 2
 
     .prologue
@@ -258,7 +258,7 @@
     iput-object v1, p0, Lkik/android/chat/vm/widget/at;->f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
 
     .line 54
-    invoke-super {p0}, Lkik/android/chat/vm/b;->c()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->al_()V
 
     .line 55
     return-void
@@ -275,7 +275,7 @@
 
     if-nez v0, :cond_1
 
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/at;->h()I
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/at;->g()I
 
     move-result v0
 
@@ -313,7 +313,7 @@
     goto :goto_0
 .end method
 
-.method public final h()I
+.method public final g()I
     .locals 2
 
     .prologue

@@ -1,5 +1,6 @@
 .class public interface abstract Lcom/kik/messagepath/model/Widgets$c;
 .super Ljava/lang/Object;
+.source "SourceFile"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 218
+    .line 214
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$7;->a:Lcom/rounds/kik/view/VideoView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 2
 
     .prologue
-    .line 222
+    .line 218
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$7;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mNeedRefresh:Z
@@ -50,7 +50,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 223
+    .line 219
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$7;->a:Lcom/rounds/kik/view/VideoView;
 
     const/4 v1, 0x0
@@ -58,19 +58,19 @@
     # setter for: Lcom/rounds/kik/view/VideoView;->mNeedRefresh:Z
     invoke-static {v0, v1}, Lcom/rounds/kik/view/VideoView;->access$1502(Lcom/rounds/kik/view/VideoView;Z)Z
 
-    .line 224
+    .line 220
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$7;->a:Lcom/rounds/kik/view/VideoView;
 
     iget-object v1, p0, Lcom/rounds/kik/view/VideoView$7;->a:Lcom/rounds/kik/view/VideoView;
 
-    # getter for: Lcom/rounds/kik/view/VideoView;->mFullVideoSurface:Lcom/rounds/kik/view/VideoSurface;
-    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$300(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoSurface;
+    # getter for: Lcom/rounds/kik/view/VideoView;->mBubblesVideoSurface:Lcom/rounds/kik/view/VideoSurface;
+    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$200(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoSurface;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoView;->refreshVideoSurfaceView(Lcom/rounds/kik/view/VideoSurface;)V
 
-    .line 226
+    .line 222
     :cond_0
     return-void
 .end method

@@ -40,7 +40,7 @@
 
     const/4 v2, 0x0
 
-    .line 959
+    .line 963
     new-instance v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
 
     const-string v1, "TRANSLATE_XY"
@@ -49,7 +49,7 @@
 
     sput-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->TRANSLATE_XY:Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
 
-    .line 960
+    .line 964
     new-instance v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
 
     const-string v1, "TRANSLATE_SCALE_Y"
@@ -58,7 +58,7 @@
 
     sput-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->TRANSLATE_SCALE_Y:Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
 
-    .line 957
+    .line 961
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
@@ -85,7 +85,7 @@
     .end annotation
 
     .prologue
-    .line 957
+    .line 961
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -95,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 957
+    .line 961
     const-class v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -111,7 +111,7 @@
     .locals 1
 
     .prologue
-    .line 957
+    .line 961
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->$VALUES:[Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
 
     invoke-virtual {v0}, [Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->clone()Ljava/lang/Object;

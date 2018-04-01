@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/widget/BugmeBarView;->n_()V
+    value = Lkik/android/widget/BugmeBarView;->l_()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

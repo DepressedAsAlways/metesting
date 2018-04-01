@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/android/volley/i$b;
+.implements Lcom/android/volley/h$b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/util/f;->a(Ljava/util/ArrayList;ILcom/kik/cache/ae;)Lkik/android/util/f$a;
+    value = Lkik/android/util/f;->a(Ljava/util/ArrayList;ILcom/kik/cache/KikVolleyImageLoader;)Lkik/android/util/f$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/android/volley/i$b",
+        "Lcom/android/volley/h$b",
         "<",
         "Landroid/graphics/Bitmap;",
         ">;"
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 600
+    .line 606
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,6 +44,6 @@
     .locals 0
 
     .prologue
-    .line 600
+    .line 606
     return-void
 .end method

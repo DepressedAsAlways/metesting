@@ -60,7 +60,8 @@
     iput v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->a:I
 
     .line 10413
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->g()Z
+    # getter for: Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->access$11300()Z
 
     .line 9404
     return-void
@@ -89,7 +90,8 @@
     iput v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->a:I
 
     .line 11413
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->g()Z
+    # getter for: Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->access$11300()Z
 
     .line 9410
     return-void
@@ -119,7 +121,8 @@
 
     .line 9514
     :try_start_0
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->h()Lcom/google/protobuf/Parser;
+    # getter for: Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->access$11700()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -323,7 +326,7 @@
     const/4 v3, 0x1
 
     .line 9490
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->e()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getDefaultInstance()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
     move-result-object v0
 
@@ -337,7 +340,7 @@
     :cond_0
     sget-object v0, Lcom/kik/messagepath/model/Keyboards$2;->c:[I
 
-    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
+    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getTypeCase()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
 
     move-result-object v1
 
@@ -357,7 +360,7 @@
 
     .line 9493
     :pswitch_0
-    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getSuggestedReply()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
     move-result-object v1
 
@@ -549,7 +552,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+    invoke-direct {v0, p0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/messagepath/model/Keyboards$1;)V
 
     .line 9442
     iget v1, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->a:I
@@ -566,14 +569,16 @@
     .line 9444
     iget-object v1, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->b:Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;Ljava/lang/Object;)Ljava/lang/Object;
+    # setter for: Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
+    invoke-static {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->access$11502(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9449
     :cond_0
     :goto_0
     iget v1, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->a:I
 
-    invoke-static {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;I)I
+    # setter for: Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
+    invoke-static {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->access$11602(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;I)I
 
     .line 9450
     invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->onBuilt()V
@@ -589,7 +594,8 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;Ljava/lang/Object;)Ljava/lang/Object;
+    # setter for: Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
+    invoke-static {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->access$11502(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 .end method
@@ -856,7 +862,7 @@
 
     .prologue
     .line 19429
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->e()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getDefaultInstance()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
     move-result-object v0
 
@@ -869,7 +875,7 @@
 
     .prologue
     .line 18429
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->e()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getDefaultInstance()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
     move-result-object v0
 

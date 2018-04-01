@@ -1,5 +1,5 @@
 .class final Lkik/android/a/b$4;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;",
         ">;"
@@ -35,7 +35,7 @@
     .line 196
     iput-object p1, p0, Lkik/android/a/b$4;->a:Lkik/android/a/b;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -52,13 +52,13 @@
     .line 1200
     if-eqz p1, :cond_1
 
-    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->a()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
     .line 1201
     iget-object v0, p0, Lkik/android/a/b$4;->a:Lkik/android/a/b;
 
-    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -82,17 +82,17 @@
     .line 1202
     iget-object v0, p0, Lkik/android/a/b$4;->a:Lkik/android/a/b;
 
-    invoke-static {v0}, Lkik/android/a/b;->b(Lkik/android/a/b;)Lkik/core/interfaces/ac;
+    invoke-static {v0}, Lkik/android/a/b;->b(Lkik/android/a/b;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
     const-string v1, "enc_metrics_anon_id"
 
-    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ac;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 1204
     new-instance v0, Ljava/lang/StringBuilder;
@@ -180,7 +180,7 @@
 
     .prologue
     .line 225
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)V
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
     .line 226
     return-void
@@ -198,7 +198,7 @@
     iput-boolean v1, v0, Lkik/android/a/b;->b:Z
 
     .line 232
-    invoke-super {p0}, Lcom/kik/events/l;->b()V
+    invoke-super {p0}, Lcom/kik/events/k;->b()V
 
     .line 233
     return-void

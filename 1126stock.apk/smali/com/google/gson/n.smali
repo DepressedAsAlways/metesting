@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Object;)Lcom/google/gson/j;
+.method public abstract a()Lcom/google/gson/k;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TT;)",
-            "Lcom/google/gson/j;"
+            "()",
+            "Lcom/google/gson/k;"
         }
     .end annotation
 .end method

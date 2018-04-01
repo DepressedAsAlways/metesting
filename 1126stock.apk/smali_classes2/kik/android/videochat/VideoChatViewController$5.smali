@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 458
+    .line 493
     iput-object p1, p0, Lkik/android/videochat/VideoChatViewController$5;->b:Lkik/android/videochat/VideoChatViewController;
 
     iput-boolean p2, p0, Lkik/android/videochat/VideoChatViewController$5;->a:Z
@@ -44,15 +44,15 @@
     .locals 2
 
     .prologue
-    .line 462
+    .line 497
     iget-boolean v0, p0, Lkik/android/videochat/VideoChatViewController$5;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 463
+    .line 498
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$5;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->l(Lkik/android/videochat/VideoChatViewController;)Landroid/view/View;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->x(Lkik/android/videochat/VideoChatViewController;)Landroid/view/View;
 
     move-result-object v0
 
@@ -68,11 +68,11 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/analytics/Reporter;->report(Landroid/content/Context;Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
 
-    .line 466
+    .line 501
     :cond_0
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$5;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->c(Lkik/android/videochat/VideoChatViewController;)Lkik/android/videochat/c;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->o(Lkik/android/videochat/VideoChatViewController;)Lkik/android/videochat/c;
 
     move-result-object v0
 
@@ -82,12 +82,12 @@
 
     iget-object v1, p0, Lkik/android/videochat/VideoChatViewController$5;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->g(Lkik/android/videochat/VideoChatViewController;)Lkik/core/datatypes/m;
+    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->s(Lkik/android/videochat/VideoChatViewController;)Lkik/core/datatypes/l;
 
     move-result-object v1
 
     invoke-interface {v0, v1}, Lcom/rounds/kik/analytics/IReporterProxy;->onNetworkErrorDialogTap(Ljava/lang/Object;)V
 
-    .line 467
+    .line 502
     return-void
 .end method

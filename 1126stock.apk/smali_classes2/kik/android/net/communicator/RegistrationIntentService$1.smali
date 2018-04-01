@@ -1,5 +1,5 @@
 .class final Lkik/android/net/communicator/RegistrationIntentService$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Lkik/core/net/outgoing/ae;",
+        "Lkik/core/net/outgoing/j;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
 
     iput-object p2, p0, Lkik/android/net/communicator/RegistrationIntentService$1;->a:Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -54,13 +54,13 @@
     .line 1060
     iget-object v0, p0, Lkik/android/net/communicator/RegistrationIntentService$1;->b:Lkik/android/net/communicator/RegistrationIntentService;
 
-    iget-object v0, v0, Lkik/android/net/communicator/RegistrationIntentService;->b:Lkik/core/interfaces/ac;
+    iget-object v0, v0, Lkik/android/net/communicator/RegistrationIntentService;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "GCM_PUSH_TOKEN"
 
     iget-object v2, p0, Lkik/android/net/communicator/RegistrationIntentService$1;->a:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ac;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 56
     return-void
@@ -71,7 +71,7 @@
 
     .prologue
     .line 66
-    invoke-static {p1}, Lkik/android/util/bc;->d(Ljava/lang/Throwable;)V
+    invoke-static {p1}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
 
     .line 67
     return-void

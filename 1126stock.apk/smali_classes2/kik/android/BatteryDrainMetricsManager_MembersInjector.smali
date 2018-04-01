@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -84,16 +84,16 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 14
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
+    .line 22
     sget-boolean v0, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -106,11 +106,11 @@
 
     throw v0
 
-    .line 16
+    .line 23
     :cond_0
     iput-object p1, p0, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 17
+    .line 24
     sget-boolean v0, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -123,11 +123,11 @@
 
     throw v0
 
-    .line 18
+    .line 25
     :cond_1
     iput-object p2, p0, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 19
+    .line 26
     return-void
 .end method
 
@@ -142,7 +142,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;)",
             "Ldagger/b",
             "<",
@@ -169,10 +169,10 @@
     .line 9
     check-cast p1, Lkik/android/f;
 
-    .line 1023
+    .line 1037
     if-nez p1, :cond_0
 
-    .line 1024
+    .line 1038
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -181,7 +181,7 @@
 
     throw v0
 
-    .line 1026
+    .line 1040
     :cond_0
     iget-object v0, p0, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->b:Ljavax/inject/Provider;
 
@@ -193,16 +193,16 @@
 
     iput-object v0, p1, Lkik/android/f;->a:Lkik/android/chat/service/BatteryChangeReceiver;
 
-    .line 1027
+    .line 1041
     iget-object v0, p0, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ac;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/f;->b:Lkik/core/interfaces/ac;
+    iput-object v0, p1, Lkik/android/f;->b:Lkik/core/interfaces/ad;
 
     .line 9
     return-void

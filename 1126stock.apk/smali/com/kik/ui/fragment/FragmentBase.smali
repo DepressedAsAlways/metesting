@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/c/a;
-.implements Lcom/kik/c/c;
+.implements Lcom/kik/d/a;
+.implements Lcom/kik/d/c;
 .implements Lkik/android/util/KeyboardManipulator;
 
 
@@ -16,14 +16,22 @@
 .end annotation
 
 
+# static fields
+.field public static final KEYBOARD_SHOW_ALWAYS:I = 0x1
+
+.field public static final KEYBOARD_SHOW_NEVER:I = 0x2
+
+
 # instance fields
-.field private a:Landroid/view/inputmethod/InputMethodManager;
+.field protected final REQUEST_GENERIC:I
 
-.field private b:Landroid/os/Bundle;
+.field private final SOFT_KEYBOARD_HEIGHT_DP_THRESHOLD:I
 
-.field private c:Z
+.field private _deliveredResults:Z
 
-.field private d:Lcom/kik/events/Promise;
+.field private _eventHub:Lcom/kik/events/d;
+
+.field private _finishPromise:Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/kik/events/Promise",
@@ -34,31 +42,15 @@
     .end annotation
 .end field
 
-.field private e:I
+.field private _focusedView:Landroid/view/View;
 
-.field private f:Landroid/view/View;
+.field private _hasFocus:Z
 
-.field private g:Z
+.field private _hasResult:Z
 
-.field private h:Z
+.field private _inputManager:Landroid/view/inputmethod/InputMethodManager;
 
-.field private i:Landroid/graphics/Rect;
-
-.field private j:Z
-
-.field private final k:I
-
-.field private l:Z
-
-.field private m:Z
-
-.field private n:Lcom/kik/events/d;
-
-.field protected final v:I
-
-.field protected w:Z
-
-.field protected x:Ljava/util/Queue;
+.field protected _keyboardCommandQueue:Ljava/util/Queue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue",
@@ -68,6 +60,20 @@
         }
     .end annotation
 .end field
+
+.field private _keyboardHandled:Z
+
+.field protected _keyboardHandlingPaused:Z
+
+.field private _keyboardMode:I
+
+.field private _paused:Z
+
+.field private _resultAdopted:Z
+
+.field private _resultData:Landroid/os/Bundle;
+
+.field private r:Landroid/graphics/Rect;
 
 
 # direct methods
@@ -83,53 +89,53 @@
     invoke-direct {p0}, Landroid/support/v4/app/Fragment;-><init>()V
 
     .line 45
-    iput v2, p0, Lcom/kik/ui/fragment/FragmentBase;->v:I
+    iput v2, p0, Lcom/kik/ui/fragment/FragmentBase;->REQUEST_GENERIC:I
 
     .line 48
-    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->c:Z
+    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_hasResult:Z
 
     .line 49
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->d:Lcom/kik/events/Promise;
+    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_finishPromise:Lcom/kik/events/Promise;
 
     .line 50
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/kik/ui/fragment/FragmentBase;->e:I
+    iput v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardMode:I
 
     .line 51
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->f:Landroid/view/View;
+    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_focusedView:Landroid/view/View;
 
     .line 52
-    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->g:Z
+    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_deliveredResults:Z
 
     .line 53
-    iput-boolean v2, p0, Lcom/kik/ui/fragment/FragmentBase;->h:Z
+    iput-boolean v2, p0, Lcom/kik/ui/fragment/FragmentBase;->_paused:Z
 
     .line 54
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->i:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->r:Landroid/graphics/Rect;
 
     .line 57
-    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->w:Z
+    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandlingPaused:Z
 
     .line 58
     invoke-static {v2}, Lcom/google/common/collect/EvictingQueue;->a(I)Lcom/google/common/collect/EvictingQueue;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->x:Ljava/util/Queue;
+    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardCommandQueue:Ljava/util/Queue;
 
     .line 60
-    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->j:Z
+    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
 
     .line 66
     const/high16 v0, 0x43000000    # 128.0f
@@ -138,136 +144,107 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/kik/ui/fragment/FragmentBase;->k:I
+    iput v0, p0, Lcom/kik/ui/fragment/FragmentBase;->SOFT_KEYBOARD_HEIGHT_DP_THRESHOLD:I
 
     .line 72
-    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->l:Z
+    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_resultAdopted:Z
 
     .line 74
-    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->m:Z
+    iput-boolean v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_hasFocus:Z
 
     .line 75
     new-instance v0, Lcom/kik/events/d;
 
     invoke-direct {v0}, Lcom/kik/events/d;-><init>()V
 
-    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->n:Lcom/kik/events/d;
+    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_eventHub:Lcom/kik/events/d;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/kik/ui/fragment/FragmentBase;)Landroid/view/inputmethod/InputMethodManager;
+.method static synthetic access$000(Lcom/kik/ui/fragment/FragmentBase;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
 .end method
 
-.method public static varargs a(I[Ljava/lang/Object;)Ljava/lang/String;
-    .locals 1
+.method static synthetic access$lambda$0(Lcom/kik/ui/fragment/FragmentBase;)V
+    .locals 0
 
-    .prologue
-    .line 89
-    invoke-static {p0, p1}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase;->handleKeyboard()V
 
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static b(I)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 79
-    invoke-static {p0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic b(Lcom/kik/ui/fragment/FragmentBase;)V
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 2199
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->j:Z
-
-    if-nez v0, :cond_1
-
-    .line 2203
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->v()V
-
-    .line 2205
-    iget v0, p0, Lcom/kik/ui/fragment/FragmentBase;->e:I
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 2221
-    :cond_0
-    :goto_0
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->j:Z
-
-    .line 0
-    :cond_1
     return-void
+.end method
 
-    .line 2207
-    :pswitch_0
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->f:Landroid/view/View;
+.method private addBackButtonClickListener(Landroid/view/View;)V
+    .locals 2
 
+    .prologue
+    .line 120
+    if-eqz p1, :cond_1
+
+    .line 121
+    const v0, 0x7f100119
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    .line 122
     if-eqz v0, :cond_0
 
-    .line 2208
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->f:Landroid/view/View;
+    .line 123
+    new-instance v1, Lcom/kik/ui/fragment/FragmentBase$1;
 
-    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->a(Landroid/view/View;)V
+    invoke-direct {v1, p0}, Lcom/kik/ui/fragment/FragmentBase$1;-><init>(Lcom/kik/ui/fragment/FragmentBase;)V
 
-    goto :goto_0
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2212
-    :pswitch_1
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->f:Landroid/view/View;
+    .line 132
+    :cond_0
+    const v0, 0x7f10011b
 
-    .line 2213
-    if-nez v0, :cond_2
-
-    .line 2214
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getView()Landroid/view/View;
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 2216
-    :cond_2
-    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->b(Landroid/view/View;)V
+    check-cast v0, Landroid/widget/TextView;
 
-    goto :goto_0
+    .line 133
+    if-eqz v0, :cond_1
 
-    .line 2205
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getTitleResource()I
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 134
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getTitleResource()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+
+    .line 137
+    :cond_1
+    return-void
 .end method
 
-.method private c()V
+.method private deliverResults()V
     .locals 2
 
     .prologue
     .line 290
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->g:Z
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_deliveredResults:Z
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->l:Z
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_resultAdopted:Z
 
     if-eqz v0, :cond_1
 
@@ -280,17 +257,17 @@
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->g:Z
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_deliveredResults:Z
 
     .line 295
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->c:Z
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_hasResult:Z
 
     if-eqz v0, :cond_2
 
     .line 296
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->d:Lcom/kik/events/Promise;
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_finishPromise:Lcom/kik/events/Promise;
 
-    iget-object v1, p0, Lcom/kik/ui/fragment/FragmentBase;->b:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_resultData:Landroid/os/Bundle;
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
@@ -298,39 +275,185 @@
 
     .line 299
     :cond_2
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->d:Lcom/kik/events/Promise;
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_finishPromise:Lcom/kik/events/Promise;
 
     invoke-virtual {v0}, Lcom/kik/events/Promise;->f()V
 
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/kik/ui/fragment/FragmentBase;)V
-    .locals 0
-
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->F()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method protected A()Z
+.method private getSoftInputMode()I
     .locals 1
 
     .prologue
-    .line 453
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->m:Z
+    .line 151
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getInputAdjustType()I
+
+    move-result v0
 
     return v0
 .end method
 
-.method public B()V
+.method private handleKeyboard()V
+    .locals 1
+
+    .prologue
+    .line 199
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
+
+    if-eqz v0, :cond_0
+
+    .line 222
+    :goto_0
+    return-void
+
+    .line 203
+    :cond_0
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->applySoftInputMode()V
+
+    .line 205
+    iget v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardMode:I
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 221
+    :cond_1
+    :goto_1
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
+
+    goto :goto_0
+
+    .line 207
+    :pswitch_0
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_focusedView:Landroid/view/View;
+
+    if-eqz v0, :cond_1
+
+    .line 208
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_focusedView:Landroid/view/View;
+
+    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->showKeyBoard(Landroid/view/View;)V
+
+    goto :goto_1
+
+    .line 212
+    :pswitch_1
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_focusedView:Landroid/view/View;
+
+    .line 213
+    if-nez v0, :cond_2
+
+    .line 214
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    .line 216
+    :cond_2
+    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->hideKeyBoard(Landroid/view/View;)V
+
+    goto :goto_1
+
+    .line 205
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+
+# virtual methods
+.method public adoptResultPromise()Lcom/kik/events/Promise;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/kik/events/Promise",
+            "<",
+            "Landroid/os/Bundle;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 284
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_resultAdopted:Z
+
+    .line 285
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getResultPromise()Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public applySoftInputMode()V
+    .locals 2
+
+    .prologue
+    .line 227
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    .line 228
+    if-eqz v0, :cond_0
+
+    .line 229
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase;->getSoftInputMode()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
+
+    .line 231
+    :cond_0
+    return-void
+.end method
+
+.method public disableKeyboardHandling()V
+    .locals 1
+
+    .prologue
+    .line 260
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
+
+    .line 261
+    return-void
+.end method
+
+.method protected enableKeyboardHandling()V
+    .locals 1
+
+    .prologue
+    .line 265
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
+
+    .line 266
+    return-void
+.end method
+
+.method public finish()V
     .locals 3
 
     .prologue
     .line 463
-    invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase;->c()V
+    invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase;->deliverResults()V
 
     .line 466
     invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
@@ -369,7 +492,260 @@
     goto :goto_0
 .end method
 
-.method protected C()I
+.method protected forceDecorLayout()V
+    .locals 2
+
+    .prologue
+    .line 547
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    .line 548
+    if-nez v0, :cond_0
+
+    .line 552
+    :goto_0
+    return-void
+
+    .line 551
+    :cond_0
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
+
+    goto :goto_0
+.end method
+
+.method public getDrawableFromResource(I)Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    .prologue
+    .line 84
+    invoke-static {p1}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected getInputAdjustType()I
+    .locals 1
+
+    .prologue
+    .line 160
+    const/16 v0, 0x10
+
+    return v0
+.end method
+
+.method public getPortraitScreenHeightInDip()I
+    .locals 3
+
+    .prologue
+    .line 403
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    .line 404
+    if-nez v0, :cond_0
+
+    .line 405
+    const/4 v0, 0x0
+
+    .line 412
+    :goto_0
+    return v0
+
+    .line 407
+    :cond_0
+    new-instance v1, Landroid/util/DisplayMetrics;
+
+    invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
+
+    .line 408
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
+
+    .line 409
+    invoke-static {v0}, Lkik/android/util/j;->b(Landroid/app/Activity;)I
+
+    move-result v0
+
+    .line 411
+    const/4 v2, 0x2
+
+    if-ne v0, v2, :cond_1
+
+    iget v0, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    .line 412
+    :goto_1
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(I)I
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 411
+    :cond_1
+    iget v0, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    goto :goto_1
+.end method
+
+.method public getPortraitScreenWidthInDip()I
+    .locals 1
+
+    .prologue
+    .line 443
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getPortraitScreenWidthInPixels()I
+
+    move-result v0
+
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(I)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getPortraitScreenWidthInPixels()I
+    .locals 4
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 420
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v1
+
+    .line 421
+    if-nez v1, :cond_1
+
+    .line 438
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 424
+    :cond_1
+    new-instance v2, Landroid/util/DisplayMetrics;
+
+    invoke-direct {v2}, Landroid/util/DisplayMetrics;-><init>()V
+
+    .line 425
+    invoke-virtual {v1}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v3
+
+    .line 427
+    if-eqz v3, :cond_0
+
+    .line 430
+    invoke-interface {v3}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v3
+
+    .line 431
+    if-eqz v3, :cond_0
+
+    .line 434
+    invoke-virtual {v3, v2}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
+
+    .line 436
+    invoke-static {v1}, Lkik/android/util/j;->b(Landroid/app/Activity;)I
+
+    move-result v0
+
+    .line 437
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_2
+
+    iget v0, v2, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    goto :goto_0
+
+    :cond_2
+    iget v0, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    goto :goto_0
+.end method
+
+.method public getRequestedStatusBarColor()I
+    .locals 1
+
+    .prologue
+    .line 515
+    const v0, 0x7f0e00cd
+
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->d(I)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getResultPromise()Lcom/kik/events/Promise;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/kik/events/Promise",
+            "<",
+            "Landroid/os/Bundle;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 246
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_finishPromise:Lcom/kik/events/Promise;
+
+    return-object v0
+.end method
+
+.method public getStringFromResource(I)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 79
+    invoke-static {p1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public varargs getStringFromResource(I[Ljava/lang/Object;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 89
+    invoke-static {p1, p2}, Lkik/android/chat/KikApplication;->a(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected getTitleResource()I
     .locals 1
 
     .prologue
@@ -379,7 +755,7 @@
     return v0
 .end method
 
-.method public D()Z
+.method public getTransparentStatusBarRequested()Z
     .locals 1
 
     .prologue
@@ -389,7 +765,7 @@
     return v0
 .end method
 
-.method public final E()I
+.method public getTransparentStatusHeight()I
     .locals 5
 
     .prologue
@@ -405,7 +781,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->D()Z
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getTransparentStatusBarRequested()Z
 
     move-result v1
 
@@ -443,38 +819,7 @@
     return v0
 .end method
 
-.method protected final F()V
-    .locals 2
-
-    .prologue
-    .line 547
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    .line 548
-    if-nez v0, :cond_0
-
-    .line 552
-    :goto_0
-    return-void
-
-    .line 551
-    :cond_0
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
-
-    goto :goto_0
-.end method
-
-.method protected final G()I
+.method protected getWindowObscuredHeight()I
     .locals 4
 
     .prologue
@@ -496,7 +841,7 @@
     move-result-object v1
 
     .line 572
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->i:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->r:Landroid/graphics/Rect;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
@@ -510,7 +855,7 @@
     move-result v0
 
     .line 579
-    iget-object v2, p0, Lcom/kik/ui/fragment/FragmentBase;->i:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/kik/ui/fragment/FragmentBase;->r:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->bottom:I
 
@@ -549,28 +894,115 @@
     goto :goto_0
 .end method
 
-.method protected final H()V
-    .locals 2
+.method public handleBackPress()Z
+    .locals 1
 
     .prologue
-    const/4 v1, 0x0
+    .line 486
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->finish()V
 
-    .line 605
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
+    .line 487
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method protected hasFocus()Z
+    .locals 1
+
+    .prologue
+    .line 453
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_hasFocus:Z
+
+    return v0
+.end method
+
+.method public hideKeyBoard(Landroid/view/View;)V
+    .locals 3
+    .param p1    # Landroid/view/View;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 333
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    .line 334
+    if-eqz v0, :cond_0
+
+    iget-object v1, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
+
+    if-nez v1, :cond_1
+
+    .line 349
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 338
+    :cond_1
+    invoke-virtual {v0}, Landroid/app/Activity;->getCurrentFocus()Landroid/view/View;
+
+    move-result-object v0
+
+    .line 339
+    if-eqz v0, :cond_2
+
+    move-object p1, v0
+
+    .line 342
+    :cond_2
+    if-eqz p1, :cond_0
+
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
 
     if-eqz v0, :cond_0
 
-    .line 606
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
+    .line 343
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
 
-    invoke-virtual {v0, v1, v1}, Landroid/view/inputmethod/InputMethodManager;->toggleSoftInput(II)V
+    invoke-virtual {p1}, Landroid/view/View;->getApplicationWindowToken()Landroid/os/IBinder;
 
-    .line 608
-    :cond_0
-    return-void
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+
+    .line 347
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+
+    goto :goto_0
 .end method
 
-.method protected final I()V
+.method public isPaused()Z
+    .locals 1
+
+    .prologue
+    .line 510
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_paused:Z
+
+    return v0
+.end method
+
+.method public isStacked()Z
+    .locals 1
+
+    .prologue
+    .line 101
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method protected lockToCurrentOrientation()V
     .locals 5
 
     .prologue
@@ -607,7 +1039,7 @@
     .line 665
     :cond_0
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->d(I)V
+    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->setScreenOrientation(I)V
 
     .line 666
     return-void
@@ -681,98 +1113,207 @@
     .end packed-switch
 .end method
 
-.method protected final J()V
+.method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
 
     .prologue
-    .line 673
-    const/4 v0, -0x1
+    .line 236
+    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->d(I)V
-
-    .line 674
-    return-void
-.end method
-
-.method public final a(Landroid/os/Bundle;)V
-    .locals 1
-
-    .prologue
-    .line 106
-    iput-object p1, p0, Lcom/kik/ui/fragment/FragmentBase;->b:Landroid/os/Bundle;
-
-    .line 1141
+    .line 240
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->c:Z
+    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->onWindowFocusChanged(Z)V
 
-    .line 108
+    .line 241
     return-void
 .end method
 
-.method public a(Landroid/view/View;)V
-    .locals 1
-    .param p1    # Landroid/view/View;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 2
 
     .prologue
-    .line 306
+    .line 95
+    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
+
+    .line 96
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    const-string v1, "input_method"
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+
+    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
+
+    .line 97
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 1
+
+    .prologue
+    .line 271
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_eventHub:Lcom/kik/events/d;
+
+    invoke-virtual {v0}, Lcom/kik/events/d;->a()V
+
+    .line 272
+    invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase;->deliverResults()V
+
+    .line 273
+    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onDestroy()V
+
+    .line 274
+    return-void
+.end method
+
+.method public onDestroyView()V
+    .locals 1
+
+    .prologue
+    .line 253
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, v0}, Lcom/kik/ui/fragment/FragmentBase;->a(Landroid/view/View;Z)V
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
 
-    .line 307
+    .line 254
+    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onDestroyView()V
+
+    .line 255
     return-void
 .end method
 
-.method public final a(Landroid/view/View;I)V
-    .locals 0
-
-    .prologue
-    .line 354
-    iput-object p1, p0, Lcom/kik/ui/fragment/FragmentBase;->f:Landroid/view/View;
-
-    .line 355
-    iput p2, p0, Lcom/kik/ui/fragment/FragmentBase;->e:I
-
-    .line 356
-    return-void
-.end method
-
-.method public a(Landroid/view/View;Z)V
+.method public onHardBackPressed()Z
     .locals 1
-    .param p1    # Landroid/view/View;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
 
     .prologue
-    .line 312
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
+    .line 493
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public onPause()V
+    .locals 1
+
+    .prologue
+    .line 499
+    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onPause()V
+
+    .line 500
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_paused:Z
+
+    .line 501
+    return-void
+.end method
+
+.method public onResume()V
+    .locals 4
+
+    .prologue
+    .line 166
+    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onResume()V
+
+    .line 167
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_paused:Z
+
+    .line 169
+    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandled:Z
 
     if-eqz v0, :cond_0
 
-    if-nez p1, :cond_1
-
-    .line 326
-    :cond_0
+    .line 187
     :goto_0
     return-void
 
-    .line 318
+    .line 175
+    :cond_0
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    .line 178
+    if-eqz v0, :cond_1
+
+    .line 179
+    invoke-static {p0}, Lcom/kik/ui/fragment/a;->a(Lcom/kik/ui/fragment/FragmentBase;)Ljava/lang/Runnable;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 182
+    invoke-static {p0}, Lcom/kik/ui/fragment/b;->a(Lcom/kik/ui/fragment/FragmentBase;)Ljava/lang/Runnable;
+
+    move-result-object v1
+
+    const-wide/16 v2, 0xc8
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    goto :goto_0
+
+    .line 185
     :cond_1
-    new-instance v0, Lcom/kik/ui/fragment/FragmentBase$2;
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/kik/ui/fragment/FragmentBase$2;-><init>(Lcom/kik/ui/fragment/FragmentBase;Landroid/view/View;Z)V
+    const-string v1, "Trying to handle keyboard for fragment without view"
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v0}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method
 
-.method public final a(Lkik/android/util/KeyboardManipulator$InputMode;)V
+.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 0
+
+    .prologue
+    .line 113
+    invoke-super {p0, p1, p2}, Landroid/support/v4/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 114
+    invoke-direct {p0, p1}, Lcom/kik/ui/fragment/FragmentBase;->addBackButtonClickListener(Landroid/view/View;)V
+
+    .line 115
+    return-void
+.end method
+
+.method public onWindowFocusChanged(Z)V
+    .locals 0
+
+    .prologue
+    .line 458
+    iput-boolean p1, p0, Lcom/kik/ui/fragment/FragmentBase;->_hasFocus:Z
+
+    .line 459
+    return-void
+.end method
+
+.method public setHasResult(Z)V
+    .locals 0
+
+    .prologue
+    .line 141
+    iput-boolean p1, p0, Lcom/kik/ui/fragment/FragmentBase;->_hasResult:Z
+
+    .line 142
+    return-void
+.end method
+
+.method public setInputMode(Lkik/android/util/KeyboardManipulator$InputMode;)V
     .locals 2
 
     .prologue
@@ -824,150 +1365,18 @@
     goto :goto_0
 .end method
 
-.method public aR_()Z
-    .locals 1
-
-    .prologue
-    .line 510
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->h:Z
-
-    return v0
-.end method
-
-.method public b(Landroid/view/View;)V
-    .locals 3
-    .param p1    # Landroid/view/View;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .prologue
-    const/4 v2, 0x0
-
-    .line 333
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    .line 334
-    if-eqz v0, :cond_0
-
-    iget-object v1, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
-
-    if-nez v1, :cond_1
-
-    .line 349
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 338
-    :cond_1
-    invoke-virtual {v0}, Landroid/app/Activity;->getCurrentFocus()Landroid/view/View;
-
-    move-result-object v0
-
-    .line 339
-    if-eqz v0, :cond_2
-
-    move-object p1, v0
-
-    .line 342
-    :cond_2
-    if-eqz p1, :cond_0
-
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
-
-    if-eqz v0, :cond_0
-
-    .line 343
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
-
-    invoke-virtual {p1}, Landroid/view/View;->getApplicationWindowToken()Landroid/os/IBinder;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
-
-    .line 347
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
-
-    goto :goto_0
-.end method
-
-.method public final c(I)V
-    .locals 2
-
-    .prologue
-    .line 191
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    .line 192
-    if-eqz v0, :cond_0
-
-    instance-of v1, v0, Lkik/android/e/k;
-
-    if-eqz v1, :cond_0
-
-    .line 193
-    check-cast v0, Lkik/android/e/k;
-
-    invoke-interface {v0, p1}, Lkik/android/e/k;->a(I)V
-
-    .line 195
-    :cond_0
-    return-void
-.end method
-
-.method public c(Z)V
-    .locals 0
-
-    .prologue
-    .line 458
-    iput-boolean p1, p0, Lcom/kik/ui/fragment/FragmentBase;->m:Z
-
-    .line 459
-    return-void
-.end method
-
-.method protected final d(I)V
-    .locals 1
-
-    .prologue
-    .line 556
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    .line 557
-    if-eqz v0, :cond_0
-
-    .line 559
-    invoke-virtual {v0, p1}, Landroid/app/Activity;->setRequestedOrientation(I)V
-
-    .line 561
-    :cond_0
-    return-void
-.end method
-
-.method public final d(Z)V
+.method public setKeyboardHandlingPaused(Z)V
     .locals 2
 
     .prologue
     .line 385
-    iput-boolean p1, p0, Lcom/kik/ui/fragment/FragmentBase;->w:Z
+    iput-boolean p1, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardHandlingPaused:Z
 
     .line 387
     if-nez p1, :cond_0
 
     .line 389
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->x:Ljava/util/Queue;
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardCommandQueue:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->iterator()Ljava/util/Iterator;
 
@@ -1001,473 +1410,160 @@
     return-void
 .end method
 
-.method public m()Z
-    .locals 1
+.method public setKeyboardMode(Landroid/view/View;I)V
+    .locals 0
 
     .prologue
-    .line 101
-    const/4 v0, 0x0
+    .line 354
+    iput-object p1, p0, Lcom/kik/ui/fragment/FragmentBase;->_focusedView:Landroid/view/View;
 
-    return v0
-.end method
+    .line 355
+    iput p2, p0, Lcom/kik/ui/fragment/FragmentBase;->_keyboardMode:I
 
-.method public n()Z
-    .locals 1
-
-    .prologue
-    .line 486
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->B()V
-
-    .line 487
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public o()I
-    .locals 1
-
-    .prologue
-    .line 515
-    const v0, 0x7f0f00be
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->d(I)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public onActivityCreated(Landroid/os/Bundle;)V
-    .locals 1
-
-    .prologue
-    .line 236
-    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
-
-    .line 240
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->c(Z)V
-
-    .line 241
+    .line 356
     return-void
 .end method
 
-.method public onCreate(Landroid/os/Bundle;)V
+.method public setResultData(Landroid/os/Bundle;)V
+    .locals 1
+
+    .prologue
+    .line 106
+    iput-object p1, p0, Lcom/kik/ui/fragment/FragmentBase;->_resultData:Landroid/os/Bundle;
+
+    .line 107
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->setHasResult(Z)V
+
+    .line 108
+    return-void
+.end method
+
+.method protected setScreenOrientation(I)V
+    .locals 1
+
+    .prologue
+    .line 556
+    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v0
+
+    .line 557
+    if-eqz v0, :cond_0
+
+    .line 559
+    invoke-virtual {v0, p1}, Landroid/app/Activity;->setRequestedOrientation(I)V
+
+    .line 561
+    :cond_0
+    return-void
+.end method
+
+.method public setStatusBarColor(I)V
     .locals 2
 
     .prologue
-    .line 95
-    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
-
-    .line 96
+    .line 191
     invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    const-string v1, "input_method"
+    .line 192
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    instance-of v1, v0, Lkik/android/f/l;
 
-    move-result-object v0
+    if-eqz v1, :cond_0
 
-    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+    .line 193
+    check-cast v0, Lkik/android/f/l;
 
-    iput-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->a:Landroid/view/inputmethod/InputMethodManager;
+    invoke-interface {v0, p1}, Lkik/android/f/l;->a(I)V
 
-    .line 97
+    .line 195
+    :cond_0
     return-void
 .end method
 
-.method public onDestroy()V
+.method public showKeyBoard(Landroid/view/View;)V
     .locals 1
+    .param p1    # Landroid/view/View;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
 
     .prologue
-    .line 271
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->n:Lcom/kik/events/d;
-
-    invoke-virtual {v0}, Lcom/kik/events/d;->a()V
-
-    .line 272
-    invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase;->c()V
-
-    .line 273
-    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onDestroy()V
-
-    .line 274
-    return-void
-.end method
-
-.method public onDestroyView()V
-    .locals 1
-
-    .prologue
-    .line 253
+    .line 306
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->j:Z
+    invoke-virtual {p0, p1, v0}, Lcom/kik/ui/fragment/FragmentBase;->showKeyBoard(Landroid/view/View;Z)V
 
-    .line 254
-    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onDestroyView()V
-
-    .line 255
+    .line 307
     return-void
 .end method
 
-.method public onPause()V
+.method public showKeyBoard(Landroid/view/View;Z)V
     .locals 1
+    .param p1    # Landroid/view/View;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
 
     .prologue
-    .line 499
-    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onPause()V
-
-    .line 500
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->h:Z
-
-    .line 501
-    return-void
-.end method
-
-.method public onResume()V
-    .locals 4
-
-    .prologue
-    .line 166
-    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onResume()V
-
-    .line 167
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->h:Z
-
-    .line 169
-    iget-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->j:Z
+    .line 312
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
 
     if-eqz v0, :cond_0
 
-    .line 187
+    if-nez p1, :cond_1
+
+    .line 326
+    :cond_0
     :goto_0
     return-void
 
-    .line 175
-    :cond_0
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    .line 178
-    if-eqz v0, :cond_1
-
-    .line 179
-    invoke-static {p0}, Lcom/kik/ui/fragment/a;->a(Lcom/kik/ui/fragment/FragmentBase;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    .line 182
-    invoke-static {p0}, Lcom/kik/ui/fragment/b;->a(Lcom/kik/ui/fragment/FragmentBase;)Ljava/lang/Runnable;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0xc8
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    goto :goto_0
-
-    .line 185
+    .line 318
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    new-instance v0, Lcom/kik/ui/fragment/FragmentBase$2;
 
-    const-string v1, "Trying to handle keyboard for fragment without view"
+    invoke-direct {v0, p0, p1, p2}, Lcom/kik/ui/fragment/FragmentBase$2;-><init>(Lcom/kik/ui/fragment/FragmentBase;Landroid/view/View;Z)V
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkik/android/util/bc;->d(Ljava/lang/Throwable;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 .end method
 
-.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+.method protected toggleKeyboardVisibility()V
     .locals 2
 
     .prologue
-    .line 113
-    invoke-super {p0, p1, p2}, Landroid/support/v4/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    const/4 v1, 0x0
 
-    .line 2120
-    if-eqz p1, :cond_1
+    .line 605
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
 
-    .line 2121
-    const v0, 0x7f1000f3
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    .line 2122
     if-eqz v0, :cond_0
 
-    .line 2123
-    new-instance v1, Lcom/kik/ui/fragment/FragmentBase$1;
+    .line 606
+    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->_inputManager:Landroid/view/inputmethod/InputMethodManager;
 
-    invoke-direct {v1, p0}, Lcom/kik/ui/fragment/FragmentBase$1;-><init>(Lcom/kik/ui/fragment/FragmentBase;)V
+    invoke-virtual {v0, v1, v1}, Landroid/view/inputmethod/InputMethodManager;->toggleSoftInput(II)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 2132
-    :cond_0
-    const v0, 0x7f1000f5
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    .line 2133
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->C()I
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 2134
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->C()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
-
-    .line 115
-    :cond_1
-    return-void
-.end method
-
-.method public s()Z
-    .locals 1
-
-    .prologue
-    .line 493
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final t()V
-    .locals 1
-
-    .prologue
-    .line 141
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->c:Z
-
-    .line 142
-    return-void
-.end method
-
-.method protected u()I
-    .locals 1
-
-    .prologue
-    .line 160
-    const/16 v0, 0x10
-
-    return v0
-.end method
-
-.method public final v()V
-    .locals 2
-
-    .prologue
-    .line 227
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    .line 228
-    if-eqz v0, :cond_0
-
-    .line 229
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    .line 2151
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->u()I
-
-    move-result v1
-
-    .line 229
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
-
-    .line 231
+    .line 608
     :cond_0
     return-void
 .end method
 
-.method public final w()Lcom/kik/events/Promise;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 246
-    iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase;->d:Lcom/kik/events/Promise;
-
-    return-object v0
-.end method
-
-.method public final x()V
+.method protected unlockOrientation()V
     .locals 1
 
     .prologue
-    .line 260
-    const/4 v0, 0x1
+    .line 673
+    const/4 v0, -0x1
 
-    iput-boolean v0, p0, Lcom/kik/ui/fragment/FragmentBase;->j:Z
+    invoke-virtual {p0, v0}, Lcom/kik/ui/fragment/FragmentBase;->setScreenOrientation(I)V
 
-    .line 261
+    .line 674
     return-void
-.end method
-
-.method public final y()I
-    .locals 3
-
-    .prologue
-    .line 403
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    .line 404
-    if-nez v0, :cond_0
-
-    .line 405
-    const/4 v0, 0x0
-
-    .line 412
-    :goto_0
-    return v0
-
-    .line 407
-    :cond_0
-    new-instance v1, Landroid/util/DisplayMetrics;
-
-    invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
-
-    .line 408
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
-
-    .line 409
-    invoke-static {v0}, Lkik/android/util/j;->b(Landroid/app/Activity;)I
-
-    move-result v0
-
-    .line 411
-    const/4 v2, 0x2
-
-    if-ne v0, v2, :cond_1
-
-    iget v0, v1, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    .line 412
-    :goto_1
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(I)I
-
-    move-result v0
-
-    goto :goto_0
-
-    .line 411
-    :cond_1
-    iget v0, v1, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    goto :goto_1
-.end method
-
-.method public final z()I
-    .locals 4
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 420
-    invoke-virtual {p0}, Lcom/kik/ui/fragment/FragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v1
-
-    .line 421
-    if-nez v1, :cond_1
-
-    .line 438
-    :cond_0
-    :goto_0
-    return v0
-
-    .line 424
-    :cond_1
-    new-instance v2, Landroid/util/DisplayMetrics;
-
-    invoke-direct {v2}, Landroid/util/DisplayMetrics;-><init>()V
-
-    .line 425
-    invoke-virtual {v1}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
-
-    move-result-object v3
-
-    .line 427
-    if-eqz v3, :cond_0
-
-    .line 430
-    invoke-interface {v3}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
-
-    move-result-object v3
-
-    .line 431
-    if-eqz v3, :cond_0
-
-    .line 434
-    invoke-virtual {v3, v2}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
-
-    .line 436
-    invoke-static {v1}, Lkik/android/util/j;->b(Landroid/app/Activity;)I
-
-    move-result v0
-
-    .line 437
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_2
-
-    iget v0, v2, Landroid/util/DisplayMetrics;->heightPixels:I
-
-    goto :goto_0
-
-    :cond_2
-    iget v0, v2, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    goto :goto_0
 .end method

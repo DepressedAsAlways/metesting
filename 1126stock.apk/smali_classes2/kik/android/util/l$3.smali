@@ -35,7 +35,7 @@
 
     .prologue
     .line 156
-    invoke-static {p1}, Lkik/android/util/bl;->a(Ljava/util/regex/Matcher;)Ljava/lang/String;
+    invoke-static {p1}, Lkik/android/util/bf;->a(Ljava/util/regex/Matcher;)Ljava/lang/String;
 
     move-result-object v0
 

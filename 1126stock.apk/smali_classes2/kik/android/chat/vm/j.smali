@@ -2,48 +2,56 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkik/android/chat/vm/m;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/chat/vm/j$a;
+    }
+.end annotation
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private a:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
 
 .field private b:Ljava/lang/String;
 
-.field private c:Z
-
-.field private d:Z
-
-.field private e:Ljava/lang/String;
+.field private c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Lkik/android/chat/vm/j$a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
     .prologue
-    .line 19
+    .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
-    iput-object p1, p0, Lkik/android/chat/vm/j;->a:Ljava/lang/String;
+    .line 13
+    sget-object v0, Lkik/android/chat/vm/DialogViewModel$DialogStyle;->PLAIN:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
 
-    .line 21
-    iput-object p2, p0, Lkik/android/chat/vm/j;->b:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/vm/j;->a:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
 
-    .line 22
-    iput-boolean p3, p0, Lkik/android/chat/vm/j;->c:Z
+    .line 53
+    new-instance v0, Ljava/util/ArrayList;
 
-    .line 23
-    const/4 v0, 0x0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-boolean v0, p0, Lkik/android/chat/vm/j;->d:Z
+    iput-object v0, p0, Lkik/android/chat/vm/j;->c:Ljava/util/List;
 
-    .line 24
-    iput-object p4, p0, Lkik/android/chat/vm/j;->e:Ljava/lang/String;
+    .line 1073
+    iput-object p1, p0, Lkik/android/chat/vm/j;->b:Ljava/lang/String;
 
-    .line 25
+    .line 59
     return-void
 .end method
 
@@ -53,48 +61,78 @@
     .locals 1
 
     .prologue
-    .line 30
-    iget-object v0, p0, Lkik/android/chat/vm/j;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 36
-    iget-object v0, p0, Lkik/android/chat/vm/j;->e:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final c()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 42
+    .line 63
     iget-object v0, p0, Lkik/android/chat/vm/j;->b:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final d()Z
-    .locals 1
+.method public final a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/j;
+    .locals 2
 
     .prologue
-    .line 48
-    iget-boolean v0, p0, Lkik/android/chat/vm/j;->c:Z
+    .line 91
+    new-instance v0, Lkik/android/chat/vm/j$a;
 
-    return v0
+    invoke-direct {v0, p1, p2}, Lkik/android/chat/vm/j$a;-><init>(Ljava/lang/String;Ljava/lang/Runnable;)V
+
+    .line 1080
+    iget-object v1, p0, Lkik/android/chat/vm/j;->c:Ljava/util/List;
+
+    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 91
+    return-object p0
 .end method
 
-.method public final e()Z
+.method public final a(Ljava/util/List;)Lkik/android/chat/vm/j;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List",
+            "<",
+            "Lkik/android/chat/vm/j$a;",
+            ">;)",
+            "Lkik/android/chat/vm/j;"
+        }
+    .end annotation
+
+    .prologue
+    .line 106
+    iget-object v0, p0, Lkik/android/chat/vm/j;->c:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 107
+    return-object p0
+.end method
+
+.method public final b()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lkik/android/chat/vm/j$a;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 68
+    iget-object v0, p0, Lkik/android/chat/vm/j;->c:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public final c()Lkik/android/chat/vm/DialogViewModel$DialogStyle;
     .locals 1
 
     .prologue
-    .line 54
-    iget-boolean v0, p0, Lkik/android/chat/vm/j;->d:Z
+    .line 101
+    iget-object v0, p0, Lkik/android/chat/vm/j;->a:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
 
-    return v0
+    return-object v0
 .end method

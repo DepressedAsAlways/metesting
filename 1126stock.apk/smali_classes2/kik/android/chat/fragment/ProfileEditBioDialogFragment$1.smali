@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b$c;
+.implements Lrx/c;
 
 
 # annotations
@@ -39,7 +39,7 @@
 
 # virtual methods
 .method public final a()V
-    .locals 3
+    .locals 6
 
     .prologue
     .line 100
@@ -55,7 +55,7 @@
     .line 102
     iget-object v0, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment$1;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Lkik/android/chat/fragment/KikScopedDialogFragment;
+    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->d(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Lkik/android/chat/fragment/KikScopedDialogFragment;
 
     move-result-object v0
 
@@ -65,9 +65,11 @@
 
     move-result-object v1
 
-    const v2, 0x7f040137
+    const v2, 0x7f04017d
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikScopedDialogFragment;->a(Landroid/content/Context;I)Lcom/kik/events/Promise;
+    const-wide/16 v4, 0x3e8
+
+    invoke-virtual {v0, v1, v2, v4, v5}, Lkik/android/chat/fragment/KikScopedDialogFragment;->showTimedProgressDialog(Landroid/content/Context;IJ)Lcom/kik/events/Promise;
 
     .line 103
     return-void
@@ -86,7 +88,7 @@
     return-void
 .end method
 
-.method public final a(Lrx/j;)V
+.method public final a(Lrx/k;)V
     .locals 4
 
     .prologue
@@ -99,7 +101,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09049c
+    const v2, 0x7f0904b0
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

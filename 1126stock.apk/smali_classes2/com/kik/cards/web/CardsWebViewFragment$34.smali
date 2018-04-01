@@ -30,7 +30,7 @@
     .locals 0
 
     .prologue
-    .line 2056
+    .line 2074
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$34;->c:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$34;->a:Landroid/webkit/GeolocationPermissions$Callback;
@@ -45,29 +45,18 @@
 
 # virtual methods
 .method public final onClick(Landroid/content/DialogInterface;I)V
-    .locals 4
+    .locals 3
 
     .prologue
-    .line 2060
+    const/4 v2, 0x0
+
+    .line 2078
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$34;->a:Landroid/webkit/GeolocationPermissions$Callback;
 
     iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$34;->b:Ljava/lang/String;
 
-    const/4 v2, 0x1
+    invoke-interface {v0, v1, v2, v2}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
 
-    const/4 v3, 0x0
-
-    invoke-interface {v0, v1, v2, v3}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
-
-    .line 2061
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$34;->c:Lcom/kik/cards/web/CardsWebViewFragment;
-
-    iget-object v0, v0, Lcom/kik/cards/web/CardsWebViewFragment;->u:Lkik/android/b/g;
-
-    iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$34;->b:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lkik/android/b/g;->d(Ljava/lang/String;)Lcom/kik/events/Promise;
-
-    .line 2062
+    .line 2079
     return-void
 .end method

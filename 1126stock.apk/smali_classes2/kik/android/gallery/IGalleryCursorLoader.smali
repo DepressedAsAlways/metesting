@@ -19,13 +19,10 @@
 
 
 # virtual methods
-.method public abstract a(Lkik/android/gallery/a;Landroid/graphics/BitmapFactory$Options;)Lcom/kik/cache/u;
+.method public abstract a(Lkik/android/gallery/a;Landroid/graphics/BitmapFactory$Options;)Lcom/kik/cache/GalleryImageRequest;
 .end method
 
-.method public abstract a(Landroid/content/Intent;ILkik/android/chat/vm/z;)Lkik/android/gallery/a;
-.end method
-
-.method public abstract a(Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
+.method public abstract a(Landroid/content/Intent;ILkik/android/chat/vm/ay;)Lkik/android/gallery/a;
 .end method
 
 .method public abstract b()V
@@ -34,11 +31,11 @@
 .method public abstract c()V
 .end method
 
-.method public abstract d()Lrx/c;
+.method public abstract d()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/database/Cursor;",
             ">;"

@@ -22,15 +22,7 @@
 
 
 # virtual methods
-.method public final a()V
-    .locals 0
-
-    .prologue
-    .line 50
-    return-void
-.end method
-
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -38,18 +30,40 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)V
 
     .line 20
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 21
     return-void
 .end method
 
-.method public final b()Lrx/c;
+.method public final ah_()J
+    .locals 2
+
+    .prologue
+    .line 31
+    sget-object v0, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->SMILEY:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;
+
+    invoke-virtual {v0}, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->getId()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .prologue
+    .line 50
+    return-void
+.end method
+
+.method public final d()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;"
@@ -64,31 +78,17 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final f()V
+.method public final g()V
     .locals 0
 
     .prologue
     .line 38
     return-void
-.end method
-
-.method public final j()J
-    .locals 2
-
-    .prologue
-    .line 31
-    sget-object v0, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->SMILEY:Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;
-
-    invoke-virtual {v0}, Lkik/android/chat/vm/widget/ISmileyPopupItemViewModel$PopupItemID;->getId()J
-
-    move-result-wide v0
-
-    return-wide v0
 .end method

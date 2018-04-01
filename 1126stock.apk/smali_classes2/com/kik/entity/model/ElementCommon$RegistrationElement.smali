@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$g;
+.implements Lcom/kik/entity/model/ElementCommon$o;
 
 
 # annotations
@@ -51,14 +51,14 @@
     .locals 1
 
     .prologue
-    .line 1144
+    .line 1683
     new-instance v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     invoke-direct {v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;-><init>()V
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
-    .line 1152
+    .line 1691
     new-instance v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement$1;
 
     invoke-direct {v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement$1;-><init>()V
@@ -72,15 +72,15 @@
     .locals 1
 
     .prologue
-    .line 596
+    .line 1135
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
 
-    .line 693
+    .line 1232
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedIsInitialized:B
 
-    .line 597
+    .line 1136
     return-void
 .end method
 
@@ -95,29 +95,29 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 608
+    .line 1147
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;-><init>()V
 
-    .line 611
+    .line 1150
     const/4 v0, 0x0
 
     move v2, v0
 
-    .line 612
+    .line 1151
     :cond_0
     :goto_0
     if-nez v2, :cond_1
 
-    .line 613
+    .line 1152
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
     move-result v0
 
-    .line 614
+    .line 1153
     sparse-switch v0, :sswitch_data_0
 
-    .line 619
+    .line 1158
     invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedInputStream;->skipField(I)Z
 
     move-result v0
@@ -126,25 +126,25 @@
 
     move v2, v3
 
-    .line 620
+    .line 1159
     goto :goto_0
 
     :sswitch_0
     move v2, v3
 
-    .line 617
+    .line 1156
     goto :goto_0
 
-    .line 625
+    .line 1164
     :sswitch_1
     const/4 v0, 0x0
 
-    .line 626
+    .line 1165
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     if-eqz v1, :cond_2
 
-    .line 627
+    .line 1166
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     invoke-virtual {v0}, Lcom/google/protobuf/Timestamp;->toBuilder()Lcom/google/protobuf/Timestamp$Builder;
@@ -153,7 +153,7 @@
 
     move-object v1, v0
 
-    .line 629
+    .line 1168
     :goto_1
     invoke-static {}, Lcom/google/protobuf/Timestamp;->parser()Lcom/google/protobuf/Parser;
 
@@ -167,15 +167,15 @@
 
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
-    .line 630
+    .line 1169
     if-eqz v1, :cond_0
 
-    .line 631
+    .line 1170
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     invoke-virtual {v1, v0}, Lcom/google/protobuf/Timestamp$Builder;->mergeFrom(Lcom/google/protobuf/Timestamp;)Lcom/google/protobuf/Timestamp$Builder;
 
-    .line 632
+    .line 1171
     invoke-virtual {v1}, Lcom/google/protobuf/Timestamp$Builder;->buildPartial()Lcom/google/protobuf/Timestamp;
 
     move-result-object v0
@@ -188,7 +188,7 @@
 
     goto :goto_0
 
-    .line 640
+    .line 1179
     :catch_0
     move-exception v0
 
@@ -201,7 +201,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 645
+    .line 1184
     :catchall_0
     move-exception v0
 
@@ -212,20 +212,20 @@
     :cond_1
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->makeExtensionsImmutable()V
 
-    .line 646
+    .line 1185
     return-void
 
-    .line 641
+    .line 1180
     :catch_1
     move-exception v0
 
-    .line 642
+    .line 1181
     :try_start_2
     new-instance v1, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-direct {v1, v0}, Lcom/google/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
 
-    .line 643
+    .line 1182
     invoke-virtual {v1, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object v0
@@ -239,7 +239,7 @@
 
     goto :goto_1
 
-    .line 614
+    .line 1153
     nop
 
     :sswitch_data_0
@@ -258,7 +258,7 @@
     .end annotation
 
     .prologue
-    .line 588
+    .line 1127
     invoke-direct {p0, p1, p2}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     return-void
@@ -275,15 +275,15 @@
     .end annotation
 
     .prologue
-    .line 594
+    .line 1133
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
-    .line 693
+    .line 1232
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedIsInitialized:B
 
-    .line 595
+    .line 1134
     return-void
 .end method
 
@@ -291,7 +291,7 @@
     .locals 0
 
     .prologue
-    .line 588
+    .line 1127
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
     return-void
@@ -301,7 +301,7 @@
     .locals 0
 
     .prologue
-    .line 588
+    .line 1127
     iput-object p1, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     return-object p1
@@ -311,7 +311,7 @@
     .locals 1
 
     .prologue
-    .line 823
+    .line 1362
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->c()Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
@@ -329,7 +329,7 @@
     .locals 1
 
     .prologue
-    .line 1148
+    .line 1687
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     return-object v0
@@ -348,7 +348,7 @@
     .end annotation
 
     .prologue
-    .line 1162
+    .line 1701
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -358,7 +358,7 @@
     .locals 1
 
     .prologue
-    .line 588
+    .line 1127
     sget-boolean v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -368,7 +368,7 @@
     .locals 1
 
     .prologue
-    .line 588
+    .line 1127
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -380,7 +380,7 @@
     .locals 1
 
     .prologue
-    .line 670
+    .line 1209
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     if-eqz v0, :cond_0
@@ -400,7 +400,7 @@
     .locals 1
 
     .prologue
-    .line 680
+    .line 1219
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     if-nez v0, :cond_0
@@ -424,7 +424,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 826
+    .line 1365
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     if-ne p0, v0, :cond_0
@@ -441,7 +441,7 @@
 
     invoke-direct {v0, v1}, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;-><init>(B)V
 
-    .line 827
+    .line 1366
     invoke-virtual {v0, p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;->a(Lcom/kik/entity/model/ElementCommon$RegistrationElement;)Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
     move-result-object v0
@@ -457,32 +457,32 @@
 
     const/4 v1, 0x1
 
-    .line 726
+    .line 1265
     if-ne p1, p0, :cond_1
 
-    .line 740
+    .line 1279
     :cond_0
     :goto_0
     return v1
 
-    .line 729
+    .line 1268
     :cond_1
     instance-of v0, p1, Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     if-nez v0, :cond_2
 
-    .line 730
+    .line 1269
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     goto :goto_0
 
-    .line 732
+    .line 1271
     :cond_2
     check-cast p1, Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
-    .line 735
+    .line 1274
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a()Z
 
     move-result v0
@@ -495,7 +495,7 @@
 
     move v0, v1
 
-    .line 736
+    .line 1275
     :goto_1
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a()Z
 
@@ -503,14 +503,14 @@
 
     if-eqz v3, :cond_5
 
-    .line 737
+    .line 1276
     if-eqz v0, :cond_3
 
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b()Lcom/google/protobuf/Timestamp;
 
     move-result-object v0
 
-    .line 738
+    .line 1277
     invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b()Lcom/google/protobuf/Timestamp;
 
     move-result-object v3
@@ -529,7 +529,7 @@
     :cond_4
     move v0, v2
 
-    .line 735
+    .line 1274
     goto :goto_1
 
     :cond_5
@@ -542,10 +542,10 @@
     .locals 1
 
     .prologue
-    .line 5171
+    .line 5710
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
-    .line 588
+    .line 1127
     return-object v0
 .end method
 
@@ -553,10 +553,10 @@
     .locals 1
 
     .prologue
-    .line 4171
+    .line 4710
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
-    .line 588
+    .line 1127
     return-object v0
 .end method
 
@@ -573,7 +573,7 @@
     .end annotation
 
     .prologue
-    .line 1167
+    .line 1706
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -583,31 +583,31 @@
     .locals 2
 
     .prologue
-    .line 711
+    .line 1250
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedSize:I
 
-    .line 712
+    .line 1251
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 720
+    .line 1259
     :goto_0
     return v0
 
-    .line 714
+    .line 1253
     :cond_0
     const/4 v0, 0x0
 
-    .line 715
+    .line 1254
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     if-eqz v1, :cond_1
 
-    .line 716
+    .line 1255
     const/4 v0, 0x2
 
-    .line 717
+    .line 1256
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b()Lcom/google/protobuf/Timestamp;
 
     move-result-object v1
@@ -618,7 +618,7 @@
 
     add-int/lit8 v0, v0, 0x0
 
-    .line 719
+    .line 1258
     :cond_1
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedSize:I
 
@@ -629,7 +629,7 @@
     .locals 1
 
     .prologue
-    .line 602
+    .line 1141
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -641,19 +641,19 @@
     .locals 2
 
     .prologue
-    .line 745
+    .line 1284
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedHashCode:I
 
     if-eqz v0, :cond_0
 
-    .line 746
+    .line 1285
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedHashCode:I
 
-    .line 756
+    .line 1295
     :goto_0
     return v0
 
-    .line 749
+    .line 1288
     :cond_0
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -665,19 +665,19 @@
 
     add-int/lit16 v0, v0, 0x30b
 
-    .line 750
+    .line 1289
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 751
+    .line 1290
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x2
 
-    .line 752
+    .line 1291
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b()Lcom/google/protobuf/Timestamp;
@@ -690,7 +690,7 @@
 
     add-int/2addr v0, v1
 
-    .line 754
+    .line 1293
     :cond_1
     mul-int/lit8 v0, v0, 0x1d
 
@@ -702,7 +702,7 @@
 
     add-int/2addr v0, v1
 
-    .line 755
+    .line 1294
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedHashCode:I
 
     goto :goto_0
@@ -712,8 +712,8 @@
     .locals 3
 
     .prologue
-    .line 655
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->e()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .line 1194
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->g()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
@@ -721,12 +721,12 @@
 
     const-class v2, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
-    .line 656
+    .line 1195
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 655
+    .line 1194
     return-object v0
 .end method
 
@@ -736,17 +736,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 695
+    .line 1234
     iget-byte v1, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedIsInitialized:B
 
-    .line 696
+    .line 1235
     if-ne v1, v0, :cond_0
 
-    .line 700
+    .line 1239
     :goto_0
     return v0
 
-    .line 697
+    .line 1236
     :cond_0
     if-nez v1, :cond_1
 
@@ -754,7 +754,7 @@
 
     goto :goto_0
 
-    .line 699
+    .line 1238
     :cond_1
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->memoizedIsInitialized:B
 
@@ -765,14 +765,14 @@
     .locals 1
 
     .prologue
-    .line 2820
+    .line 3359
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->c()Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
     move-result-object v0
 
-    .line 588
+    .line 1127
     return-object v0
 .end method
 
@@ -780,14 +780,14 @@
     .locals 2
 
     .prologue
-    .line 1833
+    .line 2372
     new-instance v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 588
+    .line 1127
     return-object v0
 .end method
 
@@ -795,14 +795,14 @@
     .locals 1
 
     .prologue
-    .line 3820
+    .line 4359
     sget-object v0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->a:Lcom/kik/entity/model/ElementCommon$RegistrationElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->c()Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
     move-result-object v0
 
-    .line 588
+    .line 1127
     return-object v0
 .end method
 
@@ -810,7 +810,7 @@
     .locals 1
 
     .prologue
-    .line 588
+    .line 1127
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->c()Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
     move-result-object v0
@@ -822,7 +822,7 @@
     .locals 1
 
     .prologue
-    .line 588
+    .line 1127
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->c()Lcom/kik/entity/model/ElementCommon$RegistrationElement$a;
 
     move-result-object v0
@@ -839,12 +839,12 @@
     .end annotation
 
     .prologue
-    .line 705
+    .line 1244
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->creationDate_:Lcom/google/protobuf/Timestamp;
 
     if-eqz v0, :cond_0
 
-    .line 706
+    .line 1245
     const/4 v0, 0x2
 
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$RegistrationElement;->b()Lcom/google/protobuf/Timestamp;
@@ -853,7 +853,7 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 708
+    .line 1247
     :cond_0
     return-void
 .end method

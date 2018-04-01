@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 354
+    .line 355
     iput-object p1, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     iput-boolean p2, p0, Lkik/android/net/communicator/CommunicatorService$5;->a:Z
@@ -44,7 +44,7 @@
     .locals 6
 
     .prologue
-    .line 359
+    .line 360
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-static {v0}, Lkik/android/net/communicator/CommunicatorService;->b(Lkik/android/net/communicator/CommunicatorService;)Lcom/kik/android/a/a;
@@ -53,7 +53,7 @@
 
     invoke-virtual {v0}, Lcom/kik/android/a/a;->e()V
 
-    .line 361
+    .line 362
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     iget-boolean v1, p0, Lkik/android/net/communicator/CommunicatorService$5;->a:Z
@@ -62,12 +62,12 @@
 
     invoke-static {v0, v1, v2}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;ZLjava/lang/String;)V
 
-    .line 363
+    .line 364
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    .line 364
+    .line 365
     iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-static {v2}, Lkik/android/net/communicator/CommunicatorService;->c(Lkik/android/net/communicator/CommunicatorService;)J
@@ -105,26 +105,26 @@
 
     if-lez v2, :cond_1
 
-    .line 365
+    .line 366
     iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     const/4 v3, 0x0
 
     invoke-static {v2, v3}, Lkik/android/net/communicator/CommunicatorService;->b(Lkik/android/net/communicator/CommunicatorService;Z)Z
 
-    .line 366
+    .line 367
     iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-static {v2, v0, v1}, Lkik/android/net/communicator/CommunicatorService;->e(Lkik/android/net/communicator/CommunicatorService;J)J
 
-    .line 367
+    .line 368
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     iget-object v0, v0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
 
     invoke-interface {v0}, Lkik/core/interfaces/ICommunication;->g()V
 
-    .line 369
+    .line 370
     :cond_1
     return-void
 .end method
@@ -133,13 +133,13 @@
     .locals 2
 
     .prologue
-    .line 375
+    .line 376
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$5;->b:Lkik/android/net/communicator/CommunicatorService;
 
     const-string v1, "ping failed"
 
     invoke-static {v0, v1}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;Ljava/lang/String;)V
 
-    .line 376
+    .line 377
     return-void
 .end method

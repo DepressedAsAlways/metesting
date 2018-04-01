@@ -323,6 +323,28 @@
 
 
 # virtual methods
+.method public clearInfoData()V
+    .locals 2
+
+    .prologue
+    .line 168
+    iget-object v0, p0, Lcom/rounds/kik/view/VideoModeSlidePanel;->mIcon:Landroid/widget/ImageView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 169
+    iget-object v0, p0, Lcom/rounds/kik/view/VideoModeSlidePanel;->mTextView:Landroid/widget/TextView;
+
+    const-string v1, ""
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 170
+    return-void
+.end method
+
 .method public getHintScrollX()I
     .locals 6
 
@@ -351,7 +373,7 @@
     .locals 1
 
     .prologue
-    .line 183
+    .line 189
     iget-object v0, p0, Lcom/rounds/kik/view/VideoModeSlidePanel;->mMode:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
 
     return-object v0
@@ -361,7 +383,7 @@
     .locals 2
 
     .prologue
-    .line 168
+    .line 174
     iget-object v0, p0, Lcom/rounds/kik/view/VideoModeSlidePanel;->mMode:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
 
     sget-object v1, Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;->ToBubble:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
@@ -385,7 +407,7 @@
     .locals 2
 
     .prologue
-    .line 173
+    .line 179
     iget-object v0, p0, Lcom/rounds/kik/view/VideoModeSlidePanel;->mMode:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
 
     sget-object v1, Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;->ToBubble:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
@@ -432,7 +454,7 @@
     .locals 2
 
     .prologue
-    .line 178
+    .line 184
     iget-object v0, p0, Lcom/rounds/kik/view/VideoModeSlidePanel;->mMode:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
 
     sget-object v1, Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;->ToBubble:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;

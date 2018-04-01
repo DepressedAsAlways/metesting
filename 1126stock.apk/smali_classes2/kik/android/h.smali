@@ -50,7 +50,7 @@
             "Ljava/lang/String;",
             "Ljava/util/List",
             "<",
-            "Lkik/core/interfaces/w;",
+            "Lkik/core/interfaces/x;",
             ">;>;"
         }
     .end annotation
@@ -491,7 +491,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/kik/events/m;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
+    invoke-static {v0}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -560,7 +560,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/interfaces/w;Ljava/lang/String;)V
+.method public final a(Lkik/core/interfaces/x;Ljava/lang/String;)V
     .locals 2
 
     .prologue

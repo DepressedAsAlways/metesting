@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 63
+    .line 65
     iput-object p1, p0, Lrx/internal/schedulers/a$a$1;->b:Lrx/internal/schedulers/a$a;
 
     iput-object p2, p0, Lrx/internal/schedulers/a$a$1;->a:Ljava/util/concurrent/ThreadFactory;
@@ -44,14 +44,14 @@
     .locals 3
 
     .prologue
-    .line 65
+    .line 67
     iget-object v0, p0, Lrx/internal/schedulers/a$a$1;->a:Ljava/util/concurrent/ThreadFactory;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
 
     move-result-object v0
 
-    .line 66
+    .line 68
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -76,6 +76,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 67
+    .line 69
     return-object v0
 .end method

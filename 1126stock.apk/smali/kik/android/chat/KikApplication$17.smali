@@ -1,6 +1,9 @@
 .class final Lkik/android/chat/KikApplication$17;
-.super Landroid/os/AsyncTask;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
 
 
 # annotations
@@ -15,12 +18,13 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Landroid/os/AsyncTask",
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable",
         "<",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
-        "Ljava/lang/Void;",
-        ">;"
+        "Lcom/kik/events/Promise",
+        "<",
+        "Ljava/lang/Object;",
+        ">;>;"
     }
 .end annotation
 
@@ -34,22 +38,41 @@
     .locals 0
 
     .prologue
-    .line 1082
+    .line 1117
     iput-object p1, p0, Lkik/android/chat/KikApplication$17;->a:Lkik/android/chat/KikApplication;
 
-    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+.method public final synthetic call()Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
 
     .prologue
-    .line 1082
-    const/4 v0, 0x0
+    .line 1117
+    .line 2121
+    iget-object v0, p0, Lkik/android/chat/KikApplication$17;->a:Lkik/android/chat/KikApplication;
 
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->I(Lkik/android/chat/KikApplication;)Lcom/kik/events/g;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/kik/events/l;->b(Lcom/kik/events/c;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    .line 1117
     return-object v0
 .end method

@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Lkik/core/datatypes/k;
+.method public final a(Ljava/lang/String;)Lkik/core/datatypes/j;
     .locals 11
 
     .prologue
@@ -127,9 +127,9 @@
     move-result-object v3
 
     .line 155
-    new-instance v0, Lkik/core/datatypes/k;
+    new-instance v0, Lkik/core/datatypes/j;
 
-    invoke-direct {v0, v2, v3}, Lkik/core/datatypes/k;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v3}, Lkik/core/datatypes/j;-><init>(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -269,10 +269,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/k;
+    check-cast v0, Lkik/core/datatypes/j;
 
     .line 71
-    invoke-virtual {v0}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/j;->a()Ljava/lang/String;
 
     move-result-object v5
 
@@ -287,7 +287,7 @@
     .line 1098
     const-string v7, "item_sku"
 
-    invoke-virtual {v0}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/j;->a()Ljava/lang/String;
 
     move-result-object v8
 
@@ -296,7 +296,7 @@
     .line 1099
     const-string v7, "formatted_price"
 
-    invoke-virtual {v0}, Lkik/core/datatypes/k;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/j;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -416,7 +416,7 @@
     throw v0
 .end method
 
-.method public final a(Lkik/core/datatypes/k;)Z
+.method public final a(Lkik/core/datatypes/j;)Z
     .locals 2
 
     .prologue

@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/vm/chats/profile/a$1;
-.super Lrx/i;
+.super Lrx/j;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lrx/i",
+        "Lrx/j",
         "<",
         "Ljava/lang/Object;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 92
+    .line 93
     iput-object p1, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    invoke-direct {p0}, Lrx/i;-><init>()V
+    invoke-direct {p0}, Lrx/j;-><init>()V
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     .locals 0
 
     .prologue
-    .line 132
+    .line 133
     return-void
 .end method
 
@@ -58,25 +58,25 @@
 
     const/4 v2, 0x0
 
-    .line 108
+    .line 109
     instance-of v0, p1, Lkik/core/chat/profile/IContactProfileRepository$BioModerationException;
 
     if-eqz v0, :cond_0
 
-    .line 109
-    sget-object v0, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->SERVER_ERROR_BAD_WORD:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    .line 110
+    sget-object v0, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->SERVER_ERROR_BAD_WORD:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
-    .line 117
+    .line 118
     :goto_0
     iget-object v3, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    invoke-static {v3}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;)Lrx/subjects/a;
+    invoke-static {v3}, Lkik/android/chat/vm/chats/profile/a;->c(Lkik/android/chat/vm/chats/profile/a;)Lrx/subjects/a;
 
     move-result-object v3
 
     invoke-virtual {v3, v0}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 119
+    .line 120
     iget-object v3, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
     iget-object v3, v3, Lkik/android/chat/vm/chats/profile/a;->b:Lcom/kik/android/Mixpanel;
@@ -89,9 +89,9 @@
 
     const-string v4, "error_reason"
 
-    iget-object v0, v0, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->metricName:Ljava/lang/String;
+    iget-object v0, v0, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->metricName:Ljava/lang/String;
 
-    .line 120
+    .line 121
     invoke-virtual {v3, v4, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v3
@@ -100,12 +100,12 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    .line 121
-    invoke-static {v0}, Lkik/android/chat/vm/chats/profile/a;->a(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
+    .line 122
+    invoke-static {v0}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -122,16 +122,16 @@
 
     iget-object v4, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    .line 123
-    invoke-static {v4}, Lkik/android/chat/vm/chats/profile/a;->a(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
+    .line 124
+    invoke-static {v4}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-static {v4}, Lkik/core/util/v;->f(Ljava/lang/String;)Ljava/util/List;
+    invoke-static {v4}, Lkik/core/util/u;->f(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v4
 
-    invoke-static {v4}, Lkik/core/util/m;->a(Ljava/util/List;)Z
+    invoke-static {v4}, Lkik/core/util/l;->a(Ljava/util/List;)Z
 
     move-result v4
 
@@ -142,18 +142,18 @@
 
     move-result-object v0
 
-    .line 124
+    .line 125
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 125
+    .line 126
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 126
+    .line 127
     return-void
 
-    .line 111
+    .line 112
     :cond_0
     instance-of v0, p1, Lkik/core/net/StanzaException;
 
@@ -169,31 +169,31 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 112
-    sget-object v0, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->NETWORK_ERROR:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    .line 113
+    sget-object v0, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->NETWORK_ERROR:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
     goto :goto_0
 
-    .line 115
+    .line 116
     :cond_1
-    sget-object v0, Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;->SERVER_ERROR_UNKNOWN:Lkik/android/chat/vm/chats/profile/IBioEditorViewModel$ErrorType;
+    sget-object v0, Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;->SERVER_ERROR_UNKNOWN:Lkik/android/chat/vm/chats/profile/IValidateableInputEditorViewModel$ErrorType;
 
     goto :goto_0
 
     :cond_2
     move v0, v2
 
-    .line 121
+    .line 122
     goto :goto_1
 
     :cond_3
     move v1, v2
 
-    .line 123
+    .line 124
     goto :goto_2
 .end method
 
-.method public final bb_()V
+.method public final b()V
     .locals 5
 
     .prologue
@@ -201,7 +201,7 @@
 
     const/4 v2, 0x0
 
-    .line 96
+    .line 97
     iget-object v0, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
     iget-object v0, v0, Lkik/android/chat/vm/chats/profile/a;->b:Lcom/kik/android/Mixpanel;
@@ -216,12 +216,12 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    .line 97
-    invoke-static {v0}, Lkik/android/chat/vm/chats/profile/a;->a(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
+    .line 98
+    invoke-static {v0}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -238,16 +238,16 @@
 
     iget-object v4, p0, Lkik/android/chat/vm/chats/profile/a$1;->a:Lkik/android/chat/vm/chats/profile/a;
 
-    .line 99
-    invoke-static {v4}, Lkik/android/chat/vm/chats/profile/a;->a(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
+    .line 100
+    invoke-static {v4}, Lkik/android/chat/vm/chats/profile/a;->b(Lkik/android/chat/vm/chats/profile/a;)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-static {v4}, Lkik/core/util/v;->f(Ljava/lang/String;)Ljava/util/List;
+    invoke-static {v4}, Lkik/core/util/u;->f(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v4
 
-    invoke-static {v4}, Lkik/core/util/m;->a(Ljava/util/List;)Z
+    invoke-static {v4}, Lkik/core/util/l;->a(Ljava/util/List;)Z
 
     move-result v4
 
@@ -258,26 +258,26 @@
 
     move-result-object v0
 
-    .line 100
+    .line 101
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 101
+    .line 102
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 102
+    .line 103
     return-void
 
     :cond_0
     move v0, v2
 
-    .line 97
+    .line 98
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 99
+    .line 100
     goto :goto_1
 .end method

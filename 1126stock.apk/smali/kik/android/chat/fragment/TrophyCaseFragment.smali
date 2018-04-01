@@ -12,12 +12,12 @@
 
 
 # instance fields
-.field a:Lkik/core/manager/v;
+.field a:Lkik/core/manager/y;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private b:Lkik/android/chat/vm/ch;
+.field private b:Lkik/android/chat/vm/eb;
 
 
 # direct methods
@@ -33,27 +33,27 @@
 
 
 # virtual methods
-.method protected final C()I
+.method protected getTitleResource()I
     .locals 1
 
     .prologue
     .line 59
-    const v0, 0x7f090629
+    const v0, 0x7f090698
 
     return v0
 .end method
 
-.method public final n()Z
+.method public handleBackPress()Z
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->a:Lkik/core/manager/v;
+    iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->a:Lkik/core/manager/y;
 
-    invoke-interface {v0}, Lkik/core/manager/v;->b()V
+    invoke-interface {v0}, Lkik/core/manager/y;->b()V
 
     .line 53
-    invoke-super {p0}, Lkik/android/chat/fragment/KikIqFragmentBase;->n()Z
+    invoke-super {p0}, Lkik/android/chat/fragment/KikIqFragmentBase;->handleBackPress()Z
 
     move-result v0
 
@@ -68,7 +68,7 @@
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikIqFragmentBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 32
-    invoke-static {}, Lkik/android/chat/KikApplication;->y()V
+    invoke-static {}, Lkik/android/chat/KikApplication;->z()V
 
     .line 33
     return-void
@@ -79,20 +79,14 @@
 
     .prologue
     .line 39
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/TrophyCaseFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 39
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/TrophyCaseFragment;)V
 
     .line 40
-    const v0, 0x7f04007e
+    const v0, 0x7f040093
 
     const/4 v1, 0x0
 
@@ -100,29 +94,29 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/d/aa;
+    check-cast v0, Lkik/android/e/af;
 
     .line 41
-    invoke-virtual {v0}, Lkik/android/d/aa;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/af;->getRoot()Landroid/view/View;
 
     move-result-object v1
 
     .line 43
-    new-instance v2, Lkik/android/chat/vm/ch;
+    new-instance v2, Lkik/android/chat/vm/eb;
 
-    invoke-direct {v2}, Lkik/android/chat/vm/ch;-><init>()V
+    invoke-direct {v2}, Lkik/android/chat/vm/eb;-><init>()V
 
-    iput-object v2, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->b:Lkik/android/chat/vm/ch;
+    iput-object v2, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->b:Lkik/android/chat/vm/eb;
 
     .line 44
-    iget-object v2, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->b:Lkik/android/chat/vm/ch;
+    iget-object v2, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->b:Lkik/android/chat/vm/eb;
 
-    invoke-virtual {p0, v2}, Lkik/android/chat/fragment/TrophyCaseFragment;->a(Lkik/android/chat/vm/ao;)Lkik/android/chat/vm/ao;
+    invoke-virtual {p0, v2}, Lkik/android/chat/fragment/TrophyCaseFragment;->attachVm(Lkik/android/chat/vm/br;)Lkik/android/chat/vm/br;
 
     .line 45
-    iget-object v2, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->b:Lkik/android/chat/vm/ch;
+    iget-object v2, p0, Lkik/android/chat/fragment/TrophyCaseFragment;->b:Lkik/android/chat/vm/eb;
 
-    invoke-virtual {v0, v2}, Lkik/android/d/aa;->a(Lkik/android/chat/vm/an;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/af;->a(Lkik/android/chat/vm/bq;)V
 
     .line 46
     return-object v1

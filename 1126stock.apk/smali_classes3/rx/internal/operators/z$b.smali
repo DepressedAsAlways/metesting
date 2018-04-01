@@ -1,6 +1,9 @@
 .class final Lrx/internal/operators/z$b;
-.super Lrx/i;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lrx/functions/g;
 
 
 # annotations
@@ -17,184 +20,81 @@
     value = {
         "<T:",
         "Ljava/lang/Object;",
+        "U:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
         ">",
-        "Lrx/i",
-        "<TT;>;"
+        "Ljava/lang/Object;",
+        "Lrx/functions/g",
+        "<TU;TR;>;"
     }
 .end annotation
 
 
 # instance fields
-.field private a:Z
-
-.field private final b:Lrx/i;
+.field final a:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/i",
-            "<-TT;>;"
+            "TT;"
         }
     .end annotation
 .end field
 
-.field private final c:Lrx/g/d;
-
-.field private final d:Lrx/internal/producers/a;
-
-.field private final e:Lrx/c;
+.field final b:Lrx/functions/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/c",
-            "<+TT;>;"
+            "Lrx/functions/h",
+            "<-TT;-TU;+TR;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method constructor <init>(Lrx/i;Lrx/g/d;Lrx/internal/producers/a;Lrx/c;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/Object;Lrx/functions/h;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lrx/i",
-            "<-TT;>;",
-            "Lrx/g/d;",
-            "Lrx/internal/producers/a;",
-            "Lrx/c",
-            "<+TT;>;)V"
+            "(TT;",
+            "Lrx/functions/h",
+            "<-TT;-TU;+TR;>;)V"
         }
     .end annotation
 
     .prologue
-    .line 55
-    invoke-direct {p0}, Lrx/i;-><init>()V
+    .line 135
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 49
-    const/4 v0, 0x1
+    .line 136
+    iput-object p1, p0, Lrx/internal/operators/z$b;->a:Ljava/lang/Object;
 
-    iput-boolean v0, p0, Lrx/internal/operators/z$b;->a:Z
+    .line 137
+    iput-object p2, p0, Lrx/internal/operators/z$b;->b:Lrx/functions/h;
 
-    .line 56
-    iput-object p1, p0, Lrx/internal/operators/z$b;->b:Lrx/i;
-
-    .line 57
-    iput-object p2, p0, Lrx/internal/operators/z$b;->c:Lrx/g/d;
-
-    .line 58
-    iput-object p3, p0, Lrx/internal/operators/z$b;->d:Lrx/internal/producers/a;
-
-    .line 59
-    iput-object p4, p0, Lrx/internal/operators/z$b;->e:Lrx/c;
-
-    .line 60
+    .line 138
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 4
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TT;)V"
+            "(TU;)TR;"
         }
     .end annotation
 
     .prologue
-    .line 89
-    const/4 v0, 0x0
+    .line 142
+    iget-object v0, p0, Lrx/internal/operators/z$b;->b:Lrx/functions/h;
 
-    iput-boolean v0, p0, Lrx/internal/operators/z$b;->a:Z
+    iget-object v1, p0, Lrx/internal/operators/z$b;->a:Ljava/lang/Object;
 
-    .line 90
-    iget-object v0, p0, Lrx/internal/operators/z$b;->b:Lrx/i;
+    invoke-interface {v0, v1, p1}, Lrx/functions/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v0, p1}, Lrx/i;->a(Ljava/lang/Object;)V
+    move-result-object v0
 
-    .line 91
-    iget-object v0, p0, Lrx/internal/operators/z$b;->d:Lrx/internal/producers/a;
-
-    const-wide/16 v2, 0x1
-
-    invoke-virtual {v0, v2, v3}, Lrx/internal/producers/a;->b(J)V
-
-    .line 92
-    return-void
-.end method
-
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 1
-
-    .prologue
-    .line 84
-    iget-object v0, p0, Lrx/internal/operators/z$b;->b:Lrx/i;
-
-    invoke-virtual {v0, p1}, Lrx/i;->a(Ljava/lang/Throwable;)V
-
-    .line 85
-    return-void
-.end method
-
-.method public final a(Lrx/e;)V
-    .locals 1
-
-    .prologue
-    .line 64
-    iget-object v0, p0, Lrx/internal/operators/z$b;->d:Lrx/internal/producers/a;
-
-    invoke-virtual {v0, p1}, Lrx/internal/producers/a;->a(Lrx/e;)V
-
-    .line 65
-    return-void
-.end method
-
-.method public final bb_()V
-    .locals 3
-
-    .prologue
-    .line 69
-    iget-boolean v0, p0, Lrx/internal/operators/z$b;->a:Z
-
-    if-nez v0, :cond_1
-
-    .line 70
-    iget-object v0, p0, Lrx/internal/operators/z$b;->b:Lrx/i;
-
-    invoke-virtual {v0}, Lrx/i;->bb_()V
-
-    .line 74
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 71
-    :cond_1
-    iget-object v0, p0, Lrx/internal/operators/z$b;->b:Lrx/i;
-
-    invoke-virtual {v0}, Lrx/i;->isUnsubscribed()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 1077
-    new-instance v0, Lrx/internal/operators/z$a;
-
-    iget-object v1, p0, Lrx/internal/operators/z$b;->b:Lrx/i;
-
-    iget-object v2, p0, Lrx/internal/operators/z$b;->d:Lrx/internal/producers/a;
-
-    invoke-direct {v0, v1, v2}, Lrx/internal/operators/z$a;-><init>(Lrx/i;Lrx/internal/producers/a;)V
-
-    .line 1078
-    iget-object v1, p0, Lrx/internal/operators/z$b;->c:Lrx/g/d;
-
-    invoke-virtual {v1, v0}, Lrx/g/d;->a(Lrx/j;)V
-
-    .line 1079
-    iget-object v1, p0, Lrx/internal/operators/z$b;->e:Lrx/c;
-
-    invoke-virtual {v1, v0}, Lrx/c;->a(Lrx/i;)Lrx/j;
-
-    goto :goto_0
+    return-object v0
 .end method

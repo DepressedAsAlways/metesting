@@ -43,7 +43,7 @@
     .line 106
     iget-object v0, p0, Lkik/android/chat/presentation/bs$a$1;->a:Lkik/android/chat/presentation/bs$a;
 
-    invoke-static {v0}, Lkik/android/chat/presentation/bs$a;->b(Lkik/android/chat/presentation/bs$a;)Lkik/android/chat/view/ac;
+    invoke-static {v0}, Lkik/android/chat/presentation/bs$a;->b(Lkik/android/chat/presentation/bs$a;)Lkik/android/chat/view/ad;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     move-result v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->a(I)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->a(I)V
 
     .line 107
     return-void

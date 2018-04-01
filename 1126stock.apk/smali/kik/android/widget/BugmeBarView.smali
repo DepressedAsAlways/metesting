@@ -3,15 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/e/g;
+.implements Lkik/android/f/g;
 
 
 # instance fields
 .field _textView:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10013a
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100172
     .end annotation
 .end field
 
@@ -19,17 +17,17 @@
 
 .field b:Lkik/android/chat/fragment/ProgressDialogFragment;
 
-.field c:Lkik/core/interfaces/ae;
+.field c:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field d:Lkik/core/interfaces/o;
+.field d:Lkik/core/interfaces/n;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field e:Lkik/core/interfaces/ac;
+.field e:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -109,7 +107,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f040038
+    const v1, 0x7f04003f
 
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -120,7 +118,7 @@
     .line 121
     iget-object v0, p0, Lkik/android/widget/BugmeBarView;->a:Landroid/view/View;
 
-    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 122
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -159,7 +157,7 @@
     :pswitch_0
     iget-object v0, p0, Lkik/android/widget/BugmeBarView;->_textView:Landroid/widget/TextView;
 
-    const v1, 0x7f090335
+    const v1, 0x7f090349
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -173,7 +171,7 @@
     :pswitch_1
     iget-object v0, p0, Lkik/android/widget/BugmeBarView;->_textView:Landroid/widget/TextView;
 
-    const v1, 0x7f0902c2
+    const v1, 0x7f0902d6
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -263,7 +261,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a005a
+    const v1, 0x7f0a006e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -271,7 +269,7 @@
 
     float-to-int v0, v0
 
-    invoke-static {p0, v0}, Lkik/android/util/ch;->e(Landroid/view/View;I)V
+    invoke-static {p0, v0}, Lkik/android/util/ca;->e(Landroid/view/View;I)V
 
     .line 216
     const/4 v0, 0x1
@@ -351,17 +349,17 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ae;->k()Z
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->k()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ae;
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ae;->j()Z
+    invoke-interface {v0}, Lkik/core/interfaces/ag;->j()Z
 
     move-result v0
 
@@ -389,16 +387,16 @@
 
     iget-object v1, p0, Lkik/android/widget/BugmeBarView;->f:Lkik/core/net/e;
 
-    iget-object v2, p0, Lkik/android/widget/BugmeBarView;->d:Lkik/core/interfaces/o;
+    iget-object v2, p0, Lkik/android/widget/BugmeBarView;->d:Lkik/core/interfaces/n;
 
-    iget-object v3, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ae;
+    iget-object v3, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
 
-    iget-object v4, p0, Lkik/android/widget/BugmeBarView;->e:Lkik/core/interfaces/ac;
+    iget-object v4, p0, Lkik/android/widget/BugmeBarView;->e:Lkik/core/interfaces/ad;
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkik/android/util/g$a;-><init>(Lkik/core/net/e;Lkik/core/interfaces/o;Lkik/core/interfaces/ae;Lkik/core/interfaces/ac;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lkik/android/util/g$a;-><init>(Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/ag;Lkik/core/interfaces/ad;)V
 
     .line 192
-    new-array v1, v5, [Lkik/android/e/g;
+    new-array v1, v5, [Lkik/android/f/g;
 
     const/4 v2, 0x0
 
@@ -430,7 +428,7 @@
 
     iget-object v2, p0, Lkik/android/widget/BugmeBarView;->i:Landroid/content/Context;
 
-    const v3, 0x7f09030c
+    const v3, 0x7f090320
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -454,7 +452,7 @@
 
     iget-object v1, p0, Lkik/android/widget/BugmeBarView;->b:Lkik/android/chat/fragment/ProgressDialogFragment;
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 208
     return-void
@@ -483,7 +481,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a005a
+    const v2, 0x7f0a006e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -600,7 +598,7 @@
     .end sparse-switch
 .end method
 
-.method public final a(IILandroid/content/Intent;Lkik/core/interfaces/o;)V
+.method public final a(IILandroid/content/Intent;Lkik/core/interfaces/n;)V
     .locals 6
 
     .prologue
@@ -633,7 +631,7 @@
 
     move-object v5, p4
 
-    invoke-virtual/range {v0 .. v5}, Lkik/android/util/g;->a(Landroid/support/v4/app/Fragment;Landroid/content/Context;ILandroid/content/Intent;Lkik/core/interfaces/o;)Z
+    invoke-virtual/range {v0 .. v5}, Lkik/android/util/g;->a(Landroid/support/v4/app/Fragment;Landroid/content/Context;ILandroid/content/Intent;Lkik/core/interfaces/n;)Z
 
     move-result v0
 
@@ -646,7 +644,7 @@
 
     iget-object v1, p0, Lkik/android/widget/BugmeBarView;->i:Landroid/content/Context;
 
-    const v2, 0x7f0903e8
+    const v2, 0x7f0903fc
 
     .line 302
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -659,7 +657,7 @@
 
     iget-object v1, p0, Lkik/android/widget/BugmeBarView;->i:Landroid/content/Context;
 
-    const v2, 0x7f0900fc
+    const v2, 0x7f0900fd
 
     .line 303
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -670,7 +668,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090269
+    const v1, 0x7f09027d
 
     new-instance v2, Lkik/android/widget/BugmeBarView$5;
 
@@ -688,7 +686,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 325
     :cond_1
@@ -730,43 +728,6 @@
     throw v0
 .end method
 
-.method public final a(Landroid/graphics/Bitmap;)V
-    .locals 3
-
-    .prologue
-    .line 336
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->b:Lkik/android/chat/fragment/ProgressDialogFragment;
-
-    if-eqz v0, :cond_0
-
-    .line 337
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->b:Lkik/android/chat/fragment/ProgressDialogFragment;
-
-    invoke-virtual {v0}, Lkik/android/chat/fragment/ProgressDialogFragment;->dismissAllowingStateLoss()V
-
-    .line 340
-    :cond_0
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ae;
-
-    sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
-
-    const/16 v2, 0x5a
-
-    invoke-static {p1, v1, v2}, Lcom/kik/util/bz;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ae;->a([B)V
-
-    .line 342
-    const/16 v0, 0x39
-
-    invoke-direct {p0, v0}, Lkik/android/widget/BugmeBarView;->a(I)V
-
-    .line 343
-    return-void
-.end method
-
 .method public final a(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
     .locals 0
 
@@ -789,6 +750,35 @@
     return-void
 .end method
 
+.method public final a([B)V
+    .locals 1
+
+    .prologue
+    .line 336
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->b:Lkik/android/chat/fragment/ProgressDialogFragment;
+
+    if-eqz v0, :cond_0
+
+    .line 337
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->b:Lkik/android/chat/fragment/ProgressDialogFragment;
+
+    invoke-virtual {v0}, Lkik/android/chat/fragment/ProgressDialogFragment;->dismissAllowingStateLoss()V
+
+    .line 340
+    :cond_0
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
+
+    invoke-interface {v0, p1, p1}, Lkik/core/interfaces/ag;->a([B[B)V
+
+    .line 342
+    const/16 v0, 0x39
+
+    invoke-direct {p0, v0}, Lkik/android/widget/BugmeBarView;->a(I)V
+
+    .line 343
+    return-void
+.end method
+
 .method public final b()I
     .locals 2
 
@@ -800,7 +790,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a005a
+    const v1, 0x7f0a006e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -852,7 +842,7 @@
     goto :goto_0
 .end method
 
-.method public final e()V
+.method public final f()V
     .locals 1
 
     .prologue
@@ -865,7 +855,7 @@
     return-void
 .end method
 
-.method public final n_()V
+.method public final l_()V
     .locals 3
 
     .prologue
@@ -894,7 +884,7 @@
     invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
     .line 352
-    invoke-static {}, Lkik/android/util/bx;->a()Ljava/lang/String;
+    invoke-static {}, Lkik/android/util/bs;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -902,7 +892,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0902b9
+    const v1, 0x7f0902cd
 
     .line 353
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
@@ -916,7 +906,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09043b
+    const v1, 0x7f09044f
 
     new-instance v2, Lkik/android/widget/BugmeBarView$7;
 
@@ -927,7 +917,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0903c3
+    const v1, 0x7f0903d7
 
     new-instance v2, Lkik/android/widget/BugmeBarView$6;
 
@@ -945,7 +935,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 371
     return-void

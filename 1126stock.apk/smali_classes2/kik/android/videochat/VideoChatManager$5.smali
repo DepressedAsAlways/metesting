@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/cache/ae$e;
+.implements Lcom/kik/cache/KikVolleyImageLoader$d;
 
 
 # annotations
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 501
+    .line 544
     iput-object p1, p0, Lkik/android/videochat/VideoChatManager$5;->b:Lkik/android/videochat/VideoChatManager;
 
     iput-object p2, p0, Lkik/android/videochat/VideoChatManager$5;->a:Ljava/lang/ref/WeakReference;
@@ -44,45 +44,45 @@
     .locals 2
 
     .prologue
-    .line 517
+    .line 560
     iget-object v0, p0, Lkik/android/videochat/VideoChatManager$5;->a:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lkik/android/videochat/VideoChatManager;->a(Ljava/lang/ref/WeakReference;Landroid/graphics/Bitmap;)V
 
-    .line 518
+    .line 561
     return-void
 .end method
 
-.method public final a(Lcom/kik/cache/ae$d;Z)V
+.method public final a(Lcom/kik/cache/KikVolleyImageLoader$c;Z)V
     .locals 2
 
     .prologue
-    .line 505
+    .line 548
     const/4 v0, 0x0
 
-    .line 506
+    .line 549
     if-eqz p1, :cond_0
 
-    .line 507
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    .line 550
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 509
+    .line 552
     :cond_0
     if-eqz p2, :cond_1
 
     if-eqz v0, :cond_2
 
-    .line 510
+    .line 553
     :cond_1
     iget-object v1, p0, Lkik/android/videochat/VideoChatManager$5;->a:Ljava/lang/ref/WeakReference;
 
     invoke-static {v1, v0}, Lkik/android/videochat/VideoChatManager;->a(Ljava/lang/ref/WeakReference;Landroid/graphics/Bitmap;)V
 
-    .line 512
+    .line 555
     :cond_2
     return-void
 .end method

@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final blue_video_mode_panel:I = 0x7f0f0019
+.field public static final blue_video_mode_panel:I = 0x7f0e001c
 
-.field public static final mask_bg:I = 0x7f0f0081
+.field public static final mask_bg:I = 0x7f0e0088
 
 
 # direct methods

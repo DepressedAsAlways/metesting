@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$b;
+.implements Lrx/d$b;
 
 
 # annotations
@@ -13,30 +13,28 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/c$b",
+        "Lrx/d$b",
         "<TT;TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final a:I
+.field private final a:Lrx/functions/a;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lrx/functions/a;)V
+    .locals 0
 
     .prologue
     .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
-    const/4 v0, 0x1
+    .line 35
+    iput-object p1, p0, Lrx/internal/operators/x;->a:Lrx/functions/a;
 
-    iput v0, p0, Lrx/internal/operators/x;->a:I
-
-    .line 39
+    .line 36
     return-void
 .end method
 
@@ -46,14 +44,19 @@
     .locals 1
 
     .prologue
-    .line 30
-    check-cast p1, Lrx/i;
+    .line 27
+    check-cast p1, Lrx/j;
+
+    .line 1040
+    iget-object v0, p0, Lrx/internal/operators/x;->a:Lrx/functions/a;
+
+    invoke-interface {v0}, Lrx/functions/a;->a()V
 
     .line 1043
-    new-instance v0, Lrx/internal/operators/x$1;
+    invoke-static {p1}, Lrx/c/f;->a(Lrx/j;)Lrx/j;
 
-    invoke-direct {v0, p0, p1, p1}, Lrx/internal/operators/x$1;-><init>(Lrx/internal/operators/x;Lrx/i;Lrx/i;)V
+    move-result-object v0
 
-    .line 30
+    .line 27
     return-object v0
 .end method

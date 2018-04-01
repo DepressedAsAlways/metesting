@@ -565,50 +565,6 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;)Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;
-    .locals 1
-
-    .prologue
-    .line 3736
-    iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->e:Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    if-nez v0, :cond_1
-
-    .line 3737
-    if-nez p1, :cond_0
-
-    .line 3738
-    new-instance v0, Ljava/lang/NullPointerException;
-
-    invoke-direct {v0}, Ljava/lang/NullPointerException;-><init>()V
-
-    throw v0
-
-    .line 3740
-    :cond_0
-    iput-object p1, p0, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->b:Ljava/lang/Object;
-
-    .line 3741
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->onChanged()V
-
-    .line 3745
-    :goto_0
-    const/16 v0, 0x21
-
-    iput v0, p0, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->a:I
-
-    .line 3746
-    return-object p0
-
-    .line 3743
-    :cond_1
-    iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->e:Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilderV3;->setMessage(Lcom/google/protobuf/AbstractMessage;)Lcom/google/protobuf/SingleFieldBuilderV3;
-
-    goto :goto_0
-.end method
-
 .method public final a(Lcom/kik/messagepath/model/Keyboards$PictureSuggestedResponse$a;)Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;
     .locals 2
 
@@ -816,7 +772,7 @@
     iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->b:Ljava/lang/Object;
 
     .line 5768
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->j()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
     move-result-object v2
 
@@ -836,7 +792,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->b()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->a()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
     move-result-object v0
 

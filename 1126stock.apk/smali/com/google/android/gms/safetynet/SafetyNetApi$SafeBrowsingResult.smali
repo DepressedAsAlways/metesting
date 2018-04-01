@@ -6,6 +6,9 @@
 
 
 # annotations
+.annotation build Lcom/google/android/gms/common/annotation/KeepForSdkWithMembers;
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/google/android/gms/safetynet/SafetyNetApi;
 .end annotation
@@ -15,7 +18,22 @@
     name = "SafeBrowsingResult"
 .end annotation
 
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
 
 # virtual methods
+.method public abstract getDetectedThreats()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lcom/google/android/gms/safetynet/SafeBrowsingThreat;",
+            ">;"
+        }
+    .end annotation
+.end method
+
 .method public abstract getMetadata()Ljava/lang/String;
 .end method

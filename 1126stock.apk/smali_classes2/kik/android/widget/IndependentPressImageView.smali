@@ -1,5 +1,5 @@
 .class public Lkik/android/widget/IndependentPressImageView;
-.super Landroid/widget/ImageView;
+.super Landroid/support/v7/widget/AppCompatImageView;
 .source "SourceFile"
 
 
@@ -8,12 +8,12 @@
     .locals 1
 
     .prologue
-    .line 19
+    .line 20
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lkik/android/widget/IndependentPressImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 20
+    .line 21
     return-void
 .end method
 
@@ -21,12 +21,12 @@
     .locals 1
 
     .prologue
-    .line 24
+    .line 25
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lkik/android/widget/IndependentPressImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 25
+    .line 26
     return-void
 .end method
 
@@ -34,10 +34,10 @@
     .locals 0
 
     .prologue
-    .line 29
-    invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
     .line 30
+    invoke-direct {p0, p1, p2, p3}, Landroid/support/v7/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    .line 31
     return-void
 .end method
 
@@ -47,12 +47,12 @@
     .locals 2
 
     .prologue
-    .line 35
+    .line 36
     invoke-virtual {p0}, Lkik/android/widget/IndependentPressImageView;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 36
+    .line 37
     if-eqz p1, :cond_0
 
     if-eqz v0, :cond_0
@@ -69,13 +69,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 40
+    .line 41
     :goto_0
     return-void
 
-    .line 39
+    .line 40
     :cond_0
-    invoke-super {p0, p1}, Landroid/widget/ImageView;->setPressed(Z)V
+    invoke-super {p0, p1}, Landroid/support/v7/widget/AppCompatImageView;->setPressed(Z)V
 
     goto :goto_0
 .end method

@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/lang/Runnable;
-.implements Lrx/j;
+.implements Lrx/k;
 
 
 # annotations
@@ -23,7 +23,7 @@
         "Ljava/lang/Thread;",
         ">;",
         "Ljava/lang/Runnable;",
-        "Lrx/j;"
+        "Lrx/k;"
     }
 .end annotation
 
@@ -33,13 +33,13 @@
 
 
 # instance fields
-.field final action:Lrx/b/a;
+.field final action:Lrx/functions/a;
 
 .field final cancel:Lrx/internal/util/h;
 
 
 # direct methods
-.method public constructor <init>(Lrx/b/a;)V
+.method public constructor <init>(Lrx/functions/a;)V
     .locals 1
 
     .prologue
@@ -47,7 +47,7 @@
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     .line 39
-    iput-object p1, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/b/a;
+    iput-object p1, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/functions/a;
 
     .line 40
     new-instance v0, Lrx/internal/util/h;
@@ -60,7 +60,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lrx/b/a;Lrx/g/b;)V
+.method public constructor <init>(Lrx/functions/a;Lrx/f/b;)V
     .locals 2
 
     .prologue
@@ -68,16 +68,16 @@
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     .line 43
-    iput-object p1, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/b/a;
+    iput-object p1, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/functions/a;
 
     .line 44
     new-instance v0, Lrx/internal/util/h;
 
     new-instance v1, Lrx/internal/schedulers/ScheduledAction$Remover;
 
-    invoke-direct {v1, p0, p2}, Lrx/internal/schedulers/ScheduledAction$Remover;-><init>(Lrx/internal/schedulers/ScheduledAction;Lrx/g/b;)V
+    invoke-direct {v1, p0, p2}, Lrx/internal/schedulers/ScheduledAction$Remover;-><init>(Lrx/internal/schedulers/ScheduledAction;Lrx/f/b;)V
 
-    invoke-direct {v0, v1}, Lrx/internal/util/h;-><init>(Lrx/j;)V
+    invoke-direct {v0, v1}, Lrx/internal/util/h;-><init>(Lrx/k;)V
 
     iput-object v0, p0, Lrx/internal/schedulers/ScheduledAction;->cancel:Lrx/internal/util/h;
 
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lrx/b/a;Lrx/internal/util/h;)V
+.method public constructor <init>(Lrx/functions/a;Lrx/internal/util/h;)V
     .locals 2
 
     .prologue
@@ -93,7 +93,7 @@
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     .line 47
-    iput-object p1, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/b/a;
+    iput-object p1, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/functions/a;
 
     .line 48
     new-instance v0, Lrx/internal/util/h;
@@ -102,7 +102,7 @@
 
     invoke-direct {v1, p0, p2}, Lrx/internal/schedulers/ScheduledAction$Remover2;-><init>(Lrx/internal/schedulers/ScheduledAction;Lrx/internal/util/h;)V
 
-    invoke-direct {v0, v1}, Lrx/internal/util/h;-><init>(Lrx/j;)V
+    invoke-direct {v0, v1}, Lrx/internal/util/h;-><init>(Lrx/k;)V
 
     iput-object v0, p0, Lrx/internal/schedulers/ScheduledAction;->cancel:Lrx/internal/util/h;
 
@@ -115,7 +115,7 @@
 
     .prologue
     .line 66
-    invoke-static {p0}, Lrx/e/c;->a(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lrx/d/c;->a(Ljava/lang/Throwable;)V
 
     .line 67
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -153,7 +153,7 @@
 
     invoke-direct {v1, p0, p1}, Lrx/internal/schedulers/ScheduledAction$a;-><init>(Lrx/internal/schedulers/ScheduledAction;Ljava/util/concurrent/Future;)V
 
-    invoke-virtual {v0, v1}, Lrx/internal/util/h;->a(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/internal/util/h;->a(Lrx/k;)V
 
     .line 100
     return-void
@@ -186,9 +186,9 @@
     invoke-virtual {p0, v0}, Lrx/internal/schedulers/ScheduledAction;->lazySet(Ljava/lang/Object;)V
 
     .line 55
-    iget-object v0, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/b/a;
+    iget-object v0, p0, Lrx/internal/schedulers/ScheduledAction;->action:Lrx/functions/a;
 
-    invoke-interface {v0}, Lrx/b/a;->a()V
+    invoke-interface {v0}, Lrx/functions/a;->a()V
     :try_end_0
     .catch Lrx/exceptions/OnErrorNotImplementedException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_1

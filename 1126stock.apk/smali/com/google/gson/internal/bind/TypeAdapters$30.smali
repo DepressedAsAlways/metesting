@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 828
+    .line 807
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,14 +30,14 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/gson/d;Lcom/google/gson/b/a;)Lcom/google/gson/o;
+.method public final a(Lcom/google/gson/e;Lcom/google/gson/b/a;)Lcom/google/gson/o;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/gson/d;",
+            "Lcom/google/gson/e;",
             "Lcom/google/gson/b/a",
             "<TT;>;)",
             "Lcom/google/gson/o",
@@ -46,12 +46,12 @@
     .end annotation
 
     .prologue
-    .line 831
+    .line 810
     invoke-virtual {p2}, Lcom/google/gson/b/a;->a()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 832
+    .line 811
     const-class v1, Ljava/lang/Enum;
 
     invoke-virtual {v1, v0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -64,15 +64,15 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 833
+    .line 812
     :cond_0
     const/4 v0, 0x0
 
-    .line 838
+    .line 817
     :goto_0
     return-object v0
 
-    .line 835
+    .line 814
     :cond_1
     invoke-virtual {v0}, Ljava/lang/Class;->isEnum()Z
 
@@ -80,12 +80,12 @@
 
     if-nez v1, :cond_2
 
-    .line 836
+    .line 815
     invoke-virtual {v0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 838
+    .line 817
     :cond_2
     new-instance v1, Lcom/google/gson/internal/bind/i$a;
 

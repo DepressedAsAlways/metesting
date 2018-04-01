@@ -23,13 +23,13 @@
     .locals 0
 
     .prologue
-    .line 1720
+    .line 1758
     iput-object p1, p0, Lcom/kik/android/Mixpanel$e;->a:Lcom/kik/android/Mixpanel;
 
-    .line 1721
+    .line 1759
     invoke-direct {p0, p2, p3}, Lcom/kik/android/Mixpanel$d;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1722
+    .line 1760
     return-void
 .end method
 
@@ -39,7 +39,7 @@
     .locals 6
 
     .prologue
-    .line 1726
+    .line 1764
     invoke-static {}, Lcom/kik/android/Mixpanel;->c()Lorg/slf4j/b;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -54,7 +54,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1728
+    .line 1766
     iget-object v0, p0, Lcom/kik/android/Mixpanel$e;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v0}, Lcom/kik/android/Mixpanel;->a(Lcom/kik/android/Mixpanel;)Ljava/util/Map;
@@ -87,7 +87,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1730
+    .line 1768
     iget-boolean v0, p0, Lcom/kik/android/Mixpanel$e;->e:Z
 
     if-nez v0, :cond_0
@@ -116,7 +116,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1731
+    .line 1769
     :cond_0
     iget-object v0, p0, Lcom/kik/android/Mixpanel$e;->a:Lcom/kik/android/Mixpanel;
 
@@ -126,7 +126,7 @@
 
     monitor-enter v1
 
-    .line 1732
+    .line 1770
     :try_start_0
     iget-object v0, p0, Lcom/kik/android/Mixpanel$e;->a:Lcom/kik/android/Mixpanel;
 
@@ -142,7 +142,7 @@
 
     iget-boolean v3, p0, Lcom/kik/android/Mixpanel$e;->f:Z
 
-    .line 2169
+    .line 2177
     invoke-virtual {p0}, Lcom/kik/android/Mixpanel$d;->d()Ljava/lang/String;
 
     move-result-object v4
@@ -153,14 +153,14 @@
 
     invoke-virtual {v0, v4, v2, v5, v3}, Lcom/kik/b/b;->a(Ljava/lang/String;Lorg/json/JSONObject;Lorg/json/JSONObject;Z)V
 
-    .line 1733
+    .line 1771
     monitor-exit v1
 
-    .line 1735
+    .line 1773
     :cond_1
     return-void
 
-    .line 1733
+    .line 1771
     :catchall_0
     move-exception v0
 

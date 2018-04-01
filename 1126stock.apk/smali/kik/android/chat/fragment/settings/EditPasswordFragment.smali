@@ -13,43 +13,35 @@
 
 # instance fields
 .field protected _existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001ae
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001f7
     .end annotation
 .end field
 
 .field protected _newPasswordField:Lkik/android/chat/view/ValidateableInputView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001af
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001f8
     .end annotation
 .end field
 
 .field protected _retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001b0
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001f9
     .end annotation
 .end field
 
 .field protected _saveButton:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001ad
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001f6
     .end annotation
 .end field
 
-.field protected a:Lkik/core/interfaces/ae;
+.field protected a:Lkik/core/interfaces/ag;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ac;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -60,7 +52,7 @@
     .locals 0
 
     .prologue
-    .line 38
+    .line 40
     invoke-direct {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;-><init>()V
 
     return-void
@@ -70,170 +62,7 @@
     .locals 2
 
     .prologue
-    .line 0
-    .line 4069
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
-
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
-
-    invoke-virtual {v1}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, p1, v0, v1}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 0
-    return-object p1
-.end method
-
-.method static synthetic a()Lrx/c;
-    .locals 1
-
-    .prologue
-    .line 4084
-    const/4 v0, 0x1
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
-
-    move-result-object v0
-
-    .line 0
-    return-object v0
-.end method
-
-.method private a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
-
-    .prologue
-    .line 186
-    invoke-static {p1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-static {p2}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    invoke-static {p3}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 187
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_saveButton:Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 192
-    :goto_0
-    return-void
-
-    .line 190
-    :cond_1
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_saveButton:Landroid/view/View;
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
-
-    goto :goto_0
-.end method
-
-.method static synthetic a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)V
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 4095
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
-
-    invoke-virtual {v0, p0}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/util/KeyboardManipulator;)V
-
-    .line 0
-    return-void
-.end method
-
-.method static synthetic b(Lkik/android/chat/fragment/settings/EditPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 0
-    .line 4074
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
-
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
-
-    invoke-virtual {v1}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, p1, v1}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 0
-    return-object p1
-.end method
-
-.method static synthetic b()Lrx/c;
-    .locals 1
-
-    .prologue
-    .line 4085
-    const/4 v0, 0x1
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
-
-    move-result-object v0
-
-    .line 0
-    return-object v0
-.end method
-
-.method static synthetic c(Lkik/android/chat/fragment/settings/EditPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 0
-    .line 4079
+    .line 88
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -256,37 +85,192 @@
 
     invoke-direct {p0, v0, v1, p1}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 0
+    .line 89
     return-object p1
 .end method
 
-.method static synthetic c()Lrx/c;
+.method static synthetic a()Lrx/d;
     .locals 1
 
     .prologue
-    .line 4086
+    .line 95
     const/4 v0, 0x1
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
-    .line 0
+    return-object v0
+.end method
+
+.method private a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .prologue
+    .line 195
+    invoke-static {p1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {p2}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {p3}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 196
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_saveButton:Landroid/view/View;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 201
+    :goto_0
+    return-void
+
+    .line 199
+    :cond_1
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_saveButton:Landroid/view/View;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
+
+    goto :goto_0
+.end method
+
+.method static synthetic a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)V
+    .locals 1
+
+    .prologue
+    .line 104
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
+
+    invoke-virtual {v0, p0}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/util/KeyboardManipulator;)V
+
+    return-void
+.end method
+
+.method static synthetic b(Lkik/android/chat/fragment/settings/EditPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 83
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
+
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
+
+    invoke-virtual {v1}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, v0, p1, v1}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 84
+    return-object p1
+.end method
+
+.method static synthetic b()Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 94
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic c(Lkik/android/chat/fragment/settings/EditPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 78
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
+
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
+
+    invoke-virtual {v1}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, p1, v0, v1}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 79
+    return-object p1
+.end method
+
+.method static synthetic c()Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 93
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
 
 # virtual methods
-.method protected final C()I
+.method protected getTitleResource()I
     .locals 1
 
     .prologue
-    .line 51
-    const v0, 0x7f0900b9
+    .line 53
+    const v0, 0x7f0900ba
 
     return v0
 .end method
@@ -295,23 +279,17 @@
     .locals 1
 
     .prologue
-    .line 57
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 59
+    invoke-virtual {p0}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 57
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)V
 
-    .line 58
+    .line 60
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 59
+    .line 61
     return-void
 .end method
 
@@ -319,8 +297,8 @@
     .locals 3
 
     .prologue
-    .line 65
-    const v0, 0x7f040072
+    .line 74
+    const v0, 0x7f040086
 
     const/4 v1, 0x0
 
@@ -328,10 +306,10 @@
 
     move-result-object v0
 
-    .line 66
-    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    .line 75
+    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 68
+    .line 77
     iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {p0}, Lkik/android/chat/fragment/settings/k;->a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)Lkik/android/chat/view/ValidateableInputView$a;
@@ -340,7 +318,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$a;)V
 
-    .line 73
+    .line 82
     iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {p0}, Lkik/android/chat/fragment/settings/l;->a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)Lkik/android/chat/view/ValidateableInputView$a;
@@ -349,7 +327,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$a;)V
 
-    .line 78
+    .line 87
     iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {p0}, Lkik/android/chat/fragment/settings/m;->a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)Lkik/android/chat/view/ValidateableInputView$a;
@@ -358,7 +336,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$a;)V
 
-    .line 84
+    .line 93
     iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {}, Lkik/android/chat/fragment/settings/n;->a()Lkik/android/chat/view/ValidateableInputView$b;
@@ -367,7 +345,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$b;)V
 
-    .line 85
+    .line 94
     iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {}, Lkik/android/chat/fragment/settings/o;->a()Lkik/android/chat/view/ValidateableInputView$b;
@@ -376,7 +354,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$b;)V
 
-    .line 86
+    .line 95
     iget-object v1, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {}, Lkik/android/chat/fragment/settings/p;->a()Lkik/android/chat/view/ValidateableInputView$b;
@@ -385,7 +363,7 @@
 
     invoke-virtual {v1, v2}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView$b;)V
 
-    .line 88
+    .line 97
     return-object v0
 .end method
 
@@ -393,10 +371,10 @@
     .locals 2
 
     .prologue
-    .line 94
+    .line 103
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onResume()V
 
-    .line 95
+    .line 104
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-static {p0}, Lkik/android/chat/fragment/settings/q;->a(Lkik/android/chat/fragment/settings/EditPasswordFragment;)Ljava/lang/Runnable;
@@ -405,7 +383,7 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->post(Ljava/lang/Runnable;)Z
 
-    .line 96
+    .line 105
     return-void
 .end method
 
@@ -413,14 +391,14 @@
     .locals 7
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1001ad
+            0x7f1001f6
         }
     .end annotation
 
     .prologue
-    const v6, 0x7f090587
+    const v6, 0x7f0905d7
 
-    .line 101
+    .line 110
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -431,7 +409,7 @@
 
     move-result-object v1
 
-    .line 102
+    .line 111
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -442,7 +420,7 @@
 
     move-result-object v2
 
-    .line 103
+    .line 112
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->f()Landroid/text/Editable;
@@ -453,10 +431,10 @@
 
     move-result-object v3
 
-    .line 104
+    .line 113
     const/4 v0, 0x0
 
-    .line 109
+    .line 118
     :try_start_0
     const-string v4, "SHA-1"
 
@@ -464,7 +442,7 @@
 
     move-result-object v4
 
-    .line 111
+    .line 120
     invoke-virtual {v1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v5
@@ -473,44 +451,44 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lkik/android/util/bx;->a([B)Ljava/lang/String;
+    invoke-static {v4}, Lkik/android/util/bs;->a([B)Ljava/lang/String;
     :try_end_0
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 
-    .line 116
+    .line 125
     :goto_0
-    iget-object v4, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->b:Lkik/core/interfaces/ac;
+    iget-object v4, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v4}, Lkik/core/z;->b(Lkik/core/interfaces/ac;)Lkik/core/z;
+    invoke-static {v4}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v4
 
-    .line 118
+    .line 127
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 120
+    .line 129
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    const v1, 0x7f0902a2
+    const v1, 0x7f0902b6
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 121
+    .line 130
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->i()V
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->k()V
 
-    .line 144
+    .line 153
     :goto_1
     return-void
 
-    .line 123
+    .line 132
     :cond_0
     invoke-virtual {v4}, Lkik/core/z;->d()Ljava/lang/String;
 
@@ -522,21 +500,21 @@
 
     if-nez v0, :cond_1
 
-    .line 125
+    .line 134
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    const v1, 0x7f090283
+    const v1, 0x7f090297
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 126
+    .line 135
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_existingPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->i()V
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->k()V
 
     goto :goto_1
 
-    .line 2039
+    .line 1039
     :cond_1
     const-string v0, "^.{6,}$"
 
@@ -544,22 +522,22 @@
 
     move-result v0
 
-    .line 128
+    .line 137
     if-nez v0, :cond_2
 
-    .line 129
+    .line 138
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0, v6}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 130
+    .line 139
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_newPasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->i()V
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->k()V
 
     goto :goto_1
 
-    .line 3039
+    .line 2039
     :cond_2
     const-string v0, "^.{6,}$"
 
@@ -567,22 +545,22 @@
 
     move-result v0
 
-    .line 132
+    .line 141
     if-nez v0, :cond_3
 
-    .line 133
+    .line 142
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
     invoke-virtual {v0, v6}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 134
+    .line 143
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->i()V
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->k()V
 
     goto :goto_1
 
-    .line 136
+    .line 145
     :cond_3
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -590,21 +568,21 @@
 
     if-nez v0, :cond_4
 
-    .line 138
+    .line 147
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    const v1, 0x7f09028c
+    const v1, 0x7f0902a0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/ValidateableInputView;->b(I)V
 
-    .line 139
+    .line 148
     iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->_retypePasswordField:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->i()V
+    invoke-virtual {v0}, Lkik/android/chat/view/ValidateableInputView;->k()V
 
     goto :goto_1
 
-    .line 3148
+    .line 2157
     :cond_4
     new-instance v0, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
@@ -614,45 +592,45 @@
 
     invoke-direct {v0, v1}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f09049c
+    const v1, 0x7f0904b0
 
-    .line 3149
+    .line 2158
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a(I)Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 3150
+    .line 2159
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a(Z)Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
 
     move-result-object v0
 
-    .line 3151
+    .line 2160
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a()Lkik/android/chat/fragment/KikDialogFragment;
 
     move-result-object v0
 
-    .line 3152
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    .line 2161
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/settings/EditPasswordFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 3154
-    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a:Lkik/core/interfaces/ae;
+    .line 2163
+    iget-object v0, p0, Lkik/android/chat/fragment/settings/EditPasswordFragment;->a:Lkik/core/interfaces/ag;
 
-    invoke-interface {v0, v2}, Lkik/core/interfaces/ae;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v2}, Lkik/core/interfaces/ag;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    .line 3155
+    .line 2164
     new-instance v1, Lkik/android/chat/fragment/settings/EditPasswordFragment$1;
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/settings/EditPasswordFragment$1;-><init>(Lkik/android/chat/fragment/settings/EditPasswordFragment;)V
 
-    invoke-static {v1}, Lcom/kik/sdkutils/b;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-static {v1}, Lcom/kik/sdkutils/b;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto/16 :goto_1
 
@@ -660,4 +638,20 @@
     move-exception v4
 
     goto/16 :goto_0
+.end method
+
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
+    .locals 1
+
+    .prologue
+    .line 67
+    invoke-static {}, Lcom/kik/metrics/b/l;->b()Lcom/kik/metrics/b/l$a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/metrics/b/l$a;->a()Lcom/kik/metrics/b/l;
+
+    move-result-object v0
+
+    return-object v0
 .end method

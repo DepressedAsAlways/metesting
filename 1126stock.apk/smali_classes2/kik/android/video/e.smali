@@ -503,7 +503,7 @@
 
     move-object/from16 v0, v22
 
-    invoke-static {v0, v4}, Lkik/android/util/ab;->a(Landroid/media/MediaExtractor;Z)I
+    invoke-static {v0, v4}, Lkik/android/util/z;->a(Landroid/media/MediaExtractor;Z)I
 
     move-result v7
 
@@ -512,7 +512,7 @@
 
     move-object/from16 v0, v22
 
-    invoke-static {v0, v4}, Lkik/android/util/ab;->a(Landroid/media/MediaExtractor;Z)I
+    invoke-static {v0, v4}, Lkik/android/util/z;->a(Landroid/media/MediaExtractor;Z)I
 
     move-result v18
 
@@ -1378,7 +1378,7 @@
 
     move/from16 v2, v17
 
-    invoke-static {v0, v12, v1, v2}, Lkik/android/util/ab;->a(Landroid/media/MediaExtractor;Landroid/media/MediaMuxer;II)V
+    invoke-static {v0, v12, v1, v2}, Lkik/android/util/z;->a(Landroid/media/MediaExtractor;Landroid/media/MediaMuxer;II)V
 
     .line 268
     :cond_19

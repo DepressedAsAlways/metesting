@@ -1,335 +1,116 @@
-.class public abstract Lcom/instabug/library/h;
-.super Landroid/support/v4/app/Fragment;
+.class public final Lcom/instabug/library/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private a:Landroid/view/View;
-
-.field private b:Landroid/app/Activity;
-
-.field private c:Z
-
-
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 64
-    invoke-direct {p0}, Landroid/support/v4/app/Fragment;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method protected abstract a()I
-.end method
-
-.method protected abstract a(Landroid/os/Bundle;)V
-.end method
-
-.method protected abstract b()Ljava/lang/String;
-.end method
-
-.method protected abstract b(Landroid/os/Bundle;)V
-.end method
-
-.method public final b(Ljava/lang/String;)V
+.method public static a(Landroid/content/Context;)Landroid/content/Intent;
     .locals 3
 
     .prologue
-    .line 203
-    iget-object v0, p0, Lcom/instabug/library/h;->a:Landroid/view/View;
+    .line 82
+    invoke-static {}, Lcom/instabug/library/i;->a()Lcom/instabug/library/i;
 
-    if-nez v0, :cond_0
+    invoke-static {p0}, Lcom/instabug/library/i;->a(Landroid/content/Context;)V
 
-    .line 204
-    const-string v0, "Calling setTitle before inflating the view! Ignoring call"
+    .line 83
+    new-instance v0, Landroid/content/Intent;
 
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
+    const-class v1, Lcom/instabug/library/InstabugFeedbackActivity;
 
-    .line 214
-    :goto_0
-    return-void
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 207
-    :cond_0
-    iget-object v0, p0, Lcom/instabug/library/h;->a:Landroid/view/View;
+    .line 84
+    const-string v1, "com.instabug.library.process"
 
-    sget v1, Lcom/instabug/library/R$f;->R:I
+    const/16 v2, 0xa4
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-result-object v0
+    .line 85
+    const/high16 v1, 0x10000
 
-    check-cast v0, Landroid/widget/TextView;
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 208
-    if-eqz v0, :cond_1
-
-    .line 209
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Setting fragment title to \""
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, "\""
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {p0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 210
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    goto :goto_0
-
-    .line 212
-    :cond_1
-    const-string v0, "instabug_fragment_title wasn\'t found, make sure your layout.xml contains it"
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_0
-.end method
-
-.method protected abstract c()V
-.end method
-
-.method public final f()Z
-    .locals 1
-
-    .prologue
-    .line 186
-    iget-boolean v0, p0, Lcom/instabug/library/h;->c:Z
-
-    return v0
-.end method
-
-.method public final g()Landroid/app/Activity;
-    .locals 2
-
-    .prologue
-    .line 193
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "Returning preserved activity "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lcom/instabug/library/h;->b:Landroid/app/Activity;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 194
-    iget-object v0, p0, Lcom/instabug/library/h;->b:Landroid/app/Activity;
-
+    .line 86
     return-object v0
 .end method
 
-.method public onAttach(Landroid/app/Activity;)V
-    .locals 0
+.method public static a(Landroid/content/Context;Landroid/net/Uri;Lcom/instabug/library/model/Attachment$Type;)Landroid/content/Intent;
+    .locals 3
 
     .prologue
+    .line 90
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/instabug/library/InstabugFeedbackActivity;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 91
+    const-string v1, "com.instabug.library.process"
+
+    const/16 v2, 0xa5
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 92
+    const-string v1, "com.instabug.library.model.attachment.uri"
+
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
     .line 93
-    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onAttach(Landroid/app/Activity;)V
+    const-string v1, "com.instabug.library.model.Attachment.Type"
+
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
     .line 94
-    iput-object p1, p0, Lcom/instabug/library/h;->b:Landroid/app/Activity;
+    const/high16 v1, 0x10000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 95
-    return-void
-.end method
-
-.method public onCreate(Landroid/os/Bundle;)V
-    .locals 2
-
-    .prologue
-    .line 105
-    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
-
-    .line 106
-    const-string v0, "onCreateView called"
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 107
-    invoke-virtual {p0}, Lcom/instabug/library/h;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 108
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "Arguments found, calling consumeNewInstanceSavedArguments with "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/instabug/library/h;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 109
-    invoke-virtual {p0}, Lcom/instabug/library/h;->c()V
-
-    .line 111
-    :cond_0
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/instabug/library/h;->c:Z
-
-    .line 112
-    return-void
-.end method
-
-.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 2
-
-    .prologue
-    .line 127
-    const-string v0, "onCreateView called"
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 128
-    invoke-virtual {p0}, Lcom/instabug/library/h;->a()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/instabug/library/h;->a:Landroid/view/View;
-
-    .line 129
-    invoke-virtual {p0}, Lcom/instabug/library/h;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lcom/instabug/library/h;->b(Ljava/lang/String;)V
-
-    .line 130
-    iget-object v0, p0, Lcom/instabug/library/h;->a:Landroid/view/View;
-
     return-object v0
 .end method
 
-.method public onPause()V
-    .locals 1
+.method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    .locals 3
 
     .prologue
-    .line 161
-    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onPause()V
+    .line 72
+    invoke-static {}, Lcom/instabug/library/i;->a()Lcom/instabug/library/i;
 
-    .line 162
-    const-string v0, "onPause called, calling saveState"
+    invoke-static {p0}, Lcom/instabug/library/i;->a(Landroid/content/Context;)V
 
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 73
+    new-instance v0, Landroid/content/Intent;
 
-    .line 163
-    return-void
-.end method
+    const-class v1, Lcom/instabug/library/InstabugFeedbackActivity;
 
-.method public onResume()V
-    .locals 1
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .prologue
-    .line 167
-    invoke-super {p0}, Landroid/support/v4/app/Fragment;->onResume()V
+    .line 74
+    const-string v1, "com.instabug.library.process"
 
-    .line 168
-    const-string v0, "onResume called, calling saveState"
+    const/16 v2, 0xa3
 
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 169
-    return-void
-.end method
+    .line 75
+    const-string v1, "com.instabug.library.chat.sender.name"
 
-.method public onSaveInstanceState(Landroid/os/Bundle;)V
-    .locals 1
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .prologue
-    .line 154
-    invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    .line 76
+    const-string v1, "com.instabug.library.number"
 
-    .line 155
-    const-string v0, "onSaveInstanceState called, calling saveState"
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 77
+    const/high16 v1, 0x10000
 
-    .line 156
-    invoke-virtual {p0, p1}, Lcom/instabug/library/h;->b(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 157
-    return-void
-.end method
-
-.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 1
-
-    .prologue
-    .line 143
-    const-string v0, "onViewCreated called"
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 144
-    invoke-super {p0, p1, p2}, Landroid/support/v4/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 145
-    if-eqz p2, :cond_0
-
-    .line 146
-    const-string v0, "savedInstanceState found, calling restoreState"
-
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 147
-    invoke-virtual {p0, p2}, Lcom/instabug/library/h;->a(Landroid/os/Bundle;)V
-
-    .line 148
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/instabug/library/h;->c:Z
-
-    .line 150
-    :cond_0
-    return-void
+    .line 78
+    return-object v0
 .end method

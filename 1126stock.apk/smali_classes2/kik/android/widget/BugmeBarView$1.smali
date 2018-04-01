@@ -64,7 +64,7 @@
     invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
     .line 57
-    invoke-static {}, Lkik/android/util/bx;->a()Ljava/lang/String;
+    invoke-static {}, Lkik/android/util/bs;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0901f6
+    const v1, 0x7f09020a
 
     .line 58
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09043b
+    const v1, 0x7f09044f
 
     new-instance v2, Lkik/android/widget/BugmeBarView$1$2;
 
@@ -104,7 +104,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0903c3
+    const v1, 0x7f0903d7
 
     new-instance v2, Lkik/android/widget/BugmeBarView$1$1;
 
@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 92
     :goto_0

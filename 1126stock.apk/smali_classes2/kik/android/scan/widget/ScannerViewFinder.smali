@@ -65,7 +65,7 @@
     iput-object v0, p0, Lkik/android/scan/widget/ScannerViewFinder;->a:Landroid/graphics/Paint;
 
     .line 23
-    const v0, 0x7f0f0013
+    const v0, 0x7f0e0016
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->d(I)I
 

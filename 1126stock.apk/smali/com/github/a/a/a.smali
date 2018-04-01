@@ -38,7 +38,7 @@
             "<TK;",
             "Ljava/lang/ref/WeakReference",
             "<",
-            "Lrx/c",
+            "Lrx/d",
             "<TV;>;>;>;"
         }
     .end annotation
@@ -51,7 +51,7 @@
             "<TK;",
             "Ljava/lang/ref/WeakReference",
             "<",
-            "Lrx/subjects/b",
+            "Lrx/subjects/c",
             "<TV;TV;>;>;>;"
         }
     .end annotation
@@ -62,7 +62,7 @@
         value = {
             "Ljava/util/HashMap",
             "<TK;",
-            "Lrx/c",
+            "Lrx/d",
             "<TV;>;>;"
         }
     .end annotation
@@ -146,7 +146,7 @@
     iput-object v0, p0, Lcom/github/a/a/a;->f:Ljava/util/HashMap;
 
     .line 97
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
@@ -163,40 +163,44 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/github/a/a/a;Ljava/lang/Object;)Lrx/subjects/b;
+.method static synthetic a(Lcom/github/a/a/a;Ljava/lang/Object;)Lrx/subjects/c;
     .locals 1
 
     .prologue
     .line 30
-    invoke-direct {p0, p1}, Lcom/github/a/a/a;->b(Ljava/lang/Object;)Lrx/subjects/b;
+    invoke-direct {p0, p1}, Lcom/github/a/a/a;->b(Ljava/lang/Object;)Lrx/subjects/c;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private a(Ljava/lang/Object;Lrx/b/b;)V
+.method private a(Ljava/lang/Object;Lrx/functions/b;Z)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<",
-            "Lrx/subjects/b",
-            "<TV;TV;>;>;)V"
+            "Lrx/subjects/c",
+            "<TV;TV;>;>;Z)V"
         }
     .end annotation
 
     .prologue
-    .line 148
+    .line 153
     const/4 v0, 0x0
 
-    .line 150
-    iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
+    .line 155
+    if-eqz p3, :cond_3
+
+    .line 156
+    iget-object v1, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 154
+    .line 164
+    :goto_0
     :try_start_0
     iget-object v1, p0, Lcom/github/a/a/a;->e:Ljava/util/HashMap;
 
@@ -206,7 +210,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 155
+    .line 165
     iget-object v0, p0, Lcom/github/a/a/a;->e:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -215,48 +219,99 @@
 
     check-cast v0, Ljava/lang/ref/WeakReference;
 
-    .line 157
+    .line 167
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/subjects/b;
+    check-cast v0, Lrx/subjects/c;
+
+    .line 170
+    :cond_0
+    if-eqz p3, :cond_1
+
+    .line 171
+    iget-object v1, p0, Lcom/github/a/a/a;->e:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 172
+    iget-object v1, p0, Lcom/github/a/a/a;->d:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 173
+    iget-object v1, p0, Lcom/github/a/a/a;->f:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 161
-    :cond_0
+    .line 177
+    :cond_1
+    if-eqz p3, :cond_4
+
+    .line 178
+    iget-object v1, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 186
+    :goto_1
+    if-eqz v0, :cond_2
+
+    .line 187
+    invoke-interface {p2, v0}, Lrx/functions/b;->call(Ljava/lang/Object;)V
+
+    .line 189
+    :cond_2
+    return-void
+
+    .line 159
+    :cond_3
+    iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    goto :goto_0
+
+    .line 181
+    :cond_4
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 164
-    if-eqz v0, :cond_1
+    goto :goto_1
 
-    .line 165
-    invoke-interface {p2, v0}, Lrx/b/b;->call(Ljava/lang/Object;)V
-
-    .line 167
-    :cond_1
-    return-void
-
-    .line 161
+    .line 177
     :catchall_0
     move-exception v0
 
+    if-eqz p3, :cond_5
+
+    .line 178
+    iget-object v1, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 181
+    :goto_2
+    throw v0
+
+    :cond_5
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    throw v0
+    goto :goto_2
 .end method
 
-.method private b(Ljava/lang/Object;)Lrx/subjects/b;
+.method private b(Ljava/lang/Object;)Lrx/subjects/c;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
-            "Lrx/subjects/b",
+            "Lrx/subjects/c",
             "<TV;TV;>;"
         }
     .end annotation
@@ -302,7 +357,7 @@
     .line 110
     :cond_0
     :try_start_1
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v1
 
@@ -334,7 +389,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lrx/c;
+    check-cast v0, Lrx/d;
 
     .line 121
     sget-boolean v2, Lcom/github/a/a/a;->a:Z
@@ -379,7 +434,7 @@
 
     .prologue
     .line 30
-    .line 1171
+    .line 1193
     iget-object v0, p0, Lcom/github/a/a/a;->g:Lrx/subjects/a;
 
     invoke-virtual {v0, p1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
@@ -427,23 +482,40 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lrx/c;
+.method public final a()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<TK;>;"
+        }
+    .end annotation
+
+    .prologue
+    .line 204
+    iget-object v0, p0, Lcom/github/a/a/a;->g:Lrx/subjects/a;
+
+    return-object v0
+.end method
+
+.method public final a(Ljava/lang/Object;)Lrx/d;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
-            "Lrx/c",
+            "Lrx/d",
             "<TV;>;"
         }
     .end annotation
 
     .prologue
-    .line 237
+    .line 259
     iget-object v0, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 243
+    .line 265
     :try_start_0
     iget-object v0, p0, Lcom/github/a/a/a;->d:Ljava/util/HashMap;
 
@@ -453,7 +525,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 244
+    .line 266
     iget-object v0, p0, Lcom/github/a/a/a;->d:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -462,19 +534,19 @@
 
     check-cast v0, Ljava/lang/ref/WeakReference;
 
-    .line 245
+    .line 267
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/c;
+    check-cast v0, Lrx/d;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 247
+    .line 269
     if-eqz v0, :cond_0
 
-    .line 287
+    .line 309
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -482,21 +554,21 @@
     :goto_0
     return-object v0
 
-    .line 254
+    .line 276
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 255
+    .line 277
     iget-object v0, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 259
+    .line 281
     :try_start_2
     iget-object v0, p0, Lcom/github/a/a/a;->d:Ljava/util/HashMap;
 
@@ -506,7 +578,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 260
+    .line 282
     iget-object v0, p0, Lcom/github/a/a/a;->d:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -515,56 +587,56 @@
 
     check-cast v0, Ljava/lang/ref/WeakReference;
 
-    .line 261
+    .line 283
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/c;
+    check-cast v0, Lrx/d;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 263
+    .line 285
     if-eqz v0, :cond_1
 
-    .line 280
+    .line 302
     :try_start_3
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 281
+    .line 303
     iget-object v1, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 287
+    .line 309
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_0
 
-    .line 270
+    .line 292
     :cond_1
     :try_start_4
     iget-object v0, p0, Lcom/github/a/a/a;->e:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 275
+    .line 297
     :cond_2
     new-instance v0, Lcom/github/a/a/a$a;
 
     invoke-direct {v0, p0, p1}, Lcom/github/a/a/a$a;-><init>(Lcom/github/a/a/a;Ljava/lang/Object;)V
 
-    invoke-static {v0}, Lrx/c;->a(Lrx/c$a;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->a(Lrx/d$a;)Lrx/d;
 
     move-result-object v0
 
-    .line 277
+    .line 299
     iget-object v1, p0, Lcom/github/a/a/a;->d:Ljava/util/HashMap;
 
     new-instance v2, Ljava/lang/ref/WeakReference;
@@ -575,27 +647,27 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 280
+    .line 302
     :try_start_5
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 281
+    .line 303
     iget-object v1, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 287
+    .line 309
     iget-object v1, p0, Lcom/github/a/a/a;->c:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_0
 
-    .line 280
+    .line 302
     :catchall_0
     move-exception v0
 
@@ -604,7 +676,7 @@
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 281
+    .line 303
     iget-object v1, p0, Lcom/github/a/a/a;->b:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -613,7 +685,7 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 287
+    .line 309
     :catchall_1
     move-exception v0
 
@@ -625,7 +697,7 @@
 .end method
 
 .method public final a(Ljava/lang/Object;Ljava/lang/Exception;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -635,19 +707,21 @@
     .end annotation
 
     .prologue
-    .line 215
+    .line 237
     new-instance v0, Lcom/github/a/a/a$2;
 
     invoke-direct {v0, p0, p2}, Lcom/github/a/a/a$2;-><init>(Lcom/github/a/a/a;Ljava/lang/Exception;)V
 
-    invoke-direct {p0, p1, v0}, Lcom/github/a/a/a;->a(Ljava/lang/Object;Lrx/b/b;)V
+    const/4 v1, 0x1
 
-    .line 222
+    invoke-direct {p0, p1, v0, v1}, Lcom/github/a/a/a;->a(Ljava/lang/Object;Lrx/functions/b;Z)V
+
+    .line 244
     return-void
 .end method
 
 .method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
@@ -655,13 +729,16 @@
     .end annotation
 
     .prologue
-    .line 196
+    .line 218
     new-instance v0, Lcom/github/a/a/a$1;
 
     invoke-direct {v0, p0, p2}, Lcom/github/a/a/a$1;-><init>(Lcom/github/a/a/a;Ljava/lang/Object;)V
 
-    invoke-direct {p0, p1, v0}, Lcom/github/a/a/a;->a(Ljava/lang/Object;Lrx/b/b;)V
+    .line 1148
+    const/4 v1, 0x0
 
-    .line 203
+    invoke-direct {p0, p1, v0, v1}, Lcom/github/a/a/a;->a(Ljava/lang/Object;Lrx/functions/b;Z)V
+
+    .line 225
     return-void
 .end method

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/widget/bt;->d()Lrx/c;
+    value = Lkik/android/chat/vm/widget/bt;->e()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/c$a",
+        "Lrx/d$a",
         "<",
         "Landroid/graphics/Bitmap;",
         ">;"
@@ -51,17 +51,17 @@
 
     .prologue
     .line 82
-    check-cast p1, Lrx/i;
+    check-cast p1, Lrx/j;
 
     .line 1087
     :try_start_0
     iget-object v0, p0, Lkik/android/chat/vm/widget/bt$1;->a:Lkik/android/chat/vm/widget/bt;
 
-    invoke-static {v0}, Lkik/android/chat/vm/widget/bt;->a(Lkik/android/chat/vm/widget/bt;)Lkik/core/datatypes/aa;
+    invoke-static {v0}, Lkik/android/chat/vm/widget/bt;->b(Lkik/android/chat/vm/widget/bt;)Lkik/core/datatypes/z;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->g()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->g()Ljava/lang/String;
 
     move-result-object v0
 
@@ -69,18 +69,18 @@
 
     sget v2, Lkik/android/widget/StickerWidget;->c:I
 
-    invoke-static {v0, v1, v2}, Lcom/kik/cache/an;->a(Ljava/lang/String;II)Lcom/kik/cache/an;
+    invoke-static {v0, v1, v2}, Lcom/kik/cache/SimpleUrlRequest;->getSimpleUrlRequest(Ljava/lang/String;II)Lcom/kik/cache/SimpleUrlRequest;
 
     move-result-object v1
 
     .line 1089
     iget-object v0, p0, Lkik/android/chat/vm/widget/bt$1;->a:Lkik/android/chat/vm/widget/bt;
 
-    iget-object v0, v0, Lkik/android/chat/vm/widget/bt;->a:Lcom/kik/cache/ae;
+    iget-object v0, v0, Lkik/android/chat/vm/widget/bt;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
     new-instance v2, Lkik/android/chat/vm/widget/bt$1$1;
 
-    invoke-direct {v2, p0, p1}, Lkik/android/chat/vm/widget/bt$1$1;-><init>(Lkik/android/chat/vm/widget/bt$1;Lrx/i;)V
+    invoke-direct {v2, p0, p1}, Lkik/android/chat/vm/widget/bt$1$1;-><init>(Lkik/android/chat/vm/widget/bt$1;Lrx/j;)V
 
     sget v3, Lkik/android/widget/StickerWidget;->b:I
 
@@ -88,7 +88,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->b(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -101,7 +101,7 @@
     move-exception v0
 
     .line 1108
-    invoke-virtual {p1, v0}, Lrx/i;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {p1, v0}, Lrx/j;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method

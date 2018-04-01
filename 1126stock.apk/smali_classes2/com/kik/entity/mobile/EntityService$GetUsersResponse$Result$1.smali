@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 1143
+    .line 1156
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,12 +44,12 @@
     .locals 1
 
     .prologue
-    .line 1143
-    .line 2145
+    .line 1156
+    .line 2158
     invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->forNumber(I)Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     move-result-object v0
 
-    .line 1143
+    .line 1156
     return-object v0
 .end method

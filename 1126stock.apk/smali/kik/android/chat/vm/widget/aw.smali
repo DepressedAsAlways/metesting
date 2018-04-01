@@ -1,5 +1,5 @@
 .class public final Lkik/android/chat/vm/widget/aw;
-.super Lkik/android/chat/vm/b;
+.super Lkik/android/chat/vm/c;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/chat/vm/b",
+        "Lkik/android/chat/vm/c",
         "<",
         "Lkik/android/chat/vm/widget/v;",
         ">;",
@@ -34,11 +34,16 @@
     .end annotation
 .end field
 
-.field private d:Lkik/android/chat/fragment/KikChatFragment$b;
+.field protected d:Lcom/kik/metrics/c/d;
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+.end field
 
-.field private e:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+.field private e:Lkik/android/chat/fragment/KikChatFragment$b;
 
-.field private f:Ljava/util/List;
+.field private f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+
+.field private g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -49,7 +54,7 @@
     .end annotation
 .end field
 
-.field private g:Lrx/subjects/PublishSubject;
+.field private h:Lrx/subjects/PublishSubject;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/subjects/PublishSubject",
@@ -60,7 +65,7 @@
     .end annotation
 .end field
 
-.field private h:Lrx/subjects/a;
+.field private i:Lrx/subjects/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/subjects/a",
@@ -71,7 +76,7 @@
     .end annotation
 .end field
 
-.field private i:Lrx/j;
+.field private j:Lrx/k;
 
 
 # direct methods
@@ -80,27 +85,27 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lkik/android/chat/vm/b;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
 
     .line 47
-    invoke-static {}, Lrx/subjects/PublishSubject;->k()Lrx/subjects/PublishSubject;
+    invoke-static {}, Lrx/subjects/PublishSubject;->l()Lrx/subjects/PublishSubject;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->g:Lrx/subjects/PublishSubject;
+    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/PublishSubject;
 
     .line 48
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/a;
+    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/subjects/a;
 
     .line 53
-    iput-object p2, p0, Lkik/android/chat/vm/widget/aw;->d:Lkik/android/chat/fragment/KikChatFragment$b;
+    iput-object p2, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/fragment/KikChatFragment$b;
 
     .line 54
-    iput-object p1, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+    iput-object p1, p0, Lkik/android/chat/vm/widget/aw;->f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
 
     .line 55
     return-void
@@ -112,19 +117,19 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 2189
+    .line 159
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2190
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/a;
+    .line 160
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/subjects/a;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/aw;->c:Landroid/content/res/Resources;
 
-    const v2, 0x7f020160
+    const v2, 0x7f0201c5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -132,31 +137,30 @@
 
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 2191
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->d:Lkik/android/chat/fragment/KikChatFragment$b;
+    .line 161
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/fragment/KikChatFragment$b;
 
     invoke-interface {v0}, Lkik/android/chat/fragment/KikChatFragment$b;->b()V
 
-    .line 2204
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->d:Lkik/android/chat/fragment/KikChatFragment$b;
+    .line 1174
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/fragment/KikChatFragment$b;
 
-    invoke-interface {v0}, Lkik/android/chat/fragment/KikChatFragment$b;->c()Lrx/j;
+    invoke-interface {v0}, Lkik/android/chat/fragment/KikChatFragment$b;->c()Lrx/k;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/j;
+    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->j:Lrx/k;
 
-    .line 2198
+    .line 168
     :cond_0
     :goto_0
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    .line 0
     return-object v0
 
-    .line 2194
+    .line 164
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -172,13 +176,13 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2195
+    .line 165
     :cond_2
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/a;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/subjects/a;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/aw;->c:Landroid/content/res/Resources;
 
-    const v2, 0x7f02015f
+    const v2, 0x7f0201c4
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -186,10 +190,10 @@
 
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 2196
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/j;
+    .line 166
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->j:Lrx/k;
 
-    invoke-interface {v0}, Lrx/j;->unsubscribe()V
+    invoke-interface {v0}, Lrx/k;->unsubscribe()V
 
     goto :goto_0
 .end method
@@ -198,17 +202,17 @@
     .locals 4
 
     .prologue
-    .line 2068
+    .line 68
     if-nez p1, :cond_0
 
-    .line 2069
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+    .line 69
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
 
     invoke-interface {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;->d()V
 
-    .line 2072
+    .line 72
     :cond_0
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->d()Ljava/util/List;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->q_()Ljava/util/List;
 
     move-result-object v0
 
@@ -229,10 +233,10 @@
 
     check-cast v0, Lkik/android/chat/vm/widget/v;
 
-    .line 2073
+    .line 73
     if-nez p1, :cond_2
 
-    .line 2077
+    .line 77
     :cond_1
     const/4 v1, 0x0
 
@@ -264,7 +268,7 @@
 
     goto :goto_1
 
-    .line 0
+    .line 80
     :cond_3
     return-void
 .end method
@@ -273,8 +277,7 @@
     .locals 4
 
     .prologue
-    .line 0
-    .line 2163
+    .line 132
     iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->b:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Media Tray Card Closed"
@@ -287,7 +290,7 @@
 
     iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->c:Landroid/content/res/Resources;
 
-    .line 2164
+    .line 133
     invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v0
@@ -307,7 +310,7 @@
 
     const-string v1, "Card URL"
 
-    .line 2165
+    .line 134
     invoke-virtual {v0, v1, p1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
@@ -316,18 +319,18 @@
 
     const-string v2, "Attached"
 
-    .line 2166
+    .line 135
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 2167
+    .line 136
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 0
+    .line 132
     return-void
 
-    .line 2164
+    .line 133
     :cond_0
     const/4 v0, 0x0
 
@@ -336,15 +339,15 @@
 
 
 # virtual methods
-.method protected final synthetic a(I)Lkik/android/chat/vm/u;
+.method protected final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 4
 
     .prologue
-    .line 38
+    .line 37
     .line 1097
     new-instance v1, Lkik/android/chat/vm/widget/SmileyItemViewModel;
 
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->f:Ljava/util/List;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->g:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -352,17 +355,17 @@
 
     check-cast v0, Lcom/kik/android/b/g$b;
 
-    iget-object v2, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/aw;->f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
 
-    iget-object v3, p0, Lkik/android/chat/vm/widget/aw;->g:Lrx/subjects/PublishSubject;
+    iget-object v3, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/PublishSubject;
 
     invoke-direct {v1, v0, v2, v3}, Lkik/android/chat/vm/widget/SmileyItemViewModel;-><init>(Lcom/kik/android/b/g$b;Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;Lrx/subjects/PublishSubject;)V
 
-    .line 38
+    .line 37
     return-object v1
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 3
 
     .prologue
@@ -376,14 +379,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->f:Ljava/util/List;
+    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->g:Ljava/util/List;
 
     .line 62
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/a;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/subjects/a;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/aw;->c:Landroid/content/res/Resources;
 
-    const v2, 0x7f02015f
+    const v2, 0x7f0201c4
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -392,32 +395,32 @@
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
     .line 64
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->ae_()Lrx/g/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->ad_()Lrx/f/b;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/vm/widget/aw;->g:Lrx/subjects/PublishSubject;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/PublishSubject;
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/ax;->a(Lkik/android/chat/vm/widget/aw;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/ax;->a(Lkik/android/chat/vm/widget/aw;)Lrx/functions/b;
 
     move-result-object v2
 
     .line 65
-    invoke-virtual {v1, v2}, Lrx/subjects/PublishSubject;->b(Lrx/b/b;)Lrx/j;
+    invoke-virtual {v1, v2}, Lrx/subjects/PublishSubject;->b(Lrx/functions/b;)Lrx/k;
 
     move-result-object v1
 
     .line 64
-    invoke-virtual {v0, v1}, Lrx/g/b;->a(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 83
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/b;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 84
     return-void
 .end method
 
-.method public final aE_()Z
+.method public final aH_()Z
     .locals 1
 
     .prologue
@@ -441,12 +444,31 @@
     goto :goto_0
 .end method
 
-.method public final aF_()V
+.method public final al_()V
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 89
+    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/fragment/KikChatFragment$b;
+
+    .line 90
+    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+
+    .line 91
+    invoke-super {p0}, Lkik/android/chat/vm/c;->al_()V
+
+    .line 92
+    return-void
+.end method
+
+.method public final d()V
     .locals 3
 
     .prologue
     .line 115
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->d()Ljava/util/List;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->q_()Ljava/util/List;
 
     move-result-object v0
 
@@ -479,25 +501,6 @@
     return-void
 .end method
 
-.method public final c()V
-    .locals 1
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 89
-    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->d:Lkik/android/chat/fragment/KikChatFragment$b;
-
-    .line 90
-    iput-object v0, p0, Lkik/android/chat/vm/widget/aw;->e:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
-
-    .line 91
-    invoke-super {p0}, Lkik/android/chat/vm/b;->c()V
-
-    .line 92
-    return-void
-.end method
-
 .method public final e()V
     .locals 5
 
@@ -524,38 +527,54 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 130
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->ae_()Lrx/g/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->ad_()Lrx/f/b;
 
     move-result-object v0
 
     .line 131
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->Y_()Lkik/android/chat/vm/z;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/aw;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v2
 
-    new-instance v3, Lkik/android/chat/vm/widget/aw$1;
+    invoke-static {v1}, Lkik/android/chat/vm/i$a;->a(Ljava/lang/String;)Lkik/android/chat/vm/i$a;
 
-    invoke-direct {v3, p0, v1}, Lkik/android/chat/vm/widget/aw$1;-><init>(Lkik/android/chat/vm/widget/aw;Ljava/lang/String;)V
+    move-result-object v3
+
+    invoke-virtual {v3}, Lkik/android/chat/vm/i$a;->a()Lkik/android/chat/vm/i;
+
+    move-result-object v3
 
     const/4 v4, 0x1
 
-    invoke-interface {v2, v3, v4}, Lkik/android/chat/vm/z;->a(Lkik/android/chat/vm/aq;Z)Lrx/c;
+    invoke-interface {v2, v3, v4}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bu;Z)Lrx/d;
 
     move-result-object v2
 
-    invoke-static {p0, v1}, Lkik/android/chat/vm/widget/ay;->a(Lkik/android/chat/vm/widget/aw;Ljava/lang/String;)Lrx/b/b;
+    invoke-static {p0, v1}, Lkik/android/chat/vm/widget/ay;->a(Lkik/android/chat/vm/widget/aw;Ljava/lang/String;)Lrx/functions/b;
 
     move-result-object v1
 
-    .line 162
-    invoke-virtual {v2, v1}, Lrx/c;->b(Lrx/b/b;)Lrx/j;
+    invoke-virtual {v2, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
 
     move-result-object v1
 
     .line 130
-    invoke-virtual {v0, v1}, Lrx/g/b;->a(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
-    .line 170
+    .line 139
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->d:Lcom/kik/metrics/c/d;
+
+    invoke-static {}, Lcom/kik/metrics/b/bg;->b()Lcom/kik/metrics/b/bg$a;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/kik/metrics/b/bg$a;->a()Lcom/kik/metrics/b/bg;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/kik/metrics/c/d;->a(Lcom/kik/metrics/b/t;)V
+
+    .line 140
     return-void
 .end method
 
@@ -564,7 +583,7 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->f:Ljava/util/List;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->g:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -583,12 +602,12 @@
     return-object v0
 .end method
 
-.method public final f()Lrx/c;
+.method public final f()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/drawable/Drawable;",
             ">;"
@@ -596,40 +615,18 @@
     .end annotation
 
     .prologue
-    .line 181
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->h:Lrx/subjects/a;
+    .line 151
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->i:Lrx/subjects/a;
 
     return-object v0
 .end method
 
-.method public final g()Lrx/b/g;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/b/g",
-            "<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 187
-    invoke-static {p0}, Lkik/android/chat/vm/widget/az;->a(Lkik/android/chat/vm/widget/aw;)Lrx/b/g;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final h()I
+.method public final g()I
     .locals 2
 
     .prologue
-    .line 175
-    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->f:Ljava/util/List;
+    .line 145
+    iget-object v0, p0, Lkik/android/chat/vm/widget/aw;->g:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -642,4 +639,26 @@
     move-result v0
 
     return v0
+.end method
+
+.method public final h()Lrx/functions/g;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/functions/g",
+            "<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 157
+    invoke-static {p0}, Lkik/android/chat/vm/widget/az;->a(Lkik/android/chat/vm/widget/aw;)Lrx/functions/g;
+
+    move-result-object v0
+
+    return-object v0
 .end method

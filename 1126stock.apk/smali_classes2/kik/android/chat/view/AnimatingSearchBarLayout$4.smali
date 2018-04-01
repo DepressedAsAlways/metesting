@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 511
+    .line 423
     iput-object p1, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$4;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,14 +37,14 @@
     .locals 2
 
     .prologue
-    .line 515
+    .line 427
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$4;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     sget-object v1, Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;->EXIT:Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;
 
     invoke-static {v0, v1}, Lkik/android/chat/view/AnimatingSearchBarLayout;->a(Lkik/android/chat/view/AnimatingSearchBarLayout;Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;)Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;
 
-    .line 516
+    .line 428
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$4;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->c(Lkik/android/chat/view/AnimatingSearchBarLayout;)Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -54,12 +54,12 @@
     .line 1208
     iget-object v0, v0, Lkik/android/chat/view/SearchBarViewImpl;->_searchIconView:Landroid/widget/ImageView;
 
-    .line 516
+    .line 428
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setClickable(Z)V
 
-    .line 517
+    .line 429
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$4;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->c(Lkik/android/chat/view/AnimatingSearchBarLayout;)Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->f()V
 
-    .line 518
+    .line 430
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$4;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->f(Lkik/android/chat/view/AnimatingSearchBarLayout;)Landroid/view/View;
@@ -79,6 +79,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 519
+    .line 431
     return-void
 .end method

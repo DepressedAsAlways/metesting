@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 92
+    .line 95
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     const/4 v0, 0x0
@@ -41,7 +41,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 96
+    .line 99
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setBackgroundColor(I)V
 
-    .line 97
+    .line 100
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mBubblesVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/VideoSurface;->onPause()V
 
-    .line 98
+    .line 101
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mBubblesVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -85,17 +85,17 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoSurface;->setVisibility(I)V
 
-    .line 99
+    .line 102
     const/4 v0, 0x0
 
     invoke-static {v0, v3}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetSceneVisibility(FI)V
 
-    .line 100
+    .line 103
     const/4 v0, 0x1
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->changeVideoPlaneViewMode(I)V
 
-    .line 101
+    .line 104
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mFullVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v3}, Lcom/rounds/kik/view/VideoSurface;->setVisibility(I)V
 
-    .line 102
+    .line 105
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mFullVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -115,7 +115,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/VideoSurface;->onResume()V
 
-    .line 104
+    .line 107
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mVideoModeSlidePanel:Lcom/rounds/kik/view/VideoModeSlidePanel;
@@ -131,6 +131,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/rounds/kik/view/VideoModeSlidePanel;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 122
+    .line 125
     return-void
 .end method

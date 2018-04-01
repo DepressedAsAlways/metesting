@@ -1,94 +1,135 @@
-.class public Lkik/android/util/ba;
-.super Landroid/text/style/ClickableSpan;
-.source "SourceFile"
+.class final synthetic Lkik/android/util/ba;
+.super Ljava/lang/Object;
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/util/ba$a;
-    }
-.end annotation
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field private a:Z
+.field private final a:Ljava/lang/String;
 
-.field private final b:Ljava/lang/String;
-
-.field private c:Lkik/android/util/ba$a;
+.field private final b:Lcom/kik/android/Mixpanel$d;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lkik/android/util/ba$a;)V
+.method private constructor <init>(Ljava/lang/String;Lcom/kik/android/Mixpanel$d;)V
     .locals 0
 
-    .prologue
-    .line 24
-    invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
-    iput-object p1, p0, Lkik/android/util/ba;->b:Ljava/lang/String;
+    iput-object p1, p0, Lkik/android/util/ba;->a:Ljava/lang/String;
 
-    .line 26
-    iput-object p2, p0, Lkik/android/util/ba;->c:Lkik/android/util/ba$a;
+    iput-object p2, p0, Lkik/android/util/ba;->b:Lcom/kik/android/Mixpanel$d;
 
-    .line 27
     return-void
+.end method
+
+.method public static a(Ljava/lang/String;Lcom/kik/android/Mixpanel$d;)Ljava/lang/Runnable;
+    .locals 1
+
+    new-instance v0, Lkik/android/util/ba;
+
+    invoke-direct {v0, p0, p1}, Lkik/android/util/ba;-><init>(Ljava/lang/String;Lcom/kik/android/Mixpanel$d;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Z)V
-    .locals 0
+.method public final run()V
+    .locals 6
 
     .prologue
-    .line 39
-    iput-boolean p1, p0, Lkik/android/util/ba;->a:Z
+    .line 0
+    iget-object v0, p0, Lkik/android/util/ba;->a:Ljava/lang/String;
 
-    .line 40
-    return-void
-.end method
+    iget-object v1, p0, Lkik/android/util/ba;->b:Lcom/kik/android/Mixpanel$d;
 
-.method public onClick(Landroid/view/View;)V
-    .locals 2
+    .line 1139
+    const/16 v2, 0x10
 
-    .prologue
-    .line 32
-    iget-object v0, p0, Lkik/android/util/ba;->c:Lkik/android/util/ba$a;
+    invoke-static {v2}, Lcom/kik/sdkutils/c;->a(I)Z
 
-    if-eqz v0, :cond_0
+    move-result v2
 
-    .line 33
-    iget-object v0, p0, Lkik/android/util/ba;->c:Lkik/android/util/ba$a;
+    if-eqz v2, :cond_0
 
-    iget-object v1, p0, Lkik/android/util/ba;->b:Ljava/lang/String;
+    .line 1140
+    new-instance v2, Landroid/media/MediaMetadataRetriever;
 
-    invoke-interface {v0, v1}, Lkik/android/util/ba$a;->a(Ljava/lang/String;)V
+    invoke-direct {v2}, Landroid/media/MediaMetadataRetriever;-><init>()V
 
-    .line 35
+    .line 1143
+    :try_start_0
+    invoke-virtual {v2, v0}, Landroid/media/MediaMetadataRetriever;->setDataSource(Ljava/lang/String;)V
+
+    .line 1145
+    const-string v0, "Width"
+
+    const/16 v3, 0x12
+
+    invoke-static {v2, v3}, Lkik/android/util/bx;->b(Landroid/media/MediaMetadataRetriever;I)J
+
+    move-result-wide v4
+
+    invoke-virtual {v1, v0, v4, v5}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v3, "Height"
+
+    const/16 v4, 0x13
+
+    .line 1146
+    invoke-static {v2, v4}, Lkik/android/util/bx;->b(Landroid/media/MediaMetadataRetriever;I)J
+
+    move-result-wide v4
+
+    invoke-virtual {v0, v3, v4, v5}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v3, "Bitrate"
+
+    const/16 v4, 0x14
+
+    .line 1147
+    invoke-static {v2, v4}, Lkik/android/util/bx;->b(Landroid/media/MediaMetadataRetriever;I)J
+
+    move-result-wide v4
+
+    invoke-virtual {v0, v3, v4, v5}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 1154
+    invoke-virtual {v2}, Landroid/media/MediaMetadataRetriever;->release()V
+
+    .line 1157
     :cond_0
+    :goto_0
+    invoke-virtual {v1}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
+
+    .line 0
     return-void
-.end method
 
-.method public updateDrawState(Landroid/text/TextPaint;)V
-    .locals 1
+    .line 1154
+    :catch_0
+    move-exception v0
 
-    .prologue
-    .line 45
-    invoke-super {p0, p1}, Landroid/text/style/ClickableSpan;->updateDrawState(Landroid/text/TextPaint;)V
+    invoke-virtual {v2}, Landroid/media/MediaMetadataRetriever;->release()V
 
-    .line 46
-    iget-boolean v0, p0, Lkik/android/util/ba;->a:Z
+    goto :goto_0
 
-    if-eqz v0, :cond_0
+    :catchall_0
+    move-exception v0
 
-    .line 47
-    const/16 v0, 0x80
+    invoke-virtual {v2}, Landroid/media/MediaMetadataRetriever;->release()V
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setAlpha(I)V
-
-    .line 49
-    :cond_0
-    return-void
+    throw v0
 .end method

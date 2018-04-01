@@ -1,70 +1,94 @@
-.class public abstract Lkik/android/util/av;
-.super Landroid/os/AsyncTask;
+.class public Lkik/android/util/av;
+.super Landroid/text/style/ClickableSpan;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<Params:",
-        "Ljava/lang/Object;",
-        "Progress:",
-        "Ljava/lang/Object;",
-        "Result:",
-        "Ljava/lang/Object;",
-        ">",
-        "Landroid/os/AsyncTask",
-        "<TParams;TProgress;TResult;>;"
+        Lkik/android/util/av$a;
     }
 .end annotation
 
 
+# instance fields
+.field private a:Z
+
+.field private final b:Ljava/lang/String;
+
+.field private c:Lkik/android/util/av$a;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/String;Lkik/android/util/av$a;)V
     .locals 0
 
     .prologue
-    .line 18
-    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
+    .line 24
+    invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
+    .line 25
+    iput-object p1, p0, Lkik/android/util/av;->b:Ljava/lang/String;
+
+    .line 26
+    iput-object p2, p0, Lkik/android/util/av;->c:Lkik/android/util/av$a;
+
+    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public final varargs a([Ljava/lang/Object;)Landroid/os/AsyncTask;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([TParams;)",
-            "Landroid/os/AsyncTask",
-            "<TParams;TProgress;TResult;>;"
-        }
-    .end annotation
+.method public final a(Z)V
+    .locals 0
 
     .prologue
-    .line 22
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 39
+    iput-boolean p1, p0, Lkik/android/util/av;->a:Z
 
-    const/16 v1, 0xb
+    .line 40
+    return-void
+.end method
 
-    if-ge v0, v1, :cond_0
+.method public onClick(Landroid/view/View;)V
+    .locals 2
 
-    .line 23
-    invoke-virtual {p0, p1}, Lkik/android/util/av;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    .prologue
+    .line 32
+    iget-object v0, p0, Lkik/android/util/av;->c:Lkik/android/util/av$a;
 
-    move-result-object v0
+    if-eqz v0, :cond_0
 
-    .line 26
-    :goto_0
-    return-object v0
+    .line 33
+    iget-object v0, p0, Lkik/android/util/av;->c:Lkik/android/util/av$a;
 
+    iget-object v1, p0, Lkik/android/util/av;->b:Ljava/lang/String;
+
+    invoke-interface {v0, v1}, Lkik/android/util/av$a;->a(Ljava/lang/String;)V
+
+    .line 35
     :cond_0
-    sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
+    return-void
+.end method
 
-    invoke-virtual {p0, v0, p1}, Lkik/android/util/av;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+.method public updateDrawState(Landroid/text/TextPaint;)V
+    .locals 1
 
-    move-result-object v0
+    .prologue
+    .line 45
+    invoke-super {p0, p1}, Landroid/text/style/ClickableSpan;->updateDrawState(Landroid/text/TextPaint;)V
 
-    goto :goto_0
+    .line 46
+    iget-boolean v0, p0, Lkik/android/util/av;->a:Z
+
+    if-eqz v0, :cond_0
+
+    .line 47
+    const/16 v0, 0x80
+
+    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setAlpha(I)V
+
+    .line 49
+    :cond_0
+    return-void
 .end method

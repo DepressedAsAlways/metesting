@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0f005f
+    const v1, 0x7f0e0064
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -57,25 +57,7 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/gifs/view/GifView;Lkik/android/gifs/view/c;)V
-    .locals 0
-
-    .prologue
-    .line 1058
-    if-eqz p1, :cond_0
-
-    .line 1059
-    invoke-virtual {p0, p1}, Lkik/android/gifs/view/GifView;->a(Landroid/graphics/drawable/Drawable;)V
-
-    .line 1060
-    invoke-virtual {p1}, Lkik/android/gifs/view/c;->start()V
-
-    .line 0
-    :cond_0
-    return-void
-.end method
-
-.method public static a(Lkik/android/gifs/view/GifView;Lrx/c;)V
+.method public static a(Lkik/android/gifs/view/GifView;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -87,7 +69,7 @@
         value = {
             "(",
             "Lkik/android/gifs/view/GifView;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Lkik/android/gifs/view/c;",
             ">;)V"
@@ -96,17 +78,17 @@
 
     .prologue
     .line 31
-    const v0, 0x7f0100d5
+    const v0, 0x7f01018b
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/gifs/view/g;->a(Lkik/android/gifs/view/GifView;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/gifs/view/g;->a(Lkik/android/gifs/view/GifView;)Lrx/functions/b;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 32
     return-void
@@ -114,14 +96,14 @@
 
 
 # virtual methods
-.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/ai;
+.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bh;
     .locals 1
 
     .prologue
     .line 67
-    new-instance v0, Lkik/android/widget/bp;
+    new-instance v0, Lkik/android/widget/cr;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/bp;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/cr;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     return-object v0
 .end method

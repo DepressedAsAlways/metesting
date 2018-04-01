@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -34,12 +34,12 @@
     .locals 0
 
     .prologue
-    .line 190
+    .line 209
     iput-object p1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
     iput-object p2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->a:Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -50,13 +50,13 @@
     .locals 2
 
     .prologue
-    .line 190
+    .line 209
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1194
+    .line 1213
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;->b:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/z;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -64,8 +64,8 @@
 
     invoke-direct {v1, p0, p1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2$1;-><init>(Lkik/android/chat/vm/messaging/AbstractMessageViewModel$2;Ljava/lang/Boolean;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/z;->a(Lkik/android/chat/vm/ad;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/bd;)V
 
-    .line 190
+    .line 209
     return-void
 .end method

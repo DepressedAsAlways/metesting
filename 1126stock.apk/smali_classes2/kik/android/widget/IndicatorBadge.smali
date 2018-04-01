@@ -31,7 +31,7 @@
     invoke-direct {p0, p1, p2, p3}, Lkik/android/widget/RobotoTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 25
-    sget-object v0, Lkik/android/k$a;->J:[I
+    sget-object v0, Lkik/android/R$styleable;->IndicatorBadge:[I
 
     invoke-virtual {p1, p2, v0, p3, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -93,7 +93,7 @@
     invoke-virtual {v2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 44
-    const v0, 0x7f020208
+    const v0, 0x7f020278
 
     invoke-virtual {p0, v0}, Lkik/android/widget/IndicatorBadge;->setBackgroundResource(I)V
 

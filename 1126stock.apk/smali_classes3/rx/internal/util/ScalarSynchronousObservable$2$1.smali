@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/a;
+.implements Lrx/functions/a;
 
 
 # annotations
@@ -18,24 +18,24 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/b/a;
+.field final synthetic a:Lrx/functions/a;
 
-.field final synthetic b:Lrx/f$a;
+.field final synthetic b:Lrx/g$a;
 
 .field final synthetic c:Lrx/internal/util/ScalarSynchronousObservable$2;
 
 
 # direct methods
-.method constructor <init>(Lrx/internal/util/ScalarSynchronousObservable$2;Lrx/b/a;Lrx/f$a;)V
+.method constructor <init>(Lrx/internal/util/ScalarSynchronousObservable$2;Lrx/functions/a;Lrx/g$a;)V
     .locals 0
 
     .prologue
     .line 110
     iput-object p1, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->c:Lrx/internal/util/ScalarSynchronousObservable$2;
 
-    iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->a:Lrx/b/a;
+    iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->a:Lrx/functions/a;
 
-    iput-object p3, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->b:Lrx/f$a;
+    iput-object p3, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->b:Lrx/g$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,16 +50,16 @@
     .prologue
     .line 114
     :try_start_0
-    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->a:Lrx/b/a;
+    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->a:Lrx/functions/a;
 
-    invoke-interface {v0}, Lrx/b/a;->a()V
+    invoke-interface {v0}, Lrx/functions/a;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 116
-    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->b:Lrx/f$a;
+    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->b:Lrx/g$a;
 
-    invoke-virtual {v0}, Lrx/f$a;->unsubscribe()V
+    invoke-virtual {v0}, Lrx/g$a;->unsubscribe()V
 
     .line 117
     return-void
@@ -68,9 +68,9 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->b:Lrx/f$a;
+    iget-object v1, p0, Lrx/internal/util/ScalarSynchronousObservable$2$1;->b:Lrx/g$a;
 
-    invoke-virtual {v1}, Lrx/f$a;->unsubscribe()V
+    invoke-virtual {v1}, Lrx/g$a;->unsubscribe()V
 
     throw v0
 .end method

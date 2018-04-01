@@ -61,7 +61,7 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 53
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/h;->c:Lcom/nostra13/universalimageloader/core/g;

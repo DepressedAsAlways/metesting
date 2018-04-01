@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/core/interfaces/ab;
+.implements Lkik/core/interfaces/ac;
 
 
 # instance fields
@@ -12,7 +12,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/z;",
+            "Lkik/core/datatypes/y;",
             ">;"
         }
     .end annotation
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/b;Lkik/core/interfaces/ac;)V
+.method public constructor <init>(Lkik/core/interfaces/b;Lkik/core/interfaces/ad;)V
     .locals 7
 
     .prologue
@@ -28,7 +28,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    new-instance v0, Lkik/core/datatypes/z;
+    new-instance v0, Lkik/core/datatypes/y;
 
     const-string v1, "4687714785427456"
 
@@ -38,10 +38,10 @@
 
     const-string v4, "https://cdn.kik.com/stickersv2/packs/breakfastclub/17.png"
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkik/core/datatypes/z;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lkik/core/datatypes/y;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 29
-    new-instance v1, Lkik/core/datatypes/z;
+    new-instance v1, Lkik/core/datatypes/y;
 
     const-string v2, "5946604915261440"
 
@@ -51,10 +51,10 @@
 
     const-string v5, "https://cdn.kik.com/stickersv2/packs/cosmocat/05.png"
 
-    invoke-direct {v1, v2, v3, v4, v5}, Lkik/core/datatypes/z;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3, v4, v5}, Lkik/core/datatypes/y;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 30
-    new-instance v2, Lkik/core/datatypes/z;
+    new-instance v2, Lkik/core/datatypes/y;
 
     const-string v3, "5549474941763584"
 
@@ -64,12 +64,12 @@
 
     const-string v6, "https://cdn.kik.com/stickersv2/packs/pauliepug/04.png"
 
-    invoke-direct {v2, v3, v4, v5, v6}, Lkik/core/datatypes/z;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v3, v4, v5, v6}, Lkik/core/datatypes/y;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 32
     const/4 v3, 0x3
 
-    new-array v3, v3, [Lkik/core/datatypes/z;
+    new-array v3, v3, [Lkik/core/datatypes/y;
 
     const/4 v4, 0x0
 
@@ -104,7 +104,7 @@
     .line 39
     const-string v0, "Sticker Randomizer Seed"
 
-    invoke-interface {p2, v0}, Lkik/core/interfaces/ac;->C(Ljava/lang/String;)Z
+    invoke-interface {p2, v0}, Lkik/core/interfaces/ad;->D(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -126,7 +126,7 @@
 
     move-result-object v2
 
-    invoke-interface {p2, v1, v2}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
+    invoke-interface {p2, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Integer;)Z
 
     .line 47
     :goto_0
@@ -148,7 +148,7 @@
     :cond_1
     const-string v0, "Sticker Randomizer Seed"
 
-    invoke-interface {p2, v0}, Lkik/core/interfaces/ac;->t(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-interface {p2, v0}, Lkik/core/interfaces/ad;->u(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/z;",
+            "Lkik/core/datatypes/y;",
             ">;"
         }
     .end annotation

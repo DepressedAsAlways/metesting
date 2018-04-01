@@ -19,13 +19,13 @@
 
 .field public static final RecyclerView_android_orientation:I = 0x0
 
-.field public static final RecyclerView_layoutManager:I = 0x1
+.field public static final RecyclerView_layoutManager:I = 0x2
 
-.field public static final RecyclerView_reverseLayout:I = 0x3
+.field public static final RecyclerView_reverseLayout:I = 0x4
 
-.field public static final RecyclerView_spanCount:I = 0x2
+.field public static final RecyclerView_spanCount:I = 0x3
 
-.field public static final RecyclerView_stackFromEnd:I = 0x4
+.field public static final RecyclerView_stackFromEnd:I = 0x5
 
 .field public static final VideoSurface:[I
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 120
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     new-array v0, v0, [I
 
@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0101ee
+    const v2, 0x7f010251
 
     aput v2, v0, v1
 
@@ -65,10 +65,11 @@
     :array_0
     .array-data 4
         0x10100c4
-        0x7f010127
-        0x7f010128
-        0x7f010129
-        0x7f01012a
+        0x10100f1
+        0x7f0101e3
+        0x7f0101e4
+        0x7f0101e5
+        0x7f0101e6
     .end array-data
 .end method
 

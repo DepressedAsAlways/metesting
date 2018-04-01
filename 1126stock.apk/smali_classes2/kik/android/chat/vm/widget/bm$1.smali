@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/ap;
+.implements Lkik/android/widget/bq;
 
 
 # annotations
@@ -26,10 +26,10 @@
     .locals 2
 
     .prologue
-    .line 45
+    .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
+    .line 47
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Lkik/android/chat/vm/widget/bm$1;->a:J
@@ -43,7 +43,7 @@
     .locals 2
 
     .prologue
-    .line 51
+    .line 52
     iget-wide v0, p0, Lkik/android/chat/vm/widget/bm$1;->a:J
 
     return-wide v0
@@ -53,9 +53,9 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     iput-wide p1, p0, Lkik/android/chat/vm/widget/bm$1;->a:J
 
-    .line 58
+    .line 59
     return-void
 .end method

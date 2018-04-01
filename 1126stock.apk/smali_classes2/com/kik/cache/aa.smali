@@ -1,99 +1,63 @@
-.class public abstract Lcom/kik/cache/aa;
-.super Lcom/kik/cache/ac;
-.source "SourceFile"
+.class final synthetic Lcom/kik/cache/aa;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/functions/b;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lcom/kik/cache/ac",
-        "<TT;>;"
-    }
-.end annotation
+# instance fields
+.field private final a:Lcom/kik/cache/y;
+
+.field private final b:Lcom/kik/cache/MyPicImageRequest;
+
+.field private final c:I
+
+.field private final d:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;Lcom/android/volley/i$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/i$a;)V
+.method private constructor <init>(Lcom/kik/cache/y;Lcom/kik/cache/MyPicImageRequest;II)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/String;",
-            "Lcom/android/volley/i$b",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;II",
-            "Landroid/graphics/Bitmap$Config;",
-            "Lcom/android/volley/i$a;",
-            ")V"
-        }
-    .end annotation
 
-    .prologue
-    .line 23
-    invoke-direct/range {p0 .. p7}, Lcom/kik/cache/ac;-><init>(Ljava/lang/Object;Ljava/lang/String;Lcom/android/volley/i$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/i$a;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 24
+    iput-object p1, p0, Lcom/kik/cache/aa;->a:Lcom/kik/cache/y;
+
+    iput-object p2, p0, Lcom/kik/cache/aa;->b:Lcom/kik/cache/MyPicImageRequest;
+
+    iput p3, p0, Lcom/kik/cache/aa;->c:I
+
+    iput p4, p0, Lcom/kik/cache/aa;->d:I
+
     return-void
+.end method
+
+.method public static a(Lcom/kik/cache/y;Lcom/kik/cache/MyPicImageRequest;II)Lrx/functions/b;
+    .locals 1
+
+    new-instance v0, Lcom/kik/cache/aa;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/kik/cache/aa;-><init>(Lcom/kik/cache/y;Lcom/kik/cache/MyPicImageRequest;II)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method protected a(Lcom/android/volley/g;)Lcom/android/volley/i;
-    .locals 6
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/android/volley/g;",
-            ")",
-            "Lcom/android/volley/i",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
+.method public final call(Ljava/lang/Object;)V
+    .locals 4
 
-    .prologue
-    const-wide/32 v4, 0x41353000
+    iget-object v0, p0, Lcom/kik/cache/aa;->a:Lcom/kik/cache/y;
 
-    .line 29
-    invoke-super {p0, p1}, Lcom/kik/cache/ac;->a(Lcom/android/volley/g;)Lcom/android/volley/i;
+    iget-object v1, p0, Lcom/kik/cache/aa;->b:Lcom/kik/cache/MyPicImageRequest;
 
-    move-result-object v0
+    iget v2, p0, Lcom/kik/cache/aa;->c:I
 
-    .line 32
-    if-eqz v0, :cond_0
+    iget v3, p0, Lcom/kik/cache/aa;->d:I
 
-    iget-object v1, v0, Lcom/android/volley/i;->b:Lcom/android/volley/a$a;
+    check-cast p1, Lrx/Emitter;
 
-    if-eqz v1, :cond_0
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/y;->a(Lcom/kik/cache/y;Lcom/kik/cache/MyPicImageRequest;IILrx/Emitter;)V
 
-    .line 34
-    iget-object v1, v0, Lcom/android/volley/i;->b:Lcom/android/volley/a$a;
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    add-long/2addr v2, v4
-
-    iput-wide v2, v1, Lcom/android/volley/a$a;->e:J
-
-    .line 35
-    iget-object v1, v0, Lcom/android/volley/i;->b:Lcom/android/volley/a$a;
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    add-long/2addr v2, v4
-
-    iput-wide v2, v1, Lcom/android/volley/a$a;->d:J
-
-    .line 37
-    :cond_0
-    return-object v0
+    return-void
 .end method

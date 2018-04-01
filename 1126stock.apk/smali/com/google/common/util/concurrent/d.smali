@@ -1,26 +1,15 @@
 .class public final Lcom/google/common/util/concurrent/d;
-.super Ljava/lang/Object;
+.super Lcom/google/common/util/concurrent/e;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/google/common/util/concurrent/d$a;,
-        Lcom/google/common/util/concurrent/d$b;,
-        Lcom/google/common/util/concurrent/d$d;,
-        Lcom/google/common/util/concurrent/d$c;
-    }
-.end annotation
-
-
 # static fields
-.field private static final a:Lcom/google/common/util/concurrent/a;
+.field private static final a:Lcom/google/common/util/concurrent/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/util/concurrent/a",
+            "Lcom/google/common/util/concurrent/c",
             "<",
-            "Lcom/google/common/util/concurrent/e",
+            "Lcom/google/common/util/concurrent/g",
             "<",
             "Ljava/lang/Object;",
             ">;",
@@ -30,54 +19,24 @@
     .end annotation
 .end field
 
-.field private static final b:Lcom/google/common/collect/p;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/common/collect/p",
-            "<",
-            "Ljava/lang/reflect/Constructor",
-            "<*>;>;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .prologue
-    .line 979
-    new-instance v0, Lcom/google/common/util/concurrent/d$2;
+    .line 792
+    new-instance v0, Lcom/google/common/util/concurrent/d$1;
 
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/d$2;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/d$1;-><init>()V
 
-    sput-object v0, Lcom/google/common/util/concurrent/d;->a:Lcom/google/common/util/concurrent/a;
-
-    .line 1570
-    invoke-static {}, Lcom/google/common/collect/p;->b()Lcom/google/common/collect/p;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/google/common/util/concurrent/d$3;
-
-    invoke-direct {v1}, Lcom/google/common/util/concurrent/d$3;-><init>()V
-
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/p;->a(Lcom/google/common/base/d;)Lcom/google/common/collect/p;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/google/common/collect/p;->a()Lcom/google/common/collect/p;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/common/util/concurrent/d;->b:Lcom/google/common/collect/p;
+    sput-object v0, Lcom/google/common/util/concurrent/d;->a:Lcom/google/common/util/concurrent/c;
 
     return-void
 .end method
 
-.method public static a(Lcom/google/common/util/concurrent/e;Lcom/google/common/base/d;)Lcom/google/common/util/concurrent/e;
-    .locals 3
+.method public static a(Lcom/google/common/util/concurrent/g;Lcom/google/common/base/Function;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/g;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<I:",
@@ -85,43 +44,27 @@
             "O:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/common/util/concurrent/e",
+            "Lcom/google/common/util/concurrent/g",
             "<TI;>;",
-            "Lcom/google/common/base/d",
-            "<-TI;+TO;>;)",
-            "Lcom/google/common/util/concurrent/e",
+            "Lcom/google/common/base/Function",
+            "<-TI;+TO;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lcom/google/common/util/concurrent/g",
             "<TO;>;"
         }
     .end annotation
 
     .prologue
-    .line 705
-    invoke-static {p1}, Lcom/google/common/base/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 692
+    invoke-static {p0, p1, p2}, Lcom/google/common/util/concurrent/b;->a(Lcom/google/common/util/concurrent/g;Lcom/google/common/base/Function;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/g;
 
-    .line 706
-    new-instance v0, Lcom/google/common/util/concurrent/d$a;
+    move-result-object v0
 
-    .line 1758
-    new-instance v1, Lcom/google/common/util/concurrent/d$1;
-
-    invoke-direct {v1, p1}, Lcom/google/common/util/concurrent/d$1;-><init>(Lcom/google/common/base/d;)V
-
-    .line 706
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, p0, v2}, Lcom/google/common/util/concurrent/d$a;-><init>(Lcom/google/common/util/concurrent/a;Lcom/google/common/util/concurrent/e;B)V
-
-    .line 2450
-    sget-object v1, Lcom/google/common/util/concurrent/MoreExecutors$DirectExecutor;->INSTANCE:Lcom/google/common/util/concurrent/MoreExecutors$DirectExecutor;
-
-    .line 708
-    invoke-interface {p0, v0, v1}, Lcom/google/common/util/concurrent/e;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    .line 709
     return-object v0
 .end method
 
-.method public static a(Ljava/lang/Object;)Lcom/google/common/util/concurrent/e;
+.method public static a(Ljava/lang/Object;)Lcom/google/common/util/concurrent/g;
     .locals 1
     .param p0    # Ljava/lang/Object;
         .annotation runtime Ljavax/annotation/Nullable;
@@ -132,21 +75,31 @@
             "<V:",
             "Ljava/lang/Object;",
             ">(TV;)",
-            "Lcom/google/common/util/concurrent/e",
+            "Lcom/google/common/util/concurrent/g",
             "<TV;>;"
         }
     .end annotation
 
     .prologue
-    .line 247
-    new-instance v0, Lcom/google/common/util/concurrent/d$d;
+    .line 151
+    if-nez p0, :cond_0
 
-    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/d$d;-><init>(Ljava/lang/Object;)V
+    .line 154
+    sget-object v0, Lcom/google/common/util/concurrent/f$b;->a:Lcom/google/common/util/concurrent/f$b;
 
+    .line 157
+    :goto_0
     return-object v0
+
+    :cond_0
+    new-instance v0, Lcom/google/common/util/concurrent/f$b;
+
+    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/f$b;-><init>(Ljava/lang/Object;)V
+
+    goto :goto_0
 .end method
 
-.method public static a(Ljava/lang/Throwable;)Lcom/google/common/util/concurrent/e;
+.method public static a(Ljava/lang/Throwable;)Lcom/google/common/util/concurrent/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -155,19 +108,58 @@
             ">(",
             "Ljava/lang/Throwable;",
             ")",
-            "Lcom/google/common/util/concurrent/e",
+            "Lcom/google/common/util/concurrent/g",
             "<TV;>;"
         }
     .end annotation
 
     .prologue
-    .line 274
-    invoke-static {p0}, Lcom/google/common/base/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 191
+    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 275
-    new-instance v0, Lcom/google/common/util/concurrent/d$b;
+    .line 192
+    new-instance v0, Lcom/google/common/util/concurrent/f$a;
 
-    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/d$b;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/f$a;-><init>(Ljava/lang/Throwable;)V
+
+    return-object v0
+.end method
+
+.method public static a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+    .locals 2
+    .annotation build Lcom/google/errorprone/annotations/CanIgnoreReturnValue;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/Future",
+            "<TV;>;)TV;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/ExecutionException;
+        }
+    .end annotation
+
+    .prologue
+    .line 1278
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->isDone()Z
+
+    move-result v0
+
+    const-string v1, "Future was expected to be done: %s"
+
+    invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;Ljava/lang/Object;)V
+
+    .line 1279
+    invoke-static {p0}, Lcom/google/common/util/concurrent/i;->a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+
+    move-result-object v0
 
     return-object v0
 .end method

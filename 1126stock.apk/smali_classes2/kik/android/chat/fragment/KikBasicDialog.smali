@@ -13,42 +13,32 @@
 
 # instance fields
 .field _body:Lkik/android/widget/RobotoTextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10018a
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001d2
     .end annotation
 .end field
 
 .field _dialogImage:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100188
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001d0
     .end annotation
 .end field
 
 .field _negativeButton:Landroid/widget/Button;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10018c
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001d4
     .end annotation
 .end field
 
 .field _positiveButton:Landroid/widget/Button;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10018b
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001d3
     .end annotation
 .end field
 
 .field _title:Lkik/android/widget/RobotoTextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100189
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001d1
     .end annotation
 .end field
 
@@ -84,7 +74,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 57
     :cond_0
@@ -108,7 +98,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -123,7 +113,7 @@
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikDialogFragment;->a(Landroid/view/View;)V
 
     .line 39
-    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 40
     return-void

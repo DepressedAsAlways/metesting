@@ -128,7 +128,7 @@
     .line 126
     iget-object v0, p0, Lkik/android/chat/vm/DialogViewModel$b;->a:Lkik/android/chat/vm/DialogViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/DialogViewModel;->b(Lkik/android/chat/vm/DialogViewModel;)Ljava/util/List;
+    invoke-static {v0}, Lkik/android/chat/vm/DialogViewModel;->a(Lkik/android/chat/vm/DialogViewModel;)Ljava/util/List;
 
     move-result-object v0
 
@@ -162,6 +162,24 @@
     return-object p0
 .end method
 
+.method public final a(Z)Lkik/android/chat/vm/DialogViewModel$b;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z)TT;"
+        }
+    .end annotation
+
+    .prologue
+    .line 100
+    iget-object v0, p0, Lkik/android/chat/vm/DialogViewModel$b;->a:Lkik/android/chat/vm/DialogViewModel;
+
+    invoke-static {v0, p1}, Lkik/android/chat/vm/DialogViewModel;->a(Lkik/android/chat/vm/DialogViewModel;Z)Z
+
+    .line 102
+    return-object p0
+.end method
+
 .method public a()Lkik/android/chat/vm/DialogViewModel;
     .locals 1
 
@@ -170,24 +188,6 @@
     iget-object v0, p0, Lkik/android/chat/vm/DialogViewModel$b;->a:Lkik/android/chat/vm/DialogViewModel;
 
     return-object v0
-.end method
-
-.method public final b()Lkik/android/chat/vm/DialogViewModel$b;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-
-    .prologue
-    .line 100
-    iget-object v0, p0, Lkik/android/chat/vm/DialogViewModel$b;->a:Lkik/android/chat/vm/DialogViewModel;
-
-    invoke-static {v0}, Lkik/android/chat/vm/DialogViewModel;->a(Lkik/android/chat/vm/DialogViewModel;)Z
-
-    .line 102
-    return-object p0
 .end method
 
 .method public final b(Ljava/lang/String;)Lkik/android/chat/vm/DialogViewModel$b;

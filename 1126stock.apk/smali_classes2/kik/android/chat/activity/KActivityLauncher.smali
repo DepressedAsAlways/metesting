@@ -83,21 +83,21 @@
     .locals 2
 
     .prologue
-    .line 134
+    .line 136
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
-    .line 135
+    .line 137
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
-    .line 136
+    .line 138
     const-string v0, "KActivityLauncher"
 
     invoke-static {v0}, Lorg/slf4j/c;->a(Ljava/lang/String;)Lorg/slf4j/b;
@@ -106,14 +106,14 @@
 
     sput-object v0, Lkik/android/chat/activity/KActivityLauncher;->c:Lorg/slf4j/b;
 
-    .line 142
+    .line 144
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lkik/android/chat/activity/KActivityLauncher;->d:Ljava/util/HashMap;
 
-    .line 162
+    .line 164
     new-instance v0, Lcom/kik/events/g;
 
     new-instance v1, Ljava/lang/Object;
@@ -124,7 +124,7 @@
 
     sput-object v0, Lkik/android/chat/activity/KActivityLauncher;->g:Lcom/kik/events/g;
 
-    .line 167
+    .line 169
     new-instance v0, Lcom/kik/events/g;
 
     new-instance v1, Ljava/lang/Object;
@@ -160,18 +160,18 @@
 
     const/4 v1, 0x0
 
-    .line 261
+    .line 264
     if-eqz p1, :cond_0
 
     if-nez p0, :cond_1
 
-    .line 262
+    .line 265
     :cond_0
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 263
+    .line 266
     new-instance v1, Ljava/lang/Throwable;
 
     const-string v2, "Null context or intent provided"
@@ -180,17 +180,17 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 339
+    .line 346
     :goto_0
     return-object v0
 
-    .line 266
+    .line 269
     :cond_1
     new-instance v3, Lcom/kik/events/Promise;
 
     invoke-direct {v3}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 267
+    .line 270
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object v0
@@ -199,31 +199,31 @@
 
     move-result-object v0
 
-    .line 268
+    .line 271
     sget-object v4, Lkik/android/chat/activity/KActivityLauncher;->d:Ljava/util/HashMap;
 
     invoke-virtual {v4, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 269
+    .line 272
     const-string v4, "com.kik.util.KActivityLauncher.promiseId"
 
     invoke-virtual {p0, v4, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 272
+    .line 275
     const-string v4, "com.kik.util.KActivityLauncher.synthTaskId"
 
     sget-object v5, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
     invoke-virtual {p0, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 275
+    .line 278
     new-instance v4, Lkik/android/chat/activity/KActivityLauncher$1;
 
     invoke-direct {v4, v0}, Lkik/android/chat/activity/KActivityLauncher$1;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v4}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v3, v4}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 306
+    .line 310
     invoke-virtual {p0}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v0
@@ -232,14 +232,14 @@
 
     move-result-object v0
 
-    .line 307
+    .line 311
     const-string v4, "kik.android.util.FragmentBundle.FragmentClass"
 
     invoke-virtual {p0, v4}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 308
+    .line 312
     const-class v5, Lkik/android/chat/activity/ChatActivity;
 
     invoke-virtual {v5}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
@@ -254,7 +254,7 @@
 
     const-class v5, Lkik/android/chat/activity/ConversationsActivity;
 
-    .line 309
+    .line 313
     invoke-virtual {v5}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v5
@@ -267,7 +267,7 @@
 
     const-class v0, Lkik/android/chat/fragment/CameraFragment;
 
-    .line 310
+    .line 314
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
@@ -281,7 +281,7 @@
     :cond_2
     move v0, v2
 
-    .line 311
+    .line 315
     :goto_1
     sget-object v4, Lkik/android/chat/activity/KActivityLauncher;->e:Lkik/android/videochat/c;
 
@@ -297,7 +297,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 312
+    .line 316
     invoke-virtual {p0}, Landroid/content/Intent;->getFlags()I
 
     move-result v0
@@ -306,44 +306,54 @@
 
     if-ne v0, v6, :cond_5
 
-    .line 313
+    .line 317
     :goto_2
     if-eqz v2, :cond_6
 
-    .line 314
+    .line 318
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->e:Lkik/android/videochat/c;
 
     sget-object v1, Lcom/rounds/kik/conference/LeaveReason;->NAVIGATE_AWAY:Lcom/rounds/kik/conference/LeaveReason;
 
     invoke-interface {v0, v1}, Lkik/android/videochat/c;->a(Lcom/rounds/kik/conference/LeaveReason;)V
 
-    .line 336
+    .line 343
     :cond_3
     invoke-virtual {p1, p0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     :goto_3
     move-object v0, v3
 
-    .line 339
+    .line 346
     goto :goto_0
 
     :cond_4
     move v0, v1
 
-    .line 310
+    .line 314
     goto :goto_1
 
     :cond_5
     move v2, v1
 
-    .line 312
+    .line 316
     goto :goto_2
 
-    .line 318
+    .line 322
     :cond_6
+    const-string v0, "com.kik.util.KActivityLauncher.is.shared"
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    .line 323
     invoke-static {}, Lkik/android/chat/activity/KActivityLauncher;->j()V
 
-    .line 319
+    .line 326
+    :cond_7
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->e:Lkik/android/videochat/c;
 
     sget-object v1, Lcom/rounds/kik/conference/LeaveReason;->NAVIGATE_AWAY:Lcom/rounds/kik/conference/LeaveReason;
@@ -356,8 +366,8 @@
 
     invoke-direct {v1, p1, p0, v3}, Lkik/android/chat/activity/KActivityLauncher$2;-><init>(Landroid/content/Context;Landroid/content/Intent;Lcom/kik/events/Promise;)V
 
-    .line 320
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    .line 327
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_3
 .end method
@@ -377,13 +387,13 @@
     .end annotation
 
     .prologue
-    .line 196
+    .line 199
     if-nez p0, :cond_0
 
-    .line 197
+    .line 200
     const/4 v0, 0x0
 
-    .line 199
+    .line 202
     :goto_0
     return-object v0
 
@@ -416,7 +426,7 @@
     .end annotation
 
     .prologue
-    .line 171
+    .line 173
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->g:Lcom/kik/events/g;
 
     invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
@@ -426,24 +436,24 @@
     return-object v0
 .end method
 
-.method public static a(Lkik/android/util/af;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
+.method public static a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
     .locals 2
 
     .prologue
-    .line 246
+    .line 249
     if-nez p0, :cond_0
 
-    .line 247
+    .line 250
     const/4 v0, 0x0
 
-    .line 249
+    .line 252
     :goto_0
     return-object v0
 
     :cond_0
     new-instance v0, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
-    invoke-virtual {p0}, Lkik/android/util/af;->a()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lkik/android/util/ad;->a()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -456,10 +466,10 @@
     .locals 0
 
     .prologue
-    .line 234
+    .line 237
     sput-object p0, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
-    .line 235
+    .line 238
     return-void
 .end method
 
@@ -467,7 +477,7 @@
     .locals 4
 
     .prologue
-    .line 394
+    .line 402
     new-instance v0, Lkik/android/chat/activity/KActivityLauncher$a;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -484,17 +494,17 @@
 
     invoke-direct {v0, v1, v2, v3}, Lkik/android/chat/activity/KActivityLauncher$a;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 395
+    .line 403
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 396
+    .line 404
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 397
+    .line 405
     return-void
 .end method
 
@@ -504,14 +514,14 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 360
+    .line 368
     if-nez p0, :cond_1
 
-    .line 385
+    .line 393
     :cond_0
     return-void
 
-    .line 363
+    .line 371
     :cond_1
     new-instance v1, Lkik/android/chat/activity/KActivityLauncher$a;
 
@@ -529,27 +539,27 @@
 
     invoke-direct {v1, v2, v3, v4}, Lkik/android/chat/activity/KActivityLauncher$a;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 366
+    .line 374
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
     if-nez v2, :cond_2
 
-    .line 367
+    .line 375
     invoke-virtual {p0}, Lkik/android/chat/activity/FragmentWrapperActivity;->e()Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_5
 
-    .line 368
+    .line 376
     invoke-virtual {p0}, Lkik/android/chat/activity/FragmentWrapperActivity;->e()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1234
+    .line 1237
     sput-object v2, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
-    .line 377
+    .line 385
     :cond_2
     :goto_0
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
@@ -560,7 +570,7 @@
 
     if-nez v2, :cond_0
 
-    .line 378
+    .line 386
     if-eqz p1, :cond_3
 
     instance-of v2, p1, Lcom/kik/ui/fragment/FragmentBase;
@@ -569,24 +579,24 @@
 
     check-cast p1, Lcom/kik/ui/fragment/FragmentBase;
 
-    invoke-virtual {p1}, Lcom/kik/ui/fragment/FragmentBase;->m()Z
+    invoke-virtual {p1}, Lcom/kik/ui/fragment/FragmentBase;->isStacked()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 379
+    .line 387
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 381
+    .line 389
     :cond_3
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2476
+    .line 2485
     if-eqz p0, :cond_4
 
     invoke-virtual {p0}, Lkik/android/chat/activity/FragmentWrapperActivity;->getIntent()Landroid/content/Intent;
@@ -595,7 +605,7 @@
 
     if-nez v1, :cond_6
 
-    .line 3414
+    .line 3423
     :cond_4
     :goto_1
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
@@ -608,25 +618,25 @@
 
     if-le v1, v2, :cond_0
 
-    .line 3415
+    .line 3424
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
 
-    .line 3416
+    .line 3425
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3417
+    .line 3426
     :goto_2
     add-int/lit8 v3, v1, -0x4
 
     if-ge v0, v3, :cond_7
 
-    .line 3418
+    .line 3427
     sget-object v3, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -635,12 +645,12 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3417
+    .line 3426
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 371
+    .line 379
     :cond_5
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
@@ -650,18 +660,18 @@
 
     move-result-object v2
 
-    .line 372
+    .line 380
     invoke-static {p0, v2}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/chat/activity/FragmentWrapperActivity;Ljava/lang/String;)V
 
-    .line 2234
+    .line 2237
     sput-object v2, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
-    .line 374
+    .line 382
     invoke-static {v1, v2}, Lkik/android/chat/activity/KActivityLauncher$a;->a(Lkik/android/chat/activity/KActivityLauncher$a;Ljava/lang/String;)Ljava/lang/String;
 
     goto :goto_0
 
-    .line 2479
+    .line 2488
     :cond_6
     invoke-virtual {p0}, Lkik/android/chat/activity/FragmentWrapperActivity;->getIntent()Landroid/content/Intent;
 
@@ -673,10 +683,10 @@
 
     move-result v1
 
-    .line 2480
+    .line 2489
     if-eqz v1, :cond_4
 
-    .line 2482
+    .line 2491
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object v1
@@ -685,18 +695,18 @@
 
     move-result-object v1
 
-    .line 2483
+    .line 2492
     invoke-static {p0, v1}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/chat/activity/FragmentWrapperActivity;Ljava/lang/String;)V
 
-    .line 2485
+    .line 2494
     invoke-static {}, Lkik/android/chat/activity/KActivityLauncher;->d()V
 
-    .line 3234
+    .line 3237
     sput-object v1, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
     goto :goto_1
 
-    .line 3420
+    .line 3429
     :cond_7
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -716,10 +726,10 @@
 
     check-cast v0, Lkik/android/chat/activity/KActivityLauncher$a;
 
-    .line 3421
+    .line 3430
     if-eqz v0, :cond_8
 
-    .line 3424
+    .line 3433
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->h:Lcom/kik/events/g;
 
     invoke-static {v0}, Lkik/android/chat/activity/KActivityLauncher$a;->b(Lkik/android/chat/activity/KActivityLauncher$a;)Ljava/lang/String;
@@ -735,14 +745,14 @@
     .locals 4
 
     .prologue
-    .line 452
+    .line 461
     if-nez p0, :cond_0
 
-    .line 466
+    .line 475
     :goto_0
     return-void
 
-    .line 455
+    .line 464
     :cond_0
     new-instance v1, Lkik/android/chat/activity/KActivityLauncher$a;
 
@@ -760,7 +770,7 @@
 
     invoke-direct {v1, v0, v2, v3}, Lkik/android/chat/activity/KActivityLauncher$a;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 459
+    .line 468
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
@@ -777,7 +787,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 460
+    .line 469
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -788,7 +798,7 @@
 
     invoke-static {v0, p1}, Lkik/android/chat/activity/KActivityLauncher$a;->a(Lkik/android/chat/activity/KActivityLauncher$a;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 462
+    .line 471
     :cond_1
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
@@ -806,7 +816,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 463
+    .line 472
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -817,7 +827,7 @@
 
     invoke-static {v0, p1}, Lkik/android/chat/activity/KActivityLauncher$a;->a(Lkik/android/chat/activity/KActivityLauncher$a;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 465
+    .line 474
     :cond_2
     invoke-virtual {p0, p1}, Lkik/android/chat/activity/FragmentWrapperActivity;->a(Ljava/lang/String;)V
 
@@ -828,10 +838,10 @@
     .locals 0
 
     .prologue
-    .line 191
+    .line 194
     sput-object p0, Lkik/android/chat/activity/KActivityLauncher;->e:Lkik/android/videochat/c;
 
-    .line 192
+    .line 195
     return-void
 .end method
 
@@ -839,14 +849,14 @@
     .locals 3
 
     .prologue
-    .line 3438
+    .line 3447
     new-instance v0, Ljava/util/ArrayList;
 
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 3439
+    .line 3448
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -864,10 +874,10 @@
 
     check-cast v0, Lkik/android/chat/activity/KActivityLauncher$a;
 
-    .line 3440
+    .line 3449
     if-eqz v0, :cond_0
 
-    .line 3443
+    .line 3452
     if-eqz p0, :cond_0
 
     invoke-static {v0}, Lkik/android/chat/activity/KActivityLauncher$a;->a(Lkik/android/chat/activity/KActivityLauncher$a;)Ljava/lang/String;
@@ -892,13 +902,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 3444
+    .line 3453
     const/4 v0, 0x1
 
     :goto_0
     return v0
 
-    .line 3447
+    .line 3456
     :cond_1
     const/4 v0, 0x0
 
@@ -922,12 +932,12 @@
     .end annotation
 
     .prologue
-    .line 344
+    .line 351
     const/high16 v0, 0x10000000
 
     invoke-virtual {p0, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 345
+    .line 352
     invoke-static {p0, p1}, Lkik/android/chat/activity/KActivityLauncher;->a(Landroid/content/Intent;Landroid/content/Context;)Lcom/kik/events/Promise;
 
     move-result-object v0
@@ -948,7 +958,7 @@
     .end annotation
 
     .prologue
-    .line 176
+    .line 178
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->h:Lcom/kik/events/g;
 
     invoke-virtual {v0}, Lcom/kik/events/g;->a()Lcom/kik/events/c;
@@ -962,13 +972,13 @@
     .locals 1
 
     .prologue
-    .line 204
+    .line 207
     if-nez p0, :cond_0
 
-    .line 205
+    .line 208
     const/4 v0, 0x0
 
-    .line 207
+    .line 210
     :goto_0
     return-object v0
 
@@ -986,7 +996,7 @@
     .locals 1
 
     .prologue
-    .line 220
+    .line 223
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
     return-object v0
@@ -996,13 +1006,13 @@
     .locals 1
 
     .prologue
-    .line 212
+    .line 215
     if-nez p0, :cond_0
 
-    .line 213
+    .line 216
     const/4 v0, 0x0
 
-    .line 215
+    .line 218
     :goto_0
     return-object v0
 
@@ -1020,14 +1030,14 @@
     .locals 2
 
     .prologue
-    .line 229
+    .line 232
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->g:Lcom/kik/events/g;
 
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->f:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 230
+    .line 233
     return-void
 .end method
 
@@ -1044,7 +1054,7 @@
     .end annotation
 
     .prologue
-    .line 389
+    .line 397
     new-instance v0, Ljava/util/ArrayList;
 
     sget-object v1, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
@@ -1058,15 +1068,15 @@
     .locals 2
 
     .prologue
-    .line 406
+    .line 415
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->b:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 407
+    .line 416
     const/4 v0, 0x1
 
-    .line 409
+    .line 418
     :goto_0
     return v0
 
@@ -1122,7 +1132,7 @@
     .locals 4
 
     .prologue
-    .line 180
+    .line 183
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1136,7 +1146,7 @@
     :goto_0
     if-lez v1, :cond_0
 
-    .line 181
+    .line 184
     sget-object v0, Lkik/android/chat/activity/KActivityLauncher;->a:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1145,7 +1155,7 @@
 
     check-cast v0, Lkik/android/chat/activity/KActivityLauncher$a;
 
-    .line 182
+    .line 185
     const-class v2, Lkik/android/chat/activity/ChatActivity;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
@@ -1162,7 +1172,7 @@
 
     if-nez v2, :cond_0
 
-    .line 185
+    .line 188
     sget-object v2, Lkik/android/chat/activity/KActivityLauncher;->h:Lcom/kik/events/g;
 
     invoke-static {v0}, Lkik/android/chat/activity/KActivityLauncher$a;->b(Lkik/android/chat/activity/KActivityLauncher$a;)Ljava/lang/String;
@@ -1171,14 +1181,14 @@
 
     invoke-virtual {v2, v0}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 180
+    .line 183
     add-int/lit8 v0, v1, -0x1
 
     move v1, v0
 
     goto :goto_0
 
-    .line 187
+    .line 190
     :cond_0
     return-void
 .end method

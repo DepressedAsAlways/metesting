@@ -1,165 +1,43 @@
-.class public interface abstract Lkik/android/chat/vm/z;
+.class final synthetic Lkik/android/chat/vm/z;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final a:Lkik/android/chat/vm/t;
+
+
+# direct methods
+.method private constructor <init>(Lkik/android/chat/vm/t;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkik/android/chat/vm/z;->a:Lkik/android/chat/vm/t;
+
+    return-void
+.end method
+
+.method public static a(Lkik/android/chat/vm/t;)Ljava/lang/Runnable;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/z;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/z;-><init>(Lkik/android/chat/vm/t;)V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract a(Lkik/android/chat/vm/aq;Z)Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/android/chat/vm/aq;",
-            "Z)",
-            "Lrx/c",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract a(Lkik/android/chat/vm/l;)Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/android/chat/vm/l;",
-            ")",
-            "Lrx/c",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
-.end method
+    iget-object v0, p0, Lkik/android/chat/vm/z;->a:Lkik/android/chat/vm/t;
 
-.method public abstract a(Lkik/android/chat/vm/r;)Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/android/chat/vm/r;",
-            ")",
-            "Lrx/c",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
-.end method
+    invoke-static {v0}, Lkik/android/chat/vm/t;->a(Lkik/android/chat/vm/t;)V
 
-.method public abstract a(Lkik/android/gallery/vm/o;)Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/android/gallery/vm/o;",
-            ")",
-            "Lrx/c",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract a(Lkik/android/gallery/vm/p;)Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/android/gallery/vm/p;",
-            ")",
-            "Lrx/c",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract a()V
-.end method
-
-.method public abstract a(Ljava/lang/String;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/DialogViewModel;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/ac;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/ad;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/ae;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/af;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/ai;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/ak;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/al;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/f;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/m;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/n;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/s;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/t;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/w;)V
-.end method
-
-.method public abstract b()V
-.end method
-
-.method public abstract c()Lcom/kik/events/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/c",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract d()V
-.end method
-
-.method public abstract e()V
-.end method
-
-.method public abstract f()V
-.end method
-
-.method public abstract g()V
-.end method
-
-.method public abstract h()V
-.end method
-
-.method public abstract i()Lcom/kik/events/Promise;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
+    return-void
 .end method

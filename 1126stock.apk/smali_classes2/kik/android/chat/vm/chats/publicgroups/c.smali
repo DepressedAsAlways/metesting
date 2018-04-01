@@ -3,9 +3,45 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel;
+.implements Lkik/android/chat/vm/br;
 
 
 # virtual methods
-.method public abstract P_()Ljava/lang/String;
+.method public abstract O_()V
+.end method
+
+.method public abstract b()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract d()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract e()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
 .end method

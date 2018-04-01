@@ -31,25 +31,25 @@
     .locals 0
 
     .prologue
-    .line 1276
+    .line 1286
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1277
+    .line 1287
     iput-object p1, p0, Lcom/kik/android/b/g$d;->d:Ljava/lang/String;
 
-    .line 1278
+    .line 1288
     iput-object p2, p0, Lcom/kik/android/b/g$d;->e:Ljava/lang/String;
 
-    .line 1279
+    .line 1289
     iput p4, p0, Lcom/kik/android/b/g$d;->b:I
 
-    .line 1280
+    .line 1290
     iput p3, p0, Lcom/kik/android/b/g$d;->a:I
 
-    .line 1281
+    .line 1291
     iput p5, p0, Lcom/kik/android/b/g$d;->c:I
 
-    .line 1282
+    .line 1292
     return-void
 .end method
 
@@ -57,7 +57,7 @@
     .locals 1
 
     .prologue
-    .line 1267
+    .line 1277
     iget-object v0, p0, Lcom/kik/android/b/g$d;->d:Ljava/lang/String;
 
     return-object v0
@@ -67,7 +67,7 @@
     .locals 1
 
     .prologue
-    .line 1267
+    .line 1277
     iget-object v0, p0, Lcom/kik/android/b/g$d;->e:Ljava/lang/String;
 
     return-object v0
@@ -81,46 +81,46 @@
     .prologue
     const/16 v1, 0x3c
 
-    .line 2301
+    .line 2311
     invoke-static {}, Lkik/android/util/DeviceUtils;->c()I
 
     move-result v0
 
-    .line 2303
+    .line 2313
     sparse-switch v0, :sswitch_data_0
 
     move v0, v1
 
-    .line 1286
+    .line 1296
     :goto_0
     if-ne v0, v1, :cond_0
 
-    .line 1287
+    .line 1297
     iget v0, p0, Lcom/kik/android/b/g$d;->b:I
 
-    .line 1290
+    .line 1300
     :goto_1
     return v0
 
     :sswitch_0
     move v0, v1
 
-    .line 2310
+    .line 2320
     goto :goto_0
 
-    .line 2314
+    .line 2324
     :sswitch_1
     const/16 v0, 0x28
 
     goto :goto_0
 
-    .line 1290
+    .line 1300
     :cond_0
     iget v0, p0, Lcom/kik/android/b/g$d;->a:I
 
     goto :goto_1
 
-    .line 2303
+    .line 2313
     nop
 
     :sswitch_data_0
@@ -137,7 +137,7 @@
     .locals 1
 
     .prologue
-    .line 1296
+    .line 1306
     iget v0, p0, Lcom/kik/android/b/g$d;->c:I
 
     return v0

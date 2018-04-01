@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/fragment/KikGroupMembersListFragment$4;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Landroid/os/Bundle;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 167
+    .line 175
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$4;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,14 +46,14 @@
     .locals 1
 
     .prologue
-    .line 167
+    .line 175
     check-cast p1, Landroid/os/Bundle;
 
-    .line 1171
+    .line 1179
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$4;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;Landroid/os/Bundle;)V
 
-    .line 167
+    .line 175
     return-void
 .end method

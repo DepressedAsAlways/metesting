@@ -3,108 +3,104 @@
 .source "SourceFile"
 
 
-# instance fields
-.field private a:Landroid/content/Context;
-
-.field private b:Landroid/content/pm/PackageManager;
-
-.field private c:Landroid/content/pm/ApplicationInfo;
-
-.field private d:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 3
-
-    .prologue
-    .line 18
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 19
-    iput-object p1, p0, Lcom/instabug/library/util/f;->a:Landroid/content/Context;
-
-    .line 21
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/instabug/library/util/f;->d:Ljava/lang/String;
-
-    .line 22
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/instabug/library/util/f;->b:Landroid/content/pm/PackageManager;
-
-    .line 24
-    :try_start_0
-    iget-object v0, p0, Lcom/instabug/library/util/f;->b:Landroid/content/pm/PackageManager;
-
-    iget-object v1, p0, Lcom/instabug/library/util/f;->d:Ljava/lang/String;
-
-    const/16 v2, 0x80
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/instabug/library/util/f;->c:Landroid/content/pm/ApplicationInfo;
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 28
-    :goto_0
-    return-void
-
-    .line 26
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
-
-    goto :goto_0
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/lang/String;
+.method public static a(Landroid/content/Context;)V
     .locals 2
 
     .prologue
-    .line 32
-    iget-object v0, p0, Lcom/instabug/library/util/f;->c:Landroid/content/pm/ApplicationInfo;
+    .line 18
+    const-string v0, "audio"
 
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/instabug/library/util/f;->b:Landroid/content/pm/PackageManager;
-
-    iget-object v1, p0, Lcom/instabug/library/util/f;->c:Landroid/content/pm/ApplicationInfo;
-
-    invoke-virtual {v0, v1}, Landroid/content/pm/PackageManager;->getApplicationLabel(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    :goto_0
-    check-cast v0, Ljava/lang/String;
+    check-cast v0, Landroid/media/AudioManager;
 
-    return-object v0
+    .line 19
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setMode(I)V
+
+    .line 20
+    invoke-virtual {v0}, Landroid/media/AudioManager;->isMicrophoneMute()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 21
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setMicrophoneMute(Z)V
+
+    .line 23
+    :cond_0
+    return-void
+.end method
+
+.method public static a()Z
+    .locals 2
+
+    .prologue
+    .line 41
+    invoke-static {}, Lcom/instabug/library/tracking/InstabugInternalTrackingDelegate;->getInstance()Lcom/instabug/library/tracking/InstabugInternalTrackingDelegate;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/tracking/InstabugInternalTrackingDelegate;->getCurrentActivity()Landroid/app/Activity;
+
+    move-result-object v0
+
+    const-string v1, "android.permission.RECORD_AUDIO"
+
+    invoke-static {v0, v1}, Landroid/support/v4/content/ContextCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v0
+
+    .line 44
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
 
     :cond_0
-    const-string v0, "(unknown)"
+    const/4 v0, 0x0
 
     goto :goto_0
 .end method
 
-.method public final b()I
-    .locals 1
+.method public static b(Landroid/content/Context;)V
+    .locals 3
 
     .prologue
-    .line 36
-    iget-object v0, p0, Lcom/instabug/library/util/f;->c:Landroid/content/pm/ApplicationInfo;
+    const/4 v2, 0x0
 
-    iget v0, v0, Landroid/content/pm/ApplicationInfo;->icon:I
+    .line 26
+    const-string v0, "audio"
 
-    return v0
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/media/AudioManager;
+
+    .line 27
+    invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setMode(I)V
+
+    .line 28
+    invoke-virtual {v0}, Landroid/media/AudioManager;->isMicrophoneMute()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 29
+    invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setMicrophoneMute(Z)V
+
+    .line 31
+    :cond_0
+    return-void
 .end method

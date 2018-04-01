@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/view/ai$a;
+.implements Lkik/android/chat/view/aj$a;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 241
+    .line 153
     iput-object p1, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$2;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +40,12 @@
     .locals 1
 
     .prologue
-    .line 259
+    .line 171
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$2;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-virtual {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->a()Z
 
-    .line 260
+    .line 172
     return-void
 .end method
 
@@ -53,7 +53,7 @@
     .locals 0
 
     .prologue
-    .line 254
+    .line 166
     return-void
 .end method
 
@@ -61,15 +61,15 @@
     .locals 1
 
     .prologue
-    .line 245
+    .line 157
     if-eqz p1, :cond_0
 
-    .line 246
+    .line 158
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$2;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-virtual {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->c()V
 
-    .line 248
+    .line 160
     :cond_0
     return-void
 .end method
@@ -78,7 +78,7 @@
     .locals 2
 
     .prologue
-    .line 267
+    .line 179
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$2;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->c(Lkik/android/chat/view/AnimatingSearchBarLayout;)Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -91,6 +91,6 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->post(Ljava/lang/Runnable;)Z
 
-    .line 273
+    .line 185
     return-void
 .end method

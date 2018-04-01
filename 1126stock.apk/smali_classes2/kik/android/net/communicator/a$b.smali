@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 305
+    .line 325
     iput-object p1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +40,13 @@
     .locals 0
 
     .prologue
-    .line 305
+    .line 325
     invoke-direct {p0, p1}, Lkik/android/net/communicator/a$b;-><init>(Lkik/android/net/communicator/a;)V
 
     return-void
 .end method
 
-.method private a(Z)Lkik/android/net/communicator/c;
+.method private a(Z)Lkik/android/net/communicator/f;
     .locals 14
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -61,15 +61,15 @@
     .end annotation
 
     .prologue
-    .line 311
+    .line 331
     invoke-static {}, Lcom/kik/sdkutils/d;->a()J
 
     move-result-wide v12
 
-    .line 313
+    .line 333
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Lkik/core/net/e;
+    invoke-static {v0}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Lkik/core/net/e;
 
     move-result-object v0
 
@@ -77,19 +77,19 @@
 
     move-result-object v0
 
-    .line 314
+    .line 334
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v1}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Z
+    invoke-static {v1}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;)Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
-    .line 316
+    .line 336
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Lkik/core/net/e;
+    invoke-static {v0}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Lkik/core/net/e;
 
     move-result-object v0
 
@@ -99,11 +99,11 @@
 
     move-object v1, v0
 
-    .line 319
+    .line 339
     :goto_0
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Lkik/core/net/e;
+    invoke-static {v0}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Lkik/core/net/e;
 
     move-result-object v0
 
@@ -111,13 +111,13 @@
 
     move-result v2
 
-    .line 326
+    .line 346
     if-eqz p1, :cond_0
 
-    .line 327
+    .line 347
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Lkik/core/net/e;
+    invoke-static {v0}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Lkik/core/net/e;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
 
     move-result v0
 
-    .line 328
+    .line 348
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Connect: using failover port ("
@@ -140,11 +140,11 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 336
+    .line 356
     :goto_1
     iget-object v2, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Lkik/core/net/e;
+    invoke-static {v2}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Lkik/core/net/e;
 
     move-result-object v2
 
@@ -152,14 +152,14 @@
 
     move-result-object v9
 
-    .line 339
+    .line 359
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
     iget-object v4, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v4}, Lkik/android/net/communicator/a;->d(Lkik/android/net/communicator/a;)J
+    invoke-static {v4}, Lkik/android/net/communicator/a;->e(Lkik/android/net/communicator/a;)J
 
     move-result-wide v4
 
@@ -169,7 +169,7 @@
 
     iget-object v2, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->e(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    invoke-static {v2}, Lkik/android/net/communicator/a;->f(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -177,13 +177,13 @@
 
     iget-object v2, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->f(Lkik/android/net/communicator/a;)I
+    invoke-static {v2}, Lkik/android/net/communicator/a;->g(Lkik/android/net/communicator/a;)I
 
     move-result v2
 
     if-lez v2, :cond_1
 
-    .line 340
+    .line 360
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Connecting to redirected host "
@@ -192,7 +192,7 @@
 
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v1}, Lkik/android/net/communicator/a;->e(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    invoke-static {v1}, Lkik/android/net/communicator/a;->f(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -208,7 +208,7 @@
 
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v1}, Lkik/android/net/communicator/a;->f(Lkik/android/net/communicator/a;)I
+    invoke-static {v1}, Lkik/android/net/communicator/a;->g(Lkik/android/net/communicator/a;)I
 
     move-result v1
 
@@ -224,47 +224,47 @@
 
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v1}, Lkik/android/net/communicator/a;->g(Lkik/android/net/communicator/a;)Lkik/core/net/security/StreamSecurityType;
+    invoke-static {v1}, Lkik/android/net/communicator/a;->h(Lkik/android/net/communicator/a;)Lkik/core/net/security/StreamSecurityType;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 341
+    .line 361
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->e(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    invoke-static {v0}, Lkik/android/net/communicator/a;->f(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 342
+    .line 362
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->f(Lkik/android/net/communicator/a;)I
+    invoke-static {v0}, Lkik/android/net/communicator/a;->g(Lkik/android/net/communicator/a;)I
 
     move-result v0
 
-    .line 343
+    .line 363
     iget-object v2, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->g(Lkik/android/net/communicator/a;)Lkik/core/net/security/StreamSecurityType;
+    invoke-static {v2}, Lkik/android/net/communicator/a;->h(Lkik/android/net/communicator/a;)Lkik/core/net/security/StreamSecurityType;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 344
+    .line 364
     iget-object v2, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->g(Lkik/android/net/communicator/a;)Lkik/core/net/security/StreamSecurityType;
+    invoke-static {v2}, Lkik/android/net/communicator/a;->h(Lkik/android/net/communicator/a;)Lkik/core/net/security/StreamSecurityType;
 
     move-result-object v9
 
     move v2, v0
 
-    .line 348
+    .line 368
     :goto_2
-    new-instance v0, Lkik/android/net/communicator/c;
+    new-instance v0, Lkik/android/net/communicator/f;
 
     new-instance v3, Lkik/android/net/communicator/a$a;
 
@@ -276,37 +276,37 @@
 
     iget-object v4, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v4}, Lkik/android/net/communicator/a;->h(Lkik/android/net/communicator/a;)Lcom/kik/android/a/a;
+    invoke-static {v4}, Lkik/android/net/communicator/a;->i(Lkik/android/net/communicator/a;)Lcom/kik/android/a/a;
 
     move-result-object v4
 
     iget-object v5, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v5}, Lkik/android/net/communicator/a;->i(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    invoke-static {v5}, Lkik/android/net/communicator/a;->j(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v5
 
     iget-object v6, p0, Lkik/android/net/communicator/a$b;->b:Ljava/lang/String;
 
-    invoke-direct {v0, v3, v4, v5, v6}, Lkik/android/net/communicator/c;-><init>(Lkik/android/net/communicator/b;Lcom/kik/android/a/a;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v3, v4, v5, v6}, Lkik/android/net/communicator/f;-><init>(Lkik/android/net/communicator/e;Lcom/kik/android/a/a;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 351
+    .line 371
     :try_start_0
     iget-object v3, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v3}, Lkik/android/net/communicator/a;->j(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    invoke-static {v3}, Lkik/android/net/communicator/a;->k(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v3
 
     iget-object v4, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v4}, Lkik/android/net/communicator/a;->k(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    invoke-static {v4}, Lkik/android/net/communicator/a;->l(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v4
 
     iget-object v5, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Lkik/core/net/e;
+    invoke-static {v5}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;)Lkik/core/net/e;
 
     move-result-object v5
 
@@ -322,8 +322,8 @@
 
     iget-object v8, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    .line 352
-    invoke-static {v8}, Lkik/android/net/communicator/a;->l(Lkik/android/net/communicator/a;)Ljava/lang/String;
+    .line 372
+    invoke-static {v8}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -335,44 +335,44 @@
 
     add-int/lit8 v10, v10, 0x1
 
-    .line 351
-    invoke-virtual/range {v0 .. v10}, Lkik/android/net/communicator/c;->a(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/net/security/StreamSecurityType;I)V
+    .line 371
+    invoke-virtual/range {v0 .. v10}, Lkik/android/net/communicator/f;->a(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkik/core/net/security/StreamSecurityType;I)V
     :try_end_0
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 359
+    .line 379
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v1}, Lkik/android/net/communicator/a;->n(Lkik/android/net/communicator/a;)Lkik/core/interfaces/z;
+    invoke-static {v1}, Lkik/android/net/communicator/a;->n(Lkik/android/net/communicator/a;)Lkik/core/interfaces/aa;
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lkik/android/net/communicator/c;->b()J
+    invoke-virtual {v0}, Lkik/android/net/communicator/f;->b()J
 
     move-result-wide v2
 
-    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/z;->a(J)V
+    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/aa;->a(J)V
 
-    .line 361
+    .line 381
     invoke-static {}, Lcom/kik/sdkutils/d;->a()J
 
     move-result-wide v2
 
-    .line 363
+    .line 383
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     sub-long/2addr v2, v12
 
     invoke-static {v1, v2, v3}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;J)J
 
-    .line 365
+    .line 385
     return-object v0
 
-    .line 330
+    .line 350
     :cond_0
     iget-object v0, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v0}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;)Lkik/android/config/b;
+    invoke-static {v0}, Lkik/android/net/communicator/a;->d(Lkik/android/net/communicator/a;)Lkik/android/config/b;
 
     move-result-object v0
 
@@ -394,23 +394,23 @@
 
     if-eqz v0, :cond_2
 
-    .line 332
+    .line 352
     const/16 v0, 0x146c
 
     goto/16 :goto_1
 
-    .line 354
+    .line 374
     :catch_0
     move-exception v0
 
-    .line 355
+    .line 375
     iget-object v1, p0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     const-string v2, "auth revoked"
 
     invoke-static {v1, v2}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;Ljava/lang/String;)V
 
-    .line 356
+    .line 376
     throw v0
 
     :cond_1
@@ -435,23 +435,23 @@
     .locals 20
 
     .prologue
-    .line 371
+    .line 391
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->b:Ljava/lang/String;
 
     if-nez v2, :cond_0
 
-    .line 372
+    .line 392
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-static {v2}, Lkik/android/net/communicator/a;->o(Lkik/android/net/communicator/a;)Lkik/core/interfaces/ai;
+    invoke-static {v2}, Lkik/android/net/communicator/a;->o(Lkik/android/net/communicator/a;)Lkik/core/interfaces/ak;
 
     move-result-object v2
 
-    invoke-interface {v2}, Lkik/core/interfaces/ai;->d()Ljava/lang/String;
+    invoke-interface {v2}, Lkik/core/interfaces/ak;->d()Ljava/lang/String;
 
     move-result-object v2
 
@@ -459,7 +459,7 @@
 
     iput-object v2, v0, Lkik/android/net/communicator/a$b;->b:Ljava/lang/String;
 
-    .line 375
+    .line 395
     :cond_0
     new-instance v11, Lcom/kik/android/a/a;
 
@@ -477,14 +477,14 @@
 
     invoke-direct {v11, v2, v3, v4}, Lcom/kik/android/a/a;-><init>(Landroid/content/Context;Ljava/lang/String;B)V
 
-    .line 377
-    invoke-virtual {v11}, Lcom/kik/android/a/a;->f()Lcom/kik/events/p;
+    .line 397
+    invoke-virtual {v11}, Lcom/kik/android/a/a;->f()Lcom/kik/events/o;
 
     move-result-object v2
 
     move-object v3, v2
 
-    .line 379
+    .line 399
     :goto_0
     move-object/from16 v0, p0
 
@@ -496,19 +496,19 @@
 
     if-nez v2, :cond_e
 
-    .line 380
+    .line 400
     const/4 v8, 0x0
 
-    .line 381
+    .line 401
     const/4 v7, 0x0
 
-    .line 383
+    .line 403
     const/4 v6, 0x0
 
-    .line 386
+    .line 406
     const-wide/16 v4, 0x0
 
-    .line 390
+    .line 410
     :try_start_0
     move-object/from16 v0, p0
 
@@ -524,10 +524,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 391
-    invoke-virtual {v3}, Lcom/kik/events/p;->c()V
+    .line 411
+    invoke-virtual {v3}, Lcom/kik/events/o;->c()V
 
-    .line 393
+    .line 413
     :cond_1
     move-object/from16 v0, p0
 
@@ -553,16 +553,16 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_9
     .catchall {:try_start_0 .. :try_end_0} :catchall_b
 
-    .line 396
+    .line 416
     :try_start_1
-    invoke-virtual {v3}, Lcom/kik/events/p;->b()Z
+    invoke-virtual {v3}, Lcom/kik/events/o;->b()Z
 
     move-result v6
 
     if-nez v6, :cond_38
 
-    .line 397
-    invoke-virtual {v11}, Lcom/kik/android/a/a;->f()Lcom/kik/events/p;
+    .line 417
+    invoke-virtual {v11}, Lcom/kik/android/a/a;->f()Lcom/kik/events/o;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_3a
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_1 .. :try_end_1} :catch_35
@@ -576,7 +576,7 @@
 
     move-result-object v9
 
-    .line 401
+    .line 421
     :goto_1
     :try_start_2
     move-object/from16 v0, p0
@@ -585,7 +585,7 @@
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 403
+    .line 423
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -594,10 +594,10 @@
 
     invoke-static {v3, v6}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 404
+    .line 424
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    .line 407
+    .line 427
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -608,7 +608,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v3}, Lkik/android/net/communicator/a$b;->a(Z)Lkik/android/net/communicator/c;
+    invoke-direct {v0, v3}, Lkik/android/net/communicator/a$b;->a(Z)Lkik/android/net/communicator/f;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_3b
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_2 .. :try_end_2} :catch_35
@@ -622,26 +622,26 @@
 
     move-result-object v3
 
-    .line 409
+    .line 429
     :try_start_3
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    invoke-virtual {v3}, Lkik/android/net/communicator/c;->d()Ljava/lang/String;
+    invoke-virtual {v3}, Lkik/android/net/communicator/f;->d()Ljava/lang/String;
 
     move-result-object v8
 
     invoke-static {v6, v8}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 410
+    .line 430
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v6}, Lkik/android/net/communicator/a;->u(Lkik/android/net/communicator/a;)J
 
-    .line 411
+    .line 431
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -650,7 +650,7 @@
 
     invoke-static {v6, v8}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 412
+    .line 432
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -673,7 +673,7 @@
 
     invoke-virtual {v6, v8}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 413
+    .line 433
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_3c
@@ -688,10 +688,10 @@
 
     move-result-wide v6
 
-    .line 414
+    .line 434
     const/4 v8, 0x1
 
-    .line 416
+    .line 436
     :try_start_4
     move-object/from16 v0, p0
 
@@ -699,12 +699,12 @@
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->w(Lkik/android/net/communicator/a;)I
 
-    .line 418
+    .line 438
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v2}, Lkik/core/interfaces/ICommunication$a;->a()V
 
-    .line 420
+    .line 440
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -729,11 +729,11 @@
 
     move-object/from16 v9, v18
 
-    .line 422
+    .line 442
     :goto_2
     if-eqz v9, :cond_37
 
-    .line 424
+    .line 444
     :try_start_5
     move-object/from16 v0, p0
 
@@ -745,10 +745,10 @@
 
     if-nez v4, :cond_2
 
-    .line 425
-    invoke-virtual {v3}, Lcom/kik/events/p;->c()V
+    .line 445
+    invoke-virtual {v3}, Lcom/kik/events/o;->c()V
 
-    .line 427
+    .line 447
     :cond_2
     move-object/from16 v0, p0
 
@@ -758,15 +758,15 @@
 
     move-result v4
 
-    .line 430
-    invoke-virtual {v3}, Lcom/kik/events/p;->b()Z
+    .line 450
+    invoke-virtual {v3}, Lcom/kik/events/o;->b()Z
 
     move-result v5
 
     if-nez v5, :cond_36
 
-    .line 431
-    invoke-virtual {v11}, Lcom/kik/android/a/a;->f()Lcom/kik/events/p;
+    .line 451
+    invoke-virtual {v11}, Lcom/kik/android/a/a;->f()Lcom/kik/events/o;
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3e
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_5 .. :try_end_5} :catch_3
@@ -780,7 +780,7 @@
 
     move-result-object v5
 
-    .line 435
+    .line 455
     :goto_3
     :try_start_6
     move-object/from16 v0, p0
@@ -793,17 +793,17 @@
 
     if-nez v3, :cond_17
 
-    .line 439
+    .line 459
     packed-switch v4, :pswitch_data_0
 
     :cond_3
     :pswitch_0
     move-object v3, v5
 
-    .line 499
+    .line 519
     goto :goto_2
 
-    .line 442
+    .line 462
     :pswitch_1
     move-object/from16 v0, p0
 
@@ -813,7 +813,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lkik/core/net/a/a;->b()Lkik/core/net/outgoing/af;
+    invoke-virtual {v3}, Lkik/core/net/a/a;->b()Lkik/core/net/outgoing/k;
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_6 .. :try_end_6} :catch_3
@@ -829,12 +829,12 @@
 
     if-eqz v4, :cond_3
 
-    .line 1589
+    .line 1609
     const/4 v3, 0x0
 
-    .line 1591
+    .line 1611
     :try_start_7
-    invoke-virtual {v9, v4}, Lkik/android/net/communicator/c;->a(Lkik/core/net/outgoing/af;)V
+    invoke-virtual {v9, v4}, Lkik/android/net/communicator/f;->a(Lkik/core/net/outgoing/k;)V
     :try_end_7
     .catch Lkik/core/net/EncryptionException; {:try_start_7 .. :try_end_7} :catch_0
     .catch Lkik/core/net/StanzaTooLargeException; {:try_start_7 .. :try_end_7} :catch_1
@@ -850,39 +850,39 @@
 
     move v10, v3
 
-    .line 1596
+    .line 1616
     :goto_4
     :try_start_8
-    instance-of v3, v4, Lkik/core/net/outgoing/aa;
+    instance-of v3, v4, Lkik/core/net/outgoing/f;
 
     if-eqz v3, :cond_4
 
-    .line 1597
+    .line 1617
     move-object v0, v4
 
-    check-cast v0, Lkik/core/net/outgoing/aa;
+    check-cast v0, Lkik/core/net/outgoing/f;
 
     move-object v3, v0
 
-    invoke-virtual {v3}, Lkik/core/net/outgoing/aa;->e()Lkik/core/datatypes/Message;
+    invoke-virtual {v3}, Lkik/core/net/outgoing/f;->a()Lkik/core/datatypes/Message;
 
     move-result-object v3
 
-    .line 1598
+    .line 1618
     if-eqz v3, :cond_4
 
-    invoke-static {v3}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/Message;)Z
+    invoke-static {v3}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->shouldNotify(Lkik/core/datatypes/Message;)Z
 
     move-result v3
 
     if-eqz v3, :cond_4
 
-    .line 1599
+    .line 1619
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    iget-object v3, v3, Lkik/android/net/communicator/a;->c:Lcom/kik/android/Mixpanel;
+    iget-object v3, v3, Lkik/android/net/communicator/a;->d:Lcom/kik/android/Mixpanel;
 
     const-string v12, "Message Stanza Sent"
 
@@ -892,7 +892,7 @@
 
     const-string v12, "Is Encryption Failure"
 
-    .line 1600
+    .line 1620
     invoke-virtual {v3, v12, v10}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v3
@@ -901,12 +901,12 @@
 
     const/4 v12, 0x0
 
-    .line 1601
+    .line 1621
     invoke-virtual {v3, v10, v12}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v3
 
-    .line 1602
+    .line 1622
     invoke-virtual {v3}, Lcom/kik/android/Mixpanel$d;->b()V
     :try_end_8
     .catch Lkik/core/net/StanzaTooLargeException; {:try_start_8 .. :try_end_8} :catch_1
@@ -920,7 +920,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_8 .. :try_end_8} :catch_f
     .catchall {:try_start_8 .. :try_end_8} :catchall_10
 
-    .line 455
+    .line 475
     :cond_4
     :goto_5
     :try_start_9
@@ -936,7 +936,7 @@
 
     goto :goto_2
 
-    .line 1594
+    .line 1614
     :catch_0
     move-exception v3
 
@@ -946,23 +946,23 @@
 
     goto :goto_4
 
-    .line 447
+    .line 467
     :catch_1
     move-exception v3
 
-    instance-of v3, v4, Lkik/core/net/outgoing/ae;
+    instance-of v3, v4, Lkik/core/net/outgoing/j;
 
     if-eqz v3, :cond_4
 
-    .line 448
-    check-cast v4, Lkik/core/net/outgoing/ae;
+    .line 468
+    check-cast v4, Lkik/core/net/outgoing/j;
 
-    .line 450
+    .line 470
     const/16 v3, 0x6e
 
-    invoke-virtual {v4, v3}, Lkik/core/net/outgoing/ae;->b(I)V
+    invoke-virtual {v4, v3}, Lkik/core/net/outgoing/j;->setExceptionState(I)V
 
-    .line 451
+    .line 471
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -971,7 +971,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v4}, Lkik/core/net/outgoing/ae;->aT_()Ljava/lang/String;
+    invoke-virtual {v4}, Lkik/core/net/outgoing/j;->getId()Ljava/lang/String;
 
     move-result-object v4
 
@@ -989,7 +989,7 @@
 
     goto :goto_5
 
-    .line 506
+    .line 526
     :catch_2
     move-exception v3
 
@@ -1026,7 +1026,7 @@
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_12
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v8, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1035,29 +1035,29 @@
 
     invoke-static {v8, v9}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v6, :cond_5
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v8, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v8}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v3, :cond_5
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v3}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_5
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1068,7 +1068,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_b
     move-object/from16 v0, p0
 
@@ -1080,7 +1080,7 @@
 
     if-eqz v8, :cond_6
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v8, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1091,20 +1091,20 @@
 
     invoke-virtual {v8}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v8, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v8}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_6
     monitor-exit v3
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_3
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1115,7 +1115,7 @@
 
     if-nez v3, :cond_7
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1126,18 +1126,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_7
     if-eqz v6, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1148,13 +1148,13 @@
 
     invoke-static {v3, v8, v9}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v7, :cond_8
 
-    .line 577
-    invoke-virtual {v7}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v7}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_8
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1166,7 +1166,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1179,10 +1179,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 459
+    .line 479
     :pswitch_2
     :try_start_c
     move-object/from16 v0, p0
@@ -1205,7 +1205,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_c .. :try_end_c} :catch_f
     .catchall {:try_start_c .. :try_end_c} :catchall_10
 
-    .line 460
+    .line 480
     :try_start_d
     move-object/from16 v0, p0
 
@@ -1217,7 +1217,7 @@
 
     if-eqz v3, :cond_9
 
-    .line 461
+    .line 481
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1228,17 +1228,17 @@
 
     invoke-virtual {v3}, Lkik/android/net/communicator/a$c;->a()V
 
-    .line 463
+    .line 483
     :cond_9
     monitor-exit v4
     :try_end_d
     .catchall {:try_start_d .. :try_end_d} :catchall_0
 
-    .line 465
+    .line 485
     :try_start_e
     const-string v3, "<ping/>"
 
-    invoke-virtual {v9, v3}, Lkik/android/net/communicator/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v9, v3}, Lkik/android/net/communicator/f;->a(Ljava/lang/String;)V
     :try_end_e
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_2
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_e .. :try_end_e} :catch_3
@@ -1252,10 +1252,10 @@
 
     move-object v3, v5
 
-    .line 466
+    .line 486
     goto/16 :goto_2
 
-    .line 463
+    .line 483
     :catchall_0
     move-exception v3
 
@@ -1277,7 +1277,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_10 .. :try_end_10} :catch_f
     .catchall {:try_start_10 .. :try_end_10} :catchall_10
 
-    .line 511
+    .line 531
     :catch_3
     move-exception v3
 
@@ -1295,18 +1295,18 @@
 
     invoke-virtual {v3, v4}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 512
+    .line 532
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
-    iget-object v3, v3, Lkik/android/net/communicator/a;->d:Lkik/core/ab;
+    iget-object v3, v3, Lkik/android/net/communicator/a;->e:Lkik/core/ab;
 
-    invoke-interface {v3}, Lkik/core/ab;->h()V
+    invoke-interface {v3}, Lkik/core/ab;->g()V
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_10
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1315,29 +1315,29 @@
 
     invoke-static {v3, v4}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_a
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v2, :cond_a
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v2}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_a
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1348,7 +1348,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_12
     move-object/from16 v0, p0
 
@@ -1360,7 +1360,7 @@
 
     if-eqz v2, :cond_b
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1371,20 +1371,20 @@
 
     invoke-virtual {v2}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v2}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_b
     monitor-exit v3
     :try_end_12
     .catchall {:try_start_12 .. :try_end_12} :catchall_4
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1395,7 +1395,7 @@
 
     if-nez v2, :cond_c
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1406,18 +1406,18 @@
 
     invoke-virtual {v2}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v2}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_c
     if-eqz v8, :cond_e
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1428,13 +1428,13 @@
 
     invoke-static {v2, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_d
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_d
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1446,7 +1446,7 @@
 
     move-result-object v2
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1457,11 +1457,11 @@
 
     invoke-virtual {v3, v2}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 585
+    .line 605
     :cond_e
     return-void
 
-    .line 468
+    .line 488
     :pswitch_3
     :try_start_13
     move-object/from16 v0, p0
@@ -1472,8 +1472,8 @@
 
     invoke-static {v3, v4}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 469
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 489
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
     :try_end_13
     .catch Ljava/io/IOException; {:try_start_13 .. :try_end_13} :catch_2
     .catch Lkik/core/net/AuthorizationFailedException; {:try_start_13 .. :try_end_13} :catch_3
@@ -1485,10 +1485,10 @@
     .catch Ljava/lang/InterruptedException; {:try_start_13 .. :try_end_13} :catch_f
     .catchall {:try_start_13 .. :try_end_13} :catchall_10
 
-    .line 470
+    .line 490
     const/4 v3, 0x0
 
-    .line 471
+    .line 491
     :try_start_14
     move-object/from16 v0, p0
 
@@ -1514,34 +1514,34 @@
 
     move-object v3, v5
 
-    .line 472
+    .line 492
     goto/16 :goto_2
 
-    .line 474
+    .line 494
     :pswitch_4
     :try_start_15
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v12
 
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->e()J
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->e()J
 
     move-result-wide v14
 
     sub-long/2addr v12, v14
 
-    .line 475
+    .line 495
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v14
 
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->f()J
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->f()J
 
     move-result-wide v16
 
     sub-long v14, v14, v16
 
-    .line 476
+    .line 496
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1550,7 +1550,7 @@
 
     move-result-object v3
 
-    .line 478
+    .line 498
     const-wide/16 v16, 0x4e20
 
     cmp-long v4, v12, v16
@@ -1569,7 +1569,7 @@
 
     if-lez v4, :cond_11
 
-    .line 479
+    .line 499
     :cond_f
     if-eqz v3, :cond_10
 
@@ -1583,7 +1583,7 @@
 
     if-eqz v3, :cond_10
 
-    .line 480
+    .line 500
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1592,10 +1592,10 @@
 
     invoke-static {v3, v4}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 481
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 501
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 482
+    .line 502
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1604,7 +1604,7 @@
 
     invoke-static {v3, v4}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;Ljava/lang/String;)V
 
-    .line 483
+    .line 503
     const/4 v9, 0x0
 
     move-object v3, v5
@@ -1614,10 +1614,10 @@
     :cond_10
     move-object v3, v5
 
-    .line 486
+    .line 506
     goto/16 :goto_2
 
-    .line 491
+    .line 511
     :cond_11
     move-object/from16 v0, p0
 
@@ -1639,10 +1639,10 @@
     .catch Ljava/lang/InterruptedException; {:try_start_15 .. :try_end_15} :catch_f
     .catchall {:try_start_15 .. :try_end_15} :catchall_10
 
-    .line 492
+    .line 512
     if-eqz v3, :cond_12
 
-    .line 493
+    .line 513
     :try_start_16
     move-object/from16 v0, p0
 
@@ -1664,7 +1664,7 @@
 
     invoke-virtual {v10, v12, v14, v15}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 
-    .line 495
+    .line 515
     :cond_12
     monitor-exit v4
 
@@ -1692,7 +1692,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_17 .. :try_end_17} :catch_f
     .catchall {:try_start_17 .. :try_end_17} :catchall_10
 
-    .line 550
+    .line 570
     :catch_4
     move-exception v3
 
@@ -1709,29 +1709,29 @@
 
     invoke-static {v4, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_13
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v3, :cond_13
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v3}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_13
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1742,7 +1742,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_18
     move-object/from16 v0, p0
 
@@ -1754,7 +1754,7 @@
 
     if-eqz v4, :cond_14
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1765,20 +1765,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_14
     monitor-exit v3
     :try_end_18
     .catchall {:try_start_18 .. :try_end_18} :catchall_5
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1789,7 +1789,7 @@
 
     if-nez v3, :cond_15
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1800,18 +1800,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_15
     if-eqz v8, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1822,13 +1822,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_16
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_16
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1840,7 +1840,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1853,13 +1853,13 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
     :cond_17
     move-object v2, v5
 
-    .line 550
+    .line 570
     :goto_a
     move-object/from16 v0, p0
 
@@ -1869,10 +1869,10 @@
 
     invoke-static {v3, v4}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 558
+    .line 578
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1883,7 +1883,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_19
     move-object/from16 v0, p0
 
@@ -1895,7 +1895,7 @@
 
     if-eqz v4, :cond_18
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1906,20 +1906,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_18
     monitor-exit v3
     :try_end_19
     .catchall {:try_start_19 .. :try_end_19} :catchall_2
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1930,7 +1930,7 @@
 
     if-nez v3, :cond_19
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1941,14 +1941,14 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 575
+    .line 595
     :cond_19
     move-object/from16 v0, p0
 
@@ -1960,13 +1960,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_1a
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_1a
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1978,7 +1978,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -1991,10 +1991,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 566
+    .line 586
     :catchall_2
     move-exception v2
 
@@ -2005,13 +2005,13 @@
 
     throw v2
 
-    .line 506
+    .line 526
     :cond_1b
     const/4 v8, 0x0
 
     goto/16 :goto_7
 
-    .line 566
+    .line 586
     :catchall_3
     move-exception v2
 
@@ -2042,7 +2042,7 @@
 
     throw v2
 
-    .line 519
+    .line 539
     :catch_5
     move-exception v2
 
@@ -2062,7 +2062,7 @@
 
     move-object/from16 v3, v19
 
-    .line 521
+    .line 541
     :goto_b
     :try_start_1e
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2091,7 +2091,7 @@
 
     invoke-virtual {v5, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 522
+    .line 542
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2102,7 +2102,7 @@
 
     invoke-static {v5, v10}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 523
+    .line 543
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2113,7 +2113,7 @@
 
     invoke-static {v5, v10}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;I)I
 
-    .line 524
+    .line 544
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2134,7 +2134,7 @@
 
     invoke-static {v5, v12, v13}, Lkik/android/net/communicator/a;->b(Lkik/android/net/communicator/a;J)J
 
-    .line 525
+    .line 545
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2147,7 +2147,7 @@
     :try_end_1e
     .catchall {:try_start_1e .. :try_end_1e} :catchall_13
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2156,29 +2156,29 @@
 
     invoke-static {v3, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_1c
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v4, :cond_1c
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_1c
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2189,7 +2189,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_1f
     move-object/from16 v0, p0
 
@@ -2201,7 +2201,7 @@
 
     if-eqz v4, :cond_1d
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2212,20 +2212,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_1d
     monitor-exit v3
     :try_end_1f
     .catchall {:try_start_1f .. :try_end_1f} :catchall_6
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2236,7 +2236,7 @@
 
     if-nez v3, :cond_1e
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2247,18 +2247,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_1e
     if-eqz v8, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2269,13 +2269,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_1f
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_1f
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -2287,7 +2287,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2300,10 +2300,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 566
+    .line 586
     :catchall_6
     move-exception v2
 
@@ -2314,7 +2314,7 @@
 
     throw v2
 
-    .line 527
+    .line 547
     :catch_6
     move-exception v2
 
@@ -2334,7 +2334,7 @@
 
     move-object/from16 v3, v19
 
-    .line 529
+    .line 549
     :goto_c
     :try_start_21
     invoke-virtual {v3}, Lkik/core/net/BackoffRequestedException;->a()I
@@ -2343,12 +2343,12 @@
 
     invoke-interface {v4, v5}, Lkik/core/interfaces/ICommunication$a;->a(I)V
 
-    .line 530
+    .line 550
     invoke-virtual {v3}, Lkik/core/net/BackoffRequestedException;->printStackTrace()V
     :try_end_21
     .catchall {:try_start_21 .. :try_end_21} :catchall_13
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2357,29 +2357,29 @@
 
     invoke-static {v3, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_20
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v4, :cond_20
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_20
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2390,7 +2390,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_22
     move-object/from16 v0, p0
 
@@ -2402,7 +2402,7 @@
 
     if-eqz v4, :cond_21
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2413,20 +2413,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_21
     monitor-exit v3
     :try_end_22
     .catchall {:try_start_22 .. :try_end_22} :catchall_7
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2437,7 +2437,7 @@
 
     if-nez v3, :cond_22
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2448,18 +2448,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_22
     if-eqz v8, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2470,13 +2470,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_23
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_23
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -2488,7 +2488,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2501,10 +2501,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 566
+    .line 586
     :catchall_7
     move-exception v2
 
@@ -2515,7 +2515,7 @@
 
     throw v2
 
-    .line 532
+    .line 552
     :catch_7
     move-exception v2
 
@@ -2535,7 +2535,7 @@
 
     move-object/from16 v3, v19
 
-    .line 534
+    .line 554
     :goto_d
     :try_start_24
     move-object/from16 v0, p0
@@ -2552,12 +2552,12 @@
 
     invoke-virtual {v5, v10}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 537
+    .line 557
     invoke-virtual {v3}, Lkik/core/net/BadVersionException;->printStackTrace()V
     :try_end_24
     .catchall {:try_start_24 .. :try_end_24} :catchall_13
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2566,29 +2566,29 @@
 
     invoke-static {v3, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_24
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v4, :cond_24
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_24
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2599,7 +2599,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_25
     move-object/from16 v0, p0
 
@@ -2611,7 +2611,7 @@
 
     if-eqz v4, :cond_25
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2622,20 +2622,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_25
     monitor-exit v3
     :try_end_25
     .catchall {:try_start_25 .. :try_end_25} :catchall_8
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2646,7 +2646,7 @@
 
     if-nez v3, :cond_26
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2657,18 +2657,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_26
     if-eqz v8, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2679,13 +2679,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_27
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_27
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -2697,7 +2697,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2710,10 +2710,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 566
+    .line 586
     :catchall_8
     move-exception v2
 
@@ -2724,7 +2724,7 @@
 
     throw v2
 
-    .line 542
+    .line 562
     :catch_8
     move-exception v2
 
@@ -2750,7 +2750,7 @@
     :try_end_27
     .catchall {:try_start_27 .. :try_end_27} :catchall_13
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2759,29 +2759,29 @@
 
     invoke-static {v3, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_28
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v4, :cond_28
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_28
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2792,7 +2792,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_28
     move-object/from16 v0, p0
 
@@ -2804,7 +2804,7 @@
 
     if-eqz v4, :cond_29
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2815,20 +2815,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_29
     monitor-exit v3
     :try_end_28
     .catchall {:try_start_28 .. :try_end_28} :catchall_9
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2839,7 +2839,7 @@
 
     if-nez v3, :cond_2a
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2850,18 +2850,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_2a
     if-eqz v8, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2872,13 +2872,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_2b
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_2b
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -2890,7 +2890,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2903,10 +2903,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 566
+    .line 586
     :catchall_9
     move-exception v2
 
@@ -2917,7 +2917,7 @@
 
     throw v2
 
-    .line 547
+    .line 567
     :catch_9
     move-exception v2
 
@@ -2943,7 +2943,7 @@
     :try_end_2a
     .catchall {:try_start_2a .. :try_end_2a} :catchall_13
 
-    .line 550
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2952,29 +2952,29 @@
 
     invoke-static {v3, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_2c
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v4, :cond_2c
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_2c
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -2985,7 +2985,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_2b
     move-object/from16 v0, p0
 
@@ -2997,7 +2997,7 @@
 
     if-eqz v4, :cond_2d
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3008,20 +3008,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_2d
     monitor-exit v3
     :try_end_2b
     .catchall {:try_start_2b .. :try_end_2b} :catchall_a
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3032,7 +3032,7 @@
 
     if-nez v3, :cond_2e
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3043,18 +3043,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_2e
     if-eqz v8, :cond_35
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3065,13 +3065,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_2f
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_2f
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -3083,7 +3083,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3096,10 +3096,10 @@
 
     move-object v3, v2
 
-    .line 581
+    .line 601
     goto/16 :goto_0
 
-    .line 566
+    .line 586
     :catchall_a
     move-exception v2
 
@@ -3110,7 +3110,7 @@
 
     throw v2
 
-    .line 550
+    .line 570
     :catchall_b
     move-exception v2
 
@@ -3133,29 +3133,29 @@
 
     invoke-static {v3, v5}, Lkik/android/net/communicator/a;->a(Lkik/android/net/communicator/a;I)I
 
-    .line 551
+    .line 571
     if-nez v8, :cond_30
 
-    .line 552
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->G(Lkik/android/net/communicator/a;)I
 
-    .line 553
+    .line 573
     if-eqz v4, :cond_30
 
-    .line 554
+    .line 574
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication$a;->b()V
 
-    .line 558
+    .line 578
     :cond_30
     invoke-virtual {v11}, Lcom/kik/android/a/a;->e()V
 
-    .line 561
+    .line 581
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3166,7 +3166,7 @@
 
     monitor-enter v3
 
-    .line 562
+    .line 582
     :try_start_2d
     move-object/from16 v0, p0
 
@@ -3178,7 +3178,7 @@
 
     if-eqz v4, :cond_31
 
-    .line 563
+    .line 583
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3189,20 +3189,20 @@
 
     invoke-virtual {v4}, Lkik/android/net/communicator/a$c;->e()V
 
-    .line 564
+    .line 584
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v4}, Lkik/android/net/communicator/a;->H(Lkik/android/net/communicator/a;)Lkik/android/net/communicator/a$c;
 
-    .line 566
+    .line 586
     :cond_31
     monitor-exit v3
     :try_end_2d
     .catchall {:try_start_2d .. :try_end_2d} :catchall_c
 
-    .line 568
+    .line 588
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3213,7 +3213,7 @@
 
     if-nez v3, :cond_32
 
-    .line 569
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3224,18 +3224,18 @@
 
     invoke-virtual {v3}, Lkik/core/net/a/a;->a()V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
 
     invoke-static {v3}, Lkik/android/net/communicator/a;->s(Lkik/android/net/communicator/a;)V
 
-    .line 573
+    .line 593
     :cond_32
     if-eqz v8, :cond_34
 
-    .line 575
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3246,13 +3246,13 @@
 
     invoke-static {v3, v4, v5}, Lkik/android/net/communicator/a;->c(Lkik/android/net/communicator/a;J)J
 
-    .line 576
+    .line 596
     if-eqz v9, :cond_33
 
-    .line 577
-    invoke-virtual {v9}, Lkik/android/net/communicator/c;->c()V
+    .line 597
+    invoke-virtual {v9}, Lkik/android/net/communicator/f;->c()V
 
-    .line 579
+    .line 599
     :cond_33
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -3264,7 +3264,7 @@
 
     move-result-object v3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lkik/android/net/communicator/a$b;->a:Lkik/android/net/communicator/a;
@@ -3275,11 +3275,11 @@
 
     invoke-virtual {v4, v3}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 581
+    .line 601
     :cond_34
     throw v2
 
-    .line 566
+    .line 586
     :catchall_c
     move-exception v2
 
@@ -3293,10 +3293,10 @@
     :cond_35
     move-object v3, v2
 
-    .line 583
+    .line 603
     goto/16 :goto_0
 
-    .line 550
+    .line 570
     :catchall_d
     move-exception v3
 
@@ -3382,7 +3382,7 @@
 
     goto/16 :goto_10
 
-    .line 547
+    .line 567
     :catch_a
     move-exception v6
 
@@ -3488,7 +3488,7 @@
 
     goto/16 :goto_f
 
-    .line 542
+    .line 562
     :catch_11
     move-exception v6
 
@@ -3594,7 +3594,7 @@
 
     goto/16 :goto_e
 
-    .line 532
+    .line 552
     :catch_18
     move-exception v6
 
@@ -3700,7 +3700,7 @@
 
     goto/16 :goto_d
 
-    .line 527
+    .line 547
     :catch_1f
     move-exception v6
 
@@ -3806,7 +3806,7 @@
 
     goto/16 :goto_c
 
-    .line 519
+    .line 539
     :catch_26
     move-exception v6
 
@@ -3912,7 +3912,7 @@
 
     goto/16 :goto_b
 
-    .line 550
+    .line 570
     :catch_2d
     move-exception v2
 
@@ -4012,7 +4012,7 @@
 
     goto/16 :goto_9
 
-    .line 511
+    .line 531
     :catch_34
     move-exception v2
 
@@ -4062,7 +4062,7 @@
 
     goto/16 :goto_8
 
-    .line 506
+    .line 526
     :catch_39
     move-exception v2
 
@@ -4181,7 +4181,7 @@
 
     goto/16 :goto_1
 
-    .line 439
+    .line 459
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_2

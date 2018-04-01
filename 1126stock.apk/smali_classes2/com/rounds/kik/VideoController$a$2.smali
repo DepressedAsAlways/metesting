@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1364
+    .line 1401
     iput-object p1, p0, Lcom/rounds/kik/VideoController$a$2;->a:Lcom/rounds/kik/VideoController$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +40,13 @@
     .locals 2
 
     .prologue
-    .line 1368
+    .line 1405
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a$2;->a:Lcom/rounds/kik/VideoController$a;
 
     iget-object v0, v0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mVideoView:Lcom/rounds/kik/view/VideoView;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1700(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
 
     move-result-object v0
 
@@ -56,13 +56,29 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoView;->setModeChangeListener(Lcom/rounds/kik/view/VideoView$IOnVideoModeChangeListener;)V
 
-    .line 1382
+    .line 1419
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a$2;->a:Lcom/rounds/kik/VideoController$a;
 
     iget-object v0, v0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mVideoView:Lcom/rounds/kik/view/VideoView;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1700(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->isInFullVideoMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1420
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a$2;->a:Lcom/rounds/kik/VideoController$a;
+
+    iget-object v0, v0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->mVideoView:Lcom/rounds/kik/view/VideoView;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
 
     move-result-object v0
 
@@ -70,6 +86,7 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoView;->animateToBubbleVideoMode(Z)V
 
-    .line 1383
+    .line 1422
+    :cond_0
     return-void
 .end method

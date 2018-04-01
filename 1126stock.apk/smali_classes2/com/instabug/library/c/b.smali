@@ -1,258 +1,440 @@
 .class public final Lcom/instabug/library/c/b;
-.super Ljava/lang/Object;
+.super Landroid/app/Dialog;
 .source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/instabug/library/c/b$a;
-    }
-.end annotation
-
-
-# static fields
-.field private static e:Lcom/instabug/library/c/b;
+# interfaces
+.implements Landroid/content/DialogInterface$OnShowListener;
 
 
 # instance fields
-.field private a:Lcom/instabug/library/c/b$a;
+.field private a:Landroid/widget/ImageView;
 
-.field private b:Lcom/instabug/library/model/d;
+.field private b:Landroid/widget/ImageView;
 
-.field private c:Landroid/view/View;
+.field private c:Ljava/lang/String;
 
-.field private d:Z
+.field private d:Ljava/lang/Runnable;
+
+.field private e:Z
+
+.field private f:Landroid/animation/ObjectAnimator;
+
+.field private g:Landroid/animation/ObjectAnimator;
+
+.field private h:Landroid/animation/ObjectAnimator;
 
 
 # direct methods
-.method private constructor <init>(Lcom/instabug/library/c/b$a;)V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 10
 
     .prologue
-    .line 43
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-wide/16 v8, 0x3e8
 
-    .line 27
+    const-wide/16 v6, 0xc8
+
+    const-wide/16 v4, 0x320
+
+    const/4 v3, 0x2
+
+    .line 29
+    sget v0, Lcom/instabug/library/R$style;->InstabugBorderlessDialog:I
+
+    invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
+
+    .line 23
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/instabug/library/c/b;->d:Z
+    iput-boolean v0, p0, Lcom/instabug/library/c/b;->e:Z
 
-    .line 44
-    iput-object p1, p0, Lcom/instabug/library/c/b;->a:Lcom/instabug/library/c/b$a;
+    .line 30
+    iput-object p2, p0, Lcom/instabug/library/c/b;->c:Ljava/lang/String;
 
-    .line 46
-    return-void
-.end method
+    .line 1065
+    const/4 v0, 0x1
 
-.method public static a(Lcom/instabug/library/c/b$a;)Lcom/instabug/library/c/b;
-    .locals 1
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->requestWindowFeature(I)Z
 
-    .prologue
-    .line 37
-    sget-object v0, Lcom/instabug/library/c/b;->e:Lcom/instabug/library/c/b;
+    .line 1066
+    sget v0, Lcom/instabug/library/R$layout;->instabug_lyt_dialog_two_fingers_swipe_animation:I
 
-    if-nez v0, :cond_0
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->setContentView(I)V
 
-    .line 38
-    new-instance v0, Lcom/instabug/library/c/b;
+    .line 1067
+    invoke-virtual {p0, p0}, Lcom/instabug/library/c/b;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
-    invoke-direct {v0, p0}, Lcom/instabug/library/c/b;-><init>(Lcom/instabug/library/c/b$a;)V
+    .line 1069
+    sget v0, Lcom/instabug/library/R$id;->animation_description:I
 
-    sput-object v0, Lcom/instabug/library/c/b;->e:Lcom/instabug/library/c/b;
-
-    .line 40
-    :cond_0
-    sget-object v0, Lcom/instabug/library/c/b;->e:Lcom/instabug/library/c/b;
-
-    return-object v0
-.end method
-
-.method static synthetic a(Lcom/instabug/library/c/b;)Lcom/instabug/library/model/d;
-    .locals 1
-
-    .prologue
-    .line 22
-    iget-object v0, p0, Lcom/instabug/library/c/b;->b:Lcom/instabug/library/model/d;
-
-    return-object v0
-.end method
-
-.method static synthetic b(Lcom/instabug/library/c/b;)Lcom/instabug/library/c/b$a;
-    .locals 1
-
-    .prologue
-    .line 22
-    iget-object v0, p0, Lcom/instabug/library/c/b;->a:Lcom/instabug/library/c/b$a;
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 2
-
-    .prologue
-    .line 77
-    iget-boolean v0, p0, Lcom/instabug/library/c/b;->d:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    check-cast v0, Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
+    .line 1070
+    iget-object v1, p0, Lcom/instabug/library/c/b;->c:Ljava/lang/String;
 
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-static {v1}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 1072
+    sget v0, Lcom/instabug/library/R$id;->fingersImageView:I
+
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    instance-of v0, v0, Landroid/view/ViewGroup;
+    check-cast v0, Landroid/widget/ImageView;
 
-    if-eqz v0, :cond_0
+    iput-object v0, p0, Lcom/instabug/library/c/b;->a:Landroid/widget/ImageView;
 
-    .line 78
-    iget-object v0, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
+    .line 1073
+    iget-object v0, p0, Lcom/instabug/library/c/b;->a:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    sget v1, Lcom/instabug/library/R$drawable;->instabug_img_two_fingers:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    .line 1075
+    sget v0, Lcom/instabug/library/R$id;->touchesImageView:I
+
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Landroid/view/ViewGroup;
+    check-cast v0, Landroid/widget/ImageView;
 
-    .line 79
-    iget-object v1, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
+    iput-object v0, p0, Lcom/instabug/library/c/b;->b:Landroid/widget/ImageView;
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    .line 1076
+    iget-object v0, p0, Lcom/instabug/library/c/b;->b:Landroid/widget/ImageView;
 
-    .line 80
-    const/4 v0, 0x0
+    sget v1, Lcom/instabug/library/R$drawable;->instabug_img_two_fingers_touch:I
 
-    iput-boolean v0, p0, Lcom/instabug/library/c/b;->d:Z
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 82
-    :cond_0
-    return-void
-.end method
+    .line 1078
+    sget v0, Lcom/instabug/library/R$id;->animation_container:I
 
-.method public final a(Landroid/app/Activity;Lcom/instabug/library/model/d;)V
-    .locals 4
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->findViewById(I)Landroid/view/View;
 
-    .prologue
-    .line 85
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    .line 1080
+    const-string v1, "scaleX"
+
+    new-array v2, v3, [F
+
+    fill-array-data v2, :array_0
+
+    .line 1081
+    invoke-static {v0, v1, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/instabug/library/c/b;->g:Landroid/animation/ObjectAnimator;
+
+    .line 1083
+    const-string v1, "scaleY"
+
+    new-array v2, v3, [F
+
+    fill-array-data v2, :array_1
+
+    .line 1084
+    invoke-static {v0, v1, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/instabug/library/c/b;->h:Landroid/animation/ObjectAnimator;
+
+    .line 1086
+    iget-object v1, p0, Lcom/instabug/library/c/b;->g:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v1, v6, v7}, Landroid/animation/ObjectAnimator;->setStartDelay(J)V
+
+    .line 1087
+    iget-object v1, p0, Lcom/instabug/library/c/b;->g:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v1, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+
+    .line 1089
+    iget-object v1, p0, Lcom/instabug/library/c/b;->h:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v1, v6, v7}, Landroid/animation/ObjectAnimator;->setStartDelay(J)V
+
     .line 1090
-    iput-object p2, p0, Lcom/instabug/library/c/b;->b:Lcom/instabug/library/model/d;
+    iget-object v1, p0, Lcom/instabug/library/c/b;->h:Landroid/animation/ObjectAnimator;
 
-    .line 2050
-    iget-boolean v0, p0, Lcom/instabug/library/c/b;->d:Z
+    invoke-virtual {v1, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    if-eqz v0, :cond_0
+    .line 1092
+    const-string v1, "translationX"
 
-    .line 2051
-    invoke-virtual {p0}, Lcom/instabug/library/c/b;->a()V
+    new-array v2, v3, [F
 
-    .line 2053
-    :cond_0
-    const-string v0, "layout_inflater"
+    fill-array-data v2, :array_2
 
-    .line 2054
-    invoke-virtual {p1, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object v0
 
-    check-cast v0, Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
 
-    .line 2055
-    sget v1, Lcom/instabug/library/R$g;->c:I
+    .line 1094
+    iget-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
 
-    const/4 v2, 0x0
+    invoke-virtual {v0, v8, v9}, Landroid/animation/ObjectAnimator;->setStartDelay(J)V
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    .line 1095
+    iget-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
 
-    move-result-object v0
+    invoke-virtual {v0, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    iput-object v0, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
+    .line 1097
+    new-instance v0, Landroid/os/Handler;
 
-    .line 2056
-    iget-object v0, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    sget v1, Lcom/instabug/library/R$f;->c:I
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageButton;
-
-    .line 2057
     new-instance v1, Lcom/instabug/library/c/b$1;
 
     invoke-direct {v1, p0}, Lcom/instabug/library/c/b$1;-><init>(Lcom/instabug/library/c/b;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1, v8, v9}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 2064
-    invoke-static {}, Lcom/instabug/library/Instabug;->getColorTheme()Lcom/instabug/library/IBGColorTheme;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/instabug/library/IBGColorTheme;->IBGColorThemeDark:Lcom/instabug/library/IBGColorTheme;
-
-    invoke-virtual {v1, v2}, Lcom/instabug/library/IBGColorTheme;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 2065
-    sget v1, Lcom/instabug/library/R$e;->d:I
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
-
-    .line 2070
-    :goto_0
-    new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
-
-    const/4 v1, -0x1
-
-    const/4 v2, -0x2
-
-    const/16 v3, 0x50
-
-    invoke-direct {v0, v1, v2, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
-
-    .line 2072
-    invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/instabug/library/c/b;->c:Landroid/view/View;
-
-    invoke-virtual {v1, v2, v0}, Landroid/view/Window;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 2073
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lcom/instabug/library/c/b;->d:Z
-
-    .line 87
+    .line 32
     return-void
 
-    .line 2067
-    :cond_1
-    sget v1, Lcom/instabug/library/R$e;->e:I
+    .line 1080
+    nop
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageResource(I)V
+    :array_0
+    .array-data 4
+        0x3f800000    # 1.0f
+        0x3f4ccccd    # 0.8f
+    .end array-data
+
+    .line 1083
+    :array_1
+    .array-data 4
+        0x3f800000    # 1.0f
+        0x3f4ccccd    # 0.8f
+    .end array-data
+
+    .line 1092
+    :array_2
+    .array-data 4
+        0x0
+        -0x3d100000    # -120.0f
+    .end array-data
+.end method
+
+.method static synthetic a(Lcom/instabug/library/c/b;)Landroid/widget/ImageView;
+    .locals 1
+
+    .prologue
+    .line 16
+    iget-object v0, p0, Lcom/instabug/library/c/b;->b:Landroid/widget/ImageView;
+
+    return-object v0
+.end method
+
+.method static synthetic b(Lcom/instabug/library/c/b;)Z
+    .locals 1
+
+    .prologue
+    .line 16
+    iget-boolean v0, p0, Lcom/instabug/library/c/b;->e:Z
+
+    return v0
+.end method
+
+
+# virtual methods
+.method public final dismiss()V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 35
+    invoke-super {p0}, Landroid/app/Dialog;->dismiss()V
+
+    .line 1126
+    :try_start_0
+    iget-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
+
+    if-eqz v0, :cond_0
+
+    .line 1127
+    iget-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
+
+    .line 1128
+    iget-object v0, p0, Lcom/instabug/library/c/b;->g:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
+
+    .line 1129
+    iget-object v0, p0, Lcom/instabug/library/c/b;->h:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
+
+    .line 38
+    :cond_0
+    iget-object v0, p0, Lcom/instabug/library/c/b;->a:Landroid/widget/ImageView;
+
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
+
+    .line 39
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/instabug/library/c/b;->a:Landroid/widget/ImageView;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 43
+    :goto_0
+    return-void
+
+    .line 41
+    :catch_0
+    move-exception v0
+
+    iput-object v2, p0, Lcom/instabug/library/c/b;->a:Landroid/widget/ImageView;
 
     goto :goto_0
+.end method
+
+.method public final onAttachedToWindow()V
+    .locals 1
+
+    .prologue
+    .line 52
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/instabug/library/c/b;->e:Z
+
+    .line 53
+    invoke-super {p0}, Landroid/app/Dialog;->onAttachedToWindow()V
+
+    .line 54
+    return-void
+.end method
+
+.method public final onDetachedFromWindow()V
+    .locals 2
+
+    .prologue
+    .line 46
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/instabug/library/c/b;->e:Z
+
+    .line 47
+    sget v0, Lcom/instabug/library/R$id;->animation_description:I
+
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/instabug/library/c/b;->d:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    .line 48
+    invoke-super {p0}, Landroid/app/Dialog;->onDetachedFromWindow()V
+
+    .line 49
+    return-void
+.end method
+
+.method public final onShow(Landroid/content/DialogInterface;)V
+    .locals 4
+
+    .prologue
+    .line 105
+    iget-object v0, p0, Lcom/instabug/library/c/b;->a:Landroid/widget/ImageView;
+
+    if-eqz v0, :cond_1
+
+    .line 2118
+    iget-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
+
+    if-eqz v0, :cond_0
+
+    .line 2119
+    iget-object v0, p0, Lcom/instabug/library/c/b;->f:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
+
+    .line 2120
+    iget-object v0, p0, Lcom/instabug/library/c/b;->g:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
+
+    .line 2121
+    iget-object v0, p0, Lcom/instabug/library/c/b;->h:Landroid/animation/ObjectAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
+
+    .line 107
+    :cond_0
+    new-instance v0, Lcom/instabug/library/c/b$2;
+
+    invoke-direct {v0, p0}, Lcom/instabug/library/c/b$2;-><init>(Lcom/instabug/library/c/b;)V
+
+    iput-object v0, p0, Lcom/instabug/library/c/b;->d:Ljava/lang/Runnable;
+
+    .line 112
+    sget v0, Lcom/instabug/library/R$id;->animation_description:I
+
+    invoke-virtual {p0, v0}, Lcom/instabug/library/c/b;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/instabug/library/c/b;->d:Ljava/lang/Runnable;
+
+    const-wide/16 v2, 0x708
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 115
+    :cond_1
+    return-void
+.end method
+
+.method protected final onStop()V
+    .locals 0
+
+    .prologue
+    .line 57
+    invoke-super {p0}, Landroid/app/Dialog;->onStop()V
+
+    .line 58
+    return-void
+.end method
+
+.method public final onWindowFocusChanged(Z)V
+    .locals 0
+
+    .prologue
+    .line 61
+    invoke-super {p0, p1}, Landroid/app/Dialog;->onWindowFocusChanged(Z)V
+
+    .line 62
+    return-void
 .end method

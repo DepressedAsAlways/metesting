@@ -1,66 +1,53 @@
-.class public final Lkik/android/chat/vm/chats/publicgroups/l;
-.super Lkik/android/chat/vm/chats/publicgroups/a;
-.source "SourceFile"
+.class final synthetic Lkik/android/chat/vm/chats/publicgroups/l;
+.super Ljava/lang/Object;
 
 # interfaces
-.implements Lkik/android/chat/vm/chats/publicgroups/c;
+.implements Lrx/functions/j;
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
+.field private final a:Lkik/android/chat/vm/chats/publicgroups/k;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 4
+.method private constructor <init>(Lkik/android/chat/vm/chats/publicgroups/k;)V
+    .locals 0
 
-    .prologue
-    .line 13
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result v0
+    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/l;->a:Lkik/android/chat/vm/chats/publicgroups/k;
 
-    int-to-long v0, v0
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    invoke-direct {p0, v0, v1, v2, v3}, Lkik/android/chat/vm/chats/publicgroups/a;-><init>(JZZ)V
-
-    .line 14
-    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/l;->a:Ljava/lang/String;
-
-    .line 15
     return-void
 .end method
 
-
-# virtual methods
-.method public final M_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+.method public static a(Lkik/android/chat/vm/chats/publicgroups/k;)Lrx/functions/j;
     .locals 1
 
-    .prologue
-    .line 26
-    sget-object v0, Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;->Header:Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+    new-instance v0, Lkik/android/chat/vm/chats/publicgroups/l;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/publicgroups/l;-><init>(Lkik/android/chat/vm/chats/publicgroups/k;)V
 
     return-object v0
 .end method
 
-.method public final N_()V
-    .locals 0
 
-    .prologue
-    .line 33
-    return-void
-.end method
-
-.method public final P_()Ljava/lang/String;
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .prologue
-    .line 20
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/l;->a:Ljava/lang/String;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/l;->a:Lkik/android/chat/vm/chats/publicgroups/k;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    check-cast p2, Lkik/android/chat/vm/chats/publicgroups/h$a;
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    check-cast p4, Ljava/lang/Boolean;
+
+    invoke-static {v0, p1, p2, p3, p4}, Lkik/android/chat/vm/chats/publicgroups/k;->a(Lkik/android/chat/vm/chats/publicgroups/k;Ljava/lang/Boolean;Lkik/android/chat/vm/chats/publicgroups/h$a;Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Object;
+
+    move-result-object v0
 
     return-object v0
 .end method

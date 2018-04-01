@@ -11,7 +11,7 @@
 
 .field private final b:Ljava/lang/String;
 
-.field private final c:Lkik/android/e/j;
+.field private final c:Lkik/android/f/j;
 
 .field private final d:Z
 
@@ -23,20 +23,20 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/e/j;IZZ)V
+.method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
     .locals 1
 
     .prologue
-    .line 31
+    .line 32
     invoke-direct {p0, p1}, Landroid/text/style/ImageSpan;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 32
+    .line 33
     iput-object p3, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
 
-    .line 33
-    iput-object p4, p0, Lcom/kik/android/b/c;->c:Lkik/android/e/j;
-
     .line 34
+    iput-object p4, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+
+    .line 35
     if-nez p6, :cond_0
 
     const/4 v0, 0x1
@@ -44,19 +44,19 @@
     :goto_0
     iput-boolean v0, p0, Lcom/kik/android/b/c;->d:Z
 
-    .line 35
+    .line 36
     iput p5, p0, Lcom/kik/android/b/c;->e:I
 
-    .line 36
+    .line 37
     iput-object p2, p0, Lcom/kik/android/b/c;->f:Ljava/lang/String;
 
-    .line 37
+    .line 38
     iput-boolean p7, p0, Lcom/kik/android/b/c;->a:Z
 
-    .line 38
+    .line 39
     return-void
 
-    .line 34
+    .line 35
     :cond_0
     const/4 v0, 0x0
 
@@ -65,55 +65,89 @@
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
+.method public final a()V
+    .locals 5
 
     .prologue
-    .line 62
+    .line 54
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+
+    if-eqz v0, :cond_0
+
     iget-object v0, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
 
-    return-object v0
+    if-eqz v0, :cond_0
+
+    .line 57
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+
+    iget-object v1, p0, Lcom/kik/android/b/c;->f:Ljava/lang/String;
+
+    iget-object v2, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
+
+    iget-object v3, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
+
+    invoke-static {v3}, Lcom/kik/android/b/f;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    new-instance v4, Landroid/os/Bundle;
+
+    invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
+
+    invoke-interface {v0, v1, v2, v3}, Lkik/android/f/j;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 59
+    :cond_0
+    return-void
 .end method
 
 .method public final a(Z)V
     .locals 0
 
     .prologue
-    .line 89
+    .line 97
     iput-boolean p1, p0, Lcom/kik/android/b/c;->g:Z
 
-    .line 90
+    .line 98
     return-void
 .end method
 
-.method public final b()Ljava/lang/String;
+.method public final b()V
     .locals 1
 
     .prologue
-    .line 68
-    iget-object v0, p0, Lcom/kik/android/b/c;->f:Ljava/lang/String;
+    .line 63
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
 
-    return-object v0
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+
+    instance-of v0, v0, Lkik/android/f/k;
+
+    if-eqz v0, :cond_0
+
+    .line 64
+    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/f/j;
+
+    check-cast v0, Lkik/android/f/k;
+
+    invoke-interface {v0}, Lkik/android/f/k;->a()V
+
+    .line 66
+    :cond_0
+    return-void
 .end method
 
 .method public final b(Z)V
     .locals 3
 
     .prologue
-    .line 102
-    iget-boolean v0, p0, Lcom/kik/android/b/c;->d:Z
-
-    if-nez v0, :cond_0
+    .line 110
+    if-eqz p1, :cond_0
 
     .line 111
-    :goto_0
-    return-void
-
-    .line 105
-    :cond_0
-    if-eqz p1, :cond_1
-
-    .line 106
     invoke-virtual {p0}, Lcom/kik/android/b/c;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -124,10 +158,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/drawable/Drawable;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
 
-    goto :goto_0
+    .line 116
+    :goto_0
+    return-void
 
-    .line 109
-    :cond_1
+    .line 114
+    :cond_0
     invoke-virtual {p0}, Lcom/kik/android/b/c;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -139,31 +175,51 @@
     goto :goto_0
 .end method
 
-.method public final c()I
+.method public final c()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 74
+    .line 70
+    iget-object v0, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 76
+    iget-object v0, p0, Lcom/kik/android/b/c;->f:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final e()I
+    .locals 1
+
+    .prologue
+    .line 82
     iget v0, p0, Lcom/kik/android/b/c;->e:I
 
     return v0
 .end method
 
-.method public final d()Z
+.method public final f()Z
     .locals 1
 
     .prologue
-    .line 80
+    .line 88
     iget-boolean v0, p0, Lcom/kik/android/b/c;->d:Z
 
     return v0
 .end method
 
-.method public final e()Z
+.method public final g()Z
     .locals 2
 
     .prologue
-    .line 97
+    .line 105
     iget-boolean v0, p0, Lcom/kik/android/b/c;->g:Z
 
     if-nez v0, :cond_0
@@ -188,41 +244,4 @@
     const/4 v0, 0x0
 
     goto :goto_0
-.end method
-
-.method public onClick(Landroid/view/View;)V
-    .locals 5
-
-    .prologue
-    .line 53
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/e/j;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
-
-    if-eqz v0, :cond_0
-
-    .line 56
-    iget-object v0, p0, Lcom/kik/android/b/c;->c:Lkik/android/e/j;
-
-    iget-object v1, p0, Lcom/kik/android/b/c;->f:Ljava/lang/String;
-
-    iget-object v2, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
-
-    iget-object v3, p0, Lcom/kik/android/b/c;->b:Ljava/lang/String;
-
-    invoke-static {v3}, Lcom/kik/android/b/f;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    new-instance v4, Landroid/os/Bundle;
-
-    invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
-
-    invoke-interface {v0, v1, v2, v3}, Lkik/android/e/j;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 58
-    :cond_0
-    return-void
 .end method

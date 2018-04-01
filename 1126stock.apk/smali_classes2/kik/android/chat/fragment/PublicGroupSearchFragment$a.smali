@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 209
+    .line 219
     invoke-direct {p0}, Lcom/kik/ui/fragment/FragmentBase$FragmentBundle;-><init>()V
 
     return-void
@@ -29,15 +29,15 @@
     .locals 1
 
     .prologue
-    .line 209
-    .line 1235
+    .line 219
+    .line 1245
     const-string v0, "introSource"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/PublicGroupSearchFragment$a;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/PublicGroupSearchFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 209
+    .line 219
     return-object v0
 .end method
 
@@ -45,15 +45,15 @@
     .locals 1
 
     .prologue
-    .line 209
-    .line 2222
+    .line 219
+    .line 2232
     const-string v0, "hashtagSearch"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/PublicGroupSearchFragment$a;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/PublicGroupSearchFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 209
+    .line 219
     return-object v0
 .end method
 
@@ -63,12 +63,12 @@
     .locals 1
 
     .prologue
-    .line 216
+    .line 226
     const-string v0, "hashtagSearch"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/PublicGroupSearchFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 217
+    .line 227
     return-object p0
 .end method
 
@@ -76,11 +76,11 @@
     .locals 1
 
     .prologue
-    .line 227
+    .line 237
     const-string v0, "introSource"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/PublicGroupSearchFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 228
+    .line 238
     return-object p0
 .end method

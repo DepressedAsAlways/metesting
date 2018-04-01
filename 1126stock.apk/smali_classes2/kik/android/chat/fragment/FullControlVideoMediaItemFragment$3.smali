@@ -87,7 +87,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 106
     new-array v0, v2, [Landroid/view/View;
@@ -98,12 +98,12 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 107
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment$3;->a:Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->O()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->s()V
 
     goto :goto_0
 .end method

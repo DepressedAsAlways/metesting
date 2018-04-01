@@ -15,23 +15,11 @@
 .method public abstract a()V
 .end method
 
-.method public abstract a(I)V
-.end method
-
-.method public abstract a(Ljava/lang/String;)V
-.end method
-
 .method public abstract a(Lkik/android/chat/view/ac$a;)V
 .end method
 
-.method public abstract a(Lkik/android/util/KeyboardManipulator;)V
+.method public abstract b()V
 .end method
 
-.method public abstract b(I)V
-.end method
-
-.method public abstract b(Ljava/lang/String;)V
-.end method
-
-.method public abstract c(Ljava/lang/String;)V
+.method public abstract d()V
 .end method

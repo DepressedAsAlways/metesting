@@ -1,576 +1,160 @@
 .class public final Lrx/internal/util/g;
-.super Ljava/lang/Object;
+.super Lrx/h;
 .source "SourceFile"
 
-# interfaces
-.implements Lrx/j;
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lrx/internal/util/g$c;,
+        Lrx/internal/util/g$b;,
+        Lrx/internal/util/g$a;
+    }
+.end annotation
 
-# static fields
-.field public static final b:I
-
-.field public static final c:Lrx/internal/util/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/internal/util/c",
-            "<",
-            "Ljava/util/Queue",
-            "<",
-            "Ljava/lang/Object;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field public static final d:Lrx/internal/util/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/internal/util/c",
-            "<",
-            "Ljava/util/Queue",
-            "<",
-            "Ljava/lang/Object;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private static final e:Lrx/internal/operators/NotificationLite;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/internal/operators/NotificationLite",
-            "<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lrx/h",
+        "<TT;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public volatile a:Ljava/lang/Object;
-
-.field private f:Ljava/util/Queue;
+.field final b:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Queue",
-            "<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final g:I
-
-.field private final h:Lrx/internal/util/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/internal/util/c",
-            "<",
-            "Ljava/util/Queue",
-            "<",
-            "Ljava/lang/Object;",
-            ">;>;"
+            "TT;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method private constructor <init>(Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 
     .prologue
-    .line 128
-    invoke-static {}, Lrx/internal/operators/NotificationLite;->a()Lrx/internal/operators/NotificationLite;
-
-    move-result-object v0
-
-    sput-object v0, Lrx/internal/util/g;->e:Lrx/internal/operators/NotificationLite;
-
-    .line 245
-    const/16 v0, 0x80
-
-    .line 248
-    invoke-static {}, Lrx/internal/util/f;->a()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 249
-    const/16 v0, 0x10
-
-    .line 253
-    :cond_0
-    const-string v1, "rx.ring-buffer.size"
-
-    invoke-static {v1}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 254
-    if-eqz v1, :cond_1
-
-    .line 256
-    :try_start_0
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v0
-
-    .line 262
-    :cond_1
-    :goto_0
-    sput v0, Lrx/internal/util/g;->b:I
-
-    .line 267
+    .line 32
     new-instance v0, Lrx/internal/util/g$1;
 
-    invoke-direct {v0}, Lrx/internal/util/g$1;-><init>()V
+    invoke-direct {v0, p1}, Lrx/internal/util/g$1;-><init>(Ljava/lang/Object;)V
 
-    sput-object v0, Lrx/internal/util/g;->c:Lrx/internal/util/c;
+    invoke-direct {p0, v0}, Lrx/h;-><init>(Lrx/h$a;)V
 
-    .line 277
-    new-instance v0, Lrx/internal/util/g$2;
+    .line 40
+    iput-object p1, p0, Lrx/internal/util/g;->b:Ljava/lang/Object;
 
-    invoke-direct {v0}, Lrx/internal/util/g$2;-><init>()V
-
-    sput-object v0, Lrx/internal/util/g;->d:Lrx/internal/util/c;
-
-    return-void
-
-    .line 257
-    :catch_0
-    move-exception v2
-
-    .line 258
-    sget-object v3, Ljava/lang/System;->err:Ljava/io/PrintStream;
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    const-string v5, "Failed to set \'rx.buffer.size\' with value "
-
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v4, " => "
-
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v2}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    goto :goto_0
-.end method
-
-.method constructor <init>()V
-    .locals 2
-
-    .prologue
-    .line 330
-    new-instance v0, Lrx/internal/util/i;
-
-    sget v1, Lrx/internal/util/g;->b:I
-
-    invoke-direct {v0, v1}, Lrx/internal/util/i;-><init>(I)V
-
-    sget v1, Lrx/internal/util/g;->b:I
-
-    invoke-direct {p0, v0, v1}, Lrx/internal/util/g;-><init>(Ljava/util/Queue;I)V
-
-    .line 331
+    .line 41
     return-void
 .end method
 
-.method private constructor <init>(Ljava/util/Queue;I)V
+.method public static b(Ljava/lang/Object;)Lrx/internal/util/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/Queue",
-            "<",
+            "<T:",
             "Ljava/lang/Object;",
-            ">;I)V"
+            ">(TT;)",
+            "Lrx/internal/util/g",
+            "<TT;>;"
         }
     .end annotation
 
     .prologue
-    .line 302
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 303
-    iput-object p1, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
-
-    .line 304
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lrx/internal/util/g;->h:Lrx/internal/util/c;
-
-    .line 305
-    iput p2, p0, Lrx/internal/util/g;->g:I
-
-    .line 306
-    return-void
-.end method
-
-.method private constructor <init>(Lrx/internal/util/c;I)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lrx/internal/util/c",
-            "<",
-            "Ljava/util/Queue",
-            "<",
-            "Ljava/lang/Object;",
-            ">;>;I)V"
-        }
-    .end annotation
-
-    .prologue
-    .line 308
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 309
-    iput-object p1, p0, Lrx/internal/util/g;->h:Lrx/internal/util/c;
-
-    .line 310
-    invoke-virtual {p1}, Lrx/internal/util/c;->b()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Queue;
-
-    iput-object v0, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
-
-    .line 311
-    iput p2, p0, Lrx/internal/util/g;->g:I
-
-    .line 312
-    return-void
-.end method
-
-.method public static a()Lrx/internal/util/g;
-    .locals 3
-
-    .prologue
-    .line 287
-    invoke-static {}, Lrx/internal/util/a/ae;->a()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 288
+    .line 28
     new-instance v0, Lrx/internal/util/g;
 
-    sget-object v1, Lrx/internal/util/g;->c:Lrx/internal/util/c;
+    invoke-direct {v0, p0}, Lrx/internal/util/g;-><init>(Ljava/lang/Object;)V
 
-    sget v2, Lrx/internal/util/g;->b:I
-
-    invoke-direct {v0, v1, v2}, Lrx/internal/util/g;-><init>(Lrx/internal/util/c;I)V
-
-    .line 290
-    :goto_0
     return-object v0
-
-    :cond_0
-    new-instance v0, Lrx/internal/util/g;
-
-    invoke-direct {v0}, Lrx/internal/util/g;-><init>()V
-
-    goto :goto_0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
+.method public final c(Lrx/g;)Lrx/h;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Lrx/exceptions/MissingBackpressureException;
+            "(",
+            "Lrx/g;",
+            ")",
+            "Lrx/h",
+            "<TT;>;"
         }
     .end annotation
 
     .prologue
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    .line 340
-    .line 342
-    monitor-enter p0
-
-    .line 343
-    :try_start_0
-    iget-object v2, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
-
-    .line 344
-    if-eqz v2, :cond_1
-
-    .line 345
-    invoke-static {p1}, Lrx/internal/operators/NotificationLite;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-interface {v2, v3}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 349
-    :goto_0
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 351
-    if-eqz v1, :cond_2
-
-    .line 352
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "This instance has been unsubscribed and the queue is no longer usable."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_0
-    move v0, v1
-
-    .line 345
-    goto :goto_0
-
-    :cond_1
-    move v4, v1
-
-    move v1, v0
-
-    move v0, v4
-
-    .line 347
-    goto :goto_0
-
-    .line 349
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-
-    .line 354
-    :cond_2
-    if-eqz v0, :cond_3
-
-    .line 355
-    new-instance v0, Lrx/exceptions/MissingBackpressureException;
-
-    invoke-direct {v0}, Lrx/exceptions/MissingBackpressureException;-><init>()V
-
-    throw v0
-
-    .line 357
-    :cond_3
-    return-void
-.end method
-
-.method public final declared-synchronized b()V
-    .locals 3
-
-    .prologue
-    .line 315
-    monitor-enter p0
-
-    :try_start_0
-    iget-object v0, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
-
-    .line 316
-    iget-object v1, p0, Lrx/internal/util/g;->h:Lrx/internal/util/c;
-
-    .line 317
-    if-eqz v1, :cond_0
+    .line 55
+    instance-of v0, p1, Lrx/internal/schedulers/b;
 
     if-eqz v0, :cond_0
 
-    .line 318
-    invoke-interface {v0}, Ljava/util/Queue;->clear()V
+    .line 56
+    check-cast p1, Lrx/internal/schedulers/b;
 
-    .line 319
-    const/4 v2, 0x0
+    .line 57
+    new-instance v0, Lrx/internal/util/g$a;
 
-    iput-object v2, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
+    iget-object v1, p0, Lrx/internal/util/g;->b:Ljava/lang/Object;
 
-    .line 1085
-    if-eqz v0, :cond_0
+    invoke-direct {v0, p1, v1}, Lrx/internal/util/g$a;-><init>(Lrx/internal/schedulers/b;Ljava/lang/Object;)V
 
-    .line 1089
-    iget-object v1, v1, Lrx/internal/util/c;->a:Ljava/util/Queue;
+    invoke-static {v0}, Lrx/internal/util/g;->a(Lrx/h$a;)Lrx/h;
 
-    invoke-interface {v1, v0}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object v0
 
-    .line 322
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    .line 315
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .prologue
-    .line 390
-    iget-object v0, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
-
-    .line 391
-    if-nez v0, :cond_0
-
-    .line 392
-    const/4 v0, 0x1
-
-    .line 394
-    :goto_0
-    return v0
-
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Queue;->isEmpty()Z
-
-    move-result v0
-
-    goto :goto_0
-.end method
-
-.method public final d()Ljava/lang/Object;
-    .locals 3
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 399
-    monitor-enter p0
-
-    .line 400
-    :try_start_0
-    iget-object v2, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
-
-    .line 401
-    if-nez v2, :cond_0
-
-    .line 403
-    monitor-exit p0
-
-    .line 414
+    .line 59
     :goto_0
     return-object v0
 
-    .line 405
     :cond_0
-    invoke-interface {v2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
+    new-instance v0, Lrx/internal/util/g$b;
 
-    move-result-object v1
+    iget-object v1, p0, Lrx/internal/util/g;->b:Ljava/lang/Object;
 
-    .line 407
-    iget-object v0, p0, Lrx/internal/util/g;->a:Ljava/lang/Object;
+    invoke-direct {v0, p1, v1}, Lrx/internal/util/g$b;-><init>(Lrx/g;Ljava/lang/Object;)V
 
-    .line 408
-    if-nez v1, :cond_1
+    invoke-static {v0}, Lrx/internal/util/g;->a(Lrx/h$a;)Lrx/h;
 
-    if-eqz v0, :cond_1
-
-    invoke-interface {v2}, Ljava/util/Queue;->peek()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-nez v2, :cond_1
-
-    .line 411
-    const/4 v1, 0x0
-
-    iput-object v1, p0, Lrx/internal/util/g;->a:Ljava/lang/Object;
-
-    .line 413
-    :goto_1
-    monitor-exit p0
+    move-result-object v0
 
     goto :goto_0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-
-    :cond_1
-    move-object v0, v1
-
-    goto :goto_1
 .end method
 
-.method public final isUnsubscribed()Z
+.method public final f(Lrx/functions/g;)Lrx/h;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<R:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lrx/functions/g",
+            "<-TT;+",
+            "Lrx/h",
+            "<+TR;>;>;)",
+            "Lrx/h",
+            "<TR;>;"
+        }
+    .end annotation
 
     .prologue
-    .line 457
-    iget-object v0, p0, Lrx/internal/util/g;->f:Ljava/util/Queue;
+    .line 124
+    new-instance v0, Lrx/internal/util/g$2;
 
-    if-nez v0, :cond_0
+    invoke-direct {v0, p0, p1}, Lrx/internal/util/g$2;-><init>(Lrx/internal/util/g;Lrx/functions/g;)V
 
-    const/4 v0, 0x1
+    invoke-static {v0}, Lrx/internal/util/g;->a(Lrx/h$a;)Lrx/h;
 
-    :goto_0
-    return v0
+    move-result-object v0
 
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public final unsubscribe()V
-    .locals 0
-
-    .prologue
-    .line 326
-    invoke-virtual {p0}, Lrx/internal/util/g;->b()V
-
-    .line 327
-    return-void
+    return-object v0
 .end method

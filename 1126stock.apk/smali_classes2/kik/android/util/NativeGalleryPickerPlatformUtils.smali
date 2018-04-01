@@ -18,13 +18,13 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 86
+    .line 90
     :try_start_0
     invoke-virtual {p1, p0}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
     move-result-object v1
 
-    .line 87
+    .line 91
     new-instance v2, Ljava/io/BufferedOutputStream;
 
     new-instance v3, Ljava/io/FileOutputStream;
@@ -33,12 +33,12 @@
 
     invoke-direct {v2, v3}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 88
+    .line 92
     const/16 v3, 0x400
 
     new-array v3, v3, [B
 
-    .line 90
+    .line 94
     :goto_0
     invoke-virtual {v1, v3}, Ljava/io/InputStream;->read([B)I
 
@@ -48,7 +48,7 @@
 
     if-eq v4, v5, :cond_0
 
-    .line 91
+    .line 95
     const/4 v5, 0x0
 
     invoke-virtual {v2, v3, v5, v4}, Ljava/io/BufferedOutputStream;->write([BII)V
@@ -58,17 +58,17 @@
 
     goto :goto_0
 
-    .line 96
+    .line 100
     :catch_0
     move-exception v1
 
     invoke-virtual {p2}, Ljava/io/File;->delete()Z
 
-    .line 104
+    .line 108
     :goto_1
     return v0
 
-    .line 93
+    .line 97
     :cond_0
     :try_start_1
     invoke-virtual {v2}, Ljava/io/BufferedOutputStream;->close()V
@@ -76,12 +76,12 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 104
+    .line 108
     const/4 v0, 0x1
 
     goto :goto_1
 
-    .line 100
+    .line 104
     :catch_1
     move-exception v1
 

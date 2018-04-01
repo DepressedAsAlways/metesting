@@ -62,24 +62,24 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 797
+    .line 776
     invoke-direct {p0}, Lcom/google/gson/o;-><init>()V
 
-    .line 794
+    .line 773
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/gson/internal/bind/i$a;->a:Ljava/util/Map;
 
-    .line 795
+    .line 774
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/gson/internal/bind/i$a;->b:Ljava/util/Map;
 
-    .line 799
+    .line 778
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Class;->getEnumConstants()[Ljava/lang/Object;
 
@@ -96,12 +96,12 @@
 
     aget-object v6, v0, v4
 
-    .line 800
+    .line 779
     invoke-virtual {v6}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 801
+    .line 780
     invoke-virtual {p1, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v1
@@ -114,15 +114,15 @@
 
     check-cast v1, Lcom/google/gson/a/c;
 
-    .line 802
+    .line 781
     if-eqz v1, :cond_0
 
-    .line 803
+    .line 782
     invoke-interface {v1}, Lcom/google/gson/a/c;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 804
+    .line 783
     invoke-interface {v1}, Lcom/google/gson/a/c;->b()[Ljava/lang/String;
 
     move-result-object v7
@@ -136,12 +136,12 @@
 
     aget-object v9, v7, v1
 
-    .line 805
+    .line 784
     iget-object v10, p0, Lcom/google/gson/internal/bind/i$a;->a:Ljava/util/Map;
 
     invoke-interface {v10, v9, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 804
+    .line 783
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
@@ -149,55 +149,37 @@
     :cond_0
     move-object v1, v2
 
-    .line 808
+    .line 787
     iget-object v2, p0, Lcom/google/gson/internal/bind/i$a;->a:Ljava/util/Map;
 
     invoke-interface {v2, v1, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 809
+    .line 788
     iget-object v2, p0, Lcom/google/gson/internal/bind/i$a;->b:Ljava/util/Map;
 
     invoke-interface {v2, v6, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 799
+    .line 778
     add-int/lit8 v1, v4, 0x1
 
     move v4, v1
 
     goto :goto_0
 
-    .line 811
+    .line 790
     :catch_0
     move-exception v0
 
-    .line 812
+    .line 791
     new-instance v1, Ljava/lang/AssertionError;
 
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    const-string v3, "Missing field in "
-
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v1
 
-    .line 813
+    .line 792
     :cond_1
     return-void
 .end method
@@ -213,8 +195,8 @@
     .end annotation
 
     .prologue
-    .line 793
-    .line 1816
+    .line 772
+    .line 1795
     invoke-virtual {p1}, Lcom/google/gson/stream/a;->f()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
@@ -223,16 +205,16 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1817
+    .line 1796
     invoke-virtual {p1}, Lcom/google/gson/stream/a;->j()V
 
-    .line 1818
+    .line 1797
     const/4 v0, 0x0
 
     :goto_0
     return-object v0
 
-    .line 1820
+    .line 1799
     :cond_0
     iget-object v0, p0, Lcom/google/gson/internal/bind/i$a;->a:Ljava/util/Map;
 
@@ -258,10 +240,10 @@
     .end annotation
 
     .prologue
-    .line 793
+    .line 772
     check-cast p2, Ljava/lang/Enum;
 
-    .line 1824
+    .line 1803
     if-nez p2, :cond_0
 
     const/4 v0, 0x0
@@ -269,10 +251,10 @@
     :goto_0
     invoke-virtual {p1, v0}, Lcom/google/gson/stream/b;->b(Ljava/lang/String;)Lcom/google/gson/stream/b;
 
-    .line 793
+    .line 772
     return-void
 
-    .line 1824
+    .line 1803
     :cond_0
     iget-object v0, p0, Lcom/google/gson/internal/bind/i$a;->b:Ljava/util/Map;
 

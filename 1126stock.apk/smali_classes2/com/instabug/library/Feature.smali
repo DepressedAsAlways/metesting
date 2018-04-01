@@ -27,6 +27,8 @@
 
 .field public static final enum CRASH_REPORTING:Lcom/instabug/library/Feature;
 
+.field public static final enum DISCLAIMER:Lcom/instabug/library/Feature;
+
 .field public static final enum INSTABUG:Lcom/instabug/library/Feature;
 
 .field public static final enum INSTABUG_LOGS:Lcom/instabug/library/Feature;
@@ -37,9 +39,15 @@
 
 .field public static final enum PUSH_NOTIFICATION:Lcom/instabug/library/Feature;
 
+.field public static final enum SURVEYS:Lcom/instabug/library/Feature;
+
 .field public static final enum TRACK_USER_STEPS:Lcom/instabug/library/Feature;
 
 .field public static final enum USER_DATA:Lcom/instabug/library/Feature;
+
+.field public static final enum USER_EVENTS:Lcom/instabug/library/Feature;
+
+.field public static final enum VIEW_HIERARCHY:Lcom/instabug/library/Feature;
 
 .field public static final enum WHITE_LABELING:Lcom/instabug/library/Feature;
 
@@ -159,8 +167,52 @@
 
     sput-object v0, Lcom/instabug/library/Feature;->CONSOLE_LOGS:Lcom/instabug/library/Feature;
 
+    .line 108
+    new-instance v0, Lcom/instabug/library/Feature;
+
+    const-string v1, "SURVEYS"
+
+    const/16 v2, 0xa
+
+    invoke-direct {v0, v1, v2}, Lcom/instabug/library/Feature;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/instabug/library/Feature;->SURVEYS:Lcom/instabug/library/Feature;
+
+    .line 118
+    new-instance v0, Lcom/instabug/library/Feature;
+
+    const-string v1, "VIEW_HIERARCHY"
+
+    const/16 v2, 0xb
+
+    invoke-direct {v0, v1, v2}, Lcom/instabug/library/Feature;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/instabug/library/Feature;->VIEW_HIERARCHY:Lcom/instabug/library/Feature;
+
+    .line 127
+    new-instance v0, Lcom/instabug/library/Feature;
+
+    const-string v1, "USER_EVENTS"
+
+    const/16 v2, 0xc
+
+    invoke-direct {v0, v1, v2}, Lcom/instabug/library/Feature;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/instabug/library/Feature;->USER_EVENTS:Lcom/instabug/library/Feature;
+
+    .line 136
+    new-instance v0, Lcom/instabug/library/Feature;
+
+    const-string v1, "DISCLAIMER"
+
+    const/16 v2, 0xd
+
+    invoke-direct {v0, v1, v2}, Lcom/instabug/library/Feature;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/instabug/library/Feature;->DISCLAIMER:Lcom/instabug/library/Feature;
+
     .line 6
-    const/16 v0, 0xa
+    const/16 v0, 0xe
 
     new-array v0, v0, [Lcom/instabug/library/Feature;
 
@@ -214,6 +266,30 @@
 
     aput-object v2, v0, v1
 
+    const/16 v1, 0xa
+
+    sget-object v2, Lcom/instabug/library/Feature;->SURVEYS:Lcom/instabug/library/Feature;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    sget-object v2, Lcom/instabug/library/Feature;->VIEW_HIERARCHY:Lcom/instabug/library/Feature;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
+
+    sget-object v2, Lcom/instabug/library/Feature;->USER_EVENTS:Lcom/instabug/library/Feature;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xd
+
+    sget-object v2, Lcom/instabug/library/Feature;->DISCLAIMER:Lcom/instabug/library/Feature;
+
+    aput-object v2, v0, v1
+
     sput-object v0, Lcom/instabug/library/Feature;->$VALUES:[Lcom/instabug/library/Feature;
 
     return-void
@@ -231,7 +307,6 @@
     .line 6
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 106
     return-void
 .end method
 

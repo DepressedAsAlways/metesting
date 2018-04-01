@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 3342
+    .line 3881
     invoke-direct {p0}, Lcom/google/protobuf/AbstractParser;-><init>()V
 
     return-void
@@ -45,13 +45,13 @@
     .end annotation
 
     .prologue
-    .line 4347
+    .line 4886
     new-instance v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, p2, v1}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;B)V
 
-    .line 3342
+    .line 3881
     return-object v0
 .end method

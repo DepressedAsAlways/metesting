@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 623
+    .line 535
     invoke-static {}, Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;->values()[Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;
 
     move-result-object v0

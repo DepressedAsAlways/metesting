@@ -39,29 +39,29 @@
     .locals 2
 
     .prologue
-    .line 1457
+    .line 1537
     iput-object p1, p0, Lcom/rounds/kik/VideoController$b;->a:Lcom/rounds/kik/VideoController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1447
+    .line 1527
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->b:I
 
-    .line 1448
+    .line 1528
     const/4 v0, 0x6
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->c:I
 
-    .line 1479
+    .line 1559
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->i:I
 
-    .line 1458
+    .line 1538
     # getter for: Lcom/rounds/kik/VideoController;->mActivity:Landroid/app/Activity;
-    invoke-static {p1}, Lcom/rounds/kik/VideoController;->access$4200(Lcom/rounds/kik/VideoController;)Landroid/app/Activity;
+    invoke-static {p1}, Lcom/rounds/kik/VideoController;->access$4500(Lcom/rounds/kik/VideoController;)Landroid/app/Activity;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->e:I
 
-    .line 1459
+    .line 1539
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->context()Landroid/content/Context;
 
     move-result-object v0
@@ -90,7 +90,7 @@
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->d:I
 
-    .line 1460
+    .line 1540
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->context()Landroid/content/Context;
 
     move-result-object v0
@@ -109,7 +109,7 @@
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->f:I
 
-    .line 1461
+    .line 1541
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->context()Landroid/content/Context;
 
     move-result-object v0
@@ -128,7 +128,7 @@
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->g:I
 
-    .line 1462
+    .line 1542
     return-void
 .end method
 
@@ -138,7 +138,7 @@
     .locals 1
 
     .prologue
-    .line 1471
+    .line 1551
     iget v0, p0, Lcom/rounds/kik/VideoController$b;->f:I
 
     return v0
@@ -148,10 +148,10 @@
     .locals 0
 
     .prologue
-    .line 1466
+    .line 1546
     iput-boolean p1, p0, Lcom/rounds/kik/VideoController$b;->h:Z
 
-    .line 1467
+    .line 1547
     return-void
 .end method
 
@@ -159,7 +159,7 @@
     .locals 1
 
     .prologue
-    .line 1476
+    .line 1556
     iget v0, p0, Lcom/rounds/kik/VideoController$b;->g:I
 
     return v0
@@ -171,7 +171,7 @@
     .prologue
     const/4 v0, 0x6
 
-    .line 1483
+    .line 1563
     iget-object v1, p0, Lcom/rounds/kik/VideoController$b;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -192,34 +192,34 @@
     :goto_0
     add-int/2addr v1, v2
 
-    .line 1484
+    .line 1564
     if-le v1, v0, :cond_3
 
-    .line 1487
+    .line 1567
     :goto_1
     const/4 v1, 0x2
 
     if-gt v0, v1, :cond_2
 
-    .line 1488
+    .line 1568
     iget v0, p0, Lcom/rounds/kik/VideoController$b;->d:I
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->i:I
 
-    .line 1496
+    .line 1576
     :cond_0
     :goto_2
     iget v0, p0, Lcom/rounds/kik/VideoController$b;->i:I
 
     return v0
 
-    .line 1483
+    .line 1563
     :cond_1
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1491
+    .line 1571
     :cond_2
     iget v1, p0, Lcom/rounds/kik/VideoController$b;->e:I
 
@@ -233,14 +233,14 @@
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->i:I
 
-    .line 1492
+    .line 1572
     iget v0, p0, Lcom/rounds/kik/VideoController$b;->i:I
 
     iget v1, p0, Lcom/rounds/kik/VideoController$b;->d:I
 
     if-le v0, v1, :cond_0
 
-    .line 1493
+    .line 1573
     iget v0, p0, Lcom/rounds/kik/VideoController$b;->d:I
 
     iput v0, p0, Lcom/rounds/kik/VideoController$b;->i:I

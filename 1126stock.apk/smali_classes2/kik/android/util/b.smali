@@ -132,14 +132,16 @@
     .end packed-switch
 .end method
 
-.method public static a(Lkik/core/interfaces/ac;)I
+.method public static a(Lkik/core/interfaces/ad;)I
     .locals 4
 
     .prologue
     .line 40
-    const-string v0, "kik.registrationtime"
+    invoke-interface {p0}, Lkik/core/interfaces/ad;->n()J
 
-    invoke-static {p0, v0}, Lkik/android/util/b;->a(Lkik/core/interfaces/ac;Ljava/lang/String;)J
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lkik/android/util/b;->a(J)J
 
     move-result-wide v0
 
@@ -159,7 +161,7 @@
 
     .line 45
     :cond_0
-    invoke-static {p0}, Lkik/android/util/b;->b(Lkik/core/interfaces/ac;)J
+    invoke-static {p0}, Lkik/android/util/b;->b(Lkik/core/interfaces/ad;)J
 
     move-result-wide v2
 
@@ -173,61 +175,52 @@
     goto :goto_0
 .end method
 
-.method public static a(Lkik/core/interfaces/ac;Ljava/lang/String;)J
+.method public static a(J)J
     .locals 6
 
     .prologue
     const-wide/16 v0, 0x0
 
     .line 55
-    invoke-interface {p0, p1}, Lkik/core/interfaces/ac;->u(Ljava/lang/String;)Ljava/lang/Long;
+    cmp-long v2, p0, v0
 
-    move-result-object v2
+    if-nez v2, :cond_1
 
-    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v2
-
-    .line 56
-    cmp-long v4, v2, v0
-
-    if-nez v4, :cond_1
-
-    .line 58
+    .line 57
     const-wide/16 v0, -0x1
 
-    .line 66
+    .line 65
     :cond_0
     :goto_0
     return-wide v0
 
-    .line 60
+    .line 59
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v4
+    move-result-wide v2
+
+    .line 61
+    sub-long/2addr v2, p0
 
     .line 62
-    sub-long v2, v4, v2
-
-    .line 63
     cmp-long v4, v2, v0
 
     if-ltz v4, :cond_0
 
     move-wide v0, v2
 
-    .line 66
+    .line 65
     goto :goto_0
 .end method
 
-.method public static b(Lkik/core/interfaces/ac;)J
+.method public static b(Lkik/core/interfaces/ad;)J
     .locals 4
 
     .prologue
     const-wide/32 v0, 0x5265c00
 
-    .line 71
+    .line 70
     const-string v2, "kik.abm_reminder_time_unit"
 
     sget-object v3, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
@@ -236,11 +229,11 @@
 
     move-result-object v3
 
-    invoke-interface {p0, v2, v3}, Lkik/core/interfaces/ac;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p0, v2, v3}, Lkik/core/interfaces/ad;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 72
+    .line 71
     sget-object v3, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v3}, Ljava/util/concurrent/TimeUnit;->toString()Ljava/lang/String;
@@ -253,12 +246,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 82
+    .line 81
     :cond_0
     :goto_0
     return-wide v0
 
-    .line 75
+    .line 74
     :cond_1
     sget-object v3, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
@@ -272,12 +265,12 @@
 
     if-eqz v3, :cond_2
 
-    .line 76
+    .line 75
     const-wide/32 v0, 0xea60
 
     goto :goto_0
 
-    .line 78
+    .line 77
     :cond_2
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -291,7 +284,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 79
+    .line 78
     const-wide/16 v0, 0x3e8
 
     goto :goto_0

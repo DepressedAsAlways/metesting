@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 118
+    .line 120
     iput-object p1, p0, Lkik/android/util/SponsoredUsersManager$1;->a:Lkik/android/util/SponsoredUsersManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 5
 
     .prologue
-    .line 118
+    .line 120
     check-cast p2, Ljava/lang/String;
 
-    .line 1122
+    .line 1124
     invoke-static {}, Lkik/android/util/SponsoredUsersManager$PromotionType;->values()[Lkik/android/util/SponsoredUsersManager$PromotionType;
 
     move-result-object v2
@@ -69,7 +69,7 @@
 
     aget-object v0, v2, v1
 
-    .line 1123
+    .line 1125
     iget-object v4, p0, Lkik/android/util/SponsoredUsersManager$1;->a:Lkik/android/util/SponsoredUsersManager;
 
     invoke-static {v4}, Lkik/android/util/SponsoredUsersManager;->a(Lkik/android/util/SponsoredUsersManager;)Ljava/util/EnumMap;
@@ -82,14 +82,14 @@
 
     check-cast v0, Lkik/android/util/SponsoredUsersManager$PromotionData;
 
-    .line 1125
+    .line 1127
     new-instance v4, Ljava/util/ArrayList;
 
     iget-object v0, v0, Lkik/android/util/SponsoredUsersManager$PromotionData;->a:Ljava/util/ArrayList;
 
     invoke-direct {v4, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 1126
+    .line 1128
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -105,10 +105,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/m;
+    check-cast v0, Lkik/core/datatypes/l;
 
-    .line 1127
-    invoke-virtual {v0}, Lkik/core/datatypes/m;->b()Ljava/lang/String;
+    .line 1129
+    invoke-virtual {v0}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
 
     move-result-object v0
 
@@ -118,7 +118,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1128
+    .line 1130
     iget-object v0, p0, Lkik/android/util/SponsoredUsersManager$1;->a:Lkik/android/util/SponsoredUsersManager;
 
     invoke-static {v0}, Lkik/android/util/SponsoredUsersManager;->b(Lkik/android/util/SponsoredUsersManager;)Lcom/kik/events/g;
@@ -129,11 +129,11 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
 
-    .line 1129
+    .line 1131
     :cond_1
     return-void
 
-    .line 1122
+    .line 1124
     :cond_2
     add-int/lit8 v0, v1, 0x1
 

@@ -15,6 +15,9 @@
     name = "AttestationResult"
 .end annotation
 
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
 
 # virtual methods
 .method public abstract getJwsResult()Ljava/lang/String;

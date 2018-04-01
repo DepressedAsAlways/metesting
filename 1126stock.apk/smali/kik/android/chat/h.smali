@@ -38,12 +38,10 @@
 # virtual methods
 .method public final run()V
     .locals 1
-    .annotation runtime Ljava/lang/invoke/LambdaForm$Hidden;
-    .end annotation
 
     iget-object v0, p0, Lkik/android/chat/h;->a:Lkik/android/chat/KikApplication;
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->N(Lkik/android/chat/KikApplication;)V
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(Lkik/android/chat/KikApplication;)V
 
     return-void
 .end method

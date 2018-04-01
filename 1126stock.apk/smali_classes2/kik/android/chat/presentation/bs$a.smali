@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field private final a:Lkik/android/chat/view/ac;
+.field private final a:Lkik/android/chat/view/ad;
 
 .field private b:I
 
@@ -43,7 +43,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/android/chat/view/ac;)V
+.method public constructor <init>(Lkik/android/chat/view/ad;)V
     .locals 1
 
     .prologue
@@ -51,10 +51,10 @@
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
     .line 91
-    iput-object p1, p0, Lkik/android/chat/presentation/bs$a;->a:Lkik/android/chat/view/ac;
+    iput-object p1, p0, Lkik/android/chat/presentation/bs$a;->a:Lkik/android/chat/view/ad;
 
     .line 92
-    const v0, 0x7f090115
+    const v0, 0x7f090116
 
     iput v0, p0, Lkik/android/chat/presentation/bs$a;->b:I
 
@@ -72,12 +72,12 @@
     return v0
 .end method
 
-.method static synthetic b(Lkik/android/chat/presentation/bs$a;)Lkik/android/chat/view/ac;
+.method static synthetic b(Lkik/android/chat/presentation/bs$a;)Lkik/android/chat/view/ad;
     .locals 1
 
     .prologue
     .line 83
-    iget-object v0, p0, Lkik/android/chat/presentation/bs$a;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs$a;->a:Lkik/android/chat/view/ad;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lkik/android/chat/presentation/bs$a;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs$a;->a:Lkik/android/chat/view/ad;
 
     if-nez v0, :cond_0
 

@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 3907
+    .line 4021
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,11 +34,11 @@
     .locals 1
 
     .prologue
-    .line 3910
+    .line 4024
     # setter for: Lcom/kik/groups/GroupSearchService;->descriptor:Lcom/google/protobuf/Descriptors$FileDescriptor;
-    invoke-static {p1}, Lcom/kik/groups/GroupSearchService;->access$4502(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
+    invoke-static {p1}, Lcom/kik/groups/GroupSearchService;->access$4602(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 3911
+    .line 4025
     const/4 v0, 0x0
 
     return-object v0

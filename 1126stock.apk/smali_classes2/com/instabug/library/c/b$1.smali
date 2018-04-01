@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 57
+    .line 97
     iput-object p1, p0, Lcom/instabug/library/c/b$1;->a:Lcom/instabug/library/c/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,30 +36,21 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final run()V
     .locals 2
 
     .prologue
-    .line 60
+    .line 99
     iget-object v0, p0, Lcom/instabug/library/c/b$1;->a:Lcom/instabug/library/c/b;
 
-    invoke-virtual {v0}, Lcom/instabug/library/c/b;->a()V
-
-    .line 61
-    iget-object v0, p0, Lcom/instabug/library/c/b$1;->a:Lcom/instabug/library/c/b;
-
-    invoke-static {v0}, Lcom/instabug/library/c/b;->b(Lcom/instabug/library/c/b;)Lcom/instabug/library/c/b$a;
+    invoke-static {v0}, Lcom/instabug/library/c/b;->a(Lcom/instabug/library/c/b;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/instabug/library/c/b$1;->a:Lcom/instabug/library/c/b;
+    const/4 v1, 0x0
 
-    invoke-static {v1}, Lcom/instabug/library/c/b;->a(Lcom/instabug/library/c/b;)Lcom/instabug/library/model/d;
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lcom/instabug/library/c/b$a;->a(Lcom/instabug/library/model/d;)V
-
-    .line 62
+    .line 100
     return-void
 .end method

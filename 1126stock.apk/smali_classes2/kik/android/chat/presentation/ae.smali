@@ -7,29 +7,17 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/chat/presentation/ae$a;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
         "Lkik/android/chat/presentation/bv",
         "<",
-        "Lkik/android/chat/view/ai;",
+        "Lkik/android/chat/view/ab;",
         ">;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract a(Lkik/android/chat/presentation/ae$a;)V
-.end method
-
-.method public abstract d()V
-.end method
-
-.method public abstract e()V
+.method public abstract a()V
 .end method

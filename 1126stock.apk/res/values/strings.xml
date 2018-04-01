@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>
     <string name="abc_action_mode_done">Done</string>
     <string name="abc_activity_chooser_view_see_all">See all</string>
     <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
     <string name="abc_searchview_description_clear">Clear query</string>
     <string name="abc_searchview_description_query">Search query</string>
     <string name="abc_searchview_description_search">Search</string>
@@ -13,37 +18,33 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <string name="common_google_play_services_api_unavailable_text">%1$s requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
-    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
     <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
     <string name="common_google_play_services_enable_title">Enable Google Play services</string>
-    <string name="common_google_play_services_install_button">Get Google Play services</string>
-    <string name="common_google_play_services_install_text_phone">"%1$s won't run without Google Play services, which are missing from your phone."</string>
-    <string name="common_google_play_services_install_text_tablet">"%1$s won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
     <string name="common_google_play_services_install_title">Get Google Play services</string>
-    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
-    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
-    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
-    <string name="common_google_play_services_network_error_title">Network Error</string>
     <string name="common_google_play_services_notification_ticker">Google Play services error</string>
-    <string name="common_google_play_services_resolution_required_text">Please complete action required by %1$s.</string>
-    <string name="common_google_play_services_resolution_required_title">Google Play services requires an action</string>
-    <string name="common_google_play_services_restricted_profile_text">Accessing accounts from a restricted profile is not supported.</string>
-    <string name="common_google_play_services_restricted_profile_title">Restricted Profile</string>
-    <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
-    <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
-    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. If the problem persists, please contact the developer for assistance.</string>
-    <string name="common_google_play_services_unsupported_text">%1$s relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
-    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
     <string name="common_google_play_services_update_button">Update</string>
     <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
     <string name="common_google_play_services_update_title">Update Google Play services</string>
     <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
-    <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="gcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
     <string name="Blue">Blue</string>
     <string name="Gold">Gold</string>
     <string name="Green">Green</string>
@@ -74,8 +75,8 @@
     <string name="abm_options_dialog_hint">People who have your phone or email will be able to find you</string>
     <string name="abm_options_dialog_prompt">Allow friends to find me</string>
     <string name="abm_privacy_options_title">Privacy Options</string>
-    <string name="about_copyright_text">Copyright © 2016 Kik Interactive Inc All rights reserved</string>
-    <string name="about_copyright_text_extended">"Copyright © 2016 Kik Interactive Inc All rights reserved
+    <string name="about_copyright_text">Copyright © 2017 Kik Interactive Inc All rights reserved</string>
+    <string name="about_copyright_text_extended">"Copyright © 2017 Kik Interactive Inc All rights reserved
 
 Kik Interactive Inc
 420 Weber St North
@@ -83,7 +84,7 @@ Suite I
 Waterloo, ON
 Canada
 N2L 4E7"</string>
-    <string name="about_copyright_text_extended_link">"Copyright © 2016 Kik Interactive Inc All rights reserved
+    <string name="about_copyright_text_extended_link">"Copyright © 2017 Kik Interactive Inc All rights reserved
 
 Kik Interactive Inc
 420 Weber St North
@@ -470,31 +471,50 @@ You'll need to log in again to keep using Kik."</string>
     <string name="instabug_audio_recorder_permission_denied">Audio recording permission denied</string>
     <string name="instabug_err_invalid_comment">Please enter a valid comment</string>
     <string name="instabug_err_invalid_email">Please enter a valid email</string>
+    <string name="instabug_err_invalid_extra_field">Missing Data: %1$s is required!</string>
     <string name="instabug_external_storage_permission_denied">Storage permission denied</string>
+    <string name="instabug_str_action_submit">Submit</string>
     <string name="instabug_str_add_photo">Select Image from Gallery</string>
+    <string name="instabug_str_alert_message_max_attachments">Remove an existing attachment to add a new one.</string>
+    <string name="instabug_str_alert_title_max_attachments">Cannot Add Attachment</string>
+    <string name="instabug_str_annotate">Draw on screenshot</string>
+    <string name="instabug_str_audio">Audio</string>
     <string name="instabug_str_bug_comment_hint">What went wrong?</string>
     <string name="instabug_str_bug_header">Report a Problem</string>
     <string name="instabug_str_cancel">Cancel</string>
     <string name="instabug_str_conversations">Conversations</string>
+    <string name="instabug_str_dialog_message_preparing">Preparing…</string>
+    <string name="instabug_str_dismiss">Dismiss</string>
     <string name="instabug_str_email_hint">Enter your Email</string>
-    <string name="instabug_str_empty" />
+    <string name="instabug_str_error_survey_without_answer">Survey cannot be submitted without an answer.</string>
     <string name="instabug_str_feedback_comment_hint">How can we improve?</string>
     <string name="instabug_str_feedback_header">Suggest an Improvement</string>
+    <string name="instabug_str_hint_enter_your_answer">Enter your answer</string>
     <string name="instabug_str_hold_to_record">Press and Hold to Record</string>
-    <string name="instabug_str_invocation_header">Help &amp; Feedback</string>
-    <string name="instabug_str_next">Next</string>
-    <string name="instabug_str_notification_title">" Team"</string>
+    <string name="instabug_str_image">Image</string>
+    <string name="instabug_str_image_loading_error">"Couldn't load image"</string>
+    <string name="instabug_str_invocation_dialog_title">How can we help you?</string>
+    <string name="instabug_str_messages">Messages</string>
+    <string name="instabug_str_notification_title">%1$s Team</string>
     <string name="instabug_str_notifications_body">%1$d new messages from %2$s and others</string>
     <string name="instabug_str_ok">OK</string>
-    <string name="instabug_str_pbi">Powered by Instabug.com</string>
     <string name="instabug_str_please_wait">Please wait a moment</string>
     <string name="instabug_str_record_audio">Record a Voice Note</string>
+    <string name="instabug_str_record_video">Take a screen recording</string>
     <string name="instabug_str_release_stop_record">Release to Attach</string>
+    <string name="instabug_str_sending_message_hint">Type your message</string>
     <string name="instabug_str_shake_hint">We love to hear your feedback&lt;br/>&lt;b>Shake&lt;/b> your device to talk to us.</string>
-    <string name="instabug_str_submit">Send</string>
-    <string name="instabug_str_swipe_hint">We love to hear your feedback&lt;br />&lt;b>Swipe with 2 fingers&lt;/b> to talk to us.</string>
-    <string name="instabug_str_thank_you">"We've received your feedback.
+    <string name="instabug_str_success_note">"We've received your feedback.
 Thank you for helping us make %s better."</string>
+    <string name="instabug_str_swipe_hint">We love to hear your feedback&lt;br />&lt;b>Swipe with 2 fingers&lt;/b> to talk to us.</string>
+    <string name="instabug_str_take_screenshot">Take a Screenshot</string>
+    <string name="instabug_str_talk_to_us">Talk to us</string>
+    <string name="instabug_str_thank_you">Thank You</string>
+    <string name="instabug_str_video">Video</string>
+    <string name="instabug_str_video_encoder_busy">Video Encoder is busy encoding other video</string>
+    <string name="instabug_str_video_encoding_error">"Couldn't encode video due to low memory"</string>
+    <string name="instabug_str_video_player">Video Player</string>
+    <string name="instabug_str_video_recording_hint">Press record when ready</string>
     <string name="invalid_card_num_error">Invalid Card Number</string>
     <string name="invalid_cvv_error">Invalid CVV</string>
     <string name="invalid_expiry_date_error">Invalid Expiry Date</string>
@@ -1288,8 +1308,6 @@ Photo"</string>
     <string name="your_password_has_been_changed">Your Kik password has been changed</string>
     <string name="your_phone_number_is_required_for_matching_but_will_not_be_shared">Your phone number is required for matching but will not be shared</string>
     <string name="your_request_could_not_be_completed_please_try_again">Your request could not be completed. Please try again</string>
-    <string name="instabug_str_capture">Capture</string>
-    <string name="instabug_str_take_screenshot">Take Screenshot</string>
     <string name="attribution_promoted">promoted chats</string>
     <string name="format_share_via_social_networks_url">http://kik.com/u/%1$s/share</string>
     <string name="kik_license_message">"kXML2
@@ -1552,6 +1570,18 @@ FFmpeg
 
  Hugo
  Copyright 2013 Jake Wharton
+ Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+ http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+ android-flowlayout
+ Copyright 2011 Artem Votincev (apmem.org)
+ Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+ http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+ ChipsLayoutManager
+ Copyright 2016 Beloy Oleg, Ukraine.
  Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
  http://www.apache.org/licenses/LICENSE-2.0
  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
@@ -1945,16 +1975,26 @@ FFmpeg
     <string name="regex_username_validation">^[a-zA-Z_0-9\\.]{2,20}$</string>
     <string name="title_tutorial">Drag for More</string>
     <string name="abandon_masterpiece">Abandon Masterpiece</string>
-    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
-    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
-    <string name="abc_search_hint">Search…</string>
-    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
     <string name="abm_find_people_info_view_line1">Invite your friends!</string>
     <string name="abm_find_people_info_view_line2">"We'll let you know when they sign up."</string>
     <string name="abm_find_people_matches_bar_no_new_friends">No new friends found</string>
-    <string name="accept">Accept</string>
     <string name="activity_conversations_block_report_chat">Block and Report</string>
     <string name="activity_conversations_notifications">Notifications</string>
+    <string name="add_a_bot">Add a Bot</string>
+    <string name="add_description">Add a description</string>
+    <string name="add_effect">Add effects!</string>
     <string name="alert_mute_notify_for_new_people">"Are you sure you want to mute notifications for all new chats? You won't be notified when new people message you"</string>
     <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="are_sure_remove_admin">%1$s will not be able to change the group information, remove, ban or unban group members</string>
@@ -1963,12 +2003,16 @@ FFmpeg
     <string name="block_list_empty_state_title">"You haven't blocked anyone yet"</string>
     <string name="blocked_conversation">Blocked</string>
     <string name="body_delete_sticker_pack">You may not be able to install this pack again if it is not currently available in the sticker shop.</string>
+    <string name="bot_will_be_removed_for_new_one">The bot currently in this chat will be removed so you can add a new one</string>
     <string name="botname_bot">%1$s Bot</string>
     <string name="bots">Bots</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
     <string name="cant_create_group_hashtag_body">Set a hashtag for your group. A hashtag lets users search for and join your group</string>
     <string name="cant_create_group_members_body">Please add at least one other group member</string>
     <string name="cant_create_group_title">"Can't Create Group"</string>
     <string name="cant_create_group_too_many_groups_body">"You can't create more than three public groups a day! Please wait a while and try again"</string>
+    <string name="change_group_description">Change Group Description</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
     <string name="chat_bubble_color_army_green">Army Green</string>
     <string name="chat_bubble_color_avocado">Avocado</string>
     <string name="chat_bubble_color_black">Black</string>
@@ -1982,6 +2026,10 @@ FFmpeg
     <string name="chat_bubble_color_pumpkin">Pumpkin</string>
     <string name="chat_bubble_color_rose_pink">Rose Pink</string>
     <string name="chat_bubble_colors_dark">Dark</string>
+    <string name="chat_wallpaper_remove_default">Reset Default Wallpaper</string>
+    <string name="chat_wallpaper_remove_this_chat">Remove Chat Wallpaper</string>
+    <string name="chat_wallpaper_set_default">Set Default Wallpaper</string>
+    <string name="chat_wallpaper_set_this_chat">Set Chat Wallpaper</string>
     <string name="chat_with">Chat with %1$s</string>
     <string name="chatlist_recovery_message">Your chat list was restored but sadly your chat history was cleared</string>
     <string name="chats_search_empty_text">Find chats by searching for people or groups</string>
@@ -1990,22 +2038,23 @@ FFmpeg
     <string name="chats_search_private_group_member_matches_multiple_others">%1$s + %2$d others</string>
     <string name="chats_search_private_group_no_member_matches">%d members</string>
     <string name="chats_search_private_group_no_member_matches_just_you">You are the only member</string>
+    <string name="check_out_my_group_groupname">Check out my group %1$s</string>
+    <string name="check_out_my_public_group_hashtag">Check out my public group %1$s</string>
     <string name="close_kik">Close Kik</string>
-    <string name="com.crashlytics.android.build_id">2bc35cc0-6d35-4c28-b206-6a67adf1dd67</string>
+    <string name="com.crashlytics.android.build_id">b8e0b8fd-a02b-4c65-a99c-776cfd688585</string>
     <string name="contact_list_empty_state_description">"You aren't chatting with anyone"</string>
     <string name="contact_list_empty_state_title">No people yet</string>
-    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
-    <string name="create_calendar_title">Create calendar event</string>
     <string name="create_group_hashtag_available">Available</string>
     <string name="create_group_hashtag_invalid">Invalid</string>
     <string name="create_group_hashtag_placeholder">\#tag</string>
     <string name="create_group_hashtag_unavailable">Unavailable</string>
     <string name="create_group_title_placeholder">Name (eg. Sports)</string>
     <string name="day_abbreviation">d</string>
+    <string name="days_on_kik">Days on Kik</string>
     <string name="debug_app_name">Kik Debug</string>
-    <string name="decline">Decline</string>
     <string name="deep_link_breadcrumb_dialog_text">Please sign up or log in to continue</string>
     <string name="deep_link_breadcrumb_dialog_title">Almost There!</string>
+    <string name="deep_link_emoji_status_description">"Express how you're feeling in the moment with Emoji Status"</string>
     <string name="deep_link_explore">Explore</string>
     <string name="deep_link_public_groups_general">Explore public groups based on your interests</string>
     <string name="deep_link_public_groups_title">Public Groups</string>
@@ -2013,6 +2062,7 @@ FFmpeg
     <string name="deep_link_user_profile_button">"LET'S DO IT"</string>
     <string name="deep_link_user_profile_general">Want to start chatting with %1$s?</string>
     <string name="deep_link_user_profile_title">Welcome to Kik!</string>
+    <string name="desc_microphone_no_access_new_new">To record videos with sound and voice messages, Kik needs microphone access. You can enable access in iOS Privacy Settings.</string>
     <string name="desc_zoom_instruction">Swipe up to zoom</string>
     <string name="description_chat_persist_restored_tooltip">Your chat list is restored when you log in</string>
     <string name="description_clear_chat_history">"Are you sure you want to clear all the messages in your chats? You won't be able to get them back"</string>
@@ -2020,22 +2070,53 @@ FFmpeg
     <string name="description_logged_out">"Your Kik was logged out. You'll need to log in again"</string>
     <string name="description_mute_new_chats_preference">Disable notifications for all new chats</string>
     <string name="discard_image_effects_message">Are you sure you want to discard all edits made to your image?</string>
+    <string name="edit_group_description">Edit</string>
+    <string name="edit_group_description_cancel_are_you_sure">This will discard any changes you have made to your group description</string>
+    <string name="edit_group_description_error_blacklist">Oops, your group description contains restricted words</string>
+    <string name="edit_group_description_error_link">"Oops, group descriptions can't contain links"</string>
+    <string name="edit_group_description_error_network">Oops, check your network and try again</string>
+    <string name="edit_group_description_title">Edit Group Description</string>
+    <string name="emoji_status_back_dialog_description">This will discard the current emoji status you have selected</string>
     <string name="emoji_status_description">Express yourself with Emojis! This is how others will see your profile picture.</string>
     <string name="emoji_status_error_description">Oops, to use Emoji Status you need to set a profile picture.</string>
     <string name="emoji_status_error_title">Profile Picture Required</string>
     <string name="emoji_status_settings_title">"What's my status?"</string>
+    <string name="emoji_status_tooltip_title">Tap to set an Emoji Status</string>
     <string name="end_video_chat_message">Leaving will also end the video chat</string>
     <string name="end_video_chat_prompt">End Video Chat?</string>
+    <string name="failed_to_load_message">Failed to load message, please try again.</string>
     <string name="find_by_username_empty_state">Your username is: %s</string>
     <string name="find_friends_on_kik_camel">Find Friends on Kik</string>
     <string name="find_people_search_lower">"Friend's Kik username"</string>
     <string name="first_class_group_invite_message">%1$s invited you to a group</string>
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
+    <string name="fs_auto_transition_settings">Fullscreen Video Chat</string>
+    <string name="fs_auto_transition_settings_detail">"While video chatting, you'll be automatically switched to fullscreen when 2 or more people are live."</string>
     <string name="gif_camera">Gif Camera</string>
     <string name="gif_search_emojis">Search by emoji</string>
     <string name="group_tag_unavail_title">Hashtag Unavailable</string>
     <string name="hold_to_record">Hold to record</string>
     <string name="hour_abbreviation">h</string>
-    <string name="instabug_str_sending_message_hint">Start talking with us</string>
+    <string name="im_sure">"I'm Sure"</string>
+    <string name="in_app_notifications_settings">In-App Notifications</string>
+    <string name="instabug_str_empty" />
+    <string name="instabug_str_plus">+</string>
+    <string name="instabug_str_powered_by_instabug">Powered by Instabug</string>
+    <string name="interests_are_you_sure_dialog_body">This will discard any interests you have selected from the list.</string>
+    <string name="interests_body">Pick 5 things you like from the list. These will show on your profile.</string>
+    <string name="interests_limit_reached_dialog_body">You can only pick 5 from the list. Tap a selected interest to deselect it.</string>
+    <string name="interests_limit_reached_dialog_title">Too Many Interests</string>
+    <string name="interests_network_error_body">Check your network connection and please try again</string>
+    <string name="interests_settings_title">Share your interests</string>
+    <string name="interests_suggest_cancel_dialog_body">This will discard the interest you entered</string>
+    <string name="interests_suggest_edit_button">Edit</string>
+    <string name="interests_suggest_hint">Something missing?</string>
+    <string name="interests_suggest_link">Suggest an interest to Kik</string>
+    <string name="interests_suggest_placeholder">Type an interest</string>
+    <string name="interests_suggest_title">Suggest an Interest</string>
+    <string name="interests_suggestion_contains_restriced_words">Oops, your suggestion contains restricted words</string>
+    <string name="interests_suggestion_successful_title">Thank You!</string>
+    <string name="interests_title">Interests</string>
     <string name="invalid_hashtag_body">Your hashtag contains restricted terms. Please update the hashtag and try again</string>
     <string name="invalid_hashtag_title">Invalid Hashtag</string>
     <string name="invalid_short_hashtag_body">This group cannot be created because your hashtag must contain at least two characters.</string>
@@ -2047,6 +2128,7 @@ FFmpeg
     <string name="is_typing">is typing</string>
     <string name="join_gif_tray_button_text">Say Hi With A GIF</string>
     <string name="join_gif_tray_emoji_search">👋</string>
+    <string name="join_my_group_chat">Join my group chat!</string>
     <string name="join_public_groups_title">Join Public Group</string>
     <string name="join_video_chat_1_on_1_v1">%s wants to video chat</string>
     <string name="join_video_chat_1_on_1_v2">%s is waiting for you</string>
@@ -2059,14 +2141,18 @@ FFmpeg
     <string name="join_video_chat_title">Join Video Chat</string>
     <string name="just_now">Just now</string>
     <string name="kik_username">Username</string>
+    <string name="kin_verified_bot">Kin verified bot</string>
     <string name="maybe_later">Maybe Later</string>
     <string name="media_blur_action_row">Blur Media</string>
     <string name="media_blur_overlay">Media Blurring is enabled for this group</string>
+    <string name="message_discard_theme_change">This will discard any changes you have made to your background theme</string>
     <string name="minute_abbreviation">m</string>
+    <string name="more">more</string>
     <string name="multiple_new_chats_from">From %s</string>
     <string name="mute_conversation_until_turn_back_on">Until I turn it back on</string>
     <string name="mute_new_chats_you_will_be_notified">You will now be notified for new chats.</string>
     <string name="network_error_message">There was a network error. Try again later</string>
+    <string name="new_chat_reporting_tooltip_text">Tap to report user</string>
     <string name="no_access_to_contacts">No access to contacts</string>
     <string name="no_chats_new_people">You have no chats from new people</string>
     <string name="no_conversations_start_chat">to start a chat</string>
@@ -2076,6 +2162,12 @@ FFmpeg
     <string name="no_public_groups_result">No result for %1$s</string>
     <string name="no_recent_gifs">No recent GIFs yet. Send some to your friends to see them here</string>
     <string name="no_recents">No recent stickers yet</string>
+    <string name="notification_new_card_message">New content from %1$s</string>
+    <string name="notification_new_gif_message">New GIF message!</string>
+    <string name="notification_new_sticker_message">New sticker message!</string>
+    <string name="notification_new_video_message">New video message!</string>
+    <string name="notification_new_voice_message">New voice message!</string>
+    <string name="notification_ticker_unlock_to_read">Unlock Kik to read it</string>
     <string name="notifications_behavior">Behavior</string>
     <string name="notifications_off">Off</string>
     <string name="notifications_off_eight">Off until 8:00am</string>
@@ -2083,15 +2175,23 @@ FFmpeg
     <string name="notifications_on">On</string>
     <string name="off_until_notification_settings">Off until %1$s</string>
     <string name="password_at_least_six">Passwords must be at least six characters long</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="personalize_my_profile">Personalize My Profile</string>
     <string name="pg_helper_find_new_friends">Find new friends in Public Groups</string>
     <string name="pg_helper_meet_new_people">Want to meet new people?</string>
+    <string name="pg_turn_off_dms_hint_title">You can turn off direct messages from public groups in privacy settings.</string>
+    <string name="photos_access_denied_title">"We don't have access to your Photos"</string>
     <string name="picture_suggested_response_error_sending">Error sending picture. Please try again</string>
     <string name="pinch_to_zoom_and_move">Pinch to zoom and move around</string>
     <string name="pinlock_settings_change_pin">Change PIN</string>
     <string name="pinlock_settings_description">Lock Kik with a PIN</string>
     <string name="pinlock_settings_lock_delay_10_min">10 Mins</string>
     <string name="pinlock_settings_lock_delay_1_min">1 Min</string>
+    <string name="pinlock_settings_lock_delay_immediately">Immediately</string>
     <string name="pinlock_settings_off">Off</string>
     <string name="pinlock_settings_on">On</string>
     <string name="pinlock_settings_pane_title">PIN Lock</string>
@@ -2108,6 +2208,8 @@ FFmpeg
     <string name="pinlock_unlock_logout_dialog_title">Too many PIN Attempts</string>
     <string name="pinlock_unlock_prompt">Enter PIN</string>
     <string name="please_set_group_picture">Please set a picture for your group</string>
+    <string name="privacy_settings">privacy settings</string>
+    <string name="profile_background_theme_picker_title">Background Themes</string>
     <string name="profile_bio_edit_bio_title">Edit Bio</string>
     <string name="profile_bio_empty_hint">Describe who you are</string>
     <string name="profile_bio_error_no_links">"Oops, bios can't contain links"</string>
@@ -2116,7 +2218,9 @@ FFmpeg
     <string name="profile_frames_description">Personalize your photo with profile frames! This is how others will see your profile picture.</string>
     <string name="profile_frames_error_description">Oops, to use Profile Frames you need to set a profile picture.</string>
     <string name="profile_frames_error_title">Profile Picture Required</string>
+    <string name="profile_frames_tooltip_title">Add a photo frame</string>
     <string name="profile_new_to_kik_title">New to Kik</string>
+    <string name="profile_set_background_theme">Set Background Theme</string>
     <string name="public_group_call_to_action_cell_description">Make friends with similar interests</string>
     <string name="public_group_call_to_action_cell_title">Explore Public Groups</string>
     <string name="public_group_call_to_action_find_a_group">Find a Group</string>
@@ -2135,6 +2239,13 @@ FFmpeg
     <string name="public_groups_welcome_message_guidelines_link_text">kik.com/standards</string>
     <string name="public_groups_welcome_message_say_hi">Be friendly and remember to say hello</string>
     <string name="pull_to_search">Pull to search</string>
+    <string name="rate_chat">Rate chat</string>
+    <string name="rating_chats_dialog_description">"To report and stop receiving messages from %1$s, tap Report and Block. We won't tell %1$s that you've reported them."</string>
+    <string name="rating_chats_dialog_group_description">Thanks for making Kik better. To report and stop receiving messages from this group, tap Report and Leave</string>
+    <string name="rating_chats_dialog_title">Rating Submitted</string>
+    <string name="rating_chats_thank_you">Thanks for letting us know!</string>
+    <string name="recent">Recent</string>
+    <string name="registration_tos_and_privacy_v2">"By checking this you agree to Kik's &lt;a href=\"http://www.kik.com/terms\">Terms&lt;/a> &amp; &lt;a href=\"http://www.kik.com/privacy\">Privacy Policy&lt;/a>"</string>
     <string name="related_groups_header">Similar Groups</string>
     <string name="release_to_chat">"Release to
 chat"</string>
@@ -2142,6 +2253,7 @@ chat"</string>
 full screen"</string>
     <string name="remove_as_admin">Remove as Admin</string>
     <string name="reply_button_tooltip_text">Tap Reply to answer</string>
+    <string name="report_and_leave">REPORT AND LEAVE</string>
     <string name="report_group_abuse">This group is being used for abuse</string>
     <string name="report_group_include_chat_history">Include group chat history</string>
     <string name="report_group_offensive">This group is offensive</string>
@@ -2152,20 +2264,24 @@ full screen"</string>
     <string name="report_save_keep_chat">Keep Chat</string>
     <string name="report_save_remove_chat">Remove Chat</string>
     <string name="report_save_unblock">%1$s will be able to message you</string>
+    <string name="search_bot_name">Search bot name</string>
     <string name="search_public_groups_placeholder">Search Public Groups</string>
     <string name="second_abbreviation">s</string>
+    <string name="select_bot">Select Bot</string>
     <string name="send_a_message_group">Send a message to the group</string>
     <string name="send_a_message_one_to_one">Send a message to %s</string>
     <string name="send_a_message_public_group">Send a message to the public group #%s</string>
+    <string name="settings_automatic_fullscreen_summary">"While video chatting, you'll be automatically switched to fullscreen when 2 or more people are live"</string>
+    <string name="settings_automatic_fullscreen_title">Fullscreen Video Chat</string>
+    <string name="settings_chat_wallpaper">Chat Wallpaper</string>
+    <string name="settings_public_group_direct_messages">Public Group Direct Messages</string>
+    <string name="settings_public_group_direct_messages_description">Allow group members to send you direct messages</string>
     <string name="settings_share_username">Share Your Username</string>
     <string name="shared_from_botname">Shared from %1$s</string>
     <string name="slide_to_cancel">Slide to cancel</string>
     <string name="something_went_wrong_try_again_later">Something went wrong. Try again later.</string>
     <string name="start_public_group_title">Start a Public Group</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stickers_tooltip_hint">New! Tap to send stickers</string>
-    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
-    <string name="store_picture_title">Save image</string>
     <string name="suggested_chat_delete_contact_prompt_message">%s will be removed from Quick Chats</string>
     <string name="suggested_chat_delete_contact_prompt_title">Hide %s?</string>
     <string name="suggested_chat_delete_group_prompt_message">This group will be removed from Quick Chats</string>
@@ -2178,10 +2294,12 @@ full screen"</string>
     <string name="suggested_groups_header_trending_topics">Trending Topics</string>
     <string name="suggested_groups_not_avail_body">Please check your network and try again</string>
     <string name="suggested_groups_not_avail_header">Something Went Wrong</string>
+    <string name="suggestions">Suggestions</string>
     <string name="superadmins">Owners</string>
     <string name="talk_to_find_by_kik_code">Find by Kik Code</string>
     <string name="talk_to_find_by_phone_contacts">Find by Phone Contacts</string>
     <string name="talk_to_find_by_username">Find by Username</string>
+    <string name="tap_to_invite_firstname">Tap to invite %1$s</string>
     <string name="tap_to_return">Tap To Return</string>
     <string name="temp_ban">Temporary Ban</string>
     <string name="temp_ban_cannot_share">"You can't share content on Kik until your ban has expired"</string>
@@ -2193,6 +2311,8 @@ full screen"</string>
     <string name="title_discover_bots">Discover Bots</string>
     <string name="title_emoji">Emoji</string>
     <string name="title_emoji_status">Emoji Status</string>
+    <string name="title_group_full">Group Full</string>
+    <string name="title_group_invite">Group Invite</string>
     <string name="title_hands">Hands</string>
     <string name="title_hide">Hide</string>
     <string name="title_hide_chat">Hide Chat</string>
@@ -2222,6 +2342,7 @@ full screen"</string>
     <string name="title_report_group">Report Group</string>
     <string name="title_report_user">Report User</string>
     <string name="title_reveal">Reveal</string>
+    <string name="title_say_hi">Say Hi</string>
     <string name="title_select_content">Select Content</string>
     <string name="title_smileys">Smileys</string>
     <string name="title_start_a_chat">Start a Chat</string>
@@ -2242,6 +2363,8 @@ full screen"</string>
     <string name="title_your_web_history">Your Web History</string>
     <string name="tooltip_pullDownToViewMore">Pull down to view more</string>
     <string name="tooltip_swipeUpToDismiss">Swipe up to dismiss</string>
+    <string name="tooltip_tapForQuickReplies">Tap for quick replies</string>
+    <string name="tooltip_tapToViewBotInfo">Tap to view bot within group info</string>
     <string name="trophy_GIF_body">"You've been sending GIFs"</string>
     <string name="trophy_GIF_title">Better than a Photo</string>
     <string name="trophy_bots_body">"You've discovered bots"</string>
@@ -2285,4 +2408,5 @@ full screen"</string>
     <string name="x_video_chats_in_progress">%1$d video chats in progress</string>
     <string name="you_added_bot_attribution_message">You started chatting with the bot %1$s</string>
     <string name="you_are_video_chatting">You Are Video Chatting</string>
+    <string name="you_need_to_accept_terms">"You need to accept Kik's Terms and Privacy Policy to sign up."</string>
 </resources>

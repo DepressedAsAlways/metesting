@@ -3,14 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$b;
+.implements Lrx/d$b;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lrx/internal/operators/t$a;,
-        Lrx/internal/operators/t$b;
+        Lrx/internal/operators/t$a;
     }
 .end annotation
 
@@ -20,94 +19,82 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/c$b",
+        "Lrx/d$b",
         "<TT;TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field private final a:Ljava/lang/Long;
+.field final a:J
 
-.field private final b:Lrx/b/a;
+.field final b:Ljava/util/concurrent/TimeUnit;
 
-.field private final c:Lrx/a$d;
+.field final c:Lrx/g;
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>(JLjava/util/concurrent/TimeUnit;Lrx/g;)V
     .locals 1
 
     .prologue
-    const/4 v0, 0x0
-
-    .line 45
+    .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
-    iput-object v0, p0, Lrx/internal/operators/t;->a:Ljava/lang/Long;
-
-    .line 47
-    iput-object v0, p0, Lrx/internal/operators/t;->b:Lrx/b/a;
-
-    .line 48
-    sget-object v0, Lrx/a;->b:Lrx/a$d;
-
-    iput-object v0, p0, Lrx/internal/operators/t;->c:Lrx/a$d;
-
     .line 49
+    iput-wide p1, p0, Lrx/internal/operators/t;->a:J
+
+    .line 50
+    iput-object p3, p0, Lrx/internal/operators/t;->b:Ljava/util/concurrent/TimeUnit;
+
+    .line 51
+    iput-object p4, p0, Lrx/internal/operators/t;->c:Lrx/g;
+
+    .line 52
     return-void
-.end method
-
-.method public static a()Lrx/internal/operators/t;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">()",
-            "Lrx/internal/operators/t",
-            "<TT;>;"
-        }
-    .end annotation
-
-    .prologue
-    .line 42
-    sget-object v0, Lrx/internal/operators/t$b;->a:Lrx/internal/operators/t;
-
-    return-object v0
 .end method
 
 
 # virtual methods
 .method public final synthetic call(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 6
 
     .prologue
-    .line 30
-    check-cast p1, Lrx/i;
+    .line 35
+    move-object v2, p1
 
-    .line 1097
-    new-instance v0, Lrx/internal/operators/t$a;
+    check-cast v2, Lrx/j;
 
-    iget-object v1, p0, Lrx/internal/operators/t;->a:Ljava/lang/Long;
+    .line 1056
+    iget-object v0, p0, Lrx/internal/operators/t;->c:Lrx/g;
 
-    iget-object v2, p0, Lrx/internal/operators/t;->b:Lrx/b/a;
+    invoke-virtual {v0}, Lrx/g;->b()Lrx/g$a;
 
-    iget-object v3, p0, Lrx/internal/operators/t;->c:Lrx/a$d;
+    move-result-object v4
 
-    invoke-direct {v0, p1, v1, v2, v3}, Lrx/internal/operators/t$a;-><init>(Lrx/i;Ljava/lang/Long;Lrx/b/a;Lrx/a$d;)V
+    .line 1057
+    new-instance v5, Lrx/c/e;
 
-    .line 1101
-    invoke-virtual {p1, v0}, Lrx/i;->a(Lrx/j;)V
+    invoke-direct {v5, v2}, Lrx/c/e;-><init>(Lrx/j;)V
 
-    .line 1102
-    invoke-virtual {v0}, Lrx/internal/operators/t$a;->e()Lrx/e;
+    .line 1058
+    new-instance v3, Lrx/f/d;
 
-    move-result-object v1
+    invoke-direct {v3}, Lrx/f/d;-><init>()V
 
-    invoke-virtual {p1, v1}, Lrx/i;->a(Lrx/e;)V
+    .line 1060
+    invoke-virtual {v5, v4}, Lrx/c/e;->a(Lrx/k;)V
 
-    .line 30
+    .line 1061
+    invoke-virtual {v5, v3}, Lrx/c/e;->a(Lrx/k;)V
+
+    .line 1063
+    new-instance v0, Lrx/internal/operators/t$1;
+
+    move-object v1, p0
+
+    invoke-direct/range {v0 .. v5}, Lrx/internal/operators/t$1;-><init>(Lrx/internal/operators/t;Lrx/j;Lrx/f/d;Lrx/g$a;Lrx/c/e;)V
+
+    .line 35
     return-object v0
 .end method

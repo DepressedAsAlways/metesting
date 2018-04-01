@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Landroid/view/View;Z)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1473
+    .line 2515
     iput-object p1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$5;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,13 +36,37 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public final run()V
+    .locals 4
 
     .prologue
-    .line 1478
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
+    .line 2523
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$5;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    .line 1479
+    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->U(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
+
+    .line 2524
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$5;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Landroid/view/View;
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$5;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    iget-object v3, v3, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_mediaItemArea:Landroid/support/v4/view/ViewPager;
+
+    aput-object v3, v1, v2
+
+    invoke-static {v0, v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Lkik/android/chat/presentation/MediaTrayPresenterImpl;[Landroid/view/View;)V
+
+    .line 2525
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$5;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->V(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Z
+
+    .line 2526
     return-void
 .end method

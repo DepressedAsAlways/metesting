@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 649
+    .line 698
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iput-object p2, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->a:Lkik/core/datatypes/b;
@@ -44,7 +44,7 @@
     .locals 7
 
     .prologue
-    .line 653
+    .line 702
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->e(Lkik/android/chat/fragment/ViewPictureFragment;)Lkik/core/datatypes/messageExtensions/ContentMessage;
@@ -85,20 +85,20 @@
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    .line 654
+    .line 703
     invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->k(Lkik/android/chat/fragment/ViewPictureFragment;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    invoke-static {}, Lkik/core/util/h;->a()Lkik/core/util/h;
+    invoke-static {}, Lkik/core/util/g;->a()Lkik/core/util/g;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->a:Lkik/core/datatypes/b;
 
-    invoke-virtual {v0, v1}, Lkik/core/util/h;->a(Lkik/core/datatypes/b;)Z
+    invoke-virtual {v0, v1}, Lkik/core/util/g;->a(Lkik/core/datatypes/b;)Z
 
     move-result v0
 
@@ -112,7 +112,7 @@
 
     if-nez v0, :cond_2
 
-    .line 655
+    .line 704
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment;->_saveButton:Landroid/widget/ImageButton;
@@ -121,7 +121,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setClickable(Z)V
 
-    .line 657
+    .line 706
     invoke-static {}, Lkik/android/util/d;->a()Lkik/android/util/d;
 
     move-result-object v0
@@ -140,7 +140,7 @@
 
     iget-object v3, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    iget-object v3, v3, Lkik/android/chat/fragment/ViewPictureFragment;->b:Lcom/kik/cache/ae;
+    iget-object v3, v3, Lkik/android/chat/fragment/ViewPictureFragment;->b:Lcom/kik/cache/KikVolleyImageLoader;
 
     iget-object v4, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
@@ -148,8 +148,8 @@
 
     iget-object v5, p0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    .line 658
-    invoke-static {v5}, Lkik/android/chat/fragment/ViewPictureFragment;->o(Lkik/android/chat/fragment/ViewPictureFragment;)Lcom/android/volley/i$a;
+    .line 707
+    invoke-static {v5}, Lkik/android/chat/fragment/ViewPictureFragment;->o(Lkik/android/chat/fragment/ViewPictureFragment;)Lcom/android/volley/h$a;
 
     move-result-object v5
 
@@ -157,19 +157,19 @@
 
     iget-object v6, v6, Lkik/android/chat/fragment/ViewPictureFragment;->f:Lcom/kik/android/Mixpanel;
 
-    .line 657
-    invoke-virtual/range {v0 .. v6}, Lkik/android/util/d;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Lcom/kik/cache/ae;Lcom/kik/cache/ContentImageView;Lcom/android/volley/i$a;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    .line 706
+    invoke-virtual/range {v0 .. v6}, Lkik/android/util/d;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/cache/ContentImageView;Lcom/android/volley/h$a;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    .line 660
+    .line 709
     new-instance v1, Lkik/android/chat/fragment/ViewPictureFragment$5$1;
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/ViewPictureFragment$5$1;-><init>(Lkik/android/chat/fragment/ViewPictureFragment$5;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 695
+    .line 747
     :cond_2
     return-void
 .end method

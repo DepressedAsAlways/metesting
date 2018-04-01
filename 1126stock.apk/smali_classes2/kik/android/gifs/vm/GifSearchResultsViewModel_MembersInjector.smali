@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Ldagger/b",
         "<",
-        "Lkik/android/gifs/vm/aa;",
+        "Lkik/android/gifs/vm/ab;",
         ">;"
     }
 .end annotation
@@ -23,16 +23,13 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/gifs/vm/c",
-            "<",
-            "Lkik/android/gifs/vm/bn;",
-            "Lkik/android/gifs/api/GifResponseData;",
-            ">;>;"
+            "Landroid/content/res/Resources;",
+            ">;"
         }
     .end annotation
 .end field
@@ -87,18 +84,15 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/gifs/vm/c",
-            "<",
-            "Lkik/android/gifs/vm/bn;",
-            "Lkik/android/gifs/api/GifResponseData;",
-            ">;>;",
+            "Landroid/content/res/Resources;",
+            ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
@@ -111,10 +105,10 @@
     .end annotation
 
     .prologue
-    .line 16
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 26
     sget-boolean v0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -127,11 +121,11 @@
 
     throw v0
 
-    .line 18
+    .line 27
     :cond_0
-    iput-object p1, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 19
+    .line 28
     sget-boolean v0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -144,11 +138,11 @@
 
     throw v0
 
-    .line 20
+    .line 29
     :cond_1
     iput-object p2, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 21
+    .line 30
     sget-boolean v0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -161,26 +155,23 @@
 
     throw v0
 
-    .line 22
+    .line 31
     :cond_2
     iput-object p3, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 23
+    .line 32
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/gifs/vm/c",
-            "<",
-            "Lkik/android/gifs/vm/bn;",
-            "Lkik/android/gifs/api/GifResponseData;",
-            ">;>;",
+            "Landroid/content/res/Resources;",
+            ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
@@ -191,16 +182,16 @@
             ">;)",
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/aa;",
+            "Lkik/android/gifs/vm/ab;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 36
+    .line 38
     new-instance v0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1, p2}, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1, p2}, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -212,12 +203,12 @@
 
     .prologue
     .line 10
-    check-cast p1, Lkik/android/gifs/vm/aa;
+    check-cast p1, Lkik/android/gifs/vm/ab;
 
-    .line 1027
+    .line 1044
     if-nez p1, :cond_0
 
-    .line 1028
+    .line 1045
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -226,13 +217,19 @@
 
     throw v0
 
-    .line 1030
+    .line 1047
     :cond_0
-    iget-object v0, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->b:Ldagger/b;
+    iget-object v0, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
-    .line 1031
+    move-result-object v0
+
+    check-cast v0, Landroid/content/res/Resources;
+
+    iput-object v0, p1, Lkik/android/gifs/vm/c;->a:Landroid/content/res/Resources;
+
+    .line 1048
     iget-object v0, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -241,9 +238,9 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/gifs/vm/aa;->h:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/gifs/vm/ab;->h:Lcom/kik/android/Mixpanel;
 
-    .line 1032
+    .line 1049
     iget-object v0, p0, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -252,7 +249,7 @@
 
     check-cast v0, Lkik/core/interfaces/ICommunication;
 
-    iput-object v0, p1, Lkik/android/gifs/vm/aa;->i:Lkik/core/interfaces/ICommunication;
+    iput-object v0, p1, Lkik/android/gifs/vm/ab;->i:Lkik/core/interfaces/ICommunication;
 
     .line 10
     return-void

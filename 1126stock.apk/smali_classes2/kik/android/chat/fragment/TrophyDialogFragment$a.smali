@@ -50,7 +50,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/TrophyDialogFragment$a;->a:Landroid/content/Context;
 
-    const v2, 0x7f0903df
+    const v2, 0x7f0903f3
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -101,7 +101,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/TrophyDialogFragment$a;->a:Landroid/content/Context;
 
-    const v2, 0x7f040134
+    const v2, 0x7f04017a
 
     const/4 v3, 0x0
 

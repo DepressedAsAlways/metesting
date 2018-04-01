@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/media/MediaPlayer$OnCompletionListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/instabug/library/i;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/instabug/library/i;->b(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/instabug/library/i;
+.field final synthetic a:Landroid/media/MediaPlayer;
+
+.field final synthetic b:Lcom/instabug/library/i;
 
 
 # direct methods
-.method constructor <init>(Lcom/instabug/library/i;)V
+.method constructor <init>(Lcom/instabug/library/i;Landroid/media/MediaPlayer;)V
     .locals 0
 
     .prologue
-    .line 358
-    iput-object p1, p0, Lcom/instabug/library/i$2;->a:Lcom/instabug/library/i;
+    .line 173
+    iput-object p1, p0, Lcom/instabug/library/i$2;->b:Lcom/instabug/library/i;
+
+    iput-object p2, p0, Lcom/instabug/library/i$2;->a:Landroid/media/MediaPlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,15 +40,15 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final onCompletion(Landroid/media/MediaPlayer;)V
     .locals 1
 
     .prologue
-    .line 361
-    iget-object v0, p0, Lcom/instabug/library/i$2;->a:Lcom/instabug/library/i;
+    .line 176
+    iget-object v0, p0, Lcom/instabug/library/i$2;->a:Landroid/media/MediaPlayer;
 
-    invoke-virtual {v0}, Lcom/instabug/library/i;->e()V
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
 
-    .line 362
+    .line 177
     return-void
 .end method

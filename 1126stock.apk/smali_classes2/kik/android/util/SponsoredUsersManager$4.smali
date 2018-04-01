@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 201
+    .line 206
     iput-object p1, p0, Lkik/android/util/SponsoredUsersManager$4;->b:Lkik/android/util/SponsoredUsersManager;
 
     iput-object p2, p0, Lkik/android/util/SponsoredUsersManager$4;->a:Lkik/android/util/SponsoredUsersManager$a;
@@ -44,17 +44,17 @@
     .locals 2
 
     .prologue
-    .line 205
+    .line 210
     iget-object v0, p0, Lkik/android/util/SponsoredUsersManager$4;->b:Lkik/android/util/SponsoredUsersManager;
 
-    invoke-static {v0}, Lkik/android/util/SponsoredUsersManager;->c(Lkik/android/util/SponsoredUsersManager;)Lkik/core/interfaces/ac;
+    invoke-static {v0}, Lkik/android/util/SponsoredUsersManager;->c(Lkik/android/util/SponsoredUsersManager;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/util/SponsoredUsersManager$4;->a:Lkik/android/util/SponsoredUsersManager$a;
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ac;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->a(Ljava/lang/Object;)V
 
-    .line 206
+    .line 211
     return-void
 .end method

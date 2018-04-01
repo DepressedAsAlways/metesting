@@ -284,7 +284,7 @@
 
     check-cast v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     move-result-object v0
 
@@ -292,7 +292,7 @@
 
     .line 2839
     :goto_2
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->k()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->j()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -313,7 +313,7 @@
     invoke-virtual {v1, v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;)Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     .line 2842
-    invoke-virtual {v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->b()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
+    invoke-virtual {v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->a()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
     move-result-object v0
 
@@ -799,7 +799,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->j()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
     move-result-object v0
 

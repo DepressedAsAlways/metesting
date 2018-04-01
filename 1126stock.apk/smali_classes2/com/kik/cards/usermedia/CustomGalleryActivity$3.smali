@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lcom/kik/events/e",
         "<",
-        "Lcom/kik/cards/usermedia/h;",
+        "Lcom/kik/cards/usermedia/g;",
         ">;"
     }
 .end annotation
@@ -51,7 +51,7 @@
 
     .prologue
     .line 214
-    check-cast p2, Lcom/kik/cards/usermedia/h;
+    check-cast p2, Lcom/kik/cards/usermedia/g;
 
     .line 1218
     iget-object v0, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity$3;->a:Lcom/kik/cards/usermedia/CustomGalleryActivity;
@@ -67,7 +67,7 @@
     check-cast v0, Lcom/kik/cards/usermedia/CustomGalleryActivity$b;
 
     .line 1219
-    invoke-virtual {v0, p2}, Lcom/kik/cards/usermedia/CustomGalleryActivity$b;->a(Lcom/kik/cards/usermedia/h;)V
+    invoke-virtual {v0, p2}, Lcom/kik/cards/usermedia/CustomGalleryActivity$b;->a(Lcom/kik/cards/usermedia/g;)V
 
     .line 1220
     invoke-virtual {v0}, Lcom/kik/cards/usermedia/CustomGalleryActivity$b;->notifyDataSetChanged()V

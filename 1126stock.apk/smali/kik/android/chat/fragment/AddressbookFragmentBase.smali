@@ -49,23 +49,10 @@
 .end method
 
 .method static synthetic a(Lkik/android/chat/fragment/AddressbookFragmentBase;)V
-    .locals 0
-
-    .prologue
-    .line 0
-    .line 1098
-    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->k()V
-
-    .line 0
-    return-void
-.end method
-
-.method static synthetic b(Lkik/android/chat/fragment/AddressbookFragmentBase;)V
     .locals 2
 
     .prologue
-    .line 0
-    .line 1100
+    .line 100
     iget-object v0, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->l:Lcom/kik/android/Mixpanel;
 
     const-string v1, "ABM Bad Actor Opt In Cancelled"
@@ -80,12 +67,22 @@
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 1101
+    .line 101
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 0
+    .line 102
+    return-void
+.end method
+
+.method static synthetic b(Lkik/android/chat/fragment/AddressbookFragmentBase;)V
+    .locals 0
+
+    .prologue
+    .line 98
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->j()V
+
     return-void
 .end method
 
@@ -104,17 +101,17 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
-    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->k_()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->i()Lkik/android/util/bj;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->h()Lkik/android/util/bd;
 
     move-result-object v5
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;-><init>(Landroid/content/Context;Lkik/core/interfaces/IAddressBookIntegration;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/android/util/bj;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;-><init>(Landroid/content/Context;Lkik/core/interfaces/IAddressBookIntegration;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/android/util/bd;)V
 
     return-object v0
 .end method
@@ -135,21 +132,21 @@
 
     move-result-object v0
 
-    const v1, 0x7f0903ba
+    const v1, 0x7f0903ce
 
     .line 96
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikBasicDialog$a;->a(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 
     move-result-object v0
 
-    const v1, 0x7f09017d
+    const v1, 0x7f09017e
 
     .line 97
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikBasicDialog$a;->b(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 
     move-result-object v0
 
-    const v1, 0x7f0901f9
+    const v1, 0x7f09020d
 
     invoke-static {p0}, Lkik/android/chat/fragment/e;->a(Lkik/android/chat/fragment/AddressbookFragmentBase;)Landroid/view/View$OnClickListener;
 
@@ -160,7 +157,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0903c3
+    const v1, 0x7f0903d7
 
     invoke-static {p0}, Lkik/android/chat/fragment/f;->a(Lkik/android/chat/fragment/AddressbookFragmentBase;)Landroid/view/View$OnClickListener;
 
@@ -177,7 +174,7 @@
     move-result-object v0
 
     .line 103
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 105
     iget-object v0, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->l:Lcom/kik/android/Mixpanel;
@@ -198,26 +195,26 @@
     return-void
 .end method
 
-.method protected abstract h()I
+.method protected abstract g()I
 .end method
 
-.method protected abstract i()Lkik/android/util/bj;
+.method protected abstract h()Lkik/android/util/bd;
 .end method
 
-.method protected abstract j()Ljava/lang/String;
+.method protected abstract i()Ljava/lang/String;
 .end method
 
-.method protected k()V
+.method protected j()V
     .locals 2
 
     .prologue
     .line 56
-    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->j()Ljava/lang/String;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->i()Ljava/lang/String;
 
     move-result-object v0
 
     .line 58
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -245,7 +242,7 @@
 
     iget-object v1, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
 
-    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->k_()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
 
     move-result-object v1
 
@@ -255,7 +252,7 @@
     return-void
 .end method
 
-.method protected final l()Ljava/lang/Boolean;
+.method protected final k()Ljava/lang/Boolean;
     .locals 1
 
     .prologue
@@ -267,7 +264,7 @@
     move-result-object v0
 
     .line 38
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -288,6 +285,38 @@
     goto :goto_0
 .end method
 
+.method protected final l()Lcom/kik/android/Mixpanel$d;
+    .locals 3
+
+    .prologue
+    .line 110
+    iget-object v0, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->l:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "ABM Opt Out Shown"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 111
+    const-string v1, "Source"
+
+    iget-object v2, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
+
+    invoke-virtual {v2}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->h_()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lkik/android/util/c;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    .line 112
+    return-object v0
+.end method
+
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
 
@@ -295,16 +324,11 @@
     .line 44
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikIqFragmentBase;->onCreate(Landroid/os/Bundle;)V
 
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
     .line 45
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->getCoreComponent()Lcom/kik/components/CoreComponent;
+
+    move-result-object v0
+
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/AddressbookFragmentBase;)V
 
     .line 46
@@ -325,7 +349,7 @@
 
     .prologue
     .line 72
-    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->h()I
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->g()I
 
     move-result v0
 
@@ -349,40 +373,8 @@
     .line 85
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/AddressbookFragmentBase;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 86
     return-void
-.end method
-
-.method protected final p()Lcom/kik/android/Mixpanel$d;
-    .locals 3
-
-    .prologue
-    .line 110
-    iget-object v0, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->l:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "ABM Opt Out Shown"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 111
-    const-string v1, "Source"
-
-    iget-object v2, p0, Lkik/android/chat/fragment/AddressbookFragmentBase;->m:Lkik/android/chat/fragment/AddressbookFragmentBase$a;
-
-    invoke-virtual {v2}, Lkik/android/chat/fragment/AddressbookFragmentBase$a;->k_()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lkik/android/util/c;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    .line 112
-    return-object v0
 .end method

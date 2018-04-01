@@ -1,5 +1,5 @@
 .class final Lkik/android/scan/fragment/ScanFragment$10;
-.super Lkik/android/c/b$b;
+.super Lkik/android/c/b$c;
 .source "SourceFile"
 
 
@@ -23,10 +23,10 @@
     .locals 0
 
     .prologue
-    .line 168
+    .line 199
     iput-object p1, p0, Lkik/android/scan/fragment/ScanFragment$10;->a:Lkik/android/scan/fragment/ScanFragment;
 
-    invoke-direct {p0}, Lkik/android/c/b$b;-><init>()V
+    invoke-direct {p0}, Lkik/android/c/b$c;-><init>()V
 
     return-void
 .end method
@@ -37,11 +37,11 @@
     .locals 1
 
     .prologue
-    .line 172
+    .line 203
     iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$10;->a:Lkik/android/scan/fragment/ScanFragment;
 
-    invoke-static {v0}, Lkik/android/scan/fragment/ScanFragment;->f(Lkik/android/scan/fragment/ScanFragment;)V
+    invoke-virtual {v0}, Lkik/android/scan/fragment/ScanFragment;->a()V
 
-    .line 173
+    .line 204
     return-void
 .end method

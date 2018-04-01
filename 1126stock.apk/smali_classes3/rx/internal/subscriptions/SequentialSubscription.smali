@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/j;
+.implements Lrx/k;
 
 
 # annotations
@@ -11,9 +11,9 @@
     value = {
         "Ljava/util/concurrent/atomic/AtomicReference",
         "<",
-        "Lrx/j;",
+        "Lrx/k;",
         ">;",
-        "Lrx/j;"
+        "Lrx/k;"
     }
 .end annotation
 
@@ -34,7 +34,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lrx/j;)V
+.method public constructor <init>(Lrx/k;)V
     .locals 0
 
     .prologue
@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final a(Lrx/j;)Z
+.method public final a(Lrx/k;)Z
     .locals 2
 
     .prologue
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lrx/j;
+    check-cast v0, Lrx/k;
 
     .line 73
     sget-object v1, Lrx/internal/subscriptions/Unsubscribed;->INSTANCE:Lrx/internal/subscriptions/Unsubscribed;
@@ -71,7 +71,7 @@
     if-eqz p1, :cond_1
 
     .line 75
-    invoke-interface {p1}, Lrx/j;->unsubscribe()V
+    invoke-interface {p1}, Lrx/k;->unsubscribe()V
 
     .line 77
     :cond_1
@@ -93,7 +93,7 @@
     if-eqz v0, :cond_3
 
     .line 82
-    invoke-interface {v0}, Lrx/j;->unsubscribe()V
+    invoke-interface {v0}, Lrx/k;->unsubscribe()V
 
     .line 84
     :cond_3
@@ -102,7 +102,7 @@
     goto :goto_0
 .end method
 
-.method public final b(Lrx/j;)Z
+.method public final b(Lrx/k;)Z
     .locals 2
 
     .prologue
@@ -112,7 +112,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lrx/j;
+    check-cast v0, Lrx/k;
 
     .line 100
     sget-object v1, Lrx/internal/subscriptions/Unsubscribed;->INSTANCE:Lrx/internal/subscriptions/Unsubscribed;
@@ -123,7 +123,7 @@
     if-eqz p1, :cond_1
 
     .line 102
-    invoke-interface {p1}, Lrx/j;->unsubscribe()V
+    invoke-interface {p1}, Lrx/k;->unsubscribe()V
 
     .line 104
     :cond_1
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lrx/j;
+    check-cast v0, Lrx/k;
 
     .line 177
     sget-object v1, Lrx/internal/subscriptions/Unsubscribed;->INSTANCE:Lrx/internal/subscriptions/Unsubscribed;
@@ -194,7 +194,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lrx/j;
+    check-cast v0, Lrx/k;
 
     .line 179
     if-eqz v0, :cond_0
@@ -204,7 +204,7 @@
     if-eq v0, v1, :cond_0
 
     .line 180
-    invoke-interface {v0}, Lrx/j;->unsubscribe()V
+    invoke-interface {v0}, Lrx/k;->unsubscribe()V
 
     .line 183
     :cond_0

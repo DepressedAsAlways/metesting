@@ -21,18 +21,18 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 95
+    .line 97
     invoke-direct {p0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 97
+    .line 99
     invoke-virtual {p0, v0}, Lkik/android/util/f$1;->setAntiAlias(Z)V
 
-    .line 98
+    .line 100
     invoke-virtual {p0, v0}, Lkik/android/util/f$1;->setDither(Z)V
 
-    .line 99
+    .line 101
     invoke-virtual {p0, v0}, Lkik/android/util/f$1;->setFilterBitmap(Z)V
 
-    .line 100
+    .line 102
     return-void
 .end method

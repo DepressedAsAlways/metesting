@@ -1,5 +1,5 @@
 .class public Lkik/android/chat/vm/widget/SmileyItemViewModel;
-.super Lkik/android/chat/vm/c;
+.super Lkik/android/chat/vm/e;
 .source "SourceFile"
 
 # interfaces
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field protected a:Lcom/kik/cache/ae;
+.field protected a:Lcom/kik/cache/KikVolleyImageLoader;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 
@@ -34,7 +34,7 @@
     .end annotation
 .end field
 
-.field protected d:Lkik/core/interfaces/ac;
+.field protected d:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -140,10 +140,10 @@
     const/4 v1, 0x0
 
     .line 62
-    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/e;-><init>()V
 
     .line 54
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
     iput-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->k:Lrx/subjects/a;
 
     .line 58
-    invoke-static {}, Lrx/subjects/PublishSubject;->k()Lrx/subjects/PublishSubject;
+    invoke-static {}, Lrx/subjects/PublishSubject;->l()Lrx/subjects/PublishSubject;
 
     move-result-object v0
 
@@ -220,45 +220,14 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)Ljava/lang/Boolean;
-    .locals 2
-
-    .prologue
-    .line 3119
-    invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
-
-    invoke-virtual {v1}, Lcom/kik/android/b/g$b;->b()Lcom/kik/android/b/f;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    .line 0
-    return-object v0
-.end method
-
-.method private a(Lcom/kik/android/b/f;)Lrx/c;
+.method private a(Lcom/kik/android/b/f;)Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/kik/android/b/f;",
             ")",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/drawable/Drawable;",
             ">;"
@@ -267,7 +236,7 @@
 
     .prologue
     .line 155
-    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a:Lcom/kik/cache/ae;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
     if-eqz v0, :cond_0
 
@@ -283,7 +252,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
@@ -318,7 +287,7 @@
     move-result-object v0
 
     .line 164
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
     :try_end_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -330,54 +299,116 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     .line 171
     :cond_2
-    invoke-static {p0, p1}, Lkik/android/chat/vm/widget/aq;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)Lrx/b/b;
+    invoke-static {p0, p1}, Lkik/android/chat/vm/widget/aq;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)Lrx/functions/b;
 
     move-result-object v0
 
-    sget-object v1, Lrx/AsyncEmitter$BackpressureMode;->NONE:Lrx/AsyncEmitter$BackpressureMode;
+    sget-object v1, Lrx/Emitter$BackpressureMode;->NONE:Lrx/Emitter$BackpressureMode;
 
-    invoke-static {v0, v1}, Lrx/c;->a(Lrx/b/b;Lrx/AsyncEmitter$BackpressureMode;)Lrx/c;
+    invoke-static {v0, v1}, Lrx/d;->a(Lrx/functions/b;Lrx/Emitter$BackpressureMode;)Lrx/d;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;Lrx/AsyncEmitter;)V
+.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/g$b;)Lrx/d;
+    .locals 1
+
+    .prologue
+    .line 149
+    invoke-virtual {p1}, Lcom/kik/android/b/g$b;->b()Lcom/kik/android/b/f;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a(Lcom/kik/android/b/f;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)V
+    .locals 8
+
+    .prologue
+    .line 122
+    new-instance v0, Lcom/kik/android/b/g$b;
+
+    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->d:Lkik/core/interfaces/ad;
+
+    invoke-interface {v1}, Lkik/core/interfaces/ad;->f()J
+
+    move-result-wide v2
+
+    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->d:Lkik/core/interfaces/ad;
+
+    invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-interface {v1, v4}, Lkik/core/interfaces/ad;->n(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    invoke-virtual {p1}, Lcom/kik/android/b/f;->i()J
+
+    move-result-wide v6
+
+    move-object v1, p1
+
+    invoke-direct/range {v0 .. v7}, Lcom/kik/android/b/g$b;-><init>(Lcom/kik/android/b/f;JJJ)V
+
+    iput-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
+
+    .line 123
+    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->h:Lrx/subjects/a;
+
+    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
+
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 124
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;Lrx/Emitter;)V
     .locals 6
 
     .prologue
+    const/4 v3, 0x0
+
     const/high16 v4, 0x420c0000    # 35.0f
 
-    .line 3173
+    .line 173
     invoke-virtual {p1}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/chat/vm/widget/ar;->a()Lcom/android/volley/i$b;
+    invoke-static {}, Lkik/android/chat/vm/widget/ar;->a()Lcom/android/volley/h$b;
 
     move-result-object v1
 
-    invoke-static {}, Lkik/android/chat/vm/widget/as;->a()Lcom/android/volley/i$a;
+    invoke-static {}, Lkik/android/chat/vm/widget/as;->a()Lcom/android/volley/h$a;
 
     move-result-object v2
 
-    invoke-static {v0, v1, v2}, Lcom/kik/cache/ag;->a(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)Lcom/kik/cache/ag;
+    invoke-static {v0, v1, v3, v3, v2}, Lcom/kik/cache/MediaTraySmileyImageRequest;->getMediaTraySmileyRequest(Ljava/lang/String;Lcom/android/volley/h$b;IILcom/android/volley/h$a;)Lcom/kik/cache/MediaTraySmileyImageRequest;
 
     move-result-object v1
 
-    .line 3174
-    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a:Lcom/kik/cache/ae;
+    .line 174
+    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
     new-instance v2, Lkik/android/chat/vm/widget/SmileyItemViewModel$1;
 
-    invoke-direct {v2, p0, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel$1;-><init>(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lrx/AsyncEmitter;)V
+    invoke-direct {v2, p0, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel$1;-><init>(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lrx/Emitter;)V
 
-    .line 3191
+    .line 191
     invoke-static {v4}, Lkik/android/chat/KikApplication;->a(F)I
 
     move-result v3
@@ -388,19 +419,107 @@
 
     const/4 v5, 0x1
 
-    .line 3174
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    .line 174
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
-    .line 0
+    .line 193
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/g$b;)V
+.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;)V
     .locals 2
 
     .prologue
-    .line 0
-    .line 3130
+    .line 103
+    sget-object v0, Lkik/android/chat/vm/widget/SmileyItemViewModel$2;->a:[I
+
+    invoke-virtual {p1}, Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 111
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    .line 113
+    :goto_0
+    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->m:Lrx/subjects/a;
+
+    invoke-virtual {v1, v0}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 114
+    return-void
+
+    .line 105
+    :pswitch_0
+    const v0, 0x7f020375
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 108
+    :pswitch_1
+    const v0, 0x7f020376
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 103
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method static synthetic b(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)Ljava/lang/Boolean;
+    .locals 2
+
+    .prologue
+    .line 119
+    invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
+
+    invoke-virtual {v1}, Lcom/kik/android/b/g$b;->b()Lcom/kik/android/b/f;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic b(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/g$b;)V
+    .locals 2
+
+    .prologue
+    .line 130
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->j:Lrx/subjects/a;
 
     invoke-virtual {p1}, Lcom/kik/android/b/g$b;->d()Z
@@ -413,7 +532,7 @@
 
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 3131
+    .line 131
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->k:Lrx/subjects/a;
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
@@ -428,143 +547,21 @@
 
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 0
-    return-void
-.end method
-
-.method static synthetic a(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;)V
-    .locals 2
-
-    .prologue
-    .line 3103
-    sget-object v0, Lkik/android/chat/vm/widget/SmileyItemViewModel$2;->a:[I
-
-    invoke-virtual {p1}, Lkik/android/chat/vm/widget/SmileyItemViewModel$IndicatorBackgroundEnum;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    packed-switch v0, :pswitch_data_0
-
-    .line 3111
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    .line 3113
-    :goto_0
-    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->m:Lrx/subjects/a;
-
-    invoke-virtual {v1, v0}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 0
-    return-void
-
-    .line 3105
-    :pswitch_0
-    const v0, 0x7f020325
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 3108
-    :pswitch_1
-    const v0, 0x7f020326
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 3103
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
-.end method
-
-.method static synthetic b(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/g$b;)Lrx/c;
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 3149
-    invoke-virtual {p1}, Lcom/kik/android/b/g$b;->b()Lcom/kik/android/b/f;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->a(Lcom/kik/android/b/f;)Lrx/c;
-
-    move-result-object v0
-
-    .line 0
-    return-object v0
-.end method
-
-.method static synthetic b(Lkik/android/chat/vm/widget/SmileyItemViewModel;Lcom/kik/android/b/f;)V
-    .locals 8
-
-    .prologue
-    .line 0
-    .line 3122
-    new-instance v0, Lcom/kik/android/b/g$b;
-
-    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->d:Lkik/core/interfaces/ac;
-
-    invoke-interface {v1}, Lkik/core/interfaces/ac;->f()J
-
-    move-result-wide v2
-
-    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->d:Lkik/core/interfaces/ac;
-
-    invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-interface {v1, v4}, Lkik/core/interfaces/ac;->m(Ljava/lang/String;)J
-
-    move-result-wide v4
-
-    invoke-virtual {p1}, Lcom/kik/android/b/f;->i()J
-
-    move-result-wide v6
-
-    move-object v1, p1
-
-    invoke-direct/range {v0 .. v7}, Lcom/kik/android/b/g$b;-><init>(Lcom/kik/android/b/f;JJJ)V
-
-    iput-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
-
-    .line 3123
-    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->h:Lrx/subjects/a;
-
-    iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->g:Lcom/kik/android/b/g$b;
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 0
+    .line 132
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 4
 
     .prologue
     .line 84
-    invoke-virtual {p0, p1, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-virtual {p0, p1, p2}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 86
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->ae_()Lrx/g/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->ad_()Lrx/f/b;
 
     move-result-object v0
 
@@ -572,78 +569,78 @@
 
     iget-object v2, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->k:Lrx/subjects/a;
 
-    invoke-static {}, Lkik/android/chat/vm/widget/ak;->a()Lrx/b/h;
+    invoke-static {}, Lkik/android/chat/vm/widget/ak;->a()Lrx/functions/h;
 
     move-result-object v3
 
     .line 87
-    invoke-static {v1, v2, v3}, Lrx/c;->a(Lrx/c;Lrx/c;Lrx/b/h;)Lrx/c;
+    invoke-static {v1, v2, v3}, Lrx/d;->a(Lrx/d;Lrx/d;Lrx/functions/h;)Lrx/d;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/al;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/al;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/b;
 
     move-result-object v2
 
     .line 99
-    invoke-virtual {v1, v2}, Lrx/c;->b(Lrx/b/b;)Lrx/j;
+    invoke-virtual {v1, v2}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
 
     move-result-object v1
 
     .line 86
-    invoke-virtual {v0, v1}, Lrx/g/b;->a(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 117
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->ae_()Lrx/g/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->ad_()Lrx/f/b;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->c:Lcom/kik/android/b/g;
 
     .line 118
-    invoke-virtual {v1}, Lcom/kik/android/b/g;->g()Lrx/c;
+    invoke-virtual {v1}, Lcom/kik/android/b/g;->g()Lrx/d;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/am;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/b/g;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/am;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/g;
 
     move-result-object v2
 
     .line 119
-    invoke-virtual {v1, v2}, Lrx/c;->b(Lrx/b/g;)Lrx/c;
+    invoke-virtual {v1, v2}, Lrx/d;->c(Lrx/functions/g;)Lrx/d;
 
     move-result-object v1
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/an;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/an;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/b;
 
     move-result-object v2
 
     .line 120
-    invoke-virtual {v1, v2}, Lrx/c;->b(Lrx/b/b;)Lrx/j;
+    invoke-virtual {v1, v2}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
 
     move-result-object v1
 
     .line 117
-    invoke-virtual {v0, v1}, Lrx/g/b;->a(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 128
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->ae_()Lrx/g/b;
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/SmileyItemViewModel;->ad_()Lrx/f/b;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->h:Lrx/subjects/a;
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/ao;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/ao;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/b;
 
     move-result-object v2
 
     .line 129
-    invoke-virtual {v1, v2}, Lrx/subjects/a;->b(Lrx/b/b;)Lrx/j;
+    invoke-virtual {v1, v2}, Lrx/subjects/a;->b(Lrx/functions/b;)Lrx/k;
 
     move-result-object v1
 
     .line 128
-    invoke-virtual {v0, v1}, Lrx/g/b;->a(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/f/b;->a(Lrx/k;)V
 
     .line 134
     return-void
@@ -681,12 +678,12 @@
     return-void
 .end method
 
-.method public final aD_()Lrx/c;
+.method public final aG_()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/drawable/Drawable;",
             ">;"
@@ -697,17 +694,17 @@
     .line 148
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->h:Lrx/subjects/a;
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/ap;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/b/g;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/ap;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)Lrx/functions/g;
 
     move-result-object v1
 
     .line 149
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->c(Lrx/b/g;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->d(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
     .line 150
-    invoke-virtual {v0}, Lrx/c;->e()Lrx/c;
+    invoke-virtual {v0}, Lrx/d;->f()Lrx/d;
 
     move-result-object v0
 
@@ -715,44 +712,17 @@
     return-object v0
 .end method
 
-.method public b()Lrx/c;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
+.method public ah_()J
+    .locals 2
 
     .prologue
-    .line 199
-    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->m:Lrx/subjects/a;
+    .line 72
+    const-wide/16 v0, 0x0
 
-    invoke-virtual {v0}, Lrx/subjects/a;->e()Lrx/c;
-
-    move-result-object v0
-
-    return-object v0
+    return-wide v0
 .end method
 
-.method final b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
-    .locals 0
-
-    .prologue
-    .line 77
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
-
-    .line 78
-    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)V
-
-    .line 79
-    return-void
-.end method
-
-.method public final c()V
+.method public final al_()V
     .locals 1
 
     .prologue
@@ -768,18 +738,55 @@
     iput-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->e:Lrx/subjects/PublishSubject;
 
     .line 142
-    invoke-super {p0}, Lkik/android/chat/vm/c;->c()V
+    invoke-super {p0}, Lkik/android/chat/vm/e;->al_()V
 
     .line 143
     return-void
 .end method
 
-.method public final d()Lrx/c;
+.method final b(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 0
+
+    .prologue
+    .line 77
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 78
+    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)V
+
+    .line 79
+    return-void
+.end method
+
+.method public d()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 199
+    iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->m:Lrx/subjects/a;
+
+    invoke-virtual {v0}, Lrx/subjects/a;->f()Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final e()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -790,19 +797,19 @@
     .line 205
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->l:Lrx/subjects/PublishSubject;
 
-    invoke-virtual {v0}, Lrx/subjects/PublishSubject;->e()Lrx/c;
+    invoke-virtual {v0}, Lrx/subjects/PublishSubject;->f()Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final e()Lrx/c;
+.method public final f()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -813,14 +820,14 @@
     .line 211
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->i:Lrx/subjects/a;
 
-    invoke-virtual {v0}, Lrx/subjects/a;->e()Lrx/c;
+    invoke-virtual {v0}, Lrx/subjects/a;->f()Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public f()V
+.method public g()V
     .locals 2
 
     .prologue
@@ -870,7 +877,7 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 2
 
     .prologue
@@ -895,7 +902,7 @@
     return-void
 .end method
 
-.method public final h()V
+.method public final i()V
     .locals 2
 
     .prologue
@@ -927,7 +934,7 @@
     return-void
 .end method
 
-.method public final i()Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
+.method public final j()Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
     .locals 1
 
     .prologue
@@ -935,16 +942,6 @@
     iget-object v0, p0, Lkik/android/chat/vm/widget/SmileyItemViewModel;->f:Lkik/android/chat/presentation/MediaTrayPresenterImpl$b;
 
     return-object v0
-.end method
-
-.method public j()J
-    .locals 2
-
-    .prologue
-    .line 72
-    const-wide/16 v0, 0x0
-
-    return-wide v0
 .end method
 
 .method public final k()Lcom/kik/android/b/f;

@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/fragment/ViewPictureFragment$5$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -23,10 +23,10 @@
     .locals 0
 
     .prologue
-    .line 660
+    .line 710
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -39,7 +39,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 664
+    .line 714
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -52,7 +52,7 @@
 
     const/4 v0, 0x0
 
-    .line 665
+    .line 715
     :goto_0
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
@@ -62,9 +62,9 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v3, v0, v3, v2}, Lkik/android/util/bf;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
+    invoke-static {v1, v3, v0, v3, v2}, Lkik/android/util/az;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
 
-    .line 667
+    .line 717
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -73,12 +73,12 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/ViewPictureFragment$5$1$1;-><init>(Lkik/android/chat/fragment/ViewPictureFragment$5$1;)V
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->runOnUiIfAttached(Ljava/lang/Runnable;)V
 
-    .line 676
+    .line 727
     return-void
 
-    .line 664
+    .line 714
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
@@ -101,7 +101,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 681
+    .line 732
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -114,7 +114,7 @@
 
     const/4 v0, 0x0
 
-    .line 682
+    .line 733
     :goto_0
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
@@ -124,9 +124,9 @@
 
     const/4 v2, 0x1
 
-    invoke-static {v1, v3, v0, v2, v3}, Lkik/android/util/bf;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
+    invoke-static {v1, v3, v0, v2, v3}, Lkik/android/util/az;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
 
-    .line 684
+    .line 735
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment$5;->b:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -135,12 +135,12 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/ViewPictureFragment$5$1$2;-><init>(Lkik/android/chat/fragment/ViewPictureFragment$5$1;)V
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->runOnUiIfAttached(Ljava/lang/Runnable;)V
 
-    .line 692
+    .line 744
     return-void
 
-    .line 681
+    .line 732
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$5$1;->a:Lkik/android/chat/fragment/ViewPictureFragment$5;
 

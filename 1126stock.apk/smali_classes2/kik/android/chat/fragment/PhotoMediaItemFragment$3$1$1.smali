@@ -75,9 +75,9 @@
 
     iget-object v0, v0, Lkik/android/chat/fragment/PhotoMediaItemFragment$3;->b:Lkik/android/chat/fragment/PhotoMediaItemFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/e/f;
+    iget-object v0, v0, Lkik/android/chat/fragment/PhotoMediaItemFragment;->h:Lkik/android/f/f;
 
-    invoke-interface {v0}, Lkik/android/e/f;->e()V
+    invoke-interface {v0}, Lkik/android/f/f;->d()V
 
     .line 171
     new-array v0, v2, [Landroid/view/View;
@@ -94,7 +94,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 172
     iget-object v0, p0, Lkik/android/chat/fragment/PhotoMediaItemFragment$3$1$1;->b:Lkik/android/chat/fragment/PhotoMediaItemFragment$3$1;
@@ -103,7 +103,7 @@
 
     iget-object v0, v0, Lkik/android/chat/fragment/PhotoMediaItemFragment$3;->b:Lkik/android/chat/fragment/PhotoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/PhotoMediaItemFragment;->r()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/PhotoMediaItemFragment;->n()V
 
     .line 173
     return-void

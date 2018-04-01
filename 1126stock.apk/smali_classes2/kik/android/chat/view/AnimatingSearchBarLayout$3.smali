@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 466
+    .line 378
     iput-object p1, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$3;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,8 +35,7 @@
     .locals 2
 
     .prologue
-    .line 0
-    .line 1472
+    .line 384
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$3;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->c(Lkik/android/chat/view/AnimatingSearchBarLayout;)Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -45,19 +44,19 @@
 
     invoke-virtual {v0}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->clearFocus()V
 
-    .line 1473
+    .line 385
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$3;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->d(Lkik/android/chat/view/AnimatingSearchBarLayout;)V
 
-    .line 1474
+    .line 386
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$3;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     const-string v1, "Software Back"
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/AnimatingSearchBarLayout;->a(Ljava/lang/String;)V
 
-    .line 0
+    .line 387
     return-void
 .end method
 
@@ -67,14 +66,14 @@
     .locals 2
 
     .prologue
-    .line 470
+    .line 382
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$3;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     sget-object v1, Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;->ENTER:Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;
 
     invoke-static {v0, v1}, Lkik/android/chat/view/AnimatingSearchBarLayout;->a(Lkik/android/chat/view/AnimatingSearchBarLayout;Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;)Lkik/android/chat/view/AnimatingSearchBarLayout$SearchState;
 
-    .line 471
+    .line 383
     iget-object v0, p0, Lkik/android/chat/view/AnimatingSearchBarLayout$3;->a:Lkik/android/chat/view/AnimatingSearchBarLayout;
 
     invoke-static {v0}, Lkik/android/chat/view/AnimatingSearchBarLayout;->c(Lkik/android/chat/view/AnimatingSearchBarLayout;)Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -84,13 +83,13 @@
     .line 1208
     iget-object v0, v0, Lkik/android/chat/view/SearchBarViewImpl;->_searchIconView:Landroid/widget/ImageView;
 
-    .line 471
+    .line 383
     invoke-static {p0}, Lkik/android/chat/view/f;->a(Lkik/android/chat/view/AnimatingSearchBarLayout$3;)Landroid/view/View$OnClickListener;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 476
+    .line 388
     return-void
 .end method

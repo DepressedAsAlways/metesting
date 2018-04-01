@@ -6,9 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lkik/android/scan/a/c$c;,
         Lkik/android/scan/a/c$b;,
-        Lkik/android/scan/a/c$d;,
+        Lkik/android/scan/a/c$c;,
         Lkik/android/scan/a/c$a;
     }
 .end annotation
@@ -42,9 +41,9 @@
 
     .prologue
     .line 36
-    new-instance v0, Lkik/android/scan/a/c$d;
+    new-instance v0, Lkik/android/scan/a/c$c;
 
-    invoke-direct {v0, p0}, Lkik/android/scan/a/c$d;-><init>(Lcom/kik/scan/UsernameKikCode;)V
+    invoke-direct {v0, p0}, Lkik/android/scan/a/c$c;-><init>(Lcom/kik/scan/UsernameKikCode;)V
 
     return-object v0
 .end method
@@ -57,18 +56,6 @@
     new-instance v0, Lkik/android/scan/a/c$a;
 
     invoke-direct {v0, p0}, Lkik/android/scan/a/c$a;-><init>(Lkik/android/scan/a/a;)V
-
-    return-object v0
-.end method
-
-.method public static a([B[BLjava/lang/String;I)Lkik/android/scan/a/c;
-    .locals 1
-
-    .prologue
-    .line 46
-    new-instance v0, Lkik/android/scan/a/c$c;
-
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/scan/a/c$c;-><init>([B[BLjava/lang/String;I)V
 
     return-object v0
 .end method

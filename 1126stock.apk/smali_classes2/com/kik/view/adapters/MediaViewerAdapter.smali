@@ -15,11 +15,11 @@
     .end annotation
 .end field
 
-.field private final b:Lkik/android/e/f;
+.field private final b:Lkik/android/f/f;
 
 
 # direct methods
-.method public constructor <init>(Landroid/support/v4/app/FragmentManager;Ljava/util/List;Lkik/android/e/f;)V
+.method public constructor <init>(Landroid/support/v4/app/FragmentManager;Ljava/util/List;Lkik/android/f/f;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -29,7 +29,7 @@
             "<",
             "Lkik/core/datatypes/Message;",
             ">;",
-            "Lkik/android/e/f;",
+            "Lkik/android/f/f;",
             ")V"
         }
     .end annotation
@@ -42,7 +42,7 @@
     iput-object p2, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->a:Ljava/util/List;
 
     .line 38
-    iput-object p3, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/e/f;
+    iput-object p3, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/f/f;
 
     .line 39
     return-void
@@ -81,7 +81,7 @@
     .line 1101
     const-class v1, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    invoke-static {v0, v1}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/f;
+    invoke-static {v0, v1}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
 
     move-result-object v0
 
@@ -113,7 +113,7 @@
     .line 2079
     const-string v1, "preview"
 
-    invoke-virtual {v0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/r;
+    invoke-virtual {v0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
 
     move-result-object v1
 
@@ -152,9 +152,9 @@
 
     .line 68
     :goto_2
-    iget-object v1, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/e/f;
+    iget-object v1, p0, Lcom/kik/view/adapters/MediaViewerAdapter;->b:Lkik/android/f/f;
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/MediaItemFragment;->a(Lkik/android/e/f;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/MediaItemFragment;->a(Lkik/android/f/f;)V
 
     goto :goto_0
 

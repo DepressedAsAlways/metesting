@@ -23,12 +23,12 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lcom/kik/metrics/c/d;",
             ">;"
         }
     .end annotation
@@ -50,7 +50,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/core/interfaces/ICommunication;",
             ">;"
         }
     .end annotation
@@ -61,7 +61,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/v;",
+            "Lkik/core/interfaces/IConversation;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/b/f;",
+            "Lcom/kik/android/Mixpanel;",
             ">;"
         }
     .end annotation
@@ -83,7 +83,29 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lkik/core/interfaces/v;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final h:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/a/f;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final i:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;"
         }
     .end annotation
@@ -95,7 +117,7 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 15
     const-class v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -117,18 +139,26 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lcom/kik/metrics/c/d;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/IConversation;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -140,20 +170,20 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/b/f;",
+            "Lkik/core/a/f;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 21
+    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
+    .line 46
     sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -166,11 +196,11 @@
 
     throw v0
 
-    .line 23
+    .line 47
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 24
+    .line 48
     sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -183,11 +213,11 @@
 
     throw v0
 
-    .line 25
+    .line 49
     :cond_1
     iput-object p2, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 26
+    .line 50
     sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -200,11 +230,11 @@
 
     throw v0
 
-    .line 27
+    .line 51
     :cond_2
     iput-object p3, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 28
+    .line 52
     sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_3
@@ -217,11 +247,11 @@
 
     throw v0
 
-    .line 29
+    .line 53
     :cond_3
     iput-object p4, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->e:Ljavax/inject/Provider;
 
-    .line 30
+    .line 54
     sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_4
@@ -234,11 +264,11 @@
 
     throw v0
 
-    .line 31
+    .line 55
     :cond_4
     iput-object p5, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->f:Ljavax/inject/Provider;
 
-    .line 32
+    .line 56
     sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_5
@@ -251,26 +281,68 @@
 
     throw v0
 
-    .line 33
+    .line 57
     :cond_5
     iput-object p6, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->g:Ljavax/inject/Provider;
 
-    .line 34
+    .line 58
+    sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
+
+    if-nez v0, :cond_6
+
+    if-nez p7, :cond_6
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 59
+    :cond_6
+    iput-object p7, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->h:Ljavax/inject/Provider;
+
+    .line 60
+    sget-boolean v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a:Z
+
+    if-nez v0, :cond_7
+
+    if-nez p8, :cond_7
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 61
+    :cond_7
+    iput-object p8, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->i:Ljavax/inject/Provider;
+
+    .line 62
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-    .locals 7
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lcom/kik/metrics/c/d;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/IConversation;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -282,11 +354,11 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/b/f;",
+            "Lkik/core/a/f;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;)",
             "Ldagger/b",
             "<",
@@ -296,7 +368,7 @@
     .end annotation
 
     .prologue
-    .line 50
+    .line 73
     new-instance v0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;
 
     move-object v1, p0
@@ -311,7 +383,11 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    move-object v7, p6
+
+    move-object/from16 v8, p7
+
+    invoke-direct/range {v0 .. v8}, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -322,13 +398,13 @@
     .locals 2
 
     .prologue
-    .line 12
+    .line 15
     check-cast p1, Lkik/android/chat/fragment/MediaViewerFragment;
 
-    .line 1038
+    .line 1086
     if-nez p1, :cond_0
 
-    .line 1039
+    .line 1087
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -337,25 +413,53 @@
 
     throw v0
 
-    .line 1041
+    .line 1089
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->b:Ldagger/b;
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->b:Ljavax/inject/Provider;
 
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
-    .line 1042
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/ad;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_storage:Lkik/core/interfaces/ad;
+
+    .line 1090
     iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/j;
+    check-cast v0, Lcom/kik/metrics/c/d;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->a:Lkik/core/interfaces/j;
+    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    .line 1043
+    .line 1091
     iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->d:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/ICommunication;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/KikIqFragmentBase;->_comm:Lkik/core/interfaces/ICommunication;
+
+    .line 1092
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->e:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/IConversation;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->a:Lkik/core/interfaces/IConversation;
+
+    .line 1093
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->f:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -365,8 +469,8 @@
 
     iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->b:Lcom/kik/android/Mixpanel;
 
-    .line 1044
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->e:Ljavax/inject/Provider;
+    .line 1094
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->g:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -376,28 +480,28 @@
 
     iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->c:Lkik/core/interfaces/v;
 
-    .line 1045
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->f:Ljavax/inject/Provider;
+    .line 1095
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->h:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/b/f;
+    check-cast v0, Lkik/core/a/f;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->d:Lkik/core/b/f;
+    iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->d:Lkik/core/a/f;
 
-    .line 1046
-    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->g:Ljavax/inject/Provider;
+    .line 1096
+    iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->i:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/cache/ae;
+    check-cast v0, Lcom/kik/cache/KikVolleyImageLoader;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->e:Lcom/kik/cache/ae;
+    iput-object v0, p1, Lkik/android/chat/fragment/MediaViewerFragment;->e:Lcom/kik/cache/KikVolleyImageLoader;
 
-    .line 12
+    .line 15
     return-void
 .end method

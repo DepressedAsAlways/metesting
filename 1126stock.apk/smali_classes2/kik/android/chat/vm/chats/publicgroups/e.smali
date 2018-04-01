@@ -3,15 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/u;
+.implements Lkik/android/chat/vm/IListViewModel;
 
 
-# virtual methods
-.method public abstract a()V
-.end method
-
-.method public abstract b()Ljava/lang/String;
-.end method
-
-.method public abstract d()I
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkik/android/chat/vm/IListViewModel",
+        "<",
+        "Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel;",
+        ">;"
+    }
+.end annotation

@@ -1,5 +1,5 @@
 .class final Lkik/android/scan/fragment/ScanFragment$13;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,74 +15,106 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/m;",
+        "Lkik/core/datatypes/p;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lkik/android/scan/a/a;
+.field final synthetic a:Lcom/kik/scan/GroupKikCode;
 
-.field final synthetic b:Lcom/kik/scan/KikCode;
-
-.field final synthetic c:Lkik/android/scan/fragment/ScanFragment;
+.field final synthetic b:Lkik/android/scan/fragment/ScanFragment;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/scan/fragment/ScanFragment;Lkik/android/scan/a/a;Lcom/kik/scan/KikCode;)V
+.method constructor <init>(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/GroupKikCode;)V
     .locals 0
 
     .prologue
-    .line 306
-    iput-object p1, p0, Lkik/android/scan/fragment/ScanFragment$13;->c:Lkik/android/scan/fragment/ScanFragment;
+    .line 347
+    iput-object p1, p0, Lkik/android/scan/fragment/ScanFragment$13;->b:Lkik/android/scan/fragment/ScanFragment;
 
-    iput-object p2, p0, Lkik/android/scan/fragment/ScanFragment$13;->a:Lkik/android/scan/a/a;
+    iput-object p2, p0, Lkik/android/scan/fragment/ScanFragment$13;->a:Lcom/kik/scan/GroupKikCode;
 
-    iput-object p3, p0, Lkik/android/scan/fragment/ScanFragment$13;->b:Lcom/kik/scan/KikCode;
-
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a(Ljava/lang/Object;)V
+.method public final synthetic a(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 306
-    check-cast p1, Lkik/core/datatypes/m;
+    .line 347
+    check-cast p1, Lkik/core/datatypes/p;
 
-    .line 1310
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$13;->c:Lkik/android/scan/fragment/ScanFragment;
+    .line 1352
+    invoke-virtual {p1}, Lkik/core/datatypes/p;->u()Z
 
-    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment$13;->a:Lkik/android/scan/a/a;
+    move-result v0
 
-    invoke-static {v1}, Lkik/android/scan/a/c;->a(Lkik/android/scan/a/a;)Lkik/android/scan/a/c;
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p1}, Lkik/core/datatypes/p;->I()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 1353
+    invoke-static {p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)Lcom/kik/events/Promise;
+
+    move-result-object v0
+
+    .line 1358
+    :goto_0
+    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment$13;->b:Lkik/android/scan/fragment/ScanFragment;
+
+    invoke-static {v1, v0}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
+
+    .line 1359
+    new-instance v1, Lkik/android/scan/fragment/ScanFragment$13$1;
+
+    invoke-direct {v1, p0}, Lkik/android/scan/fragment/ScanFragment$13$1;-><init>(Lkik/android/scan/fragment/ScanFragment$13;)V
+
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
+    .line 347
+    return-void
+
+    .line 1356
+    :cond_0
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$13;->b:Lkik/android/scan/fragment/ScanFragment;
+
+    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment$13;->a:Lcom/kik/scan/GroupKikCode;
+
+    invoke-static {v1}, Lkik/android/scan/a/c;->a(Lcom/kik/scan/GroupKikCode;)Lkik/android/scan/a/c;
 
     move-result-object v1
 
-    invoke-static {v0, p1, v1}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/android/scan/fragment/ScanFragment;Lkik/core/datatypes/m;Lkik/android/scan/a/c;)V
+    invoke-static {v0, p1, v1}, Lkik/android/scan/fragment/ScanFragment;->a(Lkik/android/scan/fragment/ScanFragment;Lkik/core/datatypes/p;Lkik/android/scan/a/c;)Lcom/kik/events/Promise;
 
-    .line 306
-    return-void
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public final a(Ljava/lang/Throwable;)V
     .locals 2
 
     .prologue
-    .line 316
-    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$13;->c:Lkik/android/scan/fragment/ScanFragment;
+    .line 384
+    iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$13;->b:Lkik/android/scan/fragment/ScanFragment;
 
-    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment$13;->b:Lcom/kik/scan/KikCode;
+    iget-object v1, p0, Lkik/android/scan/fragment/ScanFragment$13;->a:Lcom/kik/scan/GroupKikCode;
 
     invoke-static {v0, v1}, Lkik/android/scan/fragment/ScanFragment;->b(Lkik/android/scan/fragment/ScanFragment;Lcom/kik/scan/KikCode;)V
 
-    .line 317
+    .line 385
     return-void
 .end method

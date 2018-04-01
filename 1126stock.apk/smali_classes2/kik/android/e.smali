@@ -50,7 +50,7 @@
     return-void
 .end method
 
-.method public static a(Ljava/io/File;Ljava/io/File;Ljava/lang/String;Lkik/core/net/e;ZLkik/core/interfaces/ac;)Lkik/android/e$a;
+.method public static a(Ljava/io/File;Ljava/io/File;ILjava/lang/String;Lkik/core/net/e;ZLkik/core/interfaces/ad;)Lkik/android/e$a;
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -63,19 +63,19 @@
     .prologue
     .line 117
     .line 1157
-    invoke-static {p0, p1, p3, p5}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;Lkik/core/net/e;Lkik/core/interfaces/ac;)Lkik/android/net/http/e;
+    invoke-static {p0, p1, p2, p4, p6}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/net/http/e;
 
     move-result-object v1
 
     .line 1158
-    if-eqz p2, :cond_0
+    if-eqz p3, :cond_0
 
     .line 1159
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-interface {p3}, Lkik/core/net/e;->e()Ljava/lang/String;
+    invoke-interface {p4}, Lkik/core/net/e;->e()Ljava/lang/String;
 
     move-result-object v2
 
@@ -89,11 +89,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    if-eqz p4, :cond_1
+    if-eqz p5, :cond_1
 
     const-string v0, "&silent=1"
 
@@ -129,7 +129,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/io/File;Ljava/io/File;Lkik/core/net/e;Lkik/core/interfaces/ac;)Lkik/android/e$a;
+.method public static a(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/e$a;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -142,7 +142,7 @@
     .prologue
     .line 123
     .line 2136
-    invoke-static {p0, p1, p2, p3}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;Lkik/core/net/e;Lkik/core/interfaces/ac;)Lkik/android/net/http/e;
+    invoke-static {p0, p1, p2, p3, p4}, Lkik/android/e;->b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/net/http/e;
 
     move-result-object v0
 
@@ -225,7 +225,9 @@
     invoke-direct {v0, p0, p1}, Lkik/android/net/http/d;-><init>(Ljava/lang/String;Lkik/core/z;)V
 
     .line 75
-    invoke-virtual {v0}, Lkik/android/net/http/d;->a()V
+    const/16 v3, 0x2710
+
+    invoke-virtual {v0, v3}, Lkik/android/net/http/d;->setTimeout(I)V
 
     .line 76
     invoke-static {v0}, Lkik/android/e;->a(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
@@ -283,7 +285,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/util/bx;->a(Lorg/apache/http/HttpEntity;)[B
+    invoke-static {v0}, Lcom/kik/util/cp;->a(Lorg/apache/http/HttpEntity;)[B
 
     move-result-object v0
 
@@ -400,7 +402,7 @@
     return-object v0
 .end method
 
-.method private static b(Ljava/io/File;Ljava/io/File;Lkik/core/net/e;Lkik/core/interfaces/ac;)Lkik/android/net/http/e;
+.method private static b(Ljava/io/File;Ljava/io/File;ILkik/core/net/e;Lkik/core/interfaces/ad;)Lkik/android/net/http/e;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -432,12 +434,12 @@
     invoke-virtual {v1}, Ljava/io/FileInputStream;->close()V
 
     .line 177
-    invoke-interface {p2}, Lkik/core/net/e;->e()Ljava/lang/String;
+    invoke-interface {p3}, Lkik/core/net/e;->e()Ljava/lang/String;
 
     move-result-object v1
 
     .line 184
-    invoke-static {p3}, Lkik/core/z;->b(Lkik/core/interfaces/ac;)Lkik/core/z;
+    invoke-static {p4}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v2
 
@@ -452,7 +454,7 @@
     invoke-direct {v4, v1, v2}, Lkik/android/net/http/e;-><init>(Ljava/lang/String;Lkik/core/z;)V
 
     .line 195
-    invoke-static {p1}, Lkik/core/util/q;->a(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p1}, Lkik/core/util/p;->a(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -466,9 +468,7 @@
 
     .line 201
     :cond_0
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
-
-    invoke-static {p1}, Lkik/android/internal/platform/b;->a(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/kik/util/ci;->a(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -486,7 +486,7 @@
 
     .line 211
     :try_start_0
-    invoke-static {p0}, Lkik/core/util/q;->a(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p0}, Lkik/core/util/p;->a(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -517,7 +517,7 @@
     invoke-virtual {v4, v3}, Lkik/android/net/http/e;->setEntity(Lorg/apache/http/HttpEntity;)V
 
     .line 224
-    invoke-virtual {v4}, Lkik/android/net/http/e;->a()V
+    invoke-virtual {v4, p2}, Lkik/android/net/http/e;->setTimeout(I)V
 
     .line 225
     return-object v4
@@ -526,7 +526,7 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method

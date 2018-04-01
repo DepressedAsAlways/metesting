@@ -1,5 +1,5 @@
 .class final Lkik/android/challenge/SafetyNetValidator$2;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Lkik/core/g/m",
+        "Lkik/core/xiphias/ab",
         "<",
         "Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultResponse;",
         ">;>;"
@@ -37,7 +37,7 @@
     .line 147
     iput-object p1, p0, Lkik/android/challenge/SafetyNetValidator$2;->a:Lkik/android/challenge/SafetyNetValidator;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -49,12 +49,12 @@
 
     .prologue
     .line 147
-    check-cast p1, Lkik/core/g/m;
+    check-cast p1, Lkik/core/xiphias/ab;
 
     .line 1151
     sget-object v1, Lkik/android/challenge/SafetyNetValidator$3;->a:[I
 
-    invoke-virtual {p1}, Lkik/core/g/m;->e()Ljava/lang/Object;
+    invoke-virtual {p1}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
 
     move-result-object v0
 

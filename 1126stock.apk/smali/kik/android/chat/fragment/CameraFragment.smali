@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/c/b;
-.implements Lkik/android/chat/fragment/r;
+.implements Lcom/kik/d/b;
+.implements Lkik/android/chat/fragment/p;
 
 
 # annotations
@@ -22,38 +22,30 @@
 
 # instance fields
 .field protected _cameraErrorCover:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10013d
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100175
     .end annotation
 .end field
 
-.field protected _cameraIconBarView:Lkik/android/chat/view/k;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10013e
-        }
+.field protected _cameraIconBarView:Lkik/android/chat/view/m;
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100176
     .end annotation
 .end field
 
-.field protected _liveCameraContainer:Lkik/android/chat/view/q;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10013b
-        }
+.field protected _liveCameraContainer:Lkik/android/chat/view/s;
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100173
     .end annotation
 .end field
 
-.field protected _previewContainer:Lkik/android/chat/view/ae;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10013c
-        }
+.field protected _previewContainer:Lkik/android/chat/view/af;
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100174
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ac;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -63,7 +55,7 @@
     .end annotation
 .end field
 
-.field protected d:Lcom/kik/e/p;
+.field protected d:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -79,7 +71,7 @@
     .locals 4
 
     .prologue
-    .line 41
+    .line 40
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v2, 0xf
@@ -99,7 +91,7 @@
     .locals 0
 
     .prologue
-    .line 39
+    .line 38
     invoke-direct {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;-><init>()V
 
     return-void
@@ -111,12 +103,12 @@
     .locals 1
 
     .prologue
-    .line 86
+    .line 85
     iget-object v0, p0, Lkik/android/chat/fragment/CameraFragment;->e:Lkik/android/chat/presentation/n;
 
     invoke-interface {v0}, Lkik/android/chat/presentation/n;->a()V
 
-    .line 87
+    .line 86
     return-void
 .end method
 
@@ -124,7 +116,7 @@
     .locals 0
 
     .prologue
-    .line 81
+    .line 80
     return-void
 .end method
 
@@ -132,7 +124,7 @@
     .locals 0
 
     .prologue
-    .line 168
+    .line 167
     return-void
 .end method
 
@@ -140,17 +132,17 @@
     .locals 1
 
     .prologue
-    .line 173
+    .line 172
     const/4 v0, 0x0
 
     return v0
 .end method
 
-.method public final e()V
+.method public final d()V
     .locals 3
 
     .prologue
-    .line 139
+    .line 138
     const/4 v0, 0x1
 
     new-array v0, v0, [Landroid/view/View;
@@ -161,18 +153,18 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
-    .line 144
+    .line 143
     return-void
 .end method
 
-.method public final f()V
+.method public final e()V
     .locals 2
 
     .prologue
-    .line 149
-    const v0, 0x7f0900fc
+    .line 148
+    const v0, 0x7f0900fd
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -180,18 +172,18 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lkik/android/util/cc;->a(Ljava/lang/String;I)V
+    invoke-static {v0, v1}, Lkik/android/util/bv;->a(Ljava/lang/String;I)V
 
-    .line 150
+    .line 149
     return-void
 .end method
 
-.method public final g()V
+.method public final f()V
     .locals 2
 
     .prologue
-    .line 155
-    const v0, 0x7f090143
+    .line 154
+    const v0, 0x7f090144
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -199,23 +191,25 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lkik/android/util/cc;->a(Ljava/lang/String;I)V
+    invoke-static {v0, v1}, Lkik/android/util/bv;->a(Ljava/lang/String;I)V
 
-    .line 156
+    .line 155
     return-void
 .end method
 
-.method public final h()V
-    .locals 0
+.method public final g()V
+    .locals 1
 
     .prologue
+    .line 160
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/CameraFragment;->setHasResult(Z)V
+
     .line 161
-    invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->t()V
+    invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->finish()V
 
     .line 162
-    invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->B()V
-
-    .line 163
     return-void
 .end method
 
@@ -223,22 +217,17 @@
     .locals 1
 
     .prologue
-    .line 97
+    .line 96
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 97
+    invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 98
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/CameraFragment;)V
 
-    .line 99
+    .line 98
     return-void
 .end method
 
@@ -246,8 +235,8 @@
     .locals 7
 
     .prologue
-    .line 104
-    const v0, 0x7f040039
+    .line 103
+    const v0, 0x7f040040
 
     const/4 v1, 0x0
 
@@ -255,34 +244,34 @@
 
     move-result-object v6
 
-    .line 106
+    .line 105
     invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v4
 
-    .line 107
+    .line 106
     const/4 v0, 0x1
 
     invoke-virtual {v4, v0}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
-    .line 109
-    invoke-static {p0, v6}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    .line 108
+    invoke-static {p0, v6}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 111
+    .line 110
     invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ch;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/app/Activity;)V
 
-    .line 112
+    .line 111
     iget-object v0, p0, Lkik/android/chat/fragment/CameraFragment;->e:Lkik/android/chat/presentation/n;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/CameraFragment;->_cameraIconBarView:Lkik/android/chat/view/k;
+    iget-object v1, p0, Lkik/android/chat/fragment/CameraFragment;->_cameraIconBarView:Lkik/android/chat/view/m;
 
-    iget-object v2, p0, Lkik/android/chat/fragment/CameraFragment;->_liveCameraContainer:Lkik/android/chat/view/q;
+    iget-object v2, p0, Lkik/android/chat/fragment/CameraFragment;->_liveCameraContainer:Lkik/android/chat/view/s;
 
-    iget-object v3, p0, Lkik/android/chat/fragment/CameraFragment;->_previewContainer:Lkik/android/chat/view/ae;
+    iget-object v3, p0, Lkik/android/chat/fragment/CameraFragment;->_previewContainer:Lkik/android/chat/view/af;
 
     new-instance v5, Lkik/android/chat/fragment/CameraFragment$a;
 
@@ -290,9 +279,9 @@
 
     move-object v4, p0
 
-    invoke-interface/range {v0 .. v5}, Lkik/android/chat/presentation/n;->a(Lkik/android/chat/view/k;Lkik/android/chat/view/q;Lkik/android/chat/view/ae;Lkik/android/chat/fragment/r;Lkik/android/chat/fragment/CameraFragment$a;)V
+    invoke-interface/range {v0 .. v5}, Lkik/android/chat/presentation/n;->a(Lkik/android/chat/view/m;Lkik/android/chat/view/s;Lkik/android/chat/view/af;Lkik/android/chat/fragment/p;Lkik/android/chat/fragment/CameraFragment$a;)V
 
-    .line 115
+    .line 114
     return-object v6
 .end method
 
@@ -300,15 +289,15 @@
     .locals 1
 
     .prologue
-    .line 130
+    .line 129
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onPause()V
 
-    .line 132
+    .line 131
     iget-object v0, p0, Lkik/android/chat/fragment/CameraFragment;->e:Lkik/android/chat/presentation/n;
 
     invoke-interface {v0}, Lkik/android/chat/presentation/n;->c()V
 
-    .line 133
+    .line 132
     return-void
 .end method
 
@@ -316,21 +305,21 @@
     .locals 1
 
     .prologue
-    .line 121
+    .line 120
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onResume()V
 
-    .line 123
+    .line 122
     invoke-virtual {p0}, Lkik/android/chat/fragment/CameraFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ch;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lkik/android/util/ca;->a(Landroid/app/Activity;)V
 
-    .line 124
+    .line 123
     iget-object v0, p0, Lkik/android/chat/fragment/CameraFragment;->e:Lkik/android/chat/presentation/n;
 
     invoke-interface {v0}, Lkik/android/chat/presentation/n;->b()V
 
-    .line 125
+    .line 124
     return-void
 .end method

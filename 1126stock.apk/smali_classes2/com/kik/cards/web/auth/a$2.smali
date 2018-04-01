@@ -56,15 +56,15 @@
 
     iget-object v1, p0, Lcom/kik/cards/web/auth/a$2;->a:Lcom/kik/cards/web/auth/a;
 
-    invoke-static {v1}, Lcom/kik/cards/web/auth/a;->b(Lcom/kik/cards/web/auth/a;)Lkik/core/interfaces/ae;
+    invoke-static {v1}, Lcom/kik/cards/web/auth/a;->b(Lcom/kik/cards/web/auth/a;)Lkik/core/interfaces/ag;
 
     move-result-object v1
 
-    invoke-interface {v1}, Lkik/core/interfaces/ae;->d()Lkik/core/datatypes/ad;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ac;
 
     move-result-object v1
 
-    iget-object v1, v1, Lkik/core/datatypes/ad;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/kik/cards/web/auth/a;->a(Lcom/kik/cards/web/auth/a;Ljava/lang/String;)V
 

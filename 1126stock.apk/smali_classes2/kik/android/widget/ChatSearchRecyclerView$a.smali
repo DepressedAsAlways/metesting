@@ -1,5 +1,5 @@
 .class public final Lkik/android/widget/ChatSearchRecyclerView$a;
-.super Lkik/android/widget/cm$c;
+.super Lkik/android/widget/dr$c;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/widget/cm$c",
+        "Lkik/android/widget/dr$c",
         "<",
         "Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel;",
         ">;"
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lkik/android/widget/cm$c;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, v0}, Lkik/android/widget/dr$c;-><init>(Landroid/view/View;)V
 
     .line 68
     return-void

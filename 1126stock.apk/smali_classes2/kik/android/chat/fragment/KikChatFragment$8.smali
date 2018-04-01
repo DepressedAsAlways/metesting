@@ -3,17 +3,29 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lcom/kik/events/e;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikChatFragment;->e()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkik/android/chat/fragment/KikChatFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/kik/events/e",
+        "<",
+        "Ljava/util/List",
+        "<",
+        "Ljava/lang/String;",
+        ">;>;"
+    }
 .end annotation
 
 
@@ -26,7 +38,7 @@
     .locals 0
 
     .prologue
-    .line 1752
+    .line 458
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,31 +48,30 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
+.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 1757
-    new-instance v0, Landroid/content/Intent;
+    .line 458
+    .line 1462
+    iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    const-string v1, "android.intent.action.VIEW"
+    iget-object v0, v0, Lkik/android/chat/fragment/KikChatFragment;->_bugmeBar:Lkik/android/widget/BugmeBarView;
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    if-eqz v0, :cond_0
 
-    .line 1758
-    const-string v1, "market://details?id=kik.android"
+    .line 1463
+    iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->m(Lkik/android/chat/fragment/KikChatFragment;)Landroid/os/Handler;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+    const/4 v1, 0x6
 
-    .line 1759
-    iget-object v1, p0, Lkik/android/chat/fragment/KikChatFragment$8;->a:Lkik/android/chat/fragment/KikChatFragment;
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikChatFragment;->startActivity(Landroid/content/Intent;)V
-
-    .line 1760
+    .line 458
+    :cond_0
     return-void
 .end method

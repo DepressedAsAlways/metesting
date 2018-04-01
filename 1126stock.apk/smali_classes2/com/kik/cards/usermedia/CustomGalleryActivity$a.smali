@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0400cd
+    const v1, 0x7f0400fc
 
     const/4 v2, 0x0
 
@@ -121,7 +121,7 @@
     invoke-direct {v2, p0}, Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;-><init>(Lcom/kik/cards/usermedia/CustomGalleryActivity$a;)V
 
     .line 318
-    const v0, 0x7f1002b8
+    const v0, 0x7f100340
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -132,7 +132,7 @@
     iput-object v0, v2, Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;->a:Landroid/widget/RelativeLayout;
 
     .line 319
-    const v0, 0x7f1002b9
+    const v0, 0x7f100341
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -143,7 +143,7 @@
     iput-object v0, v2, Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;->c:Lcom/kik/sdkutils/LazyLoadingImage;
 
     .line 320
-    const v0, 0x7f1002bb
+    const v0, 0x7f100343
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -154,7 +154,7 @@
     iput-object v0, v2, Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;->b:Landroid/widget/ImageView;
 
     .line 321
-    const v0, 0x7f1002ba
+    const v0, 0x7f100342
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -165,7 +165,7 @@
     .line 323
     const/4 v0, 0x0
 
-    iput-object v0, v2, Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;->e:Lcom/kik/cards/usermedia/h;
+    iput-object v0, v2, Lcom/kik/cards/usermedia/CustomGalleryActivity$a$a;->e:Lcom/kik/cards/usermedia/g;
 
     .line 324
     invoke-virtual {v1, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V

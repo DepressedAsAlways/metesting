@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/cc;",
+        "Lkik/android/chat/vm/dv;",
         ">;"
     }
 .end annotation
@@ -23,29 +23,18 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/c;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;"
         }
     .end annotation
 .end field
 
 .field private final c:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/cache/ae;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final d:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -84,18 +73,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/c;",
-            ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -105,10 +90,10 @@
     .end annotation
 
     .prologue
-    .line 15
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
+    .line 21
     sget-boolean v0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -121,11 +106,11 @@
 
     throw v0
 
-    .line 17
+    .line 22
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 18
+    .line 23
     sget-boolean v0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -138,43 +123,22 @@
 
     throw v0
 
-    .line 19
+    .line 24
     :cond_1
     iput-object p2, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 20
-    sget-boolean v0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->a:Z
-
-    if-nez v0, :cond_2
-
-    if-nez p3, :cond_2
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 21
-    :cond_2
-    iput-object p3, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->d:Ljavax/inject/Provider;
-
-    .line 22
+    .line 25
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/c;",
-            ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -182,16 +146,16 @@
             ">;)",
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/cc;",
+            "Lkik/android/chat/vm/dv;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 35
+    .line 29
     new-instance v0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1, p2}, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -203,12 +167,12 @@
 
     .prologue
     .line 9
-    check-cast p1, Lkik/android/chat/vm/cc;
+    check-cast p1, Lkik/android/chat/vm/dv;
 
-    .line 1026
+    .line 1035
     if-nez p1, :cond_0
 
-    .line 1027
+    .line 1036
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -217,25 +181,20 @@
 
     throw v0
 
-    .line 1029
+    .line 1038
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->b:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1030
-    iget-object v0, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->c:Ljavax/inject/Provider;
+    iget-object v0, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/cache/ae;
+    check-cast v0, Lcom/kik/cache/KikVolleyImageLoader;
 
-    iput-object v0, p1, Lkik/android/chat/vm/cc;->a:Lcom/kik/cache/ae;
+    iput-object v0, p1, Lkik/android/chat/vm/dv;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
-    .line 1031
-    iget-object v0, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->d:Ljavax/inject/Provider;
+    .line 1039
+    iget-object v0, p0, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -243,7 +202,7 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/chat/vm/cc;->b:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/chat/vm/dv;->b:Landroid/content/res/Resources;
 
     .line 9
     return-void

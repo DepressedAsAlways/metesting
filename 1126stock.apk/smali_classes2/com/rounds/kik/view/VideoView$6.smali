@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 206
+    .line 201
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$6;->a:Lcom/rounds/kik/view/VideoView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,40 +37,37 @@
 
 # virtual methods
 .method public final onGlobalLayout()V
-    .locals 2
+    .locals 1
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0x10
+    .end annotation
 
     .prologue
-    .line 210
+    .line 206
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$6;->a:Lcom/rounds/kik/view/VideoView;
 
-    # getter for: Lcom/rounds/kik/view/VideoView;->mNeedRefresh:Z
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$1500(Lcom/rounds/kik/view/VideoView;)Z
+    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->getHeight()I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-lez v0, :cond_0
 
-    .line 211
+    .line 207
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$6;->a:Lcom/rounds/kik/view/VideoView;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
-    # setter for: Lcom/rounds/kik/view/VideoView;->mNeedRefresh:Z
-    invoke-static {v0, v1}, Lcom/rounds/kik/view/VideoView;->access$1502(Lcom/rounds/kik/view/VideoView;Z)Z
+    move-result-object v0
 
-    .line 212
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    .line 208
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$6;->a:Lcom/rounds/kik/view/VideoView;
 
-    iget-object v1, p0, Lcom/rounds/kik/view/VideoView$6;->a:Lcom/rounds/kik/view/VideoView;
+    # invokes: Lcom/rounds/kik/view/VideoView;->reportOnViewAdded()V
+    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$1400(Lcom/rounds/kik/view/VideoView;)V
 
-    # getter for: Lcom/rounds/kik/view/VideoView;->mBubblesVideoSurface:Lcom/rounds/kik/view/VideoSurface;
-    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$200(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoSurface;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoView;->refreshVideoSurfaceView(Lcom/rounds/kik/view/VideoSurface;)V
-
-    .line 214
+    .line 210
     :cond_0
     return-void
 .end method

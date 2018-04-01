@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$a;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/c$a",
+        "Lrx/d$a",
         "<TT;>;"
     }
 .end annotation
@@ -65,16 +65,16 @@
 
     .prologue
     .line 129
-    check-cast p1, Lrx/i;
+    check-cast p1, Lrx/j;
 
     .line 1138
     iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$a;->a:Ljava/lang/Object;
 
-    invoke-static {p1, v0}, Lrx/internal/util/ScalarSynchronousObservable;->a(Lrx/i;Ljava/lang/Object;)Lrx/e;
+    invoke-static {p1, v0}, Lrx/internal/util/ScalarSynchronousObservable;->a(Lrx/j;Ljava/lang/Object;)Lrx/f;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lrx/i;->a(Lrx/e;)V
+    invoke-virtual {p1, v0}, Lrx/j;->a(Lrx/f;)V
 
     .line 129
     return-void

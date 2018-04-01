@@ -14,7 +14,7 @@
 # instance fields
 .field private volatile a:Z
 
-.field b:Lkik/core/interfaces/l;
+.field b:Lkik/core/interfaces/k;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field

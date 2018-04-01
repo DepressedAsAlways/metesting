@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 260
+    .line 238
     invoke-direct {p0}, Lcom/google/gson/o;-><init>()V
 
     return-void
@@ -43,7 +43,7 @@
     .end annotation
 
     .prologue
-    .line 263
+    .line 241
     :try_start_0
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -57,11 +57,11 @@
 
     return-object v0
 
-    .line 264
+    .line 242
     :catch_0
     move-exception v0
 
-    .line 265
+    .line 243
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v1, v0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -80,7 +80,7 @@
     .end annotation
 
     .prologue
-    .line 260
+    .line 238
     invoke-static {p1}, Lcom/google/gson/internal/bind/i$28;->b(Lcom/google/gson/stream/a;)Ljava/util/concurrent/atomic/AtomicInteger;
 
     move-result-object v0
@@ -97,10 +97,10 @@
     .end annotation
 
     .prologue
-    .line 260
+    .line 238
     check-cast p2, Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 1269
+    .line 1247
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     move-result v0
@@ -109,6 +109,6 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/gson/stream/b;->a(J)Lcom/google/gson/stream/b;
 
-    .line 260
+    .line 238
     return-void
 .end method

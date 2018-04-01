@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 239
+    .line 217
     invoke-direct {p0}, Lcom/google/gson/o;-><init>()V
 
     return-void
@@ -43,7 +43,7 @@
     .end annotation
 
     .prologue
-    .line 242
+    .line 220
     invoke-virtual {p0}, Lcom/google/gson/stream/a;->f()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
@@ -52,13 +52,13 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 243
+    .line 221
     invoke-virtual {p0}, Lcom/google/gson/stream/a;->j()V
 
-    .line 244
+    .line 222
     const/4 v0, 0x0
 
-    .line 247
+    .line 225
     :goto_0
     return-object v0
 
@@ -76,11 +76,11 @@
 
     goto :goto_0
 
-    .line 248
+    .line 226
     :catch_0
     move-exception v0
 
-    .line 249
+    .line 227
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v1, v0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -99,7 +99,7 @@
     .end annotation
 
     .prologue
-    .line 239
+    .line 217
     invoke-static {p1}, Lcom/google/gson/internal/bind/i$27;->b(Lcom/google/gson/stream/a;)Ljava/lang/Number;
 
     move-result-object v0
@@ -116,12 +116,12 @@
     .end annotation
 
     .prologue
-    .line 239
+    .line 217
     check-cast p2, Ljava/lang/Number;
 
-    .line 1254
+    .line 1232
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/b;->a(Ljava/lang/Number;)Lcom/google/gson/stream/b;
 
-    .line 239
+    .line 217
     return-void
 .end method

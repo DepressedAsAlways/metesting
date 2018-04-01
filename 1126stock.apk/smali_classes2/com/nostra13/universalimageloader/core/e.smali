@@ -41,9 +41,9 @@
 
 .field final m:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
-.field final n:Lcom/nostra13/universalimageloader/a/b/a;
+.field final n:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
-.field final o:Lcom/nostra13/universalimageloader/a/a/a;
+.field final o:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
 .field final p:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
@@ -146,18 +146,18 @@
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e;->m:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     .line 90
-    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/e$a;->l(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/a/a/a;
+    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/e$a;->l(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e;->o:Lcom/nostra13/universalimageloader/a/a/a;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e;->o:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     .line 91
-    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/e$a;->m(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/a/b/a;
+    invoke-static {p1}, Lcom/nostra13/universalimageloader/core/e$a;->m(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e;->n:Lcom/nostra13/universalimageloader/a/b/a;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e;->n:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     .line 92
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/e$a;->n(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/core/c;
@@ -217,7 +217,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/nostra13/universalimageloader/b/c;->a(Z)V
+    invoke-static {v0}, Lcom/nostra13/universalimageloader/a/c;->a(Z)V
 
     .line 103
     return-void

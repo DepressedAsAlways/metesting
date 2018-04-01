@@ -54,7 +54,7 @@
 
     const/4 v2, 0x0
 
-    .line 2566
+    .line 3105
     new-instance v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     const-string v1, "PIC"
@@ -63,7 +63,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->PIC:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
-    .line 2567
+    .line 3106
     new-instance v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     const-string v1, "KIK_ASSET"
@@ -72,7 +72,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->KIK_ASSET:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
-    .line 2568
+    .line 3107
     new-instance v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     const-string v1, "KIND_NOT_SET"
@@ -81,7 +81,7 @@
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->KIND_NOT_SET:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
-    .line 2564
+    .line 3103
     new-array v0, v5, [Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     sget-object v1, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->PIC:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
@@ -110,13 +110,13 @@
     .end annotation
 
     .prologue
-    .line 2570
+    .line 3109
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2571
+    .line 3110
     iput p3, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->value:I
 
-    .line 2572
+    .line 3111
     return-void
 .end method
 
@@ -124,35 +124,35 @@
     .locals 1
 
     .prologue
-    .line 2582
+    .line 3121
     packed-switch p0, :pswitch_data_0
 
-    .line 2586
+    .line 3125
     :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return-object v0
 
-    .line 2583
+    .line 3122
     :pswitch_1
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->PIC:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     goto :goto_0
 
-    .line 2584
+    .line 3123
     :pswitch_2
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->KIK_ASSET:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     goto :goto_0
 
-    .line 2585
+    .line 3124
     :pswitch_3
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->KIND_NOT_SET:Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     goto :goto_0
 
-    .line 2582
+    .line 3121
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_3
@@ -168,7 +168,7 @@
     .end annotation
 
     .prologue
-    .line 2578
+    .line 3117
     invoke-static {p0}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->forNumber(I)Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     move-result-object v0
@@ -180,7 +180,7 @@
     .locals 1
 
     .prologue
-    .line 2564
+    .line 3103
     const-class v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -196,7 +196,7 @@
     .locals 1
 
     .prologue
-    .line 2564
+    .line 3103
     sget-object v0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->$VALUES:[Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     invoke-virtual {v0}, [Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->clone()Ljava/lang/Object;
@@ -214,7 +214,7 @@
     .locals 1
 
     .prologue
-    .line 2590
+    .line 3129
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->value:I
 
     return v0

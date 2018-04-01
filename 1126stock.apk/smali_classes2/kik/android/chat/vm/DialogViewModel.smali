@@ -1,5 +1,5 @@
 .class public Lkik/android/chat/vm/DialogViewModel;
-.super Lkik/android/chat/vm/c;
+.super Lkik/android/chat/vm/e;
 .source "SourceFile"
 
 
@@ -48,7 +48,7 @@
 
     .prologue
     .line 11
-    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/e;-><init>()V
 
     .line 181
     new-instance v0, Ljava/util/ArrayList;
@@ -88,6 +88,16 @@
     iput-object p1, p0, Lkik/android/chat/vm/DialogViewModel;->a:Ljava/lang/String;
 
     return-object p1
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/DialogViewModel;)Ljava/util/List;
+    .locals 1
+
+    .prologue
+    .line 11
+    iget-object v0, p0, Lkik/android/chat/vm/DialogViewModel;->f:Ljava/util/List;
+
+    return-object v0
 .end method
 
 .method static synthetic a(Lkik/android/chat/vm/DialogViewModel;Lkik/android/chat/vm/DialogViewModel$DialogStyle;)Lkik/android/chat/vm/DialogViewModel$DialogStyle;
@@ -148,16 +158,14 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lkik/android/chat/vm/DialogViewModel;)Z
-    .locals 1
+.method static synthetic a(Lkik/android/chat/vm/DialogViewModel;Z)Z
+    .locals 0
 
     .prologue
     .line 11
-    const/4 v0, 0x1
+    iput-boolean p1, p0, Lkik/android/chat/vm/DialogViewModel;->c:Z
 
-    iput-boolean v0, p0, Lkik/android/chat/vm/DialogViewModel;->c:Z
-
-    return v0
+    return p1
 .end method
 
 .method static synthetic b(Lkik/android/chat/vm/DialogViewModel;Ljava/lang/String;)Ljava/lang/String;
@@ -168,16 +176,6 @@
     iput-object p1, p0, Lkik/android/chat/vm/DialogViewModel;->b:Ljava/lang/String;
 
     return-object p1
-.end method
-
-.method static synthetic b(Lkik/android/chat/vm/DialogViewModel;)Ljava/util/List;
-    .locals 1
-
-    .prologue
-    .line 11
-    iget-object v0, p0, Lkik/android/chat/vm/DialogViewModel;->f:Ljava/util/List;
-
-    return-object v0
 .end method
 
 .method static synthetic b(Lkik/android/chat/vm/DialogViewModel;Lkik/android/chat/vm/DialogViewModel$a;)Lkik/android/chat/vm/DialogViewModel$a;
@@ -192,7 +190,7 @@
 
 
 # virtual methods
-.method public final D_()Lkik/android/chat/vm/DialogViewModel$DialogStyle;
+.method public final E_()Lkik/android/chat/vm/DialogViewModel$DialogStyle;
     .locals 1
 
     .prologue
@@ -202,7 +200,7 @@
     return-object v0
 .end method
 
-.method public final F_()Ljava/lang/String;
+.method public H_()Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -222,7 +220,7 @@
     return-object v0
 .end method
 
-.method public final d()Z
+.method public d()Z
     .locals 1
 
     .prologue
@@ -242,7 +240,7 @@
     return-object v0
 .end method
 
-.method public final h()Lkik/android/chat/vm/DialogViewModel$a;
+.method public final g()Lkik/android/chat/vm/DialogViewModel$a;
     .locals 1
 
     .prologue

@@ -49,7 +49,7 @@
 
     iget-object v0, v0, Lcom/nostra13/universalimageloader/core/f;->a:Lcom/nostra13/universalimageloader/core/e;
 
-    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/e;->o:Lcom/nostra13/universalimageloader/a/a/a;
+    iget-object v0, v0, Lcom/nostra13/universalimageloader/core/e;->o:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/f$1;->a:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 
@@ -57,7 +57,7 @@
     iget-object v1, v1, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->a:Ljava/lang/String;
 
     .line 72
-    invoke-interface {v0, v1}, Lcom/nostra13/universalimageloader/a/a/a;->a(Ljava/lang/String;)Ljava/io/File;
+    invoke-interface {v0, v1}, Lcom/nostra13/universalimageloader/cache/disc/DiskCache;->get(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 

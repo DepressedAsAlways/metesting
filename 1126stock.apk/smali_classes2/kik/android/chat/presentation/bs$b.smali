@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field private final b:Lkik/android/chat/view/ac;
+.field private final b:Lkik/android/chat/view/ad;
 
 .field private final c:Lkik/android/challenge/PhoneVerificationNetworkProvider;
 
@@ -43,7 +43,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkik/android/chat/view/ac;Lkik/android/challenge/PhoneVerificationNetworkProvider;)V
+.method public constructor <init>(Lkik/android/chat/view/ad;Lkik/android/challenge/PhoneVerificationNetworkProvider;)V
     .locals 0
 
     .prologue
@@ -51,7 +51,7 @@
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
     .line 53
-    iput-object p1, p0, Lkik/android/chat/presentation/bs$b;->b:Lkik/android/chat/view/ac;
+    iput-object p1, p0, Lkik/android/chat/presentation/bs$b;->b:Lkik/android/chat/view/ad;
 
     .line 54
     iput-object p2, p0, Lkik/android/chat/presentation/bs$b;->c:Lkik/android/challenge/PhoneVerificationNetworkProvider;
@@ -70,12 +70,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ac;
+.method static synthetic b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ad;
     .locals 1
 
     .prologue
     .line 43
-    iget-object v0, p0, Lkik/android/chat/presentation/bs$b;->b:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs$b;->b:Lkik/android/chat/view/ad;
 
     return-object v0
 .end method
@@ -87,7 +87,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lkik/android/chat/presentation/bs$b;->b:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs$b;->b:Lkik/android/chat/view/ad;
 
     if-eqz v0, :cond_0
 

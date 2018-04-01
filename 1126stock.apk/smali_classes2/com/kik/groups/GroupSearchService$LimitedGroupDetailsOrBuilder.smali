@@ -42,6 +42,9 @@
 .method public abstract getLastActivityTimeOrBuilder()Lcom/google/protobuf/TimestampOrBuilder;
 .end method
 
+.method public abstract getMaxGroupSize()I
+.end method
+
 .method public abstract getMemberCount()I
 .end method
 

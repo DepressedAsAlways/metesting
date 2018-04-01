@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lrx/internal/operators/w",
-            "<*>;"
+            "<**>;"
         }
     .end annotation
 .end field
@@ -27,13 +27,17 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 37
+    .line 35
     new-instance v0, Lrx/internal/operators/w;
 
-    invoke-direct {v0}, Lrx/internal/operators/w;-><init>()V
+    invoke-static {}, Lrx/internal/util/UtilityFunctions;->b()Lrx/functions/g;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lrx/internal/operators/w;-><init>(Lrx/functions/g;)V
 
     sput-object v0, Lrx/internal/operators/w$a;->a:Lrx/internal/operators/w;
 

@@ -352,7 +352,7 @@
 
 
 # virtual methods
-.method public installRemoteAssets(ILjava/lang/String;Ljava/lang/String;)Lrx/c;
+.method public installRemoteAssets(ILjava/lang/String;Ljava/lang/String;)Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -360,7 +360,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Lcom/rounds/kik/remoteassets/RemoteAssetsManager$InstallResult;",
             ">;"
@@ -373,16 +373,16 @@
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/rounds/kik/remoteassets/RemoteAssetsManager$1;-><init>(Lcom/rounds/kik/remoteassets/RemoteAssetsManager;ILjava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lrx/c;->a(Ljava/util/concurrent/Callable;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->a(Ljava/util/concurrent/Callable;)Lrx/d;
 
     move-result-object v0
 
     .line 78
-    invoke-static {}, Lrx/f/a;->c()Lrx/f;
+    invoke-static {}, Lrx/e/a;->e()Lrx/g;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lrx/c;->b(Lrx/f;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/g;)Lrx/d;
 
     move-result-object v0
 

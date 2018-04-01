@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/b;
+.implements Lrx/functions/b;
 
 
 # annotations
@@ -19,9 +19,9 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/b/b",
+        "Lrx/functions/b",
         "<",
-        "Lrx/subjects/b",
+        "Lrx/subjects/c",
         "<TV;TV;>;>;"
     }
 .end annotation
@@ -38,7 +38,7 @@
     .locals 0
 
     .prologue
-    .line 196
+    .line 218
     iput-object p1, p0, Lcom/github/a/a/a$1;->b:Lcom/github/a/a/a;
 
     iput-object p2, p0, Lcom/github/a/a/a$1;->a:Ljava/lang/Object;
@@ -54,14 +54,14 @@
     .locals 1
 
     .prologue
-    .line 196
-    check-cast p1, Lrx/subjects/b;
+    .line 218
+    check-cast p1, Lrx/subjects/c;
 
-    .line 1200
+    .line 1222
     iget-object v0, p0, Lcom/github/a/a/a$1;->a:Ljava/lang/Object;
 
-    invoke-virtual {p1, v0}, Lrx/subjects/b;->a(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Lrx/subjects/c;->a(Ljava/lang/Object;)V
 
-    .line 196
+    .line 218
     return-void
 .end method

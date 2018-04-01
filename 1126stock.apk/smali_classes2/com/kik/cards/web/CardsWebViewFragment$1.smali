@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 220
+    .line 222
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$1;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,10 +40,10 @@
     .locals 3
 
     .prologue
-    .line 225
+    .line 227
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$1;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/CardsWebViewFragment;)Landroid/support/v4/app/FragmentActivity;
+    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->b(Lcom/kik/cards/web/CardsWebViewFragment;)Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
@@ -51,25 +51,25 @@
 
     move-result-object v1
 
-    .line 226
+    .line 228
     invoke-virtual {v1}, Landroid/support/v4/app/FragmentManager;->getBackStackEntryCount()I
 
     move-result v2
 
-    .line 228
+    .line 230
     const/4 v0, 0x0
 
-    .line 230
+    .line 232
     if-lez v2, :cond_0
 
-    .line 231
+    .line 233
     add-int/lit8 v0, v2, -0x1
 
     invoke-virtual {v1, v0}, Landroid/support/v4/app/FragmentManager;->getBackStackEntryAt(I)Landroid/support/v4/app/FragmentManager$BackStackEntry;
 
     move-result-object v0
 
-    .line 234
+    .line 236
     :cond_0
     if-eqz v0, :cond_1
 
@@ -85,26 +85,26 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 235
+    .line 237
     :cond_1
-    invoke-static {}, Lcom/kik/cards/web/CardsWebViewFragment;->r()Lorg/slf4j/b;
+    invoke-static {}, Lcom/kik/cards/web/CardsWebViewFragment;->n()Lorg/slf4j/b;
 
-    .line 236
+    .line 238
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$1;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->b(Z)V
 
-    .line 242
+    .line 244
     :goto_0
     return-void
 
-    .line 239
+    .line 241
     :cond_2
-    invoke-static {}, Lcom/kik/cards/web/CardsWebViewFragment;->r()Lorg/slf4j/b;
+    invoke-static {}, Lcom/kik/cards/web/CardsWebViewFragment;->n()Lorg/slf4j/b;
 
-    .line 240
+    .line 242
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$1;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     const/4 v1, 0x1

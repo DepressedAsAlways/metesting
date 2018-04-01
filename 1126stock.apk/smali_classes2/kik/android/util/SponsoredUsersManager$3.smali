@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/android/volley/i$a;
+.implements Lcom/android/volley/h$a;
 
 
 # annotations
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 192
+    .line 196
     iput-object p1, p0, Lkik/android/util/SponsoredUsersManager$3;->b:Lkik/android/util/SponsoredUsersManager;
 
     iput-object p2, p0, Lkik/android/util/SponsoredUsersManager$3;->a:Lkik/android/util/SponsoredUsersManager$PromotionType;
@@ -44,7 +44,7 @@
     .locals 2
 
     .prologue
-    .line 196
+    .line 200
     iget-object v0, p0, Lkik/android/util/SponsoredUsersManager$3;->b:Lkik/android/util/SponsoredUsersManager;
 
     invoke-static {v0}, Lkik/android/util/SponsoredUsersManager;->a(Lkik/android/util/SponsoredUsersManager;)Ljava/util/EnumMap;
@@ -63,9 +63,9 @@
 
     iput-object v1, v0, Lkik/android/util/SponsoredUsersManager$PromotionData;->d:Lkik/android/util/SponsoredUsersManager$PromotionData$FetchState;
 
-    .line 197
+    .line 201
     invoke-virtual {p1}, Lcom/android/volley/VolleyError;->printStackTrace()V
 
-    .line 198
+    .line 202
     return-void
 .end method

@@ -40,7 +40,7 @@
     .line 1127
     iget-object v0, p0, Lkik/android/chat/view/ValidateableInputView$5;->a:Lkik/android/chat/view/ValidateableInputView;
 
-    invoke-static {v0}, Lkik/android/chat/view/ValidateableInputView;->a(Lkik/android/chat/view/ValidateableInputView;)V
+    invoke-static {v0}, Lkik/android/chat/view/ValidateableInputView;->c(Lkik/android/chat/view/ValidateableInputView;)V
 
     .line 1128
     return-void

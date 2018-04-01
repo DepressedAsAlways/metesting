@@ -1,5 +1,5 @@
 .class public final Lkik/android/chat/vm/conversations/emptyview/a;
-.super Lkik/android/chat/vm/c;
+.super Lkik/android/chat/vm/e;
 .source "SourceFile"
 
 # interfaces
@@ -19,7 +19,7 @@
 
     .prologue
     .line 17
-    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/e;-><init>()V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
     .line 34
-    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/emptyview/a;->Y_()Lkik/android/chat/vm/z;
+    invoke-virtual {p0}, Lkik/android/chat/vm/conversations/emptyview/a;->F_()Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
@@ -56,18 +56,18 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/vm/conversations/emptyview/a$1;-><init>(Lkik/android/chat/vm/conversations/emptyview/a;)V
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/z;->a(Lkik/android/chat/vm/r;)Lrx/c;
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/am;)Lrx/d;
 
     .line 42
     return-void
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
     .line 24
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 25
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/conversations/emptyview/a;)V

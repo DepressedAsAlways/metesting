@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ch;->b(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -74,7 +74,7 @@
 
     const/16 v1, 0x12c
 
-    invoke-static {v0, v1}, Lkik/android/util/as;->b(Landroid/view/View;I)V
+    invoke-static {v0, v1}, Lkik/android/util/an;->b(Landroid/view/View;I)V
 
     .line 76
     :cond_0

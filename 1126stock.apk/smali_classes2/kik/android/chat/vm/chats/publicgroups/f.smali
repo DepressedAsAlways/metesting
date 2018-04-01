@@ -3,29 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel;
+.implements Lkik/android/chat/vm/at;
 
 
 # virtual methods
-.method public abstract R_()Ljava/lang/String;
+.method public abstract b()V
 .end method
 
-.method public abstract S_()Ljava/lang/CharSequence;
+.method public abstract d()Ljava/lang/String;
 .end method
 
-.method public abstract h()Ljava/lang/String;
-.end method
-
-.method public abstract i()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Lkik/core/interfaces/p",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;>;"
-        }
-    .end annotation
+.method public abstract e()I
 .end method

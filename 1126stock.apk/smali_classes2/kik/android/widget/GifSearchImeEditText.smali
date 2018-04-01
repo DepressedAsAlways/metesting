@@ -39,19 +39,17 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/gifs/vm/bq;Z)V
+.method static synthetic a(Lkik/android/gifs/vm/br;Z)V
     .locals 0
 
     .prologue
-    .line 0
-    .line 1021
-    invoke-interface {p0, p1}, Lkik/android/gifs/vm/bq;->a(Z)V
+    .line 21
+    invoke-interface {p0, p1}, Lkik/android/gifs/vm/br;->a(Z)V
 
-    .line 0
     return-void
 .end method
 
-.method public static a(Lkik/android/widget/GifSearchImeEditText;Lkik/android/gifs/vm/bq;)V
+.method public static a(Lkik/android/widget/GifSearchImeEditText;Lkik/android/gifs/vm/br;)V
     .locals 1
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -70,7 +68,7 @@
     invoke-virtual {p0, p1}, Lkik/android/widget/GifSearchImeEditText;->a(Lkik/android/widget/ImeAwareEditText$b;)V
 
     .line 21
-    invoke-static {p1}, Lkik/android/widget/ak;->a(Lkik/android/gifs/vm/bq;)Landroid/view/View$OnFocusChangeListener;
+    invoke-static {p1}, Lkik/android/widget/bj;->a(Lkik/android/gifs/vm/br;)Landroid/view/View$OnFocusChangeListener;
 
     move-result-object v0
 

@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Ldagger/b",
         "<",
-        "Lkik/android/gallery/vm/j;",
+        "Lkik/android/gallery/vm/k;",
         ">;"
     }
 .end annotation
@@ -23,20 +23,7 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/b",
-            "<",
-            "Lkik/android/gallery/vm/m;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private final c:Ljavax/inject/Provider;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -47,12 +34,23 @@
     .end annotation
 .end field
 
-.field private final d:Ljavax/inject/Provider;
+.field private final c:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
             "Landroid/content/res/Resources;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final d:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/rounds/kik/analytics/IReporter;",
             ">;"
         }
     .end annotation
@@ -86,17 +84,11 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/b",
-            "<",
-            "Lkik/android/gallery/vm/m;",
-            ">;>;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
@@ -104,15 +96,19 @@
             "Ljavax/inject/Provider",
             "<",
             "Landroid/content/res/Resources;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/rounds/kik/analytics/IReporter;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 16
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 17
+    .line 26
     sget-boolean v0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -125,11 +121,11 @@
 
     throw v0
 
-    .line 18
+    .line 27
     :cond_0
-    iput-object p1, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 19
+    .line 28
     sget-boolean v0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -142,11 +138,11 @@
 
     throw v0
 
-    .line 20
+    .line 29
     :cond_1
     iput-object p2, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 21
+    .line 30
     sget-boolean v0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -159,25 +155,19 @@
 
     throw v0
 
-    .line 22
+    .line 31
     :cond_2
     iput-object p3, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 23
+    .line 32
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/b",
-            "<",
-            "Lkik/android/gallery/vm/m;",
-            ">;>;",
             "Ljavax/inject/Provider",
             "<",
             "Lcom/kik/android/Mixpanel;",
@@ -185,19 +175,23 @@
             "Ljavax/inject/Provider",
             "<",
             "Landroid/content/res/Resources;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/rounds/kik/analytics/IReporter;",
             ">;)",
             "Ldagger/b",
             "<",
-            "Lkik/android/gallery/vm/j;",
+            "Lkik/android/gallery/vm/k;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 36
+    .line 38
     new-instance v0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1, p2}, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1, p2}, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -209,12 +203,12 @@
 
     .prologue
     .line 10
-    check-cast p1, Lkik/android/gallery/vm/j;
+    check-cast p1, Lkik/android/gallery/vm/k;
 
-    .line 1027
+    .line 1044
     if-nez p1, :cond_0
 
-    .line 1028
+    .line 1045
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -223,14 +217,9 @@
 
     throw v0
 
-    .line 1030
+    .line 1047
     :cond_0
-    iget-object v0, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->b:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1031
-    iget-object v0, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->c:Ljavax/inject/Provider;
+    iget-object v0, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -238,10 +227,10 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/gallery/vm/j;->a:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/gallery/vm/k;->a:Lcom/kik/android/Mixpanel;
 
-    .line 1032
-    iget-object v0, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->d:Ljavax/inject/Provider;
+    .line 1048
+    iget-object v0, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -249,7 +238,18 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/gallery/vm/j;->b:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/gallery/vm/k;->b:Landroid/content/res/Resources;
+
+    .line 1049
+    iget-object v0, p0, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->d:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/rounds/kik/analytics/IReporter;
+
+    iput-object v0, p1, Lkik/android/gallery/vm/k;->c:Lcom/rounds/kik/analytics/IReporter;
 
     .line 10
     return-void

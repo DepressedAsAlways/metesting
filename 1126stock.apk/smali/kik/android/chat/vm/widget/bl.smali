@@ -1,25 +1,25 @@
 .class public final Lkik/android/chat/vm/widget/bl;
-.super Lkik/android/chat/vm/b;
+.super Lkik/android/chat/vm/c;
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/aj;
+.implements Lkik/android/chat/vm/bl;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/chat/vm/b",
+        "Lkik/android/chat/vm/c",
         "<",
         "Lkik/android/chat/vm/widget/ac;",
         ">;",
-        "Lkik/android/chat/vm/aj;"
+        "Lkik/android/chat/vm/bl;"
     }
 .end annotation
 
 
 # instance fields
-.field protected a:Lkik/core/interfaces/aa;
+.field protected a:Lkik/core/interfaces/ab;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -46,7 +46,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lkik/core/datatypes/aa;",
+            "Lkik/core/datatypes/z;",
             ">;"
         }
     .end annotation
@@ -59,7 +59,7 @@
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lkik/android/chat/vm/b;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
 
     .line 22
     new-instance v0, Ljava/lang/Object;
@@ -129,16 +129,16 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/aa;",
+            "Lkik/core/datatypes/z;",
             ">;"
         }
     .end annotation
 
     .prologue
     .line 66
-    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
-    invoke-interface {v0}, Lkik/core/interfaces/aa;->i()Ljava/util/List;
+    invoke-interface {v0}, Lkik/core/interfaces/ab;->i()Ljava/util/List;
 
     move-result-object v0
 
@@ -147,9 +147,9 @@
     move-result v0
 
     .line 67
-    iget-object v1, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
-    invoke-interface {v1}, Lkik/core/interfaces/aa;->i()Ljava/util/List;
+    invoke-interface {v1}, Lkik/core/interfaces/ab;->i()Ljava/util/List;
 
     move-result-object v1
 
@@ -164,7 +164,7 @@
 
 
 # virtual methods
-.method protected final synthetic a(I)Lkik/android/chat/vm/u;
+.method protected final synthetic a(I)Lkik/android/chat/vm/at;
     .locals 2
 
     .prologue
@@ -178,10 +178,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/aa;
+    check-cast v0, Lkik/core/datatypes/z;
 
     .line 1087
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->i()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->i()Z
 
     move-result v1
 
@@ -189,7 +189,7 @@
 
     new-instance v1, Lkik/android/chat/vm/widget/be;
 
-    invoke-direct {v1, v0, p0}, Lkik/android/chat/vm/widget/be;-><init>(Lkik/core/datatypes/aa;Lkik/android/chat/vm/aj;)V
+    invoke-direct {v1, v0, p0}, Lkik/android/chat/vm/widget/be;-><init>(Lkik/core/datatypes/z;Lkik/android/chat/vm/bl;)V
 
     move-object v0, v1
 
@@ -199,7 +199,7 @@
     :cond_0
     new-instance v1, Lkik/android/chat/vm/widget/bg;
 
-    invoke-direct {v1, v0, p0}, Lkik/android/chat/vm/widget/bg;-><init>(Lkik/core/datatypes/aa;Lkik/android/chat/vm/aj;)V
+    invoke-direct {v1, v0, p0}, Lkik/android/chat/vm/widget/bg;-><init>(Lkik/core/datatypes/z;Lkik/android/chat/vm/bl;)V
 
     move-object v0, v1
 
@@ -207,7 +207,7 @@
     goto :goto_0
 .end method
 
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -215,13 +215,13 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/bl;)V
 
     .line 40
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/b;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 41
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/aa;)V
+.method public final a(Lkik/core/datatypes/z;)V
     .locals 2
 
     .prologue
@@ -267,10 +267,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/aa;
+    check-cast v0, Lkik/core/datatypes/z;
 
     .line 162
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->b(Lkik/core/datatypes/aa;)V
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->b(Lkik/core/datatypes/z;)V
 
     goto :goto_0
 .end method
@@ -280,9 +280,9 @@
 
     .prologue
     .line 201
-    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
-    invoke-interface {v0}, Lkik/core/interfaces/aa;->j()Ljava/util/List;
+    invoke-interface {v0}, Lkik/core/interfaces/ab;->j()Ljava/util/List;
 
     move-result-object v0
 
@@ -322,12 +322,51 @@
     goto :goto_0
 .end method
 
-.method public final b(Lkik/core/datatypes/aa;)V
+.method public final al_()V
+    .locals 2
+
+    .prologue
+    .line 46
+    .line 1057
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->i:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    .line 1058
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge v0, v1, :cond_0
+
+    .line 1059
+    invoke-virtual {p0}, Lkik/android/chat/vm/widget/bl;->aK_()V
+
+    .line 1058
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 1061
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
+
+    invoke-interface {v0}, Lkik/core/interfaces/ab;->h()V
+
+    .line 47
+    invoke-super {p0}, Lkik/android/chat/vm/c;->al_()V
+
+    .line 48
+    return-void
+.end method
+
+.method public final b(Lkik/core/datatypes/z;)V
     .locals 4
 
     .prologue
     .line 167
-    invoke-virtual {p1}, Lkik/core/datatypes/aa;->i()Z
+    invoke-virtual {p1}, Lkik/core/datatypes/z;->i()Z
 
     move-result v0
 
@@ -336,7 +375,7 @@
     const-string v0, "Sticker Pack Removed"
 
     :goto_0
-    invoke-virtual {p1}, Lkik/core/datatypes/aa;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lkik/core/datatypes/z;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -358,7 +397,7 @@
     move-result v2
 
     .line 171
-    invoke-virtual {p0, v2}, Lkik/android/chat/vm/widget/bl;->d(I)Lkik/android/chat/vm/u;
+    invoke-virtual {p0, v2}, Lkik/android/chat/vm/widget/bl;->d(I)Lkik/android/chat/vm/at;
 
     move-result-object v0
 
@@ -369,9 +408,9 @@
     invoke-interface {v0, v3}, Lkik/android/chat/vm/widget/ac;->a(Z)V
 
     .line 173
-    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
-    invoke-interface {v0, p1}, Lkik/core/interfaces/aa;->b(Lkik/core/datatypes/aa;)V
+    invoke-interface {v0, p1}, Lkik/core/interfaces/ab;->b(Lkik/core/datatypes/z;)V
 
     .line 175
     invoke-direct {p0}, Lkik/android/chat/vm/widget/bl;->j()Ljava/util/List;
@@ -389,7 +428,7 @@
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->b(I)V
 
     .line 181
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->d(I)Lkik/android/chat/vm/u;
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->d(I)Lkik/android/chat/vm/at;
 
     move-result-object v0
 
@@ -424,45 +463,6 @@
     throw v0
 .end method
 
-.method public final c()V
-    .locals 2
-
-    .prologue
-    .line 46
-    .line 1057
-    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->i:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    .line 1058
-    const/4 v0, 0x0
-
-    :goto_0
-    if-ge v0, v1, :cond_0
-
-    .line 1059
-    invoke-virtual {p0}, Lkik/android/chat/vm/widget/bl;->aK_()V
-
-    .line 1058
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 1061
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
-
-    invoke-interface {v0}, Lkik/core/interfaces/aa;->h()V
-
-    .line 47
-    invoke-super {p0}, Lkik/android/chat/vm/b;->c()V
-
-    .line 48
-    return-void
-.end method
-
 .method public final c(II)V
     .locals 5
 
@@ -490,13 +490,13 @@
 
     .line 111
     :try_start_0
-    iget-object v2, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
     add-int/lit8 v3, p1, 0x1
 
     add-int/lit8 v4, v0, 0x1
 
-    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/aa;->a(II)V
+    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/ab;->a(II)V
 
     .line 112
     invoke-virtual {p0, p1, v0}, Lkik/android/chat/vm/widget/bl;->b(II)V
@@ -521,13 +521,13 @@
     add-int/lit8 v0, p1, -0x1
 
     .line 119
-    iget-object v2, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
     add-int/lit8 v3, p1, 0x1
 
     add-int/lit8 v4, v0, 0x1
 
-    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/aa;->a(II)V
+    invoke-interface {v2, v3, v4}, Lkik/core/interfaces/ab;->a(II)V
 
     .line 120
     invoke-virtual {p0, p1, v0}, Lkik/android/chat/vm/widget/bl;->b(II)V
@@ -553,14 +553,14 @@
     throw v0
 .end method
 
-.method public final c(Lkik/core/datatypes/aa;)V
+.method public final c(Lkik/core/datatypes/z;)V
     .locals 3
 
     .prologue
     .line 188
     const-string v0, "Sticker Pack Deleted"
 
-    invoke-virtual {p1}, Lkik/core/datatypes/aa;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Lkik/core/datatypes/z;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -582,9 +582,9 @@
     move-result v0
 
     .line 193
-    iget-object v2, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/aa;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/bl;->a:Lkik/core/interfaces/ab;
 
-    invoke-interface {v2, p1}, Lkik/core/interfaces/aa;->c(Lkik/core/datatypes/aa;)V
+    invoke-interface {v2, p1}, Lkik/core/interfaces/ab;->c(Lkik/core/datatypes/z;)V
 
     .line 194
     invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->c(I)V
@@ -617,9 +617,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/aa;
+    check-cast v0, Lkik/core/datatypes/z;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->i()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->i()Z
 
     move-result v0
 
@@ -643,9 +643,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/aa;
+    check-cast v0, Lkik/core/datatypes/z;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -672,7 +672,7 @@
     goto :goto_0
 .end method
 
-.method public final h()I
+.method public final g()I
     .locals 1
 
     .prologue
@@ -703,7 +703,7 @@
     .line 131
     iget v0, p0, Lkik/android/chat/vm/widget/bl;->g:I
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->d(I)Lkik/android/chat/vm/u;
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/widget/bl;->d(I)Lkik/android/chat/vm/at;
 
     move-result-object v0
 
@@ -714,7 +714,7 @@
     .line 132
     iget-object v0, p0, Lkik/android/chat/vm/widget/bl;->h:Lkik/android/chat/vm/widget/ac;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/ac;->i()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/ac;->j()V
 
     .line 134
     :cond_0
@@ -746,9 +746,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/aa;
+    check-cast v0, Lkik/core/datatypes/z;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->d()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->d()Ljava/lang/String;
 
     move-result-object v0
 

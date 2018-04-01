@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lkik/core/datatypes/aa;",
+        "Lkik/core/datatypes/z;",
         ">;"
     }
 .end annotation
@@ -61,12 +61,12 @@
 
     .prologue
     .line 730
-    check-cast p1, Lkik/core/datatypes/aa;
+    check-cast p1, Lkik/core/datatypes/z;
 
-    check-cast p2, Lkik/core/datatypes/aa;
+    check-cast p2, Lkik/core/datatypes/z;
 
     .line 1735
-    invoke-virtual {p1, p2}, Lkik/core/datatypes/aa;->a(Lkik/core/datatypes/aa;)I
+    invoke-virtual {p1, p2}, Lkik/core/datatypes/z;->a(Lkik/core/datatypes/z;)I
 
     move-result v0
 

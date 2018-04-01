@@ -1,11 +1,11 @@
 .class final Lkik/android/gifs/api/g$5;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/gifs/api/g;->a(Lkik/android/gifs/api/GifResponseData;Z)Lcom/kik/events/Promise;
+    value = Lkik/android/gifs/api/g;->b(Lkik/android/gifs/api/GifResponseData;)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,10 +15,12 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Ljava/lang/String;",
-        ">;"
+        "Ljava/util/List",
+        "<",
+        "Lkik/android/gifs/api/GifResponseData;",
+        ">;>;"
     }
 .end annotation
 
@@ -26,69 +28,37 @@
 # instance fields
 .field final synthetic a:Lkik/android/gifs/api/GifResponseData;
 
-.field final synthetic b:Lcom/kik/events/Promise;
-
-.field final synthetic c:Lkik/android/gifs/api/g;
+.field final synthetic b:Lkik/android/gifs/api/g;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;Lcom/kik/events/Promise;)V
+.method constructor <init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;)V
     .locals 0
 
     .prologue
-    .line 136
-    iput-object p1, p0, Lkik/android/gifs/api/g$5;->c:Lkik/android/gifs/api/g;
+    .line 112
+    iput-object p1, p0, Lkik/android/gifs/api/g$5;->b:Lkik/android/gifs/api/g;
 
     iput-object p2, p0, Lkik/android/gifs/api/g$5;->a:Lkik/android/gifs/api/GifResponseData;
 
-    iput-object p3, p0, Lkik/android/gifs/api/g$5;->b:Lcom/kik/events/Promise;
-
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
-    .locals 4
+.method public final b()V
+    .locals 2
 
     .prologue
-    .line 136
-    check-cast p1, Ljava/lang/String;
+    .line 116
+    iget-object v0, p0, Lkik/android/gifs/api/g$5;->b:Lkik/android/gifs/api/g;
 
-    .line 1140
-    const-string v0, "&id=%s"
+    iget-object v1, p0, Lkik/android/gifs/api/g$5;->a:Lkik/android/gifs/api/GifResponseData;
 
-    const/4 v1, 0x1
+    invoke-static {v0, v1}, Lkik/android/gifs/api/g;->a(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;)V
 
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    iget-object v3, p0, Lkik/android/gifs/api/g$5;->a:Lkik/android/gifs/api/GifResponseData;
-
-    invoke-virtual {v3}, Lkik/android/gifs/api/GifResponseData;->g()Ljava/lang/String;
-
-    move-result-object v3
-
-    aput-object v3, v1, v2
-
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 1141
-    iget-object v1, p0, Lkik/android/gifs/api/g$5;->c:Lkik/android/gifs/api/g;
-
-    iget-object v2, p0, Lkik/android/gifs/api/g$5;->b:Lcom/kik/events/Promise;
-
-    invoke-static {v1, v2, v0}, Lkik/android/gifs/api/g;->a(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
-
-    .line 136
+    .line 117
     return-void
 .end method

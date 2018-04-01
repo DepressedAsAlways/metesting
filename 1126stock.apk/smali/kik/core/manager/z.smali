@@ -1,47 +1,68 @@
-.class final synthetic Lkik/core/manager/z;
+.class public interface abstract Lkik/core/manager/z;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lrx/b/b;
-
-
-# instance fields
-.field private final a:Lkik/core/manager/x;
-
-
-# direct methods
-.method private constructor <init>(Lkik/core/manager/x;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lkik/core/manager/z;->a:Lkik/core/manager/x;
-
-    return-void
-.end method
-
-.method public static a(Lkik/core/manager/x;)Lrx/b/b;
-    .locals 1
-
-    new-instance v0, Lkik/core/manager/z;
-
-    invoke-direct {v0, p0}, Lkik/core/manager/z;-><init>(Lkik/core/manager/x;)V
-
-    return-object v0
-.end method
+.source "SourceFile"
 
 
 # virtual methods
-.method public final call(Ljava/lang/Object;)V
-    .locals 1
-    .annotation runtime Ljava/lang/invoke/LambdaForm$Hidden;
+.method public abstract a()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lkik/core/datatypes/l;",
+            ">;"
+        }
     .end annotation
+.end method
 
-    iget-object v0, p0, Lkik/core/manager/z;->a:Lkik/core/manager/x;
+.method public abstract a(Lkik/core/datatypes/Message;)Lkik/core/datatypes/l;
+.end method
 
-    check-cast p1, Lkik/core/datatypes/d;
+.method public abstract a(Ljava/lang/String;)Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lrx/d",
+            "<",
+            "Ljava/util/List",
+            "<",
+            "Lkik/core/datatypes/l;",
+            ">;>;"
+        }
+    .end annotation
+.end method
 
-    invoke-static {v0, p1}, Lkik/core/manager/x;->a(Lkik/core/manager/x;Lkik/core/datatypes/d;)V
+.method public abstract b()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lkik/core/datatypes/l;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    return-void
+.method public abstract b(Ljava/lang/String;)Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lrx/d",
+            "<",
+            "Lkik/core/datatypes/c$b;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract c()Z
+.end method
+
+.method public abstract d()V
 .end method

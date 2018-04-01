@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 167
+    .line 183
     iput-object p1, p0, Lkik/android/chat/fragment/KikStartGroupFragment$1;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 0
 
     .prologue
-    .line 182
+    .line 198
     return-void
 .end method
 
@@ -48,14 +48,14 @@
     .locals 2
 
     .prologue
-    .line 171
+    .line 187
     iget-object v0, p0, Lkik/android/chat/fragment/KikStartGroupFragment$1;->a:Lkik/android/chat/fragment/KikStartGroupFragment;
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lkik/android/chat/fragment/KikStartGroupFragment;->J:Z
+    iput-boolean v1, v0, Lkik/android/chat/fragment/KikStartGroupFragment;->H:Z
 
-    .line 172
+    .line 188
     return-void
 .end method
 
@@ -63,6 +63,6 @@
     .locals 0
 
     .prologue
-    .line 177
+    .line 193
     return-void
 .end method

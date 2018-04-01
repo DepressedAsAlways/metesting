@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 363
+    .line 369
     iput-object p1, p0, Lcom/rounds/kik/VideoController$2;->a:Lcom/rounds/kik/VideoController;
 
     invoke-direct {p0}, Lcom/rounds/kik/Concurrency$CancelableTask;-><init>()V
@@ -37,7 +37,7 @@
     .locals 3
 
     .prologue
-    .line 367
+    .line 373
     # getter for: Lcom/rounds/kik/VideoController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/VideoController;->access$800()Lcom/rounds/kik/logs/VideoLogger;
 
@@ -47,7 +47,7 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;)V
 
-    .line 368
+    .line 374
     iget-object v0, p0, Lcom/rounds/kik/VideoController$2;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConferenceManager:Lcom/rounds/kik/conference/ConferenceManager;
@@ -57,14 +57,14 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/conference/ConferenceManager;->disconnect()V
 
-    .line 369
+    .line 375
     iget-object v0, p0, Lcom/rounds/kik/VideoController$2;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/conference/LeaveReason;->CONFERENCE_INITIATION_FAILED:Lcom/rounds/kik/conference/LeaveReason;
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/VideoController;->leaveConference(Lcom/rounds/kik/conference/LeaveReason;)V
 
-    .line 370
+    .line 376
     iget-object v0, p0, Lcom/rounds/kik/VideoController$2;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -80,6 +80,6 @@
 
     invoke-interface {v0, v1, v2}, Lcom/rounds/kik/VideoController$Listener;->onDisconnected(Lcom/rounds/kik/conference/DisconnectReason;Lcom/rounds/kik/conference/EndOfCallStatus;)V
 
-    .line 371
+    .line 377
     return-void
 .end method

@@ -1,22 +1,45 @@
-.class public interface abstract Lkik/android/chat/view/ai;
+.class final synthetic Lkik/android/chat/view/ai;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Landroid/media/MediaPlayer$OnPreparedListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/chat/view/ai$a;
-    }
-.end annotation
+# instance fields
+.field private final a:F
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    iput v0, p0, Lkik/android/chat/view/ai;->a:F
+
+    return-void
+.end method
+
+.method public static a()Landroid/media/MediaPlayer$OnPreparedListener;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/view/ai;
+
+    invoke-direct {v0}, Lkik/android/chat/view/ai;-><init>()V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract a()V
-.end method
+.method public final onPrepared(Landroid/media/MediaPlayer;)V
+    .locals 1
 
-.method public abstract a(Ljava/lang/String;)V
-.end method
+    iget v0, p0, Lkik/android/chat/view/ai;->a:F
 
-.method public abstract a(Lkik/android/chat/view/ai$a;)V
+    invoke-static {v0, p1}, Lkik/android/chat/view/PreviewResultsViewImpl;->a(FLandroid/media/MediaPlayer;)V
+
+    return-void
 .end method

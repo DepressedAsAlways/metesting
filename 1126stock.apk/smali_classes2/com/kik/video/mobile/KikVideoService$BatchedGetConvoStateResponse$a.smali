@@ -49,7 +49,7 @@
             "Lcom/google/protobuf/RepeatedFieldBuilderV3",
             "<",
             "Lcom/kik/video/VideoCommon$ConvoVideoState;",
-            "Lcom/kik/video/VideoCommon$ConvoVideoState$a;",
+            "Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;",
             "Lcom/kik/video/VideoCommon$c;",
             ">;"
         }
@@ -492,7 +492,7 @@
             "Lcom/google/protobuf/RepeatedFieldBuilderV3",
             "<",
             "Lcom/kik/video/VideoCommon$ConvoVideoState;",
-            "Lcom/kik/video/VideoCommon$ConvoVideoState$a;",
+            "Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;",
             "Lcom/kik/video/VideoCommon$c;",
             ">;"
         }

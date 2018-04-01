@@ -4,11 +4,11 @@
 
 # interfaces
 .implements Lkik/android/chat/presentation/bp;
-.implements Lkik/android/chat/view/ab$a;
+.implements Lkik/android/chat/view/ac$a;
 
 
 # instance fields
-.field private a:Lkik/android/chat/view/ab;
+.field private a:Lkik/android/chat/view/ac;
 
 .field private b:Lkik/android/chat/presentation/bp$a;
 
@@ -31,14 +31,14 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
     if-eqz v0, :cond_0
 
     .line 40
-    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
-    invoke-interface {v0}, Lkik/android/chat/view/ab;->d()V
+    invoke-interface {v0}, Lkik/android/chat/view/ac;->d()V
 
     .line 42
     :cond_0
@@ -50,7 +50,7 @@
 
     .prologue
     .line 9
-    check-cast p1, Lkik/android/chat/view/ab;
+    check-cast p1, Lkik/android/chat/view/ac;
 
     .line 1017
     if-nez p1, :cond_0
@@ -66,12 +66,12 @@
 
     .line 1020
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iput-object p1, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
     .line 1021
-    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
-    invoke-interface {v0, p0}, Lkik/android/chat/view/ab;->a(Lkik/android/chat/view/ab$a;)V
+    invoke-interface {v0, p0}, Lkik/android/chat/view/ac;->a(Lkik/android/chat/view/ac$a;)V
 
     .line 9
     return-void
@@ -92,16 +92,16 @@
     invoke-interface {v0, p1}, Lkik/android/chat/presentation/bp$a;->a(Ljava/lang/String;)V
 
     .line 57
-    invoke-static {p1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {p1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 58
-    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
-    invoke-interface {v0}, Lkik/android/chat/view/ab;->a()V
+    invoke-interface {v0}, Lkik/android/chat/view/ac;->a()V
 
     .line 64
     :cond_0
@@ -110,9 +110,9 @@
 
     .line 61
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iget-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
-    invoke-interface {v0}, Lkik/android/chat/view/ab;->b()V
+    invoke-interface {v0}, Lkik/android/chat/view/ac;->b()V
 
     goto :goto_0
 .end method
@@ -166,14 +166,14 @@
     return-void
 .end method
 
-.method public final o_()V
+.method public final m_()V
     .locals 1
 
     .prologue
     .line 27
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ab;
+    iput-object v0, p0, Lkik/android/chat/presentation/bq;->a:Lkik/android/chat/view/ac;
 
     .line 28
     return-void

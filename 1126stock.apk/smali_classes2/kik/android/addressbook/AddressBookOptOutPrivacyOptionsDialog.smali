@@ -8,42 +8,32 @@
 
 # instance fields
 .field protected _cancelButton:Landroid/widget/Button;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009e
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000d2
     .end annotation
 .end field
 
 .field protected _confirmButton:Landroid/widget/Button;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009d
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000d1
     .end annotation
 .end field
 
 .field protected _findMeCheckBox:Landroid/widget/CheckBox;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009c
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000d0
     .end annotation
 .end field
 
 .field protected _privacyDialogText:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009a
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000ce
     .end annotation
 .end field
 
 .field protected _uploadContactInfoCheckboxContainer:Landroid/view/ViewGroup;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009b
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000cf
     .end annotation
 .end field
 
@@ -63,7 +53,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/IAddressBookIntegration;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/android/util/bj;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/IAddressBookIntegration;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/android/util/bd;)V
     .locals 1
 
     .prologue
@@ -92,7 +82,7 @@
     .line 57
     new-instance v0, Lkik/android/chat/presentation/f;
 
-    invoke-direct {v0, p0, p2, p5}, Lkik/android/chat/presentation/f;-><init>(Lkik/android/chat/view/c;Lkik/core/interfaces/IAddressBookIntegration;Lkik/android/util/bj;)V
+    invoke-direct {v0, p0, p2, p5}, Lkik/android/chat/presentation/f;-><init>(Lkik/android/chat/view/c;Lkik/core/interfaces/IAddressBookIntegration;Lkik/android/util/bd;)V
 
     iput-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->f:Lkik/android/chat/presentation/e;
 
@@ -139,7 +129,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 72
     iget-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->c:Lcom/kik/android/Mixpanel;
@@ -188,7 +178,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 80
     return-void
@@ -233,7 +223,7 @@
     .line 98
     iget-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->_uploadContactInfoCheckboxContainer:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Lkik/android/util/ch;->b(Landroid/view/View;)Z
+    invoke-static {v0}, Lkik/android/util/ca;->b(Landroid/view/View;)Z
 
     move-result v0
 
@@ -262,7 +252,7 @@
     :cond_0
     iget-object v1, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->a:Landroid/content/Context;
 
-    const v2, 0x7f04001f
+    const v2, 0x7f040021
 
     const/4 v3, 0x0
 
@@ -271,7 +261,7 @@
     move-result-object v1
 
     .line 114
-    invoke-static {p0, v1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 116
     new-instance v2, Lkik/android/chat/fragment/KikDialogFragment$a;
@@ -382,7 +372,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f090209
+    const v0, 0x7f09021d
 
     .line 172
     :goto_0
@@ -391,7 +381,7 @@
     move-result-object v0
 
     .line 174
-    const v1, 0x7f090049
+    const v1, 0x7f09004a
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -458,7 +448,7 @@
     .line 182
     iget-object v0, p0, Lkik/android/addressbook/AddressBookOptOutPrivacyOptionsDialog;->_privacyDialogText:Landroid/widget/TextView;
 
-    invoke-static {}, Lkik/android/util/ak;->a()Lkik/android/util/ak;
+    invoke-static {}, Lkik/android/util/af;->a()Lkik/android/util/af;
 
     move-result-object v1
 
@@ -474,7 +464,7 @@
 
     .line 171
     :cond_0
-    const v0, 0x7f090208
+    const v0, 0x7f09021c
 
     goto :goto_0
 .end method

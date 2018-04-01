@@ -4,8 +4,11 @@
 
 
 # virtual methods
-.method public abstract a(Lkik/core/datatypes/z;)V
+.method public abstract a(Lkik/core/datatypes/y;)V
 .end method
 
-.method public abstract b(Lkik/core/datatypes/z;)V
+.method public abstract b(Lkik/core/datatypes/y;)V
+.end method
+
+.method public abstract d()Lkik/android/internal/platform/PlatformHelper$StickerSource;
 .end method

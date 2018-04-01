@@ -9,7 +9,7 @@
 # instance fields
 .field private final mContext:Landroid/content/Context;
 
-.field private mHttpClient:Lokhttp3/u;
+.field private mHttpClient:Lokhttp3/v;
 
 
 # direct methods
@@ -28,11 +28,11 @@
     iput-object v0, p0, Lcom/rounds/kik/remoteassets/OkHttpAssetsDownloader;->mContext:Landroid/content/Context;
 
     .line 31
-    new-instance v0, Lokhttp3/u;
+    new-instance v0, Lokhttp3/v;
 
-    invoke-direct {v0}, Lokhttp3/u;-><init>()V
+    invoke-direct {v0}, Lokhttp3/v;-><init>()V
 
-    iput-object v0, p0, Lcom/rounds/kik/remoteassets/OkHttpAssetsDownloader;->mHttpClient:Lokhttp3/u;
+    iput-object v0, p0, Lcom/rounds/kik/remoteassets/OkHttpAssetsDownloader;->mHttpClient:Lokhttp3/v;
 
     .line 32
     return-void
@@ -134,30 +134,30 @@
 
     .prologue
     .line 67
-    new-instance v0, Lokhttp3/w$a;
+    new-instance v0, Lokhttp3/Request$a;
 
-    invoke-direct {v0}, Lokhttp3/w$a;-><init>()V
+    invoke-direct {v0}, Lokhttp3/Request$a;-><init>()V
 
     invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lokhttp3/w$a;->a(Ljava/lang/String;)Lokhttp3/w$a;
+    invoke-virtual {v0, v1}, Lokhttp3/Request$a;->a(Ljava/lang/String;)Lokhttp3/Request$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lokhttp3/w$a;->a()Lokhttp3/w;
+    invoke-virtual {v0}, Lokhttp3/Request$a;->a()Lokhttp3/Request;
 
     move-result-object v0
 
     .line 69
-    iget-object v1, p0, Lcom/rounds/kik/remoteassets/OkHttpAssetsDownloader;->mHttpClient:Lokhttp3/u;
+    iget-object v1, p0, Lcom/rounds/kik/remoteassets/OkHttpAssetsDownloader;->mHttpClient:Lokhttp3/v;
 
-    invoke-virtual {v1, v0}, Lokhttp3/u;->a(Lokhttp3/w;)Lokhttp3/e;
+    invoke-virtual {v1, v0}, Lokhttp3/v;->a(Lokhttp3/Request;)Lokhttp3/d;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lokhttp3/e;->a()Lokhttp3/y;
+    invoke-interface {v0}, Lokhttp3/d;->a()Lokhttp3/y;
 
     move-result-object v0
 
@@ -171,7 +171,7 @@
     move-result-object v1
 
     .line 71
-    invoke-virtual {v0}, Lokhttp3/y;->h()Lokhttp3/z;
+    invoke-virtual {v0}, Lokhttp3/y;->g()Lokhttp3/z;
 
     move-result-object v0
 

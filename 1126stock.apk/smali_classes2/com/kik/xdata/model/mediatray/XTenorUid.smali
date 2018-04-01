@@ -74,7 +74,28 @@
 
 
 # virtual methods
-.method public final a()Lcom/dyuproject/protostuff/u;
+.method public final a(Ljava/lang/String;)Lcom/kik/xdata/model/mediatray/XTenorUid;
+    .locals 0
+
+    .prologue
+    .line 53
+    iput-object p1, p0, Lcom/kik/xdata/model/mediatray/XTenorUid;->uid:Ljava/lang/String;
+
+    .line 54
+    return-object p0
+.end method
+
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 48
+    iget-object v0, p0, Lcom/kik/xdata/model/mediatray/XTenorUid;->uid:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final cachedSchema()Lcom/dyuproject/protostuff/u;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -89,27 +110,6 @@
     .prologue
     .line 73
     sget-object v0, Lcom/kik/xdata/model/mediatray/XTenorUid;->b:Lcom/dyuproject/protostuff/u;
-
-    return-object v0
-.end method
-
-.method public final a(Ljava/lang/String;)Lcom/kik/xdata/model/mediatray/XTenorUid;
-    .locals 0
-
-    .prologue
-    .line 53
-    iput-object p1, p0, Lcom/kik/xdata/model/mediatray/XTenorUid;->uid:Ljava/lang/String;
-
-    .line 54
-    return-object p0
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 48
-    iget-object v0, p0, Lcom/kik/xdata/model/mediatray/XTenorUid;->uid:Ljava/lang/String;
 
     return-object v0
 .end method

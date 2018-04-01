@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/c/b;
+.implements Lcom/kik/d/b;
 
 
 # direct methods
@@ -11,7 +11,7 @@
     .locals 0
 
     .prologue
-    .line 22
+    .line 21
     invoke-direct {p0}, Landroid/support/v4/app/Fragment;-><init>()V
 
     return-void
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 40
+    .line 39
     return-void
 .end method
 
@@ -31,7 +31,7 @@
     .locals 0
 
     .prologue
-    .line 34
+    .line 33
     return-void
 .end method
 
@@ -39,7 +39,7 @@
     .locals 0
 
     .prologue
-    .line 53
+    .line 52
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 58
+    .line 57
     const/4 v0, 0x0
 
     return v0

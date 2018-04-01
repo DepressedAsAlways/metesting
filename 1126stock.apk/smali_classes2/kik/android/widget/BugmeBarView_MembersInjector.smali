@@ -23,12 +23,12 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Landroid/widget/FrameLayout;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/n;",
             ">;"
         }
     .end annotation
@@ -50,7 +50,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/o;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -61,24 +61,13 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final f:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
             "Lkik/core/net/e;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final g:Ljavax/inject/Provider;
+.field private final f:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -95,7 +84,7 @@
     .locals 1
 
     .prologue
-    .line 13
+    .line 12
     const-class v0, Lkik/android/widget/BugmeBarView_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -117,26 +106,22 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Landroid/widget/FrameLayout;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/n;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/o;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -150,10 +135,10 @@
     .end annotation
 
     .prologue
-    .line 22
+    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 23
+    .line 33
     sget-boolean v0, Lkik/android/widget/BugmeBarView_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -166,11 +151,11 @@
 
     throw v0
 
-    .line 24
+    .line 34
     :cond_0
-    iput-object p1, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 25
+    .line 35
     sget-boolean v0, Lkik/android/widget/BugmeBarView_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -183,11 +168,11 @@
 
     throw v0
 
-    .line 26
+    .line 36
     :cond_1
     iput-object p2, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 27
+    .line 37
     sget-boolean v0, Lkik/android/widget/BugmeBarView_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -200,11 +185,11 @@
 
     throw v0
 
-    .line 28
+    .line 38
     :cond_2
     iput-object p3, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 29
+    .line 39
     sget-boolean v0, Lkik/android/widget/BugmeBarView_MembersInjector;->a:Z
 
     if-nez v0, :cond_3
@@ -217,11 +202,11 @@
 
     throw v0
 
-    .line 30
+    .line 40
     :cond_3
     iput-object p4, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->e:Ljavax/inject/Provider;
 
-    .line 31
+    .line 41
     sget-boolean v0, Lkik/android/widget/BugmeBarView_MembersInjector;->a:Z
 
     if-nez v0, :cond_4
@@ -234,51 +219,30 @@
 
     throw v0
 
-    .line 32
+    .line 42
     :cond_4
     iput-object p5, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->f:Ljavax/inject/Provider;
 
-    .line 33
-    sget-boolean v0, Lkik/android/widget/BugmeBarView_MembersInjector;->a:Z
-
-    if-nez v0, :cond_5
-
-    if-nez p6, :cond_5
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 34
-    :cond_5
-    iput-object p6, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->g:Ljavax/inject/Provider;
-
-    .line 35
+    .line 43
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-    .locals 7
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Landroid/widget/FrameLayout;",
+            "Lkik/core/interfaces/ag;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/interfaces/n;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/o;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -309,9 +273,7 @@
 
     move-object v5, p4
 
-    move-object v6, p5
-
-    invoke-direct/range {v0 .. v6}, Lkik/android/widget/BugmeBarView_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/widget/BugmeBarView_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -322,13 +284,13 @@
     .locals 2
 
     .prologue
-    .line 13
+    .line 12
     check-cast p1, Lkik/android/widget/BugmeBarView;
 
-    .line 1039
+    .line 1061
     if-nez p1, :cond_0
 
-    .line 1040
+    .line 1062
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -337,47 +299,42 @@
 
     throw v0
 
-    .line 1042
+    .line 1064
     :cond_0
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->b:Ldagger/b;
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->b:Ljavax/inject/Provider;
 
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
-    .line 1043
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/ag;
+
+    iput-object v0, p1, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ag;
+
+    .line 1065
     iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/ae;
+    check-cast v0, Lkik/core/interfaces/n;
 
-    iput-object v0, p1, Lkik/android/widget/BugmeBarView;->c:Lkik/core/interfaces/ae;
+    iput-object v0, p1, Lkik/android/widget/BugmeBarView;->d:Lkik/core/interfaces/n;
 
-    .line 1044
+    .line 1066
     iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/o;
+    check-cast v0, Lkik/core/interfaces/ad;
 
-    iput-object v0, p1, Lkik/android/widget/BugmeBarView;->d:Lkik/core/interfaces/o;
+    iput-object v0, p1, Lkik/android/widget/BugmeBarView;->e:Lkik/core/interfaces/ad;
 
-    .line 1045
+    .line 1067
     iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->e:Ljavax/inject/Provider;
-
-    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/interfaces/ac;
-
-    iput-object v0, p1, Lkik/android/widget/BugmeBarView;->e:Lkik/core/interfaces/ac;
-
-    .line 1046
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->f:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -387,8 +344,8 @@
 
     iput-object v0, p1, Lkik/android/widget/BugmeBarView;->f:Lkik/core/net/e;
 
-    .line 1047
-    iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->g:Ljavax/inject/Provider;
+    .line 1068
+    iget-object v0, p0, Lkik/android/widget/BugmeBarView_MembersInjector;->f:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -398,6 +355,6 @@
 
     iput-object v0, p1, Lkik/android/widget/BugmeBarView;->g:Lcom/kik/android/Mixpanel;
 
-    .line 13
+    .line 12
     return-void
 .end method

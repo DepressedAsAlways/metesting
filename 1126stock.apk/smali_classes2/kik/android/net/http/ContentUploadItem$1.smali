@@ -1,5 +1,5 @@
 .class final Lkik/android/net/http/ContentUploadItem$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/io/File;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 163
+    .line 165
     iput-object p1, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -43,27 +43,25 @@
 
 # virtual methods
 .method public final synthetic a(Ljava/lang/Object;)V
-    .locals 6
+    .locals 5
 
     .prologue
-    const/4 v5, 0x0
-
-    .line 163
+    .line 165
     check-cast p1, Ljava/io/File;
 
-    .line 1180
+    .line 1182
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     sget-object v1, Lkik/android/net/http/ContentUploadItem$TranscodeStatus;->COMPLETED:Lkik/android/net/http/ContentUploadItem$TranscodeStatus;
 
     invoke-static {v0, v1}, Lkik/android/net/http/ContentUploadItem;->a(Lkik/android/net/http/ContentUploadItem;Lkik/android/net/http/ContentUploadItem$TranscodeStatus;)Lkik/android/net/http/ContentUploadItem$TranscodeStatus;
 
-    .line 1182
+    .line 1184
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v0, p1}, Lkik/android/net/http/ContentUploadItem;->a(Lkik/android/net/http/ContentUploadItem;Ljava/io/File;)Ljava/io/File;
 
-    .line 1183
+    .line 1185
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     iget-object v1, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
@@ -78,7 +76,7 @@
 
     invoke-static {v0, v1}, Lkik/android/net/http/ContentUploadItem;->a(Lkik/android/net/http/ContentUploadItem;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1185
+    .line 1187
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->c(Lkik/android/net/http/ContentUploadItem;)Lkik/core/datatypes/messageExtensions/ContentMessage;
@@ -93,7 +91,7 @@
 
     invoke-virtual {v0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/io/File;)V
 
-    .line 1186
+    .line 1188
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->d(Lkik/android/net/http/ContentUploadItem;)Ljava/util/ArrayList;
@@ -117,7 +115,7 @@
 
     check-cast v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 1187
+    .line 1189
     iget-object v2, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v2}, Lkik/android/net/http/ContentUploadItem;->b(Lkik/android/net/http/ContentUploadItem;)Ljava/io/File;
@@ -128,7 +126,7 @@
 
     goto :goto_0
 
-    .line 1192
+    .line 1194
     :cond_0
     :try_start_0
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
@@ -141,15 +139,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/ce;->b(Ljava/lang/String;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 1193
-    if-eqz v0, :cond_1
-
-    .line 1194
-    invoke-static {v0}, Lkik/android/util/h;->c(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    invoke-static {v0}, Lkik/android/util/bx;->b(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -157,15 +147,23 @@
     if-eqz v0, :cond_1
 
     .line 1196
+    invoke-static {v0}, Lkik/android/util/h;->c(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    .line 1197
+    if-eqz v0, :cond_1
+
+    .line 1198
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v2, 0x50
 
-    invoke-static {v0, v1, v2}, Lcom/kik/util/bz;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
+    invoke-static {v0, v1, v2}, Lcom/kik/util/cr;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
 
     move-result-object v1
 
-    .line 1197
+    .line 1199
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->c(Lkik/android/net/http/ContentUploadItem;)Lkik/core/datatypes/messageExtensions/ContentMessage;
@@ -178,9 +176,9 @@
 
     invoke-direct {v3, v1}, Lkik/core/datatypes/b;-><init>([B)V
 
-    invoke-virtual {v0, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/r;)V
+    invoke-virtual {v0, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
 
-    .line 1198
+    .line 1200
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->d(Lkik/android/net/http/ContentUploadItem;)Ljava/util/ArrayList;
@@ -204,20 +202,20 @@
 
     check-cast v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 1199
+    .line 1201
     const-string v3, "preview"
 
     new-instance v4, Lkik/core/datatypes/b;
 
     invoke-direct {v4, v1}, Lkik/core/datatypes/b;-><init>([B)V
 
-    invoke-virtual {v0, v3, v4}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/r;)V
+    invoke-virtual {v0, v3, v4}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_1
 
-    .line 1207
+    .line 1209
     :catch_0
     move-exception v0
 
@@ -227,124 +225,30 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
-    .line 1210
+    .line 1212
     :cond_1
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
-    invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->c(Lkik/android/net/http/ContentUploadItem;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->e(Lkik/android/net/http/ContentUploadItem;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0, v5}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Z)V
-
-    .line 1211
-    iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->d(Lkik/android/net/http/ContentUploadItem;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    .line 1212
-    invoke-virtual {v0, v5}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Z)V
-
-    goto :goto_2
-
-    .line 1216
-    :cond_2
-    iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->e(Lkik/android/net/http/ContentUploadItem;)I
-
-    move-result v0
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_4
-
-    .line 1217
-    invoke-static {}, Lkik/android/net/http/b;->a()Lkik/android/net/http/b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-virtual {v0, v1}, Lkik/android/net/http/b;->a(Lkik/android/net/http/a;)V
-
-    .line 1220
-    :cond_3
-    :goto_3
+    .line 165
     return-void
-
-    .line 1219
-    :cond_4
-    iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->e(Lkik/android/net/http/ContentUploadItem;)I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_5
-
-    .line 1220
-    iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-virtual {v0}, Lkik/android/net/http/ContentUploadItem;->i()V
-
-    goto :goto_3
-
-    .line 1222
-    :cond_5
-    iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->e(Lkik/android/net/http/ContentUploadItem;)I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_3
-
-    .line 1223
-    iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
-
-    invoke-virtual {v0}, Lkik/android/net/http/ContentUploadItem;->j()V
-
-    goto :goto_3
 .end method
 
 .method public final a(Ljava/lang/Throwable;)V
     .locals 2
 
     .prologue
-    .line 168
+    .line 170
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     sget-object v1, Lkik/android/net/http/ContentUploadItem$TranscodeStatus;->PENDING:Lkik/android/net/http/ContentUploadItem$TranscodeStatus;
 
     invoke-static {v0, v1}, Lkik/android/net/http/ContentUploadItem;->a(Lkik/android/net/http/ContentUploadItem;Lkik/android/net/http/ContentUploadItem$TranscodeStatus;)Lkik/android/net/http/ContentUploadItem$TranscodeStatus;
 
-    .line 169
+    .line 171
     return-void
 .end method
 
@@ -352,11 +256,11 @@
     .locals 1
 
     .prologue
-    .line 174
+    .line 176
     iget-object v0, p0, Lkik/android/net/http/ContentUploadItem$1;->a:Lkik/android/net/http/ContentUploadItem;
 
     invoke-static {v0}, Lkik/android/net/http/ContentUploadItem;->a(Lkik/android/net/http/ContentUploadItem;)Z
 
-    .line 175
+    .line 177
     return-void
 .end method

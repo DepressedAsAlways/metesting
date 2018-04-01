@@ -1,11 +1,11 @@
 .class final Lcom/kik/cards/web/CardsWebViewFragment$37;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cards/web/CardsWebViewFragment;->f(Ljava/lang/String;)Lcom/kik/events/Promise;
+    value = Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/usermedia/b;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,48 +15,83 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Ljava/lang/Object;",
-        ">;"
+        "Landroid/util/Pair",
+        "<",
+        "Ljava/lang/String;",
+        "Ljava/lang/String;",
+        ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lcom/kik/events/Promise;
+.field final synthetic a:Landroid/app/Activity;
 
-.field final synthetic b:Lcom/kik/cards/web/CardsWebViewFragment;
+.field final synthetic b:Lcom/kik/cards/web/usermedia/b;
+
+.field final synthetic c:Ljava/lang/String;
+
+.field final synthetic d:Lkik/android/chat/fragment/ProgressDialogFragment;
+
+.field final synthetic e:Lcom/kik/cards/web/CardsWebViewFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;Lcom/kik/events/Promise;)V
+.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;Landroid/app/Activity;Lcom/kik/cards/web/usermedia/b;Ljava/lang/String;Lkik/android/chat/fragment/ProgressDialogFragment;)V
     .locals 0
 
     .prologue
-    .line 2258
-    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->b:Lcom/kik/cards/web/CardsWebViewFragment;
+    .line 2203
+    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->e:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Lcom/kik/events/Promise;
+    iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Landroid/app/Activity;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    iput-object p3, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->b:Lcom/kik/cards/web/usermedia/b;
+
+    iput-object p4, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->c:Ljava/lang/String;
+
+    iput-object p5, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->d:Lkik/android/chat/fragment/ProgressDialogFragment;
+
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final synthetic a(Ljava/lang/Object;)V
+    .locals 2
+
+    .prologue
+    .line 2203
+    .line 3208
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Landroid/app/Activity;
+
+    new-instance v1, Lcom/kik/cards/web/CardsWebViewFragment$37$1;
+
+    invoke-direct {v1, p0}, Lcom/kik/cards/web/CardsWebViewFragment$37$1;-><init>(Lcom/kik/cards/web/CardsWebViewFragment$37;)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    .line 2203
+    return-void
+.end method
+
 .method public final a(Ljava/lang/Throwable;)V
     .locals 2
 
     .prologue
-    .line 2262
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Lcom/kik/events/Promise;
+    .line 2233
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$37;->a:Landroid/app/Activity;
 
-    const/4 v1, 0x0
+    new-instance v1, Lcom/kik/cards/web/CardsWebViewFragment$37$2;
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
+    invoke-direct {v1, p0}, Lcom/kik/cards/web/CardsWebViewFragment$37$2;-><init>(Lcom/kik/cards/web/CardsWebViewFragment$37;)V
 
-    .line 2263
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    .line 2250
     return-void
 .end method

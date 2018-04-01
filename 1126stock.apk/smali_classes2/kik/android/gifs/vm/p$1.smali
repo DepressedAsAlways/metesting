@@ -1,5 +1,5 @@
 .class final Lkik/android/gifs/vm/p$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/util/List",
         "<",
@@ -34,10 +34,10 @@
     .locals 0
 
     .prologue
-    .line 98
+    .line 99
     iput-object p1, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -48,45 +48,25 @@
     .locals 1
 
     .prologue
-    .line 98
+    .line 99
     check-cast p1, Ljava/util/List;
-
-    .line 1102
-    iget-object v0, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
-
-    invoke-static {v0, p1}, Lkik/android/gifs/vm/p;->a(Lkik/android/gifs/vm/p;Ljava/util/List;)Ljava/util/List;
 
     .line 1103
     iget-object v0, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
 
+    invoke-static {v0, p1}, Lkik/android/gifs/vm/p;->a(Lkik/android/gifs/vm/p;Ljava/util/List;)Ljava/util/List;
+
+    .line 1104
+    iget-object v0, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
+
+    invoke-static {v0}, Lkik/android/gifs/vm/p;->a(Lkik/android/gifs/vm/p;)V
+
+    .line 1105
+    iget-object v0, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
+
     invoke-virtual {v0}, Lkik/android/gifs/vm/p;->l()V
 
-    .line 98
-    return-void
-.end method
-
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 2
-
-    .prologue
-    .line 109
-    iget-object v0, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
-
-    iget-object v0, v0, Lkik/android/gifs/vm/p;->f:Lkik/android/gifs/api/GifApiProvider;
-
-    if-eqz v0, :cond_0
-
-    .line 110
-    iget-object v0, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
-
-    iget-object v0, v0, Lkik/android/gifs/vm/p;->f:Lkik/android/gifs/api/GifApiProvider;
-
-    const-string v1, "GIF_RESULT_KEY"
-
-    invoke-virtual {v0, v1}, Lkik/android/gifs/api/GifApiProvider;->a(Ljava/lang/String;)V
-
-    .line 112
-    :cond_0
+    .line 99
     return-void
 .end method
 
@@ -96,12 +76,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 117
-    iget-object v1, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
-
-    invoke-static {v1}, Lkik/android/gifs/vm/p;->a(Lkik/android/gifs/vm/p;)V
-
-    .line 118
+    .line 111
     iget-object v1, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
 
     iget-object v1, v1, Lkik/android/gifs/vm/p;->b:Lrx/subjects/PublishSubject;
@@ -112,14 +87,14 @@
 
     invoke-virtual {v1, v2}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
 
-    .line 119
+    .line 112
     iget-object v1, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
 
     iget-object v1, v1, Lkik/android/gifs/vm/p;->c:Lrx/subjects/PublishSubject;
 
     iget-object v2, p0, Lkik/android/gifs/vm/p$1;->a:Lkik/android/gifs/vm/p;
 
-    invoke-virtual {v2}, Lkik/android/gifs/vm/p;->h()I
+    invoke-virtual {v2}, Lkik/android/gifs/vm/p;->g()I
 
     move-result v2
 
@@ -134,6 +109,6 @@
 
     invoke-virtual {v1, v0}, Lrx/subjects/PublishSubject;->a(Ljava/lang/Object;)V
 
-    .line 120
+    .line 113
     return-void
 .end method

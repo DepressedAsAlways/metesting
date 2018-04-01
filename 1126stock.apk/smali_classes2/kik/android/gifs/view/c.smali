@@ -80,7 +80,7 @@
 
     invoke-direct {v2, p0, p4, v0}, Lkik/android/gifs/view/c$1;-><init>(Ljava/lang/String;Landroid/content/res/Resources;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 27
     return-object v0

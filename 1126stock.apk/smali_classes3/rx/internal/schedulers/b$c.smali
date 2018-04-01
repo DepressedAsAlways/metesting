@@ -1,5 +1,5 @@
 .class final Lrx/internal/schedulers/b$c;
-.super Lrx/internal/schedulers/f;
+.super Lrx/internal/schedulers/g;
 .source "SourceFile"
 
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 197
-    invoke-direct {p0, p1}, Lrx/internal/schedulers/f;-><init>(Ljava/util/concurrent/ThreadFactory;)V
+    invoke-direct {p0, p1}, Lrx/internal/schedulers/g;-><init>(Ljava/util/concurrent/ThreadFactory;)V
 
     .line 198
     return-void

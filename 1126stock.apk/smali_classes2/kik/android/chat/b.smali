@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -106,7 +106,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -120,10 +120,10 @@
     .end annotation
 
     .prologue
-    .line 18
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
+    .line 30
     sget-boolean v0, Lkik/android/chat/b;->a:Z
 
     if-nez v0, :cond_0
@@ -136,11 +136,11 @@
 
     throw v0
 
-    .line 20
+    .line 31
     :cond_0
     iput-object p1, p0, Lkik/android/chat/b;->b:Ljavax/inject/Provider;
 
-    .line 21
+    .line 32
     sget-boolean v0, Lkik/android/chat/b;->a:Z
 
     if-nez v0, :cond_1
@@ -153,11 +153,11 @@
 
     throw v0
 
-    .line 22
+    .line 33
     :cond_1
     iput-object p2, p0, Lkik/android/chat/b;->c:Ljavax/inject/Provider;
 
-    .line 23
+    .line 34
     sget-boolean v0, Lkik/android/chat/b;->a:Z
 
     if-nez v0, :cond_2
@@ -170,11 +170,11 @@
 
     throw v0
 
-    .line 24
+    .line 35
     :cond_2
     iput-object p3, p0, Lkik/android/chat/b;->d:Ljavax/inject/Provider;
 
-    .line 25
+    .line 36
     sget-boolean v0, Lkik/android/chat/b;->a:Z
 
     if-nez v0, :cond_3
@@ -187,11 +187,11 @@
 
     throw v0
 
-    .line 26
+    .line 37
     :cond_3
     iput-object p4, p0, Lkik/android/chat/b;->e:Ljavax/inject/Provider;
 
-    .line 27
+    .line 38
     return-void
 .end method
 
@@ -206,7 +206,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -224,7 +224,7 @@
     .end annotation
 
     .prologue
-    .line 35
+    .line 54
     new-instance v0, Lkik/android/chat/b;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/b;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
@@ -239,11 +239,12 @@
 
     .prologue
     .line 11
-    .line 1031
+    .line 1042
     new-instance v4, Lkik/android/chat/ConversationCallToActionHelper;
 
     iget-object v0, p0, Lkik/android/chat/b;->b:Ljavax/inject/Provider;
 
+    .line 1043
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -252,14 +253,16 @@
 
     iget-object v1, p0, Lkik/android/chat/b;->c:Ljavax/inject/Provider;
 
+    .line 1044
     invoke-interface {v1}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lkik/core/interfaces/ac;
+    check-cast v1, Lkik/core/interfaces/ad;
 
     iget-object v2, p0, Lkik/android/chat/b;->d:Ljavax/inject/Provider;
 
+    .line 1045
     invoke-interface {v2}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v2
@@ -268,13 +271,14 @@
 
     iget-object v3, p0, Lkik/android/chat/b;->e:Ljavax/inject/Provider;
 
+    .line 1046
     invoke-interface {v3}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lkik/core/manager/n;
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lkik/android/chat/ConversationCallToActionHelper;-><init>(Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ac;Lkik/core/interfaces/b;Lkik/core/manager/n;)V
+    invoke-direct {v4, v0, v1, v2, v3}, Lkik/android/chat/ConversationCallToActionHelper;-><init>(Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ad;Lkik/core/interfaces/b;Lkik/core/manager/n;)V
 
     .line 11
     return-object v4

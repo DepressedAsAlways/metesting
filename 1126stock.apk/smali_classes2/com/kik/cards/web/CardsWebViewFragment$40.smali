@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnCancelListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 2281
+    .line 2283
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$40;->b:Lcom/kik/cards/web/CardsWebViewFragment;
 
     iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$40;->a:Lcom/kik/events/Promise;
@@ -40,15 +40,17 @@
 
 
 # virtual methods
-.method public final onCancel(Landroid/content/DialogInterface;)V
-    .locals 1
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
 
     .prologue
-    .line 2285
+    .line 2288
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$40;->a:Lcom/kik/events/Promise;
 
-    invoke-virtual {v0}, Lcom/kik/events/Promise;->f()V
+    const/4 v1, 0x0
 
-    .line 2286
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
+
+    .line 2289
     return-void
 .end method

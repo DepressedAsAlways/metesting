@@ -10,6 +10,9 @@
 .method public abstract a(Ljava/lang/String;)Ljava/io/File;
 .end method
 
+.method public abstract b()Ljava/io/File;
+.end method
+
 .method public abstract b(Ljava/lang/String;)Ljava/io/File;
 .end method
 

@@ -1,212 +1,361 @@
 .class public final Lcom/kik/view/adapters/n;
-.super Lcom/kik/view/adapters/BotsAdapter;
+.super Landroid/widget/ArrayAdapter;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/kik/view/adapters/n$a;,
+        Lcom/kik/view/adapters/n$b;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/widget/ArrayAdapter",
+        "<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final a:I
+
+
 # instance fields
-.field private final f:Lkik/android/chat/presentation/u;
+.field private final b:Ljava/lang/Object;
+
+.field private c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private d:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private e:Landroid/widget/Filter;
+
+.field private f:Z
+
+.field private final g:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/kik/cache/ae;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;Lkik/android/chat/presentation/u;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .prologue
+    .line 25
+    const/high16 v0, 0x42200000    # 40.0f
+
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(F)I
+
+    move-result v0
+
+    sput v0, Lcom/kik/view/adapters/n;->a:I
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Ljava/util/List;Z)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;Z)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 41
+    const v0, 0x7f0400db
+
+    invoke-direct {p0, p1, v0, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
+
     .line 26
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/kik/view/adapters/BotsAdapter;-><init>(Landroid/content/Context;Lcom/kik/cache/ae;Lkik/core/interfaces/v;Lcom/kik/android/Mixpanel;)V
+    new-instance v0, Ljava/lang/Object;
 
-    .line 27
-    iput-object p5, p0, Lcom/kik/view/adapters/n;->f:Lkik/android/chat/presentation/u;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
-    return-void
-.end method
+    iput-object v0, p0, Lcom/kik/view/adapters/n;->b:Ljava/lang/Object;
 
-.method static synthetic a(Lcom/kik/view/adapters/n;)V
-    .locals 1
+    .line 37
+    const/high16 v0, 0x41800000    # 16.0f
 
-    .prologue
-    .line 0
-    .line 1058
-    iget-object v0, p0, Lcom/kik/view/adapters/n;->f:Lkik/android/chat/presentation/u;
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->a(F)I
 
-    invoke-interface {v0}, Lkik/android/chat/presentation/u;->a()V
+    move-result v0
 
-    .line 0
-    return-void
-.end method
+    iput v0, p0, Lcom/kik/view/adapters/n;->g:I
 
-.method static synthetic a(Lcom/kik/view/adapters/n;I)V
-    .locals 2
+    .line 43
+    iput-object p2, p0, Lcom/kik/view/adapters/n;->c:Ljava/util/List;
 
-    .prologue
-    .line 0
-    .line 1038
-    iget-object v0, p0, Lcom/kik/view/adapters/n;->f:Lkik/android/chat/presentation/u;
+    .line 44
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-virtual {p0, p1}, Lcom/kik/view/adapters/n;->a(I)Lkik/core/datatypes/m;
+    invoke-direct {v0, p2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    move-result-object v1
+    iput-object v0, p0, Lcom/kik/view/adapters/n;->d:Ljava/util/List;
 
-    invoke-interface {v0, v1, p1}, Lkik/android/chat/presentation/u;->a(Lkik/core/datatypes/m;I)V
+    .line 45
+    iput-boolean p3, p0, Lcom/kik/view/adapters/n;->f:Z
 
-    .line 0
-    return-void
-.end method
-
-.method static synthetic b(Lcom/kik/view/adapters/n;)V
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 1064
-    iget-object v0, p0, Lcom/kik/view/adapters/n;->f:Lkik/android/chat/presentation/u;
-
-    invoke-interface {v0}, Lkik/android/chat/presentation/u;->b()V
-
-    .line 0
-    return-void
-.end method
-
-
-# virtual methods
-.method protected final a()I
-    .locals 1
-
-    .prologue
     .line 46
-    const v0, 0x7f0400df
+    return-void
+.end method
+
+.method static synthetic a(Lcom/kik/view/adapters/n;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 23
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->b:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method static synthetic b(Lcom/kik/view/adapters/n;)Ljava/util/List;
+    .locals 1
+
+    .prologue
+    .line 23
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->d:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method static synthetic c(Lcom/kik/view/adapters/n;)Z
+    .locals 1
+
+    .prologue
+    .line 23
+    iget-boolean v0, p0, Lcom/kik/view/adapters/n;->f:Z
 
     return v0
 .end method
 
-.method protected final a(Landroid/view/ViewGroup;)Landroid/view/View;
+
+# virtual methods
+.method public final a()I
     .locals 2
 
     .prologue
-    .line 64
-    const v0, 0x7f0400c6
+    .line 86
+    sget v0, Lcom/kik/view/adapters/n;->a:I
 
-    invoke-static {p0}, Lcom/kik/view/adapters/q;->a(Lcom/kik/view/adapters/n;)Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/kik/view/adapters/n;->c:Ljava/util/List;
 
-    move-result-object v1
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/kik/view/adapters/n;->a(Landroid/view/ViewGroup;ILandroid/view/View$OnClickListener;)Landroid/view/View;
+    move-result v1
 
-    move-result-object v0
+    mul-int/2addr v0, v1
 
-    return-object v0
+    iget v1, p0, Lcom/kik/view/adapters/n;->g:I
+
+    add-int/2addr v0, v1
+
+    return v0
 .end method
 
-.method protected final a(Lcom/kik/view/adapters/f;Lkik/core/datatypes/m;)V
+.method public final b()V
     .locals 2
 
     .prologue
-    .line 70
-    iget-object v0, p0, Lcom/kik/view/adapters/n;->f:Lkik/android/chat/presentation/u;
-
-    invoke-interface {v0}, Lkik/android/chat/presentation/u;->d()Z
-
-    move-result v0
+    .line 106
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->e:Landroid/widget/Filter;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p2}, Lkik/core/datatypes/m;->l()Ljava/lang/String;
+    .line 107
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->e:Landroid/widget/Filter;
 
-    move-result-object v0
+    const-string v1, ""
 
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Landroid/widget/Filter;->filter(Ljava/lang/CharSequence;)V
+
+    .line 109
+    :cond_0
+    return-void
+.end method
+
+.method public final getCount()I
+    .locals 1
+
+    .prologue
+    .line 92
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->c:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    if-nez v0, :cond_0
-
-    .line 71
-    iget-object v0, p1, Lcom/kik/view/adapters/f;->f:Landroid/widget/TextView;
-
-    invoke-virtual {p2}, Lkik/core/datatypes/m;->l()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 76
-    :goto_0
-    return-void
-
-    .line 74
-    :cond_0
-    invoke-super {p0, p1, p2}, Lcom/kik/view/adapters/BotsAdapter;->a(Lcom/kik/view/adapters/f;Lkik/core/datatypes/m;)V
-
-    goto :goto_0
+    return v0
 .end method
 
-.method protected final b(Landroid/view/ViewGroup;)Landroid/view/View;
+.method public final getFilter()Landroid/widget/Filter;
     .locals 2
 
     .prologue
-    .line 52
-    const v0, 0x7f0400cf
+    .line 98
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->e:Landroid/widget/Filter;
+
+    if-nez v0, :cond_0
+
+    .line 99
+    new-instance v0, Lcom/kik/view/adapters/n$a;
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/kik/view/adapters/n;->a(Landroid/view/ViewGroup;ILandroid/view/View$OnClickListener;)Landroid/view/View;
+    invoke-direct {v0, p0, v1}, Lcom/kik/view/adapters/n$a;-><init>(Lcom/kik/view/adapters/n;B)V
 
-    move-result-object v0
+    iput-object v0, p0, Lcom/kik/view/adapters/n;->e:Landroid/widget/Filter;
 
-    return-object v0
-.end method
-
-.method protected final c(Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 2
-
-    .prologue
-    .line 58
-    const v0, 0x7f0400ce
-
-    invoke-static {p0}, Lcom/kik/view/adapters/p;->a(Lcom/kik/view/adapters/n;)Landroid/view/View$OnClickListener;
-
-    move-result-object v1
-
-    invoke-virtual {p0, p1, v0, v1}, Lcom/kik/view/adapters/n;->a(Landroid/view/ViewGroup;ILandroid/view/View$OnClickListener;)Landroid/view/View;
-
-    move-result-object v0
+    .line 101
+    :cond_0
+    iget-object v0, p0, Lcom/kik/view/adapters/n;->e:Landroid/widget/Filter;
 
     return-object v0
 .end method
 
 .method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 2
+    .locals 6
 
     .prologue
-    .line 33
-    iget-object v0, p0, Lcom/kik/view/adapters/n;->a:Lcom/kik/view/adapters/BotsAdapter$State;
+    const/4 v5, -0x1
 
-    if-eqz v0, :cond_0
+    const/4 v4, 0x0
 
-    if-nez p1, :cond_0
+    .line 54
+    if-nez p2, :cond_0
 
-    .line 34
-    invoke-virtual {p0, p3}, Lcom/kik/view/adapters/n;->d(Landroid/view/ViewGroup;)Landroid/view/View;
+    .line 55
+    new-instance v0, Lcom/kik/view/adapters/n$b;
 
-    move-result-object v0
+    invoke-direct {v0, v4}, Lcom/kik/view/adapters/n$b;-><init>(B)V
 
-    .line 39
-    :goto_0
-    return-object v0
+    .line 56
+    new-instance p2, Landroid/widget/LinearLayout;
 
-    .line 37
-    :cond_0
-    invoke-super {p0, p1, p2, p3}, Lcom/kik/view/adapters/BotsAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-
-    move-result-object v0
-
-    .line 38
-    invoke-static {p0, p1}, Lcom/kik/view/adapters/o;->a(Lcom/kik/view/adapters/n;I)Landroid/view/View$OnClickListener;
+    invoke-virtual {p0}, Lcom/kik/view/adapters/n;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-direct {p2, v1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    .line 57
+    new-instance v1, Landroid/widget/AbsListView$LayoutParams;
+
+    const/4 v2, -0x2
+
+    invoke-direct {v1, v5, v2}, Landroid/widget/AbsListView$LayoutParams;-><init>(II)V
+
+    invoke-virtual {p2, v1}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 59
+    new-instance v1, Landroid/widget/TextView;
+
+    invoke-virtual {p0}, Lcom/kik/view/adapters/n;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    .line 61
+    new-instance v2, Landroid/view/ViewGroup$LayoutParams;
+
+    sget v3, Lcom/kik/view/adapters/n;->a:I
+
+    invoke-direct {v2, v5, v3}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
+
+    .line 63
+    const/16 v3, 0x10
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setGravity(I)V
+
+    .line 64
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 65
+    const/high16 v2, 0x41100000    # 9.0f
+
+    invoke-static {v2}, Lkik/android/chat/KikApplication;->a(F)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2, v4, v4, v4}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 66
+    invoke-virtual {v1}, Landroid/widget/TextView;->setSingleLine()V
+
+    .line 67
+    sget-object v2, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
+
+    .line 68
+    const/4 v2, 0x2
+
+    const/high16 v3, 0x41900000    # 18.0f
+
+    invoke-virtual {v1, v2, v3}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    .line 69
+    invoke-virtual {p2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
+    .line 71
+    iput-object v1, v0, Lcom/kik/view/adapters/n$b;->a:Landroid/widget/TextView;
+
+    .line 72
+    invoke-virtual {p2, v0}, Landroid/widget/LinearLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 79
+    :goto_0
+    iget-object v1, v0, Lcom/kik/view/adapters/n$b;->a:Landroid/widget/TextView;
+
+    invoke-virtual {p0, p1}, Lcom/kik/view/adapters/n;->getItem(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 81
+    return-object p2
+
+    .line 75
+    :cond_0
+    check-cast p2, Landroid/widget/LinearLayout;
+
+    .line 76
+    invoke-virtual {p2}, Landroid/widget/LinearLayout;->getTag()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/view/adapters/n$b;
 
     goto :goto_0
 .end method

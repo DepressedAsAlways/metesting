@@ -1,11 +1,11 @@
 .class final Lkik/android/chat/fragment/KikContactsListFragment$2;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikContactsListFragment;->c(Ljava/lang/String;Ljava/lang/String;)V
+    value = Lkik/android/chat/fragment/KikContactsListFragment;->b(Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Landroid/os/Bundle;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 1042
+    .line 1057
     iput-object p1, p0, Lkik/android/chat/fragment/KikContactsListFragment$2;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,23 +46,23 @@
     .locals 2
 
     .prologue
-    .line 1046
-    invoke-super {p0}, Lcom/kik/events/l;->b()V
+    .line 1061
+    invoke-super {p0}, Lcom/kik/events/k;->b()V
 
-    .line 1048
+    .line 1063
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$2;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikContactsListFragment;->a(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikContactsListFragment;->setResultData(Landroid/os/Bundle;)V
 
-    .line 1049
+    .line 1064
     iget-object v0, p0, Lkik/android/chat/fragment/KikContactsListFragment$2;->a:Lkik/android/chat/fragment/KikContactsListFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->B()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikContactsListFragment;->finish()V
 
-    .line 1050
+    .line 1065
     return-void
 .end method

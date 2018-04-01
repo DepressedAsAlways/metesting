@@ -32,17 +32,19 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 75
+    .line 76
     new-instance v0, Lkik/android/util/LegacyBitmapLRUCache;
 
-    invoke-direct {v0}, Lkik/android/util/LegacyBitmapLRUCache;-><init>()V
+    const/16 v1, 0xf
+
+    invoke-direct {v0, v1}, Lkik/android/util/LegacyBitmapLRUCache;-><init>(I)V
 
     sput-object v0, Lkik/android/util/f;->b:Lkik/android/util/LegacyBitmapLRUCache;
 
-    .line 90
+    .line 91
     const/4 v0, 0x4
 
     new-array v0, v0, [I
@@ -51,35 +53,35 @@
 
     sput-object v0, Lkik/android/util/f;->a:[I
 
-    .line 95
+    .line 96
     new-instance v0, Lkik/android/util/f$1;
 
     invoke-direct {v0}, Lkik/android/util/f$1;-><init>()V
 
     sput-object v0, Lkik/android/util/f;->d:Landroid/graphics/Paint;
 
-    .line 102
+    .line 104
     new-instance v0, Lkik/android/util/f$3;
 
     invoke-direct {v0}, Lkik/android/util/f$3;-><init>()V
 
     sput-object v0, Lkik/android/util/f;->e:Landroid/graphics/Paint;
 
-    .line 112
+    .line 115
     new-instance v0, Lkik/android/util/f$4;
 
     invoke-direct {v0}, Lkik/android/util/f$4;-><init>()V
 
     sput-object v0, Lkik/android/util/f;->f:Landroid/graphics/Paint;
 
-    .line 122
+    .line 126
     new-instance v0, Lkik/android/util/f$5;
 
     invoke-direct {v0}, Lkik/android/util/f$5;-><init>()V
 
     sput-object v0, Lkik/android/util/f;->g:Landroid/graphics/Paint;
 
-    .line 131
+    .line 136
     const-string v0, "AndroidImageUtils"
 
     invoke-static {v0}, Lorg/slf4j/c;->a(Ljava/lang/String;)Lorg/slf4j/b;
@@ -90,7 +92,7 @@
 
     return-void
 
-    .line 90
+    .line 91
     :array_0
     .array-data 4
         0x640
@@ -104,24 +106,24 @@
     .locals 2
 
     .prologue
-    .line 354
+    .line 359
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lkik/android/chat/activity/KikCropActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 355
+    .line 360
     const-string v1, "image/*"
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 356
+    .line 361
     const-string v1, "output"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 357
+    .line 362
     return-object v0
 .end method
 
@@ -139,17 +141,17 @@
 
     const/4 v1, 0x0
 
-    .line 1560
+    .line 1566
     new-instance v3, Lkik/android/util/k;
 
     invoke-direct {v3, p0, v2}, Lkik/android/util/k;-><init>(II)V
 
-    .line 1561
+    .line 1567
     new-instance v4, Landroid/graphics/Path;
 
     invoke-direct {v4}, Landroid/graphics/Path;-><init>()V
 
-    .line 1563
+    .line 1569
     invoke-virtual {v3}, Lkik/android/util/k;->a()I
 
     move-result v0
@@ -164,24 +166,24 @@
 
     move-result-object v5
 
-    .line 1564
+    .line 1570
     new-instance v6, Landroid/graphics/Canvas;
 
     invoke-direct {v6, v5}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 1566
+    .line 1572
     sget-object v0, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {v6, v1, v0}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 1568
+    .line 1574
     invoke-virtual {v3}, Lkik/android/util/k;->f()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1569
+    .line 1575
     invoke-virtual {v3}, Lkik/android/util/k;->c()I
 
     move-result v0
@@ -203,7 +205,7 @@
     :cond_0
     move v0, v1
 
-    .line 1572
+    .line 1578
     :goto_0
     invoke-virtual {v3}, Lkik/android/util/k;->f()I
 
@@ -211,10 +213,10 @@
 
     if-ge v0, v7, :cond_3
 
-    .line 1573
+    .line 1579
     if-ne p0, v2, :cond_2
 
-    .line 1574
+    .line 1580
     invoke-virtual {v3}, Lkik/android/util/k;->c()I
 
     move-result v7
@@ -233,7 +235,7 @@
 
     invoke-static {v7, v8, v6, v4}, Lkik/android/util/f;->a(ILandroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/Path;)V
 
-    .line 1575
+    .line 1581
     invoke-virtual {v3}, Lkik/android/util/k;->c()I
 
     move-result v7
@@ -256,14 +258,14 @@
 
     invoke-static {v7, v8, v6, v4, v9}, Lkik/android/util/f;->a(ILandroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/Path;I)V
 
-    .line 1572
+    .line 1578
     :cond_1
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1577
+    .line 1583
     :cond_2
     invoke-virtual {v3}, Lkik/android/util/k;->d()Ljava/util/ArrayList;
 
@@ -275,12 +277,12 @@
 
     if-ge v0, v7, :cond_1
 
-    .line 1578
+    .line 1584
     invoke-virtual {v3, v0}, Lkik/android/util/k;->a(I)Landroid/graphics/Point;
 
     move-result-object v7
 
-    .line 1579
+    .line 1585
     invoke-virtual {v3}, Lkik/android/util/k;->c()I
 
     move-result v8
@@ -293,7 +295,7 @@
 
     goto :goto_1
 
-    .line 1583
+    .line 1589
     :cond_3
     invoke-virtual {v3}, Lkik/android/util/k;->f()I
 
@@ -305,11 +307,11 @@
 
     move v0, v2
 
-    .line 1584
+    .line 1590
     :goto_2
     if-eqz v0, :cond_4
 
-    .line 1585
+    .line 1591
     invoke-virtual {v3, v1}, Lkik/android/util/k;->a(I)Landroid/graphics/Point;
 
     move-result-object v0
@@ -318,14 +320,14 @@
 
     invoke-static {v3, v4, v0, v6, v1}, Lkik/android/util/f;->a(Lkik/android/util/k;Landroid/graphics/Path;Landroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/BitmapShader;)V
 
-    .line 555
+    .line 561
     :cond_4
     return-object v5
 
     :cond_5
     move v0, v1
 
-    .line 1583
+    .line 1589
     goto :goto_2
 .end method
 
@@ -338,25 +340,25 @@
     .end annotation
 
     .prologue
-    .line 829
+    .line 890
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f0201f5
+    const v1, 0x7f020265
 
     invoke-static {v0, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 830
-    const v1, 0x7f090350
+    .line 891
+    const v1, 0x7f090364
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 832
+    .line 893
     const/16 v2, 0xdc
 
     const/16 v3, 0xdc
@@ -367,7 +369,7 @@
 
     move-result-object v2
 
-    .line 834
+    .line 895
     const/16 v3, 0x280
 
     const/16 v4, 0x280
@@ -378,17 +380,17 @@
 
     move-result-object v3
 
-    .line 835
+    .line 896
     new-instance v4, Landroid/graphics/Canvas;
 
     invoke-direct {v4, v3}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 836
+    .line 897
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    const v6, 0x7f0f00d9
+    const v6, 0x7f0e00e9
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -396,32 +398,32 @@
 
     invoke-virtual {v4, v5}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 837
+    .line 898
     new-instance v5, Landroid/graphics/Paint;
 
     invoke-direct {v5}, Landroid/graphics/Paint;-><init>()V
 
-    .line 838
+    .line 899
     const/4 v6, 0x1
 
     invoke-virtual {v5, v6}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 839
+    .line 900
     const/4 v6, 0x1
 
     invoke-virtual {v5, v6}, Landroid/graphics/Paint;->setDither(Z)V
 
-    .line 840
+    .line 901
     const/4 v6, 0x1
 
     invoke-virtual {v5, v6}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 842
+    .line 903
     new-instance v6, Landroid/graphics/Paint;
 
     invoke-direct {v6}, Landroid/graphics/Paint;-><init>()V
 
-    .line 843
+    .line 904
     new-instance v7, Landroid/graphics/BitmapShader;
 
     sget-object v8, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
@@ -430,12 +432,12 @@
 
     invoke-direct {v7, v2, v8, v9}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
 
-    .line 844
+    .line 905
     new-instance v8, Landroid/graphics/Matrix;
 
     invoke-direct {v8}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 845
+    .line 906
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v9
@@ -458,28 +460,28 @@
 
     invoke-virtual {v8, v9, v10}, Landroid/graphics/Matrix;->setTranslate(FF)V
 
-    .line 846
+    .line 907
     invoke-virtual {v7, v8}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
-    .line 847
+    .line 908
     const/4 v8, 0x1
 
     invoke-virtual {v6, v8}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 848
+    .line 909
     const/4 v8, 0x1
 
     invoke-virtual {v6, v8}, Landroid/graphics/Paint;->setDither(Z)V
 
-    .line 849
+    .line 910
     const/4 v8, 0x1
 
     invoke-virtual {v6, v8}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 850
+    .line 911
     invoke-virtual {v6, v7}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
-    .line 851
+    .line 912
     const/high16 v7, 0x43a00000    # 320.0f
 
     const/high16 v8, 0x43860000    # 268.0f
@@ -494,12 +496,12 @@
 
     invoke-virtual {v4, v7, v8, v2, v6}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 853
+    .line 914
     const/4 v2, 0x0
 
     invoke-virtual {v5, v2}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
-    .line 854
+    .line 915
     const/4 v2, 0x0
 
     new-instance v6, Landroid/graphics/Rect;
@@ -516,12 +518,12 @@
 
     invoke-virtual {v4, v0, v2, v6, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 856
+    .line 917
     const/4 v0, 0x0
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
-    .line 857
+    .line 918
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
@@ -534,17 +536,17 @@
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 858
+    .line 919
     sget-object v0, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 859
+    .line 920
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v2, 0x7f0f00cd
+    const v2, 0x7f0e00dd
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -552,22 +554,22 @@
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 860
+    .line 921
     const/high16 v0, 0x42100000    # 36.0f
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 861
+    .line 922
     if-eqz v1, :cond_0
 
-    .line 862
+    .line 923
     const/high16 v0, 0x43a00000    # 320.0f
 
     const v2, 0x43d38000    # 423.0f
 
     invoke-virtual {v4, v1, v0, v2, v5}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 864
+    .line 925
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -581,17 +583,17 @@
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 865
+    .line 926
     const/high16 v0, 0x41f00000    # 30.0f
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 866
+    .line 927
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f0f00ce
+    const v1, 0x7f0e00de
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -599,47 +601,47 @@
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 867
+    .line 928
     if-eqz p1, :cond_1
 
-    .line 868
+    .line 929
     const/high16 v0, 0x43a00000    # 320.0f
 
     const v1, 0x43e98000    # 467.0f
 
     invoke-virtual {v4, p1, v0, v1, v5}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 871
+    .line 932
     :cond_1
     return-object v3
 .end method
 
-.method public static a(Lcom/kik/cache/ae;Lcom/kik/cache/ac;)Landroid/graphics/Bitmap;
+.method public static a(Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/cache/KikImageRequest;)Landroid/graphics/Bitmap;
     .locals 7
 
     .prologue
     const/4 v3, 0x0
 
-    .line 716
+    .line 774
     if-eqz p0, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 717
+    .line 775
     :cond_0
     const/4 v0, 0x0
 
-    .line 736
+    .line 795
     :goto_0
     return-object v0
 
-    .line 719
+    .line 777
     :cond_1
     new-instance v6, Lkik/android/util/f$b;
 
     invoke-direct {v6}, Lkik/android/util/f$b;-><init>()V
 
-    .line 720
+    .line 778
     new-instance v2, Lkik/android/util/f$9;
 
     invoke-direct {v2, v6}, Lkik/android/util/f$9;-><init>(Lkik/android/util/f$b;)V
@@ -652,9 +654,9 @@
 
     move v4, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->b(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
-    .line 736
+    .line 795
     invoke-virtual {v6}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -662,18 +664,18 @@
     goto :goto_0
 .end method
 
-.method private static a(Lcom/kik/cache/ae;Lkik/android/util/f$a;Lkik/android/util/f$b;ZLcom/kik/cache/ac;)Landroid/graphics/Bitmap;
+.method private static a(Lcom/kik/cache/KikVolleyImageLoader;Lkik/android/util/f$a;Lkik/android/util/f$b;ZLcom/kik/cache/KikImageRequest;)Landroid/graphics/Bitmap;
     .locals 7
 
     .prologue
-    const v6, 0x7f020361
+    const v6, 0x7f0203bc
 
     const/4 v3, 0x0
 
-    .line 517
+    .line 522
     if-eqz p4, :cond_0
 
-    .line 518
+    .line 523
     new-instance v2, Lkik/android/util/f$6;
 
     invoke-direct {v2, p2}, Lkik/android/util/f$6;-><init>(Lkik/android/util/f$b;)V
@@ -686,9 +688,9 @@
 
     move v4, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->b(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
-    .line 537
+    .line 543
     :cond_0
     invoke-virtual {p2}, Lkik/android/util/f$b;->b()Z
 
@@ -696,10 +698,10 @@
 
     if-nez v0, :cond_1
 
-    .line 538
+    .line 544
     iput-boolean v3, p1, Lkik/android/util/f$a;->b:Z
 
-    .line 541
+    .line 547
     :cond_1
     invoke-virtual {p2}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
 
@@ -713,28 +715,28 @@
 
     if-nez v0, :cond_3
 
-    .line 542
+    .line 548
     :cond_2
     invoke-static {v6}, Lkik/android/chat/KikApplication;->b(I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 550
+    .line 556
     :goto_0
     return-object v0
 
-    .line 544
+    .line 550
     :cond_3
     if-eqz p3, :cond_4
 
-    .line 545
+    .line 551
     invoke-static {v6}, Lkik/android/chat/KikApplication;->b(I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 548
+    .line 554
     :cond_4
     invoke-virtual {p2}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
 
@@ -747,12 +749,12 @@
     .locals 2
 
     .prologue
-    .line 362
+    .line 367
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 363
+    .line 368
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v1
@@ -770,34 +772,34 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 400
+    .line 405
     :try_start_0
     invoke-virtual {p0}, Ljava/io/File;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/platform/util/ExifHelper;->a(Ljava/lang/String;)F
+    invoke-static {v0}, Lkik/android/util/h;->b(Ljava/lang/String;)F
 
     move-result v1
 
-    .line 402
+    .line 407
     sget-object v0, Lkik/android/util/f;->c:Landroid/graphics/BitmapFactory$Options;
 
     if-nez v0, :cond_0
 
-    .line 403
+    .line 408
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 404
+    .line 409
     sput-object v0, Lkik/android/util/f;->c:Landroid/graphics/BitmapFactory$Options;
 
     const/4 v2, 0x1
 
     iput-boolean v2, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
-    .line 406
+    .line 411
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -807,12 +809,12 @@
 
     invoke-static {v0, v2}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
-    .line 407
+    .line 412
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 408
+    .line 413
     sget-object v2, Lkik/android/util/f;->c:Landroid/graphics/BitmapFactory$Options;
 
     iget v2, v2, Landroid/graphics/BitmapFactory$Options;->outWidth:I
@@ -825,10 +827,10 @@
 
     move-result v2
 
-    .line 409
+    .line 414
     if-le v2, p1, :cond_1
 
-    .line 410
+    .line 415
     div-int/2addr v2, p1
 
     int-to-double v2, v2
@@ -841,12 +843,12 @@
 
     iput v2, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
-    .line 411
+    .line 416
     const/4 v2, 0x1
 
     iput-boolean v2, v0, Landroid/graphics/BitmapFactory$Options;->inDither:Z
 
-    .line 413
+    .line 418
     :cond_1
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -856,16 +858,16 @@
 
     move-result-object v0
 
-    .line 414
+    .line 419
     if-nez v0, :cond_2
 
     move-object v0, v7
 
-    .line 435
+    .line 440
     :goto_0
     return-object v0
 
-    .line 417
+    .line 422
     :cond_2
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -879,34 +881,34 @@
 
     move-result v2
 
-    .line 419
+    .line 424
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 420
+    .line 425
     const/4 v3, 0x0
 
     cmpl-float v3, v1, v3
 
     if-eqz v3, :cond_3
 
-    .line 421
+    .line 426
     invoke-virtual {v5, v1}, Landroid/graphics/Matrix;->postRotate(F)Z
 
-    .line 424
+    .line 429
     :cond_3
     int-to-float v1, p1
 
-    .line 425
+    .line 430
     int-to-float v2, v2
 
     div-float/2addr v1, v2
 
-    .line 426
+    .line 431
     invoke-virtual {v5, v1, v1}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 427
+    .line 432
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -925,10 +927,10 @@
 
     move-result-object v1
 
-    .line 428
+    .line 433
     if-eq v1, v0, :cond_4
 
-    .line 429
+    .line 434
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
@@ -936,10 +938,10 @@
     :cond_4
     move-object v0, v1
 
-    .line 431
+    .line 436
     goto :goto_0
 
-    .line 435
+    .line 440
     :catch_0
     move-exception v0
 
@@ -952,15 +954,15 @@
     .locals 3
 
     .prologue
-    .line 442
+    .line 447
     const/4 v0, 0x0
 
-    .line 443
+    .line 448
     sget-object v1, Lkik/android/util/f;->b:Lkik/android/util/LegacyBitmapLRUCache;
 
     monitor-enter v1
 
-    .line 444
+    .line 449
     :try_start_0
     sget-object v2, Lkik/android/util/f;->b:Lkik/android/util/LegacyBitmapLRUCache;
 
@@ -970,7 +972,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 445
+    .line 450
     sget-object v0, Lkik/android/util/f;->b:Lkik/android/util/LegacyBitmapLRUCache;
 
     invoke-virtual {v0, p0}, Lkik/android/util/LegacyBitmapLRUCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -985,14 +987,14 @@
 
     check-cast v0, Landroid/graphics/Bitmap;
 
-    .line 447
+    .line 452
     :cond_0
     monitor-exit v1
 
-    .line 448
+    .line 453
     return-object v0
 
-    .line 447
+    .line 452
     :catchall_0
     move-exception v0
 
@@ -1003,77 +1005,91 @@
     throw v0
 .end method
 
-.method public static a(Lkik/core/datatypes/ad;Landroid/content/Context;Lcom/kik/cache/ae;)Landroid/graphics/Bitmap;
-    .locals 8
+.method public static a(Lkik/core/datatypes/ac;Landroid/content/Context;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;)Landroid/graphics/Bitmap;
+    .locals 10
 
     .prologue
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    const v7, 0x7f0201f6
+    const v9, 0x7f020266
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
-    .line 881
-    invoke-static {p0, v0, v0, v3}, Lcom/kik/cache/ah;->a(Lkik/core/datatypes/ad;Lcom/android/volley/i$b;Lcom/android/volley/i$a;Z)Lcom/kik/cache/ah;
+    .line 942
+    move-object v0, p0
 
-    move-result-object v1
+    move v3, v2
 
-    .line 882
-    if-nez v1, :cond_0
+    move-object v4, v1
 
-    .line 884
+    move v5, v2
+
+    move v6, v2
+
+    move-object v7, p3
+
+    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
+
+    move-result-object v4
+
+    .line 943
+    if-nez v4, :cond_0
+
+    .line 945
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    invoke-static {v0, v7}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+    invoke-static {v0, v9}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 906
+    .line 968
     :goto_0
     return-object v0
 
-    .line 887
+    .line 948
     :cond_0
-    new-instance v6, Lkik/android/util/f$b;
+    new-instance v0, Lkik/android/util/f$b;
 
-    invoke-direct {v6}, Lkik/android/util/f$b;-><init>()V
+    invoke-direct {v0}, Lkik/android/util/f$b;-><init>()V
 
-    .line 888
-    new-instance v2, Lkik/android/util/f$2;
+    .line 949
+    new-instance v5, Lkik/android/util/f$2;
 
-    invoke-direct {v2, v6}, Lkik/android/util/f$2;-><init>(Lkik/android/util/f$b;)V
+    invoke-direct {v5, v0}, Lkik/android/util/f$2;-><init>(Lkik/android/util/f$b;)V
 
-    const/4 v5, 0x1
+    const/4 v8, 0x1
 
-    move-object v0, p2
+    move-object v3, p2
 
-    move v4, v3
+    move v6, v2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    move v7, v2
 
-    .line 903
-    invoke-virtual {v6}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
+    invoke-virtual/range {v3 .. v8}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
-    move-result-object v0
+    .line 965
+    invoke-virtual {v0}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
 
-    if-nez v0, :cond_1
+    move-result-object v1
 
-    .line 904
+    if-nez v1, :cond_1
+
+    .line 966
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-static {v0, v7}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+    invoke-static {v1, v9}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v6, v0}, Lkik/android/util/f$b;->a(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v0, v1}, Lkik/android/util/f$b;->a(Landroid/graphics/Bitmap;)V
 
-    .line 906
+    .line 968
     :cond_1
-    invoke-virtual {v6}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lkik/android/util/f$b;->a()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -1086,24 +1102,24 @@
     .prologue
     const/high16 v4, 0x40000000    # 2.0f
 
-    .line 782
+    .line 843
     if-eqz p5, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 783
+    .line 844
     :cond_0
     const/4 v0, 0x0
 
-    .line 801
+    .line 862
     :goto_0
     return-object v0
 
-    .line 785
+    .line 846
     :cond_1
     invoke-virtual {p4}, Landroid/graphics/Path;->reset()V
 
-    .line 786
+    .line 847
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -1124,15 +1140,15 @@
 
     invoke-virtual {p4, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 787
+    .line 848
     sget-object v0, Lkik/android/util/f;->e:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p4, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 789
+    .line 850
     invoke-virtual {p4}, Landroid/graphics/Path;->reset()V
 
-    .line 790
+    .line 851
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -1149,7 +1165,7 @@
 
     invoke-virtual {p4, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 791
+    .line 852
     new-instance v0, Landroid/graphics/BitmapShader;
 
     sget-object v1, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
@@ -1158,7 +1174,7 @@
 
     invoke-direct {v0, p5, v1, v2}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
 
-    .line 793
+    .line 854
     int-to-float v1, p0
 
     invoke-virtual {p5}, Landroid/graphics/Bitmap;->getWidth()I
@@ -1169,7 +1185,7 @@
 
     div-float/2addr v1, v2
 
-    .line 794
+    .line 855
     int-to-float v2, p0
 
     invoke-virtual {p5}, Landroid/graphics/Bitmap;->getHeight()I
@@ -1180,13 +1196,13 @@
 
     div-float/2addr v2, v3
 
-    .line 795
+    .line 856
     invoke-virtual {p6}, Landroid/graphics/Matrix;->reset()V
 
-    .line 796
+    .line 857
     invoke-virtual {p6, v1, v2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 797
+    .line 858
     iget v1, p1, Landroid/graphics/Point;->x:I
 
     div-int/lit8 v2, p0, 0x2
@@ -1205,15 +1221,15 @@
 
     invoke-virtual {p6, v1, v2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 798
+    .line 859
     invoke-virtual {v0, p6}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
-    .line 799
+    .line 860
     sget-object v1, Lkik/android/util/f;->d:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
-    .line 800
+    .line 861
     sget-object v1, Lkik/android/util/f;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p4, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
@@ -1225,22 +1241,22 @@
     .locals 6
 
     .prologue
-    .line 911
+    .line 973
     if-eqz p1, :cond_0
 
     if-nez p0, :cond_1
 
-    .line 914
+    .line 976
     :cond_0
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0, p0, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 924
+    .line 986
     :goto_0
     return-object v0
 
-    .line 916
+    .line 978
     :cond_1
     int-to-double v0, p2
 
@@ -1248,43 +1264,43 @@
 
     div-double/2addr v0, v2
 
-    .line 917
+    .line 979
     int-to-double v2, p3
 
     int-to-double v4, p1
 
     div-double/2addr v2, v4
 
-    .line 918
+    .line 980
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide v0
 
-    .line 920
+    .line 982
     int-to-double v2, p1
 
     mul-double/2addr v2, v0
 
-    .line 921
+    .line 983
     int-to-double v4, p0
 
     mul-double/2addr v0, v4
 
-    .line 922
+    .line 984
     invoke-static {v2, v3}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v2
 
     double-to-int v2, v2
 
-    .line 923
+    .line 985
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
 
     double-to-int v1, v0
 
-    .line 924
+    .line 986
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0, v1, v2}, Landroid/graphics/Point;-><init>(II)V
@@ -1296,27 +1312,27 @@
     .locals 4
 
     .prologue
-    .line 135
+    .line 140
     if-nez p0, :cond_1
 
-    .line 136
+    .line 141
     const/4 v0, 0x0
 
-    .line 157
+    .line 162
     :cond_0
     :goto_0
     return-object v0
 
-    .line 140
+    .line 145
     :cond_1
     invoke-virtual {p0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 141
+    .line 146
     if-nez v0, :cond_0
 
-    .line 145
+    .line 150
     const-string v0, "android.intent.extra.STREAM"
 
     invoke-virtual {p0, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
@@ -1325,10 +1341,10 @@
 
     check-cast v0, Landroid/net/Uri;
 
-    .line 146
+    .line 151
     if-nez v0, :cond_0
 
-    .line 151
+    .line 156
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1342,11 +1358,11 @@
 
     goto :goto_0
 
-    .line 153
+    .line 158
     :catch_0
     move-exception v1
 
-    .line 154
+    .line 159
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Invalid uri: "
@@ -1362,13 +1378,13 @@
     goto :goto_0
 .end method
 
-.method public static a(Lcom/kik/cache/ae;Lcom/kik/cache/ac;Z)Lcom/kik/events/Promise;
+.method public static a(Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/cache/KikImageRequest;Z)Lcom/kik/events/Promise;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/kik/cache/ae;",
-            "Lcom/kik/cache/ac;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            "Lcom/kik/cache/KikImageRequest;",
             "Z)",
             "Lcom/kik/events/Promise",
             "<",
@@ -1380,18 +1396,18 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 748
+    .line 808
     if-eqz p0, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 749
+    .line 809
     :cond_0
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 750
+    .line 810
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     const-string v2, "request or loader was null"
@@ -1400,17 +1416,17 @@
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 777
+    .line 838
     :goto_0
     return-object v0
 
-    .line 753
+    .line 813
     :cond_1
     new-instance v6, Lcom/kik/events/Promise;
 
     invoke-direct {v6}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 754
+    .line 814
     new-instance v2, Lkik/android/util/f$10;
 
     invoke-direct {v2, v6}, Lkik/android/util/f$10;-><init>(Lcom/kik/events/Promise;)V
@@ -1423,11 +1439,11 @@
 
     move v5, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->b(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     move-object v0, v6
 
-    .line 777
+    .line 838
     goto :goto_0
 .end method
 
@@ -1437,14 +1453,14 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 213
-    .line 215
+    .line 218
+    .line 220
     :try_start_0
     invoke-virtual {p1, p2}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
     move-result-object v2
 
-    .line 216
+    .line 221
     invoke-static {p0, v2}, Lkik/android/KikFileProvider;->a(Landroid/content/Context;Ljava/io/InputStream;)Ljava/io/File;
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1453,10 +1469,10 @@
 
     move-result-object v0
 
-    .line 217
+    .line 222
     if-eqz v2, :cond_0
 
-    .line 218
+    .line 223
     :try_start_1
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_1
@@ -1464,12 +1480,12 @@
     .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 228
+    .line 233
     :cond_0
     :goto_0
     return-object v0
 
-    .line 224
+    .line 229
     :catch_0
     move-exception v0
 
@@ -1478,7 +1494,7 @@
 
     goto :goto_0
 
-    .line 228
+    .line 233
     :catch_1
     move-exception v0
 
@@ -1491,7 +1507,7 @@
 
     goto :goto_0
 
-    .line 224
+    .line 229
     :catch_3
     move-exception v0
 
@@ -1504,8 +1520,8 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 162
-    .line 163
+    .line 167
+    .line 168
     const-string v0, "file"
 
     invoke-virtual {p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
@@ -1518,7 +1534,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 164
+    .line 169
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -1527,12 +1543,12 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 208
+    .line 213
     :cond_0
     :goto_0
     return-object v0
 
-    .line 166
+    .line 171
     :cond_1
     const-string v0, "content"
 
@@ -1546,7 +1562,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 169
+    .line 174
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
     :try_end_0
@@ -1554,7 +1570,7 @@
 
     move-result-object v0
 
-    .line 172
+    .line 177
     const/4 v1, 0x1
 
     :try_start_1
@@ -1588,11 +1604,11 @@
 
     move-object v6, v7
 
-    .line 179
+    .line 184
     :goto_1
     if-eqz v6, :cond_6
 
-    .line 181
+    .line 186
     :try_start_2
     const-string v1, "_data"
 
@@ -1600,7 +1616,7 @@
 
     move-result v1
 
-    .line 182
+    .line 187
     if-ltz v1, :cond_4
 
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
@@ -1609,25 +1625,25 @@
 
     if-eqz v2, :cond_4
 
-    .line 183
+    .line 188
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 184
+    .line 189
     if-eqz v1, :cond_3
 
-    .line 185
+    .line 190
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 186
+    .line 191
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 187
+    .line 192
     if-eqz v1, :cond_2
 
     invoke-virtual {v1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -1636,7 +1652,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 188
+    .line 193
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {v1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -1647,17 +1663,17 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 203
+    .line 208
     :cond_2
     :goto_2
     if-eqz v6, :cond_0
 
-    .line 204
+    .line 209
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
     goto :goto_0
 
-    .line 176
+    .line 181
     :catch_0
     move-exception v1
 
@@ -1669,7 +1685,7 @@
 
     goto :goto_1
 
-    .line 193
+    .line 198
     :cond_3
     invoke-static {p1, v0, p0}, Lkik/android/util/f;->a(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/File;
 
@@ -1677,7 +1693,7 @@
 
     goto :goto_2
 
-    .line 198
+    .line 203
     :cond_4
     invoke-static {p1, v0, p0}, Lkik/android/util/f;->a(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/File;
     :try_end_3
@@ -1687,19 +1703,19 @@
 
     goto :goto_2
 
-    .line 203
+    .line 208
     :catchall_0
     move-exception v0
 
     if-eqz v6, :cond_5
 
-    .line 204
+    .line 209
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
     :cond_5
     throw v0
 
-    .line 176
+    .line 181
     :catch_1
     move-exception v1
 
@@ -1716,13 +1732,13 @@
     goto :goto_0
 .end method
 
-.method public static a(Ljava/io/File;Ljava/lang/String;ZILkik/core/interfaces/ac;)Ljava/io/File;
+.method public static a(Ljava/io/File;Ljava/lang/String;ZILkik/core/interfaces/ad;)Ljava/io/File;
     .locals 8
 
     .prologue
     const/4 v6, 0x0
 
-    .line 286
+    .line 291
     :try_start_0
     new-instance v7, Ljava/io/ByteArrayOutputStream;
 
@@ -1730,21 +1746,21 @@
 
     invoke-direct {v7, v0}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
-    .line 287
+    .line 292
     invoke-static {p0, p3}, Lkik/android/util/f;->a(Ljava/io/File;I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 288
+    .line 293
     if-nez v0, :cond_0
 
     move-object v0, v6
 
-    .line 311
+    .line 316
     :goto_0
     return-object v0
 
-    .line 292
+    .line 297
     :cond_0
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -1752,10 +1768,10 @@
 
     invoke-virtual {v0, v1, v2, v7}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 293
+    .line 298
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 294
+    .line 299
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Scaled image upload size: "
@@ -1768,7 +1784,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 298
+    .line 303
     invoke-virtual {v7}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v2
@@ -1783,11 +1799,11 @@
 
     move v4, p2
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 
-    .line 299
+    .line 304
     invoke-virtual {v7}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1796,7 +1812,7 @@
 
     goto :goto_0
 
-    .line 303
+    .line 308
     :catch_0
     move-exception v0
 
@@ -1805,10 +1821,10 @@
     :goto_1
     move-object v0, v6
 
-    .line 311
+    .line 316
     goto :goto_0
 
-    .line 306
+    .line 311
     :catch_1
     move-exception v0
 
@@ -1816,22 +1832,22 @@
 
     goto :goto_1
 
-    .line 309
+    .line 314
     :catch_2
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_1
 .end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/ac;)Ljava/io/File;
+.method public static a(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/ad;)Ljava/io/File;
     .locals 8
 
     .prologue
     const/4 v6, 0x0
 
-    .line 236
+    .line 241
     :try_start_0
     new-instance v7, Ljava/io/ByteArrayOutputStream;
 
@@ -1839,10 +1855,10 @@
 
     invoke-direct {v7, v0}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
-    .line 238
+    .line 243
     const/4 v0, 0x3
 
-    .line 241
+    .line 246
     new-instance v1, Ljava/util/zip/Deflater;
 
     invoke-direct {v1}, Ljava/util/zip/Deflater;-><init>()V
@@ -1858,10 +1874,10 @@
 
     move-object v0, v6
 
-    .line 244
+    .line 249
     :cond_0
     :try_start_1
-    invoke-static {p0}, Lkik/core/util/i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lkik/core/util/h;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1873,7 +1889,7 @@
 
     move-result-object v0
 
-    .line 245
+    .line 250
     const/4 v3, 0x0
 
     array-length v4, v0
@@ -1888,7 +1904,7 @@
 
     move-result-object v2
 
-    .line 250
+    .line 255
     :goto_0
     add-int/lit8 v1, v1, -0x1
 
@@ -1896,12 +1912,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 252
+    .line 257
     :cond_1
     if-nez v0, :cond_2
 
-    .line 253
-    const v0, 0x7f0900b1
+    .line 258
+    const v0, 0x7f0900b2
 
     const/4 v1, 0x0
 
@@ -1914,11 +1930,11 @@
 
     move-object v0, v6
 
-    .line 279
+    .line 284
     :goto_1
     return-object v0
 
-    .line 257
+    .line 262
     :cond_2
     sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -1926,10 +1942,10 @@
 
     invoke-virtual {v2, v0, v1, v7}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 258
+    .line 263
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 259
+    .line 264
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Scaled image upload size: "
@@ -1942,7 +1958,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 263
+    .line 268
     invoke-virtual {v7}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v2
@@ -1957,11 +1973,11 @@
 
     move-object v1, p1
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 
-    .line 264
+    .line 269
     invoke-virtual {v7}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
@@ -1971,7 +1987,7 @@
 
     goto :goto_1
 
-    .line 268
+    .line 273
     :catch_0
     move-exception v0
 
@@ -1980,10 +1996,10 @@
     :goto_2
     move-object v0, v6
 
-    .line 279
+    .line 284
     goto :goto_1
 
-    .line 271
+    .line 276
     :catch_1
     move-exception v0
 
@@ -1991,7 +2007,7 @@
 
     goto :goto_2
 
-    .line 274
+    .line 279
     :catch_2
     move-exception v0
 
@@ -1999,11 +2015,11 @@
 
     goto :goto_2
 
-    .line 277
+    .line 282
     :catch_3
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_2
 
@@ -2013,7 +2029,7 @@
     goto :goto_0
 .end method
 
-.method public static a([BLjava/lang/String;Lkik/core/interfaces/ac;)Ljava/io/File;
+.method public static a([BLjava/lang/String;Lkik/core/interfaces/ad;)Ljava/io/File;
     .locals 7
 
     .prologue
@@ -2021,16 +2037,16 @@
 
     const/4 v6, 0x0
 
-    .line 316
+    .line 321
     if-nez p0, :cond_0
 
     move-object v0, v6
 
-    .line 345
+    .line 350
     :goto_0
     return-object v0
 
-    .line 320
+    .line 325
     :cond_0
     const/16 v1, 0x500
 
@@ -2039,22 +2055,22 @@
 
     move-result-object v1
 
-    .line 321
+    .line 326
     new-instance v3, Ljava/io/ByteArrayOutputStream;
 
     const/16 v2, 0x5000
 
     invoke-direct {v3, v2}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
-    .line 322
+    .line 327
     if-nez v1, :cond_1
 
     move-object v0, v6
 
-    .line 323
+    .line 328
     goto :goto_0
 
-    .line 325
+    .line 330
     :cond_1
     sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -2062,18 +2078,18 @@
 
     invoke-virtual {v1, v2, v4, v3}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 326
+    .line 331
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 327
+    .line 332
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v2
 
-    .line 328
+    .line 333
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
 
-    .line 329
+    .line 334
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "Scaled image upload size: "
@@ -2085,7 +2101,7 @@
     :goto_1
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 333
+    .line 338
     const/4 v3, 0x1
 
     const/4 v4, 0x1
@@ -2096,13 +2112,13 @@
 
     move-object v1, p1
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 329
+    .line 334
     :cond_2
     array-length v0, v2
     :try_end_0
@@ -2112,7 +2128,7 @@
 
     goto :goto_1
 
-    .line 337
+    .line 342
     :catch_0
     move-exception v0
 
@@ -2121,10 +2137,10 @@
     :goto_2
     move-object v0, v6
 
-    .line 345
+    .line 350
     goto :goto_0
 
-    .line 340
+    .line 345
     :catch_1
     move-exception v0
 
@@ -2132,37 +2148,37 @@
 
     goto :goto_2
 
-    .line 343
+    .line 348
     :catch_2
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_2
 .end method
 
-.method public static a(Ljava/util/ArrayList;ILcom/kik/cache/ae;)Lkik/android/util/f$a;
+.method public static a(Ljava/util/ArrayList;ILcom/kik/cache/KikVolleyImageLoader;)Lkik/android/util/f$a;
     .locals 19
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/ArrayList",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;I",
-            "Lcom/kik/cache/ae;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ")",
             "Lkik/android/util/f$a;"
         }
     .end annotation
 
     .prologue
-    .line 598
+    .line 603
     new-instance v16, Lkik/android/util/f$a;
 
     invoke-direct/range {v16 .. v16}, Lkik/android/util/f$a;-><init>()V
 
-    .line 599
+    .line 604
     new-instance v17, Lkik/android/util/k;
 
     invoke-virtual/range {p0 .. p0}, Ljava/util/ArrayList;->size()I
@@ -2175,22 +2191,22 @@
 
     invoke-direct {v0, v2, v1}, Lkik/android/util/k;-><init>(II)V
 
-    .line 600
+    .line 605
     new-instance v3, Lkik/android/util/f$7;
 
     invoke-direct {v3}, Lkik/android/util/f$7;-><init>()V
 
-    .line 606
+    .line 612
     new-instance v6, Lkik/android/util/f$8;
 
     invoke-direct {v6}, Lkik/android/util/f$8;-><init>()V
 
-    .line 613
+    .line 620
     new-instance v11, Landroid/graphics/Path;
 
     invoke-direct {v11}, Landroid/graphics/Path;-><init>()V
 
-    .line 615
+    .line 622
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->a()I
 
     move-result v2
@@ -2205,36 +2221,36 @@
 
     move-result-object v18
 
-    .line 616
+    .line 623
     new-instance v9, Landroid/graphics/Canvas;
 
     move-object/from16 v0, v18
 
     invoke-direct {v9, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 618
+    .line 625
     const/4 v2, 0x0
 
     sget-object v4, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {v9, v2, v4}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 620
+    .line 627
     const/4 v14, 0x0
 
-    .line 621
+    .line 628
     new-instance v13, Landroid/graphics/Matrix;
 
     invoke-direct {v13}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 622
+    .line 629
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->f()I
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 623
+    .line 630
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->c()I
 
     move-result v2
@@ -2261,7 +2277,7 @@
 
     invoke-static {v2, v4, v9, v11}, Lkik/android/util/f;->a(ILandroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/Path;)V
 
-    .line 626
+    .line 633
     :cond_0
     const/4 v2, 0x0
 
@@ -2274,24 +2290,24 @@
 
     if-ge v15, v2, :cond_5
 
-    .line 627
-    new-instance v10, Lkik/android/util/f$b;
+    .line 634
+    new-instance v12, Lkik/android/util/f$b;
 
-    invoke-direct {v10}, Lkik/android/util/f$b;-><init>()V
+    invoke-direct {v12}, Lkik/android/util/f$b;-><init>()V
 
-    .line 628
+    .line 635
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v15}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lkik/core/datatypes/m;
+    check-cast v2, Lkik/core/datatypes/l;
 
-    .line 629
+    .line 636
     if-eqz v2, :cond_2
 
-    invoke-virtual {v2}, Lkik/core/datatypes/m;->o()Z
+    invoke-virtual {v2}, Lkik/core/datatypes/l;->h()Z
 
     move-result v4
 
@@ -2299,9 +2315,9 @@
 
     const/4 v4, 0x1
 
-    move v8, v4
+    move v10, v4
 
-    .line 630
+    .line 637
     :goto_1
     const/4 v4, 0x0
 
@@ -2309,20 +2325,22 @@
 
     const/4 v7, 0x0
 
-    invoke-static/range {v2 .. v7}, Lcom/kik/cache/f;->a(Lkik/core/datatypes/m;Lcom/android/volley/i$b;IILcom/android/volley/i$a;Z)Lcom/kik/cache/f;
+    const/4 v8, 0x0
+
+    invoke-static/range {v2 .. v8}, Lcom/kik/cache/ContactImageRequest;->getContactImageRequest(Lkik/core/datatypes/l;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZ)Lcom/kik/cache/ContactImageRequest;
 
     move-result-object v2
 
-    .line 631
+    .line 638
     move-object/from16 v0, p2
 
     move-object/from16 v1, v16
 
-    invoke-static {v0, v1, v10, v8, v2}, Lkik/android/util/f;->a(Lcom/kik/cache/ae;Lkik/android/util/f$a;Lkik/android/util/f$b;ZLcom/kik/cache/ac;)Landroid/graphics/Bitmap;
+    invoke-static {v0, v1, v12, v10, v2}, Lkik/android/util/f;->a(Lcom/kik/cache/KikVolleyImageLoader;Lkik/android/util/f$a;Lkik/android/util/f$b;ZLcom/kik/cache/KikImageRequest;)Landroid/graphics/Bitmap;
 
     move-result-object v12
 
-    .line 633
+    .line 640
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->f()I
 
     move-result v2
@@ -2331,7 +2349,7 @@
 
     if-ne v2, v4, :cond_3
 
-    .line 634
+    .line 641
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->c()I
 
     move-result v2
@@ -2358,7 +2376,7 @@
 
     invoke-static {v2, v4, v9, v11}, Lkik/android/util/f;->a(ILandroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/Path;)V
 
-    .line 635
+    .line 642
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->c()I
 
     move-result v7
@@ -2391,7 +2409,7 @@
 
     move-object v2, v14
 
-    .line 626
+    .line 633
     :cond_1
     :goto_2
     add-int/lit8 v4, v15, 0x1
@@ -2402,15 +2420,15 @@
 
     goto :goto_0
 
-    .line 629
+    .line 636
     :cond_2
     const/4 v4, 0x0
 
-    move v8, v4
+    move v10, v4
 
     goto :goto_1
 
-    .line 637
+    .line 644
     :cond_3
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->d()Ljava/util/ArrayList;
 
@@ -2422,14 +2440,14 @@
 
     if-ge v15, v2, :cond_4
 
-    .line 638
+    .line 645
     move-object/from16 v0, v17
 
     invoke-virtual {v0, v15}, Lkik/android/util/k;->a(I)Landroid/graphics/Point;
 
     move-result-object v8
 
-    .line 639
+    .line 646
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->c()I
 
     move-result v7
@@ -2442,7 +2460,7 @@
 
     move-result-object v2
 
-    .line 640
+    .line 647
     if-eqz v15, :cond_1
 
     :cond_4
@@ -2450,7 +2468,7 @@
 
     goto :goto_2
 
-    .line 646
+    .line 653
     :cond_5
     invoke-virtual/range {v17 .. v17}, Lkik/android/util/k;->f()I
 
@@ -2462,13 +2480,13 @@
 
     const/4 v2, 0x1
 
-    .line 647
+    .line 654
     :goto_3
     if-eqz v2, :cond_6
 
     if-eqz v14, :cond_6
 
-    .line 648
+    .line 655
     const/4 v2, 0x0
 
     move-object/from16 v0, v17
@@ -2481,7 +2499,7 @@
 
     invoke-static {v0, v11, v2, v9, v14}, Lkik/android/util/f;->a(Lkik/android/util/k;Landroid/graphics/Path;Landroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/BitmapShader;)V
 
-    .line 650
+    .line 657
     :cond_6
     move-object/from16 v0, v18
 
@@ -2489,38 +2507,38 @@
 
     iput-object v0, v1, Lkik/android/util/f$a;->a:Landroid/graphics/Bitmap;
 
-    .line 651
+    .line 658
     return-object v16
 
-    .line 646
+    .line 653
     :cond_7
     const/4 v2, 0x0
 
     goto :goto_3
 .end method
 
-.method public static a(Ljava/util/List;ILcom/kik/cache/ae;)Lkik/android/util/f$a;
+.method public static a(Ljava/util/List;ILcom/kik/cache/KikVolleyImageLoader;)Lkik/android/util/f$a;
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/n;",
+            "Lcom/kik/core/domain/a/a/b;",
             ">;I",
-            "Lcom/kik/cache/ae;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
             ")",
             "Lkik/android/util/f$a;"
         }
     .end annotation
 
     .prologue
-    .line 662
+    .line 719
     new-instance v9, Lkik/android/util/f$a;
 
     invoke-direct {v9}, Lkik/android/util/f$a;-><init>()V
 
-    .line 663
+    .line 720
     new-instance v10, Lkik/android/util/k;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -2529,12 +2547,12 @@
 
     invoke-direct {v10, v0, p1}, Lkik/android/util/k;-><init>(II)V
 
-    .line 665
+    .line 722
     new-instance v4, Landroid/graphics/Path;
 
     invoke-direct {v4}, Landroid/graphics/Path;-><init>()V
 
-    .line 667
+    .line 724
     invoke-virtual {v10}, Lkik/android/util/k;->a()I
 
     move-result v0
@@ -2549,34 +2567,34 @@
 
     move-result-object v11
 
-    .line 668
+    .line 725
     new-instance v2, Landroid/graphics/Canvas;
 
     invoke-direct {v2, v11}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 670
+    .line 727
     const/4 v0, 0x0
 
     sget-object v1, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {v2, v0, v1}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 672
+    .line 729
     const/4 v7, 0x0
 
-    .line 673
+    .line 730
     new-instance v6, Landroid/graphics/Matrix;
 
     invoke-direct {v6}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 674
+    .line 731
     invoke-virtual {v10}, Lkik/android/util/k;->f()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 675
+    .line 732
     invoke-virtual {v10}, Lkik/android/util/k;->c()I
 
     move-result v0
@@ -2603,7 +2621,7 @@
 
     invoke-static {v0, v1, v2, v4}, Lkik/android/util/f;->a(ILandroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/Path;)V
 
-    .line 678
+    .line 735
     :cond_0
     const/4 v0, 0x0
 
@@ -2616,31 +2634,31 @@
 
     if-ge v8, v0, :cond_4
 
-    .line 679
+    .line 736
     new-instance v1, Lkik/android/util/f$b;
 
     invoke-direct {v1}, Lkik/android/util/f$b;-><init>()V
 
-    .line 680
+    .line 737
     invoke-interface {p0, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/n;
+    check-cast v0, Lcom/kik/core/domain/a/a/b;
 
-    .line 682
-    invoke-static {v0}, Lcom/kik/cache/s;->a(Lkik/core/datatypes/n;)Lcom/kik/cache/s;
+    .line 739
+    invoke-static {v0}, Lcom/kik/cache/DisplayOnlyUserImageRequest;->getDisplayOnlyUserImageRequest(Lcom/kik/core/domain/a/a/b;)Lcom/kik/cache/DisplayOnlyUserImageRequest;
 
     move-result-object v0
 
-    .line 683
+    .line 740
     const/4 v3, 0x0
 
-    invoke-static {p2, v9, v1, v3, v0}, Lkik/android/util/f;->a(Lcom/kik/cache/ae;Lkik/android/util/f$a;Lkik/android/util/f$b;ZLcom/kik/cache/ac;)Landroid/graphics/Bitmap;
+    invoke-static {p2, v9, v1, v3, v0}, Lkik/android/util/f;->a(Lcom/kik/cache/KikVolleyImageLoader;Lkik/android/util/f$a;Lkik/android/util/f$b;ZLcom/kik/cache/KikImageRequest;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
-    .line 685
+    .line 742
     invoke-virtual {v10}, Lkik/android/util/k;->f()I
 
     move-result v0
@@ -2649,7 +2667,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 686
+    .line 743
     invoke-virtual {v10}, Lkik/android/util/k;->c()I
 
     move-result v0
@@ -2676,7 +2694,7 @@
 
     invoke-static {v0, v1, v2, v4}, Lkik/android/util/f;->a(ILandroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/Path;)V
 
-    .line 687
+    .line 744
     invoke-virtual {v10}, Lkik/android/util/k;->c()I
 
     move-result v0
@@ -2709,7 +2727,7 @@
 
     move-object v0, v7
 
-    .line 678
+    .line 735
     :cond_1
     :goto_1
     add-int/lit8 v1, v8, 0x1
@@ -2720,7 +2738,7 @@
 
     goto :goto_0
 
-    .line 689
+    .line 746
     :cond_2
     invoke-virtual {v10}, Lkik/android/util/k;->d()Ljava/util/ArrayList;
 
@@ -2732,12 +2750,12 @@
 
     if-ge v8, v0, :cond_3
 
-    .line 690
+    .line 747
     invoke-virtual {v10, v8}, Lkik/android/util/k;->a(I)Landroid/graphics/Point;
 
     move-result-object v1
 
-    .line 691
+    .line 748
     invoke-virtual {v10}, Lkik/android/util/k;->c()I
 
     move-result v0
@@ -2750,7 +2768,7 @@
 
     move-result-object v0
 
-    .line 692
+    .line 749
     if-eqz v8, :cond_1
 
     :cond_3
@@ -2758,7 +2776,7 @@
 
     goto :goto_1
 
-    .line 698
+    .line 755
     :cond_4
     invoke-virtual {v10}, Lkik/android/util/k;->f()I
 
@@ -2770,13 +2788,13 @@
 
     const/4 v0, 0x1
 
-    .line 699
+    .line 756
     :goto_2
     if-eqz v0, :cond_5
 
     if-eqz v7, :cond_5
 
-    .line 700
+    .line 757
     const/4 v0, 0x0
 
     invoke-virtual {v10, v0}, Lkik/android/util/k;->a(I)Landroid/graphics/Point;
@@ -2785,14 +2803,14 @@
 
     invoke-static {v10, v4, v0, v2, v7}, Lkik/android/util/f;->a(Lkik/android/util/k;Landroid/graphics/Path;Landroid/graphics/Point;Landroid/graphics/Canvas;Landroid/graphics/BitmapShader;)V
 
-    .line 702
+    .line 759
     :cond_5
     iput-object v11, v9, Lkik/android/util/f$a;->a:Landroid/graphics/Bitmap;
 
-    .line 703
+    .line 760
     return-object v9
 
-    .line 698
+    .line 755
     :cond_6
     const/4 v0, 0x0
 
@@ -2803,10 +2821,10 @@
     .locals 4
 
     .prologue
-    .line 809
+    .line 870
     invoke-virtual {p3}, Landroid/graphics/Path;->reset()V
 
-    .line 810
+    .line 871
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -2833,12 +2851,12 @@
 
     invoke-virtual {p3, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 811
+    .line 872
     sget-object v0, Lkik/android/util/f;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p3, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 812
+    .line 873
     return-void
 .end method
 
@@ -2848,18 +2866,18 @@
     .prologue
     const/high16 v4, 0x40000000    # 2.0f
 
-    .line 816
+    .line 877
     if-nez p1, :cond_0
 
-    .line 825
+    .line 886
     :goto_0
     return-void
 
-    .line 819
+    .line 880
     :cond_0
     invoke-virtual {p3}, Landroid/graphics/Path;->reset()V
 
-    .line 820
+    .line 881
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -2880,15 +2898,15 @@
 
     invoke-virtual {p3, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 821
+    .line 882
     sget-object v0, Lkik/android/util/f;->e:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p3, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 822
+    .line 883
     invoke-virtual {p3}, Landroid/graphics/Path;->reset()V
 
-    .line 823
+    .line 884
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -2905,7 +2923,7 @@
 
     invoke-virtual {p3, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 824
+    .line 885
     sget-object v0, Lkik/android/util/f;->g:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p3, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
@@ -2917,12 +2935,12 @@
     .locals 3
 
     .prologue
-    .line 454
+    .line 459
     sget-object v1, Lkik/android/util/f;->b:Lkik/android/util/LegacyBitmapLRUCache;
 
     monitor-enter v1
 
-    .line 455
+    .line 460
     :try_start_0
     sget-object v0, Lkik/android/util/f;->b:Lkik/android/util/LegacyBitmapLRUCache;
 
@@ -2932,7 +2950,7 @@
 
     invoke-virtual {v0, p1, v2}, Lkik/android/util/LegacyBitmapLRUCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 456
+    .line 461
     monitor-exit v1
 
     return-void
@@ -2955,10 +2973,10 @@
 
     const/4 v1, 0x0
 
-    .line 494
+    .line 499
     invoke-virtual {p3}, Landroid/graphics/Canvas;->save()I
 
-    .line 496
+    .line 501
     iget v0, p2, Landroid/graphics/Point;->x:I
 
     invoke-virtual {p0}, Lkik/android/util/k;->e()I
@@ -2987,10 +3005,10 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->clipRect(FFFFLandroid/graphics/Region$Op;)Z
 
-    .line 498
+    .line 503
     invoke-virtual {p1}, Landroid/graphics/Path;->reset()V
 
-    .line 499
+    .line 504
     iget v0, p2, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -3019,15 +3037,15 @@
 
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 500
+    .line 505
     sget-object v0, Lkik/android/util/f;->e:Landroid/graphics/Paint;
 
     invoke-virtual {p3, p1, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 503
+    .line 508
     invoke-virtual {p1}, Landroid/graphics/Path;->reset()V
 
-    .line 504
+    .line 509
     iget v0, p2, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -3048,27 +3066,27 @@
 
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 505
+    .line 510
     if-eqz p4, :cond_0
 
-    .line 506
+    .line 511
     sget-object v0, Lkik/android/util/f;->d:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p4}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
-    .line 507
+    .line 512
     sget-object v0, Lkik/android/util/f;->d:Landroid/graphics/Paint;
 
     invoke-virtual {p3, p1, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 512
+    .line 517
     :goto_0
     invoke-virtual {p3}, Landroid/graphics/Canvas;->restore()V
 
-    .line 513
+    .line 518
     return-void
 
-    .line 510
+    .line 515
     :cond_0
     sget-object v0, Lkik/android/util/f;->g:Landroid/graphics/Paint;
 
@@ -3081,30 +3099,30 @@
     .locals 3
 
     .prologue
-    .line 382
+    .line 387
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 383
+    .line 388
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v2, 0x64
 
     invoke-virtual {p0, v1, v2, v0}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 384
+    .line 389
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v1
 
-    .line 386
+    .line 391
     :try_start_0
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 391
+    .line 396
     :goto_0
     return-object v1
 

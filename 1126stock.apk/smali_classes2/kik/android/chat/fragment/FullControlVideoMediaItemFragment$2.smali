@@ -97,7 +97,7 @@
     .line 75
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment$2;->a:Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->j()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->i()V
 
     .line 76
     iput-boolean v1, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment$2;->b:Z

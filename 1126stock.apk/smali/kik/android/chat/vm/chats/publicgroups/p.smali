@@ -1,550 +1,419 @@
 .class public final Lkik/android/chat/vm/chats/publicgroups/p;
-.super Lkik/android/chat/vm/c;
+.super Lkik/android/chat/vm/chats/publicgroups/a;
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/view/AnimatingSearchBarLayout$b;
-.implements Lkik/android/chat/view/AnimatingSearchBarLayout$c;
 .implements Lkik/android/chat/vm/chats/publicgroups/g;
 
 
 # instance fields
-.field a:Lcom/kik/android/Mixpanel;
+.field b:Landroid/content/res/Resources;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private final b:Ljava/lang/String;
-
-.field private final c:Lrx/subjects/a;
+.field c:Lkik/core/interfaces/af;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/subjects/a",
+            "Lkik/core/interfaces/af",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/g$a;",
+            "Landroid/graphics/Bitmap;",
             ">;"
         }
     .end annotation
-.end field
 
-.field private final d:Lrx/subjects/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/subjects/a",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
+    .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private e:Z
+.field d:Lkik/core/interfaces/b;
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+.end field
+
+.field e:Lcom/kik/android/Mixpanel;
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+.end field
+
+.field private final f:Lcom/kik/core/domain/a/a/a;
+
+.field private final g:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    .prologue
-    .line 70
-    const/4 v0, 0x0
-
-    invoke-direct {p0, v0}, Lkik/android/chat/vm/chats/publicgroups/p;-><init>(Ljava/lang/String;)V
-
-    .line 71
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Lcom/kik/core/domain/a/a/a;Ljava/lang/String;ZZ)V
     .locals 3
 
     .prologue
-    .line 74
-    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
+    .line 51
+    const/4 v0, 0x2
 
-    .line 75
-    invoke-static {p1}, Lkik/android/util/bx;->c(Ljava/lang/String;)Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/Object;
 
-    move-result-object v0
+    const/4 v1, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    .line 76
-    invoke-static {p1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
-
-    move-result-object v0
-
-    :goto_0
-    iput-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lrx/subjects/a;
-
-    .line 77
-    invoke-static {p1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
-
-    move-result-object v0
-
-    :goto_1
-    iput-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->d:Lrx/subjects/a;
-
-    .line 78
-    return-void
-
-    .line 76
-    :cond_0
-    new-instance v0, Lkik/android/chat/vm/chats/publicgroups/g$a;
-
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/chats/publicgroups/g$a;-><init>(Ljava/lang/String;Z)V
-
-    invoke-static {v0}, Lrx/subjects/a;->d(Ljava/lang/Object;)Lrx/subjects/a;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 77
-    :cond_1
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    invoke-static {v0}, Lrx/subjects/a;->d(Ljava/lang/Object;)Lrx/subjects/a;
-
-    move-result-object v0
-
-    goto :goto_1
-.end method
-
-.method public static a(Lkik/android/chat/view/TransitionableSearchBarViewImpl;Lkik/android/chat/vm/chats/publicgroups/g;)V
-    .locals 3
-    .annotation build Landroid/databinding/BindingAdapter;
-        value = {
-            "model"
-        }
-    .end annotation
-
-    .prologue
-    .line 32
-    const/4 v0, 0x0
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-static {p0}, Lkik/android/chat/vm/chats/publicgroups/q;->a(Lkik/android/chat/view/TransitionableSearchBarViewImpl;)Lrx/b/b;
-
-    move-result-object v1
-
-    invoke-interface {p1}, Lkik/android/chat/vm/chats/publicgroups/g;->d()Lrx/c;
+    invoke-interface {p1}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, v2}, Lcom/kik/util/bk;->e(ILrx/b/b;Landroid/view/View;Lrx/c;)V
+    aput-object v2, v0, v1
 
-    .line 34
-    new-instance v0, Lkik/android/chat/vm/chats/publicgroups/p$1;
+    const/4 v1, 0x1
 
-    invoke-direct {v0, p1}, Lkik/android/chat/vm/chats/publicgroups/p$1;-><init>(Lkik/android/chat/vm/chats/publicgroups/g;)V
+    aput-object p2, v0, v1
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(Lkik/android/chat/view/ai$a;)V
-
-    .line 58
-    return-void
-.end method
-
-.method private j()Ljava/util/EnumSet;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/EnumSet",
-            "<",
-            "Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 162
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lrx/subjects/a;
-
-    invoke-virtual {v0}, Lrx/subjects/a;->n()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/android/chat/vm/chats/publicgroups/g$a;
-
-    .line 163
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    invoke-static {v1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    if-nez v0, :cond_1
-
-    .line 164
-    :cond_0
-    const-class v0, Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;
-
-    invoke-static {v0}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
-
-    move-result-object v0
-
-    .line 169
-    :goto_0
-    return-object v0
-
-    .line 166
-    :cond_1
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    iget-object v0, v0, Lkik/android/chat/vm/chats/publicgroups/g$a;->a:Ljava/lang/String;
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    int-to-long v0, v0
 
-    .line 167
-    sget-object v0, Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;->ANIMATE_LIST_PADDING:Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;
+    invoke-direct {p0, v0, v1, p3, p4}, Lkik/android/chat/vm/chats/publicgroups/a;-><init>(JZZ)V
 
-    invoke-static {v0}, Ljava/util/EnumSet;->of(Ljava/lang/Enum;)Ljava/util/EnumSet;
+    .line 52
+    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    move-result-object v0
+    .line 53
+    iput-object p2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
-    goto :goto_0
-
-    .line 169
-    :cond_2
-    const-class v0, Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;
-
-    invoke-static {v0}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
-
-    move-result-object v0
-
-    goto :goto_0
+    .line 54
+    return-void
 .end method
 
 
 # virtual methods
-.method public final T_()Ljava/util/EnumSet;
+.method public final N_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/EnumSet",
-            "<",
-            "Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;",
-            ">;"
-        }
-    .end annotation
 
     .prologue
-    .line 157
-    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->j()Ljava/util/EnumSet;
-
-    move-result-object v0
+    .line 66
+    sget-object v0, Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;->Related:Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
 
     return-object v0
 .end method
 
-.method public final a()V
-    .locals 4
+.method public final R_()Ljava/lang/String;
+    .locals 1
 
     .prologue
-    const/4 v0, 0x0
+    .line 72
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    .line 119
-    iget-boolean v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Z
-
-    if-eqz v1, :cond_0
-
-    .line 120
-    iput-boolean v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Z
-
-    .line 127
-    :goto_0
-    return-void
-
-    .line 123
-    :cond_0
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v2, "Public Group Search Tapped"
-
-    invoke-virtual {v1, v2}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v1
-
-    const-string v2, "Has Initial Search"
-
-    iget-object v3, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    .line 124
-    invoke-static {v3}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    const/4 v0, 0x1
-
-    :cond_1
-    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
+    invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 125
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 126
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    goto :goto_0
-.end method
-
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
-    .locals 0
-
-    .prologue
-    .line 83
-    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/p;)V
-
-    .line 84
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
-
-    .line 85
-    return-void
-.end method
-
-.method public final a(Ljava/lang/String;)V
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x0
-
-    .line 132
-    iput-boolean v3, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Z
-
-    .line 133
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Public Group Search Dismissed"
-
-    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    const-string v1, "Source"
-
-    .line 134
-    invoke-virtual {v0, v1, p1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 135
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v0
-
-    .line 136
-    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 138
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 139
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lrx/subjects/a;
+    .line 73
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    new-instance v1, Lkik/android/chat/vm/chats/publicgroups/g$a;
+    invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
 
-    const-string v2, ""
+    move-result-object v0
 
-    invoke-direct {v1, v2, v3}, Lkik/android/chat/vm/chats/publicgroups/g$a;-><init>(Ljava/lang/String;Z)V
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 140
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->d:Lrx/subjects/a;
-
-    const-string v1, ""
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 146
+    .line 75
     :goto_0
-    return-void
+    return-object v0
 
-    .line 143
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lrx/subjects/a;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    new-instance v1, Lkik/android/chat/vm/chats/publicgroups/g$a;
+    invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->b()Ljava/lang/String;
 
-    iget-object v2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    invoke-direct {v1, v2, v3}, Lkik/android/chat/vm/chats/publicgroups/g$a;-><init>(Ljava/lang/String;Z)V
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
-
-    .line 144
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->d:Lrx/subjects/a;
-
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+    move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final b()Ljava/util/EnumSet;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/EnumSet",
-            "<",
-            "Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;",
-            ">;"
-        }
-    .end annotation
+.method public final S_()Ljava/lang/CharSequence;
+    .locals 8
 
     .prologue
-    .line 151
-    invoke-direct {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->j()Ljava/util/EnumSet;
+    const/4 v2, 0x0
+
+    .line 81
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
+
+    invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    invoke-static {v0}, Lkik/android/util/bs;->c(Ljava/lang/String;)Ljava/lang/String;
 
-.method public final b(Ljava/lang/String;)V
-    .locals 3
+    move-result-object v0
 
-    .prologue
-    .line 102
-    const/4 v0, 0x1
+    invoke-static {v0}, Lkik/core/util/j;->a(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 103
-    iget-boolean v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Z
+    move-result-object v3
 
-    if-eqz v1, :cond_0
+    .line 83
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
-    invoke-static {p1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-virtual {v3, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    .line 84
+    if-gez v1, :cond_0
 
-    .line 104
-    const/4 v0, 0x0
+    .line 86
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
 
-    .line 106
+    move-result v0
+
+    move v1, v2
+
+    .line 93
+    :goto_0
+    new-instance v4, Landroid/text/SpannableString;
+
+    invoke-direct {v4, v3}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+
+    .line 94
+    new-instance v5, Landroid/text/style/ForegroundColorSpan;
+
+    iget-object v6, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
+
+    const v7, 0x7f0e00de
+
+    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v6
+
+    invoke-direct {v5, v6}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    invoke-virtual {v4, v5, v1, v0, v2}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+
+    .line 95
+    new-instance v1, Landroid/text/style/ForegroundColorSpan;
+
+    iget-object v5, p0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
+
+    const v6, 0x7f0e0066
+
+    invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v5
+
+    invoke-direct {v1, v5}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    invoke-virtual {v4, v1, v0, v3, v2}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+
+    .line 96
+    return-object v4
+
+    .line 90
     :cond_0
-    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lrx/subjects/a;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
 
-    new-instance v2, Lkik/android/chat/vm/chats/publicgroups/g$a;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    invoke-direct {v2, p1, v0}, Lkik/android/chat/vm/chats/publicgroups/g$a;-><init>(Ljava/lang/String;Z)V
+    move-result v0
 
-    invoke-virtual {v1, v2}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+    add-int/2addr v0, v1
 
-    .line 107
+    goto :goto_0
+.end method
+
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+    .locals 0
+
+    .prologue
+    .line 59
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/chats/publicgroups/a;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    .line 60
+    invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/chats/publicgroups/p;)V
+
+    .line 61
     return-void
 .end method
 
-.method public final d()Lrx/c;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
+.method public final h()V
+    .locals 4
 
     .prologue
-    .line 90
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->d:Lrx/subjects/a;
+    .line 131
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Lcom/kik/android/Mixpanel;
 
-    return-object v0
-.end method
-
-.method public final e()V
-    .locals 2
-
-    .prologue
-    .line 112
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v1, "Public Group Search Cleared"
+    const-string v1, "Public Group Similar Group Tapped"
 
     invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
+    const-string v1, "Search Term"
+
+    iget-object v2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->g:Ljava/lang/String;
+
+    .line 132
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Tag"
+
+    iget-object v2, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
+
+    .line 133
+    invoke-interface {v2}, Lcom/kik/core/domain/a/a/a;->c()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Total Results"
+
+    .line 134
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->g()I
+
+    move-result v2
+
+    int-to-long v2, v2
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Tapped Position"
+
+    .line 135
+    invoke-virtual {p0}, Lkik/android/chat/vm/chats/publicgroups/p;->e()I
+
+    move-result v2
+
+    add-int/lit8 v2, v2, 0x1
+
+    int-to-long v2, v2
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    .line 136
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
+    .line 137
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 113
-    const/4 v0, 0x1
+    .line 139
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    iput-boolean v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->e:Z
+    invoke-virtual {p0, v0}, Lkik/android/chat/vm/chats/publicgroups/p;->a(Lcom/kik/core/domain/a/a/a;)V
 
-    .line 114
+    .line 140
     return-void
 .end method
 
-.method public final h()Lrx/c;
+.method public final i()Ljava/lang/String;
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Lkik/android/chat/vm/chats/publicgroups/g$a;",
-            ">;"
-        }
-    .end annotation
 
     .prologue
-    .line 96
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lrx/subjects/a;
+    .line 102
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-static {}, Lkik/android/chat/vm/chats/publicgroups/r;->a()Lrx/b/g;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v1
+    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
 
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Lrx/b/g;)Lrx/c;
+    invoke-interface {v1}, Lcom/kik/core/domain/a/a/a;->g()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "/"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
+
+    invoke-interface {v1}, Lcom/kik/core/domain/a/a/a;->k()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final j()Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Lkik/core/interfaces/o",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;"
+        }
+    .end annotation
+
+    .prologue
+    .line 108
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
+
+    invoke-interface {v0}, Lcom/kik/core/domain/a/a/a;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 109
+    new-instance v0, Lkik/android/chat/vm/chats/publicgroups/p$1;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/chats/publicgroups/p$1;-><init>(Lkik/android/chat/vm/chats/publicgroups/p;)V
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    .line 125
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p;->c:Lkik/core/interfaces/af;
+
+    iget-object v1, p0, Lkik/android/chat/vm/chats/publicgroups/p;->f:Lcom/kik/core/domain/a/a/a;
+
+    invoke-interface {v1}, Lcom/kik/core/domain/a/a/a;->d()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lkik/core/interfaces/af;->a(Lrx/d;)Lrx/d;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method

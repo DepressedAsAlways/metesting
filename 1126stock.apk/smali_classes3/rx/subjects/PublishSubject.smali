@@ -1,5 +1,5 @@
 .class public final Lrx/subjects/PublishSubject;
-.super Lrx/subjects/b;
+.super Lrx/subjects/c;
 .source "SourceFile"
 
 
@@ -16,7 +16,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lrx/subjects/b",
+        "Lrx/subjects/c",
         "<TT;TT;>;"
     }
 .end annotation
@@ -45,17 +45,17 @@
     .end annotation
 
     .prologue
-    .line 67
-    invoke-direct {p0, p1}, Lrx/subjects/b;-><init>(Lrx/c$a;)V
+    .line 66
+    invoke-direct {p0, p1}, Lrx/subjects/c;-><init>(Lrx/d$a;)V
 
-    .line 68
+    .line 67
     iput-object p1, p0, Lrx/subjects/PublishSubject;->b:Lrx/subjects/PublishSubject$PublishSubjectState;
 
-    .line 69
+    .line 68
     return-void
 .end method
 
-.method public static k()Lrx/subjects/PublishSubject;
+.method public static l()Lrx/subjects/PublishSubject;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -68,7 +68,7 @@
     .end annotation
 
     .prologue
-    .line 63
+    .line 62
     new-instance v0, Lrx/subjects/PublishSubject;
 
     new-instance v1, Lrx/subjects/PublishSubject$PublishSubjectState;
@@ -91,12 +91,12 @@
     .end annotation
 
     .prologue
-    .line 73
+    .line 72
     iget-object v0, p0, Lrx/subjects/PublishSubject;->b:Lrx/subjects/PublishSubject$PublishSubjectState;
 
     invoke-virtual {v0, p1}, Lrx/subjects/PublishSubject$PublishSubjectState;->a(Ljava/lang/Object;)V
 
-    .line 74
+    .line 73
     return-void
 .end method
 
@@ -104,24 +104,24 @@
     .locals 1
 
     .prologue
-    .line 78
+    .line 77
     iget-object v0, p0, Lrx/subjects/PublishSubject;->b:Lrx/subjects/PublishSubject$PublishSubjectState;
 
     invoke-virtual {v0, p1}, Lrx/subjects/PublishSubject$PublishSubjectState;->a(Ljava/lang/Throwable;)V
 
-    .line 79
+    .line 78
     return-void
 .end method
 
-.method public final bb_()V
+.method public final b()V
     .locals 1
 
     .prologue
-    .line 83
+    .line 82
     iget-object v0, p0, Lrx/subjects/PublishSubject;->b:Lrx/subjects/PublishSubject$PublishSubjectState;
 
-    invoke-virtual {v0}, Lrx/subjects/PublishSubject$PublishSubjectState;->bb_()V
+    invoke-virtual {v0}, Lrx/subjects/PublishSubject$PublishSubjectState;->b()V
 
-    .line 84
+    .line 83
     return-void
 .end method

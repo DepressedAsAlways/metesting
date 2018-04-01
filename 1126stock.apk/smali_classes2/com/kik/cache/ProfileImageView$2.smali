@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/android/volley/i$b;
+.implements Lcom/android/volley/h$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/android/volley/i$b",
+        "Lcom/android/volley/h$b",
         "<",
         "Landroid/graphics/Bitmap;",
         ">;"

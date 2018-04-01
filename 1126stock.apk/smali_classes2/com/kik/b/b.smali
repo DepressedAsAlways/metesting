@@ -18,10 +18,10 @@
 
 
 # instance fields
-.field a:Lcom/google/common/util/concurrent/b;
+.field a:Lcom/google/common/util/concurrent/AtomicLongMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/util/concurrent/b",
+            "Lcom/google/common/util/concurrent/AtomicLongMap",
             "<",
             "Ljava/io/File;",
             ">;"
@@ -43,7 +43,7 @@
 
 .field private final i:Ljava/text/SimpleDateFormat;
 
-.field private final j:Ljava/lang/String;
+.field private j:Ljava/lang/String;
 
 .field private k:Ljava/io/File;
 
@@ -70,7 +70,7 @@
     .locals 1
 
     .prologue
-    .line 71
+    .line 72
     const-string v0, "Augmentum"
 
     invoke-static {v0}, Lorg/slf4j/c;->a(Ljava/lang/String;)Lorg/slf4j/b;
@@ -86,12 +86,12 @@
     .locals 1
 
     .prologue
-    .line 121
+    .line 122
     const-string v0, "https://clientmetrics-augmentum.kik.com/clientmetrics/augmentum/v1/data?flattened=true"
 
     invoke-direct {p0, p1, p2, v0, p3}, Lcom/kik/b/b;-><init>(Lkik/core/interfaces/r;Ljava/io/File;Ljava/lang/String;Lcom/kik/performance/metrics/c;)V
 
-    .line 122
+    .line 123
     return-void
 .end method
 
@@ -101,81 +101,81 @@
     .prologue
     const-wide/16 v2, 0x0
 
-    .line 125
+    .line 126
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 68
+    .line 69
     const-wide/16 v0, 0x4e20
 
     iput-wide v0, p0, Lcom/kik/b/b;->d:J
 
-    .line 69
+    .line 70
     const-wide/16 v0, 0x2710
 
     iput-wide v0, p0, Lcom/kik/b/b;->e:J
 
-    .line 78
+    .line 79
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/b/b;->k:Ljava/io/File;
 
-    .line 79
+    .line 80
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/kik/b/b;->l:I
 
-    .line 81
+    .line 82
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kik/b/b;->m:Ljava/util/concurrent/ExecutorService;
 
-    .line 82
+    .line 83
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor()Ljava/util/concurrent/ScheduledExecutorService;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kik/b/b;->n:Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 85
-    invoke-static {}, Lcom/google/common/util/concurrent/b;->a()Lcom/google/common/util/concurrent/b;
+    .line 86
+    invoke-static {}, Lcom/google/common/util/concurrent/AtomicLongMap;->a()Lcom/google/common/util/concurrent/AtomicLongMap;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/kik/b/b;->a:Lcom/google/common/util/concurrent/b;
+    iput-object v0, p0, Lcom/kik/b/b;->a:Lcom/google/common/util/concurrent/AtomicLongMap;
 
-    .line 86
+    .line 87
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
     iput-object v0, p0, Lcom/kik/b/b;->b:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 88
+    .line 89
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
     iput-object v0, p0, Lcom/kik/b/b;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 92
+    .line 93
     new-instance v0, Lcom/kik/b/b$1;
 
     invoke-direct {v0, p0}, Lcom/kik/b/b$1;-><init>(Lcom/kik/b/b;)V
 
     iput-object v0, p0, Lcom/kik/b/b;->p:Lcom/kik/performance/metrics/c$a;
 
-    .line 126
+    .line 127
     iput-object p1, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
-    .line 127
+    .line 128
     iput-object p2, p0, Lcom/kik/b/b;->h:Ljava/io/File;
 
-    .line 128
+    .line 129
     iput-object p3, p0, Lcom/kik/b/b;->j:Ljava/lang/String;
 
-    .line 130
+    .line 131
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"
@@ -194,19 +194,19 @@
 
     iput-object v0, p0, Lcom/kik/b/b;->i:Ljava/text/SimpleDateFormat;
 
-    .line 131
+    .line 132
     new-instance v0, Ljava/util/GregorianCalendar;
 
     const-string v1, "UTC"
 
-    .line 132
+    .line 133
     invoke-static {v1}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/util/GregorianCalendar;-><init>(Ljava/util/TimeZone;)V
 
-    .line 133
+    .line 134
     new-instance v1, Ljava/util/Date;
 
     const-wide/high16 v2, -0x8000000000000000L
@@ -215,17 +215,17 @@
 
     invoke-virtual {v0, v1}, Ljava/util/GregorianCalendar;->setGregorianChange(Ljava/util/Date;)V
 
-    .line 134
+    .line 135
     iget-object v1, p0, Lcom/kik/b/b;->i:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v1, v0}, Ljava/text/SimpleDateFormat;->setCalendar(Ljava/util/Calendar;)V
 
-    .line 135
+    .line 136
     iget-object v0, p0, Lcom/kik/b/b;->p:Lcom/kik/performance/metrics/c$a;
 
     invoke-virtual {p4, v0}, Lcom/kik/performance/metrics/c;->a(Lcom/kik/performance/metrics/c$a;)V
 
-    .line 136
+    .line 137
     return-void
 .end method
 
@@ -233,7 +233,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     invoke-direct {p0, p1}, Lcom/kik/b/b;->a(Ljava/io/File;)I
 
     move-result v0
@@ -245,10 +245,10 @@
     .locals 3
 
     .prologue
-    .line 469
+    .line 477
     const/4 v0, 0x0
 
-    .line 471
+    .line 479
     :try_start_0
     new-instance v1, Ljava/io/FileInputStream;
 
@@ -257,7 +257,7 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 472
+    .line 480
     :try_start_1
     invoke-direct {p0, v1}, Lcom/kik/b/b;->a(Ljava/io/InputStream;)I
     :try_end_1
@@ -266,26 +266,26 @@
 
     move-result v0
 
-    .line 478
-    invoke-static {v1}, Lorg/apache/a/a/c;->a(Ljava/io/InputStream;)V
+    .line 486
+    invoke-static {v1}, Lorg/apache/commons/io/d;->a(Ljava/io/InputStream;)V
 
-    .line 475
+    .line 483
     :goto_0
     return v0
 
-    .line 478
+    .line 486
     :catch_0
     move-exception v1
 
     :goto_1
-    invoke-static {v0}, Lorg/apache/a/a/c;->a(Ljava/io/InputStream;)V
+    invoke-static {v0}, Lorg/apache/commons/io/d;->a(Ljava/io/InputStream;)V
 
-    .line 475
+    .line 483
     const/4 v0, -0x1
 
     goto :goto_0
 
-    .line 478
+    .line 486
     :catchall_0
     move-exception v1
 
@@ -296,7 +296,7 @@
     move-object v0, v2
 
     :goto_2
-    invoke-static {v1}, Lorg/apache/a/a/c;->a(Ljava/io/InputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/d;->a(Ljava/io/InputStream;)V
 
     throw v0
 
@@ -317,13 +317,13 @@
     .locals 7
 
     .prologue
-    .line 491
+    .line 499
     const/4 v2, -0x1
 
-    .line 497
+    .line 505
     const/4 v1, 0x0
 
-    .line 499
+    .line 507
     :try_start_0
     new-instance v0, Ljava/net/URL;
 
@@ -340,36 +340,36 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 500
+    .line 508
     :try_start_1
     const-string v1, "POST"
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 501
+    .line 509
     const-string v1, "Content-Type"
 
     const-string v3, "application/json"
 
     invoke-virtual {v0, v1, v3}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 502
+    .line 510
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
-    .line 504
+    .line 512
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 505
+    .line 513
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v1
 
-    .line 507
-    invoke-static {p1, v1}, Lorg/apache/a/a/c;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)I
+    .line 515
+    invoke-static {p1, v1}, Lorg/apache/commons/io/d;->a(Ljava/io/InputStream;Ljava/io/OutputStream;)I
 
-    .line 508
+    .line 516
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
@@ -377,63 +377,63 @@
 
     move-result v1
 
-    .line 509
+    .line 517
     const/16 v2, 0xc8
 
     if-eq v1, v2, :cond_0
 
-    .line 510
+    .line 518
     :try_start_2
     sget-object v2, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
     const-string v3, "Upload failed {} {}"
 
-    .line 511
+    .line 519
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 512
+    .line 520
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 510
+    .line 518
     invoke-interface {v2, v3, v4, v5}, Lorg/slf4j/b;->warn(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 513
+    .line 521
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v2
 
-    .line 514
+    .line 522
     if-eqz v2, :cond_0
 
-    .line 515
+    .line 523
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object v2
 
-    invoke-static {v2}, Lorg/apache/a/a/c;->c(Ljava/io/InputStream;)Ljava/lang/String;
+    invoke-static {v2}, Lorg/apache/commons/io/d;->c(Ljava/io/InputStream;)Ljava/lang/String;
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 523
+    .line 531
     :cond_0
     if-eqz v0, :cond_3
 
-    .line 524
+    .line 532
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     move v0, v1
 
-    .line 527
+    .line 535
     :cond_1
     :goto_0
     return v0
 
-    .line 523
+    .line 531
     :catch_0
     move-exception v0
 
@@ -442,25 +442,25 @@
     :goto_1
     if-eqz v1, :cond_1
 
-    .line 524
+    .line 532
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
     goto :goto_0
 
-    .line 523
+    .line 531
     :catchall_0
     move-exception v0
 
     :goto_2
     if-eqz v1, :cond_2
 
-    .line 524
+    .line 532
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_2
     throw v0
 
-    .line 523
+    .line 531
     :catchall_1
     move-exception v1
 
@@ -502,21 +502,21 @@
     .locals 3
 
     .prologue
-    .line 448
+    .line 456
     if-nez p1, :cond_0
 
-    .line 449
+    .line 457
     const/4 v0, -0x1
 
-    .line 454
+    .line 462
     :goto_0
     return v0
 
-    .line 451
+    .line 459
     :cond_0
     const/4 v2, 0x0
 
-    .line 453
+    .line 461
     :try_start_0
     new-instance v1, Ljava/io/ByteArrayInputStream;
 
@@ -532,7 +532,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 454
+    .line 462
     :try_start_1
     invoke-direct {p0, v1}, Lcom/kik/b/b;->a(Ljava/io/InputStream;)I
     :try_end_1
@@ -540,8 +540,8 @@
 
     move-result v0
 
-    .line 457
-    invoke-static {v1}, Lorg/apache/a/a/c;->a(Ljava/io/InputStream;)V
+    .line 465
+    invoke-static {v1}, Lorg/apache/commons/io/d;->a(Ljava/io/InputStream;)V
 
     goto :goto_0
 
@@ -551,7 +551,7 @@
     move-object v1, v2
 
     :goto_1
-    invoke-static {v1}, Lorg/apache/a/a/c;->a(Ljava/io/InputStream;)V
+    invoke-static {v1}, Lorg/apache/commons/io/d;->a(Ljava/io/InputStream;)V
 
     throw v0
 
@@ -567,31 +567,31 @@
     .prologue
     const/16 v2, 0x398
 
-    .line 257
+    .line 265
     instance-of v0, p0, Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     move-object v0, p0
 
-    .line 258
+    .line 266
     check-cast v0, Ljava/lang/String;
 
-    .line 259
+    .line 267
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-lt v1, v2, :cond_0
 
-    .line 260
+    .line 268
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 263
+    .line 271
     :cond_0
     return-object p0
 .end method
@@ -600,7 +600,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     iget-object v0, p0, Lcom/kik/b/b;->n:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-object v0
@@ -610,15 +610,15 @@
     .locals 1
 
     .prologue
-    .line 57
-    .line 1273
+    .line 58
+    .line 1281
     invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/kik/b/b;->a(Ljava/lang/String;)I
 
-    .line 57
+    .line 58
     return-void
 .end method
 
@@ -626,7 +626,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     iget-object v0, p0, Lcom/kik/b/b;->o:Ljava/util/concurrent/ScheduledFuture;
 
     return-object v0
@@ -636,7 +636,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     sget-object v0, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
     return-object v0
@@ -652,8 +652,8 @@
 
     const/4 v3, 0x0
 
-    .line 57
-    .line 1279
+    .line 58
+    .line 1287
     iget-object v1, p0, Lcom/kik/b/b;->h:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
@@ -670,25 +670,25 @@
 
     if-nez v1, :cond_1
 
-    .line 1280
+    .line 1288
     sget-object v0, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
     const-string v1, "Could not create metrics directory"
 
     invoke-interface {v0, v1}, Lorg/slf4j/b;->error(Ljava/lang/String;)V
 
-    .line 1397
+    .line 1405
     :cond_0
     :goto_0
     return-void
 
-    .line 1287
+    .line 1295
     :cond_1
     iget-object v4, p0, Lcom/kik/b/b;->n:Ljava/util/concurrent/ScheduledExecutorService;
 
     monitor-enter v4
 
-    .line 1288
+    .line 1296
     :try_start_0
     iget-object v1, p0, Lcom/kik/b/b;->k:Ljava/io/File;
 
@@ -700,13 +700,13 @@
 
     if-lt v1, v5, :cond_3
 
-    .line 1289
+    .line 1297
     :cond_2
     new-instance v1, Ljava/io/File;
 
     iget-object v5, p0, Lcom/kik/b/b;->h:Ljava/io/File;
 
-    .line 1324
+    .line 1332
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -731,7 +731,7 @@
 
     iget-object v7, p0, Lcom/kik/b/b;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 1325
+    .line 1333
     invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
 
     move-result-wide v8
@@ -750,17 +750,17 @@
 
     move-result-object v6
 
-    .line 1289
+    .line 1297
     invoke-direct {v1, v5, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     iput-object v1, p0, Lcom/kik/b/b;->k:Ljava/io/File;
 
-    .line 1290
+    .line 1298
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/kik/b/b;->l:I
 
-    .line 1292
+    .line 1300
     :cond_3
     iget v1, p0, Lcom/kik/b/b;->l:I
 
@@ -770,7 +770,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 1295
+    .line 1303
     :try_start_1
     new-instance v1, Ljava/io/FileOutputStream;
 
@@ -783,7 +783,7 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 1296
+    .line 1304
     :try_start_2
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -822,42 +822,42 @@
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_4
     .catchall {:try_start_2 .. :try_end_2} :catchall_3
 
-    .line 1307
+    .line 1315
     :try_start_3
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 1314
+    .line 1322
     :goto_1
     :try_start_4
     monitor-exit v4
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 1316
+    .line 1324
     if-eqz v0, :cond_0
 
-    .line 1317
+    .line 1325
     invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
-    .line 1385
+    .line 1393
     iget-wide v0, p0, Lcom/kik/b/b;->e:J
 
-    .line 1386
+    .line 1394
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 1387
+    .line 1395
     iget-object v4, p0, Lcom/kik/b/b;->b:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v4
 
-    .line 1388
+    .line 1396
     cmp-long v6, v4, v2
 
     if-lez v6, :cond_4
@@ -868,26 +868,26 @@
 
     if-lez v6, :cond_4
 
-    .line 1389
+    .line 1397
     sub-long v0, v4, v2
 
     const-wide/16 v2, 0x1
 
     add-long/2addr v0, v2
 
-    .line 1393
+    .line 1401
     :cond_4
     iget-object v2, p0, Lcom/kik/b/b;->n:Ljava/util/concurrent/ScheduledExecutorService;
 
     monitor-enter v2
 
-    .line 1394
+    .line 1402
     :try_start_5
     iget-object v3, p0, Lcom/kik/b/b;->o:Ljava/util/concurrent/ScheduledFuture;
 
     if-nez v3, :cond_5
 
-    .line 1395
+    .line 1403
     iget-object v3, p0, Lcom/kik/b/b;->n:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v4, Lcom/kik/b/b$a;
@@ -904,7 +904,7 @@
 
     iput-object v0, p0, Lcom/kik/b/b;->o:Ljava/util/concurrent/ScheduledFuture;
 
-    .line 1397
+    .line 1405
     :cond_5
     monitor-exit v2
 
@@ -919,11 +919,11 @@
 
     throw v0
 
-    .line 1310
+    .line 1318
     :catch_0
     move-exception v1
 
-    .line 1311
+    .line 1319
     :try_start_6
     sget-object v2, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
@@ -933,7 +933,7 @@
 
     goto :goto_1
 
-    .line 1314
+    .line 1322
     :catchall_1
     move-exception v0
 
@@ -943,13 +943,13 @@
 
     throw v0
 
-    .line 1299
+    .line 1307
     :catch_1
     move-exception v0
 
     move-object v1, v2
 
-    .line 1300
+    .line 1308
     :goto_2
     :try_start_7
     sget-object v2, Lcom/kik/b/b;->f:Lorg/slf4j/b;
@@ -958,17 +958,17 @@
 
     invoke-interface {v2, v5, v0}, Lorg/slf4j/b;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 1302
+    .line 1310
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/b/b;->k:Ljava/io/File;
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_3
 
-    .line 1306
+    .line 1314
     if-eqz v1, :cond_6
 
-    .line 1307
+    .line 1315
     :try_start_8
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_8
@@ -978,14 +978,14 @@
     :cond_6
     move v0, v3
 
-    .line 1312
+    .line 1320
     goto :goto_1
 
-    .line 1310
+    .line 1318
     :catch_2
     move-exception v0
 
-    .line 1311
+    .line 1319
     :try_start_9
     sget-object v1, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
@@ -997,37 +997,37 @@
 
     move v0, v3
 
-    .line 1313
+    .line 1321
     goto :goto_1
 
-    .line 1305
+    .line 1313
     :catchall_2
     move-exception v0
 
     move-object v1, v2
 
-    .line 1306
+    .line 1314
     :goto_3
     if-eqz v1, :cond_7
 
-    .line 1307
+    .line 1315
     :try_start_a
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
     .catchall {:try_start_a .. :try_end_a} :catchall_1
 
-    .line 1312
+    .line 1320
     :cond_7
     :goto_4
     :try_start_b
     throw v0
 
-    .line 1310
+    .line 1318
     :catch_3
     move-exception v1
 
-    .line 1311
+    .line 1319
     sget-object v2, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
     const-string v3, "Failed to close file"
@@ -1038,13 +1038,13 @@
 
     goto :goto_4
 
-    .line 1305
+    .line 1313
     :catchall_3
     move-exception v0
 
     goto :goto_3
 
-    .line 1299
+    .line 1307
     :catch_4
     move-exception v0
 
@@ -1055,7 +1055,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/b/b;->o:Ljava/util/concurrent/ScheduledFuture;
@@ -1067,7 +1067,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/kik/b/b;->k:Ljava/io/File;
@@ -1079,7 +1079,7 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     iget-object v0, p0, Lcom/kik/b/b;->h:Ljava/io/File;
 
     return-object v0
@@ -1089,7 +1089,7 @@
     .locals 2
 
     .prologue
-    .line 57
+    .line 58
     iget-wide v0, p0, Lcom/kik/b/b;->d:J
 
     return-wide v0
@@ -1101,7 +1101,7 @@
     .locals 3
 
     .prologue
-    .line 361
+    .line 369
     iget-object v0, p0, Lcom/kik/b/b;->n:Ljava/util/concurrent/ScheduledExecutorService;
 
     new-instance v1, Lcom/kik/b/b$a;
@@ -1112,7 +1112,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
-    .line 362
+    .line 370
     return-void
 .end method
 
@@ -1120,25 +1120,25 @@
     .locals 8
 
     .prologue
-    .line 193
+    .line 201
     :try_start_0
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    .line 194
+    .line 202
     const-string v0, "event:origin"
 
     const-string v2, "mobile"
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 195
+    .line 203
     const-string v0, "event:name"
 
     invoke-virtual {v1, v0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 196
+    .line 204
     const-string v0, "instanceId"
 
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
@@ -1151,19 +1151,19 @@
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 198
+    .line 206
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 199
-    invoke-static {}, Lkik/core/util/w;->a()J
+    .line 207
+    invoke-static {}, Lkik/core/util/v;->a()J
 
     move-result-wide v4
 
     add-long/2addr v4, v2
 
-    .line 202
+    .line 210
     const-string v0, "timestamp"
 
     iget-object v6, p0, Lcom/kik/b/b;->i:Ljava/text/SimpleDateFormat;
@@ -1178,8 +1178,8 @@
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 205
-    invoke-static {}, Lkik/core/util/w;->a()J
+    .line 213
+    invoke-static {}, Lkik/core/util/v;->a()J
 
     move-result-wide v2
 
@@ -1189,7 +1189,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 206
+    .line 214
     const-string v0, "commonData:Server Time"
 
     iget-object v2, p0, Lcom/kik/b/b;->i:Ljava/text/SimpleDateFormat;
@@ -1204,27 +1204,27 @@
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 209
+    .line 217
     :cond_0
     iget-object v0, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
 
-    invoke-interface {v0}, Lkik/core/interfaces/r;->d()Lkik/core/datatypes/l;
+    invoke-interface {v0}, Lkik/core/interfaces/r;->d()Lkik/core/datatypes/k;
 
     move-result-object v0
 
-    .line 210
+    .line 218
     if-eqz v0, :cond_1
 
-    .line 211
+    .line 219
     const-string v2, "userJid"
 
-    invoke-virtual {v0}, Lkik/core/datatypes/l;->c()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/k;->c()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 214
+    .line 222
     :cond_1
     const-string v0, "deviceId"
 
@@ -1236,7 +1236,7 @@
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 215
+    .line 223
     const-string v0, "clientVersion"
 
     iget-object v2, p0, Lcom/kik/b/b;->g:Lkik/core/interfaces/r;
@@ -1247,19 +1247,19 @@
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 216
+    .line 224
     const-string v0, "devicePrefix"
 
     const-string v2, "CAN"
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 218
+    .line 226
     invoke-virtual {p2}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v2
 
-    .line 219
+    .line 227
     :goto_0
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1267,14 +1267,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 220
+    .line 228
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 221
+    .line 229
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "commonData:"
@@ -1303,11 +1303,11 @@
 
     goto :goto_0
 
-    .line 250
+    .line 258
     :catch_0
     move-exception v0
 
-    .line 251
+    .line 259
     sget-object v1, Lcom/kik/b/b;->f:Lorg/slf4j/b;
 
     const-string v2, "Error constructing augmentum event: {}"
@@ -1318,11 +1318,11 @@
 
     invoke-interface {v1, v2, v0}, Lorg/slf4j/b;->error(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 253
+    .line 261
     :goto_1
     return-void
 
-    .line 223
+    .line 231
     :cond_2
     :try_start_1
     const-string v0, "commonData:Android Id"
@@ -1335,19 +1335,19 @@
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 224
+    .line 232
     const-string v0, "commonData:OS Version"
 
     sget-object v2, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 226
+    .line 234
     invoke-static {}, Lkik/android/chat/KikApplication;->l()Z
 
     move-result v0
 
-    .line 227
+    .line 235
     const-string v2, "commonData:Current Device Orientation"
 
     if-eqz v0, :cond_3
@@ -1357,12 +1357,12 @@
     :goto_2
     invoke-virtual {v1, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 229
+    .line 237
     invoke-virtual {p3}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v2
 
-    .line 230
+    .line 238
     :goto_3
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1370,14 +1370,14 @@
 
     if-eqz v0, :cond_4
 
-    .line 231
+    .line 239
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 232
+    .line 240
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "eventData:"
@@ -1404,13 +1404,13 @@
 
     goto :goto_3
 
-    .line 227
+    .line 235
     :cond_3
     const-string v0, "Landscape"
 
     goto :goto_2
 
-    .line 235
+    .line 243
     :cond_4
     iget-object v0, p0, Lcom/kik/b/b;->m:Ljava/util/concurrent/ExecutorService;
 

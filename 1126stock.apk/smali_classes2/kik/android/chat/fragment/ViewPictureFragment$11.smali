@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 838
+    .line 896
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$11;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iput-object p2, p0, Lkik/android/chat/fragment/ViewPictureFragment$11;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 842
+    .line 900
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$11;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->C()Z
@@ -53,12 +53,12 @@
 
     if-nez v0, :cond_0
 
-    .line 843
+    .line 901
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$11;->b:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->v(Lkik/android/chat/fragment/ViewPictureFragment;)V
 
-    .line 845
+    .line 903
     :cond_0
     return-void
 .end method

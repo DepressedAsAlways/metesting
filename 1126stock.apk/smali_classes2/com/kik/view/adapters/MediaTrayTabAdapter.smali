@@ -140,7 +140,7 @@
             "<T:",
             "Landroid/support/v4/app/Fragment;",
             ":",
-            "Lcom/kik/c/b;",
+            "Lcom/kik/d/b;",
             ">(",
             "Ljava/lang/String;",
             "ITT;)V"

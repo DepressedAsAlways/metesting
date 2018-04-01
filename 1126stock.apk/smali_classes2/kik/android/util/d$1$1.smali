@@ -1,11 +1,11 @@
 .class final Lkik/android/util/d$1$1;
-.super Lkik/android/util/av;
+.super Lkik/android/util/aq;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/util/d$1;->a(Lcom/kik/cache/ae$d;Z)V
+    value = Lkik/android/util/d$1;->a(Lcom/kik/cache/KikVolleyImageLoader$c;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/util/av",
+        "Lkik/android/util/aq",
         "<",
         "Ljava/lang/Void;",
         "Ljava/lang/Void;",
@@ -26,22 +26,22 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/kik/cache/ae$d;
+.field final synthetic a:Lcom/kik/cache/KikVolleyImageLoader$c;
 
 .field final synthetic b:Lkik/android/util/d$1;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/util/d$1;Lcom/kik/cache/ae$d;)V
+.method constructor <init>(Lkik/android/util/d$1;Lcom/kik/cache/KikVolleyImageLoader$c;)V
     .locals 0
 
     .prologue
     .line 736
     iput-object p1, p0, Lkik/android/util/d$1$1;->b:Lkik/android/util/d$1;
 
-    iput-object p2, p0, Lkik/android/util/d$1$1;->a:Lcom/kik/cache/ae$d;
+    iput-object p2, p0, Lkik/android/util/d$1$1;->a:Lcom/kik/cache/KikVolleyImageLoader$c;
 
-    invoke-direct {p0}, Lkik/android/util/av;-><init>()V
+    invoke-direct {p0}, Lkik/android/util/aq;-><init>()V
 
     return-void
 .end method
@@ -60,13 +60,13 @@
 
     iget-object v0, v0, Lkik/android/util/d$1;->d:Lkik/android/util/d;
 
-    invoke-static {v0}, Lkik/android/util/d;->a(Lkik/android/util/d;)Lcom/kik/e/p;
+    invoke-static {v0}, Lkik/android/util/d;->a(Lkik/android/util/d;)Lcom/kik/storage/s;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/util/d$1$1;->a:Lcom/kik/cache/ae$d;
+    iget-object v1, p0, Lkik/android/util/d$1$1;->a:Lcom/kik/cache/KikVolleyImageLoader$c;
 
-    invoke-virtual {v1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    invoke-virtual {v1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v1
 
@@ -74,7 +74,7 @@
 
     iget-object v2, v2, Lkik/android/util/d$1;->a:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lcom/kik/e/p;->a(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-interface {v0, v1, v2}, Lcom/kik/storage/s;->a(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     .line 1741
     iget-object v0, p0, Lkik/android/util/d$1$1;->b:Lkik/android/util/d$1;

@@ -25,9 +25,9 @@
 
 
 # static fields
-.field private static final a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+.field private static final DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
-.field private static final b:Lcom/google/protobuf/Parser;
+.field private static final PARSER:Lcom/google/protobuf/Parser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/protobuf/Parser",
@@ -37,6 +37,8 @@
         }
     .end annotation
 .end field
+
+.field public static final SUGGESTED_REPLY_FIELD_NUMBER:I = 0x1
 
 .field private static final serialVersionUID:J
 
@@ -59,14 +61,14 @@
 
     invoke-direct {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;-><init>()V
 
-    sput-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    sput-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
     .line 9695
     new-instance v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$1;
 
     invoke-direct {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$1;-><init>()V
 
-    sput-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b:Lcom/google/protobuf/Parser;
+    sput-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
 
     return-void
 .end method
@@ -263,7 +265,7 @@
     .end sparse-switch
 .end method
 
-.method synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;B)V
+.method synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;Lcom/kik/messagepath/model/Keyboards$1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -306,7 +308,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+.method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/messagepath/model/Keyboards$1;)V
     .locals 0
 
     .prologue
@@ -316,7 +318,27 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;I)I
+.method static synthetic access$11300()Z
+    .locals 1
+
+    .prologue
+    .line 9094
+    sget-boolean v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->alwaysUseFieldBuilders:Z
+
+    return v0
+.end method
+
+.method static synthetic access$11502(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .prologue
+    .line 9094
+    iput-object p1, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
+
+    return-object p1
+.end method
+
+.method static synthetic access$11602(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;I)I
     .locals 0
 
     .prologue
@@ -326,14 +348,60 @@
     return p1
 .end method
 
-.method public static a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+.method static synthetic access$11700()Lcom/google/protobuf/Parser;
+    .locals 1
+
+    .prologue
+    .line 9094
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    return-object v0
+.end method
+
+.method public static getDefaultInstance()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+
+    .prologue
+    .line 9691
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    return-object v0
+.end method
+
+.method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 9157
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards;->t()Lcom/google/protobuf/Descriptors$Descriptor;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    .locals 1
+
+    .prologue
+    .line 9360
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->toBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
     .locals 1
 
     .prologue
     .line 9363
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->toBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
 
     move-result-object v0
 
@@ -344,41 +412,229 @@
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .prologue
-    .line 9094
-    iput-object p1, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
-
-    return-object p1
-.end method
-
-.method public static c()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .prologue
-    .line 9360
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .line 9334
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    .line 9335
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
 
     move-result-object v0
 
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    .line 9334
     return-object v0
 .end method
 
-.method public static e()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .prologue
-    .line 9691
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .line 9341
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 9342
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    .line 9341
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9302
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
     return-object v0
 .end method
 
-.method public static f()Lcom/google/protobuf/Parser;
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9308
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9347
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 9348
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    .line 9347
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9354
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 9355
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    .line 9354
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9322
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 9323
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    .line 9322
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9329
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 9330
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    .line 9329
+    return-object v0
+.end method
+
+.method public static parseFrom([B)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9312
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    return-object v0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 9318
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    return-object v0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -392,106 +648,13 @@
 
     .prologue
     .line 9705
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b:Lcom/google/protobuf/Parser;
-
-    return-object v0
-.end method
-
-.method static synthetic g()Z
-    .locals 1
-
-    .prologue
-    .line 9094
-    sget-boolean v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->alwaysUseFieldBuilders:Z
-
-    return v0
-.end method
-
-.method static synthetic h()Lcom/google/protobuf/Parser;
-    .locals 1
-
-    .prologue
-    .line 9094
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b:Lcom/google/protobuf/Parser;
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
-    .locals 1
-
-    .prologue
-    .line 9199
-    iget v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
-
-    invoke-static {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;->forNumber(I)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final b()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
-    .locals 2
-
-    .prologue
-    .line 9208
-    iget v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 9209
-    iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
-
-    check-cast v0, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
-
-    .line 9211
-    :goto_0
-    return-object v0
-
-    :cond_0
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;->i()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public final d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 9366
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
-
-    if-ne p0, v0, :cond_0
-
-    new-instance v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;-><init>(B)V
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    new-instance v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;-><init>(B)V
-
-    .line 9367
-    invoke-virtual {v0, p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -525,17 +688,13 @@
     :cond_2
     check-cast p1, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
 
-    .line 10199
-    iget v2, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
-
-    invoke-static {v2}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;->forNumber(I)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
+    .line 9265
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getTypeCase()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
 
     move-result-object v2
 
-    .line 11199
-    iget v3, p1, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
-
-    invoke-static {v3}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;->forNumber(I)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
+    .line 9266
+    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getTypeCase()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
 
     move-result-object v3
 
@@ -574,12 +733,12 @@
 
     .line 9270
     :pswitch_0
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getSuggestedReply()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
     move-result-object v2
 
     .line 9271
-    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getSuggestedReply()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
     move-result-object v3
 
@@ -604,10 +763,11 @@
     .locals 1
 
     .prologue
-    .line 14714
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
-
     .line 9094
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getDefaultInstanceForType()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
@@ -615,10 +775,21 @@
     .locals 1
 
     .prologue
-    .line 13714
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
-
     .line 9094
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getDefaultInstanceForType()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getDefaultInstanceForType()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+    .locals 1
+
+    .prologue
+    .line 9714
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
     return-object v0
 .end method
 
@@ -636,7 +807,7 @@
 
     .prologue
     .line 9710
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b:Lcom/google/protobuf/Parser;
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
@@ -685,6 +856,76 @@
     iput v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->memoizedSize:I
 
     goto :goto_0
+.end method
+
+.method public final getSuggestedReply()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+    .locals 2
+
+    .prologue
+    .line 9208
+    iget v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    .line 9209
+    iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+
+    .line 9211
+    :goto_0
+    return-object v0
+
+    :cond_0
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;->i()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+.method public final getSuggestedReplyOrBuilder()Lcom/kik/messagepath/model/Keyboards$j;
+    .locals 2
+
+    .prologue
+    .line 9217
+    iget v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    .line 9218
+    iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->type_:Ljava/lang/Object;
+
+    check-cast v0, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+
+    .line 9220
+    :goto_0
+    return-object v0
+
+    :cond_0
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;->i()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+.method public final getTypeCase()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
+    .locals 1
+
+    .prologue
+    .line 9199
+    iget v0, p0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->typeCase_:I
+
+    invoke-static {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;->forNumber(I)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$TypeCase;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
@@ -758,7 +999,7 @@
     .line 9289
     mul-int/lit8 v0, v0, 0x35
 
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->b()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->getSuggestedReply()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
     move-result-object v1
 
@@ -830,73 +1071,122 @@
     goto :goto_0
 .end method
 
-.method public final synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
+.method public final bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
-    .line 12360
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
-
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    .line 9094
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->newBuilderForType()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
 
     move-result-object v0
 
-    .line 9094
     return-object v0
 .end method
 
-.method protected final synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+.method protected final bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+    .locals 1
+
+    .prologue
+    .line 9094
+    invoke-virtual {p0, p1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .prologue
+    .line 9094
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->newBuilderForType()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final newBuilderForType()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    .locals 1
+
+    .prologue
+    .line 9358
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->newBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected final newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
     .locals 2
 
     .prologue
-    .line 11373
+    .line 9373
     new-instance v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 9094
+    .line 9374
     return-object v0
 .end method
 
-.method public final synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
-    .locals 1
-
-    .prologue
-    .line 13360
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->a:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
-
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
-
-    move-result-object v0
-
-    .line 9094
-    return-object v0
-.end method
-
-.method public final synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
+.method public final bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
     .line 9094
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->toBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
+.method public final bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
     .prologue
     .line 9094
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->d()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->toBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final toBuilder()Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 9366
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;->DEFAULT_INSTANCE:Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;
+
+    if-ne p0, v0, :cond_0
+
+    new-instance v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;-><init>(B)V
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    new-instance v0, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;-><init>(B)V
+
+    .line 9367
+    invoke-virtual {v0, p0}, Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;->a(Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment;)Lcom/kik/messagepath/model/Keyboards$KeyboardReplyAttachment$a;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public final writeTo(Lcom/google/protobuf/CodedOutputStream;)V

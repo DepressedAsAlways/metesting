@@ -121,7 +121,7 @@
 
     aput-object p0, v0, v1
 
-    invoke-static {v2, v0}, Lcom/nostra13/universalimageloader/b/c;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v0}, Lcom/nostra13/universalimageloader/a/c;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -172,7 +172,7 @@
 
     .line 184
     :cond_0
-    invoke-static {p0}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     .line 185
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/a/a;->b(Lcom/nostra13/universalimageloader/core/a/c;)Ljava/io/InputStream;
@@ -251,7 +251,7 @@
 
     aput-object v4, v3, v1
 
-    invoke-static {v2, v3}, Lcom/nostra13/universalimageloader/b/c;->d(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v3}, Lcom/nostra13/universalimageloader/a/c;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 94
     :goto_0
@@ -395,7 +395,7 @@
 
     aput-object v8, v7, v3
 
-    invoke-static {v5, v7}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v5, v7}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 1171
     :cond_1
@@ -416,7 +416,7 @@
     move-result-object v0
 
     .line 85
-    invoke-static {v2}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     .line 88
     if-nez v0, :cond_7
@@ -432,7 +432,7 @@
 
     aput-object v4, v3, v1
 
-    invoke-static {v2, v3}, Lcom/nostra13/universalimageloader/b/c;->d(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v3}, Lcom/nostra13/universalimageloader/a/c;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto/16 :goto_0
 
@@ -459,7 +459,7 @@
 
     move-object v1, v2
 
-    invoke-static {v1}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     throw v0
 
@@ -471,7 +471,7 @@
     if-ne v0, v5, :cond_5
 
     .line 1161
-    invoke-static {v3}, Lcom/nostra13/universalimageloader/b/a;->a(Lcom/nostra13/universalimageloader/core/assist/c;)I
+    invoke-static {v3}, Lcom/nostra13/universalimageloader/a/a;->a(Lcom/nostra13/universalimageloader/core/assist/c;)I
 
     move-result v0
 
@@ -496,7 +496,7 @@
 
     move-result-object v7
 
-    invoke-static {v3, v5, v7, v0}, Lcom/nostra13/universalimageloader/b/a;->a(Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Z)I
+    invoke-static {v3, v5, v7, v0}, Lcom/nostra13/universalimageloader/a/a;->a(Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Z)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -569,7 +569,7 @@
     move v2, v6
 
     :goto_5
-    invoke-static {v7, v8, v9, v2}, Lcom/nostra13/universalimageloader/b/a;->b(Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Z)F
+    invoke-static {v7, v8, v9, v2}, Lcom/nostra13/universalimageloader/a/a;->b(Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/c;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Z)F
 
     move-result v2
 
@@ -617,7 +617,7 @@
 
     aput-object v7, v9, v2
 
-    invoke-static {v8, v9}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v8, v9}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 1206
     :cond_9
@@ -643,7 +643,7 @@
 
     aput-object v7, v4, v1
 
-    invoke-static {v2, v4}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v4}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 1212
     :cond_a
@@ -675,7 +675,7 @@
 
     aput-object v3, v4, v6
 
-    invoke-static {v2, v4}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v4}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 1218
     :cond_b

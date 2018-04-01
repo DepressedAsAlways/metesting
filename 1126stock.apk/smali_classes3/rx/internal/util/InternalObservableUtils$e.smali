@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/g;
+.implements Lrx/functions/g;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/b/g",
+        "Lrx/functions/g",
         "<",
         "Lrx/Notification",
         "<*>;",
@@ -50,7 +50,7 @@
     check-cast p1, Lrx/Notification;
 
     .line 1230
-    invoke-virtual {p1}, Lrx/Notification;->a()Ljava/lang/Throwable;
+    invoke-virtual {p1}, Lrx/Notification;->c()Ljava/lang/Throwable;
 
     move-result-object v0
 

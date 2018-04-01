@@ -18,7 +18,19 @@
 .method public abstract a(Lcom/kik/cards/web/CardsWebViewFragment;)V
 .end method
 
-.method public abstract a(Lcom/kik/cards/web/p;)V
+.method public abstract a(Lcom/kik/cards/web/n;)V
+.end method
+
+.method public abstract a(Lcom/kik/view/adapters/ContactsCursorAdapter;)V
+.end method
+
+.method public abstract a(Lcom/kik/view/adapters/h;)V
+.end method
+
+.method public abstract a(Lcom/kik/view/adapters/j;)V
+.end method
+
+.method public abstract a(Lcom/kik/view/adapters/p;)V
 .end method
 
 .method public abstract a(Lkik/android/KikNotificationHandler;)V
@@ -51,16 +63,10 @@
 .method public abstract a(Lkik/android/chat/fragment/AbTestsFragment;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/fragment/AddPaymentMethodFragment;)V
-.end method
-
 .method public abstract a(Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/AddressbookFragmentBase;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/fragment/BaseChatInfoFragment;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/CameraFragment;)V
@@ -75,19 +81,16 @@
 .method public abstract a(Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/fragment/EmailConfirmationReminderFragment;)V
+.method public abstract a(Lkik/android/chat/fragment/FullScreenAddressbookFragment;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/fragment/FullScreenAddressbookFragment;)V
+.method public abstract a(Lkik/android/chat/fragment/InterestsPickerFragment;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/KikChangeGroupNameFragment;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/KikChatFragment;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/fragment/KikChatInfoFragment;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/KikCodeFragment;)V
@@ -123,9 +126,6 @@
 .method public abstract a(Lkik/android/chat/fragment/KikPickUsersFragment;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/fragment/KikPreferenceLaunchpad;)V
-.end method
-
 .method public abstract a(Lkik/android/chat/fragment/KikPreregistrationFragmentBase;)V
 .end method
 
@@ -150,9 +150,6 @@
 .method public abstract a(Lkik/android/chat/fragment/MissedConversationsFragment;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/fragment/PaymentConfirmationFragment;)V
-.end method
-
 .method public abstract a(Lkik/android/chat/fragment/PhoneVerificationCountryCodePickerFragment;)V
 .end method
 
@@ -174,10 +171,16 @@
 .method public abstract a(Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;)V
 .end method
 
+.method public abstract a(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
+.end method
+
 .method public abstract a(Lkik/android/chat/fragment/TemporaryBanDialog;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/TrophyCaseFragment;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/fragment/UserProfileFragment;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/fragment/VideoTrimmingFragment;)V
@@ -213,19 +216,7 @@
 .method public abstract a(Lkik/android/chat/vm/ReportDialogViewModel;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/bj;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/bm;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/cc;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/cg;)V
-.end method
-
-.method public abstract a(Lkik/android/chat/vm/ch;)V
+.method public abstract a(Lkik/android/chat/vm/bw;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/chats/c;)V
@@ -237,28 +228,46 @@
 .method public abstract a(Lkik/android/chat/vm/chats/profile/a;)V
 .end method
 
+.method public abstract a(Lkik/android/chat/vm/chats/profile/ai;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/chats/profile/ao;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/chats/profile/av;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/chats/profile/bk;)V
+.end method
+
 .method public abstract a(Lkik/android/chat/vm/chats/profile/k;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/chats/profile/r;)V
+.method public abstract a(Lkik/android/chat/vm/chats/profile/s;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/chats/profile/y;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/m;)V
+.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/a;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/o;)V
+.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/n;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/chats/publicgroups/p;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/s;)V
+.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/q;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/w;)V
+.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/t;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/chats/publicgroups/y;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;)V
@@ -288,34 +297,163 @@
 .method public abstract a(Lkik/android/chat/vm/conversations/emptyview/c;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/h;)V
+.method public abstract a(Lkik/android/chat/vm/cu;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/cx;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/d;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/ds;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/dv;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/ea;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/eb;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/k;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/messaging/bq;)V
+.method public abstract a(Lkik/android/chat/vm/messaging/cc;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/messaging/cl;)V
+.method public abstract a(Lkik/android/chat/vm/messaging/cd;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/messaging/ct;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/messaging/dj;)V
+.method public abstract a(Lkik/android/chat/vm/messaging/dq;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/messaging/ea;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/messaging/ed;)V
+.method public abstract a(Lkik/android/chat/vm/messaging/ev;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/messaging/en;)V
+.method public abstract a(Lkik/android/chat/vm/messaging/fq;)V
 .end method
 
-.method public abstract a(Lkik/android/chat/vm/messaging/ex;)V
+.method public abstract a(Lkik/android/chat/vm/messaging/fs;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/messaging/fv;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/messaging/gf;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/messaging/gl;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/n;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/PicturePickerFragment;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/aq;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/au;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/bi;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/ca;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/dl;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/dp;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/dv;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/gridvm/a;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/gridvm/ap;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/gridvm/b;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/gridvm/k;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/gridvm/n;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/gridvm/t;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/l;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/ab$a;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/ab$b;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/ab$c;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/ab$d;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/am;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/ao;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/ar;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/b;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/f;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/j;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/k;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/r;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/profileactionvm/y;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/q;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/x;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/profile/z;)V
+.end method
+
+.method public abstract a(Lkik/android/chat/vm/t;)V
 .end method
 
 .method public abstract a(Lkik/android/chat/vm/widget/SmileyItemViewModel;)V
@@ -369,22 +507,25 @@
 .method public abstract a(Lkik/android/deeplinks/DeepLinkActivity;)V
 .end method
 
+.method public abstract a(Lkik/android/deeplinks/InternalDeeplinkActivity;)V
+.end method
+
 .method public abstract a(Lkik/android/f;)V
 .end method
 
 .method public abstract a(Lkik/android/gallery/vm/a;)V
 .end method
 
-.method public abstract a(Lkik/android/gallery/vm/j;)V
+.method public abstract a(Lkik/android/gallery/vm/k;)V
 .end method
 
 .method public abstract a(Lkik/android/gifs/vm/a;)V
 .end method
 
-.method public abstract a(Lkik/android/gifs/vm/aa;)V
+.method public abstract a(Lkik/android/gifs/vm/ab;)V
 .end method
 
-.method public abstract a(Lkik/android/gifs/vm/ai;)V
+.method public abstract a(Lkik/android/gifs/vm/aj;)V
 .end method
 
 .method public abstract a(Lkik/android/gifs/vm/d;)V
@@ -396,7 +537,7 @@
 .method public abstract a(Lkik/android/gifs/vm/t;)V
 .end method
 
-.method public abstract a(Lkik/android/gifs/vm/y;)V
+.method public abstract a(Lkik/android/gifs/vm/z;)V
 .end method
 
 .method public abstract a(Lkik/android/net/communicator/CommunicatorService;)V
@@ -415,6 +556,9 @@
 .end method
 
 .method public abstract a(Lkik/android/videochat/VideoChatViewController;)V
+.end method
+
+.method public abstract a(Lkik/android/widget/AudioMicLayoutView;)V
 .end method
 
 .method public abstract a(Lkik/android/widget/BugmeBarView;)V
@@ -444,9 +588,6 @@
 .method public abstract a(Lkik/android/widget/preferences/BlockListPreference;)V
 .end method
 
-.method public abstract a(Lkik/android/widget/preferences/ClearPaymentMethodPreference;)V
-.end method
-
 .method public abstract a(Lkik/android/widget/preferences/CommunityGuideLinesPreference;)V
 .end method
 
@@ -463,9 +604,6 @@
 .end method
 
 .method public abstract a(Lkik/android/widget/preferences/KikPreferenceScreen;)V
-.end method
-
-.method public abstract a(Lkik/android/widget/preferences/KikProfilePicPreference;)V
 .end method
 
 .method public abstract a(Lkik/android/widget/preferences/KikSwitchPreference;)V
@@ -511,4 +649,7 @@
 .end method
 
 .method public abstract a(Lkik/android/widget/preferences/WebHistoryPreference;)V
+.end method
+
+.method public abstract a(Lkik/android/widget/vm/a;)V
 .end method

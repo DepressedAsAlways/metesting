@@ -28,19 +28,31 @@
 
 .field public static final enum CONTENT_LAYOUT_ARTICLE:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-.field public static final enum CONTENT_LAYOUT_BANNER:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+.field public static final enum CONTENT_LAYOUT_AUDIO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
 .field public static final enum CONTENT_LAYOUT_DEFAULT:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-.field public static final enum CONTENT_LAYOUT_FULL_BLEED:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+.field public static final enum CONTENT_LAYOUT_OVERLAY:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
 .field public static final enum CONTENT_LAYOUT_PHOTO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
 .field public static final enum CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
+.field private static final __typeMap__:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # instance fields
-.field _layoutType:Ljava/lang/String;
+.field private _layoutType:Ljava/lang/String;
 
 
 # direct methods
@@ -56,105 +68,144 @@
 
     const/4 v5, 0x1
 
-    const/4 v4, 0x0
+    const/4 v0, 0x0
 
-    .line 100
-    new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 107
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    const-string v1, "CONTENT_LAYOUT_DEFAULT"
+    const-string v2, "CONTENT_LAYOUT_DEFAULT"
 
-    const-string v2, ""
+    const-string v3, ""
 
-    invoke-direct {v0, v1, v4, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v2, v0, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_DEFAULT:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_DEFAULT:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 108
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    const-string v1, "CONTENT_LAYOUT_PHOTO"
+    const-string v2, "CONTENT_LAYOUT_PHOTO"
 
-    const-string v2, "photo"
+    const-string v3, "photo"
 
-    invoke-direct {v0, v1, v5, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v2, v5, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_PHOTO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_PHOTO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 109
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    const-string v1, "CONTENT_LAYOUT_ARTICLE"
+    const-string v2, "CONTENT_LAYOUT_ARTICLE"
 
-    const-string v2, "article"
+    const-string v3, "article"
 
-    invoke-direct {v0, v1, v6, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v2, v6, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_ARTICLE:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_ARTICLE:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    .line 101
-    new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 110
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    const-string v1, "CONTENT_LAYOUT_FULL_BLEED"
+    const-string v2, "CONTENT_LAYOUT_VIDEO"
 
-    const-string v2, "full_bleed"
+    const-string v3, "video"
 
-    invoke-direct {v0, v1, v7, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v2, v7, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_FULL_BLEED:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 111
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    const-string v1, "CONTENT_LAYOUT_VIDEO"
+    const-string v2, "CONTENT_LAYOUT_AUDIO"
 
-    const-string v2, "video"
+    const-string v3, "audio"
 
-    invoke-direct {v0, v1, v8, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {v1, v2, v8, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_AUDIO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    new-instance v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 112
+    new-instance v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    const-string v1, "CONTENT_LAYOUT_BANNER"
+    const-string v2, "CONTENT_LAYOUT_OVERLAY"
+
+    const/4 v3, 0x5
+
+    const-string v4, "overlay"
+
+    invoke-direct {v1, v2, v3, v4}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_OVERLAY:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    .line 105
+    const/4 v1, 0x6
+
+    new-array v1, v1, [Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_DEFAULT:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    aput-object v2, v1, v0
+
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_PHOTO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    aput-object v2, v1, v5
+
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_ARTICLE:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    aput-object v2, v1, v6
+
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    aput-object v2, v1, v7
+
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_AUDIO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    aput-object v2, v1, v8
 
     const/4 v2, 0x5
 
-    const-string v3, "banner"
+    sget-object v3, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_OVERLAY:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    invoke-direct {v0, v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    aput-object v3, v1, v2
 
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_BANNER:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->$VALUES:[Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    .line 99
-    const/4 v0, 0x6
+    .line 114
+    new-instance v1, Ljava/util/HashMap;
 
-    new-array v0, v0, [Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    sget-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_DEFAULT:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    sput-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->__typeMap__:Ljava/util/Map;
 
-    aput-object v1, v0, v4
+    .line 119
+    invoke-static {}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->values()[Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
-    sget-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_PHOTO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    move-result-object v1
 
-    aput-object v1, v0, v5
+    array-length v2, v1
 
-    sget-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_ARTICLE:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    :goto_0
+    if-ge v0, v2, :cond_0
 
-    aput-object v1, v0, v6
+    aget-object v3, v1, v0
 
-    sget-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_FULL_BLEED:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .line 120
+    sget-object v4, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->__typeMap__:Ljava/util/Map;
 
-    aput-object v1, v0, v7
+    invoke-virtual {v3}, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->layoutString()Ljava/lang/String;
 
-    sget-object v1, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_VIDEO:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    move-result-object v5
 
-    aput-object v1, v0, v8
+    invoke-interface {v4, v5, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v1, 0x5
+    .line 119
+    add-int/lit8 v0, v0, 0x1
 
-    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_BANNER:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    goto :goto_0
 
-    aput-object v2, v0, v1
-
-    sput-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->$VALUES:[Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
-
+    .line 122
+    :cond_0
     return-void
 .end method
 
@@ -169,21 +220,47 @@
     .end annotation
 
     .prologue
-    .line 106
+    .line 134
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 107
+    .line 135
     iput-object p3, p0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->_layoutType:Ljava/lang/String;
 
-    .line 108
+    .line 136
     return-void
+.end method
+
+.method public static fromString(Ljava/lang/String;)Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+    .locals 1
+
+    .prologue
+    .line 126
+    sget-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->__typeMap__:Ljava/util/Map;
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    .line 127
+    if-eqz v0, :cond_0
+
+    .line 130
+    :goto_0
+    return-object v0
+
+    :cond_0
+    sget-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->CONTENT_LAYOUT_DEFAULT:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
+
+    goto :goto_0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
     .locals 1
 
     .prologue
-    .line 99
+    .line 105
     const-class v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -199,7 +276,7 @@
     .locals 1
 
     .prologue
-    .line 99
+    .line 105
     sget-object v0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->$VALUES:[Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;
 
     invoke-virtual {v0}, [Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->clone()Ljava/lang/Object;
@@ -217,13 +294,13 @@
     .locals 2
 
     .prologue
-    .line 117
+    .line 145
     if-nez p1, :cond_0
 
-    .line 118
+    .line 146
     const/4 v0, 0x0
 
-    .line 121
+    .line 149
     :goto_0
     return v0
 
@@ -245,7 +322,7 @@
     .locals 1
 
     .prologue
-    .line 112
+    .line 140
     iget-object v0, p0, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentLayout;->_layoutType:Ljava/lang/String;
 
     return-object v0

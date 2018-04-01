@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/c/b;
+.implements Lcom/kik/d/b;
 
 
 # instance fields
@@ -19,13 +19,13 @@
 
 .field private c:Lkik/android/chat/fragment/KikChatFragment$b;
 
-.field private d:Lkik/android/gallery/vm/j;
+.field private d:Lkik/android/gallery/vm/k;
 
 .field private e:Lkik/android/gallery/IGalleryCursorLoader;
 
 .field private f:Lkik/core/interfaces/h;
 
-.field private g:Lkik/android/gallery/vm/e;
+.field private g:Lkik/android/gallery/b;
 
 .field private h:Z
 
@@ -46,31 +46,31 @@
     return-void
 .end method
 
-.method private f()Lkik/android/gallery/vm/j;
+.method private f()Lkik/android/gallery/vm/k;
     .locals 4
 
     .prologue
     .line 156
-    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     if-nez v0, :cond_0
 
     .line 157
-    new-instance v0, Lkik/android/gallery/vm/j;
+    new-instance v0, Lkik/android/gallery/vm/k;
 
     iget-object v1, p0, Lkik/android/widget/GalleryWidget;->e:Lkik/android/gallery/IGalleryCursorLoader;
 
     iget-object v2, p0, Lkik/android/widget/GalleryWidget;->c:Lkik/android/chat/fragment/KikChatFragment$b;
 
-    iget-object v3, p0, Lkik/android/widget/GalleryWidget;->g:Lkik/android/gallery/vm/e;
+    iget-object v3, p0, Lkik/android/widget/GalleryWidget;->g:Lkik/android/gallery/b;
 
-    invoke-direct {v0, v1, v2, v3}, Lkik/android/gallery/vm/j;-><init>(Lkik/android/gallery/IGalleryCursorLoader;Lkik/android/chat/fragment/KikChatFragment$b;Lkik/android/gallery/vm/e;)V
+    invoke-direct {v0, v1, v2, v3}, Lkik/android/gallery/vm/k;-><init>(Lkik/android/gallery/IGalleryCursorLoader;Lkik/android/chat/fragment/KikChatFragment$b;Lkik/android/gallery/b;)V
 
-    iput-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iput-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     .line 159
     :cond_0
-    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     return-object v0
 .end method
@@ -104,12 +104,12 @@
     return-void
 .end method
 
-.method public final a(Lkik/android/gallery/vm/e;)V
+.method public final a(Lkik/android/gallery/b;)V
     .locals 0
 
     .prologue
     .line 84
-    iput-object p1, p0, Lkik/android/widget/GalleryWidget;->g:Lkik/android/gallery/vm/e;
+    iput-object p1, p0, Lkik/android/widget/GalleryWidget;->g:Lkik/android/gallery/b;
 
     .line 85
     return-void
@@ -123,16 +123,16 @@
     iput-object p1, p0, Lkik/android/widget/GalleryWidget;->f:Lkik/core/interfaces/h;
 
     .line 149
-    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     if-eqz v0, :cond_0
 
     .line 150
-    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/j;
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lkik/android/gallery/vm/j;->a(Lkik/core/interfaces/h;)V
+    invoke-virtual {v0, p1}, Lkik/android/gallery/vm/k;->a(Lkik/core/interfaces/h;)V
 
     .line 152
     :cond_0
@@ -156,7 +156,7 @@
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iget-object v2, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     if-eqz v2, :cond_1
 
@@ -175,11 +175,11 @@
     const-string v3, "Total Photos Count"
 
     .line 101
-    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/j;
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lkik/android/gallery/vm/j;->h()I
+    invoke-virtual {v4}, Lkik/android/gallery/vm/k;->g()I
 
     move-result v4
 
@@ -267,21 +267,42 @@
     return v0
 .end method
 
-.method public final e()V
+.method public final d()V
     .locals 1
 
     .prologue
-    .line 163
+    .line 164
     iget-object v0, p0, Lkik/android/widget/GalleryWidget;->e:Lkik/android/gallery/IGalleryCursorLoader;
 
     if-eqz v0, :cond_0
 
-    .line 164
+    .line 165
     iget-object v0, p0, Lkik/android/widget/GalleryWidget;->e:Lkik/android/gallery/IGalleryCursorLoader;
 
     invoke-interface {v0}, Lkik/android/gallery/IGalleryCursorLoader;->b()V
 
-    .line 166
+    .line 167
+    :cond_0
+    return-void
+.end method
+
+.method public final e()V
+    .locals 1
+
+    .prologue
+    .line 171
+    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
+
+    if-eqz v0, :cond_0
+
+    .line 172
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lkik/android/gallery/vm/k;->o()V
+
+    .line 174
     :cond_0
     return-void
 .end method
@@ -296,11 +317,11 @@
     if-ne p2, v0, :cond_0
 
     .line 91
-    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/j;
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3, p1}, Lkik/android/gallery/vm/j;->a(Landroid/content/Intent;I)V
+    invoke-virtual {v0, p3, p1}, Lkik/android/gallery/vm/k;->a(Landroid/content/Intent;I)V
 
     .line 93
     :cond_0
@@ -312,16 +333,10 @@
 
     .prologue
     .line 52
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {p0}, Lkik/android/widget/GalleryWidget;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 52
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/widget/GalleryWidget;)V
 
     .line 53
@@ -339,7 +354,7 @@
     invoke-super {p0, p1, p2, p3}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     .line 60
-    const v0, 0x7f040082
+    const v0, 0x7f040098
 
     const/4 v1, 0x0
 
@@ -363,39 +378,33 @@
     iput-object v1, p0, Lkik/android/widget/GalleryWidget;->e:Lkik/android/gallery/IGalleryCursorLoader;
 
     .line 64
-    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/j;
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
 
     move-result-object v1
 
-    .line 2088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {p0}, Lkik/android/widget/GalleryWidget;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v2
 
-    invoke-static {v2}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v2
-
-    .line 64
-    invoke-virtual {p0}, Lkik/android/widget/GalleryWidget;->ar()Lkik/android/chat/vm/z;
+    invoke-virtual {p0}, Lkik/android/widget/GalleryWidget;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/gallery/vm/j;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/gallery/vm/k;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 65
-    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/j;
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/android/widget/GalleryWidget;->f:Lkik/core/interfaces/h;
 
-    invoke-virtual {v1, v2}, Lkik/android/gallery/vm/j;->a(Lkik/core/interfaces/h;)V
+    invoke-virtual {v1, v2}, Lkik/android/gallery/vm/k;->a(Lkik/core/interfaces/h;)V
 
     .line 67
-    const/16 v1, 0xa
+    const/16 v1, 0xe
 
-    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/j;
+    invoke-direct {p0}, Lkik/android/widget/GalleryWidget;->f()Lkik/android/gallery/vm/k;
 
     move-result-object v2
 
@@ -439,17 +448,17 @@
 
     .line 125
     :cond_0
-    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     if-eqz v0, :cond_1
 
     .line 126
-    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iget-object v0, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
-    invoke-virtual {v0}, Lkik/android/gallery/vm/j;->c()V
+    invoke-virtual {v0}, Lkik/android/gallery/vm/k;->al_()V
 
     .line 127
-    iput-object v1, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/j;
+    iput-object v1, p0, Lkik/android/widget/GalleryWidget;->d:Lkik/android/gallery/vm/k;
 
     .line 130
     :cond_1

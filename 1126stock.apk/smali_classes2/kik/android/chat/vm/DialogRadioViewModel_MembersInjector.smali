@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/h;",
+        "Lkik/android/chat/vm/n;",
         ">;"
     }
 .end annotation
@@ -23,25 +23,12 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/b",
-            "<",
-            "Lkik/android/chat/vm/p;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private final c:Ljavax/inject/Provider;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lkik/core/interfaces/IConversation;",
             ">;"
         }
     .end annotation
@@ -75,29 +62,23 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/b",
-            "<",
-            "Lkik/android/chat/vm/p;",
-            ">;>;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lkik/core/interfaces/IConversation;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 13
+    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
+    .line 18
     sget-boolean v0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -110,58 +91,35 @@
 
     throw v0
 
-    .line 15
+    .line 19
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 16
-    sget-boolean v0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->a:Z
-
-    if-nez v0, :cond_1
-
-    if-nez p2, :cond_1
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 17
-    :cond_1
-    iput-object p2, p0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->c:Ljavax/inject/Provider;
-
-    .line 18
+    .line 20
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/b",
-            "<",
-            "Lkik/android/chat/vm/p;",
-            ">;>;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lkik/core/interfaces/IConversation;",
             ">;)",
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/h;",
+            "Lkik/android/chat/vm/n;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 30
+    .line 24
     new-instance v0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0}, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -173,12 +131,12 @@
 
     .prologue
     .line 8
-    check-cast p1, Lkik/android/chat/vm/h;
+    check-cast p1, Lkik/android/chat/vm/n;
 
-    .line 1022
+    .line 1029
     if-nez p1, :cond_0
 
-    .line 1023
+    .line 1030
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -187,22 +145,17 @@
 
     throw v0
 
-    .line 1025
+    .line 1032
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->b:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1026
-    iget-object v0, p0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->c:Ljavax/inject/Provider;
+    iget-object v0, p0, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/interfaces/j;
+    check-cast v0, Lkik/core/interfaces/IConversation;
 
-    iput-object v0, p1, Lkik/android/chat/vm/h;->a:Lkik/core/interfaces/j;
+    iput-object v0, p1, Lkik/android/chat/vm/n;->a:Lkik/core/interfaces/IConversation;
 
     .line 8
     return-void

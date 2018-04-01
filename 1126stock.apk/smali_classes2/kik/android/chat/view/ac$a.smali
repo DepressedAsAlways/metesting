@@ -15,10 +15,10 @@
 
 
 # virtual methods
-.method public abstract a()V
+.method public abstract a(Ljava/lang/String;)V
 .end method
 
-.method public abstract a(Ljava/lang/String;)V
+.method public abstract a(Z)V
 .end method
 
 .method public abstract b()V

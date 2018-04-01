@@ -1,58 +1,45 @@
-.class public final Lcom/kik/util/cd;
+.class final synthetic Lcom/kik/util/cd;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        "U:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# interfaces
+.implements Lrx/functions/g;
 
 
 # instance fields
-.field public a:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
-
-.field public b:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TU;"
-        }
-    .end annotation
-.end field
+.field private final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
+.method private constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TU;)V"
-        }
-    .end annotation
 
-    .prologue
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
     iput-object p1, p0, Lcom/kik/util/cd;->a:Ljava/lang/Object;
 
-    .line 14
-    iput-object p2, p0, Lcom/kik/util/cd;->b:Ljava/lang/Object;
-
-    .line 15
     return-void
+.end method
+
+.method public static a(Ljava/lang/Object;)Lrx/functions/g;
+    .locals 1
+
+    new-instance v0, Lcom/kik/util/cd;
+
+    invoke-direct {v0, p0}, Lcom/kik/util/cd;-><init>(Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lcom/kik/util/cd;->a:Ljava/lang/Object;
+
+    invoke-static {v0, p1}, Lcom/kik/util/bq;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method

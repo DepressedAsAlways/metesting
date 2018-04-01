@@ -30,3 +30,6 @@
 
 .method public abstract k()V
 .end method
+
+.method public abstract l()Z
+.end method

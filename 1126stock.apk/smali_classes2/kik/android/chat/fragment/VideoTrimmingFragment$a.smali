@@ -1,5 +1,5 @@
 .class public final Lkik/android/chat/fragment/VideoTrimmingFragment$a;
-.super Lkik/android/util/af;
+.super Lkik/android/util/ad;
 .source "SourceFile"
 
 
@@ -19,8 +19,8 @@
     .locals 0
 
     .prologue
-    .line 385
-    invoke-direct {p0}, Lkik/android/util/af;-><init>()V
+    .line 396
+    invoke-direct {p0}, Lkik/android/util/ad;-><init>()V
 
     return-void
 .end method
@@ -31,12 +31,12 @@
     .locals 1
 
     .prologue
-    .line 400
+    .line 411
     const-string v0, "VIDEO_DURATION"
 
     invoke-virtual {p0, v0, p1, p2}, Lkik/android/chat/fragment/VideoTrimmingFragment$a;->a(Ljava/lang/String;J)V
 
-    .line 401
+    .line 412
     return-object p0
 .end method
 
@@ -44,11 +44,11 @@
     .locals 1
 
     .prologue
-    .line 389
+    .line 400
     const-string v0, "VIDEO_PATH"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/VideoTrimmingFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 390
+    .line 401
     return-object p0
 .end method

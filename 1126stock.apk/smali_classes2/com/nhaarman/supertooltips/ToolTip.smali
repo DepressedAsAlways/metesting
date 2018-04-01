@@ -52,58 +52,88 @@
 
 .field private t:I
 
+.field private u:Z
+
+.field private v:Z
+
 
 # direct methods
 .method public constructor <init>()V
     .locals 2
 
     .prologue
-    const/4 v1, 0x0
-
     const/4 v0, 0x0
 
-    .line 55
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 56
-    iput-object v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->a:Ljava/lang/CharSequence;
-
-    .line 57
-    iput-object v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->r:Landroid/graphics/Typeface;
+    const/4 v1, 0x0
 
     .line 58
-    iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->b:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 59
-    iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->c:I
+    iput-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->a:Ljava/lang/CharSequence;
 
     .line 60
-    iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->d:I
+    iput-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->r:Landroid/graphics/Typeface;
 
     .line 61
-    iput-object v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->o:Landroid/view/View;
+    iput v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->b:I
 
     .line 62
+    iput v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->c:I
+
+    .line 63
+    iput v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->d:I
+
+    .line 64
+    iput-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->o:Landroid/view/View;
+
+    .line 65
     sget-object v0, Lcom/nhaarman/supertooltips/ToolTip$AnimationType;->FROM_MASTER_VIEW:Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
 
     iput-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->p:Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
 
-    .line 63
+    .line 66
+    iput-boolean v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->v:Z
+
+    .line 67
+    iput-boolean v1, p0, Lcom/nhaarman/supertooltips/ToolTip;->u:Z
+
+    .line 68
     return-void
 .end method
 
 
 # virtual methods
+.method public final A()Z
+    .locals 1
+
+    .prologue
+    .line 439
+    iget-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->u:Z
+
+    return v0
+.end method
+
+.method public final B()Landroid/graphics/Typeface;
+    .locals 1
+
+    .prologue
+    .line 447
+    iget-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->r:Landroid/graphics/Typeface;
+
+    return-object v0
+.end method
+
 .method public final a()Lcom/nhaarman/supertooltips/ToolTip;
     .locals 1
 
     .prologue
-    .line 120
+    .line 125
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->g:Z
 
-    .line 121
+    .line 126
     return-object p0
 .end method
 
@@ -111,10 +141,10 @@
     .locals 0
 
     .prologue
-    .line 109
+    .line 114
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->c:I
 
-    .line 110
+    .line 115
     return-object p0
 .end method
 
@@ -122,10 +152,10 @@
     .locals 0
 
     .prologue
-    .line 175
+    .line 180
     iput-object p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->o:Landroid/view/View;
 
-    .line 176
+    .line 181
     return-object p0
 .end method
 
@@ -133,10 +163,10 @@
     .locals 0
 
     .prologue
-    .line 186
+    .line 191
     iput-object p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->p:Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
 
-    .line 187
+    .line 192
     return-object p0
 .end method
 
@@ -144,13 +174,13 @@
     .locals 0
 
     .prologue
-    .line 197
+    .line 202
     iput-wide p2, p0, Lcom/nhaarman/supertooltips/ToolTip;->n:J
 
-    .line 1186
+    .line 1191
     iput-object p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->p:Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
 
-    .line 198
+    .line 203
     return-object p0
 .end method
 
@@ -158,15 +188,15 @@
     .locals 1
 
     .prologue
-    .line 72
+    .line 77
     iput-object p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->a:Ljava/lang/CharSequence;
 
-    .line 73
+    .line 78
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->b:I
 
-    .line 74
+    .line 79
     return-object p0
 .end method
 
@@ -174,12 +204,12 @@
     .locals 1
 
     .prologue
-    .line 131
-    const v0, 0x7f0f0026
+    .line 136
+    const v0, 0x7f0e0029
 
     iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->d:I
 
-    .line 132
+    .line 137
     return-object p0
 .end method
 
@@ -187,10 +217,10 @@
     .locals 0
 
     .prologue
-    .line 153
+    .line 158
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->i:I
 
-    .line 154
+    .line 159
     return-object p0
 .end method
 
@@ -198,12 +228,12 @@
     .locals 1
 
     .prologue
-    .line 142
+    .line 147
     const/4 v0, 0x2
 
     iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->h:I
 
-    .line 143
+    .line 148
     return-object p0
 .end method
 
@@ -211,10 +241,10 @@
     .locals 0
 
     .prologue
-    .line 230
+    .line 235
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->f:I
 
-    .line 231
+    .line 236
     return-object p0
 .end method
 
@@ -222,12 +252,12 @@
     .locals 1
 
     .prologue
-    .line 164
+    .line 169
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->e:I
 
-    .line 165
+    .line 170
     return-object p0
 .end method
 
@@ -235,10 +265,10 @@
     .locals 0
 
     .prologue
-    .line 241
+    .line 246
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->j:I
 
-    .line 242
+    .line 247
     return-object p0
 .end method
 
@@ -246,12 +276,12 @@
     .locals 1
 
     .prologue
-    .line 208
+    .line 213
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->q:Z
 
-    .line 209
+    .line 214
     return-object p0
 .end method
 
@@ -259,10 +289,28 @@
     .locals 0
 
     .prologue
-    .line 252
+    .line 257
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->k:I
 
-    .line 253
+    .line 258
+    return-object p0
+.end method
+
+.method public final f()Lcom/nhaarman/supertooltips/ToolTip;
+    .locals 1
+
+    .prologue
+    .line 324
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->v:Z
+
+    .line 325
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->u:Z
+
+    .line 326
     return-object p0
 .end method
 
@@ -270,50 +318,40 @@
     .locals 0
 
     .prologue
-    .line 263
+    .line 268
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->l:I
 
-    .line 264
+    .line 269
     return-object p0
-.end method
-
-.method public final f()Ljava/lang/CharSequence;
-    .locals 1
-
-    .prologue
-    .line 310
-    iget-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->a:Ljava/lang/CharSequence;
-
-    return-object v0
-.end method
-
-.method public final g()I
-    .locals 1
-
-    .prologue
-    .line 315
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->b:I
-
-    return v0
 .end method
 
 .method public final g(I)Lcom/nhaarman/supertooltips/ToolTip;
     .locals 0
 
     .prologue
-    .line 274
+    .line 279
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->m:I
 
-    .line 275
+    .line 280
     return-object p0
+.end method
+
+.method public final g()Ljava/lang/CharSequence;
+    .locals 1
+
+    .prologue
+    .line 339
+    iget-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->a:Ljava/lang/CharSequence;
+
+    return-object v0
 .end method
 
 .method public final h()I
     .locals 1
 
     .prologue
-    .line 320
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->c:I
+    .line 344
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->b:I
 
     return v0
 .end method
@@ -322,10 +360,10 @@
     .locals 0
 
     .prologue
-    .line 285
+    .line 290
     iput p1, p0, Lcom/nhaarman/supertooltips/ToolTip;->s:I
 
-    .line 286
+    .line 291
     return-object p0
 .end method
 
@@ -333,8 +371,8 @@
     .locals 1
 
     .prologue
-    .line 325
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->d:I
+    .line 349
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->c:I
 
     return v0
 .end method
@@ -343,8 +381,8 @@
     .locals 1
 
     .prologue
-    .line 330
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->h:I
+    .line 354
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->d:I
 
     return v0
 .end method
@@ -353,68 +391,68 @@
     .locals 1
 
     .prologue
-    .line 335
+    .line 359
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->h:I
+
+    return v0
+.end method
+
+.method public final l()I
+    .locals 1
+
+    .prologue
+    .line 364
     iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->i:I
 
     return v0
 .end method
 
-.method public final l()J
+.method public final m()J
     .locals 2
 
     .prologue
-    .line 340
+    .line 369
     iget-wide v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->n:J
 
     return-wide v0
 .end method
 
-.method public final m()I
+.method public final n()I
     .locals 1
 
     .prologue
-    .line 345
+    .line 374
     iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->e:I
 
     return v0
 .end method
 
-.method public final n()Landroid/view/View;
+.method public final o()Landroid/view/View;
     .locals 1
 
     .prologue
-    .line 350
+    .line 379
     iget-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->o:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method public final o()Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
+.method public final p()Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
     .locals 1
 
     .prologue
-    .line 355
+    .line 384
     iget-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->p:Lcom/nhaarman/supertooltips/ToolTip$AnimationType;
 
     return-object v0
-.end method
-
-.method public final p()I
-    .locals 1
-
-    .prologue
-    .line 360
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->j:I
-
-    return v0
 .end method
 
 .method public final q()I
     .locals 1
 
     .prologue
-    .line 365
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->s:I
+    .line 389
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->j:I
 
     return v0
 .end method
@@ -423,8 +461,8 @@
     .locals 1
 
     .prologue
-    .line 370
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->k:I
+    .line 394
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->s:I
 
     return v0
 .end method
@@ -433,48 +471,48 @@
     .locals 1
 
     .prologue
-    .line 375
+    .line 399
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->k:I
+
+    return v0
+.end method
+
+.method public final t()I
+    .locals 1
+
+    .prologue
+    .line 404
     iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->l:I
 
     return v0
 .end method
 
-.method public final t()Z
+.method public final u()Z
     .locals 1
 
     .prologue
-    .line 380
+    .line 409
     iget-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->q:Z
 
     return v0
 .end method
 
-.method public final u()I
+.method public final v()I
     .locals 1
 
     .prologue
-    .line 385
+    .line 414
     iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->f:I
 
     return v0
 .end method
 
-.method public final v()Z
+.method public final w()Z
     .locals 1
 
     .prologue
-    .line 390
+    .line 419
     iget-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->g:Z
-
-    return v0
-.end method
-
-.method public final w()I
-    .locals 1
-
-    .prologue
-    .line 395
-    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->m:I
 
     return v0
 .end method
@@ -483,18 +521,28 @@
     .locals 1
 
     .prologue
-    .line 400
+    .line 424
+    iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->m:I
+
+    return v0
+.end method
+
+.method public final y()I
+    .locals 1
+
+    .prologue
+    .line 429
     iget v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->t:I
 
     return v0
 .end method
 
-.method public final y()Landroid/graphics/Typeface;
+.method public final z()Z
     .locals 1
 
     .prologue
-    .line 408
-    iget-object v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->r:Landroid/graphics/Typeface;
+    .line 434
+    iget-boolean v0, p0, Lcom/nhaarman/supertooltips/ToolTip;->v:Z
 
-    return-object v0
+    return v0
 .end method

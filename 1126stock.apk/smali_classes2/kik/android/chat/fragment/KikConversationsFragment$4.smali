@@ -1,11 +1,11 @@
 .class final Lkik/android/chat/fragment/KikConversationsFragment$4;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikConversationsFragment;->P()V
+    value = Lkik/android/chat/fragment/KikConversationsFragment;->o()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lkik/core/datatypes/messageExtensions/ContentMessage;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 1358
+    .line 1381
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$4;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,13 +46,13 @@
     .locals 1
 
     .prologue
-    .line 1362
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    .line 1385
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkik/android/internal/platform/b;->b()V
+    invoke-virtual {v0}, Lkik/android/internal/platform/PlatformHelper;->b()V
 
-    .line 1363
+    .line 1386
     return-void
 .end method

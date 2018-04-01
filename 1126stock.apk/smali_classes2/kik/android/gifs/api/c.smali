@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Lkik/core/f/e;)Lkik/android/gifs/api/GifApiProvider;
+.method public static a(Landroid/content/Context;Lkik/core/e/e;)Lkik/android/gifs/api/GifApiProvider;
     .locals 1
 
     .prologue
@@ -32,7 +32,7 @@
     .line 18
     new-instance v0, Lkik/android/gifs/api/g;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/gifs/api/g;-><init>(Landroid/content/Context;Lkik/core/f/e;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/gifs/api/g;-><init>(Landroid/content/Context;Lkik/core/e/e;)V
 
     sput-object v0, Lkik/android/gifs/api/c;->a:Lkik/android/gifs/api/g;
 

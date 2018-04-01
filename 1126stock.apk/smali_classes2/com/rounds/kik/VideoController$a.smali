@@ -33,19 +33,19 @@
     .locals 1
 
     .prologue
-    .line 1114
+    .line 1145
     iput-object p1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1115
+    .line 1146
     invoke-static {}, Lcom/rounds/kik/utils/NetworkingUtils;->getNetworkType()Lcom/rounds/kik/utils/NetworkingUtils$NetworkType;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/rounds/kik/VideoController$a;->c:Lcom/rounds/kik/utils/NetworkingUtils$NetworkType;
 
-    .line 1116
+    .line 1147
     return-void
 .end method
 
@@ -55,35 +55,35 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1393
+    .line 1432
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v2}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v2}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 1394
+    .line 1433
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/conference/LeaveReason;->NETWORK_LOSS:Lcom/rounds/kik/conference/LeaveReason;
 
     # invokes: Lcom/rounds/kik/VideoController;->reportLeaveEvent(Lcom/rounds/kik/conference/LeaveReason;)V
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3700(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/conference/LeaveReason;)V
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3800(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/conference/LeaveReason;)V
 
-    .line 1395
+    .line 1434
     invoke-static {}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DStopNoInternetSequence()Z
 
-    .line 1396
+    .line 1435
     const/4 v0, 0x0
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetStreamMode(I)V
 
-    .line 1397
+    .line 1436
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->closeCamera()V
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$4100(Lcom/rounds/kik/VideoController;)V
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$4200(Lcom/rounds/kik/VideoController;)V
 
-    .line 1398
+    .line 1437
     sget-object v1, Lcom/rounds/kik/conference/DisconnectReason;->NETWORK_LOSS:Lcom/rounds/kik/conference/DisconnectReason;
 
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->b:Lcom/rounds/kik/conference/EndOfCallStatus;
@@ -95,13 +95,13 @@
     :goto_0
     invoke-direct {p0, v1, v0}, Lcom/rounds/kik/VideoController$a;->a(Lcom/rounds/kik/conference/DisconnectReason;Lcom/rounds/kik/conference/EndOfCallStatus;)V
 
-    .line 1399
+    .line 1438
     iput-object v2, p0, Lcom/rounds/kik/VideoController$a;->b:Lcom/rounds/kik/conference/EndOfCallStatus;
 
-    .line 1400
+    .line 1439
     return-void
 
-    .line 1398
+    .line 1437
     :cond_0
     invoke-static {}, Lcom/rounds/kik/conference/EndOfCallStatus;->failedStatus()Lcom/rounds/kik/conference/EndOfCallStatus;
 
@@ -114,23 +114,23 @@
     .locals 3
 
     .prologue
-    .line 1105
-    .line 5158
+    .line 1136
+    .line 6191
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->lockObject:Ljava/lang/Object;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2700(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 5159
+    .line 6192
     :try_start_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/util/List;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2900(Lcom/rounds/kik/VideoController;)Ljava/util/List;
 
     move-result-object v0
 
@@ -151,12 +151,12 @@
 
     check-cast v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
-    .line 5160
+    .line 6193
     invoke-virtual {p0, v0}, Lcom/rounds/kik/VideoController$a;->onParticipantRemoved(Lcom/rounds/kik/participants/RemoteParticipant;)V
 
     goto :goto_0
 
-    .line 5163
+    .line 6196
     :catchall_0
     move-exception v0
 
@@ -166,19 +166,19 @@
 
     throw v0
 
-    .line 5162
+    .line 6195
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/util/List;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2900(Lcom/rounds/kik/VideoController;)Ljava/util/List;
 
     move-result-object v0
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 5163
+    .line 6196
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -190,7 +190,7 @@
     .locals 2
 
     .prologue
-    .line 1413
+    .line 1493
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ConferenceState;->Offline:Lcom/rounds/kik/VideoController$ConferenceState;
@@ -198,21 +198,21 @@
     # setter for: Lcom/rounds/kik/VideoController;->mConferenceState:Lcom/rounds/kik/VideoController$ConferenceState;
     invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$002(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ConferenceState;)Lcom/rounds/kik/VideoController$ConferenceState;
 
-    .line 1415
+    .line 1495
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mCallStateReceiver:Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3600(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1416
+    .line 1496
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mCallStateReceiver:Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3600(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
 
     move-result-object v0
 
@@ -222,15 +222,15 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;->unRegister(Landroid/content/Context;)V
 
-    .line 1417
+    .line 1497
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     const/4 v1, 0x0
 
     # setter for: Lcom/rounds/kik/VideoController;->mCallStateReceiver:Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3602(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
 
-    .line 1420
+    .line 1500
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
@@ -243,7 +243,7 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/participants/ParticipantCollection;->setInConference(Z)V
 
-    .line 1421
+    .line 1501
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mProximityHandler:Lcom/rounds/kik/sensors/ProximityHandler;
@@ -253,18 +253,18 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/sensors/ProximityHandler;->unregister()V
 
-    .line 1422
+    .line 1502
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->onViewDisconnected()V
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3800(Lcom/rounds/kik/VideoController;)V
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3900(Lcom/rounds/kik/VideoController;)V
 
-    .line 1424
+    .line 1504
     sget-object v0, Lcom/rounds/kik/media/audio/RoundsAudioManager;->INSTANCE:Lcom/rounds/kik/media/audio/RoundsAudioManager;
 
     invoke-virtual {v0}, Lcom/rounds/kik/media/audio/RoundsAudioManager;->unregisterRoundsAudio()V
 
-    .line 1426
+    .line 1506
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -274,7 +274,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1427
+    .line 1507
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -284,44 +284,94 @@
 
     invoke-interface {v0, p1, p2}, Lcom/rounds/kik/VideoController$Listener;->onDisconnected(Lcom/rounds/kik/conference/DisconnectReason;Lcom/rounds/kik/conference/EndOfCallStatus;)V
 
-    .line 1429
+    .line 1509
     :cond_1
     return-void
 .end method
 
-.method private b()V
-    .locals 2
+.method private a(Z)V
+    .locals 6
 
     .prologue
-    .line 1404
+    .line 1448
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     invoke-virtual {v0}, Lcom/rounds/kik/VideoController;->isInFullVideoMode()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
-    .line 1405
+    .line 1449
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
-    # getter for: Lcom/rounds/kik/VideoController;->mVideoView:Lcom/rounds/kik/view/VideoView;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1700(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
+    # getter for: Lcom/rounds/kik/VideoController;->mABSwitchFullScreenAutomatically:Z
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$4300(Lcom/rounds/kik/VideoController;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 5471
+    if-eqz p1, :cond_2
+
+    const/16 v0, 0x1f4
+
+    .line 5475
+    :goto_0
+    iget-object v1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->mSwitchToFullScreenTask:Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v1}, Lcom/rounds/kik/VideoController;->access$4400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 5476
+    iget-object v1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->mSwitchToFullScreenTask:Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v1}, Lcom/rounds/kik/VideoController;->access$4400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/rounds/kik/Concurrency$CancelableTask;->cancel()V
+
+    .line 5479
+    :cond_0
+    iget-object v1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    invoke-static {}, Lcom/rounds/kik/VideoAppModule;->concurrency()Lcom/rounds/kik/Concurrency;
+
+    move-result-object v2
+
+    new-instance v3, Lcom/rounds/kik/VideoController$a$4;
+
+    invoke-direct {v3, p0}, Lcom/rounds/kik/VideoController$a$4;-><init>(Lcom/rounds/kik/VideoController$a;)V
+
+    int-to-long v4, v0
+
+    invoke-virtual {v2, v3, v4, v5}, Lcom/rounds/kik/Concurrency;->executeOnMainThread(Ljava/lang/Runnable;J)Ljava/lang/Runnable;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->showHintFullScreen()V
+    check-cast v0, Lcom/rounds/kik/Concurrency$CancelableTask;
 
-    .line 1407
-    :cond_0
+    # setter for: Lcom/rounds/kik/VideoController;->mSwitchToFullScreenTask:Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v1, v0}, Lcom/rounds/kik/VideoController;->access$4402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
+
+    .line 1465
+    :cond_1
+    :goto_1
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     const/4 v1, 0x1
 
     # invokes: Lcom/rounds/kik/VideoController;->setVideoScrollEnabled(Z)V
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3600(Lcom/rounds/kik/VideoController;Z)V
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3700(Lcom/rounds/kik/VideoController;Z)V
 
-    .line 1408
+    .line 1466
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mProximityHandler:Lcom/rounds/kik/sensors/ProximityHandler;
@@ -331,20 +381,42 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/sensors/ProximityHandler;->enable()V
 
-    .line 1409
+    .line 1467
     return-void
+
+    .line 5471
+    :cond_2
+    const/16 v0, 0x3e8
+
+    goto :goto_0
+
+    .line 1453
+    :cond_3
+    invoke-static {}, Lcom/rounds/kik/VideoAppModule;->concurrency()Lcom/rounds/kik/Concurrency;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/rounds/kik/VideoController$a$3;
+
+    invoke-direct {v1, p0}, Lcom/rounds/kik/VideoController$a$3;-><init>(Lcom/rounds/kik/VideoController$a;)V
+
+    const-wide/16 v2, 0x2710
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/rounds/kik/Concurrency;->executeOnMainThread(Ljava/lang/Runnable;J)Ljava/lang/Runnable;
+
+    goto :goto_1
 .end method
 
 .method static synthetic b(Lcom/rounds/kik/VideoController$a;)V
     .locals 2
 
     .prologue
-    .line 1105
-    .line 5362
+    .line 1136
+    .line 6399
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mVideoView:Lcom/rounds/kik/view/VideoView;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1700(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
 
     move-result-object v0
 
@@ -352,9 +424,23 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    .line 5363
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->mVideoView:Lcom/rounds/kik/view/VideoView;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$1400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/view/VideoView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->isVideoModeChangingToFullScreen()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 6400
+    :cond_0
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->concurrency()Lcom/rounds/kik/Concurrency;
 
     move-result-object v0
@@ -368,8 +454,8 @@
     :goto_0
     return-void
 
-    .line 5387
-    :cond_0
+    .line 6426
+    :cond_1
     invoke-direct {p0}, Lcom/rounds/kik/VideoController$a;->a()V
 
     goto :goto_0
@@ -379,7 +465,7 @@
     .locals 0
 
     .prologue
-    .line 1105
+    .line 1136
     invoke-direct {p0}, Lcom/rounds/kik/VideoController$a;->a()V
 
     return-void
@@ -393,7 +479,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1247
+    .line 1282
     # getter for: Lcom/rounds/kik/VideoController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/VideoController;->access$800()Lcom/rounds/kik/logs/VideoLogger;
 
@@ -403,40 +489,40 @@
 
     invoke-virtual {v0, v1, p1}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 1249
+    .line 1284
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1250
+    .line 1285
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/rounds/kik/Concurrency$CancelableTask;->cancel()V
 
-    .line 1251
+    .line 1286
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # setter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0, v2}, Lcom/rounds/kik/VideoController;->access$3102(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0, v2}, Lcom/rounds/kik/VideoController;->access$3202(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
-    .line 1254
+    .line 1289
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v2}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v2}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 1255
+    .line 1290
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ConferenceState;->Offline:Lcom/rounds/kik/VideoController$ConferenceState;
@@ -444,21 +530,21 @@
     # setter for: Lcom/rounds/kik/VideoController;->mConferenceState:Lcom/rounds/kik/VideoController$ConferenceState;
     invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$002(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ConferenceState;)Lcom/rounds/kik/VideoController$ConferenceState;
 
-    .line 1256
+    .line 1291
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/conference/LeaveReason;->CONFERENCE_INITIATION_FAILED:Lcom/rounds/kik/conference/LeaveReason;
 
     # invokes: Lcom/rounds/kik/VideoController;->reportLeaveEvent(Lcom/rounds/kik/conference/LeaveReason;)V
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3700(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/conference/LeaveReason;)V
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3800(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/conference/LeaveReason;)V
 
-    .line 1258
+    .line 1293
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->onViewDisconnected()V
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3800(Lcom/rounds/kik/VideoController;)V
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3900(Lcom/rounds/kik/VideoController;)V
 
-    .line 1260
+    .line 1295
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -468,7 +554,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1261
+    .line 1296
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -482,7 +568,7 @@
 
     invoke-interface {v0, p1, v1}, Lcom/rounds/kik/VideoController$Listener;->onDisconnected(Lcom/rounds/kik/conference/DisconnectReason;Lcom/rounds/kik/conference/EndOfCallStatus;)V
 
-    .line 1264
+    .line 1299
     :cond_1
     return-void
 .end method
@@ -495,78 +581,78 @@
 
     const/4 v3, 0x0
 
-    .line 1204
+    .line 1239
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1205
+    .line 1240
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/rounds/kik/Concurrency$CancelableTask;->cancel()V
 
-    .line 1206
+    .line 1241
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # setter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0, v3}, Lcom/rounds/kik/VideoController;->access$3102(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0, v3}, Lcom/rounds/kik/VideoController;->access$3202(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
-    .line 1209
+    .line 1244
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mShouldLeaveConference:Z
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Z
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3300(Lcom/rounds/kik/VideoController;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1210
+    .line 1245
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->disconnect()V
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3300(Lcom/rounds/kik/VideoController;)V
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3400(Lcom/rounds/kik/VideoController;)V
 
-    .line 1242
+    .line 1277
     :cond_1
     :goto_0
     return-void
 
-    .line 1214
+    .line 1249
     :cond_2
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    .line 1215
+    .line 1250
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v0
 
-    .line 1216
+    .line 1251
     invoke-virtual {v0}, Lcom/rounds/kik/participants/LocalParticipant;->isMuted()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/participants/LocalParticipant;->setMuted(Z)V
 
-    .line 1218
+    .line 1253
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mAppContext:Landroid/content/Context;
@@ -588,23 +674,23 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/analytics/Reporter;->report(Landroid/content/Context;Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
 
-    .line 1219
+    .line 1254
     invoke-static {}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DStopNoInternetSequence()Z
 
-    .line 1220
+    .line 1255
     iput-object v3, p0, Lcom/rounds/kik/VideoController$a;->d:Ljava/lang/String;
 
-    .line 1222
+    .line 1257
     :cond_3
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v3}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v3}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 1223
+    .line 1258
     iput-object v3, p0, Lcom/rounds/kik/VideoController$a;->b:Lcom/rounds/kik/conference/EndOfCallStatus;
 
-    .line 1224
+    .line 1259
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ConferenceState;->Online:Lcom/rounds/kik/VideoController$ConferenceState;
@@ -612,7 +698,7 @@
     # setter for: Lcom/rounds/kik/VideoController;->mConferenceState:Lcom/rounds/kik/VideoController$ConferenceState;
     invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$002(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ConferenceState;)Lcom/rounds/kik/VideoController$ConferenceState;
 
-    .line 1226
+    .line 1261
     # getter for: Lcom/rounds/kik/VideoController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/VideoController;->access$800()Lcom/rounds/kik/logs/VideoLogger;
 
@@ -622,7 +708,7 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;)V
 
-    .line 1228
+    .line 1263
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->context()Landroid/content/Context;
@@ -641,9 +727,9 @@
     move-result-object v1
 
     # setter for: Lcom/rounds/kik/VideoController;->mCallStateReceiver:Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3602(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;)Lcom/rounds/kik/telephony/CallStateBroadcastReceiver;
 
-    .line 1229
+    .line 1264
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mProximityHandler:Lcom/rounds/kik/sensors/ProximityHandler;
@@ -653,7 +739,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/sensors/ProximityHandler;->register()V
 
-    .line 1230
+    .line 1265
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -663,21 +749,21 @@
 
     invoke-virtual {v0, v4}, Lcom/rounds/kik/participants/ParticipantCollection;->setInConference(Z)V
 
-    .line 1231
+    .line 1266
     sget-object v0, Lcom/rounds/kik/media/audio/RoundsAudioManager;->INSTANCE:Lcom/rounds/kik/media/audio/RoundsAudioManager;
 
     invoke-virtual {v0}, Lcom/rounds/kik/media/audio/RoundsAudioManager;->registerRoundsAudio()Z
 
-    .line 1232
+    .line 1267
     invoke-static {v4}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetStreamMode(I)V
 
-    .line 1233
+    .line 1268
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->setVideoScrollEnabled(Z)V
-    invoke-static {v0, v4}, Lcom/rounds/kik/VideoController;->access$3600(Lcom/rounds/kik/VideoController;Z)V
+    invoke-static {v0, v4}, Lcom/rounds/kik/VideoController;->access$3700(Lcom/rounds/kik/VideoController;Z)V
 
-    .line 1235
+    .line 1270
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -691,10 +777,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 1236
-    invoke-direct {p0}, Lcom/rounds/kik/VideoController$a;->b()V
+    .line 3443
+    const/4 v0, 0x0
 
-    .line 1239
+    invoke-direct {p0, v0}, Lcom/rounds/kik/VideoController$a;->a(Z)V
+
+    .line 1274
     :cond_4
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
@@ -705,7 +793,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1240
+    .line 1275
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -722,7 +810,7 @@
     .locals 2
 
     .prologue
-    .line 1269
+    .line 1304
     # getter for: Lcom/rounds/kik/VideoController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/VideoController;->access$800()Lcom/rounds/kik/logs/VideoLogger;
 
@@ -732,40 +820,40 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;)V
 
-    .line 1271
+    .line 1306
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1272
+    .line 1307
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3200(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/rounds/kik/Concurrency$CancelableTask;->cancel()V
 
-    .line 1273
+    .line 1308
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     const/4 v1, 0x0
 
     # setter for: Lcom/rounds/kik/VideoController;->mConnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3102(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3202(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
-    .line 1276
+    .line 1311
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
 
     move-result-object v0
 
@@ -773,31 +861,31 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1277
+    .line 1312
     iput-object p2, p0, Lcom/rounds/kik/VideoController$a;->b:Lcom/rounds/kik/conference/EndOfCallStatus;
 
-    .line 1278
+    .line 1313
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ReconnectState;->Disconnected:Lcom/rounds/kik/VideoController$ReconnectState;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 1280
+    .line 1315
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->c:Lcom/rounds/kik/utils/NetworkingUtils$NetworkType;
 
     if-eqz v0, :cond_1
 
-    .line 1281
+    .line 1316
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ReconnectState;->WaitingToReconnect:Lcom/rounds/kik/VideoController$ReconnectState;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 1282
+    .line 1317
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -807,12 +895,12 @@
 
     invoke-interface {v0}, Lcom/rounds/kik/VideoController$Listener;->onReadyToReconnect()V
 
-    .line 1288
+    .line 1323
     :cond_1
     :goto_0
     return-void
 
-    .line 1286
+    .line 1321
     :cond_2
     invoke-direct {p0, p1, p2}, Lcom/rounds/kik/VideoController$a;->a(Lcom/rounds/kik/conference/DisconnectReason;Lcom/rounds/kik/conference/EndOfCallStatus;)V
 
@@ -823,11 +911,11 @@
     .locals 6
 
     .prologue
-    .line 1298
+    .line 1333
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
 
     move-result-object v0
 
@@ -852,7 +940,7 @@
 
     if-eq p1, v0, :cond_5
 
-    .line 1299
+    .line 1334
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
@@ -869,7 +957,7 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/analytics/Reporter;->report(Landroid/content/Context;Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
 
-    .line 1301
+    .line 1336
     sget-object v0, Lcom/rounds/kik/utils/NetworkingUtils$NetworkState;->Connected:Lcom/rounds/kik/utils/NetworkingUtils$NetworkState;
 
     if-eq p2, v0, :cond_3
@@ -879,33 +967,33 @@
     :goto_0
     iput-object v0, p0, Lcom/rounds/kik/VideoController$a;->d:Ljava/lang/String;
 
-    .line 3342
+    .line 4379
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 3346
+    .line 4383
     invoke-static {}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DStartNoInternetSequence()Z
 
-    .line 3347
+    .line 4384
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ReconnectState;->Disconnecting:Lcom/rounds/kik/VideoController$ReconnectState;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 3348
+    .line 4385
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     invoke-virtual {v0}, Lcom/rounds/kik/media/MediaBroker;->stopVidyoConnections()V
 
-    .line 3349
+    .line 4386
     iget-object v1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->concurrency()Lcom/rounds/kik/Concurrency;
@@ -925,20 +1013,20 @@
     check-cast v0, Lcom/rounds/kik/Concurrency$CancelableTask;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectionTimer:Lcom/rounds/kik/Concurrency$CancelableTask;
-    invoke-static {v1, v0}, Lcom/rounds/kik/VideoController;->access$3902(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
+    invoke-static {v1, v0}, Lcom/rounds/kik/VideoController;->access$4002(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/Concurrency$CancelableTask;)Lcom/rounds/kik/Concurrency$CancelableTask;
 
-    .line 4331
+    .line 5368
     :cond_1
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->lockObject:Ljava/lang/Object;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2700(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 4332
+    .line 5369
     :try_start_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
@@ -969,16 +1057,16 @@
 
     check-cast v0, Lcom/rounds/kik/participants/Participant;
 
-    .line 4333
+    .line 5370
     instance-of v3, v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     if-eqz v3, :cond_2
 
-    .line 4334
+    .line 5371
     iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
-    invoke-static {v3}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/util/List;
+    invoke-static {v3}, Lcom/rounds/kik/VideoController;->access$2900(Lcom/rounds/kik/VideoController;)Ljava/util/List;
 
     move-result-object v3
 
@@ -988,7 +1076,7 @@
 
     goto :goto_1
 
-    .line 4337
+    .line 5374
     :catchall_0
     move-exception v0
 
@@ -998,20 +1086,20 @@
 
     throw v0
 
-    .line 1301
+    .line 1336
     :cond_3
     const-string v0, "network_switch"
 
     goto :goto_0
 
-    .line 4337
+    .line 5374
     :cond_4
     :try_start_1
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1306
+    .line 1341
     :cond_5
     sget-object v0, Lcom/rounds/kik/utils/NetworkingUtils$NetworkState;->Connected:Lcom/rounds/kik/utils/NetworkingUtils$NetworkState;
 
@@ -1020,7 +1108,7 @@
     :goto_2
     iput-object p1, p0, Lcom/rounds/kik/VideoController$a;->c:Lcom/rounds/kik/utils/NetworkingUtils$NetworkType;
 
-    .line 1307
+    .line 1342
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->c:Lcom/rounds/kik/utils/NetworkingUtils$NetworkType;
 
     if-eqz v0, :cond_6
@@ -1028,7 +1116,7 @@
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3400(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$3500(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/VideoController$ReconnectState;
 
     move-result-object v0
 
@@ -1036,15 +1124,15 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 1308
+    .line 1343
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     sget-object v1, Lcom/rounds/kik/VideoController$ReconnectState;->WaitingToReconnect:Lcom/rounds/kik/VideoController$ReconnectState;
 
     # setter for: Lcom/rounds/kik/VideoController;->mReconnectState:Lcom/rounds/kik/VideoController$ReconnectState;
-    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3402(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
+    invoke-static {v0, v1}, Lcom/rounds/kik/VideoController;->access$3502(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/VideoController$ReconnectState;)Lcom/rounds/kik/VideoController$ReconnectState;
 
-    .line 1309
+    .line 1344
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mListener:Lcom/rounds/kik/VideoController$Listener;
@@ -1054,11 +1142,11 @@
 
     invoke-interface {v0}, Lcom/rounds/kik/VideoController$Listener;->onReadyToReconnect()V
 
-    .line 1311
+    .line 1346
     :cond_6
     return-void
 
-    .line 1306
+    .line 1341
     :cond_7
     const/4 p1, 0x0
 
@@ -1066,14 +1154,25 @@
 .end method
 
 .method public final onParticipantAdded(Lcom/rounds/kik/participants/RemoteParticipant;)V
-    .locals 5
+    .locals 7
 
     .prologue
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    .line 1121
+    .line 1152
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->lockObject:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    monitor-enter v4
+
+    .line 1153
+    :try_start_0
     # getter for: Lcom/rounds/kik/VideoController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/VideoController;->access$800()Lcom/rounds/kik/logs/VideoLogger;
 
@@ -1081,15 +1180,15 @@
 
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v4, "VideoController.ConferenceObserverImpl.onParticipantAdded: "
+    const-string v5, "VideoController.ConferenceObserverImpl.onParticipantAdded: "
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->clientId()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -1099,12 +1198,12 @@
 
     invoke-virtual {v0, v3}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;)V
 
-    .line 1123
+    .line 1155
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->clientId()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2435
+    .line 2515
     iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -1116,90 +1215,121 @@
 
     move-result-object v0
 
-    .line 2437
+    .line 2517
     if-eqz v0, :cond_6
 
     instance-of v3, v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     if-eqz v3, :cond_6
 
-    .line 2438
+    .line 2518
     check-cast v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     invoke-virtual {v0}, Lcom/rounds/kik/participants/RemoteParticipant;->isMuted()Z
 
     move-result v0
 
-    .line 1126
+    move v3, v0
+
+    .line 1158
     :goto_0
-    iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
-    invoke-static {v3}, Lcom/rounds/kik/VideoController;->access$600(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/participants/ParticipantCollection;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$600(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/participants/ParticipantCollection;
 
-    move-result-object v3
+    move-result-object v0
 
-    invoke-virtual {v3, p1}, Lcom/rounds/kik/participants/ParticipantCollection;->add(Lcom/rounds/kik/participants/RemoteParticipant;)Lcom/rounds/kik/participants/ParticipantCollection$Delta;
+    invoke-virtual {v0, p1}, Lcom/rounds/kik/participants/ParticipantCollection;->add(Lcom/rounds/kik/participants/RemoteParticipant;)Lcom/rounds/kik/participants/ParticipantCollection$Delta;
 
-    move-result-object v4
+    move-result-object v5
 
-    .line 1127
-    iget-object v3, v4, Lcom/rounds/kik/participants/ParticipantCollection$Delta;->added:Ljava/util/Collection;
+    .line 1159
+    iget-object v0, v5, Lcom/rounds/kik/participants/ParticipantCollection$Delta;->added:Ljava/util/Collection;
 
-    invoke-interface {v3}, Ljava/util/Collection;->size()I
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
 
-    move-result v3
+    move-result v0
 
-    if-nez v3, :cond_3
+    if-nez v0, :cond_3
 
-    move v3, v2
+    move v0, v1
 
-    .line 1130
+    .line 1161
     :goto_1
-    if-nez v3, :cond_4
+    iget-object v6, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
-    .line 1131
-    iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+    # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
+    invoke-static {v6}, Lcom/rounds/kik/VideoController;->access$2900(Lcom/rounds/kik/VideoController;)Ljava/util/List;
+
+    move-result-object v6
+
+    invoke-interface {v6, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    .line 1162
+    iget-object v6, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
+    invoke-static {v6}, Lcom/rounds/kik/VideoController;->access$2900(Lcom/rounds/kik/VideoController;)Ljava/util/List;
+
+    move-result-object v6
+
+    invoke-interface {v6, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+
+    .line 1166
+    :cond_0
+    if-nez v0, :cond_4
+
+    .line 1167
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->updateRendererParticipants(Lcom/rounds/kik/participants/ParticipantCollection$Delta;)V
-    invoke-static {v3, v4}, Lcom/rounds/kik/VideoController;->access$2500(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/participants/ParticipantCollection$Delta;)V
+    invoke-static {v0, v5}, Lcom/rounds/kik/VideoController;->access$2600(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/participants/ParticipantCollection$Delta;)V
 
-    .line 1133
+    .line 1169
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->isRemote()Z
 
-    move-result v3
+    move-result v0
 
-    if-eqz v3, :cond_0
+    if-eqz v0, :cond_1
 
-    iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
-    invoke-static {v3}, Lcom/rounds/kik/VideoController;->access$600(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/participants/ParticipantCollection;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$600(Lcom/rounds/kik/VideoController;)Lcom/rounds/kik/participants/ParticipantCollection;
 
-    move-result-object v3
+    move-result-object v0
 
-    invoke-virtual {v3}, Lcom/rounds/kik/participants/ParticipantCollection;->inConferenceSize()I
+    invoke-virtual {v0}, Lcom/rounds/kik/participants/ParticipantCollection;->inConferenceSize()I
 
-    move-result v3
+    move-result v0
 
-    if-ne v3, v2, :cond_0
+    if-ne v0, v1, :cond_1
 
-    .line 1134
-    invoke-direct {p0}, Lcom/rounds/kik/VideoController$a;->b()V
+    .line 1170
+    invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->isRemote()Z
 
-    .line 1146
-    :cond_0
+    move-result v0
+
+    invoke-direct {p0, v0}, Lcom/rounds/kik/VideoController$a;->a(Z)V
+
+    .line 1177
+    :cond_1
     :goto_2
-    invoke-virtual {p1, v0}, Lcom/rounds/kik/participants/RemoteParticipant;->setMuted(Z)V
+    invoke-virtual {p1, v3}, Lcom/rounds/kik/participants/RemoteParticipant;->setMuted(Z)V
 
-    .line 1148
+    .line 1179
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->isRemote()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1149
+    .line 1180
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->isShowing()Z
@@ -1207,105 +1337,71 @@
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_5
 
-    move v1, v2
+    move v0, v1
 
-    .line 1150
-    :cond_1
+    .line 1181
+    :goto_3
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->clientId()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-static {v1, v0}, Lcom/rounds/kik/conference/ConferenceManager;->sendBackgroundStatusMessageTo(ZLjava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/rounds/kik/conference/ConferenceManager;->sendBackgroundStatusMessageTo(ZLjava/lang/String;)V
 
-    .line 1152
+    .line 1183
     invoke-static {}, Lcom/rounds/kik/conference/ConferenceManager;->isInCall()Z
 
     move-result v0
 
-    .line 1153
+    .line 1184
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->clientId()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/rounds/kik/conference/ConferenceManager;->sendInCallPrivateStatusMessage(ZLjava/lang/String;)V
 
-    .line 1155
+    .line 1186
     :cond_2
+    monitor-exit v4
+
     return-void
 
     :cond_3
-    move v3, v1
+    move v0, v2
 
-    .line 1127
+    .line 1159
     goto :goto_1
 
-    .line 1138
+    .line 1174
     :cond_4
-    iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
-    # getter for: Lcom/rounds/kik/VideoController;->lockObject:Ljava/lang/Object;
-    invoke-static {v3}, Lcom/rounds/kik/VideoController;->access$2700(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    monitor-enter v3
-
-    .line 1139
-    :try_start_0
-    iget-object v4, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
-
-    # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
-    invoke-static {v4}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/util/List;
-
-    move-result-object v4
-
-    invoke-interface {v4, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_5
-
-    .line 1140
-    iget-object v4, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
-
-    # getter for: Lcom/rounds/kik/VideoController;->mPrevRemoteParticipants:Ljava/util/List;
-    invoke-static {v4}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/util/List;
-
-    move-result-object v4
-
-    invoke-interface {v4, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
-
-    .line 1142
-    :cond_5
-    monitor-exit v3
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 1143
-    iget-object v3, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
-
-    const/16 v4, 0x3e8
+    const/16 v5, 0x3e8
 
     # invokes: Lcom/rounds/kik/VideoController;->startReconnectionCheckTimer(I)V
-    invoke-static {v3, v4}, Lcom/rounds/kik/VideoController;->access$2900(Lcom/rounds/kik/VideoController;I)V
+    invoke-static {v0, v5}, Lcom/rounds/kik/VideoController;->access$3000(Lcom/rounds/kik/VideoController;I)V
 
     goto :goto_2
 
-    .line 1142
+    .line 1186
     :catchall_0
     move-exception v0
 
-    :try_start_1
-    monitor-exit v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    monitor-exit v4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v0
 
+    :cond_5
+    move v0, v2
+
+    .line 1180
+    goto :goto_3
+
     :cond_6
-    move v0, v1
+    move v3, v2
 
     goto :goto_0
 .end method
@@ -1314,7 +1410,7 @@
     .locals 1
 
     .prologue
-    .line 1169
+    .line 1202
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -1328,13 +1424,13 @@
 
     check-cast v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
-    .line 1170
+    .line 1203
     if-eqz v0, :cond_0
 
-    .line 1171
+    .line 1204
     invoke-virtual {v0, p2}, Lcom/rounds/kik/participants/RemoteParticipant;->setInBackground(Z)V
 
-    .line 1173
+    .line 1206
     :cond_0
     return-void
 .end method
@@ -1343,7 +1439,7 @@
     .locals 1
 
     .prologue
-    .line 1178
+    .line 1211
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -1357,33 +1453,46 @@
 
     check-cast v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
-    .line 1179
+    .line 1212
     if-eqz v0, :cond_0
 
-    .line 1180
+    .line 1213
     invoke-virtual {v0, p2}, Lcom/rounds/kik/participants/RemoteParticipant;->setInCall(Z)V
 
-    .line 1182
+    .line 1215
     :cond_0
     return-void
 .end method
 
 .method public final onParticipantRemoved(Lcom/rounds/kik/participants/RemoteParticipant;)V
-    .locals 4
+    .locals 5
 
     .prologue
-    .line 1187
+    .line 1220
+    iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+
+    # getter for: Lcom/rounds/kik/VideoController;->lockObject:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/rounds/kik/VideoController;->access$2800(Lcom/rounds/kik/VideoController;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    monitor-enter v1
+
+    .line 1221
+    :try_start_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->c:Lcom/rounds/kik/utils/NetworkingUtils$NetworkType;
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
-    .line 1199
-    :cond_0
+    .line 1222
+    monitor-exit v1
+
+    .line 1233
     :goto_0
     return-void
 
-    .line 1191
-    :cond_1
+    .line 1225
+    :cond_0
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -1395,56 +1504,78 @@
 
     move-result-object v0
 
-    .line 1192
-    iget-object v1, v0, Lcom/rounds/kik/participants/ParticipantCollection$Delta;->removed:Ljava/util/Collection;
+    .line 1226
+    iget-object v2, v0, Lcom/rounds/kik/participants/ParticipantCollection$Delta;->removed:Ljava/util/Collection;
 
-    invoke-interface {v1}, Ljava/util/Collection;->size()I
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-nez v2, :cond_1
 
-    .line 1196
+    .line 1227
+    monitor-exit v1
+
+    goto :goto_0
+
+    .line 1233
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+
+    .line 1230
+    :cond_1
+    :try_start_1
     # getter for: Lcom/rounds/kik/VideoController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/VideoController;->access$800()Lcom/rounds/kik/logs/VideoLogger;
 
-    move-result-object v1
+    move-result-object v2
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v3, "onParticipantRemoved: "
+    const-string v4, "onParticipantRemoved: "
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Lcom/rounds/kik/participants/RemoteParticipant;->clientId()Ljava/lang/String;
 
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v3
 
-    invoke-virtual {v3}, Ljava/lang/String;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;)V
 
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;)V
-
-    .line 1197
-    iget-object v1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+    .line 1231
+    iget-object v2, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->handleRemovedParticipant()V
-    invoke-static {v1}, Lcom/rounds/kik/VideoController;->access$3000(Lcom/rounds/kik/VideoController;)V
+    invoke-static {v2}, Lcom/rounds/kik/VideoController;->access$3100(Lcom/rounds/kik/VideoController;)V
 
-    .line 1198
-    iget-object v1, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
+    .line 1232
+    iget-object v2, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # invokes: Lcom/rounds/kik/VideoController;->updateRendererParticipants(Lcom/rounds/kik/participants/ParticipantCollection$Delta;)V
-    invoke-static {v1, v0}, Lcom/rounds/kik/VideoController;->access$2500(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/participants/ParticipantCollection$Delta;)V
+    invoke-static {v2, v0}, Lcom/rounds/kik/VideoController;->access$2600(Lcom/rounds/kik/VideoController;Lcom/rounds/kik/participants/ParticipantCollection$Delta;)V
+
+    .line 1233
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 .end method
@@ -1453,7 +1584,7 @@
     .locals 0
 
     .prologue
-    .line 1293
+    .line 1328
     return-void
 .end method
 
@@ -1461,7 +1592,7 @@
     .locals 2
 
     .prologue
-    .line 1316
+    .line 1351
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -1473,19 +1604,19 @@
 
     move-result-object v0
 
-    .line 1317
+    .line 1352
     if-eqz v0, :cond_0
 
     instance-of v1, v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     if-eqz v1, :cond_0
 
-    .line 1318
+    .line 1353
     check-cast v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     invoke-virtual {v0, p2}, Lcom/rounds/kik/participants/RemoteParticipant;->onRemoteVideoChanged(Z)V
 
-    .line 1320
+    .line 1355
     :cond_0
     return-void
 .end method
@@ -1494,7 +1625,7 @@
     .locals 2
 
     .prologue
-    .line 1325
+    .line 1360
     iget-object v0, p0, Lcom/rounds/kik/VideoController$a;->a:Lcom/rounds/kik/VideoController;
 
     # getter for: Lcom/rounds/kik/VideoController;->mParticipants:Lcom/rounds/kik/participants/ParticipantCollection;
@@ -1506,19 +1637,19 @@
 
     move-result-object v0
 
-    .line 1326
+    .line 1361
     if-eqz v0, :cond_0
 
     instance-of v1, v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     if-eqz v1, :cond_0
 
-    .line 1327
+    .line 1362
     check-cast v0, Lcom/rounds/kik/participants/RemoteParticipant;
 
     invoke-virtual {v0, p2}, Lcom/rounds/kik/participants/RemoteParticipant;->onRemoteAudioChanged(Z)V
 
-    .line 1329
+    .line 1364
     :cond_0
     return-void
 .end method

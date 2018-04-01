@@ -138,7 +138,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/g$1;-><init>(Lkik/android/g;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 51
     new-instance v0, Lkik/android/g$a;

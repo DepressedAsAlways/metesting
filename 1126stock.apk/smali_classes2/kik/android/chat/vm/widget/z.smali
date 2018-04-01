@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ap;
+.implements Lkik/android/chat/vm/bs;
 
 
 # virtual methods
-.method public abstract aH_()Lrx/c;
+.method public abstract e()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -19,11 +19,11 @@
     .end annotation
 .end method
 
-.method public abstract aI_()Lrx/c;
+.method public abstract f()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;"
@@ -31,5 +31,5 @@
     .end annotation
 .end method
 
-.method public abstract e()Ljava/lang/String;
+.method public abstract h()Ljava/lang/String;
 .end method

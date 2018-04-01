@@ -9,7 +9,7 @@
         "Lkik/android/sdkutils/concurrent/f",
         "<",
         "Ljava/lang/String;",
-        "Lkik/core/datatypes/m;",
+        "Lkik/core/datatypes/l;",
         ">;"
     }
 .end annotation
@@ -43,7 +43,7 @@
             "()",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
@@ -56,7 +56,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/m;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/v;->a(Ljava/lang/String;)Lkik/core/datatypes/l;
 
     move-result-object v0
 

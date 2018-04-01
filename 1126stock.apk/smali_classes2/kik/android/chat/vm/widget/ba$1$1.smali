@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/cache/ae$e;
+.implements Lcom/kik/cache/KikVolleyImageLoader$d;
 
 
 # annotations
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/i;
+.field final synthetic a:Lrx/j;
 
 .field final synthetic b:Lkik/android/chat/vm/widget/ba$1;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/widget/ba$1;Lrx/i;)V
+.method constructor <init>(Lkik/android/chat/vm/widget/ba$1;Lrx/j;)V
     .locals 0
 
     .prologue
     .line 86
     iput-object p1, p0, Lkik/android/chat/vm/widget/ba$1$1;->b:Lkik/android/chat/vm/widget/ba$1;
 
-    iput-object p2, p0, Lkik/android/chat/vm/widget/ba$1$1;->a:Lrx/i;
+    iput-object p2, p0, Lkik/android/chat/vm/widget/ba$1$1;->a:Lrx/j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,22 +45,22 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lkik/android/chat/vm/widget/ba$1$1;->a:Lrx/i;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/ba$1$1;->a:Lrx/j;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lrx/j;->a(Ljava/lang/Object;)V
 
     .line 91
     return-void
 .end method
 
-.method public final a(Lcom/kik/cache/ae$d;Z)V
+.method public final a(Lcom/kik/cache/KikVolleyImageLoader$c;Z)V
     .locals 2
 
     .prologue
     .line 98
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -70,13 +70,13 @@
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/widget/ba$1$1;->a:Lrx/i;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/ba$1$1;->a:Lrx/j;
 
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lrx/j;->a(Ljava/lang/Object;)V
 
     .line 101
     :cond_1

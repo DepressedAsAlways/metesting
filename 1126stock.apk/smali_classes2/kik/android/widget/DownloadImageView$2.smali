@@ -38,9 +38,6 @@
 
     .prologue
     .line 95
-    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
-
-    .line 96
     iget-object v0, p0, Lkik/android/widget/DownloadImageView$2;->a:Lkik/android/widget/DownloadImageView;
 
     invoke-static {v0}, Lkik/android/widget/DownloadImageView;->b(Lkik/android/widget/DownloadImageView;)Ljava/lang/Runnable;
@@ -49,11 +46,11 @@
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 97
+    .line 96
     iget-object v0, p0, Lkik/android/widget/DownloadImageView$2;->a:Lkik/android/widget/DownloadImageView;
 
     invoke-static {v0}, Lkik/android/widget/DownloadImageView;->c(Lkik/android/widget/DownloadImageView;)V
 
-    .line 98
+    .line 97
     return-void
 .end method

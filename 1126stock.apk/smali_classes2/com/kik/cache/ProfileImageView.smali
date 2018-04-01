@@ -12,10 +12,10 @@
 
 
 # instance fields
-.field private final A:Lcom/android/volley/i$b;
+.field private final A:Lcom/android/volley/h$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/android/volley/i$b",
+            "Lcom/android/volley/h$b",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -85,7 +85,7 @@
     .end annotation
 .end field
 
-.field private final z:Lcom/android/volley/i$a;
+.field private final z:Lcom/android/volley/h$a;
 
 
 # direct methods
@@ -154,14 +154,14 @@
 
     invoke-direct {v0, p0}, Lcom/kik/cache/ProfileImageView$1;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/i$a;
+    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/h$a;
 
     .line 65
     new-instance v0, Lcom/kik/cache/ProfileImageView$2;
 
     invoke-direct {v0, p0}, Lcom/kik/cache/ProfileImageView$2;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/i$b;
+    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/h$b;
 
     .line 86
     invoke-direct {p0, p1}, Lcom/kik/cache/ProfileImageView;->a(Landroid/content/Context;)V
@@ -235,14 +235,14 @@
 
     invoke-direct {v0, p0}, Lcom/kik/cache/ProfileImageView$1;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/i$a;
+    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/h$a;
 
     .line 65
     new-instance v0, Lcom/kik/cache/ProfileImageView$2;
 
     invoke-direct {v0, p0}, Lcom/kik/cache/ProfileImageView$2;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/i$b;
+    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/h$b;
 
     .line 92
     invoke-direct {p0, p1}, Lcom/kik/cache/ProfileImageView;->a(Landroid/content/Context;)V
@@ -316,14 +316,14 @@
 
     invoke-direct {v0, p0}, Lcom/kik/cache/ProfileImageView$1;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/i$a;
+    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/h$a;
 
     .line 65
     new-instance v0, Lcom/kik/cache/ProfileImageView$2;
 
     invoke-direct {v0, p0}, Lcom/kik/cache/ProfileImageView$2;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/i$b;
+    iput-object v0, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/h$b;
 
     .line 98
     invoke-direct {p0, p1}, Lcom/kik/cache/ProfileImageView;->a(Landroid/content/Context;)V
@@ -644,14 +644,14 @@
     return-object v0
 .end method
 
-.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/ai;
+.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bh;
     .locals 1
 
     .prologue
     .line 166
-    new-instance v0, Lkik/android/widget/bp;
+    new-instance v0, Lkik/android/widget/cr;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/bp;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/cr;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -685,51 +685,62 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/ad;Lcom/kik/cache/ae;Lcom/android/volley/i$b;Lcom/kik/cache/ae$e;)V
-    .locals 3
+.method public final a(Lkik/core/datatypes/ac;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;Lcom/android/volley/h$b;Lcom/kik/cache/KikVolleyImageLoader$d;)V
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/ad;",
-            "Lcom/kik/cache/ae;",
-            "Lcom/android/volley/i$b",
+            "Lkik/core/datatypes/ac;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            "Lcom/kik/android/Mixpanel;",
+            "Lcom/android/volley/h$b",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;",
-            "Lcom/kik/cache/ae$e;",
+            "Lcom/kik/cache/KikVolleyImageLoader$d;",
             ")V"
         }
     .end annotation
 
     .prologue
-    const/4 v2, 0x1
+    const/4 v5, 0x1
+
+    const/4 v2, 0x0
 
     .line 103
-    iget-object v0, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/i$a;
+    iget-object v4, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/h$a;
 
-    invoke-static {p1, p3, v0, v2}, Lcom/kik/cache/ah;->a(Lkik/core/datatypes/ad;Lcom/android/volley/i$b;Lcom/android/volley/i$a;Z)Lcom/kik/cache/ah;
+    move-object v0, p1
+
+    move-object v1, p4
+
+    move v3, v2
+
+    move v6, v2
+
+    move-object v7, p3
+
+    invoke-static/range {v0 .. v7}, Lcom/kik/cache/MyPicImageRequest;->getProfileRequest(Lkik/core/datatypes/ac;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZLcom/kik/android/Mixpanel;)Lcom/kik/cache/MyPicImageRequest;
 
     move-result-object v0
 
     .line 104
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v0, p2, v2, v1}, Lcom/kik/cache/ProfileImageView;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae;ZZ)V
+    invoke-virtual {p0, v0, p2, v5, v2}, Lcom/kik/cache/ProfileImageView;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader;ZZ)V
 
     .line 123
-    invoke-virtual {p2, v0, p4}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;)Lcom/kik/cache/ae$d;
+    invoke-virtual {p2, v0, p5}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     .line 124
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/m;Lcom/kik/cache/ae;)V
-    .locals 6
+.method public final a(Lkik/core/datatypes/l;Lcom/kik/cache/KikVolleyImageLoader;)V
+    .locals 7
 
     .prologue
-    const/4 v2, 0x0
-
     const/4 v5, 0x1
+
+    const/4 v2, 0x0
 
     .line 129
     const/4 v0, 0x0
@@ -738,28 +749,30 @@
     if-eqz p1, :cond_0
 
     .line 131
-    iget-object v1, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/i$b;
+    iget-object v1, p0, Lcom/kik/cache/ProfileImageView;->A:Lcom/android/volley/h$b;
 
-    iget-object v4, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/i$a;
+    iget-object v4, p0, Lcom/kik/cache/ProfileImageView;->z:Lcom/android/volley/h$a;
 
     move-object v0, p1
 
     move v3, v2
 
-    invoke-static/range {v0 .. v5}, Lcom/kik/cache/f;->a(Lkik/core/datatypes/m;Lcom/android/volley/i$b;IILcom/android/volley/i$a;Z)Lcom/kik/cache/f;
+    move v6, v2
+
+    invoke-static/range {v0 .. v6}, Lcom/kik/cache/ContactImageRequest;->getContactImageRequest(Lkik/core/datatypes/l;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZ)Lcom/kik/cache/ContactImageRequest;
 
     move-result-object v0
 
     .line 133
     :cond_0
-    invoke-virtual {p0, v0, p2, v5, v5}, Lcom/kik/cache/ProfileImageView;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae;ZZ)V
+    invoke-virtual {p0, v0, p2, v5, v5}, Lcom/kik/cache/ProfileImageView;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader;ZZ)V
 
     .line 135
     new-instance v1, Lcom/kik/cache/ProfileImageView$3;
 
     invoke-direct {v1, p0}, Lcom/kik/cache/ProfileImageView$3;-><init>(Lcom/kik/cache/ProfileImageView;)V
 
-    invoke-virtual {p2, v0, v1}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;)Lcom/kik/cache/ae$d;
+    invoke-virtual {p2, v0, v1}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     .line 151
     return-void

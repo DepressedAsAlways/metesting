@@ -14,7 +14,7 @@
             "<",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/l;",
+            "Lkik/core/datatypes/k;",
             ">;>;"
         }
     .end annotation

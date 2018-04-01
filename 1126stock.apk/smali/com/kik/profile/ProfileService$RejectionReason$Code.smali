@@ -34,9 +34,17 @@
 
 .field public static final FORBIDDEN_VALUE:I = 0x0
 
+.field public static final enum REJECTED_BACKGROUND_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+.field public static final REJECTED_BACKGROUND_PROFILE_PIC_EXTENSION_BY_MODERATION_VALUE:I = 0x3
+
 .field public static final enum REJECTED_BIO_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
 .field public static final REJECTED_BIO_BY_MODERATION_VALUE:I = 0x1
+
+.field public static final enum REJECTED_ORIGINAL_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+.field public static final REJECTED_ORIGINAL_PROFILE_PIC_EXTENSION_BY_MODERATION_VALUE:I = 0x2
 
 .field public static final enum UNRECOGNIZED:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
@@ -60,16 +68,20 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 8
 
     .prologue
+    const/4 v7, 0x4
+
+    const/4 v6, 0x3
+
     const/4 v5, 0x2
 
     const/4 v4, 0x1
 
     const/4 v3, 0x0
 
-    .line 3471
+    .line 4740
     new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     const-string v1, "FORBIDDEN"
@@ -78,7 +90,7 @@
 
     sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->FORBIDDEN:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
-    .line 3475
+    .line 4744
     new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     const-string v1, "REJECTED_BIO_BY_MODERATION"
@@ -87,19 +99,37 @@
 
     sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_BIO_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
-    .line 3476
+    .line 4748
+    new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    const-string v1, "REJECTED_ORIGINAL_PROFILE_PIC_EXTENSION_BY_MODERATION"
+
+    invoke-direct {v0, v1, v5, v5}, Lcom/kik/profile/ProfileService$RejectionReason$Code;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_ORIGINAL_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    .line 4752
+    new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    const-string v1, "REJECTED_BACKGROUND_PROFILE_PIC_EXTENSION_BY_MODERATION"
+
+    invoke-direct {v0, v1, v6, v6}, Lcom/kik/profile/ProfileService$RejectionReason$Code;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_BACKGROUND_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    .line 4753
     new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     const-string v1, "UNRECOGNIZED"
 
     const/4 v2, -0x1
 
-    invoke-direct {v0, v1, v5, v2}, Lcom/kik/profile/ProfileService$RejectionReason$Code;-><init>(Ljava/lang/String;II)V
+    invoke-direct {v0, v1, v7, v2}, Lcom/kik/profile/ProfileService$RejectionReason$Code;-><init>(Ljava/lang/String;II)V
 
     sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->UNRECOGNIZED:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
-    .line 3466
-    const/4 v0, 0x3
+    .line 4735
+    const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
@@ -111,20 +141,28 @@
 
     aput-object v1, v0, v4
 
-    sget-object v1, Lcom/kik/profile/ProfileService$RejectionReason$Code;->UNRECOGNIZED:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+    sget-object v1, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_ORIGINAL_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     aput-object v1, v0, v5
 
+    sget-object v1, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_BACKGROUND_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    aput-object v1, v0, v6
+
+    sget-object v1, Lcom/kik/profile/ProfileService$RejectionReason$Code;->UNRECOGNIZED:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    aput-object v1, v0, v7
+
     sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->$VALUES:[Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
-    .line 3518
+    .line 4805
     new-instance v0, Lcom/kik/profile/ProfileService$RejectionReason$Code$1;
 
     invoke-direct {v0}, Lcom/kik/profile/ProfileService$RejectionReason$Code$1;-><init>()V
 
     sput-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
-    .line 3538
+    .line 4825
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason$Code;->values()[Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     move-result-object v0
@@ -143,13 +181,13 @@
     .end annotation
 
     .prologue
-    .line 3554
+    .line 4841
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 3555
+    .line 4842
     iput p3, p0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->value:I
 
-    .line 3556
+    .line 4843
     return-void
 .end method
 
@@ -157,34 +195,48 @@
     .locals 1
 
     .prologue
-    .line 3506
+    .line 4791
     packed-switch p0, :pswitch_data_0
 
-    .line 3509
+    .line 4796
     const/4 v0, 0x0
 
     :goto_0
     return-object v0
 
-    .line 3507
+    .line 4792
     :pswitch_0
     sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->FORBIDDEN:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     goto :goto_0
 
-    .line 3508
+    .line 4793
     :pswitch_1
     sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_BIO_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     goto :goto_0
 
-    .line 3506
+    .line 4794
+    :pswitch_2
+    sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_ORIGINAL_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    goto :goto_0
+
+    .line 4795
+    :pswitch_3
+    sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->REJECTED_BACKGROUND_PROFILE_PIC_EXTENSION_BY_MODERATION:Lcom/kik/profile/ProfileService$RejectionReason$Code;
+
+    goto :goto_0
+
+    .line 4791
     nop
 
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
         :pswitch_1
+        :pswitch_2
+        :pswitch_3
     .end packed-switch
 .end method
 
@@ -192,7 +244,7 @@
     .locals 2
 
     .prologue
-    .line 3535
+    .line 4822
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason;->a()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -225,7 +277,7 @@
     .end annotation
 
     .prologue
-    .line 3515
+    .line 4802
     sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -237,7 +289,7 @@
     .end annotation
 
     .prologue
-    .line 3502
+    .line 4787
     invoke-static {p0}, Lcom/kik/profile/ProfileService$RejectionReason$Code;->forNumber(I)Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     move-result-object v0
@@ -249,7 +301,7 @@
     .locals 2
 
     .prologue
-    .line 3542
+    .line 4829
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -260,7 +312,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 3543
+    .line 4830
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "EnumValueDescriptor is not for this type."
@@ -269,7 +321,7 @@
 
     throw v0
 
-    .line 3546
+    .line 4833
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getIndex()I
 
@@ -279,10 +331,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3547
+    .line 4834
     sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->UNRECOGNIZED:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
-    .line 3549
+    .line 4836
     :goto_0
     return-object v0
 
@@ -302,7 +354,7 @@
     .locals 1
 
     .prologue
-    .line 3466
+    .line 4735
     const-class v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -318,7 +370,7 @@
     .locals 1
 
     .prologue
-    .line 3466
+    .line 4735
     sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->$VALUES:[Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     invoke-virtual {v0}, [Lcom/kik/profile/ProfileService$RejectionReason$Code;->clone()Ljava/lang/Object;
@@ -336,7 +388,7 @@
     .locals 1
 
     .prologue
-    .line 3531
+    .line 4818
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason$Code;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -348,12 +400,12 @@
     .locals 2
 
     .prologue
-    .line 3490
+    .line 4775
     sget-object v0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->UNRECOGNIZED:Lcom/kik/profile/ProfileService$RejectionReason$Code;
 
     if-ne p0, v0, :cond_0
 
-    .line 3491
+    .line 4776
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Can\'t get the number of an unknown enum value."
@@ -362,7 +414,7 @@
 
     throw v0
 
-    .line 3494
+    .line 4779
     :cond_0
     iget v0, p0, Lcom/kik/profile/ProfileService$RejectionReason$Code;->value:I
 
@@ -373,7 +425,7 @@
     .locals 2
 
     .prologue
-    .line 3527
+    .line 4814
     invoke-static {}, Lcom/kik/profile/ProfileService$RejectionReason$Code;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0

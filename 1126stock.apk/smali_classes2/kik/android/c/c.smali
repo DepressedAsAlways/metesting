@@ -4,11 +4,11 @@
 
 
 # virtual methods
-.method public abstract a()Lrx/c;
+.method public abstract a()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -25,10 +25,10 @@
 .method public abstract a(Ljava/lang/String;)V
 .end method
 
-.method public abstract a(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ac;)V
+.method public abstract a(Ljava/lang/String;Ljava/lang/String;Lkik/core/interfaces/ad;)V
 .end method
 
-.method public abstract a(Lkik/core/interfaces/ac;Landroid/graphics/Bitmap;)V
+.method public abstract a(Lkik/core/interfaces/ad;Landroid/graphics/Bitmap;)V
 .end method
 
 .method public abstract b(I)I

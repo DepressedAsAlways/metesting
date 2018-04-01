@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/activity/KikIqActivityBase;->a(Lkik/core/net/outgoing/ae;I)V
+    value = Lkik/android/chat/activity/KikIqActivityBase;->stanzaStateChanged(Lkik/core/net/outgoing/j;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -45,11 +45,11 @@
 
     iget-object v1, p0, Lkik/android/chat/activity/KikIqActivityBase$2;->a:Lkik/android/chat/activity/KikIqActivityBase;
 
-    iget-object v1, v1, Lkik/android/chat/activity/KikIqActivityBase;->i:Ljava/lang/String;
+    iget-object v1, v1, Lkik/android/chat/activity/KikIqActivityBase;->k:Ljava/lang/String;
 
     iget-object v2, p0, Lkik/android/chat/activity/KikIqActivityBase$2;->a:Lkik/android/chat/activity/KikIqActivityBase;
 
-    iget-object v2, v2, Lkik/android/chat/activity/KikIqActivityBase;->j:Ljava/lang/String;
+    iget-object v2, v2, Lkik/android/chat/activity/KikIqActivityBase;->l:Ljava/lang/String;
 
     invoke-static {v0, v1, v2}, Lkik/android/chat/activity/KikIqActivityBase;->a(Lkik/android/chat/activity/KikIqActivityBase;Ljava/lang/String;Ljava/lang/String;)V
 

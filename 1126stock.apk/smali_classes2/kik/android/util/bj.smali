@@ -4,8 +4,5 @@
 
 
 # virtual methods
-.method public abstract a()V
-.end method
-
-.method public abstract a(Z)V
+.method public varargs abstract a(I[Ljava/lang/Object;)Ljava/lang/String;
 .end method

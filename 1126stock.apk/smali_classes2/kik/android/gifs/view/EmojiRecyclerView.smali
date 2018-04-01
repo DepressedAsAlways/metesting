@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/cm$a;
+.implements Lkik/android/widget/dr$a;
 
 
 # annotations
@@ -16,9 +16,9 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkik/android/widget/AutoResizeRecyclerGridView;",
-        "Lkik/android/widget/cm$a",
+        "Lkik/android/widget/dr$a",
         "<",
-        "Lkik/android/gifs/vm/bj;",
+        "Lkik/android/gifs/vm/bk;",
         "Lkik/android/gifs/view/EmojiRecyclerView$a;",
         ">;"
     }
@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/gifs/view/EmojiRecyclerView;Lkik/android/gifs/vm/bi;)V
+.method public static a(Lkik/android/gifs/view/EmojiRecyclerView;Lkik/android/gifs/vm/bj;)V
     .locals 1
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -68,9 +68,9 @@
     check-cast p1, Lkik/android/gifs/vm/c;
 
     .line 31
-    new-instance v0, Lkik/android/widget/cm;
+    new-instance v0, Lkik/android/widget/dr;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/widget/cm;-><init>(Lkik/android/widget/cm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/widget/dr;-><init>(Lkik/android/widget/dr$a;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 32
     invoke-virtual {p0, v0}, Lkik/android/gifs/view/EmojiRecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
@@ -90,15 +90,14 @@
     .locals 3
 
     .prologue
-    .line 0
-    .line 2035
+    .line 35
     invoke-virtual {p0}, Lkik/android/gifs/view/EmojiRecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
 
     check-cast v0, Landroid/support/v7/widget/GridLayoutManager;
 
-    .line 2036
+    .line 36
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v1
@@ -107,7 +106,7 @@
 
     move-result v2
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->l()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->k()I
 
     move-result v0
 
@@ -120,10 +119,8 @@
 
     move-result v0
 
-    .line 0
     return v0
 
-    .line 2036
     :cond_0
     const/4 v0, 0x0
 
@@ -137,7 +134,7 @@
 
     .prologue
     .line 25
-    const v0, 0x7f040083
+    const v0, 0x7f040099
 
     return v0
 .end method

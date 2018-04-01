@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 205
+    .line 217
     iput-object p1, p0, Lkik/android/chat/vm/messaging/a$3;->a:Lkik/android/chat/vm/messaging/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

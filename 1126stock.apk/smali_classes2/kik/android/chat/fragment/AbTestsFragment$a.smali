@@ -85,7 +85,7 @@
     .line 420
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment$a;->b:Landroid/view/LayoutInflater;
 
-    const v1, 0x7f040108
+    const v1, 0x7f04013d
 
     invoke-virtual {v0, v1, p3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -141,11 +141,11 @@
 
     move-result-wide v2
 
-    invoke-static {v2, v3, v4}, Lkik/android/util/bx;->a(JZ)Lkik/android/util/bx$a;
+    invoke-static {v2, v3, v4}, Lkik/android/util/bs;->a(JZ)Lkik/android/util/bs$a;
 
     move-result-object v2
 
-    iget-object v2, v2, Lkik/android/util/bx$a;->a:Ljava/lang/String;
+    iget-object v2, v2, Lkik/android/util/bs$a;->a:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

@@ -44,7 +44,7 @@
 
     const/4 v2, 0x0
 
-    .line 36
+    .line 37
     new-instance v0, Lkik/android/widget/ContentPreviewImageView$ContentType;
 
     const-string v1, "DEFAULT"
@@ -53,7 +53,7 @@
 
     sput-object v0, Lkik/android/widget/ContentPreviewImageView$ContentType;->DEFAULT:Lkik/android/widget/ContentPreviewImageView$ContentType;
 
-    .line 37
+    .line 38
     new-instance v0, Lkik/android/widget/ContentPreviewImageView$ContentType;
 
     const-string v1, "MEDIA_TRAY"
@@ -62,7 +62,7 @@
 
     sput-object v0, Lkik/android/widget/ContentPreviewImageView$ContentType;->MEDIA_TRAY:Lkik/android/widget/ContentPreviewImageView$ContentType;
 
-    .line 38
+    .line 39
     new-instance v0, Lkik/android/widget/ContentPreviewImageView$ContentType;
 
     const-string v1, "STICKER"
@@ -71,7 +71,7 @@
 
     sput-object v0, Lkik/android/widget/ContentPreviewImageView$ContentType;->STICKER:Lkik/android/widget/ContentPreviewImageView$ContentType;
 
-    .line 34
+    .line 35
     const/4 v0, 0x3
 
     new-array v0, v0, [Lkik/android/widget/ContentPreviewImageView$ContentType;
@@ -102,7 +102,7 @@
     .end annotation
 
     .prologue
-    .line 34
+    .line 35
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,7 +112,7 @@
     .locals 1
 
     .prologue
-    .line 34
+    .line 35
     const-class v0, Lkik/android/widget/ContentPreviewImageView$ContentType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +128,7 @@
     .locals 1
 
     .prologue
-    .line 34
+    .line 35
     sget-object v0, Lkik/android/widget/ContentPreviewImageView$ContentType;->$VALUES:[Lkik/android/widget/ContentPreviewImageView$ContentType;
 
     invoke-virtual {v0}, [Lkik/android/widget/ContentPreviewImageView$ContentType;->clone()Ljava/lang/Object;

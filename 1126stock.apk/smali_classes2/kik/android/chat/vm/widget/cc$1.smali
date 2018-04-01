@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/cache/ae$e;
+.implements Lcom/kik/cache/KikVolleyImageLoader$d;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lkik/android/chat/vm/widget/cc;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkik/android/chat/vm/widget/cc;->a(Lkik/android/chat/vm/widget/cc;Lrx/Emitter;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/AsyncEmitter;
+.field final synthetic a:Lrx/Emitter;
 
 .field final synthetic b:Lkik/android/chat/vm/widget/cc;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/widget/cc;Lrx/AsyncEmitter;)V
+.method constructor <init>(Lkik/android/chat/vm/widget/cc;Lrx/Emitter;)V
     .locals 0
 
     .prologue
-    .line 92
+    .line 91
     iput-object p1, p0, Lkik/android/chat/vm/widget/cc$1;->b:Lkik/android/chat/vm/widget/cc;
 
-    iput-object p2, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/AsyncEmitter;
+    iput-object p2, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/Emitter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,28 +44,28 @@
     .locals 2
 
     .prologue
-    .line 96
-    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/AsyncEmitter;
+    .line 95
+    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/Emitter;
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Lrx/AsyncEmitter;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lrx/Emitter;->a(Ljava/lang/Object;)V
+
+    .line 96
+    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/Emitter;
+
+    invoke-interface {v0}, Lrx/Emitter;->b()V
 
     .line 97
-    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/AsyncEmitter;
-
-    invoke-interface {v0}, Lrx/AsyncEmitter;->bb_()V
-
-    .line 98
     return-void
 .end method
 
-.method public final a(Lcom/kik/cache/ae$d;Z)V
+.method public final a(Lcom/kik/cache/KikVolleyImageLoader$c;Z)V
     .locals 2
 
     .prologue
-    .line 105
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    .line 104
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -73,22 +73,22 @@
 
     if-nez p2, :cond_1
 
-    .line 106
+    .line 105
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/AsyncEmitter;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/Emitter;
 
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lrx/AsyncEmitter;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lrx/Emitter;->a(Ljava/lang/Object;)V
 
-    .line 107
-    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/AsyncEmitter;
+    .line 106
+    iget-object v0, p0, Lkik/android/chat/vm/widget/cc$1;->a:Lrx/Emitter;
 
-    invoke-interface {v0}, Lrx/AsyncEmitter;->bb_()V
+    invoke-interface {v0}, Lrx/Emitter;->b()V
 
-    .line 109
+    .line 108
     :cond_1
     return-void
 .end method

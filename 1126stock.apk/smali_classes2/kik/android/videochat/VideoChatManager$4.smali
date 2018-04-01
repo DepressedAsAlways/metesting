@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 448
+    .line 469
     iput-object p1, p0, Lkik/android/videochat/VideoChatManager$4;->a:Lkik/android/videochat/VideoChatManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,26 +50,26 @@
     .locals 1
 
     .prologue
-    .line 448
-    .line 1452
+    .line 469
+    .line 1473
     iget-object v0, p0, Lkik/android/videochat/VideoChatManager$4;->a:Lkik/android/videochat/VideoChatManager;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatManager;->c(Lkik/android/videochat/VideoChatManager;)Lkik/core/d/a;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatManager;->e(Lkik/android/videochat/VideoChatManager;)Lkik/core/c/a;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/core/d/a;->a()Z
+    invoke-interface {v0}, Lkik/core/c/a;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1453
+    .line 1474
     iget-object v0, p0, Lkik/android/videochat/VideoChatManager$4;->a:Lkik/android/videochat/VideoChatManager;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatManager;->d(Lkik/android/videochat/VideoChatManager;)V
+    invoke-static {v0}, Lkik/android/videochat/VideoChatManager;->f(Lkik/android/videochat/VideoChatManager;)V
 
-    .line 448
+    .line 469
     :cond_0
     return-void
 .end method

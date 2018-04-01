@@ -1,97 +1,49 @@
-.class public final Lcom/kik/view/adapters/s;
-.super Landroid/widget/BaseAdapter;
-.source "SourceFile"
+.class final synthetic Lcom/kik/view/adapters/s;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field private final a:Lcom/kik/view/adapters/r;
 
-.field private b:Landroid/view/View;
+.field private final b:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
+.method private constructor <init>(Lcom/kik/view/adapters/r;I)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/kik/view/adapters/s;->a:Lcom/kik/view/adapters/r;
+
+    iput p2, p0, Lcom/kik/view/adapters/s;->b:I
+
+    return-void
+.end method
+
+.method public static a(Lcom/kik/view/adapters/r;I)Landroid/view/View$OnClickListener;
     .locals 1
 
-    .prologue
-    .line 19
-    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
+    new-instance v0, Lcom/kik/view/adapters/s;
 
-    .line 20
-    iput-object p1, p0, Lcom/kik/view/adapters/s;->b:Landroid/view/View;
+    invoke-direct {v0, p0, p1}, Lcom/kik/view/adapters/s;-><init>(Lcom/kik/view/adapters/r;I)V
 
-    .line 21
-    const-string v0, ""
-
-    iput-object v0, p0, Lcom/kik/view/adapters/s;->a:Ljava/lang/String;
-
-    .line 22
-    return-void
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 52
-    iput-object p1, p0, Lcom/kik/view/adapters/s;->a:Ljava/lang/String;
-
-    .line 53
-    return-void
-.end method
-
-.method public final getCount()I
-    .locals 1
-
-    .prologue
-    .line 27
-    iget-object v0, p0, Lcom/kik/view/adapters/s;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x1
-
-    goto :goto_0
-.end method
-
-.method public final getItem(I)Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 33
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final getItemId(I)J
+.method public final onClick(Landroid/view/View;)V
     .locals 2
 
-    .prologue
-    .line 39
-    const-wide/16 v0, 0x0
+    iget-object v0, p0, Lcom/kik/view/adapters/s;->a:Lcom/kik/view/adapters/r;
 
-    return-wide v0
-.end method
+    iget v1, p0, Lcom/kik/view/adapters/s;->b:I
 
-.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 1
+    invoke-static {v0, v1}, Lcom/kik/view/adapters/r;->a(Lcom/kik/view/adapters/r;I)V
 
-    .prologue
-    .line 47
-    iget-object v0, p0, Lcom/kik/view/adapters/s;->b:Landroid/view/View;
-
-    return-object v0
+    return-void
 .end method

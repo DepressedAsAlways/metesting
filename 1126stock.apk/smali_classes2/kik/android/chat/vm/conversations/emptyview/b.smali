@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ao;
+.implements Lkik/android/chat/vm/br;
 
 
 # virtual methods

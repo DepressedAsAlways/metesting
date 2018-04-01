@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/animation/Animator$AnimatorListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/rounds/kik/view/VideoView;->show(Z)V
+    value = Lcom/rounds/kik/view/VideoView;->animateToBubbleVideoMode(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/rounds/kik/view/VideoSurface;
+.field final synthetic a:Z
 
 .field final synthetic b:Lcom/rounds/kik/view/VideoView;
 
 
 # direct methods
-.method constructor <init>(Lcom/rounds/kik/view/VideoView;Lcom/rounds/kik/view/VideoSurface;)V
+.method constructor <init>(Lcom/rounds/kik/view/VideoView;Z)V
     .locals 0
 
     .prologue
-    .line 565
+    .line 390
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$9;->b:Lcom/rounds/kik/view/VideoView;
 
-    iput-object p2, p0, Lcom/rounds/kik/view/VideoView$9;->a:Lcom/rounds/kik/view/VideoSurface;
+    iput-boolean p2, p0, Lcom/rounds/kik/view/VideoView$9;->a:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,48 +40,32 @@
 
 
 # virtual methods
-.method public final onAnimationCancel(Landroid/animation/Animator;)V
-    .locals 0
+.method public final run()V
+    .locals 3
 
     .prologue
-    .line 584
-    return-void
-.end method
-
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 0
-
-    .prologue
-    .line 578
-    return-void
-.end method
-
-.method public final onAnimationRepeat(Landroid/animation/Animator;)V
-    .locals 0
-
-    .prologue
-    .line 590
-    return-void
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 2
-
-    .prologue
-    .line 570
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$9;->a:Lcom/rounds/kik/view/VideoSurface;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoSurface;->setAlpha(F)V
-
-    .line 571
+    .line 394
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$9;->b:Lcom/rounds/kik/view/VideoView;
 
-    const/4 v1, 0x0
+    # getter for: Lcom/rounds/kik/view/VideoView;->mVideoModeSlidePanel:Lcom/rounds/kik/view/VideoModeSlidePanel;
+    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$400(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoModeSlidePanel;
 
-    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoView;->setVisibility(I)V
+    move-result-object v0
 
-    .line 572
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoModeSlidePanel;->setVisibility(I)V
+
+    .line 395
+    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$9;->b:Lcom/rounds/kik/view/VideoView;
+
+    sget-object v1, Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;->ToBubble:Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;
+
+    iget-boolean v2, p0, Lcom/rounds/kik/view/VideoView$9;->a:Z
+
+    # invokes: Lcom/rounds/kik/view/VideoView;->animateChangeModeTo(Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;Z)V
+    invoke-static {v0, v1, v2}, Lcom/rounds/kik/view/VideoView;->access$1600(Lcom/rounds/kik/view/VideoView;Lcom/rounds/kik/view/VideoModeSlidePanel$Mode;Z)V
+
+    .line 396
     return-void
 .end method

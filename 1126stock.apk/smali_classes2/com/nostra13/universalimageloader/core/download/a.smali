@@ -143,7 +143,7 @@
     if-nez v1, :cond_3
 
     .line 131
-    invoke-static {v0}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     .line 132
     new-instance v0, Ljava/io/IOException;
@@ -201,7 +201,7 @@
     if-ne v3, v4, :cond_2
 
     .line 4109
-    invoke-static {v1}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     .line 128
     :goto_1
@@ -211,14 +211,14 @@
     :catch_1
     move-exception v2
 
-    invoke-static {v1}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     goto :goto_1
 
     :catchall_0
     move-exception v0
 
-    invoke-static {v1}, Lcom/nostra13/universalimageloader/b/b;->a(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/nostra13/universalimageloader/a/b;->a(Ljava/io/Closeable;)V
 
     throw v0
 

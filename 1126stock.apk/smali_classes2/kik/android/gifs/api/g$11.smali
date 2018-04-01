@@ -1,11 +1,11 @@
 .class final Lkik/android/gifs/api/g$11;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/gifs/api/g;->c(Ljava/lang/String;)Lcom/kik/events/Promise;
+    value = Lkik/android/gifs/api/g;->d()Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/String;",
         ">;"
@@ -26,24 +26,20 @@
 # instance fields
 .field final synthetic a:Lcom/kik/events/Promise;
 
-.field final synthetic b:Ljava/lang/String;
-
-.field final synthetic c:Lkik/android/gifs/api/g;
+.field final synthetic b:Lkik/android/gifs/api/g;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
+.method constructor <init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
     .locals 0
 
     .prologue
-    .line 413
-    iput-object p1, p0, Lkik/android/gifs/api/g$11;->c:Lkik/android/gifs/api/g;
+    .line 271
+    iput-object p1, p0, Lkik/android/gifs/api/g$11;->b:Lkik/android/gifs/api/g;
 
     iput-object p2, p0, Lkik/android/gifs/api/g$11;->a:Lcom/kik/events/Promise;
 
-    iput-object p3, p0, Lkik/android/gifs/api/g$11;->b:Ljava/lang/String;
-
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -51,43 +47,19 @@
 
 # virtual methods
 .method public final synthetic a(Ljava/lang/Object;)V
-    .locals 3
+    .locals 2
 
     .prologue
-    .line 413
+    .line 271
     check-cast p1, Ljava/lang/String;
 
-    .line 1417
-    iget-object v0, p0, Lkik/android/gifs/api/g$11;->c:Lkik/android/gifs/api/g;
+    .line 1275
+    iget-object v0, p0, Lkik/android/gifs/api/g$11;->b:Lkik/android/gifs/api/g;
 
-    invoke-static {v0, p1}, Lkik/android/gifs/api/g;->a(Lkik/android/gifs/api/g;Ljava/lang/String;)Ljava/lang/String;
+    iget-object v1, p0, Lkik/android/gifs/api/g$11;->a:Lcom/kik/events/Promise;
 
-    .line 1418
-    iget-object v0, p0, Lkik/android/gifs/api/g$11;->a:Lcom/kik/events/Promise;
+    invoke-static {v0, v1, p1}, Lkik/android/gifs/api/g;->b(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lkik/android/gifs/api/g$11;->c:Lkik/android/gifs/api/g;
-
-    iget-object v2, p0, Lkik/android/gifs/api/g$11;->b:Ljava/lang/String;
-
-    invoke-static {v1, v2}, Lkik/android/gifs/api/g;->b(Lkik/android/gifs/api/g;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
-
-    .line 413
-    return-void
-.end method
-
-.method public final b(Ljava/lang/Throwable;)V
-    .locals 1
-
-    .prologue
-    .line 424
-    iget-object v0, p0, Lkik/android/gifs/api/g$11;->a:Lcom/kik/events/Promise;
-
-    invoke-virtual {v0, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
-
-    .line 425
+    .line 271
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/widget/cm$a;
+.implements Lkik/android/widget/dr$a;
 
 
 # annotations
@@ -16,10 +16,10 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<GifItemViewModel::",
-        "Lkik/android/gifs/vm/bm;",
+        "Lkik/android/gifs/vm/bn;",
         ">",
         "Landroid/support/v7/widget/RecyclerView;",
-        "Lkik/android/widget/cm$a",
+        "Lkik/android/widget/dr$a",
         "<TGifItemViewModel;",
         "Lkik/android/gifs/view/GifRecyclerView$a;",
         ">;"
@@ -86,7 +86,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lkik/android/gifs/view/GifRecyclerView;Lkik/android/gifs/vm/bl;)V
+.method public static a(Lkik/android/gifs/view/GifRecyclerView;Lkik/android/gifs/vm/bm;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -99,9 +99,9 @@
             "(",
             "Lkik/android/gifs/view/GifRecyclerView",
             "<",
-            "Lkik/android/gifs/vm/bs;",
+            "Lkik/android/gifs/vm/bt;",
             ">;",
-            "Lkik/android/gifs/vm/bl;",
+            "Lkik/android/gifs/vm/bm;",
             ")V"
         }
     .end annotation
@@ -111,9 +111,9 @@
     check-cast p1, Lkik/android/gifs/vm/c;
 
     .line 41
-    new-instance v0, Lkik/android/widget/cm;
+    new-instance v0, Lkik/android/widget/dr;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/widget/cm;-><init>(Lkik/android/widget/cm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/widget/dr;-><init>(Lkik/android/widget/dr$a;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 42
     invoke-virtual {p0, v0}, Lkik/android/gifs/view/GifRecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
@@ -144,7 +144,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/android/gifs/view/GifRecyclerView;Lkik/android/gifs/vm/br;)V
+.method public static a(Lkik/android/gifs/view/GifRecyclerView;Lkik/android/gifs/vm/bs;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -157,9 +157,9 @@
             "(",
             "Lkik/android/gifs/view/GifRecyclerView",
             "<",
-            "Lkik/android/gifs/vm/bn;",
+            "Lkik/android/gifs/vm/bo;",
             ">;",
-            "Lkik/android/gifs/vm/br;",
+            "Lkik/android/gifs/vm/bs;",
             ")V"
         }
     .end annotation
@@ -169,9 +169,9 @@
     check-cast p1, Lkik/android/gifs/vm/c;
 
     .line 55
-    new-instance v0, Lkik/android/widget/cm;
+    new-instance v0, Lkik/android/widget/dr;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/widget/cm;-><init>(Lkik/android/widget/cm$a;Lkik/android/chat/vm/IListViewModel;)V
+    invoke-direct {v0, p0, p1}, Lkik/android/widget/dr;-><init>(Lkik/android/widget/dr$a;Lkik/android/chat/vm/IListViewModel;)V
 
     .line 56
     invoke-virtual {p0, v0}, Lkik/android/gifs/view/GifRecyclerView;->setAdapter(Landroid/support/v7/widget/RecyclerView$Adapter;)V
@@ -204,15 +204,14 @@
     .locals 3
 
     .prologue
-    .line 0
-    .line 3046
+    .line 60
     invoke-virtual {p0}, Lkik/android/gifs/view/GifRecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
 
-    check-cast v0, Landroid/support/v7/widget/GridLayoutManager;
+    check-cast v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;
 
-    .line 3047
+    .line 61
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v1
@@ -221,7 +220,42 @@
 
     move-result v2
 
-    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->l()I
+    invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->g()[I
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/google/common/c/a;->a([I)Z
+
+    move-result v0
+
+    invoke-virtual {p1, v1, v2, v0}, Lkik/android/gifs/vm/c;->a(IFZ)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic b(Lkik/android/gifs/view/GifRecyclerView;Lkik/android/gifs/vm/c;Landroid/view/MotionEvent;)Z
+    .locals 3
+
+    .prologue
+    .line 46
+    invoke-virtual {p0}, Lkik/android/gifs/view/GifRecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$LayoutManager;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v7/widget/GridLayoutManager;
+
+    .line 47
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
+
+    move-result v1
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawY()F
+
+    move-result v2
+
+    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->k()I
 
     move-result v0
 
@@ -234,51 +268,12 @@
 
     move-result v0
 
-    .line 0
     return v0
 
-    .line 3047
     :cond_0
     const/4 v0, 0x0
 
     goto :goto_0
-.end method
-
-.method static synthetic b(Lkik/android/gifs/view/GifRecyclerView;Lkik/android/gifs/vm/c;Landroid/view/MotionEvent;)Z
-    .locals 3
-
-    .prologue
-    .line 0
-    .line 3060
-    invoke-virtual {p0}, Lkik/android/gifs/view/GifRecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$LayoutManager;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/support/v7/widget/StaggeredGridLayoutManager;
-
-    .line 3061
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
-
-    move-result v1
-
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawY()F
-
-    move-result v2
-
-    invoke-virtual {v0}, Landroid/support/v7/widget/StaggeredGridLayoutManager;->c()[I
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/google/common/c/a;->a([I)Z
-
-    move-result v0
-
-    invoke-virtual {p1, v1, v2, v0}, Lkik/android/gifs/vm/c;->a(IFZ)Z
-
-    move-result v0
-
-    .line 0
-    return v0
 .end method
 
 
@@ -288,15 +283,15 @@
 
     .prologue
     .line 35
-    check-cast p1, Lkik/android/gifs/vm/bm;
+    check-cast p1, Lkik/android/gifs/vm/bn;
 
     .line 2093
-    instance-of v0, p1, Lkik/android/gifs/vm/bn;
+    instance-of v0, p1, Lkik/android/gifs/vm/bo;
 
     if-eqz v0, :cond_0
 
     .line 2094
-    const v0, 0x7f040085
+    const v0, 0x7f04009b
 
     .line 2097
     :goto_0
@@ -304,12 +299,12 @@
 
     .line 2096
     :cond_0
-    instance-of v0, p1, Lkik/android/gifs/vm/bs;
+    instance-of v0, p1, Lkik/android/gifs/vm/bt;
 
     if-eqz v0, :cond_1
 
     .line 2097
-    const v0, 0x7f040087
+    const v0, 0x7f04009d
 
     goto :goto_0
 

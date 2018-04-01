@@ -57,14 +57,14 @@
 
 
 # direct methods
-.method public static h()Lcom/google/gson/d;
+.method public static h()Lcom/google/gson/e;
     .locals 3
 
     .prologue
     .line 121
-    new-instance v0, Lcom/google/gson/e;
+    new-instance v0, Lcom/google/gson/f;
 
-    invoke-direct {v0}, Lcom/google/gson/e;-><init>()V
+    invoke-direct {v0}, Lcom/google/gson/f;-><init>()V
 
     .line 122
     const-class v1, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
@@ -73,14 +73,14 @@
 
     invoke-direct {v2}, Lkik/core/datatypes/Bot$1;-><init>()V
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/gson/e;->a(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/e;
+    invoke-virtual {v0, v1, v2}, Lcom/google/gson/f;->a(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/f;
 
     .line 187
-    invoke-virtual {v0}, Lcom/google/gson/e;->a()Lcom/google/gson/e;
+    invoke-virtual {v0}, Lcom/google/gson/f;->a()Lcom/google/gson/f;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/gson/e;->b()Lcom/google/gson/d;
+    invoke-virtual {v0}, Lcom/google/gson/f;->b()Lcom/google/gson/e;
 
     move-result-object v0
 

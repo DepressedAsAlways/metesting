@@ -1,81 +1,51 @@
-.class public final Lcom/kik/util/cg;
+.class final synthetic Lcom/kik/util/cg;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Lrx/functions/b;
+
+
+# instance fields
+.field private final a:Lrx/functions/b;
+
+.field private final b:I
+
+.field private final c:Ljava/lang/String;
 
 
 # direct methods
-.method public static a(Landroid/text/Spannable;[Lcom/kik/android/b/c;)V
-    .locals 7
+.method private constructor <init>(Lrx/functions/b;ILjava/lang/String;)V
+    .locals 0
 
-    .prologue
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    if-nez p1, :cond_1
+    iput-object p1, p0, Lcom/kik/util/cg;->a:Lrx/functions/b;
 
-    .line 38
-    :cond_0
+    iput p2, p0, Lcom/kik/util/cg;->b:I
+
+    iput-object p3, p0, Lcom/kik/util/cg;->c:Ljava/lang/String;
+
     return-void
+.end method
 
-    .line 22
-    :cond_1
-    invoke-static {}, Lkik/core/util/u;->a()Lkik/core/util/u;
+.method public static a(Lrx/functions/b;ILjava/lang/String;)Lrx/functions/b;
+    .locals 1
 
-    move-result-object v1
+    new-instance v0, Lcom/kik/util/cg;
 
-    invoke-virtual {v1, p0}, Lkik/core/util/u;->b(Ljava/lang/CharSequence;)[Lkik/core/util/l$a;
+    invoke-direct {v0, p0, p1, p2}, Lcom/kik/util/cg;-><init>(Lrx/functions/b;ILjava/lang/String;)V
 
-    move-result-object v2
+    return-object v0
+.end method
 
-    .line 23
-    array-length v1, v2
 
-    array-length v3, p1
+# virtual methods
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-    if-ne v1, v3, :cond_0
+    iget-object v0, p0, Lcom/kik/util/cg;->a:Lrx/functions/b;
 
-    move v1, v0
+    invoke-static {v0, p1}, Lcom/kik/util/bq$1;->a(Lrx/functions/b;Ljava/lang/Object;)V
 
-    .line 24
-    :goto_0
-    array-length v3, v2
-
-    if-ge v0, v3, :cond_0
-
-    .line 25
-    aget-object v3, v2, v0
-
-    .line 26
-    aget-object v4, p1, v0
-
-    .line 27
-    if-eqz v3, :cond_2
-
-    if-eqz v4, :cond_2
-
-    .line 31
-    invoke-virtual {v3}, Lkik/core/util/l$a;->a()I
-
-    move-result v5
-
-    invoke-virtual {v3}, Lkik/core/util/l$a;->b()I
-
-    move-result v3
-
-    const/16 v6, 0x21
-
-    invoke-interface {p0, v4, v5, v3, v6}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
-
-    .line 32
-    add-int/lit8 v1, v1, 0x1
-
-    const/16 v3, 0x32
-
-    if-ge v1, v3, :cond_0
-
-    .line 24
-    :cond_2
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
+    return-void
 .end method

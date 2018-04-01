@@ -15,17 +15,13 @@
 
 
 # instance fields
-.field private A:Landroid/animation/AnimatorSet;
+.field private A:Lkik/android/widget/AutoScrollingRecyclerView$b;
 
-.field private B:Z
+.field private B:Landroid/view/View$OnClickListener;
 
-.field private C:Lkik/android/widget/AutoScrollingRecyclerView$b;
+.field private C:Landroid/view/View$OnClickListener;
 
-.field private D:Landroid/view/View$OnClickListener;
-
-.field private E:Landroid/view/View$OnClickListener;
-
-.field private F:Lcom/kik/events/e;
+.field private D:Lcom/kik/events/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/kik/events/e",
@@ -37,82 +33,62 @@
 .end field
 
 .field _backButton:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000f3
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100119
     .end annotation
 .end field
 
 .field _chatList:Landroid/widget/ListView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000e5
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100109
     .end annotation
 .end field
 
 .field _emptyViewContainer:Landroid/widget/FrameLayout;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000e4
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100108
     .end annotation
 .end field
 
 .field _emptyViewTextView:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001dc
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100223
     .end annotation
 .end field
 
 .field _listViewAnimHelperView:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001d9
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100220
     .end annotation
 .end field
 
 .field _navigationBar:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000d9
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000fd
     .end annotation
 .end field
 
 .field _searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000dc
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100100
     .end annotation
 .end field
 
 .field _searchBarBackground:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001db
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100222
     .end annotation
 .end field
 
 .field _searchResults:Landroid/support/v7/widget/RecyclerView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10015d
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100197
     .end annotation
 .end field
 
 .field _titleText:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000f5
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10011b
     .end annotation
 .end field
 
@@ -121,37 +97,42 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/m;
+.field protected b:Lcom/kik/core/domain/users/a;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/o;
+.field protected c:Lkik/core/interfaces/l;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected d:Lkik/core/interfaces/j;
+.field protected d:Lkik/core/interfaces/n;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected e:Lkik/core/interfaces/ac;
+.field protected e:Lkik/core/interfaces/IConversation;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected f:Lkik/core/interfaces/b;
+.field protected f:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected g:Lcom/kik/android/Mixpanel;
+.field protected g:Lkik/core/interfaces/b;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field h:Lcom/kik/cache/ae;
+.field protected h:Lcom/kik/android/Mixpanel;
+    .annotation runtime Ljavax/inject/Inject;
+    .end annotation
+.end field
+
+.field i:Lcom/kik/cache/KikVolleyImageLoader;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 
@@ -160,25 +141,25 @@
     .end annotation
 .end field
 
-.field private final i:I
+.field private final j:I
 
-.field private final j:Landroid/os/Handler;
-
-.field private k:Z
+.field private final k:Landroid/os/Handler;
 
 .field private l:Z
 
-.field private m:J
+.field private m:Z
 
-.field private n:Lcom/kik/events/d;
+.field private n:J
 
-.field private o:Lkik/core/datatypes/messageExtensions/ContentMessage;
+.field private o:Lcom/kik/events/d;
 
-.field private p:J
+.field private p:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-.field private q:Ljava/lang/String;
+.field private q:J
 
-.field private r:Ljava/util/List;
+.field private r:Ljava/lang/String;
+
+.field private s:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List",
@@ -189,13 +170,17 @@
     .end annotation
 .end field
 
-.field private final s:Lkik/android/chat/fragment/SendToFragment$a;
+.field private final t:Lkik/android/chat/fragment/SendToFragment$a;
 
-.field private t:Lkik/android/chat/fragment/hr;
+.field private u:Lkik/android/chat/fragment/fy;
 
-.field private u:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+.field private v:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
-.field private y:Lkik/android/chat/vm/as;
+.field private w:Lkik/android/chat/vm/bz;
+
+.field private x:Z
+
+.field private y:Landroid/animation/AnimatorSet;
 
 .field private z:Z
 
@@ -209,351 +194,124 @@
 
     const/4 v2, 0x0
 
-    .line 72
+    .line 78
     invoke-direct {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;-><init>()V
 
-    .line 75
+    .line 81
     const/4 v0, 0x3
 
-    iput v0, p0, Lkik/android/chat/fragment/SendToFragment;->i:I
+    iput v0, p0, Lkik/android/chat/fragment/SendToFragment;->j:I
 
-    .line 76
+    .line 82
     new-instance v0, Lkik/android/chat/fragment/SendToFragment$1;
 
     invoke-direct {v0, p0}, Lkik/android/chat/fragment/SendToFragment$1;-><init>(Lkik/android/chat/fragment/SendToFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->j:Landroid/os/Handler;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->k:Landroid/os/Handler;
 
-    .line 108
-    iput-boolean v2, p0, Lkik/android/chat/fragment/SendToFragment;->k:Z
+    .line 116
+    iput-boolean v2, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
 
-    .line 109
-    iput-boolean v3, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
+    .line 117
+    iput-boolean v3, p0, Lkik/android/chat/fragment/SendToFragment;->m:Z
 
-    .line 110
+    .line 118
     const-wide/16 v0, -0x1
 
-    iput-wide v0, p0, Lkik/android/chat/fragment/SendToFragment;->m:J
+    iput-wide v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:J
 
-    .line 111
+    .line 119
     new-instance v0, Lcom/kik/events/d;
 
     invoke-direct {v0}, Lcom/kik/events/d;-><init>()V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
-    .line 116
+    .line 124
     new-instance v0, Lkik/android/chat/fragment/SendToFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/SendToFragment$a;-><init>()V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->s:Lkik/android/chat/fragment/SendToFragment$a;
-
-    .line 121
-    iput-boolean v2, p0, Lkik/android/chat/fragment/SendToFragment;->z:Z
-
-    .line 122
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
-
-    .line 126
-    iput-boolean v3, p0, Lkik/android/chat/fragment/SendToFragment;->B:Z
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/SendToFragment$a;
 
     .line 129
-    invoke-static {p0}, Lkik/android/chat/fragment/hc;->a(Lkik/android/chat/fragment/SendToFragment;)Landroid/view/View$OnClickListener;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->D:Landroid/view/View$OnClickListener;
+    iput-boolean v2, p0, Lkik/android/chat/fragment/SendToFragment;->x:Z
 
     .line 130
-    invoke-static {p0}, Lkik/android/chat/fragment/hd;->a(Lkik/android/chat/fragment/SendToFragment;)Landroid/view/View$OnClickListener;
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
+
+    .line 134
+    iput-boolean v3, p0, Lkik/android/chat/fragment/SendToFragment;->z:Z
+
+    .line 137
+    invoke-static {p0}, Lkik/android/chat/fragment/ff;->a(Lkik/android/chat/fragment/SendToFragment;)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->E:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->B:Landroid/view/View$OnClickListener;
 
-    .line 132
+    .line 138
+    invoke-static {p0}, Lkik/android/chat/fragment/fg;->a(Lkik/android/chat/fragment/SendToFragment;)Landroid/view/View$OnClickListener;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->C:Landroid/view/View$OnClickListener;
+
+    .line 140
     new-instance v0, Lkik/android/chat/fragment/SendToFragment$2;
 
     invoke-direct {v0, p0}, Lkik/android/chat/fragment/SendToFragment$2;-><init>(Lkik/android/chat/fragment/SendToFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
 
     return-void
 .end method
 
 .method static synthetic a(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 12
+    .locals 0
 
     .prologue
-    .line 72
-    .line 2470
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
+    .line 138
+    invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->handleBackPress()Z
 
-    invoke-virtual {v0}, Landroid/widget/ListView;->getVisibility()I
-
-    move-result v10
-
-    .line 2471
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
-
-    invoke-virtual {v0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    .line 2472
-    iget-object v11, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
-
-    new-instance v0, Lcom/kik/view/adapters/i;
-
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
-
-    invoke-virtual {v1}, Landroid/widget/ListView;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
-
-    invoke-interface {v2}, Lkik/core/interfaces/j;->F()Ljava/util/List;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lkik/android/chat/fragment/SendToFragment;->h:Lcom/kik/cache/ae;
-
-    iget-object v4, p0, Lkik/android/chat/fragment/SendToFragment;->a:Lkik/core/interfaces/v;
-
-    iget-object v5, p0, Lkik/android/chat/fragment/SendToFragment;->b:Lkik/core/interfaces/m;
-
-    iget-object v6, p0, Lkik/android/chat/fragment/SendToFragment;->c:Lkik/core/interfaces/o;
-
-    iget-object v7, p0, Lkik/android/chat/fragment/SendToFragment;->g:Lcom/kik/android/Mixpanel;
-
-    iget-object v8, p0, Lkik/android/chat/fragment/SendToFragment;->f:Lkik/core/interfaces/b;
-
-    const/4 v9, 0x0
-
-    invoke-direct/range {v0 .. v9}, Lcom/kik/view/adapters/i;-><init>(Landroid/content/Context;Ljava/util/List;Lcom/kik/cache/ae;Lkik/core/interfaces/v;Lkik/core/interfaces/m;Lkik/core/interfaces/o;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;Lkik/android/videochat/c;)V
-
-    invoke-virtual {v11, v0}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    .line 2487
-    :goto_0
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
-
-    invoke-virtual {v0, v10}, Landroid/widget/ListView;->setVisibility(I)V
-
-    .line 72
     return-void
-
-    .line 2476
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
-
-    invoke-virtual {v0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
-
-    move-result-object v0
-
-    .line 2477
-    instance-of v1, v0, Landroid/widget/HeaderViewListAdapter;
-
-    if-eqz v1, :cond_1
-
-    .line 2478
-    check-cast v0, Landroid/widget/HeaderViewListAdapter;
-
-    invoke-virtual {v0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
-
-    move-result-object v0
-
-    .line 2480
-    :cond_1
-    check-cast v0, Lcom/kik/view/adapters/i;
-
-    .line 2481
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
-
-    invoke-interface {v1}, Lkik/core/interfaces/j;->F()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/kik/view/adapters/i;->a(Ljava/util/List;)V
-
-    .line 2482
-    invoke-virtual {v0}, Lcom/kik/view/adapters/i;->notifyDataSetChanged()V
-
-    goto :goto_0
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/SendToFragment;Lkik/android/chat/vm/m;)V
-    .locals 6
-
-    .prologue
-    .line 4388
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 4389
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 4393
-    iget-boolean v1, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
-
-    if-eqz v1, :cond_2
-
-    .line 4394
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 4395
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->c()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 4396
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->d()Z
-
-    move-result v2
-
-    .line 4397
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->e()Z
-
-    move-result v3
-
-    .line 4399
-    new-instance v4, Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    invoke-direct {v4}, Lkik/android/chat/fragment/KikChatInfoFragment$a;-><init>()V
-
-    const/4 v5, 0x2
-
-    .line 4400
-    invoke-virtual {v4, v5}, Lkik/android/chat/fragment/KikChatInfoFragment$a;->a(I)Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    move-result-object v4
-
-    .line 4401
-    invoke-virtual {v4, v3}, Lkik/android/chat/fragment/KikChatInfoFragment$a;->a(Z)Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    move-result-object v3
-
-    .line 4402
-    invoke-virtual {v3, v0}, Lkik/android/chat/fragment/KikChatInfoFragment$a;->c(Ljava/lang/String;)Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    move-result-object v0
-
-    .line 4403
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikChatInfoFragment$a;->b(Ljava/lang/String;)Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    move-result-object v0
-
-    .line 4404
-    invoke-virtual {v0, v2}, Lkik/android/chat/fragment/KikChatInfoFragment$a;->c(Z)Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    move-result-object v0
-
-    .line 4406
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 4407
-    invoke-interface {p1}, Lkik/android/chat/vm/m;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikChatInfoFragment$a;->a(Ljava/lang/String;)Lkik/android/chat/fragment/KikChatInfoFragment$a;
-
-    .line 4410
-    :cond_0
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/af;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->a()Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
-
-    .line 4417
-    :goto_0
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->B()V
-
-    .line 4418
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->k:Z
-
-    .line 72
-    :cond_1
-    return-void
-
-    .line 4413
-    :cond_2
-    new-instance v1, Landroid/os/Bundle;
-
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
-
-    .line 4414
-    const-string v2, "SendToFragment.RESULT_JID"
-
-    invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4415
-    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/SendToFragment;->a(Landroid/os/Bundle;)V
-
-    goto :goto_0
-.end method
-
-.method static synthetic a(Lkik/android/chat/fragment/SendToFragment;Lkik/android/chat/vm/n;)V
+.method static synthetic a(Lkik/android/chat/fragment/SendToFragment;Lkik/android/chat/vm/ae;)V
     .locals 3
 
     .prologue
-    .line 3423
-    invoke-interface {p1}, Lkik/android/chat/vm/n;->a()Ljava/lang/String;
+    .line 3446
+    invoke-interface {p1}, Lkik/android/chat/vm/ae;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3424
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    .line 3447
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 3428
-    iget-boolean v1, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
+    .line 3451
+    iget-boolean v1, p0, Lkik/android/chat/fragment/SendToFragment;->m:Z
 
     if-eqz v1, :cond_1
 
-    .line 3429
+    .line 3452
     new-instance v1, Lkik/android/chat/fragment/KikChatFragment$a;
 
     invoke-direct {v1}, Lkik/android/chat/fragment/KikChatFragment$a;-><init>()V
 
-    .line 3430
+    .line 3453
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikChatFragment$a;->c(Ljava/lang/String;)Lkik/android/chat/fragment/KikChatFragment$a;
 
     move-result-object v0
 
-    .line 3431
-    invoke-interface {p1}, Lkik/android/chat/vm/n;->b()Ljava/lang/String;
+    .line 3454
+    invoke-interface {p1}, Lkik/android/chat/vm/ae;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -561,9 +319,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->s:Lkik/android/chat/fragment/SendToFragment$a;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/SendToFragment$a;
 
-    .line 3432
+    .line 3455
     invoke-static {v2}, Lkik/android/chat/fragment/SendToFragment$a;->c(Lkik/android/chat/fragment/SendToFragment$a;)Z
 
     move-result v2
@@ -572,21 +330,21 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->s:Lkik/android/chat/fragment/SendToFragment$a;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/SendToFragment$a;
 
-    .line 3433
+    .line 3456
     invoke-virtual {v2}, Lkik/android/chat/fragment/SendToFragment$a;->i()Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Lkik/android/chat/fragment/KikChatFragment$a;->a(Lcom/kik/ui/fragment/FragmentBase$FragmentBundle$StackType;)Lcom/kik/ui/fragment/FragmentBase$FragmentBundle;
 
-    .line 3436
+    .line 3459
     invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/af;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
+    invoke-static {v1, v0}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
     move-result-object v0
 
@@ -596,32 +354,32 @@
 
     invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
 
-    .line 3443
+    .line 3466
     :goto_0
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->B()V
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->finish()V
 
-    .line 3444
+    .line 3467
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->k:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
 
-    .line 72
+    .line 78
     :cond_0
     return-void
 
-    .line 3439
+    .line 3462
     :cond_1
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 3440
+    .line 3463
     const-string v2, "SendToFragment.RESULT_JID"
 
     invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3441
-    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/SendToFragment;->a(Landroid/os/Bundle;)V
+    .line 3464
+    invoke-virtual {p0, v1}, Lkik/android/chat/fragment/SendToFragment;->setResultData(Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -630,42 +388,42 @@
     .locals 3
 
     .prologue
-    .line 318
-    iput-boolean p1, p0, Lkik/android/chat/fragment/SendToFragment;->z:Z
+    .line 334
+    iput-boolean p1, p0, Lkik/android/chat/fragment/SendToFragment;->x:Z
 
-    .line 319
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/hr;
+    .line 335
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/fragment/fy;
 
-    invoke-virtual {v0, p1}, Lkik/android/chat/fragment/hr;->a(Z)Landroid/animation/AnimatorSet;
+    invoke-virtual {v0, p1}, Lkik/android/chat/fragment/fy;->a(Z)Landroid/animation/AnimatorSet;
 
     move-result-object v1
 
-    .line 321
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
+    .line 337
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_0
 
-    .line 322
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
+    .line 338
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->end()V
 
-    .line 323
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
+    .line 339
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->setupEndValues()V
 
-    .line 326
+    .line 342
     :cond_0
-    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
+    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
 
-    .line 330
+    .line 346
     if-eqz p1, :cond_1
 
-    .line 331
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->D:Landroid/view/View$OnClickListener;
+    .line 347
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->B:Landroid/view/View$OnClickListener;
 
-    .line 336
+    .line 352
     :goto_0
     new-instance v2, Lkik/android/chat/fragment/SendToFragment$6;
 
@@ -673,43 +431,33 @@
 
     invoke-virtual {v1, v2}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 376
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
+    .line 393
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
-    .line 377
+    .line 394
     return-void
 
-    .line 334
+    .line 350
     :cond_1
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->E:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->C:Landroid/view/View$OnClickListener;
 
     goto :goto_0
-.end method
-
-.method static synthetic b(Lkik/android/chat/fragment/SendToFragment;)Landroid/os/Handler;
-    .locals 1
-
-    .prologue
-    .line 72
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->j:Landroid/os/Handler;
-
-    return-object v0
 .end method
 
 .method private b()V
     .locals 2
 
     .prologue
-    .line 274
+    .line 290
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(Ljava/lang/String;)V
 
-    .line 275
+    .line 291
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     invoke-virtual {v0}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->b()Lkik/android/widget/RobotoEditText;
@@ -718,21 +466,31 @@
 
     invoke-virtual {v0}, Lkik/android/widget/RobotoEditText;->clearFocus()V
 
-    .line 276
+    .line 292
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     invoke-virtual {v0}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->b()Lkik/android/widget/RobotoEditText;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/SendToFragment;->b(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/SendToFragment;->hideKeyBoard(Landroid/view/View;)V
 
-    .line 2308
+    .line 2324
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/SendToFragment;->a(Z)V
 
-    .line 278
+    .line 294
+    return-void
+.end method
+
+.method static synthetic b(Lkik/android/chat/fragment/SendToFragment;)V
+    .locals 0
+
+    .prologue
+    .line 137
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->b()V
+
     return-void
 .end method
 
@@ -740,7 +498,7 @@
     .locals 3
 
     .prologue
-    .line 282
+    .line 298
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     invoke-virtual {v0}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->g()Z
@@ -749,18 +507,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 283
+    .line 299
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(F)V
 
-    .line 288
+    .line 304
     :goto_0
     return-void
 
-    .line 286
+    .line 302
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
@@ -768,7 +526,7 @@
 
     iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
-    invoke-static {v2}, Lcom/kik/util/ca;->b(Landroid/widget/ListView;)I
+    invoke-static {v2}, Lcom/kik/util/ct;->b(Landroid/widget/ListView;)I
 
     move-result v2
 
@@ -778,30 +536,115 @@
 .end method
 
 .method static synthetic c(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 0
+    .locals 7
 
     .prologue
-    .line 72
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->g()V
+    .line 78
+    .line 2493
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
+    invoke-virtual {v0}, Landroid/widget/ListView;->getVisibility()I
+
+    move-result v1
+
+    .line 2494
+    new-instance v2, Lkik/android/chat/vm/l;
+
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v0}, Lkik/core/interfaces/IConversation;->G()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Lkik/android/chat/vm/l;-><init>(Ljava/util/List;)V
+
+    .line 2495
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
+
+    invoke-virtual {v0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 2496
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
+
+    new-instance v3, Lcom/kik/view/adapters/j;
+
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+
+    move-result-object v4
+
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
+
+    move-result-object v5
+
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getNavigator()Lkik/android/chat/vm/ay;
+
+    move-result-object v6
+
+    invoke-direct {v3, v4, v2, v5, v6}, Lcom/kik/view/adapters/j;-><init>(Landroid/content/Context;Lkik/android/chat/vm/l;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
+
+    invoke-virtual {v0, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+
+    .line 2510
+    :goto_0
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
+
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setVisibility(I)V
+
+    .line 78
     return-void
+
+    .line 2499
+    :cond_0
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
+
+    invoke-virtual {v0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object v0
+
+    .line 2500
+    instance-of v3, v0, Landroid/widget/HeaderViewListAdapter;
+
+    if-eqz v3, :cond_1
+
+    .line 2501
+    check-cast v0, Landroid/widget/HeaderViewListAdapter;
+
+    invoke-virtual {v0}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object v0
+
+    .line 2503
+    :cond_1
+    check-cast v0, Lcom/kik/view/adapters/j;
+
+    .line 2504
+    invoke-virtual {v0, v2}, Lcom/kik/view/adapters/j;->a(Lkik/android/chat/vm/IListViewModel;)V
+
+    .line 2505
+    invoke-virtual {v0}, Lcom/kik/view/adapters/j;->notifyDataSetChanged()V
+
+    goto :goto_0
 .end method
 
-.method static synthetic d(Lkik/android/chat/fragment/SendToFragment;)Z
+.method static synthetic d(Lkik/android/chat/fragment/SendToFragment;)Landroid/os/Handler;
     .locals 1
 
     .prologue
-    .line 72
-    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->z:Z
+    .line 78
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->k:Landroid/os/Handler;
 
-    return v0
+    return-object v0
 .end method
 
-.method private e()V
+.method private d()V
     .locals 2
 
     .prologue
-    .line 292
+    .line 308
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
     invoke-virtual {v0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
@@ -814,86 +657,72 @@
 
     if-nez v0, :cond_0
 
-    .line 293
+    .line 309
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_emptyViewContainer:Landroid/widget/FrameLayout;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 294
+    .line 310
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(F)V
 
-    .line 299
+    .line 315
     :goto_0
     return-void
 
-    .line 297
+    .line 313
     :cond_0
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->f()V
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->e()V
 
     goto :goto_0
 .end method
 
-.method static synthetic e(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 1
-
-    .prologue
-    .line 72
-    .line 4313
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lkik/android/chat/fragment/SendToFragment;->a(Z)V
-
-    .line 72
-    return-void
-.end method
-
-.method private f()V
+.method private e()V
     .locals 2
 
     .prologue
-    .line 303
+    .line 319
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_emptyViewContainer:Landroid/widget/FrameLayout;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 304
+    .line 320
     return-void
 .end method
 
-.method static synthetic f(Lkik/android/chat/fragment/SendToFragment;)Z
-    .locals 1
+.method static synthetic e(Lkik/android/chat/fragment/SendToFragment;)V
+    .locals 0
 
     .prologue
-    .line 72
-    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->B:Z
+    .line 78
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->f()V
 
-    return v0
+    return-void
 .end method
 
-.method private g()V
+.method private f()V
     .locals 4
 
     .prologue
-    .line 512
+    .line 535
     invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 513
+    .line 536
     if-nez v0, :cond_0
 
-    .line 514
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->B()V
+    .line 537
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->finish()V
 
-    .line 516
+    .line 539
     :cond_0
     invoke-virtual {v0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
 
@@ -901,17 +730,17 @@
 
     check-cast v0, Lkik/android/chat/KikApplication;
 
-    invoke-virtual {v0}, Lkik/android/chat/KikApplication;->r()Lcom/kik/events/h;
+    invoke-virtual {v0}, Lkik/android/chat/KikApplication;->s()Lcom/kik/events/GlobalPromiseCache;
 
     move-result-object v0
 
-    iget-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->m:J
+    iget-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->n:J
 
-    invoke-virtual {v0, v2, v3}, Lcom/kik/events/h;->a(J)Lcom/kik/events/Promise$State;
+    invoke-virtual {v0, v2, v3}, Lcom/kik/events/GlobalPromiseCache;->getPromiseState(J)Lcom/kik/events/Promise$State;
 
     move-result-object v0
 
-    .line 517
+    .line 540
     if-eqz v0, :cond_2
 
     sget-object v1, Lcom/kik/events/Promise$State;->Cancelled:Lcom/kik/events/Promise$State;
@@ -922,82 +751,116 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 518
+    .line 541
     :cond_1
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->B()V
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->finish()V
 
-    .line 520
+    .line 543
     :cond_2
     return-void
 .end method
 
-.method static synthetic g(Lkik/android/chat/fragment/SendToFragment;)Z
+.method static synthetic f(Lkik/android/chat/fragment/SendToFragment;)Z
     .locals 1
 
     .prologue
-    .line 72
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->B:Z
+    .line 78
+    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->x:Z
 
     return v0
 .end method
 
-.method static synthetic h(Lkik/android/chat/fragment/SendToFragment;)Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+.method static synthetic g(Lkik/android/chat/fragment/SendToFragment;)V
     .locals 1
 
     .prologue
-    .line 72
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+    .line 78
+    .line 4329
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lkik/android/chat/fragment/SendToFragment;->a(Z)V
+
+    .line 78
+    return-void
+.end method
+
+.method static synthetic h(Lkik/android/chat/fragment/SendToFragment;)Z
+    .locals 1
+
+    .prologue
+    .line 78
+    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->z:Z
+
+    return v0
+.end method
+
+.method static synthetic i(Lkik/android/chat/fragment/SendToFragment;)Z
+    .locals 1
+
+    .prologue
+    .line 78
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->z:Z
+
+    return v0
+.end method
+
+.method static synthetic j(Lkik/android/chat/fragment/SendToFragment;)Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+    .locals 1
+
+    .prologue
+    .line 78
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->v:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
     return-object v0
-.end method
-
-.method static synthetic i(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 0
-
-    .prologue
-    .line 72
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->e()V
-
-    return-void
-.end method
-
-.method static synthetic j(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 0
-
-    .prologue
-    .line 72
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->f()V
-
-    return-void
 .end method
 
 .method static synthetic k(Lkik/android/chat/fragment/SendToFragment;)V
     .locals 0
 
     .prologue
-    .line 72
+    .line 78
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->d()V
+
+    return-void
+.end method
+
+.method static synthetic l(Lkik/android/chat/fragment/SendToFragment;)V
+    .locals 0
+
+    .prologue
+    .line 78
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->e()V
+
+    return-void
+.end method
+
+.method static synthetic m(Lkik/android/chat/fragment/SendToFragment;)V
+    .locals 0
+
+    .prologue
+    .line 78
     invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->b()V
 
     return-void
 .end method
 
-.method static synthetic l(Lkik/android/chat/fragment/SendToFragment;)Landroid/animation/AnimatorSet;
+.method static synthetic n(Lkik/android/chat/fragment/SendToFragment;)Landroid/animation/AnimatorSet;
     .locals 1
 
     .prologue
-    .line 72
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Landroid/animation/AnimatorSet;
+    .line 78
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Landroid/animation/AnimatorSet;
 
     return-object v0
 .end method
 
-.method static synthetic m(Lkik/android/chat/fragment/SendToFragment;)V
+.method static synthetic o(Lkik/android/chat/fragment/SendToFragment;)V
     .locals 3
 
     .prologue
-    .line 4381
+    .line 4398
     const/4 v0, 0x1
 
     new-array v0, v0, [Landroid/view/View;
@@ -1008,41 +871,19 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->a([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->a([Landroid/view/View;)V
 
-    .line 4382
+    .line 4399
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_navigationBar:Landroid/view/View;
 
     invoke-static {v0}, Landroid/support/v4/view/ViewCompat;->jumpDrawablesToCurrentState(Landroid/view/View;)V
 
-    .line 4383
+    .line 4400
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_navigationBar:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
-    .line 72
-    return-void
-.end method
-
-.method static synthetic n(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 0
-
-    .prologue
-    .line 72
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->c()V
-
-    return-void
-.end method
-
-.method static synthetic o(Lkik/android/chat/fragment/SendToFragment;)V
-    .locals 0
-
-    .prologue
-    .line 0
-    .line 5129
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->b()V
-
-    .line 0
+    .line 78
     return-void
 .end method
 
@@ -1050,31 +891,19 @@
     .locals 0
 
     .prologue
-    .line 0
-    .line 5130
-    invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->n()Z
+    .line 78
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->c()V
 
-    .line 0
     return-void
 .end method
 
 
 # virtual methods
-.method protected final C()I
-    .locals 1
-
-    .prologue
-    .line 463
-    const v0, 0x7f090447
-
-    return v0
-.end method
-
 .method public final a()V
     .locals 0
 
     .prologue
-    .line 531
+    .line 554
     return-void
 .end method
 
@@ -1082,69 +911,79 @@
     .locals 0
 
     .prologue
-    .line 525
+    .line 548
     invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->c()V
 
-    .line 526
+    .line 549
     return-void
 .end method
 
-.method public final ar()Lkik/android/chat/vm/z;
+.method public getNavigator()Lkik/android/chat/vm/ay;
     .locals 1
 
     .prologue
-    .line 592
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Lkik/android/chat/vm/as;
+    .line 615
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->w:Lkik/android/chat/vm/bz;
 
     if-eqz v0, :cond_0
 
-    .line 593
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Lkik/android/chat/vm/as;
+    .line 616
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->w:Lkik/android/chat/vm/bz;
 
-    .line 608
+    .line 632
     :goto_0
     return-object v0
 
-    .line 596
+    .line 619
     :cond_0
     new-instance v0, Lkik/android/chat/fragment/SendToFragment$7;
 
     invoke-direct {v0, p0, p0}, Lkik/android/chat/fragment/SendToFragment$7;-><init>(Lkik/android/chat/fragment/SendToFragment;Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Lkik/android/chat/vm/as;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->w:Lkik/android/chat/vm/bz;
 
-    .line 608
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->y:Lkik/android/chat/vm/as;
+    .line 632
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->w:Lkik/android/chat/vm/bz;
 
     goto :goto_0
 .end method
 
-.method public final n()Z
+.method protected getTitleResource()I
+    .locals 1
+
+    .prologue
+    .line 486
+    const v0, 0x7f09045b
+
+    return v0
+.end method
+
+.method public handleBackPress()Z
     .locals 4
 
     .prologue
-    .line 493
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    .line 516
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->p:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    iget-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->p:J
+    iget-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->q:J
 
-    invoke-virtual {v0, v1, v2, v3}, Lkik/android/internal/platform/b;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;J)V
+    invoke-virtual {v0, v1, v2, v3}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;J)V
 
-    .line 494
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    .line 517
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->q:Ljava/lang/String;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->r:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lkik/android/internal/platform/b;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lkik/android/internal/platform/PlatformHelper;->b(Ljava/lang/String;)V
 
-    .line 495
-    invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->n()Z
+    .line 518
+    invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->handleBackPress()Z
 
     move-result v0
 
@@ -1155,302 +994,290 @@
     .locals 4
 
     .prologue
-    .line 144
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 155
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 144
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/SendToFragment;)V
 
-    .line 145
+    .line 156
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 1449
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 1472
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
     iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->a:Lkik/core/interfaces/v;
 
-    invoke-interface {v1}, Lkik/core/interfaces/v;->d()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/v;->e()Lcom/kik/events/c;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
-    .line 1450
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 1473
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->b:Lkik/core/interfaces/m;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->c:Lkik/core/interfaces/l;
 
-    invoke-interface {v1}, Lkik/core/interfaces/m;->f()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
-
-    new-instance v3, Lcom/kik/events/j;
-
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
-
-    .line 1451
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
-
-    invoke-interface {v1}, Lkik/core/interfaces/j;->i()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/l;->f()Lcom/kik/events/c;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
-    .line 1452
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 1474
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/j;->e()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
-
-    new-instance v3, Lcom/kik/events/j;
-
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
-
-    .line 1453
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
-
-    invoke-interface {v1}, Lkik/core/interfaces/j;->l()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->i()Lcom/kik/events/c;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
-    .line 1454
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 1475
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/ac;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ac;->c()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
-
-    new-instance v3, Lcom/kik/events/j;
-
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
-
-    .line 1455
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
-
-    invoke-interface {v1}, Lkik/core/interfaces/j;->p()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->e()Lcom/kik/events/c;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
-    .line 1456
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 1476
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/j;->g()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
-
-    new-instance v3, Lcom/kik/events/j;
-
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
-
-    .line 1457
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
-
-    invoke-interface {v1}, Lkik/core/interfaces/j;->h()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->l()Lcom/kik/events/c;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->F:Lcom/kik/events/e;
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
-    .line 147
+    .line 1477
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->f:Lkik/core/interfaces/ad;
+
+    invoke-interface {v1}, Lkik/core/interfaces/ad;->c()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
+
+    new-instance v3, Lcom/kik/events/i;
+
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
+
+    .line 1478
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->p()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
+
+    new-instance v3, Lcom/kik/events/i;
+
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
+
+    .line 1479
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->g()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
+
+    new-instance v3, Lcom/kik/events/i;
+
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
+
+    .line 1480
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->h()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->D:Lcom/kik/events/e;
+
+    new-instance v3, Lcom/kik/events/i;
+
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
+
+    .line 158
     return-void
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 10
+    .locals 9
 
     .prologue
     const/4 v4, 0x0
 
     const/4 v7, 0x0
 
-    .line 152
-    const v0, 0x7f04007c
+    .line 163
+    const v0, 0x7f040091
 
     invoke-static {p1, v0, p2, v7}, Landroid/databinding/DataBindingUtil;->inflate(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;Z)Landroid/databinding/ViewDataBinding;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/d/y;
+    check-cast v0, Lkik/android/e/ad;
 
-    .line 153
-    invoke-virtual {v0}, Lkik/android/d/y;->getRoot()Landroid/view/View;
-
-    move-result-object v1
-
-    move-object v9, v1
-
-    check-cast v9, Landroid/view/ViewGroup;
-
-    .line 155
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    .line 164
+    invoke-virtual {v0}, Lkik/android/e/ad;->getRoot()Landroid/view/View;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/internal/platform/b;->e()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    move-object v8, v1
+
+    check-cast v8, Landroid/view/ViewGroup;
+
+    .line 166
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v1
 
-    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    .line 156
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    invoke-virtual {v1}, Lkik/android/internal/platform/PlatformHelper;->e()Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/internal/platform/b;->f()J
+    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->p:Lkik/core/datatypes/messageExtensions/ContentMessage;
+
+    .line 167
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lkik/android/internal/platform/PlatformHelper;->f()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->p:J
+    iput-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->q:J
 
-    .line 157
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lkik/android/internal/platform/b;->g()Ljava/lang/String;
+    .line 168
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v1
 
-    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->q:Ljava/lang/String;
-
-    .line 158
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    invoke-virtual {v1}, Lkik/android/internal/platform/PlatformHelper;->g()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/internal/platform/b;->h()Ljava/util/List;
+    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->r:Ljava/lang/String;
+
+    .line 169
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v1
 
-    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->r:Ljava/util/List;
+    invoke-virtual {v1}, Lkik/android/internal/platform/PlatformHelper;->h()Ljava/util/List;
 
-    .line 160
+    move-result-object v1
+
+    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->s:Ljava/util/List;
+
+    .line 171
     new-instance v1, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
     const-string v2, "Send To"
 
     invoke-direct {v1, v2}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+    iput-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->v:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
-    .line 161
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+    .line 172
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->v:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
-    .line 2088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v2
 
-    .line 161
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->ar()Lkik/android/chat/vm/z;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    .line 162
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+    .line 173
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->v:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
-    invoke-virtual {v0, v1}, Lkik/android/d/y;->a(Lkik/android/chat/vm/chats/search/f;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/ad;->a(Lkik/android/chat/vm/chats/search/f;)V
 
-    .line 164
-    invoke-static {p0, v9}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    .line 175
+    invoke-static {p0, v8}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 2217
+    .line 2232
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
 
     new-instance v1, Lkik/android/chat/fragment/SendToFragment$5;
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/SendToFragment$5;-><init>(Lkik/android/chat/fragment/SendToFragment;)V
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(Lkik/android/chat/view/ai$a;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/view/TransitionableSearchBarViewImpl;->a(Lkik/android/chat/view/aj$a;)V
 
-    .line 167
+    .line 178
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
     check-cast v0, Lcom/github/ksoichiro/android/observablescrollview/ObservableListView;
 
     invoke-virtual {v0, p0}, Lcom/github/ksoichiro/android/observablescrollview/ObservableListView;->a(Lcom/github/ksoichiro/android/observablescrollview/a;)V
 
-    .line 168
+    .line 179
     new-instance v0, Lkik/android/widget/AutoScrollingRecyclerView$b;
 
     iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBar:Lkik/android/chat/view/TransitionableSearchBarViewImpl;
@@ -1461,37 +1288,37 @@
 
     invoke-direct {v0, p0, v1}, Lkik/android/widget/AutoScrollingRecyclerView$b;-><init>(Lkik/android/util/KeyboardManipulator;Landroid/widget/EditText;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->C:Lkik/android/widget/AutoScrollingRecyclerView$b;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->A:Lkik/android/widget/AutoScrollingRecyclerView$b;
 
-    .line 169
+    .line 180
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchResults:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->C:Lkik/android/widget/AutoScrollingRecyclerView$b;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->A:Lkik/android/widget/AutoScrollingRecyclerView$b;
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->addOnScrollListener(Landroid/support/v7/widget/RecyclerView$OnScrollListener;)V
 
-    .line 171
+    .line 182
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ListView;->setOverscrollFooter(Landroid/graphics/drawable/Drawable;)V
 
-    .line 172
+    .line 183
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ListView;->setDivider(Landroid/graphics/drawable/Drawable;)V
 
-    .line 173
+    .line 184
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
-    const v1, 0x7f1000e4
+    const v1, 0x7f100108
 
-    invoke-virtual {v9, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v8, v1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
-    .line 174
+    .line 185
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
     new-instance v1, Lkik/android/chat/fragment/SendToFragment$3;
@@ -1500,8 +1327,8 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 190
-    new-instance v0, Lkik/android/chat/fragment/hr;
+    .line 202
+    new-instance v0, Lkik/android/chat/fragment/fy;
 
     iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->_searchBarBackground:Landroid/widget/ImageView;
 
@@ -1525,7 +1352,7 @@
 
     aput-object v7, v5, v6
 
-    .line 191
+    .line 203
     invoke-static {v5}, Lcom/google/common/collect/Lists;->a([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object v5
@@ -1534,50 +1361,54 @@
 
     iget-object v7, p0, Lkik/android/chat/fragment/SendToFragment;->_listViewAnimHelperView:Landroid/view/View;
 
-    invoke-direct/range {v0 .. v7}, Lkik/android/chat/fragment/hr;-><init>(Landroid/widget/ImageView;Landroid/view/View;Lkik/android/chat/view/TransitionableSearchBarViewImpl;Landroid/view/View;Ljava/util/List;Landroid/widget/ListView;Landroid/view/View;)V
+    invoke-direct/range {v0 .. v7}, Lkik/android/chat/fragment/fy;-><init>(Landroid/widget/ImageView;Landroid/view/View;Lkik/android/chat/view/TransitionableSearchBarViewImpl;Landroid/view/View;Ljava/util/List;Landroid/widget/ListView;Landroid/view/View;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/hr;
+    iput-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/fragment/fy;
 
-    .line 193
-    new-instance v0, Lcom/kik/view/adapters/i;
+    .line 205
+    new-instance v0, Lkik/android/chat/vm/l;
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->e:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->G()Ljava/util/List;
 
     move-result-object v1
 
-    iget-object v2, p0, Lkik/android/chat/fragment/SendToFragment;->d:Lkik/core/interfaces/j;
+    invoke-direct {v0, v1}, Lkik/android/chat/vm/l;-><init>(Ljava/util/List;)V
 
-    invoke-interface {v2}, Lkik/core/interfaces/j;->F()Ljava/util/List;
+    .line 206
+    new-instance v1, Lcom/kik/view/adapters/j;
+
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v2
 
-    iget-object v3, p0, Lkik/android/chat/fragment/SendToFragment;->h:Lcom/kik/cache/ae;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
-    iget-object v4, p0, Lkik/android/chat/fragment/SendToFragment;->a:Lkik/core/interfaces/v;
+    move-result-object v3
 
-    iget-object v5, p0, Lkik/android/chat/fragment/SendToFragment;->b:Lkik/core/interfaces/m;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
-    iget-object v6, p0, Lkik/android/chat/fragment/SendToFragment;->c:Lkik/core/interfaces/o;
+    move-result-object v4
 
-    iget-object v7, p0, Lkik/android/chat/fragment/SendToFragment;->g:Lcom/kik/android/Mixpanel;
+    invoke-direct {v1, v2, v0, v3, v4}, Lcom/kik/view/adapters/j;-><init>(Landroid/content/Context;Lkik/android/chat/vm/l;Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
-    iget-object v8, p0, Lkik/android/chat/fragment/SendToFragment;->f:Lkik/core/interfaces/b;
+    .line 207
+    invoke-virtual {v1}, Lcom/kik/view/adapters/j;->f()V
 
-    invoke-direct/range {v0 .. v8}, Lcom/kik/view/adapters/i;-><init>(Landroid/content/Context;Ljava/util/List;Lcom/kik/cache/ae;Lkik/core/interfaces/v;Lkik/core/interfaces/m;Lkik/core/interfaces/o;Lcom/kik/android/Mixpanel;Lkik/core/interfaces/b;)V
+    .line 208
+    invoke-virtual {v1}, Lcom/kik/view/adapters/j;->e()V
 
-    .line 194
-    invoke-virtual {v0}, Lcom/kik/view/adapters/i;->b()V
+    .line 209
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
 
-    .line 195
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->_chatList:Landroid/widget/ListView;
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    invoke-virtual {v1, v0}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+    .line 210
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->d()V
 
-    .line 196
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->e()V
-
-    .line 198
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->s:Lkik/android/chat/fragment/SendToFragment$a;
+    .line 212
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/SendToFragment$a;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getArguments()Landroid/os/Bundle;
 
@@ -1585,26 +1416,26 @@
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/SendToFragment$a;->a(Landroid/os/Bundle;)V
 
-    .line 199
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->s:Lkik/android/chat/fragment/SendToFragment$a;
+    .line 213
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/SendToFragment$a;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment$a;->a(Lkik/android/chat/fragment/SendToFragment$a;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
+    iput-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->m:Z
 
-    .line 201
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->s:Lkik/android/chat/fragment/SendToFragment$a;
+    .line 215
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->t:Lkik/android/chat/fragment/SendToFragment$a;
 
     invoke-static {v0}, Lkik/android/chat/fragment/SendToFragment$a;->b(Lkik/android/chat/fragment/SendToFragment$a;)J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lkik/android/chat/fragment/SendToFragment;->m:J
+    iput-wide v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:J
 
-    .line 202
-    iget-wide v0, p0, Lkik/android/chat/fragment/SendToFragment;->m:J
+    .line 216
+    iget-wide v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:J
 
     const-wide/16 v2, -0x1
 
@@ -1612,11 +1443,11 @@
 
     if-lez v0, :cond_0
 
-    .line 203
-    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->g()V
+    .line 217
+    invoke-direct {p0}, Lkik/android/chat/fragment/SendToFragment;->f()V
 
-    .line 204
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 218
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/SendToFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -1628,11 +1459,11 @@
 
     check-cast v0, Lkik/android/chat/KikApplication;
 
-    invoke-virtual {v0}, Lkik/android/chat/KikApplication;->r()Lcom/kik/events/h;
+    invoke-virtual {v0}, Lkik/android/chat/KikApplication;->s()Lcom/kik/events/GlobalPromiseCache;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/events/h;->a()Lcom/kik/events/c;
+    invoke-virtual {v0}, Lcom/kik/events/GlobalPromiseCache;->eventPromiseStateChanged()Lcom/kik/events/c;
 
     move-result-object v0
 
@@ -1642,62 +1473,62 @@
 
     invoke-virtual {v1, v0, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
-    .line 212
+    .line 227
     :cond_0
-    return-object v9
+    return-object v8
 .end method
 
 .method public onDestroy()V
     .locals 4
 
     .prologue
-    .line 501
+    .line 524
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onDestroy()V
 
-    .line 502
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->n:Lcom/kik/events/d;
+    .line 525
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lcom/kik/events/d;
 
     invoke-virtual {v0}, Lcom/kik/events/d;->a()V
 
-    .line 503
-    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
+    .line 526
+    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->m:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->k:Z
+    iget-boolean v0, p0, Lkik/android/chat/fragment/SendToFragment;->l:Z
 
     if-nez v0, :cond_0
 
-    .line 504
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    .line 527
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->o:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->p:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    iget-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->p:J
+    iget-wide v2, p0, Lkik/android/chat/fragment/SendToFragment;->q:J
 
-    invoke-virtual {v0, v1, v2, v3}, Lkik/android/internal/platform/b;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;J)V
+    invoke-virtual {v0, v1, v2, v3}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;J)V
 
-    .line 505
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->q:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Lkik/android/internal/platform/b;->b(Ljava/lang/String;)V
-
-    .line 506
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    .line 528
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->r:Ljava/util/List;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->r:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lkik/android/internal/platform/b;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lkik/android/internal/platform/PlatformHelper;->b(Ljava/lang/String;)V
 
-    .line 508
+    .line 529
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->s:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Lkik/android/internal/platform/PlatformHelper;->a(Ljava/util/List;)V
+
+    .line 531
     :cond_0
     return-void
 .end method
@@ -1706,21 +1537,21 @@
     .locals 2
 
     .prologue
-    .line 267
+    .line 283
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onDestroyView()V
 
-    .line 268
+    .line 284
     iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->_searchResults:Landroid/support/v7/widget/RecyclerView;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->C:Lkik/android/widget/AutoScrollingRecyclerView$b;
+    iget-object v1, p0, Lkik/android/chat/fragment/SendToFragment;->A:Lkik/android/widget/AutoScrollingRecyclerView$b;
 
     invoke-virtual {v0, v1}, Landroid/support/v7/widget/RecyclerView;->removeOnScrollListener(Landroid/support/v7/widget/RecyclerView$OnScrollListener;)V
 
-    .line 269
-    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->u:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
+    .line 285
+    iget-object v0, p0, Lkik/android/chat/fragment/SendToFragment;->v:Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->c()V
+    invoke-virtual {v0}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;->al_()V
 
-    .line 270
+    .line 286
     return-void
 .end method

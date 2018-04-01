@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/c/b;
+.implements Lcom/kik/d/b;
 
 
 # instance fields
@@ -24,7 +24,7 @@
     .locals 0
 
     .prologue
-    .line 32
+    .line 31
     invoke-direct {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;-><init>()V
 
     return-void
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 86
+    .line 85
     return-void
 .end method
 
@@ -44,10 +44,10 @@
     .locals 0
 
     .prologue
-    .line 99
+    .line 98
     iput-object p1, p0, Lkik/android/widget/WebWidget;->b:Lkik/android/chat/fragment/KikChatFragment$b;
 
-    .line 100
+    .line 99
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .locals 0
 
     .prologue
-    .line 80
+    .line 79
     return-void
 .end method
 
@@ -63,7 +63,7 @@
     .locals 4
 
     .prologue
-    .line 105
+    .line 104
     iget-object v0, p0, Lkik/android/widget/WebWidget;->a:Lcom/kik/android/Mixpanel;
 
     if-eqz v0, :cond_0
@@ -72,12 +72,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 106
+    .line 105
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lkik/android/widget/WebWidget;->c:Z
 
-    .line 107
+    .line 106
     iget-object v0, p0, Lkik/android/widget/WebWidget;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "Web Tray Opened"
@@ -88,7 +88,7 @@
 
     const-string v1, "Is Landscape"
 
-    .line 108
+    .line 107
     invoke-static {}, Lkik/android/chat/KikApplication;->m()Z
 
     move-result v2
@@ -103,7 +103,7 @@
 
     const/4 v3, 0x0
 
-    .line 109
+    .line 108
     invoke-interface {v2, v3}, Lkik/android/chat/fragment/KikChatFragment$b;->a(F)Z
 
     move-result v2
@@ -112,18 +112,18 @@
 
     move-result-object v0
 
-    .line 110
+    .line 109
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 115
+    .line 114
     :goto_0
     return-void
 
-    .line 113
+    .line 112
     :cond_0
     const/4 v0, 0x1
 
@@ -136,7 +136,7 @@
     .locals 1
 
     .prologue
-    .line 120
+    .line 119
     const/4 v0, 0x0
 
     return v0
@@ -146,10 +146,10 @@
     .locals 3
 
     .prologue
-    .line 67
+    .line 66
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 68
+    .line 67
     iget-object v1, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
@@ -163,10 +163,10 @@
     :goto_0
     invoke-interface {v1, v0}, Lkik/android/chat/vm/widget/ai;->a(Z)V
 
-    .line 69
+    .line 68
     return-void
 
-    .line 68
+    .line 67
     :cond_0
     const/4 v0, 0x0
 
@@ -177,22 +177,17 @@
     .locals 1
 
     .prologue
-    .line 42
+    .line 41
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 42
+    invoke-virtual {p0}, Lkik/android/widget/WebWidget;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 43
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/widget/WebWidget;)V
 
-    .line 44
+    .line 43
     return-void
 .end method
 
@@ -200,8 +195,8 @@
     .locals 4
 
     .prologue
-    .line 51
-    const v0, 0x7f040140
+    .line 50
+    const v0, 0x7f040187
 
     const/4 v1, 0x0
 
@@ -209,9 +204,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/d/cp;
+    check-cast v0, Lkik/android/e/ea;
 
-    .line 53
+    .line 52
     new-instance v1, Lkik/android/chat/vm/widget/ce;
 
     iget-object v2, p0, Lkik/android/widget/WebWidget;->b:Lkik/android/chat/fragment/KikChatFragment$b;
@@ -220,26 +215,20 @@
 
     iput-object v1, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
-    .line 54
+    .line 53
     iget-object v1, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
-    .line 2088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {p0}, Lkik/android/widget/WebWidget;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v2
 
-    invoke-static {v2}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
+    new-instance v3, Lkik/android/chat/vm/bz;
 
-    move-result-object v2
+    invoke-direct {v3, p0}, Lkik/android/chat/vm/bz;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
+
+    invoke-interface {v1, v2, v3}, Lkik/android/chat/vm/widget/ai;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 54
-    new-instance v3, Lkik/android/chat/vm/as;
-
-    invoke-direct {v3, p0}, Lkik/android/chat/vm/as;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
-
-    invoke-interface {v1, v2, v3}, Lkik/android/chat/vm/widget/ai;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
-
-    .line 55
     iget-object v1, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
     invoke-static {}, Lkik/android/chat/KikApplication;->m()Z
@@ -248,22 +237,22 @@
 
     invoke-interface {v1, v2}, Lkik/android/chat/vm/widget/ai;->a(Z)V
 
-    .line 56
+    .line 55
     iget-object v1, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
-    invoke-virtual {v0, v1}, Lkik/android/d/cp;->a(Lkik/android/chat/vm/widget/ai;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/ea;->a(Lkik/android/chat/vm/widget/ai;)V
 
-    .line 58
+    .line 57
     iget-boolean v1, p0, Lkik/android/widget/WebWidget;->c:Z
 
     if-eqz v1, :cond_0
 
-    .line 59
+    .line 58
     invoke-virtual {p0}, Lkik/android/widget/WebWidget;->b()V
 
-    .line 61
+    .line 60
     :cond_0
-    invoke-virtual {v0}, Lkik/android/d/cp;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/ea;->getRoot()Landroid/view/View;
 
     move-result-object v0
 
@@ -274,19 +263,19 @@
     .locals 1
 
     .prologue
-    .line 91
+    .line 90
     iget-object v0, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/widget/ai;->c()V
+    invoke-interface {v0}, Lkik/android/chat/vm/widget/ai;->al_()V
 
-    .line 92
+    .line 91
     const/4 v0, 0x0
 
     iput-object v0, p0, Lkik/android/widget/WebWidget;->d:Lkik/android/chat/vm/widget/ai;
 
-    .line 93
+    .line 92
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onDestroyView()V
 
-    .line 94
+    .line 93
     return-void
 .end method

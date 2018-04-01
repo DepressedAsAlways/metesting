@@ -1,380 +1,248 @@
-.class public Lcom/instabug/library/util/j;
+.class public final Lcom/instabug/library/util/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/hardware/SensorEventListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/instabug/library/util/j$a;
+    }
+.end annotation
+
+
+# instance fields
+.field private a:Landroid/hardware/SensorManager;
+
+.field private b:Landroid/hardware/Sensor;
+
+.field private c:J
+
+.field private d:F
+
+.field private e:F
+
+.field private f:F
+
+.field private g:Lcom/instabug/library/util/j$a;
+
+.field private h:I
+
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lcom/instabug/library/util/j$a;)V
+    .locals 2
 
     .prologue
-    .line 17
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    .line 20
+    const-wide/16 v0, 0x0
 
-.method public static a(Landroid/app/Activity;Ljava/lang/String;)V
-    .locals 5
+    iput-wide v0, p0, Lcom/instabug/library/util/j;->c:J
 
-    .prologue
-    const/4 v4, 0x0
+    .line 24
+    const/16 v0, 0x15e
 
-    const/4 v3, 0x1
+    iput v0, p0, Lcom/instabug/library/util/j;->h:I
 
-    .line 54
-    invoke-static {p0, p1}, Lcom/instabug/library/util/j;->a(Landroid/content/Context;Ljava/lang/String;)Z
+    .line 27
+    const-string v0, "sensor"
 
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 55
-    invoke-static {p0, p1}, Landroid/support/v4/app/ActivityCompat;->shouldShowRequestPermissionRationale(Landroid/app/Activity;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 56
-    invoke-static {v4}, Lcom/instabug/library/util/j;->a(Ljava/lang/Runnable;)V
-
-    .line 58
-    :cond_0
-    const-class v0, Lcom/instabug/library/util/j;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Permission "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " not granted, requesting it"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 59
-    new-array v0, v3, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    aput-object p1, v0, v1
-
-    invoke-static {p0, v0, v3}, Landroid/support/v4/app/ActivityCompat;->requestPermissions(Landroid/app/Activity;[Ljava/lang/String;I)V
-
-    .line 65
-    :goto_0
-    return-void
-
-    .line 62
-    :cond_1
-    const-class v0, Lcom/instabug/library/util/j;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Permission "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " already granted, running after permission granted runnable"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 63
-    invoke-static {v4}, Lcom/instabug/library/util/j;->a(Ljava/lang/Runnable;)V
-
-    goto :goto_0
-.end method
-
-.method public static a(Landroid/support/v4/app/Fragment;Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
-    .locals 4
-
-    .prologue
-    const/4 v3, 0x1
-
-    .line 78
-    invoke-virtual {p0}, Landroid/support/v4/app/Fragment;->getContext()Landroid/content/Context;
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lcom/instabug/library/util/j;->a(Landroid/content/Context;Ljava/lang/String;)Z
+    check-cast v0, Landroid/hardware/SensorManager;
 
-    move-result v0
+    iput-object v0, p0, Lcom/instabug/library/util/j;->a:Landroid/hardware/SensorManager;
 
-    if-nez v0, :cond_1
-
-    .line 79
-    invoke-virtual {p0, p1}, Landroid/support/v4/app/Fragment;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 80
-    invoke-static {p2}, Lcom/instabug/library/util/j;->a(Ljava/lang/Runnable;)V
-
-    .line 82
-    :cond_0
-    const-class v0, Lcom/instabug/library/util/j;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Permission "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " not granted, requesting it"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 83
-    new-array v0, v3, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    aput-object p1, v0, v1
-
-    invoke-virtual {p0, v0, v3}, Landroid/support/v4/app/Fragment;->requestPermissions([Ljava/lang/String;I)V
-
-    .line 88
-    :goto_0
-    return-void
-
-    .line 85
-    :cond_1
-    const-class v0, Lcom/instabug/library/util/j;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Permission "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, " already granted, running after permission granted runnable"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 86
-    invoke-static {p3}, Lcom/instabug/library/util/j;->a(Ljava/lang/Runnable;)V
-
-    goto :goto_0
-.end method
-
-.method private static a(Ljava/lang/Runnable;)V
-    .locals 0
-
-    .prologue
-    .line 91
-    if-eqz p0, :cond_0
-
-    .line 92
-    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
-
-    .line 94
-    :cond_0
-    return-void
-.end method
-
-.method public static a(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 5
-
-    .prologue
-    const/4 v0, 0x0
+    .line 28
+    iget-object v0, p0, Lcom/instabug/library/util/j;->a:Landroid/hardware/SensorManager;
 
     const/4 v1, 0x1
 
-    .line 26
-    :try_start_0
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {v0, v1}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
 
-    const/16 v3, 0x17
+    move-result-object v0
 
-    if-lt v2, v3, :cond_2
+    iput-object v0, p0, Lcom/instabug/library/util/j;->b:Landroid/hardware/Sensor;
 
-    .line 27
-    invoke-static {p0, p1}, Landroid/support/v4/content/ContextCompat;->checkSelfPermission(Landroid/content/Context;Ljava/lang/String;)I
+    .line 1068
+    iput-object p2, p0, Lcom/instabug/library/util/j;->g:Lcom/instabug/library/util/j$a;
 
-    move-result v2
+    .line 30
+    return-void
+.end method
 
-    .line 28
-    if-nez v2, :cond_0
 
-    move v0, v1
+# virtual methods
+.method public final a()V
+    .locals 3
 
-    .line 29
+    .prologue
+    .line 72
+    iget-object v0, p0, Lcom/instabug/library/util/j;->a:Landroid/hardware/SensorManager;
+
+    iget-object v1, p0, Lcom/instabug/library/util/j;->b:Landroid/hardware/Sensor;
+
+    const/4 v2, 0x3
+
+    invoke-virtual {v0, p0, v1, v2}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
+
+    .line 73
+    return-void
+.end method
+
+.method public final a(I)V
+    .locals 0
+
+    .prologue
+    .line 80
+    iput p1, p0, Lcom/instabug/library/util/j;->h:I
+
+    .line 81
+    return-void
+.end method
+
+.method public final b()V
+    .locals 1
+
+    .prologue
+    .line 76
+    iget-object v0, p0, Lcom/instabug/library/util/j;->a:Landroid/hardware/SensorManager;
+
+    invoke-virtual {v0, p0}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
+
+    .line 77
+    return-void
+.end method
+
+.method public final onAccuracyChanged(Landroid/hardware/Sensor;I)V
+    .locals 0
+
+    .prologue
+    .line 65
+    return-void
+.end method
+
+.method public final onSensorChanged(Landroid/hardware/SensorEvent;)V
+    .locals 10
+
+    .prologue
+    const/4 v2, 0x1
+
+    .line 35
+    iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
+
+    .line 37
+    invoke-virtual {v0}, Landroid/hardware/Sensor;->getType()I
+
+    move-result v0
+
+    if-ne v0, v2, :cond_1
+
+    .line 39
+    iget-object v0, p1, Landroid/hardware/SensorEvent;->values:[F
+
+    const/4 v1, 0x0
+
+    aget v0, v0, v1
+
+    .line 40
+    iget-object v1, p1, Landroid/hardware/SensorEvent;->values:[F
+
+    aget v1, v1, v2
+
+    .line 41
+    iget-object v2, p1, Landroid/hardware/SensorEvent;->values:[F
+
+    const/4 v3, 0x2
+
+    aget v2, v2, v3
+
+    .line 43
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v4
+
+    .line 46
+    iget-wide v6, p0, Lcom/instabug/library/util/j;->c:J
+
+    sub-long v6, v4, v6
+
+    const-wide/16 v8, 0x190
+
+    cmp-long v3, v6, v8
+
+    if-lez v3, :cond_1
+
+    .line 47
+    iget-wide v6, p0, Lcom/instabug/library/util/j;->c:J
+
+    sub-long v6, v4, v6
+
+    .line 49
+    add-float v3, v0, v1
+
+    add-float/2addr v3, v2
+
+    iget v8, p0, Lcom/instabug/library/util/j;->d:F
+
+    sub-float/2addr v3, v8
+
+    iget v8, p0, Lcom/instabug/library/util/j;->e:F
+
+    sub-float/2addr v3, v8
+
+    iget v8, p0, Lcom/instabug/library/util/j;->f:F
+
+    sub-float/2addr v3, v8
+
+    invoke-static {v3}, Ljava/lang/Math;->abs(F)F
+
+    move-result v3
+
+    long-to-float v6, v6
+
+    div-float/2addr v3, v6
+
+    const v6, 0x461c4000    # 10000.0f
+
+    mul-float/2addr v3, v6
+
+    .line 51
+    iget v6, p0, Lcom/instabug/library/util/j;->h:I
+
+    int-to-float v6, v6
+
+    cmpl-float v3, v3, v6
+
+    if-lez v3, :cond_0
+
+    .line 52
+    iget-object v3, p0, Lcom/instabug/library/util/j;->g:Lcom/instabug/library/util/j$a;
+
+    invoke-interface {v3}, Lcom/instabug/library/util/j$a;->c()V
+
+    .line 54
     :cond_0
-    const-class v3, Lcom/instabug/library/util/j;
+    iput-wide v4, p0, Lcom/instabug/library/util/j;->c:J
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    .line 55
+    iput v0, p0, Lcom/instabug/library/util/j;->d:F
 
-    const-string v4, "Permission "
+    .line 56
+    iput v1, p0, Lcom/instabug/library/util/j;->e:F
 
-    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 57
+    iput v2, p0, Lcom/instabug/library/util/j;->f:F
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v4, " state is "
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    if-eqz v0, :cond_1
-
-    const-string v2, ""
-
-    :goto_0
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v4, "granted"
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v3, v2}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 39
-    :goto_1
-    return v0
-
-    .line 29
+    .line 60
     :cond_1
-    const-string v2, "NOT "
-
-    goto :goto_0
-
-    .line 32
-    :cond_2
-    invoke-virtual {p0, p1}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
-
-    move-result v2
-
-    .line 33
-    if-nez v2, :cond_3
-
-    move v0, v1
-
-    .line 34
-    :cond_3
-    const-class v3, Lcom/instabug/library/util/j;
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    const-string v4, "Permission "
-
-    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v4, " state is "
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    if-eqz v0, :cond_4
-
-    const-string v2, ""
-
-    :goto_2
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v4, "granted"
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v3, v2}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .line 39
-    :catch_0
-    move-exception v0
-
-    :goto_3
-    move v0, v1
-
-    goto :goto_1
-
-    .line 34
-    :cond_4
-    const-string v2, "NOT "
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_1
-
-    goto :goto_2
-
-    .line 39
-    :catch_1
-    move-exception v0
-
-    goto :goto_3
+    return-void
 .end method

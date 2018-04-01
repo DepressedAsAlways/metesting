@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 274
+    .line 273
     iput-object p1, p0, Lkik/android/widget/ExploreView$1;->a:Lkik/android/widget/ExploreView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,13 +37,13 @@
     .locals 2
 
     .prologue
-    .line 278
+    .line 277
     iget-object v0, p0, Lkik/android/widget/ExploreView$1;->a:Lkik/android/widget/ExploreView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Lkik/android/widget/ExploreView;->setVisibility(I)V
 
-    .line 279
+    .line 278
     return-void
 .end method

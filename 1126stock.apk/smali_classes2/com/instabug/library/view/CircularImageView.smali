@@ -212,14 +212,14 @@
     iput v2, p0, Lcom/instabug/library/view/CircularImageView;->k:I
 
     .line 80
-    sget-object v0, Lcom/instabug/library/R$k;->a:[I
+    sget-object v0, Lcom/instabug/library/R$styleable;->CircleImageView:[I
 
     invoke-virtual {p1, p2, v0, p3, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
     .line 82
-    sget v1, Lcom/instabug/library/R$k;->d:I
+    sget v1, Lcom/instabug/library/R$styleable;->CircleImageView_ibg_civ_border_width:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -228,7 +228,7 @@
     iput v1, p0, Lcom/instabug/library/view/CircularImageView;->j:I
 
     .line 83
-    sget v1, Lcom/instabug/library/R$k;->b:I
+    sget v1, Lcom/instabug/library/R$styleable;->CircleImageView_ibg_civ_border_color:I
 
     invoke-virtual {v0, v1, v3}, Landroid/content/res/TypedArray;->getColor(II)I
 
@@ -237,7 +237,7 @@
     iput v1, p0, Lcom/instabug/library/view/CircularImageView;->i:I
 
     .line 84
-    sget v1, Lcom/instabug/library/R$k;->c:I
+    sget v1, Lcom/instabug/library/R$styleable;->CircleImageView_ibg_civ_border_overlay:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -246,7 +246,7 @@
     iput-boolean v1, p0, Lcom/instabug/library/view/CircularImageView;->u:Z
 
     .line 85
-    sget v1, Lcom/instabug/library/R$k;->e:I
+    sget v1, Lcom/instabug/library/R$styleable;->CircleImageView_ibg_civ_fill_color:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getColor(II)I
 

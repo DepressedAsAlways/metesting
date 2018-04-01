@@ -15,8 +15,26 @@
 
 
 # virtual methods
-.method public abstract a()V
+.method public abstract T_()Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/EnumSet",
+            "<",
+            "Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;",
+            ">;"
+        }
+    .end annotation
 .end method
 
-.method public abstract a(Ljava/lang/String;)V
+.method public abstract b()Ljava/util/EnumSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/EnumSet",
+            "<",
+            "Lkik/android/chat/view/AnimatingSearchBarLayout$TransitionRules;",
+            ">;"
+        }
+    .end annotation
 .end method

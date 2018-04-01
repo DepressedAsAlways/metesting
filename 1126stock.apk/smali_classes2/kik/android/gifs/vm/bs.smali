@@ -3,9 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/gifs/vm/bm;
-
-
-# virtual methods
-.method public abstract k()Ljava/lang/String;
-.end method
+.implements Lkik/android/gifs/vm/bp;

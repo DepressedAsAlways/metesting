@@ -329,7 +329,7 @@
     iput-boolean v4, p0, Lkik/android/widget/ProgressWheel;->y:Z
 
     .line 93
-    sget-object v0, Lkik/android/k$a;->ah:[I
+    sget-object v0, Lkik/android/R$styleable;->ProgressWheel:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -595,7 +595,7 @@
 
     const/4 v0, 0x0
 
-    .line 3446
+    .line 446
     invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
     move-result v1
@@ -604,14 +604,15 @@
 
     if-gez v1, :cond_1
 
-    .line 3447
+    .line 447
     invoke-direct {p0}, Lkik/android/widget/ProgressWheel;->a()V
 
+    .line 452
     :cond_0
     :goto_0
     return-void
 
-    .line 3450
+    .line 450
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
@@ -693,7 +694,7 @@
     goto :goto_1
 .end method
 
-.method public static a(Lkik/android/widget/ProgressWheel;Lrx/c;)V
+.method public static a(Lkik/android/widget/ProgressWheel;Lrx/d;)V
     .locals 2
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -705,7 +706,7 @@
         value = {
             "(",
             "Lkik/android/widget/ProgressWheel;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Float;",
             ">;)V"
@@ -716,11 +717,11 @@
     .line 445
     const v0, 0x1010137
 
-    invoke-static {p0}, Lkik/android/widget/bq;->a(Lkik/android/widget/ProgressWheel;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/cs;->a(Lkik/android/widget/ProgressWheel;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bk;->c(ILrx/b/b;Landroid/view/View;Lrx/c;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->c(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 453
     return-void

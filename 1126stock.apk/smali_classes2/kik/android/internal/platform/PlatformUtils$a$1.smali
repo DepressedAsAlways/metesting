@@ -1,5 +1,5 @@
 .class final Lkik/android/internal/platform/PlatformUtils$a$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Landroid/graphics/Bitmap;",
         ">;"
@@ -34,12 +34,12 @@
     .locals 0
 
     .prologue
-    .line 565
+    .line 564
     iput-object p1, p0, Lkik/android/internal/platform/PlatformUtils$a$1;->b:Lkik/android/internal/platform/PlatformUtils$a;
 
     iput-object p2, p0, Lkik/android/internal/platform/PlatformUtils$a$1;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -50,22 +50,22 @@
     .locals 4
 
     .prologue
-    .line 565
+    .line 564
     check-cast p1, Landroid/graphics/Bitmap;
 
-    .line 1569
+    .line 1568
     invoke-static {p1}, Lkik/android/internal/platform/PlatformUtils;->a(Landroid/graphics/Bitmap;)[B
 
     move-result-object v0
 
-    .line 1571
+    .line 1570
     if-eqz v0, :cond_0
 
     array-length v1, v0
 
     if-lez v1, :cond_0
 
-    .line 1572
+    .line 1571
     iget-object v1, p0, Lkik/android/internal/platform/PlatformUtils$a$1;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     const-string v2, "icon"
@@ -74,9 +74,9 @@
 
     invoke-direct {v3, v0}, Lkik/core/datatypes/b;-><init>([B)V
 
-    invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/r;)V
+    invoke-virtual {v1, v2, v3}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;Lkik/core/datatypes/q;)V
 
-    .line 565
+    .line 564
     :cond_0
     return-void
 .end method
@@ -85,23 +85,23 @@
     .locals 2
 
     .prologue
-    .line 579
+    .line 578
     iget-object v0, p0, Lkik/android/internal/platform/PlatformUtils$a$1;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     const-string v1, "icon"
 
-    invoke-virtual {v0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/r;
+    invoke-virtual {v0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 580
+    .line 579
     iget-object v0, p0, Lkik/android/internal/platform/PlatformUtils$a$1;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     invoke-static {v0}, Lkik/android/internal/platform/PlatformUtils$a;->b(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
-    .line 582
+    .line 581
     :cond_0
     iget-object v0, p0, Lkik/android/internal/platform/PlatformUtils$a$1;->b:Lkik/android/internal/platform/PlatformUtils$a;
 
@@ -109,6 +109,6 @@
 
     invoke-static {v0, v1}, Lkik/android/internal/platform/PlatformUtils$a;->a(Lkik/android/internal/platform/PlatformUtils$a;Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
-    .line 583
+    .line 582
     return-void
 .end method

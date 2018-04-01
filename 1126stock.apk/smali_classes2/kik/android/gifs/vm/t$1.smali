@@ -1,11 +1,11 @@
 .class final Lkik/android/gifs/vm/t$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/gifs/vm/t;->a(Lkik/android/gifs/vm/bn;Lkik/android/widget/GifTrayPage;)V
+    value = Lkik/android/gifs/vm/t;->a(Lkik/android/gifs/vm/bo;Lkik/android/widget/GifTrayPage;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lkik/android/gifs/view/c;",
         ">;"
@@ -24,22 +24,22 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/android/gifs/vm/bn;
+.field final synthetic a:Lkik/android/gifs/vm/bo;
 
 .field final synthetic b:Lkik/android/gifs/vm/t;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/gifs/vm/t;Lkik/android/gifs/vm/bn;)V
+.method constructor <init>(Lkik/android/gifs/vm/t;Lkik/android/gifs/vm/bo;)V
     .locals 0
 
     .prologue
     .line 136
     iput-object p1, p0, Lkik/android/gifs/vm/t$1;->b:Lkik/android/gifs/vm/t;
 
-    iput-object p2, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bn;
+    iput-object p2, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -67,11 +67,11 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bn;
+    iget-object v0, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
     sget-object v1, Lkik/android/gifs/a;->d:Lkik/android/gifs/api/GifResponseData$MediaType;
 
-    invoke-interface {v0, v1}, Lkik/android/gifs/vm/bn;->a(Lkik/android/gifs/api/GifResponseData$MediaType;)V
+    invoke-interface {v0, v1}, Lkik/android/gifs/vm/bo;->a(Lkik/android/gifs/api/GifResponseData$MediaType;)V
 
     .line 147
     iget-object v0, p0, Lkik/android/gifs/vm/t$1;->b:Lkik/android/gifs/vm/t;
@@ -80,9 +80,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bn;
+    iget-object v1, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
-    invoke-interface {v1}, Lkik/android/gifs/vm/bn;->l()Landroid/graphics/Point;
+    invoke-interface {v1}, Lkik/android/gifs/vm/bo;->m()Landroid/graphics/Point;
 
     move-result-object v1
 
@@ -93,17 +93,17 @@
 
     iget-object v0, v0, Lkik/android/gifs/vm/t;->a:Lkik/android/gifs/c;
 
-    iget-object v1, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bn;
+    iget-object v1, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
-    invoke-interface {v1}, Lkik/android/gifs/vm/bn;->d()Ljava/lang/String;
+    invoke-interface {v1}, Lkik/android/gifs/vm/bo;->e()Ljava/lang/String;
 
     move-result-object v1
 
     sget-object v2, Lkik/android/gifs/a;->d:Lkik/android/gifs/api/GifResponseData$MediaType;
 
-    iget-object v3, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bn;
+    iget-object v3, p0, Lkik/android/gifs/vm/t$1;->a:Lkik/android/gifs/vm/bo;
 
-    invoke-interface {v3}, Lkik/android/gifs/vm/bn;->e()Ljava/lang/String;
+    invoke-interface {v3}, Lkik/android/gifs/vm/bo;->g()Ljava/lang/String;
 
     move-result-object v3
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/gifs/vm/t$1$1;-><init>(Lkik/android/gifs/vm/t$1;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 163
     return-void

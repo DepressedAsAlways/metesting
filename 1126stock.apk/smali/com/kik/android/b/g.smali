@@ -62,13 +62,13 @@
     .end annotation
 .end field
 
-.field private static e:Lcom/android/volley/h;
+.field private static e:Lcom/android/volley/g;
 
-.field private static f:Lcom/android/volley/toolbox/c;
+.field private static f:Lcom/android/volley/toolbox/DiskBasedCache;
 
 .field private static g:Lcom/kik/cache/SimpleLruBitmapCache;
 
-.field private static h:Lcom/kik/cache/ae;
+.field private static h:Lcom/kik/cache/KikVolleyImageLoader;
 
 .field private static j:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -111,9 +111,9 @@
 # instance fields
 .field private final i:Lcom/kik/android/b/l;
 
-.field private final k:Lkik/core/interfaces/ae;
+.field private final k:Lkik/core/interfaces/ag;
 
-.field private final l:Lkik/core/interfaces/y;
+.field private final l:Lkik/core/interfaces/z;
 
 .field private final o:Lcom/kik/events/d;
 
@@ -190,7 +190,7 @@
 
     const-string v1, ":)"
 
-    const v2, 0x7f0202fd
+    const v2, 0x7f02034d
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -203,7 +203,7 @@
 
     const-string v1, ";)"
 
-    const v2, 0x7f020323
+    const v2, 0x7f020373
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -216,7 +216,7 @@
 
     const-string v1, ":("
 
-    const v2, 0x7f020307
+    const v2, 0x7f020357
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -229,7 +229,7 @@
 
     const-string v1, ":D"
 
-    const v2, 0x7f0202ff
+    const v2, 0x7f02034f
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -242,7 +242,7 @@
 
     const-string v1, ":P"
 
-    const v2, 0x7f020309
+    const v2, 0x7f020359
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -255,7 +255,7 @@
 
     const-string v1, ":|"
 
-    const v2, 0x7f02030b
+    const v2, 0x7f02035b
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -268,7 +268,7 @@
 
     const-string v1, ":/"
 
-    const v2, 0x7f02030f
+    const v2, 0x7f02035f
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -281,7 +281,7 @@
 
     const-string v1, ">:("
 
-    const v2, 0x7f02031b
+    const v2, 0x7f02036b
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -294,7 +294,7 @@
 
     const-string v1, ":X"
 
-    const v2, 0x7f020315
+    const v2, 0x7f020365
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -307,7 +307,7 @@
 
     const-string v1, "<3"
 
-    const v2, 0x7f020321
+    const v2, 0x7f020371
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -320,7 +320,7 @@
 
     const-string v1, "</3"
 
-    const v2, 0x7f02031f
+    const v2, 0x7f02036f
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -333,7 +333,7 @@
 
     const-string v1, "B)"
 
-    const v2, 0x7f0202f9
+    const v2, 0x7f020349
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -346,7 +346,7 @@
 
     const-string v1, ":3"
 
-    const v2, 0x7f020313
+    const v2, 0x7f020363
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -359,7 +359,7 @@
 
     const-string v1, ":\'("
 
-    const v2, 0x7f0202fb
+    const v2, 0x7f02034b
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -372,7 +372,7 @@
 
     const-string v1, ":O"
 
-    const v2, 0x7f020305
+    const v2, 0x7f020355
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -385,7 +385,7 @@
 
     const-string v1, ":S"
 
-    const v2, 0x7f02030d
+    const v2, 0x7f02035d
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -398,7 +398,7 @@
 
     const-string v1, ":$"
 
-    const v2, 0x7f020301
+    const v2, 0x7f020351
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -411,7 +411,7 @@
 
     const-string v1, ":*"
 
-    const v2, 0x7f020311
+    const v2, 0x7f020361
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -424,7 +424,7 @@
 
     const-string v1, ">:)"
 
-    const v2, 0x7f020319
+    const v2, 0x7f020369
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -437,7 +437,7 @@
 
     const-string v1, ":E"
 
-    const v2, 0x7f020303
+    const v2, 0x7f020353
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -450,7 +450,7 @@
 
     const-string v1, "D:"
 
-    const v2, 0x7f020317
+    const v2, 0x7f020367
 
     invoke-static {v1, v2}, Lcom/kik/android/b/d;->a(Ljava/lang/String;I)Lcom/kik/android/b/d;
 
@@ -463,7 +463,7 @@
 
     const-string v1, ":)"
 
-    const v2, 0x7f0202fe
+    const v2, 0x7f02034e
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -476,7 +476,7 @@
 
     const-string v1, ";)"
 
-    const v2, 0x7f020324
+    const v2, 0x7f020374
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -489,7 +489,7 @@
 
     const-string v1, ":("
 
-    const v2, 0x7f020308
+    const v2, 0x7f020358
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -502,7 +502,7 @@
 
     const-string v1, ":D"
 
-    const v2, 0x7f020300
+    const v2, 0x7f020350
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -515,7 +515,7 @@
 
     const-string v1, ":P"
 
-    const v2, 0x7f02030a
+    const v2, 0x7f02035a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -528,7 +528,7 @@
 
     const-string v1, ":|"
 
-    const v2, 0x7f02030c
+    const v2, 0x7f02035c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -541,7 +541,7 @@
 
     const-string v1, ":/"
 
-    const v2, 0x7f020310
+    const v2, 0x7f020360
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -554,7 +554,7 @@
 
     const-string v1, ">:("
 
-    const v2, 0x7f02031c
+    const v2, 0x7f02036c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -567,7 +567,7 @@
 
     const-string v1, ":X"
 
-    const v2, 0x7f020316
+    const v2, 0x7f020366
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -580,7 +580,7 @@
 
     const-string v1, "<3"
 
-    const v2, 0x7f020322
+    const v2, 0x7f020372
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -593,7 +593,7 @@
 
     const-string v1, "</3"
 
-    const v2, 0x7f020320
+    const v2, 0x7f020370
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -606,7 +606,7 @@
 
     const-string v1, "B)"
 
-    const v2, 0x7f0202fa
+    const v2, 0x7f02034a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -619,7 +619,7 @@
 
     const-string v1, ":3"
 
-    const v2, 0x7f020314
+    const v2, 0x7f020364
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -632,7 +632,7 @@
 
     const-string v1, ":\'("
 
-    const v2, 0x7f0202fc
+    const v2, 0x7f02034c
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -645,7 +645,7 @@
 
     const-string v1, ":O"
 
-    const v2, 0x7f020306
+    const v2, 0x7f020356
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -658,7 +658,7 @@
 
     const-string v1, ":S"
 
-    const v2, 0x7f02030e
+    const v2, 0x7f02035e
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -671,7 +671,7 @@
 
     const-string v1, ":$"
 
-    const v2, 0x7f020302
+    const v2, 0x7f020352
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -684,7 +684,7 @@
 
     const-string v1, ":*"
 
-    const v2, 0x7f020312
+    const v2, 0x7f020362
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -697,7 +697,7 @@
 
     const-string v1, ">:)"
 
-    const v2, 0x7f02031a
+    const v2, 0x7f02036a
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -710,7 +710,7 @@
 
     const-string v1, ":E"
 
-    const v2, 0x7f020304
+    const v2, 0x7f020354
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -723,7 +723,7 @@
 
     const-string v1, "D:"
 
-    const v2, 0x7f020318
+    const v2, 0x7f020368
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -740,11 +740,11 @@
 
     const-string v2, "d87e73fd"
 
-    const v3, 0x7f02029a
+    const v3, 0x7f0202d6
 
-    const v4, 0x7f02029b
+    const v4, 0x7f0202d7
 
-    const v5, 0x7f02029c
+    const v5, 0x7f0202d8
 
     invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/g$d;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
@@ -759,11 +759,11 @@
 
     const-string v2, "49015869"
 
-    const v3, 0x7f02029d
+    const v3, 0x7f0202d9
 
-    const v4, 0x7f02029e
+    const v4, 0x7f0202da
 
-    const v5, 0x7f02029f
+    const v5, 0x7f0202db
 
     invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/g$d;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
@@ -778,11 +778,11 @@
 
     const-string v2, "55f986b0"
 
-    const v3, 0x7f0202a0
+    const v3, 0x7f0202dc
 
-    const v4, 0x7f0202a1
+    const v4, 0x7f0202dd
 
-    const v5, 0x7f0202a2
+    const v5, 0x7f0202de
 
     invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/g$d;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
@@ -797,11 +797,11 @@
 
     const-string v2, "d751b6d8"
 
-    const v3, 0x7f0202dd
+    const v3, 0x7f02032c
 
-    const v4, 0x7f0202de
+    const v4, 0x7f02032d
 
-    const v5, 0x7f0202df
+    const v5, 0x7f02032e
 
     invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/g$d;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
@@ -816,11 +816,11 @@
 
     const-string v2, "12b64657"
 
-    const v3, 0x7f0202e0
+    const v3, 0x7f02032f
 
-    const v4, 0x7f0202e1
+    const v4, 0x7f020330
 
-    const v5, 0x7f0202e2
+    const v5, 0x7f020331
 
     invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/g$d;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
@@ -835,11 +835,11 @@
 
     const-string v2, "20cd967c"
 
-    const v3, 0x7f0202e3
+    const v3, 0x7f020332
 
-    const v4, 0x7f0202e4
+    const v4, 0x7f020333
 
-    const v5, 0x7f0202e5
+    const v5, 0x7f020334
 
     invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/g$d;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
@@ -889,21 +889,21 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lkik/core/f/f;Lkik/core/interfaces/ac;Lcom/kik/events/Promise;Lkik/core/interfaces/ae;Lkik/core/interfaces/y;Lkik/android/util/an;Lkik/core/interfaces/s;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lkik/core/interfaces/ag;Lkik/core/interfaces/z;Lkik/android/util/ai;Lkik/core/interfaces/s;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lkik/core/f/f;",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/e/f;",
+            "Lkik/core/interfaces/ad;",
             "Lcom/kik/events/Promise",
             "<",
             "Ljava/lang/Object;",
             ">;",
-            "Lkik/core/interfaces/ae;",
-            "Lkik/core/interfaces/y;",
-            "Lkik/android/util/an;",
+            "Lkik/core/interfaces/ag;",
+            "Lkik/core/interfaces/z;",
+            "Lkik/android/util/ai;",
             "Lkik/core/interfaces/s;",
             ")V"
         }
@@ -921,24 +921,24 @@
     iput-object v0, p0, Lcom/kik/android/b/g;->o:Lcom/kik/events/d;
 
     .line 108
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/kik/android/b/g;->r:Lrx/subjects/a;
 
     .line 376
-    iput-object p5, p0, Lcom/kik/android/b/g;->k:Lkik/core/interfaces/ae;
+    iput-object p5, p0, Lcom/kik/android/b/g;->k:Lkik/core/interfaces/ag;
 
     .line 377
-    iput-object p6, p0, Lcom/kik/android/b/g;->l:Lkik/core/interfaces/y;
+    iput-object p6, p0, Lcom/kik/android/b/g;->l:Lkik/core/interfaces/z;
 
     .line 378
     new-instance v0, Lcom/kik/android/b/l;
 
     new-instance v1, Lcom/kik/android/b/j;
 
-    invoke-direct {v1, p1, p3}, Lcom/kik/android/b/j;-><init>(Landroid/content/Context;Lkik/core/interfaces/ac;)V
+    invoke-direct {v1, p1, p3}, Lcom/kik/android/b/j;-><init>(Landroid/content/Context;Lkik/core/interfaces/ad;)V
 
     invoke-static {}, Lkik/android/config/c;->c()Lkik/android/config/b;
 
@@ -950,7 +950,7 @@
 
     move-object v5, p7
 
-    invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/l;-><init>(Lcom/kik/android/b/e;Lkik/core/f/f;Lkik/core/interfaces/ac;Lkik/android/config/b;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lcom/kik/android/b/l;-><init>(Lcom/kik/android/b/e;Lkik/core/e/f;Lkik/core/interfaces/ad;Lkik/android/config/b;Lkik/android/util/ai;)V
 
     iput-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
@@ -989,66 +989,66 @@
     .line 386
     new-instance v0, Lcom/android/volley/toolbox/a;
 
-    new-instance v1, Lcom/android/volley/toolbox/g;
+    new-instance v1, Lcom/android/volley/toolbox/f;
 
-    invoke-direct {v1}, Lcom/android/volley/toolbox/g;-><init>()V
+    invoke-direct {v1}, Lcom/android/volley/toolbox/f;-><init>()V
 
-    invoke-direct {v0, v1}, Lcom/android/volley/toolbox/a;-><init>(Lcom/android/volley/toolbox/f;)V
+    invoke-direct {v0, v1}, Lcom/android/volley/toolbox/a;-><init>(Lcom/android/volley/toolbox/e;)V
 
     .line 387
-    new-instance v1, Lcom/android/volley/toolbox/c;
+    new-instance v1, Lcom/android/volley/toolbox/DiskBasedCache;
 
     sget-object v2, Lcom/kik/android/b/g;->p:Ljava/io/File;
 
     const/high16 v3, 0x500000
 
-    invoke-direct {v1, v2, v3}, Lcom/android/volley/toolbox/c;-><init>(Ljava/io/File;I)V
+    invoke-direct {v1, v2, v3}, Lcom/android/volley/toolbox/DiskBasedCache;-><init>(Ljava/io/File;I)V
 
-    sput-object v1, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/c;
+    sput-object v1, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/DiskBasedCache;
 
     .line 388
-    new-instance v1, Lcom/android/volley/h;
+    new-instance v1, Lcom/android/volley/g;
 
-    sget-object v2, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/c;
+    sget-object v2, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/DiskBasedCache;
 
-    invoke-direct {v1, v2, v0}, Lcom/android/volley/h;-><init>(Lcom/android/volley/a;Lcom/android/volley/e;)V
+    invoke-direct {v1, v2, v0}, Lcom/android/volley/g;-><init>(Lcom/android/volley/Cache;Lcom/android/volley/d;)V
 
-    sput-object v1, Lcom/kik/android/b/g;->e:Lcom/android/volley/h;
+    sput-object v1, Lcom/kik/android/b/g;->e:Lcom/android/volley/g;
 
     .line 389
-    invoke-static {}, Lcom/kik/util/bz;->a()Lcom/kik/cache/SimpleLruBitmapCache;
+    invoke-static {}, Lcom/kik/util/cr;->a()Lcom/kik/cache/SimpleLruBitmapCache;
 
     move-result-object v0
 
     sput-object v0, Lcom/kik/android/b/g;->g:Lcom/kik/cache/SimpleLruBitmapCache;
 
     .line 390
-    sget-object v0, Lcom/kik/android/b/g;->e:Lcom/android/volley/h;
+    sget-object v0, Lcom/kik/android/b/g;->e:Lcom/android/volley/g;
 
-    invoke-virtual {v0}, Lcom/android/volley/h;->a()V
+    invoke-virtual {v0}, Lcom/android/volley/g;->a()V
 
     .line 392
-    new-instance v0, Lcom/kik/cache/ae;
+    new-instance v0, Lcom/kik/cache/KikVolleyImageLoader;
 
-    sget-object v1, Lcom/kik/android/b/g;->e:Lcom/android/volley/h;
+    sget-object v1, Lcom/kik/android/b/g;->e:Lcom/android/volley/g;
 
     sget-object v2, Lcom/kik/android/b/g;->g:Lcom/kik/cache/SimpleLruBitmapCache;
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/kik/cache/ae;-><init>(Lcom/android/volley/h;Lcom/kik/cache/ae$c;Lcom/kik/cache/ak;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/kik/cache/KikVolleyImageLoader;-><init>(Lcom/android/volley/g;Lcom/kik/cache/KikVolleyImageLoader$ImageCache;Lcom/kik/cache/ad;)V
 
     .line 393
-    sput-object v0, Lcom/kik/android/b/g;->h:Lcom/kik/cache/ae;
+    sput-object v0, Lcom/kik/android/b/g;->h:Lcom/kik/cache/KikVolleyImageLoader;
 
-    invoke-virtual {v0}, Lcom/kik/cache/ae;->b()V
+    invoke-virtual {v0}, Lcom/kik/cache/KikVolleyImageLoader;->b()V
 
     .line 395
     iget-object v0, p0, Lcom/kik/android/b/g;->o:Lcom/kik/events/d;
 
-    sget-object v1, Lcom/kik/android/b/g;->h:Lcom/kik/cache/ae;
+    sget-object v1, Lcom/kik/android/b/g;->h:Lcom/kik/cache/KikVolleyImageLoader;
 
-    invoke-virtual {v1}, Lcom/kik/cache/ae;->a()Lcom/kik/events/c;
+    invoke-virtual {v1}, Lcom/kik/cache/KikVolleyImageLoader;->a()Lcom/kik/events/c;
 
     move-result-object v1
 
@@ -1081,7 +1081,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/kik/android/b/g$2;-><init>(Lcom/kik/android/b/g;Landroid/content/Context;)V
 
-    invoke-virtual {p4, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {p4, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method
@@ -1090,24 +1090,23 @@
     .locals 2
 
     .prologue
-    .line 0
-    .line 6041
+    .line 1051
     invoke-interface {p0, p1}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 6042
+    .line 1052
     invoke-interface {p0, p2}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 6044
+    .line 1054
     if-ne v0, v1, :cond_0
 
-    .line 6045
+    .line 1055
     const/4 v0, 0x0
 
-    .line 6048
+    .line 1058
     :goto_0
     return v0
 
@@ -1121,51 +1120,58 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 0
     goto :goto_0
 .end method
 
 .method private static a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
-    .locals 6
+    .locals 9
 
     .prologue
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
-    .line 830
+    .line 840
     if-nez p0, :cond_0
 
-    .line 831
+    .line 841
     const/4 v0, 0x0
 
-    .line 835
+    .line 845
     :goto_0
     return-object v0
 
-    .line 833
+    .line 843
     :cond_0
-    sget-object v0, Lcom/kik/cache/ac;->f:Lcom/android/volley/i$b;
+    sget-object v1, Lcom/kik/cache/KikImageRequest;->EMPTY_BITMAP_LISTENER:Lcom/android/volley/h$b;
 
-    sget-object v1, Lcom/kik/cache/ac;->e:Lcom/android/volley/i$a;
+    sget-object v4, Lcom/kik/cache/KikImageRequest;->EMPTY_ERROR_LISTENER:Lcom/android/volley/h$a;
 
-    invoke-static {p0, v0, v1, p1}, Lcom/kik/cache/ao;->a(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;Z)Lcom/kik/cache/ao;
+    move-object v0, p0
 
-    move-result-object v1
+    move v3, v2
 
-    .line 834
-    sget-object v0, Lcom/kik/android/b/g;->h:Lcom/kik/cache/ae;
+    move v5, p1
 
-    sget-object v2, Lcom/kik/cache/ae;->a:Lcom/kik/cache/ae$e;
+    invoke-static/range {v0 .. v5}, Lcom/kik/cache/SmileyImageRequest;->getSmileyRequest(Ljava/lang/String;Lcom/android/volley/h$b;IILcom/android/volley/h$a;Z)Lcom/kik/cache/SmileyImageRequest;
 
-    const/4 v5, 0x1
+    move-result-object v4
 
-    move v4, v3
+    .line 844
+    sget-object v3, Lcom/kik/android/b/g;->h:Lcom/kik/cache/KikVolleyImageLoader;
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    sget-object v5, Lcom/kik/cache/KikVolleyImageLoader;->a:Lcom/kik/cache/KikVolleyImageLoader$d;
+
+    const/4 v8, 0x1
+
+    move v6, v2
+
+    move v7, v2
+
+    invoke-virtual/range {v3 .. v8}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     move-result-object v0
 
-    .line 835
-    invoke-virtual {v0}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    .line 845
+    invoke-virtual {v0}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -1190,29 +1196,29 @@
 
     const/4 v2, 0x0
 
-    .line 614
+    .line 624
     if-nez p0, :cond_0
 
-    .line 634
+    .line 644
     :goto_0
     return-object v0
 
-    .line 617
+    .line 627
     :cond_0
     new-instance v1, Lcom/kik/message/model/attachments/RenderInstructionSet;
 
     invoke-direct {v1}, Lcom/kik/message/model/attachments/RenderInstructionSet;-><init>()V
 
-    .line 618
-    invoke-static {}, Lkik/core/util/u;->a()Lkik/core/util/u;
+    .line 628
+    invoke-static {}, Lkik/core/util/t;->a()Lkik/core/util/t;
 
     move-result-object v3
 
-    invoke-virtual {v3, p0}, Lkik/core/util/u;->b(Ljava/lang/CharSequence;)[Lkik/core/util/l$a;
+    invoke-virtual {v3, p0}, Lkik/core/util/t;->b(Ljava/lang/CharSequence;)[Lkik/core/util/k$a;
 
     move-result-object v4
 
-    .line 620
+    .line 630
     array-length v5, v4
 
     move v3, v2
@@ -1222,13 +1228,13 @@
 
     aget-object v6, v4, v2
 
-    .line 621
+    .line 631
     new-instance v7, Lcom/kik/message/model/attachments/RenderInstruction;
 
     invoke-direct {v7}, Lcom/kik/message/model/attachments/RenderInstruction;-><init>()V
 
-    .line 622
-    invoke-virtual {v6}, Lkik/core/util/l$a;->c()Ljava/lang/String;
+    .line 632
+    invoke-virtual {v6}, Lkik/core/util/k$a;->c()Ljava/lang/String;
 
     move-result-object v8
 
@@ -1236,14 +1242,14 @@
 
     move-result-object v8
 
-    .line 623
+    .line 633
     invoke-virtual {v7, v0}, Lcom/kik/message/model/attachments/RenderInstruction;->b(Ljava/lang/String;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 624
+    .line 634
     invoke-virtual {v7, v8}, Lcom/kik/message/model/attachments/RenderInstruction;->a(Ljava/lang/String;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 625
-    invoke-virtual {v6}, Lkik/core/util/l$a;->b()I
+    .line 635
+    invoke-virtual {v6}, Lkik/core/util/k$a;->b()I
 
     move-result v8
 
@@ -1253,8 +1259,8 @@
 
     invoke-virtual {v7, v8}, Lcom/kik/message/model/attachments/RenderInstruction;->b(Ljava/lang/Integer;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 626
-    invoke-virtual {v6}, Lkik/core/util/l$a;->a()I
+    .line 636
+    invoke-virtual {v6}, Lkik/core/util/k$a;->a()I
 
     move-result v6
 
@@ -1264,17 +1270,17 @@
 
     invoke-virtual {v7, v6}, Lcom/kik/message/model/attachments/RenderInstruction;->a(Ljava/lang/Integer;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 627
+    .line 637
     invoke-virtual {v1, v7}, Lcom/kik/message/model/attachments/RenderInstructionSet;->a(Lcom/kik/message/model/attachments/RenderInstruction;)Lcom/kik/message/model/attachments/RenderInstructionSet;
 
-    .line 628
+    .line 638
     add-int/lit8 v3, v3, 0x1
 
     const/16 v6, 0x32
 
     if-ge v3, v6, :cond_1
 
-    .line 620
+    .line 630
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
@@ -1282,7 +1288,7 @@
     :cond_1
     move-object v0, v1
 
-    .line 634
+    .line 644
     goto :goto_0
 .end method
 
@@ -1300,17 +1306,17 @@
 
     const/4 v7, 0x0
 
-    .line 639
+    .line 649
     if-eqz p1, :cond_0
 
     if-nez p0, :cond_1
 
-    .line 682
+    .line 692
     :cond_0
     :goto_0
     return-object v4
 
-    .line 642
+    .line 652
     :cond_1
     invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
 
@@ -1324,7 +1330,7 @@
 
     if-nez v0, :cond_3
 
-    .line 643
+    .line 653
     :cond_2
     invoke-virtual {p1}, Lcom/kik/android/b/f;->f()Ljava/lang/String;
 
@@ -1332,18 +1338,18 @@
 
     goto :goto_0
 
-    .line 645
+    .line 655
     :cond_3
     invoke-virtual {p1}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 646
+    .line 656
     invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 647
+    .line 657
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1366,15 +1372,15 @@
 
     move-result-object v10
 
-    .line 648
+    .line 658
     invoke-static {v3, v7}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 651
+    .line 661
     if-eqz v0, :cond_4
 
-    .line 652
+    .line 662
     new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1385,7 +1391,7 @@
 
     move v6, v7
 
-    .line 673
+    .line 683
     :goto_1
     invoke-static {v9}, Lkik/android/chat/KikApplication;->a(F)I
 
@@ -1397,24 +1403,24 @@
 
     invoke-virtual {v1, v7, v7, v0, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 678
+    .line 688
     new-instance v9, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v9, v10}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 679
+    .line 689
     new-instance v0, Lcom/kik/android/b/c;
 
     invoke-virtual {v10}, Ljava/lang/String;->length()I
 
     move-result v5
 
-    invoke-direct/range {v0 .. v7}, Lcom/kik/android/b/c;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/e/j;IZZ)V
+    invoke-direct/range {v0 .. v7}, Lcom/kik/android/b/c;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
 
-    .line 680
+    .line 690
     invoke-virtual {v0, v8}, Lcom/kik/android/b/c;->a(Z)V
 
-    .line 681
+    .line 691
     invoke-virtual {v10}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -1423,28 +1429,28 @@
 
     move-object v4, v9
 
-    .line 682
+    .line 692
     goto :goto_0
 
-    .line 656
+    .line 666
     :cond_4
     if-nez v3, :cond_5
 
-    .line 658
+    .line 668
     invoke-static {v2}, Lcom/kik/android/b/g;->f(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 663
+    .line 673
     :goto_2
     if-gtz v0, :cond_6
 
-    .line 665
+    .line 675
     new-instance v4, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v4, v10}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 666
+    .line 676
     new-instance v0, Lcom/kik/android/b/k;
 
     invoke-virtual {v10}, Ljava/lang/String;->length()I
@@ -1461,7 +1467,7 @@
 
     goto/16 :goto_0
 
-    .line 661
+    .line 671
     :cond_5
     invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
 
@@ -1473,7 +1479,7 @@
 
     goto :goto_2
 
-    .line 670
+    .line 680
     :cond_6
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1488,30 +1494,30 @@
     goto :goto_1
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/CharSequence;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/e/j;Z)Ljava/lang/CharSequence;
+.method public static a(Landroid/content/Context;Ljava/lang/CharSequence;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/f/j;Z)Ljava/lang/CharSequence;
     .locals 7
 
     .prologue
-    .line 687
+    .line 697
     if-eqz p1, :cond_0
 
     if-nez p0, :cond_1
 
-    .line 688
+    .line 698
     :cond_0
     const-string v1, ""
 
-    .line 696
+    .line 706
     :goto_0
     return-object v1
 
-    .line 691
+    .line 701
     :cond_1
     new-instance v1, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v1, p1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 692
+    .line 702
     if-eqz p2, :cond_2
 
     invoke-static {p2, p1}, Lcom/kik/android/b/g;->a(Lcom/kik/message/model/attachments/RenderInstructionSet;Ljava/lang/CharSequence;)Z
@@ -1520,7 +1526,7 @@
 
     if-nez v0, :cond_3
 
-    .line 693
+    .line 703
     :cond_2
     invoke-static {p1}, Lcom/kik/android/b/g;->a(Ljava/lang/CharSequence;)Lcom/kik/message/model/attachments/RenderInstructionSet;
 
@@ -1537,8 +1543,8 @@
 
     move v6, p6
 
-    .line 695
-    invoke-static/range {v0 .. v6}, Lcom/kik/android/b/g;->a(Landroid/content/Context;Landroid/text/Spannable;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/e/j;Z)V
+    .line 705
+    invoke-static/range {v0 .. v6}, Lcom/kik/android/b/g;->a(Landroid/content/Context;Landroid/text/Spannable;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/f/j;Z)V
 
     goto :goto_0
 
@@ -1562,20 +1568,20 @@
     .end annotation
 
     .prologue
-    .line 984
+    .line 994
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    .line 985
+    .line 995
     new-instance v2, Lorg/json/JSONArray;
 
     invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
 
-    .line 986
+    .line 996
     if-eqz p0, :cond_1
 
-    .line 988
+    .line 998
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -1594,7 +1600,7 @@
 
     check-cast v0, Lcom/kik/android/b/f;
 
-    .line 989
+    .line 999
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
@@ -1603,12 +1609,12 @@
 
     if-eqz v4, :cond_0
 
-    .line 992
+    .line 1002
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
-    .line 994
+    .line 1004
     :try_start_0
     const-string v5, "title"
 
@@ -1618,7 +1624,7 @@
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 995
+    .line 1005
     const-string v5, "text"
 
     invoke-virtual {v0}, Lcom/kik/android/b/f;->f()Ljava/lang/String;
@@ -1627,7 +1633,7 @@
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 996
+    .line 1006
     const-string v5, "id"
 
     invoke-virtual {v0}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
@@ -1636,7 +1642,7 @@
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 997
+    .line 1007
     const-string v5, "install-date"
 
     invoke-virtual {v0}, Lcom/kik/android/b/f;->i()J
@@ -1645,7 +1651,7 @@
 
     invoke-virtual {v4, v5, v6, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    .line 998
+    .line 1008
     const-string v5, "active"
 
     invoke-virtual {v0}, Lcom/kik/android/b/f;->h()Z
@@ -1654,14 +1660,14 @@
 
     invoke-virtual {v4, v5, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
-    .line 999
+    .line 1009
     invoke-virtual {v2, v4}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 1002
+    .line 1012
     :catch_0
     move-exception v0
 
@@ -1669,7 +1675,7 @@
 
     goto :goto_0
 
-    .line 1007
+    .line 1017
     :cond_1
     :try_start_1
     const-string v0, "smileys"
@@ -1678,11 +1684,11 @@
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 1012
+    .line 1022
     :goto_1
     return-object v1
 
-    .line 1010
+    .line 1020
     :catch_1
     move-exception v0
 
@@ -1691,26 +1697,26 @@
     goto :goto_1
 .end method
 
-.method private static a(Landroid/content/Context;Landroid/text/Spannable;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/e/j;Z)V
+.method private static a(Landroid/content/Context;Landroid/text/Spannable;Lcom/kik/message/model/attachments/RenderInstructionSet;IZLkik/android/f/j;Z)V
     .locals 17
 
     .prologue
-    .line 1175
+    .line 1185
     if-eqz p0, :cond_0
 
     if-eqz p2, :cond_0
 
-    invoke-virtual/range {p2 .. p2}, Lcom/kik/message/model/attachments/RenderInstructionSet;->b()Ljava/util/List;
+    invoke-virtual/range {p2 .. p2}, Lcom/kik/message/model/attachments/RenderInstructionSet;->a()Ljava/util/List;
 
     move-result-object v1
 
     if-nez v1, :cond_1
 
-    .line 1265
+    .line 1275
     :cond_0
     return-void
 
-    .line 1180
+    .line 1190
     :cond_1
     const/4 v1, 0x0
 
@@ -1737,22 +1743,22 @@
 
     aget-object v4, v1, v2
 
-    .line 1181
+    .line 1191
     move-object/from16 v0, p1
 
     invoke-interface {v0, v4}, Landroid/text/Spannable;->removeSpan(Ljava/lang/Object;)V
 
-    .line 1180
+    .line 1190
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 1183
+    .line 1193
     :cond_2
     const/4 v1, 0x0
 
-    .line 1185
-    invoke-virtual/range {p2 .. p2}, Lcom/kik/message/model/attachments/RenderInstructionSet;->b()Ljava/util/List;
+    .line 1195
+    invoke-virtual/range {p2 .. p2}, Lcom/kik/message/model/attachments/RenderInstructionSet;->a()Ljava/util/List;
 
     move-result-object v2
 
@@ -1778,10 +1784,10 @@
 
     check-cast v14, Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 1187
+    .line 1197
     if-eqz v14, :cond_3
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -1791,7 +1797,7 @@
 
     if-ltz v1, :cond_3
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -1805,7 +1811,7 @@
 
     if-gt v1, v2, :cond_3
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -1813,7 +1819,7 @@
 
     move-result v1
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
 
     move-result-object v2
 
@@ -1823,30 +1829,30 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 1193
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->f()Ljava/lang/String;
+    .line 1203
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->e()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1194
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->e()Ljava/lang/String;
+    .line 1204
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 1195
+    .line 1205
     move/from16 v0, p6
 
     invoke-static {v4, v0}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    .line 1197
+    .line 1207
     const/4 v7, 0x0
 
-    .line 1198
+    .line 1208
     if-eqz v1, :cond_6
 
-    .line 1199
+    .line 1209
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1855,11 +1861,11 @@
 
     invoke-direct {v2, v5, v1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 1219
+    .line 1229
     :goto_2
     if-lez p3, :cond_8
 
-    .line 1220
+    .line 1230
     const/4 v1, 0x0
 
     const/4 v5, 0x0
@@ -1882,14 +1888,14 @@
 
     invoke-virtual {v2, v1, v5, v6, v8}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 1226
+    .line 1236
     :goto_3
     if-eqz p4, :cond_9
 
-    .line 1227
-    new-instance v1, Lkik/android/widget/x;
+    .line 1237
+    new-instance v1, Lkik/android/widget/as;
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
 
     move-result-object v5
 
@@ -1897,7 +1903,7 @@
 
     move-result v5
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v6
 
@@ -1909,11 +1915,11 @@
 
     move-object/from16 v5, p5
 
-    invoke-direct/range {v1 .. v7}, Lkik/android/widget/x;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/e/j;IZ)V
+    invoke-direct/range {v1 .. v7}, Lkik/android/widget/as;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZ)V
 
-    .line 1244
+    .line 1254
     :goto_4
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v2
 
@@ -1921,7 +1927,7 @@
 
     move-result v2
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
 
     move-result-object v3
 
@@ -1935,18 +1941,18 @@
 
     invoke-interface {v0, v1, v2, v3, v4}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
-    .line 1245
+    .line 1255
     add-int/lit8 v1, v15, 0x1
 
     const/16 v2, 0x32
 
     if-lt v1, v2, :cond_d
 
-    .line 1251
+    .line 1261
     :cond_4
     if-eqz p6, :cond_0
 
-    .line 1252
+    .line 1262
     const/4 v1, 0x0
 
     :goto_5
@@ -1956,7 +1962,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 1255
+    .line 1265
     move-object/from16 v0, p1
 
     invoke-interface {v0, v1}, Landroid/text/Spannable;->charAt(I)C
@@ -1967,18 +1973,18 @@
 
     if-ne v2, v3, :cond_5
 
-    .line 1257
+    .line 1267
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const v3, 0x7f020329
+    const v3, 0x7f020378
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    .line 1258
+    .line 1268
     const/4 v3, 0x0
 
     const/4 v4, 0x0
@@ -1999,12 +2005,12 @@
 
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 1260
+    .line 1270
     new-instance v3, Landroid/text/style/ImageSpan;
 
     invoke-direct {v3, v2}, Landroid/text/style/ImageSpan;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 1261
+    .line 1271
     add-int/lit8 v2, v1, 0x1
 
     const/16 v4, 0x21
@@ -2013,22 +2019,22 @@
 
     invoke-interface {v0, v3, v1, v2, v4}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
-    .line 1252
+    .line 1262
     :cond_5
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_5
 
-    .line 1204
+    .line 1214
     :cond_6
-    invoke-static {v4}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v4}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
-    .line 1206
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->e()Ljava/lang/String;
+    .line 1216
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2036,14 +2042,14 @@
 
     move-result v1
 
-    .line 1212
+    .line 1222
     :goto_6
     if-lez v1, :cond_3
 
-    .line 1215
+    .line 1225
     const/4 v7, 0x1
 
-    .line 1216
+    .line 1226
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -2054,9 +2060,9 @@
 
     goto/16 :goto_2
 
-    .line 1210
+    .line 1220
     :cond_7
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->e()Ljava/lang/String;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2066,7 +2072,7 @@
 
     goto :goto_6
 
-    .line 1223
+    .line 1233
     :cond_8
     const/4 v1, 0x0
 
@@ -2084,14 +2090,14 @@
 
     goto/16 :goto_3
 
-    .line 1230
+    .line 1240
     :cond_9
     if-eqz p6, :cond_a
 
-    .line 1231
+    .line 1241
     new-instance v8, Landroid/graphics/drawable/InsetDrawable;
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -2118,10 +2124,10 @@
 
     invoke-direct/range {v8 .. v13}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
 
-    .line 1233
+    .line 1243
     if-lez p3, :cond_c
 
-    .line 1234
+    .line 1244
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -2146,12 +2152,12 @@
 
     move-object v2, v8
 
-    .line 1241
+    .line 1251
     :cond_a
     :goto_8
     new-instance v1, Lcom/kik/android/b/b;
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
 
     move-result-object v5
 
@@ -2159,7 +2165,7 @@
 
     move-result v5
 
-    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v14}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v6
 
@@ -2173,11 +2179,11 @@
 
     move/from16 v8, p6
 
-    invoke-direct/range {v1 .. v8}, Lcom/kik/android/b/b;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/e/j;IZZ)V
+    invoke-direct/range {v1 .. v8}, Lcom/kik/android/b/b;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
 
     goto/16 :goto_4
 
-    .line 1231
+    .line 1241
     :cond_b
     const/high16 v1, 0x40000000    # 2.0f
 
@@ -2187,7 +2193,7 @@
 
     goto :goto_7
 
-    .line 1237
+    .line 1247
     :cond_c
     const/4 v1, 0x0
 
@@ -2221,7 +2227,7 @@
 
     const/4 v6, 0x0
 
-    .line 763
+    .line 773
     if-eqz p0, :cond_0
 
     if-eqz p1, :cond_0
@@ -2230,11 +2236,11 @@
 
     if-nez p0, :cond_1
 
-    .line 797
+    .line 807
     :cond_0
     return-void
 
-    .line 766
+    .line 776
     :cond_1
     new-instance v0, Ljava/util/ArrayList;
 
@@ -2254,7 +2260,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 768
+    .line 778
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v9
@@ -2275,10 +2281,10 @@
 
     check-cast v8, Lcom/kik/android/b/i;
 
-    .line 769
+    .line 779
     if-eqz v8, :cond_2
 
-    invoke-interface {v8}, Lcom/kik/android/b/i;->a()Ljava/lang/String;
+    invoke-interface {v8}, Lcom/kik/android/b/i;->c()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2288,21 +2294,21 @@
 
     if-eqz v0, :cond_2
 
-    invoke-interface {v8}, Lcom/kik/android/b/i;->d()Z
+    invoke-interface {v8}, Lcom/kik/android/b/i;->f()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 772
+    .line 782
     invoke-static {p2, v6}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 774
+    .line 784
     if-eqz v0, :cond_2
 
-    .line 775
+    .line 785
     new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -2311,7 +2317,7 @@
 
     invoke-direct {v1, v2, v0}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 783
+    .line 793
     invoke-static {v12}, Lkik/android/chat/KikApplication;->a(F)I
 
     move-result v0
@@ -2322,26 +2328,26 @@
 
     invoke-virtual {v1, v6, v6, v0, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 788
+    .line 798
     invoke-interface {p1, v8}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v10
 
-    .line 789
+    .line 799
     invoke-interface {p1, v8}, Landroid/text/Spannable;->getSpanEnd(Ljava/lang/Object;)I
 
     move-result v11
 
-    .line 791
+    .line 801
     new-instance v0, Lcom/kik/android/b/b;
 
-    invoke-interface {v8}, Lcom/kik/android/b/i;->b()Ljava/lang/String;
+    invoke-interface {v8}, Lcom/kik/android/b/i;->d()Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v4, 0x0
 
-    invoke-interface {v8}, Lcom/kik/android/b/i;->c()I
+    invoke-interface {v8}, Lcom/kik/android/b/i;->e()I
 
     move-result v5
 
@@ -2349,19 +2355,19 @@
 
     move v7, v6
 
-    invoke-direct/range {v0 .. v7}, Lcom/kik/android/b/b;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/e/j;IZZ)V
+    invoke-direct/range {v0 .. v7}, Lcom/kik/android/b/b;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
 
-    .line 792
-    invoke-interface {v8}, Lcom/kik/android/b/i;->e()Z
+    .line 802
+    invoke-interface {v8}, Lcom/kik/android/b/i;->g()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/kik/android/b/c;->a(Z)V
 
-    .line 793
+    .line 803
     invoke-interface {p1, v8}, Landroid/text/Spannable;->removeSpan(Ljava/lang/Object;)V
 
-    .line 794
+    .line 804
     const/16 v1, 0x21
 
     invoke-interface {p1, v0, v10, v11, v1}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
@@ -2373,14 +2379,14 @@
     .locals 4
 
     .prologue
-    .line 730
+    .line 740
     if-nez p0, :cond_1
 
-    .line 737
+    .line 747
     :cond_0
     return-void
 
-    .line 733
+    .line 743
     :cond_1
     new-instance v0, Ljava/util/ArrayList;
 
@@ -2402,7 +2408,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 734
+    .line 744
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -2420,7 +2426,7 @@
 
     check-cast v0, Lcom/kik/android/b/g$a;
 
-    .line 735
+    .line 745
     invoke-interface {p0, v0}, Landroid/text/Spannable;->removeSpan(Ljava/lang/Object;)V
 
     goto :goto_0
@@ -2430,7 +2436,7 @@
     .locals 8
 
     .prologue
-    .line 801
+    .line 811
     if-eqz p0, :cond_0
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -2441,12 +2447,12 @@
 
     if-nez v0, :cond_1
 
-    .line 826
+    .line 836
     :cond_0
     :goto_0
     return-void
 
-    .line 804
+    .line 814
     :cond_1
     invoke-virtual {p0}, Landroid/widget/EditText;->getSelectionEnd()I
 
@@ -2458,12 +2464,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 807
+    .line 817
     invoke-virtual {p0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v3
 
-    .line 808
+    .line 818
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getSelectionStart()I
@@ -2486,25 +2492,25 @@
 
     invoke-direct {v2, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 809
+    .line 819
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 810
+    .line 820
     invoke-virtual {p0}, Landroid/widget/EditText;->getSelectionEnd()I
 
     move-result v4
 
-    .line 811
+    .line 821
     const/4 v1, -0x1
 
-    .line 812
+    .line 822
     const/4 v0, 0x0
 
-    .line 813
+    .line 823
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v5
@@ -2526,7 +2532,7 @@
 
     check-cast v0, Lcom/kik/android/b/c;
 
-    .line 814
+    .line 824
     invoke-interface {v3, v0}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v6
@@ -2539,16 +2545,16 @@
 
     if-le v6, v4, :cond_2
 
-    .line 815
+    .line 825
     const/4 v1, 0x1
 
-    .line 817
+    .line 827
     :cond_2
     invoke-interface {v3, v0}, Landroid/text/Spannable;->getSpanEnd(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 818
+    .line 828
     if-ltz v2, :cond_3
 
     sub-int v6, v0, v4
@@ -2569,16 +2575,16 @@
     :goto_2
     move v2, v0
 
-    .line 821
+    .line 831
     goto :goto_1
 
-    .line 822
+    .line 832
     :cond_4
     if-ltz v2, :cond_0
 
     if-eqz v1, :cond_0
 
-    .line 823
+    .line 833
     invoke-virtual {p0, v2}, Landroid/widget/EditText;->setSelection(I)V
 
     goto :goto_0
@@ -2600,7 +2606,7 @@
     const/16 v5, 0x10
 
     .line 79
-    .line 5423
+    .line 6423
     iget-object v1, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v1}, Lcom/kik/android/b/l;->g()Z
@@ -2609,16 +2615,16 @@
 
     if-nez v1, :cond_0
 
-    .line 5426
-    iget-object v1, p0, Lcom/kik/android/b/g;->k:Lkik/core/interfaces/ae;
+    .line 6426
+    iget-object v1, p0, Lcom/kik/android/b/g;->k:Lkik/core/interfaces/ag;
 
-    invoke-interface {v1}, Lkik/core/interfaces/ae;->d()Lkik/core/datatypes/ad;
+    invoke-interface {v1}, Lkik/core/interfaces/ag;->d()Lkik/core/datatypes/ac;
 
     move-result-object v1
 
-    iget-object v1, v1, Lkik/core/datatypes/ad;->c:Ljava/lang/String;
+    iget-object v1, v1, Lkik/core/datatypes/ac;->c:Ljava/lang/String;
 
-    .line 5427
+    .line 6427
     if-eqz v1, :cond_0
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -2627,25 +2633,25 @@
 
     if-nez v2, :cond_1
 
-    .line 5437
+    .line 6437
     :cond_0
     :goto_0
     return-void
 
-    .line 5430
+    .line 6430
     :cond_1
     invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5435
-    iget-object v2, p0, Lcom/kik/android/b/g;->l:Lkik/core/interfaces/y;
+    .line 6435
+    iget-object v2, p0, Lcom/kik/android/b/g;->l:Lkik/core/interfaces/z;
 
-    invoke-interface {v2, v1}, Lkik/core/interfaces/y;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v2, v1}, Lkik/core/interfaces/z;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5436
+    .line 6436
     if-eqz v1, :cond_0
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -2656,7 +2662,7 @@
 
     if-lt v2, v3, :cond_0
 
-    .line 5439
+    .line 6439
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -2673,7 +2679,7 @@
 
     move-result-object v2
 
-    .line 5440
+    .line 6440
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -2688,7 +2694,7 @@
 
     move-result-object v1
 
-    .line 5442
+    .line 6442
     invoke-static {v2, v5}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
 
     move-result-wide v2
@@ -2697,7 +2703,7 @@
 
     long-to-int v2, v2
 
-    .line 5443
+    .line 6443
     invoke-static {v1, v5}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
 
     move-result-wide v4
@@ -2706,7 +2712,7 @@
 
     long-to-int v3, v4
 
-    .line 5445
+    .line 6445
     sget-object v1, Lcom/kik/android/b/g;->c:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2717,7 +2723,7 @@
 
     check-cast v6, Lcom/kik/android/b/g$d;
 
-    .line 5446
+    .line 6446
     sget-object v1, Lcom/kik/android/b/g;->d:Ljava/util/List;
 
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2728,12 +2734,12 @@
 
     check-cast v7, Lcom/kik/android/b/g$d;
 
-    .line 5448
+    .line 6448
     new-instance v8, Ljava/util/ArrayList;
 
     invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5449
+    .line 6449
     invoke-static {v6}, Lcom/kik/android/b/g$d;->a(Lcom/kik/android/b/g$d;)Ljava/lang/String;
 
     move-result-object v1
@@ -2746,7 +2752,7 @@
 
     move-result-object v3
 
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v4
 
@@ -2754,7 +2760,7 @@
 
     move-result-object v9
 
-    .line 5450
+    .line 6450
     invoke-static {v7}, Lcom/kik/android/b/g$d;->a(Lcom/kik/android/b/g$d;)Ljava/lang/String;
 
     move-result-object v1
@@ -2767,7 +2773,7 @@
 
     move-result-object v3
 
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v4
 
@@ -2775,18 +2781,18 @@
 
     move-result-object v1
 
-    .line 5451
+    .line 6451
     invoke-interface {v8, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5452
+    .line 6452
     invoke-interface {v8, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5454
+    .line 6454
     invoke-virtual {v9}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/cache/ao;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/kik/cache/SmileyImageRequest;->getDiskCacheKeyForID(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2810,12 +2816,12 @@
 
     invoke-static {v2, v0}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 5455
+    .line 6455
     invoke-virtual {v1}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/cache/ao;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/kik/cache/SmileyImageRequest;->getDiskCacheKeyForID(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2839,12 +2845,12 @@
 
     invoke-static {v2, v0}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 5456
+    .line 6456
     invoke-virtual {v9}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/cache/ag;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/kik/cache/MediaTraySmileyImageRequest;->getDiskCacheKeyForID(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2868,12 +2874,12 @@
 
     invoke-static {v2, v0}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 5457
+    .line 6457
     invoke-virtual {v1}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kik/cache/ag;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/kik/cache/MediaTraySmileyImageRequest;->getDiskCacheKeyForID(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2897,12 +2903,12 @@
 
     invoke-static {v1, v0}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 5458
+    .line 6458
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0, v8}, Lcom/kik/android/b/l;->a(Ljava/util/List;)V
 
-    .line 5459
+    .line 6459
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0}, Lcom/kik/android/b/l;->h()V
@@ -2910,25 +2916,25 @@
     goto/16 :goto_0
 .end method
 
-.method static synthetic a(Lcom/kik/cache/ac;)V
+.method static synthetic a(Lcom/kik/cache/KikImageRequest;)V
     .locals 2
 
     .prologue
     .line 79
-    .line 4509
+    .line 5509
     if-eqz p0, :cond_0
 
-    .line 4512
-    instance-of v0, p0, Lcom/kik/cache/ao;
+    .line 5512
+    instance-of v0, p0, Lcom/kik/cache/SmileyImageRequest;
 
     if-eqz v0, :cond_0
 
-    .line 4514
+    .line 5514
     sget-object v0, Lcom/kik/android/b/g;->q:Lcom/kik/events/g;
 
-    check-cast p0, Lcom/kik/cache/ao;
+    check-cast p0, Lcom/kik/cache/SmileyImageRequest;
 
-    invoke-virtual {p0}, Lcom/kik/cache/ao;->u()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/kik/cache/SmileyImageRequest;->getSmileyId()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2952,9 +2958,9 @@
 
     .line 466
     :try_start_0
-    new-instance v0, Lcom/android/volley/a$a;
+    new-instance v0, Lcom/android/volley/Cache$a;
 
-    invoke-direct {v0}, Lcom/android/volley/a$a;-><init>()V
+    invoke-direct {v0}, Lcom/android/volley/Cache$a;-><init>()V
 
     .line 467
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -2963,7 +2969,7 @@
 
     add-long/2addr v2, v4
 
-    iput-wide v2, v0, Lcom/android/volley/a$a;->d:J
+    iput-wide v2, v0, Lcom/android/volley/Cache$a;->d:J
 
     .line 468
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -2972,23 +2978,23 @@
 
     add-long/2addr v2, v4
 
-    iput-wide v2, v0, Lcom/android/volley/a$a;->e:J
+    iput-wide v2, v0, Lcom/android/volley/Cache$a;->e:J
 
     .line 469
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v2, 0x64
 
-    invoke-static {p1, v1, v2}, Lcom/kik/util/bz;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
+    invoke-static {p1, v1, v2}, Lcom/kik/util/cr;->b(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap$CompressFormat;I)[B
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/android/volley/a$a;->a:[B
+    iput-object v1, v0, Lcom/android/volley/Cache$a;->a:[B
 
     .line 470
-    sget-object v1, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/c;
+    sget-object v1, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/DiskBasedCache;
 
-    invoke-virtual {v1, p0, v0}, Lcom/android/volley/toolbox/c;->a(Ljava/lang/String;Lcom/android/volley/a$a;)V
+    invoke-virtual {v1, p0, v0}, Lcom/android/volley/toolbox/DiskBasedCache;->put(Ljava/lang/String;Lcom/android/volley/Cache$a;)V
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3023,16 +3029,16 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 711
+    .line 721
     if-nez p0, :cond_0
 
     move v0, v1
 
-    .line 725
+    .line 735
     :goto_0
     return v0
 
-    .line 714
+    .line 724
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
@@ -3052,7 +3058,7 @@
 
     invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 715
+    .line 725
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -3070,21 +3076,21 @@
 
     check-cast v0, Lcom/kik/android/b/i;
 
-    .line 716
+    .line 726
     invoke-interface {p0, v0}, Landroid/text/Editable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v3
 
-    .line 717
+    .line 727
     invoke-interface {p0, v0}, Landroid/text/Editable;->getSpanEnd(Ljava/lang/Object;)I
 
     move-result v4
 
-    .line 718
+    .line 728
     sub-int v5, v4, v3
 
-    .line 719
-    invoke-interface {v0}, Lcom/kik/android/b/i;->c()I
+    .line 729
+    invoke-interface {v0}, Lcom/kik/android/b/i;->e()I
 
     move-result v0
 
@@ -3092,7 +3098,7 @@
 
     if-lez v5, :cond_1
 
-    .line 721
+    .line 731
     new-instance v0, Lcom/kik/android/b/g$a;
 
     invoke-direct {v0}, Lcom/kik/android/b/g$a;-><init>()V
@@ -3101,7 +3107,7 @@
 
     invoke-interface {p0, v0, v3, v4, v1}, Landroid/text/Editable;->setSpan(Ljava/lang/Object;III)V
 
-    .line 722
+    .line 732
     const/4 v0, 0x1
 
     goto :goto_0
@@ -3109,7 +3115,7 @@
     :cond_2
     move v0, v1
 
-    .line 725
+    .line 735
     goto :goto_0
 .end method
 
@@ -3133,7 +3139,7 @@
 
     .line 483
     :cond_1
-    invoke-virtual {p0}, Lcom/kik/message/model/attachments/RenderInstructionSet;->b()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/kik/message/model/attachments/RenderInstructionSet;->a()Ljava/util/List;
 
     move-result-object v1
 
@@ -3175,19 +3181,19 @@
     check-cast v0, Lcom/kik/message/model/attachments/RenderInstruction;
 
     .line 491
-    invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_3
-
-    invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v4
 
     if-eqz v4, :cond_3
 
     invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_3
+
+    invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v4
 
@@ -3207,7 +3213,7 @@
     :cond_4
     if-eqz v1, :cond_5
 
-    invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {v0}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v4
 
@@ -3215,7 +3221,7 @@
 
     move-result v4
 
-    invoke-virtual {v1}, Lcom/kik/message/model/attachments/RenderInstruction;->d()Ljava/lang/Integer;
+    invoke-virtual {v1}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
 
     move-result-object v1
 
@@ -3249,32 +3255,32 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1030
+    .line 1040
     if-nez p0, :cond_0
 
-    .line 1031
+    .line 1041
     const/4 v0, 0x0
 
-    .line 1072
+    .line 1082
     :goto_0
     return-object v0
 
-    .line 1034
+    .line 1044
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1}, Lkik/core/util/v;->h(Ljava/lang/String;)I
+    invoke-static {v1}, Lkik/core/util/u;->h(Ljava/lang/String;)I
 
     move-result v3
 
-    .line 1035
+    .line 1045
     new-instance v2, Lcom/kik/message/model/attachments/RenderInstructionSet;
 
     invoke-direct {v2}, Lcom/kik/message/model/attachments/RenderInstructionSet;-><init>()V
 
-    .line 1036
+    .line 1046
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Landroid/text/Spannable;->length()I
@@ -3293,14 +3299,14 @@
 
     invoke-direct {v1, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 1039
+    .line 1049
     invoke-static {p0}, Lcom/kik/android/b/h;->a(Landroid/text/Spannable;)Ljava/util/Comparator;
 
     move-result-object v4
 
     invoke-static {v1, v4}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 1052
+    .line 1062
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -3321,34 +3327,34 @@
 
     check-cast v0, Lcom/kik/android/b/i;
 
-    .line 1053
+    .line 1063
     if-eqz v0, :cond_1
 
-    .line 1057
-    invoke-interface {v0}, Lcom/kik/android/b/i;->e()Z
+    .line 1067
+    invoke-interface {v0}, Lcom/kik/android/b/i;->g()Z
 
     move-result v5
 
-    .line 1059
+    .line 1069
     new-instance v6, Lcom/kik/message/model/attachments/RenderInstruction;
 
     invoke-direct {v6}, Lcom/kik/message/model/attachments/RenderInstruction;-><init>()V
 
-    .line 1060
-    invoke-interface {v0}, Lcom/kik/android/b/i;->a()Ljava/lang/String;
+    .line 1070
+    invoke-interface {v0}, Lcom/kik/android/b/i;->c()Ljava/lang/String;
 
     move-result-object v7
 
     invoke-virtual {v6, v7}, Lcom/kik/message/model/attachments/RenderInstruction;->b(Ljava/lang/String;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 1061
-    invoke-interface {v0}, Lcom/kik/android/b/i;->b()Ljava/lang/String;
+    .line 1071
+    invoke-interface {v0}, Lcom/kik/android/b/i;->d()Ljava/lang/String;
 
     move-result-object v7
 
     invoke-virtual {v6, v7}, Lcom/kik/message/model/attachments/RenderInstruction;->a(Ljava/lang/String;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 1062
+    .line 1072
     invoke-interface {p0, v0}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v7
@@ -3363,7 +3369,7 @@
 
     invoke-virtual {v6, v7}, Lcom/kik/message/model/attachments/RenderInstruction;->a(Ljava/lang/Integer;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 1063
+    .line 1073
     invoke-interface {p0, v0}, Landroid/text/Spannable;->getSpanEnd(Ljava/lang/Object;)I
 
     move-result v0
@@ -3372,13 +3378,13 @@
 
     sub-int/2addr v0, v1
 
-    .line 1064
+    .line 1074
     if-eqz v5, :cond_3
 
-    .line 1065
+    .line 1075
     add-int/lit8 v0, v0, -0x1
 
-    .line 1066
+    .line 1076
     add-int/lit8 v1, v1, 0x1
 
     move v8, v0
@@ -3387,7 +3393,7 @@
 
     move v1, v8
 
-    .line 1068
+    .line 1078
     :goto_2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3395,18 +3401,18 @@
 
     invoke-virtual {v6, v1}, Lcom/kik/message/model/attachments/RenderInstruction;->b(Ljava/lang/Integer;)Lcom/kik/message/model/attachments/RenderInstruction;
 
-    .line 1070
+    .line 1080
     invoke-virtual {v2, v6}, Lcom/kik/message/model/attachments/RenderInstructionSet;->a(Lcom/kik/message/model/attachments/RenderInstruction;)Lcom/kik/message/model/attachments/RenderInstructionSet;
 
     move v1, v0
 
-    .line 1071
+    .line 1081
     goto :goto_1
 
     :cond_2
     move-object v0, v2
 
-    .line 1072
+    .line 1082
     goto :goto_0
 
     :cond_3
@@ -3423,14 +3429,14 @@
     .locals 4
 
     .prologue
-    .line 741
+    .line 751
     if-nez p0, :cond_1
 
-    .line 751
+    .line 761
     :cond_0
     return-void
 
-    .line 744
+    .line 754
     :cond_1
     new-instance v0, Ljava/util/ArrayList;
 
@@ -3452,7 +3458,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 745
+    .line 755
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -3471,10 +3477,10 @@
 
     check-cast v0, Lcom/kik/android/b/g$a;
 
-    .line 746
+    .line 756
     if-eqz v0, :cond_2
 
-    .line 749
+    .line 759
     invoke-interface {p0, v0}, Landroid/text/Editable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result v2
@@ -3505,14 +3511,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 880
+    .line 890
     if-nez p0, :cond_1
 
-    .line 891
+    .line 901
     :cond_0
     return-void
 
-    .line 883
+    .line 893
     :cond_1
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3532,43 +3538,43 @@
 
     check-cast v0, Lcom/kik/android/b/f;
 
-    .line 884
+    .line 894
     if-eqz v0, :cond_2
 
-    .line 888
+    .line 898
     invoke-virtual {v0}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v1, v3}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
 
-    .line 889
+    .line 899
     invoke-virtual {v0}, Lcom/kik/android/b/f;->e()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3840
+    .line 4850
     if-eqz v0, :cond_2
 
-    .line 3843
-    sget-object v1, Lcom/kik/cache/ag;->f:Lcom/android/volley/i$b;
+    .line 4853
+    sget-object v1, Lcom/kik/cache/MediaTraySmileyImageRequest;->EMPTY_BITMAP_LISTENER:Lcom/android/volley/h$b;
 
-    sget-object v2, Lcom/kik/cache/ag;->e:Lcom/android/volley/i$a;
+    sget-object v2, Lcom/kik/cache/MediaTraySmileyImageRequest;->EMPTY_ERROR_LISTENER:Lcom/android/volley/h$a;
 
-    invoke-static {v0, v1, v2}, Lcom/kik/cache/ag;->a(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)Lcom/kik/cache/ag;
+    invoke-static {v0, v1, v3, v3, v2}, Lcom/kik/cache/MediaTraySmileyImageRequest;->getMediaTraySmileyRequest(Ljava/lang/String;Lcom/android/volley/h$b;IILcom/android/volley/h$a;)Lcom/kik/cache/MediaTraySmileyImageRequest;
 
     move-result-object v1
 
-    .line 3844
-    sget-object v0, Lcom/kik/android/b/g;->h:Lcom/kik/cache/ae;
+    .line 4854
+    sget-object v0, Lcom/kik/android/b/g;->h:Lcom/kik/cache/KikVolleyImageLoader;
 
-    sget-object v2, Lcom/kik/cache/ae;->a:Lcom/kik/cache/ae$e;
+    sget-object v2, Lcom/kik/cache/KikVolleyImageLoader;->a:Lcom/kik/cache/KikVolleyImageLoader$d;
 
     const/4 v5, 0x1
 
     move v4, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     goto :goto_0
 .end method
@@ -3577,18 +3583,18 @@
     .locals 1
 
     .prologue
-    .line 873
+    .line 883
     invoke-static {p0}, Lcom/kik/android/b/g;->c(Lorg/json/JSONObject;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 874
+    .line 884
     invoke-static {p0}, Lcom/kik/android/b/g;->d(Lorg/json/JSONObject;)V
 
-    .line 875
+    .line 885
     invoke-static {v0}, Lcom/kik/android/b/g;->b(Ljava/util/List;)V
 
-    .line 876
+    .line 886
     return-void
 .end method
 
@@ -3632,21 +3638,21 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 966
+    .line 976
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 967
+    .line 977
     if-nez p0, :cond_0
 
     move-object v0, v7
 
-    .line 979
+    .line 989
     :goto_0
     return-object v0
 
-    .line 970
+    .line 980
     :cond_0
     const-string v0, "smileys"
 
@@ -3654,10 +3660,10 @@
 
     move-result-object v9
 
-    .line 971
+    .line 981
     if-eqz v9, :cond_4
 
-    .line 972
+    .line 982
     const/4 v0, 0x0
 
     move v6, v0
@@ -3669,24 +3675,24 @@
 
     if-ge v6, v0, :cond_4
 
-    .line 973
+    .line 983
     invoke-virtual {v9, v6}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v3
 
-    .line 4017
+    .line 5027
     if-nez v3, :cond_2
 
     move-object v0, v8
 
-    .line 974
+    .line 984
     :goto_2
     if-eqz v0, :cond_1
 
-    .line 975
+    .line 985
     invoke-virtual {v7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 972
+    .line 982
     :cond_1
     add-int/lit8 v0, v6, 0x1
 
@@ -3694,7 +3700,7 @@
 
     goto :goto_1
 
-    .line 4020
+    .line 5030
     :cond_2
     const-string v0, "id"
 
@@ -3702,15 +3708,15 @@
 
     move-result-object v0
 
-    .line 4021
+    .line 5031
     if-nez v0, :cond_3
 
     move-object v0, v8
 
-    .line 4023
+    .line 5033
     goto :goto_2
 
-    .line 4025
+    .line 5035
     :cond_3
     const-string v0, "title"
 
@@ -3736,7 +3742,7 @@
 
     move-result-object v3
 
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v4
 
@@ -3749,7 +3755,7 @@
     :cond_4
     move-object v0, v7
 
-    .line 979
+    .line 989
     goto :goto_0
 .end method
 
@@ -3759,14 +3765,14 @@
     .prologue
     const-wide/32 v8, 0x41353000
 
-    .line 895
+    .line 905
     if-nez p0, :cond_1
 
-    .line 925
+    .line 935
     :cond_0
     return-void
 
-    .line 898
+    .line 908
     :cond_1
     const-string v0, "smileys"
 
@@ -3774,10 +3780,10 @@
 
     move-result-object v2
 
-    .line 899
+    .line 909
     if-eqz v2, :cond_0
 
-    .line 900
+    .line 910
     const/4 v0, 0x0
 
     :goto_0
@@ -3787,22 +3793,22 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 901
+    .line 911
     invoke-virtual {v2, v0}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    .line 902
+    .line 912
     if-eqz v1, :cond_2
 
-    .line 903
+    .line 913
     const-string v3, "id"
 
     invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 904
+    .line 914
     const-string v4, "image"
 
     const/4 v5, 0x0
@@ -3811,12 +3817,12 @@
 
     move-result-object v1
 
-    .line 905
+    .line 915
     if-eqz v3, :cond_2
 
     if-eqz v1, :cond_2
 
-    .line 907
+    .line 917
     const/16 v4, 0x10
 
     :try_start_0
@@ -3824,57 +3830,57 @@
 
     move-result-object v1
 
-    .line 908
-    invoke-static {v3}, Lcom/kik/cache/ao;->d(Ljava/lang/String;)Ljava/lang/String;
+    .line 918
+    invoke-static {v3}, Lcom/kik/cache/SmileyImageRequest;->getDiskCacheKeyForID(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 909
-    new-instance v4, Lcom/android/volley/a$a;
+    .line 919
+    new-instance v4, Lcom/android/volley/Cache$a;
 
-    invoke-direct {v4}, Lcom/android/volley/a$a;-><init>()V
+    invoke-direct {v4}, Lcom/android/volley/Cache$a;-><init>()V
 
-    .line 910
+    .line 920
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
 
     add-long/2addr v6, v8
 
-    iput-wide v6, v4, Lcom/android/volley/a$a;->d:J
+    iput-wide v6, v4, Lcom/android/volley/Cache$a;->d:J
 
-    .line 911
+    .line 921
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
 
     add-long/2addr v6, v8
 
-    iput-wide v6, v4, Lcom/android/volley/a$a;->e:J
+    iput-wide v6, v4, Lcom/android/volley/Cache$a;->e:J
 
-    .line 912
-    iput-object v1, v4, Lcom/android/volley/a$a;->a:[B
+    .line 922
+    iput-object v1, v4, Lcom/android/volley/Cache$a;->a:[B
 
-    .line 913
-    sget-object v1, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/c;
+    .line 923
+    sget-object v1, Lcom/kik/android/b/g;->f:Lcom/android/volley/toolbox/DiskBasedCache;
 
-    invoke-virtual {v1, v3, v4}, Lcom/android/volley/toolbox/c;->a(Ljava/lang/String;Lcom/android/volley/a$a;)V
+    invoke-virtual {v1, v3, v4}, Lcom/android/volley/toolbox/DiskBasedCache;->put(Ljava/lang/String;Lcom/android/volley/Cache$a;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 900
+    .line 910
     :cond_2
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 915
+    .line 925
     :catch_0
     move-exception v1
 
-    .line 916
+    .line 926
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "unable to rip smiley Image:"
@@ -3889,11 +3895,11 @@
 
     goto :goto_1
 
-    .line 918
+    .line 928
     :catch_1
     move-exception v1
 
-    .line 919
+    .line 929
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "unable to rip smiley Image:"
@@ -4088,28 +4094,28 @@
     .locals 16
 
     .prologue
-    .line 755
+    .line 765
     if-eqz p2, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 756
+    .line 766
     :cond_0
     new-instance v1, Lcom/kik/android/b/g$c;
 
     invoke-direct {v1}, Lcom/kik/android/b/g$c;-><init>()V
 
-    .line 3095
+    .line 4105
     :goto_0
     return-object v1
 
-    .line 3093
+    .line 4103
     :cond_1
     new-instance v10, Lcom/kik/android/b/g$c;
 
     invoke-direct {v10}, Lcom/kik/android/b/g$c;-><init>()V
 
-    .line 3094
+    .line 4104
     if-eqz p1, :cond_2
 
     if-nez p2, :cond_3
@@ -4117,10 +4123,10 @@
     :cond_2
     move-object v1, v10
 
-    .line 3095
+    .line 4105
     goto :goto_0
 
-    .line 3098
+    .line 4108
     :cond_3
     new-instance v12, Ljava/util/ArrayList;
 
@@ -4144,23 +4150,23 @@
 
     invoke-direct {v12, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 3099
+    .line 4109
     invoke-virtual {v12}, Ljava/util/ArrayList;->size()I
 
     move-result v9
 
-    .line 3101
-    invoke-static {}, Lkik/core/util/u;->a()Lkik/core/util/u;
+    .line 4111
+    invoke-static {}, Lkik/core/util/t;->a()Lkik/core/util/t;
 
     move-result-object v1
 
     move-object/from16 v0, p2
 
-    invoke-virtual {v1, v0}, Lkik/core/util/u;->b(Ljava/lang/CharSequence;)[Lkik/core/util/l$a;
+    invoke-virtual {v1, v0}, Lkik/core/util/t;->b(Ljava/lang/CharSequence;)[Lkik/core/util/k$a;
 
     move-result-object v13
 
-    .line 3103
+    .line 4113
     array-length v14, v13
 
     const/4 v1, 0x0
@@ -4172,15 +4178,15 @@
 
     aget-object v15, v13, v11
 
-    .line 3104
+    .line 4114
     if-eqz v15, :cond_b
 
-    .line 3107
-    invoke-virtual {v15}, Lkik/core/util/l$a;->a()I
+    .line 4117
+    invoke-virtual {v15}, Lkik/core/util/k$a;->a()I
 
     move-result v1
 
-    invoke-virtual {v15}, Lkik/core/util/l$a;->b()I
+    invoke-virtual {v15}, Lkik/core/util/k$a;->b()I
 
     move-result v2
 
@@ -4194,14 +4200,14 @@
 
     check-cast v1, [Lcom/kik/android/b/c;
 
-    .line 3108
+    .line 4118
     if-eqz v1, :cond_5
 
     array-length v2, v1
 
     if-lez v2, :cond_5
 
-    .line 3109
+    .line 4119
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
@@ -4210,7 +4216,7 @@
 
     move v1, v9
 
-    .line 3103
+    .line 4113
     :cond_4
     :goto_2
     add-int/lit8 v2, v11, 0x1
@@ -4221,9 +4227,9 @@
 
     goto :goto_1
 
-    .line 3114
+    .line 4124
     :cond_5
-    invoke-virtual {v15}, Lkik/core/util/l$a;->c()Ljava/lang/String;
+    invoke-virtual {v15}, Lkik/core/util/k$a;->c()Ljava/lang/String;
 
     move-result-object v1
 
@@ -4231,27 +4237,27 @@
 
     move-result-object v3
 
-    .line 3115
+    .line 4125
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v3}, Lcom/kik/android/b/g;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 3116
+    .line 4126
     const/4 v1, 0x0
 
     invoke-static {v4, v1}, Lcom/kik/android/b/g;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    .line 3118
+    .line 4128
     const/4 v7, 0x0
 
-    .line 3119
+    .line 4129
     if-eqz v1, :cond_8
 
-    .line 3120
+    .line 4130
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -4260,7 +4266,7 @@
 
     invoke-direct {v2, v5, v1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 3141
+    .line 4151
     :goto_3
     const/4 v1, 0x0
 
@@ -4280,16 +4286,16 @@
 
     invoke-virtual {v2, v1, v5, v6, v8}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 3147
+    .line 4157
     new-instance v1, Lcom/kik/android/b/b;
 
     const/4 v5, 0x0
 
-    invoke-virtual {v15}, Lkik/core/util/l$a;->b()I
+    invoke-virtual {v15}, Lkik/core/util/k$a;->b()I
 
     move-result v6
 
-    invoke-virtual {v15}, Lkik/core/util/l$a;->a()I
+    invoke-virtual {v15}, Lkik/core/util/k$a;->a()I
 
     move-result v8
 
@@ -4297,14 +4303,14 @@
 
     const/4 v8, 0x0
 
-    invoke-direct/range {v1 .. v8}, Lcom/kik/android/b/b;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/e/j;IZZ)V
+    invoke-direct/range {v1 .. v8}, Lcom/kik/android/b/b;-><init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Lkik/android/f/j;IZZ)V
 
-    .line 3148
-    invoke-virtual {v15}, Lkik/core/util/l$a;->a()I
+    .line 4158
+    invoke-virtual {v15}, Lkik/core/util/k$a;->a()I
 
     move-result v2
 
-    invoke-virtual {v15}, Lkik/core/util/l$a;->b()I
+    invoke-virtual {v15}, Lkik/core/util/k$a;->b()I
 
     move-result v3
 
@@ -4314,24 +4320,24 @@
 
     invoke-interface {v0, v1, v2, v3, v4}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
-    .line 3149
+    .line 4159
     const/4 v2, 0x1
 
     iput-boolean v2, v10, Lcom/kik/android/b/g$c;->c:Z
 
-    .line 3150
+    .line 4160
     iget-object v2, v10, Lcom/kik/android/b/g$c;->a:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3151
+    .line 4161
     add-int/lit8 v1, v9, 0x1
 
     const/16 v2, 0x32
 
     if-lt v1, v2, :cond_4
 
-    .line 3157
+    .line 4167
     :cond_6
     invoke-virtual {v12}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -4351,17 +4357,17 @@
 
     check-cast v1, Lcom/kik/android/b/c;
 
-    .line 3158
+    .line 4168
     if-eqz v1, :cond_7
 
-    invoke-virtual {v1}, Lcom/kik/android/b/c;->e()Z
+    invoke-virtual {v1}, Lcom/kik/android/b/c;->g()Z
 
     move-result v3
 
     if-nez v3, :cond_7
 
-    .line 3162
-    invoke-virtual {v1}, Lcom/kik/android/b/c;->b()Ljava/lang/String;
+    .line 4172
+    invoke-virtual {v1}, Lcom/kik/android/b/c;->d()Ljava/lang/String;
 
     move-result-object v3
 
@@ -4371,17 +4377,17 @@
 
     if-eqz v3, :cond_7
 
-    .line 3165
+    .line 4175
     move-object/from16 v0, p2
 
     invoke-interface {v0, v1}, Landroid/text/Spannable;->removeSpan(Ljava/lang/Object;)V
 
-    .line 3166
+    .line 4176
     const/4 v1, 0x1
 
     iput-boolean v1, v10, Lcom/kik/android/b/g$c;->c:Z
 
-    .line 3167
+    .line 4177
     iget v1, v10, Lcom/kik/android/b/g$c;->b:I
 
     add-int/lit8 v1, v1, 0x1
@@ -4390,23 +4396,23 @@
 
     goto :goto_4
 
-    .line 3124
+    .line 4134
     :cond_8
     if-nez v4, :cond_9
 
-    .line 3126
+    .line 4136
     invoke-static {v3}, Lcom/kik/android/b/g;->f(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 3133
+    .line 4143
     :goto_5
     if-lez v1, :cond_b
 
-    .line 3136
+    .line 4146
     const/4 v7, 0x1
 
-    .line 3137
+    .line 4147
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -4417,7 +4423,7 @@
 
     goto :goto_3
 
-    .line 3130
+    .line 4140
     :cond_9
     invoke-static {v3}, Lcom/kik/android/b/g;->g(Ljava/lang/String;)I
 
@@ -4428,7 +4434,7 @@
     :cond_a
     move-object v1, v10
 
-    .line 758
+    .line 768
     goto/16 :goto_0
 
     :cond_b
@@ -4571,27 +4577,27 @@
     .locals 3
 
     .prologue
-    .line 939
+    .line 949
     if-nez p1, :cond_0
 
-    .line 957
+    .line 967
     :goto_0
     return-void
 
-    .line 942
+    .line 952
     :cond_0
     instance-of v0, p1, Lcom/kik/android/b/d;
 
     if-eqz v0, :cond_2
 
-    .line 944
+    .line 954
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0}, Lcom/kik/android/b/l;->d()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 945
+    .line 955
     invoke-virtual {p1}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
 
     move-result-object v1
@@ -4602,15 +4608,15 @@
 
     check-cast v0, Lcom/kik/android/b/a;
 
-    .line 946
+    .line 956
     if-eqz v0, :cond_1
 
-    .line 948
+    .line 958
     iget-object v1, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v1, v0}, Lcom/kik/android/b/l;->b(Lcom/kik/android/b/a;)V
 
-    .line 956
+    .line 966
     :cond_1
     :goto_1
     iget-object v0, p0, Lcom/kik/android/b/g;->r:Lrx/subjects/a;
@@ -4619,7 +4625,7 @@
 
     goto :goto_0
 
-    .line 952
+    .line 962
     :cond_2
     new-instance v0, Lcom/kik/android/b/a;
 
@@ -4633,7 +4639,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/kik/android/b/a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 953
+    .line 963
     iget-object v1, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v1, v0}, Lcom/kik/android/b/l;->a(Lcom/kik/android/b/a;)V
@@ -4645,23 +4651,23 @@
     .locals 2
 
     .prologue
-    .line 865
+    .line 875
     invoke-static {p1}, Lcom/kik/android/b/g;->c(Lorg/json/JSONObject;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 866
+    .line 876
     iget-object v1, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v1, v0}, Lcom/kik/android/b/l;->a(Ljava/util/List;)V
 
-    .line 867
+    .line 877
     invoke-static {p1}, Lcom/kik/android/b/g;->d(Lorg/json/JSONObject;)V
 
-    .line 868
+    .line 878
     invoke-static {v0}, Lcom/kik/android/b/g;->b(Ljava/util/List;)V
 
-    .line 869
+    .line 879
     return-void
 .end method
 
@@ -4725,17 +4731,17 @@
     .locals 1
 
     .prologue
-    .line 1087
+    .line 1097
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0, p1}, Lcom/kik/android/b/l;->b(Lcom/kik/android/b/f;)V
 
-    .line 1088
+    .line 1098
     iget-object v0, p0, Lcom/kik/android/b/g;->r:Lrx/subjects/a;
 
     invoke-virtual {v0, p1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 1089
+    .line 1099
     return-void
 .end method
 
@@ -4990,23 +4996,93 @@
 .end method
 
 .method public final d(Ljava/lang/String;)V
-    .locals 1
+    .locals 4
 
     .prologue
     .line 609
+    .line 2615
+    invoke-virtual {p0, p1}, Lcom/kik/android/b/g;->e(Ljava/lang/String;)Lcom/kik/android/b/f;
+
+    move-result-object v0
+
+    .line 2616
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lcom/kik/android/b/f;->h()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 2617
+    invoke-virtual {v0}, Lcom/kik/android/b/f;->g()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 3360
+    if-eqz v1, :cond_2
+
+    .line 3363
+    sget-object v0, Lcom/kik/android/b/g;->j:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/android/b/d;
+
+    .line 3364
+    if-eqz v0, :cond_0
+
+    .line 3367
+    invoke-virtual {v0}, Lcom/kik/android/b/d;->g()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 2618
+    :goto_0
+    iget-object v1, p0, Lcom/kik/android/b/g;->r:Lrx/subjects/a;
+
+    invoke-virtual {v1, v0}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
+
+    .line 610
+    :cond_1
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0, p1}, Lcom/kik/android/b/l;->b(Ljava/lang/String;)V
 
-    .line 610
+    .line 611
     return-void
+
+    .line 3371
+    :cond_2
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public final e(Ljava/lang/String;)Lcom/kik/android/b/f;
     .locals 1
 
     .prologue
-    .line 860
+    .line 870
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0, p1}, Lcom/kik/android/b/l;->a(Ljava/lang/String;)Lcom/kik/android/b/f;
@@ -5029,7 +5105,7 @@
     .end annotation
 
     .prologue
-    .line 855
+    .line 865
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0}, Lcom/kik/android/b/l;->a()Ljava/util/List;
@@ -5043,46 +5119,46 @@
     .locals 3
 
     .prologue
-    .line 929
+    .line 939
     iget-object v0, p0, Lcom/kik/android/b/g;->o:Lcom/kik/events/d;
 
     invoke-virtual {v0}, Lcom/kik/events/d;->a()V
 
-    .line 930
+    .line 940
     sget-object v0, Lcom/kik/android/b/g;->p:Ljava/io/File;
 
     if-eqz v0, :cond_0
 
-    .line 931
+    .line 941
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0}, Lcom/kik/android/b/l;->b()V
 
-    .line 932
+    .line 942
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0}, Lcom/kik/android/b/l;->c()V
 
-    .line 933
+    .line 943
     sget-object v0, Lcom/kik/android/b/g;->p:Ljava/io/File;
 
     const/4 v1, 0x1
 
     sget-object v2, Lcom/kik/android/b/g;->n:Lorg/slf4j/b;
 
-    invoke-static {v0, v1, v2}, Lkik/core/util/d;->a(Ljava/io/File;ZLorg/slf4j/b;)Z
+    invoke-static {v0, v1, v2}, Lkik/core/util/c;->a(Ljava/io/File;ZLorg/slf4j/b;)Z
 
-    .line 935
+    .line 945
     :cond_0
     return-void
 .end method
 
-.method public final g()Lrx/c;
+.method public final g()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Lcom/kik/android/b/f;",
             ">;"
@@ -5090,7 +5166,7 @@
     .end annotation
 
     .prologue
-    .line 961
+    .line 971
     iget-object v0, p0, Lcom/kik/android/b/g;->r:Lrx/subjects/a;
 
     return-object v0
@@ -5100,11 +5176,11 @@
     .locals 1
 
     .prologue
-    .line 1082
+    .line 1092
     iget-object v0, p0, Lcom/kik/android/b/g;->i:Lcom/kik/android/b/l;
 
     invoke-virtual {v0}, Lcom/kik/android/b/l;->f()V
 
-    .line 1083
+    .line 1093
     return-void
 .end method

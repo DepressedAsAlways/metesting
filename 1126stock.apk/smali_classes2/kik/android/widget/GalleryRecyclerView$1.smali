@@ -25,12 +25,12 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 53
     iput-object p1, p0, Lkik/android/widget/GalleryRecyclerView$1;->a:Lkik/android/widget/GalleryRecyclerView;
 
     invoke-direct {p0}, Landroid/support/v7/widget/RecyclerView$ItemDecoration;-><init>()V
 
-    .line 53
+    .line 54
     const/high16 v0, 0x40000000    # 2.0f
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->a(F)I
@@ -50,34 +50,34 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 58
+    .line 59
     invoke-virtual {p3}, Landroid/support/v7/widget/RecyclerView;->getLayoutManager()Landroid/support/v7/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
 
     check-cast v0, Landroid/support/v7/widget/GridLayoutManager;
 
-    .line 59
+    .line 60
     invoke-virtual {p3, p2}, Landroid/support/v7/widget/RecyclerView;->getChildAdapterPosition(Landroid/view/View;)I
 
     move-result v2
 
-    .line 60
-    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->c()I
+    .line 61
+    invoke-virtual {v0}, Landroid/support/v7/widget/GridLayoutManager;->b()I
 
     move-result v3
-
-    .line 62
-    iget v0, p0, Lkik/android/widget/GalleryRecyclerView$1;->b:I
-
-    iput v0, p1, Landroid/graphics/Rect;->right:I
 
     .line 63
     iget v0, p0, Lkik/android/widget/GalleryRecyclerView$1;->b:I
 
-    iput v0, p1, Landroid/graphics/Rect;->bottom:I
+    iput v0, p1, Landroid/graphics/Rect;->right:I
 
     .line 64
+    iget v0, p0, Lkik/android/widget/GalleryRecyclerView$1;->b:I
+
+    iput v0, p1, Landroid/graphics/Rect;->bottom:I
+
+    .line 65
     rem-int v0, v2, v3
 
     if-nez v0, :cond_1
@@ -87,7 +87,7 @@
     :goto_0
     iput v0, p1, Landroid/graphics/Rect;->left:I
 
-    .line 65
+    .line 66
     if-ge v2, v3, :cond_0
 
     iget v1, p0, Lkik/android/widget/GalleryRecyclerView$1;->b:I
@@ -95,12 +95,12 @@
     :cond_0
     iput v1, p1, Landroid/graphics/Rect;->top:I
 
-    .line 66
+    .line 67
     return-void
 
     :cond_1
     move v0, v1
 
-    .line 64
+    .line 65
     goto :goto_0
 .end method

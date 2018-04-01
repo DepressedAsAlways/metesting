@@ -186,13 +186,13 @@
 
     sput-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
 
-    .line 944
+    .line 948
     sput v3, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mSurfaceWidth:I
 
-    .line 945
+    .line 949
     sput v3, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mSurfaceHeight:I
 
-    .line 947
+    .line 951
     const/4 v0, 0x4
 
     new-array v0, v0, [[I
@@ -227,18 +227,18 @@
 
     sput-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
-    .line 963
+    .line 967
     sput v3, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
-    .line 1200
+    .line 1204
     sput-boolean v3, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mNoInternetSequencePlaying:Z
 
-    .line 1310
+    .line 1320
     sput-boolean v3, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->isStreamBlending:Z
 
     return-void
 
-    .line 947
+    .line 951
     :array_0
     .array-data 4
         0x2
@@ -281,7 +281,7 @@
 
     iput-boolean v0, p0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mInitialized:Z
 
-    .line 957
+    .line 961
     return-void
 .end method
 
@@ -439,10 +439,10 @@
 
     const/4 v4, 0x0
 
-    .line 984
+    .line 988
     invoke-static {p0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAddNoInternetSequence(Ljava/lang/String;)V
 
-    .line 985
+    .line 989
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "black_overlay_bg.png"
@@ -461,7 +461,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 989
+    .line 993
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     invoke-virtual {v0}, Lcom/rounds/kik/media/MediaBroker;->getGridMuteIconSize()F
@@ -472,7 +472,7 @@
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetFullScreenMuteIcon(I)V
 
-    .line 990
+    .line 994
     const/4 v0, 0x6
 
     sget-object v1, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->TRANSLATE_XY:Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
@@ -483,7 +483,7 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAddSwitchableBIPlane(II)V
 
-    .line 991
+    .line 995
     const/4 v0, 0x7
 
     sget-object v1, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->TRANSLATE_XY:Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
@@ -494,7 +494,7 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAddSwitchableBIPlane(II)V
 
-    .line 992
+    .line 996
     const/4 v0, 0x4
 
     sget-object v1, Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;->TRANSLATE_SCALE_Y:Lcom/rounds/kik/media/NativeRoundsVidyoClient$SiwtchableParams;
@@ -505,7 +505,7 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAddSwitchableBIPlane(II)V
 
-    .line 993
+    .line 997
     return-void
 .end method
 
@@ -513,12 +513,12 @@
     .locals 11
 
     .prologue
-    .line 1024
+    .line 1028
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "mute_icon.png"
 
-    .line 1025
+    .line 1029
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v0
@@ -533,12 +533,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1026
+    .line 1030
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "mic_off.png"
 
-    .line 1029
+    .line 1033
     :cond_0
     const/4 v2, 0x0
 
@@ -560,17 +560,17 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1032
+    .line 1036
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "mute_speaker.png"
 
-    .line 1033
+    .line 1037
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v0, "unmute_speaker.png"
 
-    .line 1036
+    .line 1040
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v2
@@ -585,19 +585,19 @@
 
     if-eqz v2, :cond_1
 
-    .line 1037
+    .line 1041
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "mute_mic.png"
 
-    .line 1038
+    .line 1042
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v0, "unmute_mic.png"
 
     move-object v10, v0
 
-    .line 1041
+    .line 1045
     :goto_0
     const/4 v2, 0x0
 
@@ -619,7 +619,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1044
+    .line 1048
     const/4 v2, 0x0
 
     const/4 v3, 0x0
@@ -642,7 +642,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1047
+    .line 1051
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "mute_icon_shadow_background.png"
@@ -667,7 +667,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1052
+    .line 1056
     return-void
 
     :cond_1
@@ -690,7 +690,7 @@
 
     const/4 v0, 0x0
 
-    .line 1166
+    .line 1170
     sget v4, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-nez v4, :cond_2
@@ -701,39 +701,19 @@
 
     move v5, v0
 
-    .line 1167
+    .line 1171
     invoke-static/range {v0 .. v5}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DCreateImageSequence(IFFFFZ)Z
 
     move-result v1
 
-    .line 1168
+    .line 1172
     if-eqz v1, :cond_0
 
-    .line 1169
+    .line 1173
     invoke-static {v0, v8}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceSetSpeed(IF)Z
 
-    .line 1170
-    const-string v1, "no_internet1.png"
-
-    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
-    .line 1171
-    const-string v1, "no_internet2.png"
-
-    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
-    .line 1172
-    const-string v1, "no_internet3.png"
-
-    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
-    .line 1173
-    const-string v1, "no_internet4.png"
-
-    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
     .line 1174
-    const-string v1, "no_internet3.png"
+    const-string v1, "no_internet1.png"
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
 
@@ -743,20 +723,40 @@
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
 
     .line 1176
-    const-string v1, "no_internet1.png"
+    const-string v1, "no_internet3.png"
+
+    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1177
+    const-string v1, "no_internet4.png"
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
 
     .line 1178
+    const-string v1, "no_internet3.png"
+
+    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1179
+    const-string v1, "no_internet2.png"
+
+    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1180
+    const-string v1, "no_internet1.png"
+
+    invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1182
     :cond_0
     invoke-static {p0, v0, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageSequenceToParticipant(Ljava/lang/String;IZ)Z
 
-    .line 1198
+    .line 1202
     :cond_1
     :goto_0
     return-void
 
-    .line 1182
+    .line 1186
     :cond_2
     sget-object v3, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
@@ -764,7 +764,7 @@
 
     move-result v3
 
-    .line 1183
+    .line 1187
     sget v4, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mSurfaceWidth:I
 
     int-to-float v4, v4
@@ -787,34 +787,14 @@
 
     move-result v0
 
-    .line 1185
+    .line 1189
     if-eqz v0, :cond_1
 
-    .line 1186
+    .line 1190
     invoke-static {v2, v8}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceSetSpeed(IF)Z
 
-    .line 1187
-    const-string v0, "grid_no_internet1.png"
-
-    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
-    .line 1188
-    const-string v0, "grid_no_internet2.png"
-
-    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
-    .line 1189
-    const-string v0, "grid_no_internet3.png"
-
-    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
-    .line 1190
-    const-string v0, "grid_no_internet4.png"
-
-    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
-
     .line 1191
-    const-string v0, "grid_no_internet3.png"
+    const-string v0, "grid_no_internet1.png"
 
     invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
 
@@ -824,11 +804,31 @@
     invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
 
     .line 1193
-    const-string v0, "grid_no_internet1.png"
+    const-string v0, "grid_no_internet3.png"
 
     invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
 
     .line 1194
+    const-string v0, "grid_no_internet4.png"
+
+    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1195
+    const-string v0, "grid_no_internet3.png"
+
+    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1196
+    const-string v0, "grid_no_internet2.png"
+
+    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1197
+    const-string v0, "grid_no_internet1.png"
+
+    invoke-static {v2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceAddTexture(ILjava/lang/String;)Z
+
+    .line 1198
     invoke-static {p0, v2, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageSequenceToParticipant(Ljava/lang/String;IZ)Z
 
     goto :goto_0
@@ -838,7 +838,7 @@
     .locals 13
 
     .prologue
-    .line 997
+    .line 1001
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "noCamera_icon.png"
@@ -863,14 +863,14 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1003
+    .line 1007
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     invoke-virtual {v0}, Lcom/rounds/kik/media/MediaBroker;->getGridNoCameraInCallIconSize()F
 
     move-result v2
 
-    .line 1004
+    .line 1008
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "video_on_bg_fullscreen_icon.png"
@@ -893,7 +893,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1008
+    .line 1012
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v4, "inCall_icon.png"
@@ -918,7 +918,7 @@
 
     invoke-static/range {v3 .. v12}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1012
+    .line 1016
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "in_a_call_fullscreen_icon.png"
@@ -941,7 +941,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1016
+    .line 1020
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v1, "black_overlay_bg.png"
@@ -966,7 +966,7 @@
 
     invoke-static/range {v0 .. v9}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DAttachImageToParticipant(Ljava/lang/String;Ljava/lang/String;FFFFFIZZ)V
 
-    .line 1020
+    .line 1024
     return-void
 .end method
 
@@ -1085,12 +1085,12 @@
     .locals 2
 
     .prologue
-    .line 1112
+    .line 1116
     invoke-static {p0, p1, p2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DFindParticipantIconByCoordinates(Ljava/lang/String;FF)I
 
     move-result v0
 
-    .line 1113
+    .line 1117
     const/4 v1, 0x5
 
     if-eq v0, v1, :cond_0
@@ -1127,7 +1127,10 @@
 .method public static native R3DLocalIsInside(II)Z
 .end method
 
-.method public static native R3DMaskCreate(Ljava/lang/String;ILjava/lang/String;IFFFFFII[I)I
+.method private static native R3DMaskCreate(Ljava/lang/String;ILjava/lang/String;IFFFFFII[I)I
+.end method
+
+.method public static native R3DMaskGetWarning(I)I
 .end method
 
 .method public static native R3DMaskPlay(I)V
@@ -1149,14 +1152,14 @@
     .locals 1
 
     .prologue
-    .line 1056
+    .line 1060
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     const-string v0, "circle_shadow.png"
 
     invoke-static {p0, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetBackgroundToParticipant(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1057
+    .line 1061
     return-void
 .end method
 
@@ -1173,7 +1176,7 @@
     .locals 2
 
     .prologue
-    .line 1140
+    .line 1144
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     const/4 v1, 0x1
@@ -1188,7 +1191,7 @@
 
     invoke-static {p0, v0, p1, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1143
+    .line 1147
     return-void
 .end method
 
@@ -1199,12 +1202,12 @@
     .locals 1
 
     .prologue
-    .line 974
+    .line 978
     const/4 v0, 0x1
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetLocalClientViewMode(I)V
 
-    .line 975
+    .line 979
     return-void
 .end method
 
@@ -1212,12 +1215,12 @@
     .locals 1
 
     .prologue
-    .line 979
+    .line 983
     const/4 v0, 0x0
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetLocalClientViewMode(I)V
 
-    .line 980
+    .line 984
     return-void
 .end method
 
@@ -1228,14 +1231,14 @@
     .locals 2
 
     .prologue
-    .line 1074
+    .line 1078
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     const/16 v1, 0x190
 
     invoke-static {p0, v0, p1, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->updateVisibility(Ljava/lang/String;IFI)V
 
-    .line 1075
+    .line 1079
     return-void
 .end method
 
@@ -1243,7 +1246,7 @@
     .locals 2
 
     .prologue
-    .line 1118
+    .line 1122
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     const/4 v1, 0x0
@@ -1258,7 +1261,7 @@
 
     invoke-static {p0, v0, p1, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1120
+    .line 1124
     return-void
 .end method
 
@@ -1294,19 +1297,19 @@
 
     const/4 v5, 0x1
 
-    .line 1061
+    .line 1065
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-ne v0, v5, :cond_0
 
-    .line 1062
+    .line 1066
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
     invoke-virtual {v0}, Lcom/rounds/kik/media/MediaBroker;->getGridMuteIconSize()F
 
     move-result v2
 
-    .line 1063
+    .line 1067
     div-int/lit8 v0, p3, 0x2
 
     invoke-static {p0, v1, p2, v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
@@ -1317,20 +1320,20 @@
 
     move v4, p3
 
-    .line 1064
+    .line 1068
     invoke-static/range {v0 .. v5}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageScale(Ljava/lang/String;IFFIZ)V
 
-    .line 1066
+    .line 1070
     if-nez p1, :cond_0
 
-    .line 1067
+    .line 1071
     const/4 v0, 0x4
 
     const/4 v1, 0x0
 
     invoke-static {p0, v0, p2, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1070
+    .line 1074
     :cond_0
     return-void
 .end method
@@ -1375,12 +1378,12 @@
     .locals 4
 
     .prologue
-    .line 1215
+    .line 1219
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mNoInternetSequencePlaying:Z
 
-    .line 1216
+    .line 1220
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     const/4 v1, 0x2
@@ -1397,10 +1400,10 @@
 
     move-result v0
 
-    .line 1217
+    .line 1221
     if-eqz v0, :cond_0
 
-    .line 1218
+    .line 1222
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v1
@@ -1415,7 +1418,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSwitchBlackOverlayViewMode(Ljava/lang/String;FI)V
 
-    .line 1221
+    .line 1225
     :cond_0
     return v0
 .end method
@@ -1426,10 +1429,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1204
+    .line 1208
     sput-boolean v3, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mNoInternetSequencePlaying:Z
 
-    .line 1205
+    .line 1209
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     const/4 v1, 0x2
@@ -1444,10 +1447,10 @@
 
     move-result v0
 
-    .line 1206
+    .line 1210
     if-eqz v0, :cond_0
 
-    .line 1207
+    .line 1211
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v1
@@ -1460,7 +1463,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSwitchBlackOverlayViewMode(Ljava/lang/String;FI)V
 
-    .line 1210
+    .line 1214
     :cond_0
     return v0
 .end method
@@ -1471,19 +1474,19 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1147
+    .line 1151
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-eq v0, v1, :cond_0
 
-    .line 1148
+    .line 1152
     const/4 p1, 0x0
 
-    .line 1150
+    .line 1154
     :cond_0
     invoke-static {p0, v1, p1, p2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1151
+    .line 1155
     return-void
 .end method
 
@@ -1495,7 +1498,7 @@
 
     const/4 v2, 0x0
 
-    .line 1132
+    .line 1136
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v3
@@ -1508,7 +1511,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1134
+    .line 1138
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v3
@@ -1523,7 +1526,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1136
+    .line 1140
     return-void
 .end method
 
@@ -1533,7 +1536,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1155
+    .line 1159
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     rsub-int/lit8 v0, v0, 0x1
@@ -1542,14 +1545,14 @@
 
     invoke-static {p0, v0, v1, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->updateVisibility(Ljava/lang/String;IFI)V
 
-    .line 1156
+    .line 1160
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-static {p0, v0, v1, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->updateVisibility(Ljava/lang/String;IFI)V
 
-    .line 1157
+    .line 1161
     return-void
 .end method
 
@@ -1559,7 +1562,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1124
+    .line 1128
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v2
@@ -1572,7 +1575,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1126
+    .line 1130
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v2
@@ -1587,7 +1590,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1128
+    .line 1132
     return-void
 .end method
 
@@ -1599,12 +1602,12 @@
 
     const/4 v2, 0x2
 
-    .line 1226
+    .line 1230
     sget-boolean v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mNoInternetSequencePlaying:Z
 
     if-eqz v0, :cond_0
 
-    .line 1227
+    .line 1231
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v2
@@ -1617,7 +1620,7 @@
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceStart(II)Z
 
-    .line 1228
+    .line 1232
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v2
@@ -1630,7 +1633,7 @@
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceStop(I)Z
 
-    .line 1229
+    .line 1233
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v0
@@ -1643,11 +1646,11 @@
 
     invoke-static {v0, v1, v3}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSwitchBlackOverlayViewMode(Ljava/lang/String;FI)V
 
-    .line 1236
+    .line 1240
     :goto_0
     return-void
 
-    .line 1232
+    .line 1236
     :cond_0
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
@@ -1659,7 +1662,7 @@
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceStop(I)Z
 
-    .line 1233
+    .line 1237
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v2
@@ -1672,7 +1675,7 @@
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DImageSequenceStop(I)Z
 
-    .line 1234
+    .line 1238
     invoke-static {}, Lcom/rounds/kik/VideoAppModule;->localParticipant()Lcom/rounds/kik/participants/LocalParticipant;
 
     move-result-object v0
@@ -1702,12 +1705,12 @@
 
     const/high16 v6, 0x3f800000    # 1.0f
 
-    .line 1080
+    .line 1084
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-ne v0, v5, :cond_1
 
-    .line 1081
+    .line 1085
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-nez v0, :cond_2
@@ -1718,13 +1721,13 @@
 
     move-result v0
 
-    .line 1082
+    .line 1086
     :goto_0
     sub-float v2, v6, p1
 
     invoke-static {p0, v1, v2, v4}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1084
+    .line 1088
     cmpl-float v2, v6, p1
 
     if-lez v2, :cond_3
@@ -1743,16 +1746,16 @@
 
     invoke-static/range {v0 .. v5}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageScale(Ljava/lang/String;IFFIZ)V
 
-    .line 1089
+    .line 1093
     :cond_1
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     invoke-static {p0, v0, p1, v4}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->updateVisibility(Ljava/lang/String;IFI)V
 
-    .line 1090
+    .line 1094
     return-void
 
-    .line 1081
+    .line 1085
     :cond_2
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
@@ -1765,7 +1768,7 @@
     :cond_3
     move v2, v3
 
-    .line 1084
+    .line 1088
     goto :goto_1
 .end method
 
@@ -1781,10 +1784,19 @@
 .method public static native RSEEnableAudioRecorder(Z)V
 .end method
 
+.method public static native RSEGetEnhancedVolumeDecibels()F
+.end method
+
+.method public static native RSESetEnhancedVolumeDecibels(F)V
+.end method
+
 .method public static native RSESetSoundLogParams(JLjava/lang/String;Ljava/lang/String;)V
 .end method
 
 .method public static native RSESetVolume(F)V
+.end method
+
+.method public static native SoundEffectsApplyEffect(I[BI)V
 .end method
 
 .method public static addNative(IIILjava/lang/String;Ljava/lang/String;)V
@@ -1993,38 +2005,38 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 855
-    .line 856
+    .line 859
+    .line 860
     sput p0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     const/4 v0, 0x1
 
     if-ne p0, v0, :cond_0
 
-    .line 857
+    .line 861
     const/4 v0, 0x5
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetBIPlaneVisibility(IF)V
 
-    .line 865
+    .line 869
     :goto_0
     invoke-static {p0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DChangeVideoPlaneViewMode(I)V
 
-    .line 867
+    .line 871
     return-void
 
-    .line 861
+    .line 865
     :cond_0
     const/4 v0, 0x6
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetBIPlaneVisibility(IF)V
 
-    .line 862
+    .line 866
     const/4 v0, 0x7
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetBIPlaneVisibility(IF)V
 
-    .line 863
+    .line 867
     const/4 v0, 0x4
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetBIPlaneVisibility(IF)V
@@ -2036,10 +2048,10 @@
     .locals 0
 
     .prologue
-    .line 1275
+    .line 1281
     invoke-static {p0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DMaskStop(I)V
 
-    .line 1276
+    .line 1282
     return-void
 .end method
 
@@ -2056,21 +2068,21 @@
     .end annotation
 
     .prologue
-    .line 1296
+    .line 1306
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v3
 
-    .line 1297
+    .line 1307
     const/4 v0, 0x0
 
-    .line 1298
+    .line 1308
     if-lez v3, :cond_1
 
-    .line 1299
+    .line 1309
     new-array v1, v3, [I
 
-    .line 1300
+    .line 1310
     new-array v0, v3, [Ljava/lang/Integer;
 
     invoke-interface {p0, v0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2079,13 +2091,13 @@
 
     check-cast v0, [Ljava/lang/Integer;
 
-    .line 1301
+    .line 1311
     const/4 v2, 0x0
 
     :goto_0
     if-ge v2, v3, :cond_0
 
-    .line 1302
+    .line 1312
     aget-object v4, v0, v2
 
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
@@ -2094,7 +2106,7 @@
 
     aput v4, v1, v2
 
-    .line 1301
+    .line 1311
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
@@ -2102,7 +2114,7 @@
     :cond_0
     move-object v0, v1
 
-    .line 1306
+    .line 1316
     :cond_1
     return-object v0
 .end method
@@ -2111,7 +2123,7 @@
     .locals 1
 
     .prologue
-    .line 967
+    .line 971
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     return v0
@@ -2291,7 +2303,7 @@
     goto :goto_0
 .end method
 
-.method public static playMask(Ljava/lang/String;Lcom/rounds/kik/masks/IMaskModel;)V
+.method public static playMask(Ljava/lang/String;Lcom/rounds/kik/masks/IMaskModel;)I
     .locals 12
 
     .prologue
@@ -2299,27 +2311,27 @@
 
     const/high16 v3, 0x43700000    # 240.0f
 
-    .line 1280
+    .line 1286
     invoke-interface {p1}, Lcom/rounds/kik/masks/IMaskModel;->getSequenceOrder()Ljava/util/List;
 
     move-result-object v0
 
-    .line 1281
+    .line 1287
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v10
 
-    .line 1282
+    .line 1288
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->getSequenceOrderArray(Ljava/util/List;)[I
 
     move-result-object v11
 
-    .line 1284
+    .line 1290
     invoke-interface {p1}, Lcom/rounds/kik/masks/IMaskModel;->getRectangle()Lcom/rounds/kik/masks/IRectangle;
 
     move-result-object v0
 
-    .line 1285
+    .line 1291
     invoke-interface {v0}, Lcom/rounds/kik/masks/IRectangle;->getWidth()I
 
     move-result v1
@@ -2330,7 +2342,7 @@
 
     div-float v4, v1, v2
 
-    .line 1286
+    .line 1292
     invoke-interface {v0}, Lcom/rounds/kik/masks/IRectangle;->getHeight()I
 
     move-result v1
@@ -2341,7 +2353,7 @@
 
     div-float v5, v1, v2
 
-    .line 1287
+    .line 1293
     invoke-interface {v0}, Lcom/rounds/kik/masks/IRectangle;->getLeft()I
 
     move-result v1
@@ -2360,7 +2372,7 @@
 
     div-float v6, v1, v3
 
-    .line 1288
+    .line 1294
     invoke-interface {v0}, Lcom/rounds/kik/masks/IRectangle;->getTop()I
 
     move-result v1
@@ -2379,7 +2391,7 @@
 
     div-float v7, v0, v7
 
-    .line 1290
+    .line 1296
     invoke-interface {p1}, Lcom/rounds/kik/masks/IMaskModel;->getIndex()I
 
     move-result v1
@@ -2411,15 +2423,23 @@
 
     invoke-static/range {v0 .. v11}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DMaskCreate(Ljava/lang/String;ILjava/lang/String;IFFFFFII[I)I
 
-    .line 1291
-    invoke-interface {p1}, Lcom/rounds/kik/masks/IMaskModel;->getIndex()I
-
     move-result v0
 
-    invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DMaskPlay(I)V
+    .line 1298
+    const/4 v1, -0x1
 
-    .line 1292
-    return-void
+    if-eq v0, v1, :cond_1
+
+    .line 1299
+    invoke-interface {p1}, Lcom/rounds/kik/masks/IMaskModel;->getIndex()I
+
+    move-result v1
+
+    invoke-static {v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DMaskPlay(I)V
+
+    .line 1301
+    :cond_1
+    return v0
 .end method
 
 .method public static processLocalCameraFrame([BIIFZ)V
@@ -2556,10 +2576,10 @@
     .locals 0
 
     .prologue
-    .line 1161
+    .line 1165
     sput-boolean p0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mNoInternetSequencePlaying:Z
 
-    .line 1162
+    .line 1166
     return-void
 .end method
 
@@ -2567,15 +2587,15 @@
     .locals 1
 
     .prologue
-    .line 1326
+    .line 1336
     const/4 v0, 0x1
 
-    .line 1327
+    .line 1337
     sput-boolean v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->isStreamBlending:Z
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetStreamBlendingActive(Z)V
 
-    .line 1328
+    .line 1338
     return-void
 .end method
 
@@ -2583,15 +2603,15 @@
     .locals 1
 
     .prologue
-    .line 1332
+    .line 1342
     const/4 v0, 0x0
 
-    .line 1333
+    .line 1343
     sput-boolean v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->isStreamBlending:Z
 
     invoke-static {v0}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetStreamBlendingActive(Z)V
 
-    .line 1334
+    .line 1344
     return-void
 .end method
 
@@ -2599,19 +2619,19 @@
     .locals 1
 
     .prologue
-    .line 1314
+    .line 1324
     sget-boolean v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->isStreamBlending:Z
 
     if-eqz v0, :cond_0
 
-    .line 1315
+    .line 1325
     invoke-static {}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->stopStreamBlending()V
 
-    .line 1321
+    .line 1331
     :goto_0
     return-void
 
-    .line 1318
+    .line 1328
     :cond_0
     invoke-static {}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->startStreamBlending()V
 
@@ -2628,7 +2648,7 @@
 
     const/4 v6, 0x0
 
-    .line 1095
+    .line 1099
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-nez v0, :cond_1
@@ -2639,7 +2659,7 @@
 
     move-result v0
 
-    .line 1096
+    .line 1100
     :goto_0
     sget-object v1, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
@@ -2651,17 +2671,17 @@
 
     invoke-static {p0, v1, p2, v2}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1098
+    .line 1102
     cmpl-float v1, p2, v6
 
     if-nez v1, :cond_3
 
-    .line 1099
+    .line 1103
     div-int/lit8 v4, p3, 0x2
 
     move v2, v6
 
-    .line 1102
+    .line 1106
     :goto_1
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
@@ -2675,12 +2695,12 @@
 
     invoke-static/range {v0 .. v5}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageScale(Ljava/lang/String;IFFIZ)V
 
-    .line 1104
+    .line 1108
     sget v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mViewMode:I
 
     if-ne v0, v5, :cond_0
 
-    .line 1105
+    .line 1109
     sget-object v0, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->mIConIndeces:[[I
 
     aget-object v0, v0, v7
@@ -2691,7 +2711,7 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 1106
+    .line 1110
     :goto_2
     const/4 v0, 0x4
 
@@ -2699,11 +2719,11 @@
 
     invoke-static {p0, v0, v6, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetParticipantImageVisibility(Ljava/lang/String;IFI)V
 
-    .line 1108
+    .line 1112
     :cond_0
     return-void
 
-    .line 1095
+    .line 1099
     :cond_1
     sget-object v0, Lcom/rounds/kik/media/MediaBroker;->INSTANCE:Lcom/rounds/kik/media/MediaBroker;
 
@@ -2716,7 +2736,7 @@
     :cond_2
     move v6, p2
 
-    .line 1105
+    .line 1109
     goto :goto_2
 
     :cond_3

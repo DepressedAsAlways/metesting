@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 129
+    .line 137
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$3;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,26 +50,26 @@
     .locals 1
 
     .prologue
-    .line 129
+    .line 137
     check-cast p2, Ljava/lang/String;
 
-    .line 1134
+    .line 1142
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$3;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->b:Lkik/core/interfaces/ac;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ac;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
-    .line 1135
+    .line 1143
     if-eqz p2, :cond_0
 
-    invoke-virtual {v0}, Lkik/core/z;->a()Lkik/core/datatypes/l;
+    invoke-virtual {v0}, Lkik/core/z;->a()Lkik/core/datatypes/k;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkik/core/datatypes/l;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -79,12 +79,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1136
+    .line 1144
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$3;->a:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->b(Lkik/android/chat/fragment/KikGroupMembersListFragment;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->d(Lkik/android/chat/fragment/KikGroupMembersListFragment;)V
 
-    .line 129
+    .line 137
     :cond_0
     return-void
 .end method

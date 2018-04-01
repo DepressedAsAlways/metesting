@@ -5,10 +5,8 @@
 
 # instance fields
 .field _starImageView:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1001f2
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100241
     .end annotation
 .end field
 
@@ -52,14 +50,14 @@
 
     move-result-object v0
 
-    const v1, 0x7f040084
+    const v1, 0x7f04009a
 
     invoke-static {v0, v1, p0}, Lkik/android/gifs/view/GifFavouriteToggle;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
     .line 138
-    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 139
     return-void
@@ -264,7 +262,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f020144
+    const v2, 0x7f0201a5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -292,8 +290,7 @@
     .prologue
     const/16 v2, 0x8
 
-    .line 0
-    .line 2035
+    .line 35
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
@@ -373,7 +370,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lkik/android/gifs/view/GifFavouriteToggle;Lrx/c;)V
+.method public static a(Lkik/android/gifs/view/GifFavouriteToggle;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -385,7 +382,7 @@
         value = {
             "(",
             "Lkik/android/gifs/view/GifFavouriteToggle;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -394,9 +391,9 @@
 
     .prologue
     .line 35
-    const v0, 0x7f0100d4
+    const v0, 0x7f01018a
 
-    invoke-static {p0}, Lkik/android/gifs/view/d;->a(Lkik/android/gifs/view/GifFavouriteToggle;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/gifs/view/d;->a(Lkik/android/gifs/view/GifFavouriteToggle;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -406,7 +403,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 36
     return-void
@@ -423,7 +420,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f020142
+    const v2, 0x7f0201a3
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

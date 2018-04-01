@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/mobile/EntityService$a;
+.implements Lcom/kik/entity/mobile/EntityService$i;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;",
         ">;",
-        "Lcom/kik/entity/mobile/EntityService$a;"
+        "Lcom/kik/entity/mobile/EntityService$i;"
     }
 .end annotation
 
@@ -132,7 +132,8 @@
 
     .line 451
     :try_start_0
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->e()Lcom/google/protobuf/Parser;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->PARSER:Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$800()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -311,7 +312,8 @@
 
     .prologue
     .line 326
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->c()Z
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$400()Z
 
     move-result v0
 
@@ -373,7 +375,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+    invoke-direct {v0, p0, v1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/entity/mobile/EntityService$1;)V
 
     .line 361
     iget-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;->c:Lcom/google/protobuf/RepeatedFieldBuilderV3;
@@ -409,7 +411,8 @@
     :cond_0
     iget-object v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;->b:Ljava/util/List;
 
-    invoke-static {v0, v1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;Ljava/util/List;)Ljava/util/List;
+    # setter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {v0, v1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$602(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;Ljava/util/List;)Ljava/util/List;
 
     .line 370
     :goto_0
@@ -426,7 +429,8 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;Ljava/util/List;)Ljava/util/List;
+    # setter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {v0, v1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$602(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;Ljava/util/List;)Ljava/util/List;
 
     goto :goto_0
 .end method
@@ -540,7 +544,7 @@
     const/4 v0, 0x0
 
     .line 410
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->b()Lcom/kik/entity/mobile/EntityService$GetUsersRequest;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->getDefaultInstance()Lcom/kik/entity/mobile/EntityService$GetUsersRequest;
 
     move-result-object v1
 
@@ -557,7 +561,8 @@
     if-nez v1, :cond_3
 
     .line 412
-    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$600(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
 
     move-result-object v0
 
@@ -577,7 +582,8 @@
     if-eqz v0, :cond_2
 
     .line 414
-    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$600(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
 
     move-result-object v0
 
@@ -608,7 +614,8 @@
     .line 418
     iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;->b:Ljava/util/List;
 
-    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$600(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -618,7 +625,8 @@
 
     .line 423
     :cond_3
-    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$600(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -646,7 +654,8 @@
     iput-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;->c:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
     .line 427
-    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$600(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -660,7 +669,8 @@
     iput v1, p0, Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;->a:I
 
     .line 430
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->d()Z
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$700()Z
 
     move-result v1
 
@@ -680,7 +690,8 @@
     :cond_5
     iget-object v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersRequest$a;->c:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
-    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->a(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->ids_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->access$600(Lcom/kik/entity/mobile/EntityService$GetUsersRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -1047,7 +1058,7 @@
 
     .prologue
     .line 9347
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->b()Lcom/kik/entity/mobile/EntityService$GetUsersRequest;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->getDefaultInstance()Lcom/kik/entity/mobile/EntityService$GetUsersRequest;
 
     move-result-object v0
 
@@ -1060,7 +1071,7 @@
 
     .prologue
     .line 8347
-    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->b()Lcom/kik/entity/mobile/EntityService$GetUsersRequest;
+    invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersRequest;->getDefaultInstance()Lcom/kik/entity/mobile/EntityService$GetUsersRequest;
 
     move-result-object v0
 

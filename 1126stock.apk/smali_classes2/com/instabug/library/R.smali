@@ -6,17 +6,19 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/instabug/library/R$k;,
-        Lcom/instabug/library/R$j;,
-        Lcom/instabug/library/R$i;,
-        Lcom/instabug/library/R$h;,
-        Lcom/instabug/library/R$g;,
-        Lcom/instabug/library/R$f;,
-        Lcom/instabug/library/R$e;,
-        Lcom/instabug/library/R$d;,
-        Lcom/instabug/library/R$c;,
-        Lcom/instabug/library/R$b;,
-        Lcom/instabug/library/R$a;
+        Lcom/instabug/library/R$styleable;,
+        Lcom/instabug/library/R$style;,
+        Lcom/instabug/library/R$string;,
+        Lcom/instabug/library/R$raw;,
+        Lcom/instabug/library/R$layout;,
+        Lcom/instabug/library/R$integer;,
+        Lcom/instabug/library/R$id;,
+        Lcom/instabug/library/R$drawable;,
+        Lcom/instabug/library/R$dimen;,
+        Lcom/instabug/library/R$color;,
+        Lcom/instabug/library/R$bool;,
+        Lcom/instabug/library/R$attr;,
+        Lcom/instabug/library/R$anim;
     }
 .end annotation
 

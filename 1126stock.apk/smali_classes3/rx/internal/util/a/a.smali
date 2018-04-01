@@ -56,7 +56,7 @@
     sput v0, Lrx/internal/util/a/a;->a:I
 
     .line 53
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
+    sget-object v0, Lrx/internal/util/a/y;->a:Lsun/misc/Unsafe;
 
     const-class v1, [Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
 
     .line 62
     :goto_0
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
+    sget-object v0, Lrx/internal/util/a/y;->a:Lsun/misc/Unsafe;
 
     const-class v1, [Ljava/lang/Object;
 
@@ -139,7 +139,7 @@
     invoke-direct {p0}, Lrx/internal/util/a/b;-><init>()V
 
     .line 71
-    invoke-static {p1}, Lrx/internal/util/a/i;->a(I)I
+    invoke-static {p1}, Lrx/internal/util/a/c;->a(I)I
 
     move-result v0
 
@@ -176,10 +176,10 @@
     .end annotation
 
     .prologue
-    .line 153
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
+    .line 175
+    sget-object v0, Lrx/internal/util/a/y;->a:Lsun/misc/Unsafe;
 
-    invoke-virtual {v0, p0, p1, p2}, Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-virtual {v0, p0, p1, p2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -195,45 +195,8 @@
     .end annotation
 
     .prologue
-    .line 110
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
-
-    invoke-virtual {v0, p0, p1, p2, p3}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    .line 111
-    return-void
-.end method
-
-.method protected static b([Ljava/lang/Object;J)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([TE;J)TE;"
-        }
-    .end annotation
-
-    .prologue
-    .line 175
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
-
-    invoke-virtual {v0, p0, p1, p2}, Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected static b([Ljava/lang/Object;JLjava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([TE;JTE;)V"
-        }
-    .end annotation
-
-    .prologue
     .line 131
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
+    sget-object v0, Lrx/internal/util/a/y;->a:Lsun/misc/Unsafe;
 
     invoke-virtual {v0, p0, p1, p2, p3}, Lsun/misc/Unsafe;->putOrderedObject(Ljava/lang/Object;JLjava/lang/Object;)V
 
@@ -265,44 +228,7 @@
     return-wide v0
 .end method
 
-.method protected final a(JLjava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(JTE;)V"
-        }
-    .end annotation
-
-    .prologue
-    .line 99
-    iget-object v0, p0, Lrx/internal/util/a/a;->c:[Ljava/lang/Object;
-
-    invoke-static {v0, p1, p2, p3}, Lrx/internal/util/a/a;->a([Ljava/lang/Object;JLjava/lang/Object;)V
-
-    .line 100
-    return-void
-.end method
-
 .method protected final b(J)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J)TE;"
-        }
-    .end annotation
-
-    .prologue
-    .line 141
-    iget-object v0, p0, Lrx/internal/util/a/a;->c:[Ljava/lang/Object;
-
-    invoke-static {v0, p1, p2}, Lrx/internal/util/a/a;->a([Ljava/lang/Object;J)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected final c(J)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -314,7 +240,7 @@
     .line 163
     iget-object v0, p0, Lrx/internal/util/a/a;->c:[Ljava/lang/Object;
 
-    invoke-static {v0, p1, p2}, Lrx/internal/util/a/a;->b([Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-static {v0, p1, p2}, Lrx/internal/util/a/a;->a([Ljava/lang/Object;J)Ljava/lang/Object;
 
     move-result-object v0
 

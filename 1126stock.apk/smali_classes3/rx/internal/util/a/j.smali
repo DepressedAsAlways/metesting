@@ -1,5 +1,5 @@
-.class public final Lrx/internal/util/a/j;
-.super Lrx/internal/util/a/n;
+.class abstract Lrx/internal/util/a/j;
+.super Lrx/internal/util/a/f;
 .source "SourceFile"
 
 
@@ -9,318 +9,77 @@
         "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Lrx/internal/util/a/n",
+        "Lrx/internal/util/a/f",
         "<TE;>;"
     }
 .end annotation
 
 
+# static fields
+.field protected static final e:J
+
+
+# instance fields
+.field private volatile producerIndex:J
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .prologue
+    .line 34
+    const-class v0, Lrx/internal/util/a/j;
+
+    const-string v1, "producerIndex"
+
+    invoke-static {v0, v1}, Lrx/internal/util/a/y;->a(Ljava/lang/Class;Ljava/lang/String;)J
+
+    move-result-wide v0
+
+    sput-wide v0, Lrx/internal/util/a/j;->e:J
+
+    return-void
+.end method
+
 .method public constructor <init>(I)V
     .locals 0
 
     .prologue
-    .line 118
-    invoke-direct {p0, p1}, Lrx/internal/util/a/n;-><init>(I)V
+    .line 46
+    invoke-direct {p0, p1}, Lrx/internal/util/a/f;-><init>(I)V
 
-    .line 119
+    .line 47
     return-void
 .end method
 
 
 # virtual methods
-.method public final isEmpty()Z
-    .locals 4
+.method protected final b()J
+    .locals 2
 
     .prologue
-    .line 217
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->a()J
+    .line 38
+    iget-wide v0, p0, Lrx/internal/util/a/j;->producerIndex:J
 
-    move-result-wide v0
-
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->b()J
-
-    move-result-wide v2
-
-    cmp-long v0, v0, v2
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
+    return-wide v0
 .end method
 
-.method public final offer(Ljava/lang/Object;)Z
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)Z"
-        }
-    .end annotation
-
-    .prologue
-    .line 123
-    if-nez p1, :cond_0
-
-    .line 124
-    new-instance v0, Ljava/lang/NullPointerException;
-
-    const-string v1, "Null is not a valid element"
-
-    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 126
-    :cond_0
-    iget-object v0, p0, Lrx/internal/util/a/j;->c:[Ljava/lang/Object;
-
-    .line 127
-    iget-wide v2, p0, Lrx/internal/util/a/j;->b:J
-
-    .line 128
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->b()J
-
-    move-result-wide v4
-
-    .line 129
-    invoke-virtual {p0, v4, v5}, Lrx/internal/util/a/j;->a(J)J
-
-    move-result-wide v6
-
-    .line 130
-    invoke-static {v0, v6, v7}, Lrx/internal/util/a/j;->b([Ljava/lang/Object;J)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_2
-
-    .line 131
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->a()J
-
-    move-result-wide v8
-
-    sub-long v8, v4, v8
-
-    .line 133
-    cmp-long v1, v8, v2
-
-    if-lez v1, :cond_1
-
-    .line 134
-    const/4 v0, 0x0
-
-    .line 145
-    :goto_0
-    return v0
-
-    .line 138
-    :cond_1
-    invoke-static {v0, v6, v7}, Lrx/internal/util/a/j;->b([Ljava/lang/Object;J)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    .line 141
-    :cond_2
-    invoke-static {v0, v6, v7, p1}, Lrx/internal/util/a/j;->a([Ljava/lang/Object;JLjava/lang/Object;)V
-
-    .line 144
-    const-wide/16 v0, 0x1
-
-    add-long/2addr v0, v4
-
-    invoke-virtual {p0, v0, v1}, Lrx/internal/util/a/j;->d(J)V
-
-    .line 145
-    const/4 v0, 0x1
-
-    goto :goto_0
-.end method
-
-.method public final peek()Ljava/lang/Object;
+.method protected final c(J)V
     .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TE;"
-        }
-    .end annotation
 
     .prologue
-    .line 177
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->c()J
+    .line 42
+    sget-object v0, Lrx/internal/util/a/y;->a:Lsun/misc/Unsafe;
 
-    move-result-wide v2
+    sget-wide v2, Lrx/internal/util/a/j;->e:J
 
-    .line 180
-    :cond_0
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->a()J
+    move-object v1, p0
 
-    move-result-wide v0
+    move-wide v4, p1
 
-    .line 181
-    cmp-long v4, v0, v2
+    invoke-virtual/range {v0 .. v5}, Lsun/misc/Unsafe;->putOrderedLong(Ljava/lang/Object;JJ)V
 
-    if-ltz v4, :cond_2
-
-    .line 182
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->b()J
-
-    move-result-wide v4
-
-    .line 183
-    cmp-long v6, v0, v4
-
-    if-ltz v6, :cond_1
-
-    .line 184
-    const/4 v0, 0x0
-
-    .line 190
-    :goto_0
-    return-object v0
-
-    .line 186
-    :cond_1
-    invoke-virtual {p0, v4, v5}, Lrx/internal/util/a/j;->e(J)V
-
-    .line 189
-    :cond_2
-    invoke-virtual {p0, v0, v1}, Lrx/internal/util/a/j;->a(J)J
-
-    move-result-wide v0
-
-    invoke-virtual {p0, v0, v1}, Lrx/internal/util/a/j;->c(J)Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-.end method
-
-.method public final poll()Ljava/lang/Object;
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TE;"
-        }
-    .end annotation
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 151
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->c()J
-
-    move-result-wide v2
-
-    .line 153
-    :cond_0
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->a()J
-
-    move-result-wide v4
-
-    .line 154
-    cmp-long v1, v4, v2
-
-    if-ltz v1, :cond_2
-
-    .line 155
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->b()J
-
-    move-result-wide v6
-
-    .line 156
-    cmp-long v1, v4, v6
-
-    if-ltz v1, :cond_1
-
-    .line 171
-    :goto_0
-    return-object v0
-
-    .line 159
-    :cond_1
-    invoke-virtual {p0, v6, v7}, Lrx/internal/util/a/j;->e(J)V
-
-    .line 162
-    :cond_2
-    const-wide/16 v6, 0x1
-
-    add-long/2addr v6, v4
-
-    invoke-virtual {p0, v4, v5, v6, v7}, Lrx/internal/util/a/j;->a(JJ)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 165
-    invoke-virtual {p0, v4, v5}, Lrx/internal/util/a/j;->a(J)J
-
-    move-result-wide v2
-
-    .line 166
-    iget-object v4, p0, Lrx/internal/util/a/j;->c:[Ljava/lang/Object;
-
-    .line 168
-    invoke-static {v4, v2, v3}, Lrx/internal/util/a/j;->a([Ljava/lang/Object;J)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 170
-    invoke-static {v4, v2, v3, v0}, Lrx/internal/util/a/j;->b([Ljava/lang/Object;JLjava/lang/Object;)V
-
-    move-object v0, v1
-
-    .line 171
-    goto :goto_0
-.end method
-
-.method public final size()I
-    .locals 6
-
-    .prologue
-    .line 200
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->a()J
-
-    move-result-wide v0
-
-    .line 203
-    :goto_0
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->b()J
-
-    move-result-wide v4
-
-    .line 204
-    invoke-virtual {p0}, Lrx/internal/util/a/j;->a()J
-
-    move-result-wide v2
-
-    .line 205
-    cmp-long v0, v0, v2
-
-    if-nez v0, :cond_0
-
-    .line 206
-    sub-long v0, v4, v2
-
-    long-to-int v0, v0
-
-    return v0
-
-    :cond_0
-    move-wide v0, v2
-
-    .line 208
-    goto :goto_0
+    .line 43
+    return-void
 .end method

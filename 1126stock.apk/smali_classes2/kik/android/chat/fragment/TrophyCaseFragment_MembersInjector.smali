@@ -23,12 +23,12 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,29 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/manager/v;",
+            "Lcom/kik/metrics/c/d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final d:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final e:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/y;",
             ">;"
         }
     .end annotation
@@ -51,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 11
     const-class v0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -73,27 +95,35 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/manager/v;",
+            "Lcom/kik/metrics/c/d;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/y;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 13
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
+    .line 30
     sget-boolean v0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -106,11 +136,11 @@
 
     throw v0
 
-    .line 15
+    .line 31
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 16
+    .line 32
     sget-boolean v0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -123,26 +153,68 @@
 
     throw v0
 
-    .line 17
+    .line 33
     :cond_1
     iput-object p2, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 18
+    .line 34
+    sget-boolean v0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->a:Z
+
+    if-nez v0, :cond_2
+
+    if-nez p3, :cond_2
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 35
+    :cond_2
+    iput-object p3, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->d:Ljavax/inject/Provider;
+
+    .line 36
+    sget-boolean v0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->a:Z
+
+    if-nez v0, :cond_3
+
+    if-nez p4, :cond_3
+
+    new-instance v0, Ljava/lang/AssertionError;
+
+    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
+
+    throw v0
+
+    .line 37
+    :cond_3
+    iput-object p4, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->e:Ljavax/inject/Provider;
+
+    .line 38
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
+            "Lkik/core/interfaces/ad;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/manager/v;",
+            "Lcom/kik/metrics/c/d;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ICommunication;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/y;",
             ">;)",
             "Ldagger/b",
             "<",
@@ -152,10 +224,10 @@
     .end annotation
 
     .prologue
-    .line 30
+    .line 45
     new-instance v0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;
 
-    invoke-direct {v0, p0, p1}, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -166,13 +238,13 @@
     .locals 2
 
     .prologue
-    .line 8
+    .line 11
     check-cast p1, Lkik/android/chat/fragment/TrophyCaseFragment;
 
-    .line 1022
+    .line 1051
     if-nez p1, :cond_0
 
-    .line 1023
+    .line 1052
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -181,23 +253,51 @@
 
     throw v0
 
-    .line 1025
+    .line 1054
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->b:Ldagger/b;
+    iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->b:Ljavax/inject/Provider;
 
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
-    .line 1026
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/ad;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_storage:Lkik/core/interfaces/ad;
+
+    .line 1055
     iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/manager/v;
+    check-cast v0, Lcom/kik/metrics/c/d;
 
-    iput-object v0, p1, Lkik/android/chat/fragment/TrophyCaseFragment;->a:Lkik/core/manager/v;
+    iput-object v0, p1, Lkik/android/chat/fragment/KikScopedDialogFragment;->_metricsService:Lcom/kik/metrics/c/d;
 
-    .line 8
+    .line 1056
+    iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->d:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/interfaces/ICommunication;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/KikIqFragmentBase;->_comm:Lkik/core/interfaces/ICommunication;
+
+    .line 1057
+    iget-object v0, p0, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->e:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/manager/y;
+
+    iput-object v0, p1, Lkik/android/chat/fragment/TrophyCaseFragment;->a:Lkik/core/manager/y;
+
+    .line 11
     return-void
 .end method

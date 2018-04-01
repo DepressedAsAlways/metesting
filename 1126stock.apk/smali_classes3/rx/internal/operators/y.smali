@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$b;
 
 
 # annotations
@@ -13,78 +13,54 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/c$a",
-        "<TT;>;"
+        "Lrx/d$b",
+        "<TT;TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final a:Lrx/f;
-
-.field final b:Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/c",
-            "<TT;>;"
-        }
-    .end annotation
-.end field
+.field private final a:Lrx/functions/a;
 
 
 # direct methods
-.method public constructor <init>(Lrx/c;Lrx/f;)V
+.method public constructor <init>(Lrx/functions/a;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lrx/c",
-            "<TT;>;",
-            "Lrx/f;",
-            ")V"
-        }
-    .end annotation
 
     .prologue
     .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 36
-    iput-object p2, p0, Lrx/internal/operators/y;->a:Lrx/f;
+    iput-object p1, p0, Lrx/internal/operators/y;->a:Lrx/functions/a;
 
     .line 37
-    iput-object p1, p0, Lrx/internal/operators/y;->b:Lrx/c;
-
-    .line 38
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic call(Ljava/lang/Object;)V
-    .locals 2
+.method public final synthetic call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .prologue
-    .line 30
-    check-cast p1, Lrx/i;
+    .line 28
+    check-cast p1, Lrx/j;
 
-    .line 1042
-    iget-object v0, p0, Lrx/internal/operators/y;->a:Lrx/f;
+    .line 1041
+    iget-object v0, p0, Lrx/internal/operators/y;->a:Lrx/functions/a;
 
-    invoke-virtual {v0}, Lrx/f;->b()Lrx/f$a;
+    invoke-static {v0}, Lrx/f/e;->a(Lrx/functions/a;)Lrx/k;
 
     move-result-object v0
 
-    .line 1043
-    invoke-virtual {p1, v0}, Lrx/i;->a(Lrx/j;)V
+    invoke-virtual {p1, v0}, Lrx/j;->a(Lrx/k;)V
 
     .line 1045
-    new-instance v1, Lrx/internal/operators/y$1;
+    invoke-static {p1}, Lrx/c/f;->a(Lrx/j;)Lrx/j;
 
-    invoke-direct {v1, p0, p1, v0}, Lrx/internal/operators/y$1;-><init>(Lrx/internal/operators/y;Lrx/i;Lrx/f$a;)V
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Lrx/f$a;->a(Lrx/b/a;)Lrx/j;
-
-    .line 30
-    return-void
+    .line 28
+    return-object v0
 .end method

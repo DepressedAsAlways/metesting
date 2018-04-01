@@ -37,7 +37,7 @@
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 44
-    invoke-static {}, Lkik/android/util/ak;->a()Lkik/android/util/ak;
+    invoke-static {}, Lkik/android/util/af;->a()Lkik/android/util/af;
 
     move-result-object v0
 

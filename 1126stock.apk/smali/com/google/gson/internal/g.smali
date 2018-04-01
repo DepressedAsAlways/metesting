@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 30
+    .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,7 +18,7 @@
     .locals 6
 
     .prologue
-    .line 39
+    .line 40
     :try_start_0
     const-string v0, "sun.misc.Unsafe"
 
@@ -26,26 +26,26 @@
 
     move-result-object v0
 
-    .line 40
+    .line 41
     const-string v1, "theUnsafe"
 
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v1
 
-    .line 41
+    .line 42
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 42
+    .line 43
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 43
+    .line 44
     const-string v2, "allocateInstance"
 
     const/4 v3, 0x1
@@ -62,21 +62,21 @@
 
     move-result-object v2
 
-    .line 44
+    .line 45
     new-instance v0, Lcom/google/gson/internal/g$1;
 
     invoke-direct {v0, v2, v1}, Lcom/google/gson/internal/g$1;-><init>(Ljava/lang/reflect/Method;Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 97
+    .line 101
     :goto_0
     return-object v0
 
     :catch_0
     move-exception v0
 
-    .line 60
+    .line 62
     :try_start_1
     const-class v0, Ljava/io/ObjectStreamClass;
 
@@ -92,17 +92,17 @@
 
     aput-object v4, v2, v3
 
-    .line 61
+    .line 63
     invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
-    .line 62
+    .line 64
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 63
+    .line 65
     const/4 v1, 0x0
 
     const/4 v2, 0x1
@@ -125,7 +125,7 @@
 
     move-result v1
 
-    .line 64
+    .line 66
     const-class v0, Ljava/io/ObjectStreamClass;
 
     const-string v2, "newInstance"
@@ -146,17 +146,17 @@
 
     aput-object v5, v3, v4
 
-    .line 65
+    .line 67
     invoke-virtual {v0, v2, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
 
-    .line 66
+    .line 68
     const/4 v0, 0x1
 
     invoke-virtual {v2, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 67
+    .line 69
     new-instance v0, Lcom/google/gson/internal/g$2;
 
     invoke-direct {v0, v2, v1}, Lcom/google/gson/internal/g$2;-><init>(Ljava/lang/reflect/Method;I)V
@@ -168,7 +168,7 @@
     :catch_1
     move-exception v0
 
-    .line 83
+    .line 86
     :try_start_2
     const-class v0, Ljava/io/ObjectInputStream;
 
@@ -190,17 +190,17 @@
 
     aput-object v4, v2, v3
 
-    .line 84
+    .line 87
     invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
-    .line 85
+    .line 88
     const/4 v0, 0x1
 
     invoke-virtual {v1, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 86
+    .line 89
     new-instance v0, Lcom/google/gson/internal/g$3;
 
     invoke-direct {v0, v1}, Lcom/google/gson/internal/g$3;-><init>(Ljava/lang/reflect/Method;)V
@@ -209,7 +209,7 @@
 
     goto :goto_0
 
-    .line 97
+    .line 101
     :catch_2
     move-exception v0
 
@@ -218,6 +218,92 @@
     invoke-direct {v0}, Lcom/google/gson/internal/g$4;-><init>()V
 
     goto :goto_0
+.end method
+
+.method static b(Ljava/lang/Class;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class",
+            "<*>;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 115
+    invoke-virtual {p0}, Ljava/lang/Class;->getModifiers()I
+
+    move-result v0
+
+    .line 116
+    invoke-static {v0}, Ljava/lang/reflect/Modifier;->isInterface(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 117
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Interface can\'t be instantiated! Interface name: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 119
+    :cond_0
+    invoke-static {v0}, Ljava/lang/reflect/Modifier;->isAbstract(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 120
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Abstract class can\'t be instantiated! Class name: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 122
+    :cond_1
+    return-void
 .end method
 
 

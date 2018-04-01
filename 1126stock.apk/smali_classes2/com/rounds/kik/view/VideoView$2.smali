@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/animation/Animator$AnimatorListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/rounds/kik/view/VideoView;->refreshVideoSurfaceView(Lcom/rounds/kik/view/VideoSurface;)V
+    value = Lcom/rounds/kik/view/VideoView;->hide(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/rounds/kik/view/VideoSurface;
-
-.field final synthetic b:Lcom/rounds/kik/view/VideoView;
+.field final synthetic a:Lcom/rounds/kik/view/VideoView;
 
 
 # direct methods
-.method constructor <init>(Lcom/rounds/kik/view/VideoView;Lcom/rounds/kik/view/VideoSurface;)V
+.method constructor <init>(Lcom/rounds/kik/view/VideoView;)V
     .locals 0
 
     .prologue
-    .line 644
-    iput-object p1, p0, Lcom/rounds/kik/view/VideoView$2;->b:Lcom/rounds/kik/view/VideoView;
-
-    iput-object p2, p0, Lcom/rounds/kik/view/VideoView$2;->a:Lcom/rounds/kik/view/VideoSurface;
+    .line 642
+    iput-object p1, p0, Lcom/rounds/kik/view/VideoView$2;->a:Lcom/rounds/kik/view/VideoView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,82 +36,41 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 0
+
+    .prologue
+    .line 660
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 2
+
+    .prologue
+    .line 653
+    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$2;->a:Lcom/rounds/kik/view/VideoView;
+
+    const/4 v1, 0x4
+
+    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoView;->setVisibility(I)V
+
+    .line 654
+    return-void
+.end method
+
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
+
+    .prologue
+    .line 666
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
 
     .prologue
     .line 648
-    const/4 v1, 0x1
-
-    .line 649
-    const/4 v0, 0x0
-
-    :goto_0
-    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$2;->b:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
-    invoke-static {v2}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getChildCount()I
-
-    move-result v2
-
-    if-ge v0, v2, :cond_1
-
-    .line 650
-    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$2;->b:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
-    invoke-static {v2}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/rounds/kik/view/VideoView$2;->a:Lcom/rounds/kik/view/VideoSurface;
-
-    if-ne v2, v3, :cond_0
-
-    .line 655
-    :goto_1
-    iget-object v1, p0, Lcom/rounds/kik/view/VideoView$2;->b:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
-    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$2;->a:Lcom/rounds/kik/view/VideoSurface;
-
-    invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
-
-    .line 656
-    iget-object v1, p0, Lcom/rounds/kik/view/VideoView$2;->b:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
-    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$2;->a:Lcom/rounds/kik/view/VideoSurface;
-
-    invoke-virtual {v1, v2, v0}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;I)V
-
-    .line 657
     return-void
-
-    .line 649
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    move v0, v1
-
-    goto :goto_1
 .end method

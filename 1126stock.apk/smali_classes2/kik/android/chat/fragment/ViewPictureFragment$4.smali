@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 617
+    .line 665
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
 
     const/4 v3, 0x0
 
-    .line 621
+    .line 669
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->k(Lkik/android/chat/fragment/ViewPictureFragment;)Z
@@ -63,7 +63,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 623
+    .line 671
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->m(Lkik/android/chat/fragment/ViewPictureFragment;)Ljava/io/File;
@@ -72,7 +72,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 624
+    .line 672
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -83,30 +83,32 @@
 
     invoke-static {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->b(Lkik/android/chat/fragment/ViewPictureFragment;Ljava/io/File;)V
 
-    .line 625
-    const v0, 0x7f0904bb
+    .line 673
+    iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->b(I)Ljava/lang/String;
+    const v1, 0x7f0904cf
+
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 626
+    .line 674
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/ViewPictureFragment;->_saveButton:Landroid/widget/ImageButton;
 
-    const v2, 0x7f0202e7
+    const v2, 0x7f020336
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 
-    .line 627
+    .line 675
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/ViewPictureFragment;->_saveButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageButton;->setClickable(Z)V
 
-    .line 629
+    .line 677
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/ViewPictureFragment;->f:Lcom/kik/android/Mixpanel;
@@ -121,9 +123,9 @@
 
     move-result-object v2
 
-    invoke-static {v1, v4, v2, v4, v3}, Lkik/android/util/bf;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
+    invoke-static {v1, v4, v2, v4, v3}, Lkik/android/util/az;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
 
-    .line 635
+    .line 683
     :goto_0
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
@@ -139,19 +141,21 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 638
+    .line 686
     :cond_0
     return-void
 
-    .line 632
+    .line 680
     :cond_1
-    const v0, 0x7f090309
+    iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->b(I)Ljava/lang/String;
+    const v1, 0x7f09031d
+
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/ViewPictureFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 633
+    .line 681
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$4;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/ViewPictureFragment;->f:Lcom/kik/android/Mixpanel;
@@ -166,7 +170,7 @@
 
     move-result-object v2
 
-    invoke-static {v1, v3, v2, v4, v3}, Lkik/android/util/bf;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
+    invoke-static {v1, v3, v2, v4, v3}, Lkik/android/util/az;->a(Lcom/kik/android/Mixpanel;ZLjava/lang/String;ZZ)V
 
     goto :goto_0
 .end method

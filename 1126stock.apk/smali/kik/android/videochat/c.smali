@@ -4,12 +4,12 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/app/Activity;Lkik/core/datatypes/m;)Lcom/kik/events/Promise;
+.method public abstract a(Landroid/app/Activity;Lkik/core/datatypes/l;)Lcom/kik/events/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/app/Activity;",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ")",
             "Lcom/kik/events/Promise",
             "<",
@@ -19,15 +19,15 @@
     .end annotation
 .end method
 
-.method public abstract a(Lkik/core/datatypes/m;)Ljava/util/List;
+.method public abstract a(Lkik/core/datatypes/l;)Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ")",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
@@ -51,10 +51,10 @@
 .method public abstract a(Lcom/rounds/kik/conference/LeaveReason;)V
 .end method
 
-.method public abstract a(Lkik/core/datatypes/m;JILkik/android/videochat/i;)V
+.method public abstract a(Lkik/core/datatypes/l;JILkik/android/videochat/i;)V
 .end method
 
-.method public abstract a(Lkik/core/datatypes/m;Z)V
+.method public abstract a(Lkik/core/datatypes/l;Z)V
 .end method
 
 .method public abstract a([Ljava/lang/String;)V
@@ -83,19 +83,19 @@
             "()",
             "Lcom/kik/events/c",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract b(Lkik/core/datatypes/m;)Z
+.method public abstract b(Lkik/core/datatypes/l;)Z
 .end method
 
 .method public abstract c()Z
 .end method
 
-.method public abstract c(Lkik/core/datatypes/m;)Z
+.method public abstract c(Lkik/core/datatypes/l;)Z
 .end method
 
 .method public abstract d()Ljava/util/List;
@@ -104,13 +104,13 @@
             "()",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract d(Lkik/core/datatypes/m;)V
+.method public abstract d(Lkik/core/datatypes/l;)V
 .end method
 
 .method public abstract e()Lcom/kik/events/c;
@@ -125,7 +125,7 @@
     .end annotation
 .end method
 
-.method public abstract f()Lkik/core/interfaces/ac;
+.method public abstract f()Lkik/core/interfaces/ad;
 .end method
 
 .method public abstract g()Lcom/rounds/kik/analytics/IReporterProxy;
@@ -134,11 +134,23 @@
             "()",
             "Lcom/rounds/kik/analytics/IReporterProxy",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
 .end method
 
 .method public abstract h()Z
+.end method
+
+.method public abstract i()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
 .end method

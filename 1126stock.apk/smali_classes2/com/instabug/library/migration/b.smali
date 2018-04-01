@@ -1,283 +1,153 @@
 .class public final Lcom/instabug/library/migration/b;
-.super Ljava/lang/Object;
+.super Lcom/instabug/library/migration/AbstractMigration;
 .source "SourceFile"
 
 
-# static fields
-.field private static final a:[Lcom/instabug/library/migration/AbstractMigration;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    .prologue
-    .line 22
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Lcom/instabug/library/migration/AbstractMigration;
-
-    const/4 v1, 0x0
-
-    new-instance v2, Lcom/instabug/library/migration/a;
-
-    invoke-direct {v2}, Lcom/instabug/library/migration/a;-><init>()V
-
-    aput-object v2, v0, v1
-
-    sput-object v0, Lcom/instabug/library/migration/b;->a:[Lcom/instabug/library/migration/AbstractMigration;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     .prologue
     .line 19
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "last_contacted_at_to_last_bug_and_last_chat_time_migration"
 
+    invoke-direct {p0, v0}, Lcom/instabug/library/migration/AbstractMigration;-><init>(Ljava/lang/String;)V
+
+    .line 20
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;)V
-    .locals 11
+
+# virtual methods
+.method public final doAfterMigration()V
+    .locals 0
 
     .prologue
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    .line 1055
-    new-instance v4, Ljava/util/ArrayList;
-
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
-
-    .line 1056
-    sget-object v5, Lcom/instabug/library/migration/b;->a:[Lcom/instabug/library/migration/AbstractMigration;
-
-    array-length v6, v5
-
-    move v3, v2
-
-    :goto_0
-    if-ge v3, v6, :cond_2
-
-    aget-object v7, v5, v3
-
-    .line 1057
-    invoke-virtual {v7, p0}, Lcom/instabug/library/migration/AbstractMigration;->initialize(Landroid/content/Context;)V
-
-    .line 1067
-    invoke-virtual {v7}, Lcom/instabug/library/migration/AbstractMigration;->shouldMigrate()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 1068
-    invoke-virtual {v7}, Lcom/instabug/library/migration/AbstractMigration;->getMigrationVersion()I
-
-    move-result v0
-
-    .line 1236
-    invoke-static {}, Lcom/instabug/library/s;->i()I
-
-    move-result v8
-
-    .line 1068
-    if-le v0, v8, :cond_1
-
-    .line 1069
-    invoke-virtual {v7}, Lcom/instabug/library/migration/AbstractMigration;->getMigrationVersion()I
-
-    move-result v0
-
-    if-gt v0, v1, :cond_1
-
-    move v0, v1
-
-    .line 1070
-    :goto_1
-    const-class v8, Lcom/instabug/library/migration/b;
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    const-string v10, "Checking if should apply this migration: "
-
-    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    const-string v10, ", result is "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    const-string v10, " last migration version is "
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    .line 2236
-    invoke-static {}, Lcom/instabug/library/s;->i()I
-
-    move-result v10
-
-    .line 1070
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    const-string v10, " target migration version 1"
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1058
-    if-eqz v0, :cond_0
-
-    .line 1059
-    invoke-virtual {v7}, Lcom/instabug/library/migration/AbstractMigration;->migrate()Lrx/c;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 1056
-    :cond_0
-    add-int/lit8 v0, v3, 0x1
-
-    move v3, v0
-
-    goto :goto_0
-
-    :cond_1
-    move v0, v2
-
-    .line 1069
-    goto :goto_1
-
-    .line 1062
-    :cond_2
-    invoke-static {v4}, Lcom/instabug/library/migration/b;->a(Ljava/util/ArrayList;)[Lrx/c;
-
-    move-result-object v0
-
-    .line 26
-    array-length v1, v0
-
-    if-eqz v1, :cond_3
-
-    .line 27
-    invoke-static {v0}, Lrx/c;->a([Lrx/c;)Lrx/c;
-
-    move-result-object v0
-
-    invoke-static {}, Lrx/a/b/a;->a()Lrx/f;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/c;->a(Lrx/f;)Lrx/c;
-
-    move-result-object v0
-
-    invoke-static {}, Lrx/f/a;->c()Lrx/f;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/c;->b(Lrx/f;)Lrx/c;
-
-    move-result-object v0
-
-    new-instance v1, Lcom/instabug/library/migration/b$1;
-
-    invoke-direct {v1}, Lcom/instabug/library/migration/b$1;-><init>()V
-
-    invoke-virtual {v0, v1}, Lrx/c;->b(Lrx/i;)Lrx/j;
-
-    .line 52
-    :goto_2
+    .line 68
     return-void
-
-    .line 50
-    :cond_3
-    const-class v0, Lcom/instabug/library/migration/b;
-
-    const-string v1, "No migrations to run"
-
-    invoke-static {v0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_2
 .end method
 
-.method private static a(Ljava/util/ArrayList;)[Lrx/c;
-    .locals 3
+.method public final doPreMigration()V
+    .locals 0
+
+    .prologue
+    .line 63
+    return-void
+.end method
+
+.method public final getMigrationId()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 24
+    const-string v0, "last_contacted_at_to_last_bug_and_last_chat_time_migration"
+
+    return-object v0
+.end method
+
+.method public final getMigrationVersion()I
+    .locals 1
+
+    .prologue
+    .line 29
+    const/4 v0, 0x3
+
+    return v0
+.end method
+
+.method public final initialize(Landroid/content/Context;)V
+    .locals 0
+
+    .prologue
+    .line 35
+    return-void
+.end method
+
+.method public final migrate()Lrx/d;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/ArrayList",
+            "()",
+            "Lrx/d",
             "<",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/String;",
-            ">;>;)[",
-            "Lrx/c;"
+            "Lcom/instabug/library/migration/AbstractMigration;",
+            ">;"
         }
     .end annotation
 
     .prologue
-    .line 75
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    .line 48
+    new-instance v0, Lcom/instabug/library/migration/b$1;
 
-    move-result v0
+    invoke-direct {v0, p0}, Lcom/instabug/library/migration/b$1;-><init>(Lcom/instabug/library/migration/b;)V
 
-    new-array v2, v0, [Lrx/c;
-
-    .line 76
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    :goto_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    if-ge v1, v0, :cond_0
-
-    .line 77
-    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-static {v0}, Lrx/d;->a(Lrx/d$a;)Lrx/d;
 
     move-result-object v0
 
-    check-cast v0, Lrx/c;
+    return-object v0
+.end method
 
-    aput-object v0, v2, v1
+.method public final shouldMigrate()Z
+    .locals 4
 
-    .line 76
-    add-int/lit8 v0, v1, 0x1
+    .prologue
+    const-wide/16 v2, 0x0
 
-    move v1, v0
+    .line 39
+    invoke-virtual {p0}, Lcom/instabug/library/migration/b;->getMigrationVersion()I
 
-    goto :goto_0
+    move-result v0
 
-    .line 79
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->C()I
+
+    move-result v1
+
+    if-le v0, v1, :cond_0
+
+    .line 40
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->w()J
+
+    move-result-wide v0
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_0
+
+    .line 41
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->x()J
+
+    move-result-wide v0
+
+    cmp-long v0, v0, v2
+
+    if-nez v0, :cond_0
+
+    .line 42
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->A()J
+
+    move-result-wide v0
+
+    cmp-long v0, v0, v2
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
     :cond_0
-    return-object v2
+    const/4 v0, 0x0
+
+    .line 39
+    goto :goto_0
 .end method

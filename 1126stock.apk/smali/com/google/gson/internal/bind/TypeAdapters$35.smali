@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 901
+    .line 880
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$35;->a:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$35;->b:Lcom/google/gson/o;
@@ -40,14 +40,14 @@
 
 
 # virtual methods
-.method public final a(Lcom/google/gson/d;Lcom/google/gson/b/a;)Lcom/google/gson/o;
+.method public final a(Lcom/google/gson/e;Lcom/google/gson/b/a;)Lcom/google/gson/o;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T2:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/gson/d;",
+            "Lcom/google/gson/e;",
             "Lcom/google/gson/b/a",
             "<TT2;>;)",
             "Lcom/google/gson/o",
@@ -56,12 +56,12 @@
     .end annotation
 
     .prologue
-    .line 904
+    .line 883
     invoke-virtual {p2}, Lcom/google/gson/b/a;->a()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 905
+    .line 884
     iget-object v0, p0, Lcom/google/gson/internal/bind/TypeAdapters$35;->a:Ljava/lang/Class;
 
     invoke-virtual {v0, v1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -70,10 +70,10 @@
 
     if-nez v0, :cond_0
 
-    .line 906
+    .line 885
     const/4 v0, 0x0
 
-    .line 908
+    .line 887
     :goto_0
     return-object v0
 
@@ -89,7 +89,7 @@
     .locals 2
 
     .prologue
-    .line 924
+    .line 903
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Factory[typeHierarchy="

@@ -1,5 +1,5 @@
 .class final Lkik/android/gifs/vm/l$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/util/List",
         "<",
@@ -38,14 +38,14 @@
     .locals 0
 
     .prologue
-    .line 74
+    .line 75
     iput-object p1, p0, Lkik/android/gifs/vm/l$1;->c:Lkik/android/gifs/vm/l;
 
     iput-object p2, p0, Lkik/android/gifs/vm/l$1;->a:Ljava/util/List;
 
     iput-object p3, p0, Lkik/android/gifs/vm/l$1;->b:Lcom/kik/events/Promise;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -56,27 +56,27 @@
     .locals 2
 
     .prologue
-    .line 74
+    .line 75
     check-cast p1, Ljava/util/List;
-
-    .line 1078
-    iget-object v0, p0, Lkik/android/gifs/vm/l$1;->a:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 1079
     iget-object v0, p0, Lkik/android/gifs/vm/l$1;->a:Ljava/util/List;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 1080
+    iget-object v0, p0, Lkik/android/gifs/vm/l$1;->a:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 1081
     iget-object v0, p0, Lkik/android/gifs/vm/l$1;->b:Lcom/kik/events/Promise;
 
     iget-object v1, p0, Lkik/android/gifs/vm/l$1;->a:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 74
+    .line 75
     return-void
 .end method
 
@@ -84,11 +84,11 @@
     .locals 1
 
     .prologue
-    .line 86
+    .line 87
     iget-object v0, p0, Lkik/android/gifs/vm/l$1;->b:Lcom/kik/events/Promise;
 
     invoke-virtual {v0, p1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 87
+    .line 88
     return-void
 .end method

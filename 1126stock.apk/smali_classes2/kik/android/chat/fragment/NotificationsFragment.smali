@@ -42,16 +42,10 @@
 
     .prologue
     .line 27
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 27
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;)V
 
     .line 28
@@ -78,7 +72,7 @@
     .line 32
     iget-object v0, p0, Lkik/android/chat/fragment/NotificationsFragment;->b:Ljava/lang/String;
 
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -101,7 +95,7 @@
 
     .prologue
     .line 41
-    const v0, 0x7f040101
+    const v0, 0x7f040137
 
     const/4 v1, 0x0
 
@@ -109,10 +103,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/d/bq;
+    check-cast v0, Lkik/android/e/ck;
 
     .line 42
-    new-instance v1, Lkik/android/chat/vm/bm;
+    new-instance v1, Lkik/android/chat/vm/cx;
 
     iget-object v2, p0, Lkik/android/chat/fragment/NotificationsFragment;->a:Lkik/android/chat/fragment/NotificationsFragment$a;
 
@@ -120,34 +114,29 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lkik/android/chat/vm/bm;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lkik/android/chat/vm/cx;-><init>(Ljava/lang/String;)V
 
     .line 43
-    invoke-virtual {v0, v1}, Lkik/android/d/bq;->a(Lkik/android/chat/vm/aa;)V
+    invoke-virtual {v0, v1}, Lkik/android/e/ck;->a(Lkik/android/chat/vm/az;)V
 
     .line 44
-    iget-object v2, v0, Lkik/android/d/bq;->a:Lkik/android/d/am;
+    iget-object v2, v0, Lkik/android/e/ck;->a:Lkik/android/e/av;
 
-    invoke-virtual {v2, v1}, Lkik/android/d/am;->a(Lkik/android/chat/vm/y;)V
-
-    .line 2088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v2
+    invoke-virtual {v2, v1}, Lkik/android/e/av;->a(Lkik/android/chat/vm/ax;)V
 
     .line 45
-    invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->ar()Lkik/android/chat/vm/z;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lkik/android/chat/fragment/NotificationsFragment;->getNavigator()Lkik/android/chat/vm/ay;
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/bm;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-virtual {v1, v2, v3}, Lkik/android/chat/vm/cx;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 47
-    invoke-virtual {v0}, Lkik/android/d/bq;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/ck;->getRoot()Landroid/view/View;
 
     move-result-object v0
 

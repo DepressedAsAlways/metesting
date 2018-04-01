@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/presentation/bs$2;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/String;",
         ">;"
@@ -35,7 +35,7 @@
     .line 238
     iput-object p1, p0, Lkik/android/chat/presentation/bs$2;->a:Lkik/android/chat/presentation/bs;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -99,28 +99,28 @@
     .line 261
     iget-object v1, p0, Lkik/android/chat/presentation/bs$2;->a:Lkik/android/chat/presentation/bs;
 
-    invoke-static {v1}, Lkik/android/chat/presentation/bs;->d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ac;
+    invoke-static {v1}, Lkik/android/chat/presentation/bs;->d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ad;
 
     move-result-object v1
 
-    const v2, 0x7f090330
+    const v2, 0x7f090344
 
     invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v1, v2}, Lkik/android/chat/view/ac;->c(Ljava/lang/String;)V
+    invoke-interface {v1, v2}, Lkik/android/chat/view/ad;->c(Ljava/lang/String;)V
 
     .line 262
     iget-object v1, p0, Lkik/android/chat/presentation/bs$2;->a:Lkik/android/chat/presentation/bs;
 
-    invoke-static {v1}, Lkik/android/chat/presentation/bs;->d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ac;
+    invoke-static {v1}, Lkik/android/chat/presentation/bs;->d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ad;
 
     move-result-object v1
 
-    const v2, 0x7f0f0097
+    const v2, 0x7f0e00a7
 
-    invoke-interface {v1, v2}, Lkik/android/chat/view/ac;->b(I)V
+    invoke-interface {v1, v2}, Lkik/android/chat/view/ad;->b(I)V
 
     .line 263
     new-instance v1, Lkik/android/chat/fragment/KikBasicDialog$a;
@@ -137,17 +137,17 @@
     packed-switch v0, :pswitch_data_0
 
     .line 278
-    const v0, 0x7f09041f
+    const v0, 0x7f090433
 
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikBasicDialog$a;->a(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 
     .line 279
-    const v0, 0x7f090232
+    const v0, 0x7f090246
 
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikBasicDialog$a;->b(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 
     .line 280
-    const v0, 0x7f090269
+    const v0, 0x7f09027d
 
     new-instance v2, Lkik/android/chat/presentation/bs$2$2;
 
@@ -172,7 +172,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/presentation/r;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/presentation/r;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 292
     return-void
@@ -184,26 +184,26 @@
     .line 257
     const-string v1, "Unexpected exception when requesting new Phone Verification verification code."
 
-    invoke-static {v1}, Lkik/android/util/bc;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
     .line 258
-    invoke-static {p1}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {p1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
     .line 266
     :pswitch_0
-    const v0, 0x7f090425
+    const v0, 0x7f090439
 
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikBasicDialog$a;->a(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 
     .line 267
-    const v0, 0x7f090112
+    const v0, 0x7f090113
 
     invoke-virtual {v1, v0}, Lkik/android/chat/fragment/KikBasicDialog$a;->b(I)Lkik/android/chat/fragment/KikBasicDialog$a;
 
     .line 268
-    const v0, 0x7f09044c
+    const v0, 0x7f090460
 
     new-instance v2, Lkik/android/chat/presentation/bs$2$1;
 

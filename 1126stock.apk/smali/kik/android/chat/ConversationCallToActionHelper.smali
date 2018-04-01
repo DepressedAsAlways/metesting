@@ -14,7 +14,7 @@
 # instance fields
 .field private final a:Lkik/core/interfaces/IAddressBookIntegration;
 
-.field private final b:Lkik/core/interfaces/ac;
+.field private final b:Lkik/core/interfaces/ad;
 
 .field private final c:Lkik/core/interfaces/b;
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ac;Lkik/core/interfaces/b;Lkik/core/manager/n;)V
+.method public constructor <init>(Lkik/core/interfaces/IAddressBookIntegration;Lkik/core/interfaces/ad;Lkik/core/interfaces/b;Lkik/core/manager/n;)V
     .locals 0
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
@@ -35,7 +35,7 @@
     iput-object p1, p0, Lkik/android/chat/ConversationCallToActionHelper;->a:Lkik/core/interfaces/IAddressBookIntegration;
 
     .line 37
-    iput-object p2, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ac;
+    iput-object p2, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ad;
 
     .line 38
     iput-object p3, p0, Lkik/android/chat/ConversationCallToActionHelper;->c:Lkik/core/interfaces/b;
@@ -57,11 +57,11 @@
     if-eqz p2, :cond_1
 
     .line 72
-    iget-object v0, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.logintime"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ac;->u(Ljava/lang/String;)Ljava/lang/Long;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->v(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, Lkik/core/util/w;->d(J)J
+    invoke-static {v0, v1}, Lkik/core/util/v;->d(J)J
 
     move-result-wide v0
 
@@ -149,9 +149,9 @@
 
     .line 1121
     :cond_1
-    iget-object v2, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ac;
+    iget-object v2, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ad;
 
-    .line 2103
+    .line 2106
     if-nez v2, :cond_2
 
     move v2, v0
@@ -163,7 +163,7 @@
     .line 2126
     iget-object v2, p0, Lkik/android/chat/ConversationCallToActionHelper;->d:Lkik/core/manager/n;
 
-    .line 2188
+    .line 2218
     invoke-virtual {v2}, Lkik/core/manager/n;->a()Lkik/core/manager/n$c;
 
     move-result-object v2
@@ -171,7 +171,7 @@
     iget-object v2, v2, Lkik/core/manager/n$c;->a:Ljava/lang/String;
 
     .line 2126
-    invoke-static {v2}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v2}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -187,11 +187,11 @@
 
     goto :goto_0
 
-    .line 2106
+    .line 2109
     :cond_2
     const-string v3, "kik.publicgroup.searchcompleted"
 
-    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
+    invoke-interface {v2, v3, v0}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
@@ -244,11 +244,11 @@
 
     .line 49
     .line 1093
-    iget-object v0, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ad;
 
     const-string v3, "kik.publicgroup.helper"
 
-    invoke-interface {v0, v3}, Lkik/core/interfaces/ac;->v(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v0, v3}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -268,11 +268,11 @@
 
     .line 1110
     :goto_0
-    iget-object v3, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ac;
+    iget-object v3, p0, Lkik/android/chat/ConversationCallToActionHelper;->b:Lkik/core/interfaces/ad;
 
     const-string v4, "kik.friend.helper"
 
-    invoke-interface {v3, v4}, Lkik/core/interfaces/ac;->v(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-interface {v3, v4}, Lkik/core/interfaces/ad;->w(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v3
 

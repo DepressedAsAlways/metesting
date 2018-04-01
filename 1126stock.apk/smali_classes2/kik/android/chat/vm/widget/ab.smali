@@ -10,14 +10,14 @@
 .method public abstract f()V
 .end method
 
-.method public abstract g()V
+.method public abstract h()V
 .end method
 
-.method public abstract h()Lrx/c;
+.method public abstract i()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"

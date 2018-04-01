@@ -97,7 +97,7 @@
 
     sput-object v0, Lkik/android/chat/vm/IListViewModel$ChangeType;->Modified:Lkik/android/chat/vm/IListViewModel$ChangeType;
 
-    .line 8
+    .line 7
     const/4 v0, 0x5
 
     new-array v0, v0, [Lkik/android/chat/vm/IListViewModel$ChangeType;
@@ -136,7 +136,7 @@
     .end annotation
 
     .prologue
-    .line 8
+    .line 7
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -146,7 +146,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 7
     const-class v0, Lkik/android/chat/vm/IListViewModel$ChangeType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -162,7 +162,7 @@
     .locals 1
 
     .prologue
-    .line 8
+    .line 7
     sget-object v0, Lkik/android/chat/vm/IListViewModel$ChangeType;->$VALUES:[Lkik/android/chat/vm/IListViewModel$ChangeType;
 
     invoke-virtual {v0}, [Lkik/android/chat/vm/IListViewModel$ChangeType;->clone()Ljava/lang/Object;

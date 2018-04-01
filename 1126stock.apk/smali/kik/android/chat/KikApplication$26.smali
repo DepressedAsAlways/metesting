@@ -1,9 +1,6 @@
 .class final Lkik/android/chat/KikApplication$26;
-.super Ljava/lang/Object;
+.super Lrx/i;
 .source "SourceFile"
-
-# interfaces
-.implements Lcom/kik/events/e;
 
 
 # annotations
@@ -18,77 +15,83 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lcom/kik/events/e",
+        "Lrx/i",
         "<",
-        "Ljava/lang/Boolean;",
+        "Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lcom/kik/events/d;
-
-.field final synthetic b:Lkik/core/interfaces/ICommunication;
-
-.field final synthetic c:Lkik/core/datatypes/ad;
-
-.field final synthetic d:Lkik/android/chat/KikApplication;
+.field final synthetic a:Lkik/android/chat/KikApplication;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/KikApplication;Lcom/kik/events/d;Lkik/core/interfaces/ICommunication;Lkik/core/datatypes/ad;)V
+.method constructor <init>(Lkik/android/chat/KikApplication;)V
     .locals 0
 
     .prologue
-    .line 2124
-    iput-object p1, p0, Lkik/android/chat/KikApplication$26;->d:Lkik/android/chat/KikApplication;
+    .line 1981
+    iput-object p1, p0, Lkik/android/chat/KikApplication$26;->a:Lkik/android/chat/KikApplication;
 
-    iput-object p2, p0, Lkik/android/chat/KikApplication$26;->a:Lcom/kik/events/d;
-
-    iput-object p3, p0, Lkik/android/chat/KikApplication$26;->b:Lkik/core/interfaces/ICommunication;
-
-    iput-object p4, p0, Lkik/android/chat/KikApplication$26;->c:Lkik/core/datatypes/ad;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lrx/i;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 3
+.method public final synthetic a(Ljava/lang/Object;)V
+    .locals 4
 
     .prologue
-    .line 2124
-    .line 3129
-    iget-object v0, p0, Lkik/android/chat/KikApplication$26;->a:Lcom/kik/events/d;
+    .line 1981
+    check-cast p1, Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;
 
-    invoke-virtual {v0}, Lcom/kik/events/d;->a()V
+    .line 2985
+    iget-object v0, p0, Lkik/android/chat/KikApplication$26;->a:Lkik/android/chat/KikApplication;
 
-    .line 3130
-    iget-object v0, p0, Lkik/android/chat/KikApplication$26;->b:Lkik/core/interfaces/ICommunication;
+    iget-object v0, v0, Lkik/android/chat/KikApplication;->r:Ldagger/a;
 
-    new-instance v1, Lkik/core/net/outgoing/av$a;
+    invoke-interface {v0}, Ldagger/a;->get()Ljava/lang/Object;
 
-    invoke-direct {v1}, Lkik/core/net/outgoing/av$a;-><init>()V
+    move-result-object v0
 
-    iget-object v2, p0, Lkik/android/chat/KikApplication$26;->c:Lkik/core/datatypes/ad;
+    check-cast v0, Lcom/kik/core/a/c;
 
-    iget-object v2, v2, Lkik/core/datatypes/ad;->h:Ljava/lang/Boolean;
+    invoke-interface {v0, p1}, Lcom/kik/core/a/c;->a(Lcom/kik/featureconfig/rpc/FeatureConfigService$GetFeatureConfigsResponse;)V
 
-    invoke-virtual {v1, v2}, Lkik/core/net/outgoing/av$a;->a(Ljava/lang/Boolean;)Lkik/core/net/outgoing/av$a;
+    .line 2986
+    iget-object v0, p0, Lkik/android/chat/KikApplication$26;->a:Lkik/android/chat/KikApplication;
 
-    move-result-object v1
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->p(Lkik/android/chat/KikApplication;)Lkik/core/interfaces/ad;
 
-    invoke-virtual {v1}, Lkik/core/net/outgoing/av$a;->a()Lkik/core/net/outgoing/av;
+    move-result-object v0
 
-    move-result-object v1
+    const-string v1, "kik.android.chat.KikApplication.LAST_FEATURE_CONFIG_REFRESH"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ICommunication;->a(Lkik/core/net/outgoing/ae;)Lcom/kik/events/Promise;
+    invoke-static {}, Lkik/core/util/v;->b()J
 
-    .line 2124
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Long;)Z
+
+    .line 1981
+    return-void
+.end method
+
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 0
+
+    .prologue
+    .line 1992
+    invoke-static {p1}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
+
+    .line 1993
     return-void
 .end method

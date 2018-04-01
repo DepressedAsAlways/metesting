@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lrx/functions/g;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/instabug/library/InstabugFeedbackActivity;->a(Ljava/util/List;)Ljava/util/List;
+    value = Lcom/instabug/library/InstabugFeedbackActivity;->a(Lcom/instabug/library/bugreporting/model/Bug$Type;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,22 +16,37 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lrx/functions/g",
+        "<",
+        "Lcom/instabug/library/i/a/a/a;",
+        "Lcom/instabug/library/i/a/a/a;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic a:Ljava/util/List;
+.field final synthetic a:Lcom/instabug/library/bugreporting/model/ReportCategory;
 
-.field final synthetic b:Lcom/instabug/library/InstabugFeedbackActivity;
+.field final synthetic b:Lcom/instabug/library/bugreporting/model/Bug$Type;
+
+.field final synthetic c:Lcom/instabug/library/InstabugFeedbackActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/instabug/library/InstabugFeedbackActivity;Ljava/util/List;)V
+.method constructor <init>(Lcom/instabug/library/InstabugFeedbackActivity;Lcom/instabug/library/bugreporting/model/ReportCategory;Lcom/instabug/library/bugreporting/model/Bug$Type;)V
     .locals 0
 
     .prologue
-    .line 479
-    iput-object p1, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->b:Lcom/instabug/library/InstabugFeedbackActivity;
+    .line 337
+    iput-object p1, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->c:Lcom/instabug/library/InstabugFeedbackActivity;
 
-    iput-object p2, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->a:Ljava/util/List;
+    iput-object p2, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->a:Lcom/instabug/library/bugreporting/model/ReportCategory;
+
+    iput-object p3, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->b:Lcom/instabug/library/bugreporting/model/Bug$Type;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,21 +55,49 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final synthetic call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .prologue
-    .line 482
-    invoke-static {}, Lcom/instabug/library/b;->a()Lcom/instabug/library/b;
+    .line 337
+    check-cast p1, Lcom/instabug/library/i/a/a/a;
 
-    move-result-object v0
+    .line 1340
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
 
-    iget-object v1, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->b:Lcom/instabug/library/InstabugFeedbackActivity;
+    iget-object v0, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->a:Lcom/instabug/library/bugreporting/model/ReportCategory;
 
-    iget-object v2, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->a:Ljava/util/List;
+    invoke-static {v0}, Lcom/instabug/library/g/d;->a(Lcom/instabug/library/bugreporting/model/ReportCategory;)V
 
-    invoke-virtual {v0, v1, v2}, Lcom/instabug/library/b;->a(Landroid/app/Activity;Ljava/util/List;)V
+    .line 1341
+    iget-object v0, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->b:Lcom/instabug/library/bugreporting/model/Bug$Type;
 
-    .line 483
-    return-void
+    sget-object v1, Lcom/instabug/library/bugreporting/model/Bug$Type;->BUG:Lcom/instabug/library/bugreporting/model/Bug$Type;
+
+    if-ne v0, v1, :cond_1
+
+    .line 1342
+    iget-object v0, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->c:Lcom/instabug/library/InstabugFeedbackActivity;
+
+    invoke-virtual {v0}, Lcom/instabug/library/InstabugFeedbackActivity;->a()V
+
+    .line 337
+    :cond_0
+    :goto_0
+    return-object p1
+
+    .line 1343
+    :cond_1
+    iget-object v0, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->b:Lcom/instabug/library/bugreporting/model/Bug$Type;
+
+    sget-object v1, Lcom/instabug/library/bugreporting/model/Bug$Type;->FEEDBACK:Lcom/instabug/library/bugreporting/model/Bug$Type;
+
+    if-ne v0, v1, :cond_0
+
+    .line 1344
+    iget-object v0, p0, Lcom/instabug/library/InstabugFeedbackActivity$1;->c:Lcom/instabug/library/InstabugFeedbackActivity;
+
+    invoke-virtual {v0}, Lcom/instabug/library/InstabugFeedbackActivity;->b()V
+
+    goto :goto_0
 .end method

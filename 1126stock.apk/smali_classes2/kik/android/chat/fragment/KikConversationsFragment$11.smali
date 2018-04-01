@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/fragment/KikConversationsFragment$11;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 799
+    .line 814
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$11;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,52 +46,52 @@
     .locals 3
 
     .prologue
-    .line 799
+    .line 814
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1803
+    .line 1818
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1804
+    .line 1819
     new-instance v0, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;-><init>()V
 
     const-string v1, "Plus Menu"
 
-    .line 1805
+    .line 1820
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;->a(Ljava/lang/String;)Lkik/android/chat/fragment/PublicGroupIntroFragment$a;
 
     move-result-object v0
 
-    .line 1806
+    .line 1821
     iget-object v1, p0, Lkik/android/chat/fragment/KikConversationsFragment$11;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-virtual {v1}, Lkik/android/chat/fragment/KikConversationsFragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/af;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
+    invoke-static {v0, v1}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
     move-result-object v0
 
-    const v1, 0x7f050019
+    const v1, 0x7f050021
 
-    const v2, 0x7f050016
+    const v2, 0x7f05001e
 
-    .line 1807
+    .line 1822
     invoke-virtual {v0, v1, v2}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->a(II)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
     move-result-object v0
 
-    .line 1808
+    .line 1823
     invoke-virtual {v0}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->e()Lcom/kik/events/Promise;
 
-    .line 799
+    .line 814
     :cond_0
     return-void
 .end method

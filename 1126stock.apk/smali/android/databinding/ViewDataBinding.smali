@@ -718,7 +718,7 @@
     if-eqz v0, :cond_0
 
     .line 432
-    sget v0, Lcom/android/a/a/a$a;->a:I
+    sget v0, Lcom/android/databinding/library/R$id;->dataBinding:I
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
@@ -3258,7 +3258,7 @@
     if-eqz v0, :cond_0
 
     .line 265
-    sget v0, Lcom/android/a/a/a$a;->a:I
+    sget v0, Lcom/android/databinding/library/R$id;->dataBinding:I
 
     invoke-virtual {p1, v0, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
@@ -3293,7 +3293,7 @@
     aget-object v2, p1, v0
 
     .line 277
-    sget v3, Lcom/android/a/a/a$a;->a:I
+    sget v3, Lcom/android/databinding/library/R$id;->dataBinding:I
 
     invoke-virtual {v2, v3, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

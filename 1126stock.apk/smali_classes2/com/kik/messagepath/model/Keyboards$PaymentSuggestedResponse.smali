@@ -299,7 +299,7 @@
     .line 4842
     iget-object v0, p0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->savedCard_:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;->d()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard$a;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;->c()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard$a;
 
     move-result-object v0
 
@@ -307,7 +307,7 @@
 
     .line 4844
     :goto_2
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;->f()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;->e()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -328,7 +328,7 @@
     invoke-virtual {v1, v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard$a;->a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;)Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard$a;
 
     .line 4847
-    invoke-virtual {v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard$a;->b()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;
+    invoke-virtual {v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard$a;->a()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;
 
     move-result-object v0
 
@@ -444,7 +444,7 @@
     .line 5956
     sget-object v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->a:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     move-result-object v0
 
@@ -505,21 +505,7 @@
     return-object v0
 .end method
 
-.method public static h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
-    .locals 1
-
-    .prologue
-    .line 5953
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->a:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
-
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static j()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
+.method public static i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
     .locals 1
 
     .prologue
@@ -529,7 +515,7 @@
     return-object v0
 .end method
 
-.method public static k()Lcom/google/protobuf/Parser;
+.method public static j()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -548,7 +534,7 @@
     return-object v0
 .end method
 
-.method static synthetic l()Z
+.method static synthetic k()Z
     .locals 1
 
     .prologue
@@ -558,7 +544,7 @@
     return v0
 .end method
 
-.method static synthetic m()Lcom/google/protobuf/Parser;
+.method static synthetic l()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
@@ -568,7 +554,7 @@
     return-object v0
 .end method
 
-.method private n()Lcom/google/protobuf/ByteString;
+.method private m()Lcom/google/protobuf/ByteString;
     .locals 2
 
     .prologue
@@ -601,7 +587,7 @@
     goto :goto_0
 .end method
 
-.method private o()Lcom/google/protobuf/ByteString;
+.method private n()Lcom/google/protobuf/ByteString;
     .locals 2
 
     .prologue
@@ -1006,7 +992,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;->e()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;
+    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;->d()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;
 
     move-result-object v0
 
@@ -1081,7 +1067,7 @@
     const/4 v0, 0x0
 
     .line 5813
-    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->n()Lcom/google/protobuf/ByteString;
+    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->m()Lcom/google/protobuf/ByteString;
 
     move-result-object v1
 
@@ -1122,7 +1108,7 @@
 
     .line 5820
     :cond_2
-    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->o()Lcom/google/protobuf/ByteString;
+    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->n()Lcom/google/protobuf/ByteString;
 
     move-result-object v1
 
@@ -1200,6 +1186,37 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 5959
+    sget-object v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->a:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
+
+    if-ne p0, v0, :cond_0
+
+    new-instance v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;-><init>(B)V
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    new-instance v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;-><init>(B)V
+
+    .line 5960
+    invoke-virtual {v0, p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;)Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public final hashCode()I
@@ -1349,37 +1366,6 @@
     goto :goto_0
 .end method
 
-.method public final i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 5959
-    sget-object v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->a:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
-
-    if-ne p0, v0, :cond_0
-
-    new-instance v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;-><init>(B)V
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    new-instance v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;-><init>(B)V
-
-    .line 5960
-    invoke-virtual {v0, p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;->a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;)Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
 .method protected final internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
     .locals 3
 
@@ -1440,7 +1426,7 @@
     .line 10953
     sget-object v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->a:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     move-result-object v0
 
@@ -1470,7 +1456,7 @@
     .line 11953
     sget-object v0, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->a:Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     move-result-object v0
 
@@ -1483,7 +1469,7 @@
 
     .prologue
     .line 4770
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     move-result-object v0
 
@@ -1495,7 +1481,7 @@
 
     .prologue
     .line 4770
-    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->i()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
+    invoke-virtual {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->h()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$a;
 
     move-result-object v0
 
@@ -1512,7 +1498,7 @@
 
     .prologue
     .line 5791
-    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->n()Lcom/google/protobuf/ByteString;
+    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->m()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
@@ -1544,7 +1530,7 @@
 
     .line 5797
     :cond_1
-    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->o()Lcom/google/protobuf/ByteString;
+    invoke-direct {p0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->n()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 

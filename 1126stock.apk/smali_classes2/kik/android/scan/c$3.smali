@@ -1,5 +1,5 @@
 .class final Lkik/android/scan/c$3;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lcom/kik/xdata/model/scanning/XScanningNonceSecret;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 126
+    .line 129
     iput-object p1, p0, Lkik/android/scan/c$3;->a:Lkik/android/scan/c;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,21 +46,21 @@
     .locals 1
 
     .prologue
-    .line 126
+    .line 129
     check-cast p1, Lcom/kik/xdata/model/scanning/XScanningNonceSecret;
 
-    .line 1130
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)V
+    .line 1133
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 1131
+    .line 1134
     if-nez p1, :cond_0
 
-    .line 1132
+    .line 1135
     iget-object v0, p0, Lkik/android/scan/c$3;->a:Lkik/android/scan/c;
 
     invoke-static {v0}, Lkik/android/scan/c;->b(Lkik/android/scan/c;)V
 
-    .line 126
+    .line 129
     :cond_0
     return-void
 .end method
@@ -69,14 +69,14 @@
     .locals 1
 
     .prologue
-    .line 139
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)V
+    .line 142
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
-    .line 140
+    .line 143
     iget-object v0, p0, Lkik/android/scan/c$3;->a:Lkik/android/scan/c;
 
     invoke-static {v0}, Lkik/android/scan/c;->b(Lkik/android/scan/c;)V
 
-    .line 141
+    .line 144
     return-void
 .end method

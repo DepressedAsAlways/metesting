@@ -1,5 +1,5 @@
 .class public abstract Lkik/android/chat/vm/widget/b;
-.super Lkik/android/chat/vm/c;
+.super Lkik/android/chat/vm/e;
 .source "SourceFile"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field protected a:Lcom/kik/cache/ae;
+.field protected a:Lcom/kik/cache/KikVolleyImageLoader;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 
@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/aa;
+.field protected b:Lkik/core/interfaces/ab;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -26,9 +26,9 @@
     .end annotation
 .end field
 
-.field protected final d:Lkik/core/datatypes/aa;
+.field protected final d:Lkik/core/datatypes/z;
 
-.field protected e:Lkik/android/chat/vm/aj;
+.field protected e:Lkik/android/chat/vm/bl;
 
 .field private f:Lrx/subjects/a;
     .annotation system Ldalvik/annotation/Signature;
@@ -43,25 +43,25 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/datatypes/aa;Lkik/android/chat/vm/aj;)V
+.method public constructor <init>(Lkik/core/datatypes/z;Lkik/android/chat/vm/bl;)V
     .locals 1
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/e;-><init>()V
 
     .line 37
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/chat/vm/widget/b;->f:Lrx/subjects/a;
 
     .line 41
-    iput-object p1, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/aa;
+    iput-object p1, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/z;
 
     .line 42
-    iput-object p2, p0, Lkik/android/chat/vm/widget/b;->e:Lkik/android/chat/vm/aj;
+    iput-object p2, p0, Lkik/android/chat/vm/widget/b;->e:Lkik/android/chat/vm/bl;
 
     .line 43
     return-void
@@ -69,34 +69,7 @@
 
 
 # virtual methods
-.method public final a()Lrx/c;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 63
-    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/aa;
-
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->e()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public final a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 2
 
     .prologue
@@ -104,7 +77,7 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/b;)V
 
     .line 55
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/e;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 57
     iget-object v0, p0, Lkik/android/chat/vm/widget/b;->f:Lrx/subjects/a;
@@ -138,12 +111,55 @@
     return-void
 .end method
 
-.method public final b()Lrx/c;
+.method public ah_()J
+    .locals 2
+
+    .prologue
+    .line 48
+    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/z;
+
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->c()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    return-wide v0
+.end method
+
+.method public final b()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 63
+    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/z;
+
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->e()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final d()Lrx/d;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -152,13 +168,13 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/aa;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/z;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->g()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->g()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -167,7 +183,7 @@
     .line 70
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
@@ -180,19 +196,19 @@
 
     invoke-direct {v0, p0}, Lkik/android/chat/vm/widget/b$1;-><init>(Lkik/android/chat/vm/widget/b;)V
 
-    invoke-static {v0}, Lrx/c;->a(Lrx/c$a;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->a(Lrx/d$a;)Lrx/d;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final d()Lrx/c;
+.method public final e()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -203,39 +219,23 @@
     .line 109
     iget-object v0, p0, Lkik/android/chat/vm/widget/b;->f:Lrx/subjects/a;
 
-    invoke-virtual {v0}, Lrx/subjects/a;->e()Lrx/c;
+    invoke-virtual {v0}, Lrx/subjects/a;->f()Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final e()Z
+.method public final g()Z
     .locals 1
 
     .prologue
     .line 115
-    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/aa;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/z;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->i()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->i()Z
 
     move-result v0
 
     return v0
-.end method
-
-.method public j()J
-    .locals 2
-
-    .prologue
-    .line 48
-    iget-object v0, p0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/aa;
-
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->c()I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    return-wide v0
 .end method

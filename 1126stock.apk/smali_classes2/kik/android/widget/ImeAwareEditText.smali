@@ -279,7 +279,7 @@
     .line 58
     iget-object v0, p0, Lkik/android/widget/ImeAwareEditText;->c:Lkik/android/widget/ImeAwareEditText$a;
 
-    invoke-interface {v0}, Lkik/android/widget/ImeAwareEditText$a;->B()V
+    invoke-interface {v0}, Lkik/android/widget/ImeAwareEditText$a;->C()V
 
     .line 62
     :cond_0

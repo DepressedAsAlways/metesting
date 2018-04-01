@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/fragment/KikRegistrationFragmentAbstract$7;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Landroid/os/Bundle;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 1057
+    .line 1080
     iput-object p1, p0, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract$7;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,18 +46,18 @@
     .locals 1
 
     .prologue
-    .line 1057
+    .line 1080
     check-cast p1, Landroid/os/Bundle;
 
-    .line 2061
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)V
+    .line 2084
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 2062
+    .line 2085
     iget-object v0, p0, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract$7;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
     invoke-static {v0, p1}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->a(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;Landroid/os/Bundle;)V
 
-    .line 1057
+    .line 1080
     return-void
 .end method
 
@@ -65,14 +65,14 @@
     .locals 1
 
     .prologue
-    .line 1068
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)V
+    .line 1091
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
-    .line 1069
+    .line 1092
     iget-object v0, p0, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract$7;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->f(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->n(Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;)V
 
-    .line 1070
+    .line 1093
     return-void
 .end method

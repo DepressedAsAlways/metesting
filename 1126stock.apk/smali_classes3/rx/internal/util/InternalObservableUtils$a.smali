@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/h;
+.implements Lrx/functions/h;
 
 
 # annotations
@@ -24,17 +24,17 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/b/h",
+        "Lrx/functions/h",
         "<TR;TT;TR;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final a:Lrx/b/c;
+.field final a:Lrx/functions/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/c",
+            "Lrx/functions/c",
             "<TR;-TT;>;"
         }
     .end annotation
@@ -42,12 +42,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lrx/b/c;)V
+.method public constructor <init>(Lrx/functions/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/b/c",
+            "Lrx/functions/c",
             "<TR;-TT;>;)V"
         }
     .end annotation
@@ -57,7 +57,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 373
-    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$a;->a:Lrx/b/c;
+    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$a;->a:Lrx/functions/c;
 
     .line 374
     return-void
@@ -66,7 +66,7 @@
 
 # virtual methods
 .method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TT;)TR;"
@@ -74,6 +74,11 @@
     .end annotation
 
     .prologue
+    .line 378
+    iget-object v0, p0, Lrx/internal/util/InternalObservableUtils$a;->a:Lrx/functions/c;
+
+    invoke-interface {v0, p1, p2}, Lrx/functions/c;->a(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 379
     return-object p1
 .end method

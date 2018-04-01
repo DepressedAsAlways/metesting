@@ -13,34 +13,26 @@
 
 # instance fields
 .field _dismissButton:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100194
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001de
     .end annotation
 .end field
 
 .field _exploreButton:Landroid/widget/Button;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100197
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001e1
     .end annotation
 .end field
 
 .field _textView:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100196
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001e0
     .end annotation
 .end field
 
 .field _titleView:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100195
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1001df
     .end annotation
 .end field
 
@@ -57,10 +49,10 @@
     .end annotation
 .end field
 
-.field private final c:Lrx/c;
+.field private final c:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Void;",
             ">;"
@@ -68,10 +60,10 @@
     .end annotation
 .end field
 
-.field private final d:Lrx/c;
+.field private final d:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Void;",
             ">;"
@@ -87,12 +79,12 @@
     .locals 1
 
     .prologue
-    .line 164
+    .line 163
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lkik/android/widget/ExploreView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 165
+    .line 164
     return-void
 .end method
 
@@ -100,12 +92,12 @@
     .locals 1
 
     .prologue
-    .line 169
+    .line 168
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, p2, v0}, Lkik/android/widget/ExploreView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 170
+    .line 169
     return-void
 .end method
 
@@ -113,74 +105,74 @@
     .locals 2
 
     .prologue
-    .line 174
+    .line 173
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 160
+    .line 159
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lkik/android/widget/ExploreView;->e:Z
 
-    .line 176
-    const v0, 0x7f04006c
+    .line 175
+    const v0, 0x7f040080
 
     invoke-static {p1, v0, p0}, Lkik/android/widget/ExploreView;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    .line 177
-    invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/view/View;)V
+    .line 176
+    invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 179
-    invoke-static {}, Lrx/subjects/a;->k()Lrx/subjects/a;
+    .line 178
+    invoke-static {}, Lrx/subjects/a;->l()Lrx/subjects/a;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/widget/ExploreView;->b:Lrx/subjects/a;
 
-    .line 180
+    .line 179
     iget-object v0, p0, Lkik/android/widget/ExploreView;->_exploreButton:Landroid/widget/Button;
 
-    invoke-static {v0}, Lcom/b/b/b/a;->a(Landroid/view/View;)Lrx/c;
+    invoke-static {v0}, Lcom/jakewharton/a/b/a;->a(Landroid/view/View;)Lrx/d;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lrx/c;->i()Lrx/c;
+    invoke-virtual {v0}, Lrx/d;->j()Lrx/d;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/widget/ExploreView;->c:Lrx/c;
+    iput-object v0, p0, Lkik/android/widget/ExploreView;->c:Lrx/d;
+
+    .line 180
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->c:Lrx/d;
+
+    invoke-static {p0}, Lkik/android/widget/ay;->a(Lkik/android/widget/ExploreView;)Lrx/functions/b;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
 
     .line 181
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->c:Lrx/c;
-
-    invoke-static {p0}, Lkik/android/widget/z;->a(Lkik/android/widget/ExploreView;)Lrx/b/b;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lrx/c;->b(Lrx/b/b;)Lrx/j;
-
-    .line 182
     iget-object v0, p0, Lkik/android/widget/ExploreView;->_dismissButton:Landroid/view/View;
 
-    invoke-static {v0}, Lcom/b/b/b/a;->a(Landroid/view/View;)Lrx/c;
+    invoke-static {v0}, Lcom/jakewharton/a/b/a;->a(Landroid/view/View;)Lrx/d;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lrx/c;->i()Lrx/c;
+    invoke-virtual {v0}, Lrx/d;->j()Lrx/d;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/widget/ExploreView;->d:Lrx/c;
+    iput-object v0, p0, Lkik/android/widget/ExploreView;->d:Lrx/d;
 
-    .line 183
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->d:Lrx/c;
+    .line 182
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->d:Lrx/d;
 
-    invoke-static {p0}, Lkik/android/widget/aa;->a(Lkik/android/widget/ExploreView;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/az;->a(Lkik/android/widget/ExploreView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lrx/c;->b(Lrx/b/b;)Lrx/j;
+    invoke-virtual {v0, v1}, Lrx/d;->b(Lrx/functions/b;)Lrx/k;
 
-    .line 184
+    .line 183
     return-void
 .end method
 
@@ -188,8 +180,7 @@
     .locals 1
 
     .prologue
-    .line 0
-    .line 2212
+    .line 211
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -203,10 +194,8 @@
 
     move-result-object v0
 
-    .line 0
     return-object v0
 
-    .line 2212
     :cond_0
     const/4 v0, 0x0
 
@@ -214,95 +203,27 @@
 .end method
 
 .method static synthetic a(Lkik/android/widget/ExploreView;)V
-    .locals 4
+    .locals 1
 
     .prologue
-    .line 0
-    .line 1240
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+    .line 247
+    const/16 v0, 0x8
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p0, v0}, Lkik/android/widget/ExploreView;->setVisibility(I)V
 
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
-
-    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->c:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 1241
-    :cond_0
-    :goto_0
     return-void
-
-    .line 1243
-    :cond_1
-    new-instance v0, Landroid/content/Intent;
-
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
-
-    .line 1244
-    invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 1245
-    iget-object v1, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
-
-    iget-object v1, v1, Lkik/android/widget/ExploreView$a;->c:Ljava/lang/String;
-
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-
-    .line 1246
-    const-string v1, "is_deferred_relaunch"
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
-
-    .line 1247
-    invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
-    .line 1248
-    invoke-static {p0}, Lkik/android/widget/af;->a(Lkik/android/widget/ExploreView;)Ljava/lang/Runnable;
-
-    move-result-object v0
-
-    const-wide/16 v2, 0x1f4
-
-    invoke-virtual {p0, v0, v2, v3}, Lkik/android/widget/ExploreView;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    goto :goto_0
 .end method
 
 .method static synthetic a(Lkik/android/widget/ExploreView;Landroid/animation/ValueAnimator;)V
     .locals 2
 
     .prologue
-    .line 0
-    .line 2266
+    .line 265
     invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
-    .line 2267
+    .line 266
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -315,14 +236,129 @@
 
     iput v0, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 2268
+    .line 267
     invoke-virtual {p0, v1}, Lkik/android/widget/ExploreView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 0
+    .line 268
     return-void
 .end method
 
-.method static synthetic b(Lkik/android/widget/ExploreView;)V
+.method static synthetic b(Lkik/android/widget/ExploreView;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 222
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->g:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic c(Lkik/android/widget/ExploreView;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 217
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->f:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic d(Lkik/android/widget/ExploreView;)Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 212
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->e:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method static synthetic e(Lkik/android/widget/ExploreView;)V
+    .locals 4
+
+    .prologue
+    .line 0
+    .line 1239
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->c:Ljava/lang/String;
+
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 1240
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 1242
+    :cond_1
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 1243
+    invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 1244
+    iget-object v1, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    iget-object v1, v1, Lkik/android/widget/ExploreView$a;->c:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 1245
+    const-string v1, "is_deferred_relaunch"
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 1246
+    invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 1247
+    invoke-static {p0}, Lkik/android/widget/be;->a(Lkik/android/widget/ExploreView;)Ljava/lang/Runnable;
+
+    move-result-object v0
+
+    const-wide/16 v2, 0x1f4
+
+    invoke-virtual {p0, v0, v2, v3}, Lkik/android/widget/ExploreView;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    goto :goto_0
+.end method
+
+.method static synthetic f(Lkik/android/widget/ExploreView;)V
     .locals 10
 
     .prologue
@@ -335,17 +371,17 @@
     const/4 v4, 0x0
 
     .line 0
-    .line 1253
+    .line 1252
     iput-boolean v5, p0, Lkik/android/widget/ExploreView;->e:Z
 
-    .line 1255
+    .line 1254
     invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getVisibility()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1259
+    .line 1258
     sget-object v0, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
     new-array v1, v5, [F
@@ -358,10 +394,10 @@
 
     move-result-object v0
 
-    .line 1260
+    .line 1259
     invoke-virtual {v0, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    .line 1262
+    .line 1261
     new-array v1, v6, [I
 
     invoke-virtual {p0}, Lkik/android/widget/ExploreView;->getHeight()I
@@ -376,27 +412,27 @@
 
     move-result-object v1
 
-    .line 1263
+    .line 1262
     invoke-virtual {v1, v8, v9}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 1264
+    .line 1263
     const-wide/16 v2, 0x64
 
     invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 1265
-    invoke-static {p0}, Lkik/android/widget/ag;->a(Lkik/android/widget/ExploreView;)Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+    .line 1264
+    invoke-static {p0}, Lkik/android/widget/bf;->a(Lkik/android/widget/ExploreView;)Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 1271
+    .line 1270
     new-instance v2, Landroid/animation/AnimatorSet;
 
     invoke-direct {v2}, Landroid/animation/AnimatorSet;-><init>()V
 
-    .line 1272
+    .line 1271
     new-array v3, v6, [Landroid/animation/Animator;
 
     aput-object v0, v3, v4
@@ -405,21 +441,21 @@
 
     invoke-virtual {v2, v3}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
-    .line 1273
+    .line 1272
     new-instance v0, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
 
     invoke-virtual {v2, v0}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 1274
+    .line 1273
     new-instance v0, Lkik/android/widget/ExploreView$1;
 
     invoke-direct {v0, p0}, Lkik/android/widget/ExploreView$1;-><init>(Lkik/android/widget/ExploreView;)V
 
     invoke-virtual {v2, v0}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 1281
+    .line 1280
     invoke-virtual {v2}, Landroid/animation/AnimatorSet;->start()V
 
     .line 0
@@ -427,70 +463,14 @@
     return-void
 .end method
 
-.method static synthetic c(Lkik/android/widget/ExploreView;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 2213
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
-
-    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->e:Ljava/lang/String;
-
-    .line 0
-    return-object v0
-.end method
-
-.method static synthetic d(Lkik/android/widget/ExploreView;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 2218
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
-
-    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->f:Ljava/lang/String;
-
-    .line 0
-    return-object v0
-.end method
-
-.method static synthetic e(Lkik/android/widget/ExploreView;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 2223
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
-
-    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->g:Ljava/lang/String;
-
-    .line 0
-    return-object v0
-.end method
-
-.method static synthetic f(Lkik/android/widget/ExploreView;)V
-    .locals 1
-
-    .prologue
-    .line 0
-    .line 2248
-    const/16 v0, 0x8
-
-    invoke-virtual {p0, v0}, Lkik/android/widget/ExploreView;->setVisibility(I)V
-
-    .line 0
-    return-void
-.end method
-
 
 # virtual methods
-.method public final a()Lrx/c;
+.method public final a()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -498,32 +478,32 @@
     .end annotation
 
     .prologue
-    .line 211
+    .line 210
     iget-object v0, p0, Lkik/android/widget/ExploreView;->b:Lrx/subjects/a;
 
-    invoke-virtual {v0}, Lrx/subjects/a;->e()Lrx/c;
+    invoke-virtual {v0}, Lrx/subjects/a;->f()Lrx/d;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/widget/ab;->a()Lrx/b/g;
+    invoke-static {}, Lkik/android/widget/ba;->a()Lrx/functions/g;
+
+    move-result-object v1
+
+    .line 211
+    invoke-virtual {v0, v1}, Lrx/d;->c(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {p0}, Lkik/android/widget/bb;->a(Lkik/android/widget/ExploreView;)Lrx/functions/g;
 
     move-result-object v1
 
     .line 212
-    invoke-virtual {v0, v1}, Lrx/c;->b(Lrx/b/g;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
-    invoke-static {p0}, Lkik/android/widget/ac;->a(Lkik/android/widget/ExploreView;)Lrx/b/g;
-
-    move-result-object v1
-
-    .line 213
-    invoke-virtual {v0, v1}, Lrx/c;->d(Lrx/b/g;)Lrx/c;
-
-    move-result-object v0
-
-    .line 211
+    .line 210
     return-object v0
 .end method
 
@@ -531,49 +511,49 @@
     .locals 2
 
     .prologue
-    .line 188
+    .line 187
     iput-object p1, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
 
-    .line 189
+    .line 188
     iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
 
     iget-object v0, v0, Lkik/android/widget/ExploreView$a;->a:Ljava/lang/String;
 
-    .line 1196
+    .line 1195
     iget-object v1, p0, Lkik/android/widget/ExploreView;->_titleView:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 189
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
+
+    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->b:Ljava/lang/String;
+
+    .line 1200
+    iget-object v1, p0, Lkik/android/widget/ExploreView;->_textView:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 190
     iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
 
-    iget-object v0, v0, Lkik/android/widget/ExploreView$a;->b:Ljava/lang/String;
-
-    .line 1201
-    iget-object v1, p0, Lkik/android/widget/ExploreView;->_textView:Landroid/widget/TextView;
-
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 191
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->a:Lkik/android/widget/ExploreView$a;
-
     iget-object v0, v0, Lkik/android/widget/ExploreView$a;->d:Ljava/lang/String;
 
-    .line 1206
+    .line 1205
     iget-object v1, p0, Lkik/android/widget/ExploreView;->_exploreButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 192
+    .line 191
     return-void
 .end method
 
-.method public final b()Lrx/c;
+.method public final b()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -581,26 +561,26 @@
     .end annotation
 
     .prologue
-    .line 218
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->c:Lrx/c;
+    .line 217
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->c:Lrx/d;
 
-    invoke-static {p0}, Lkik/android/widget/ad;->a(Lkik/android/widget/ExploreView;)Lrx/b/g;
+    invoke-static {p0}, Lkik/android/widget/bc;->a(Lkik/android/widget/ExploreView;)Lrx/functions/g;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lrx/c;->d(Lrx/b/g;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final c()Lrx/c;
+.method public final c()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -608,14 +588,14 @@
     .end annotation
 
     .prologue
-    .line 223
-    iget-object v0, p0, Lkik/android/widget/ExploreView;->d:Lrx/c;
+    .line 222
+    iget-object v0, p0, Lkik/android/widget/ExploreView;->d:Lrx/d;
 
-    invoke-static {p0}, Lkik/android/widget/ae;->a(Lkik/android/widget/ExploreView;)Lrx/b/g;
+    invoke-static {p0}, Lkik/android/widget/bd;->a(Lkik/android/widget/ExploreView;)Lrx/functions/g;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lrx/c;->d(Lrx/b/g;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
@@ -626,7 +606,7 @@
     .locals 1
 
     .prologue
-    .line 235
+    .line 234
     iget-boolean v0, p0, Lkik/android/widget/ExploreView;->e:Z
 
     return v0
@@ -636,10 +616,10 @@
     .locals 2
 
     .prologue
-    .line 229
+    .line 228
     invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 230
+    .line 229
     iget-object v0, p0, Lkik/android/widget/ExploreView;->b:Lrx/subjects/a;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -648,6 +628,6 @@
 
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 231
+    .line 230
     return-void
 .end method

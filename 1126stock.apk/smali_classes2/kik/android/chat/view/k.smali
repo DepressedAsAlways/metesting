@@ -1,70 +1,47 @@
-.class public interface abstract Lkik/android/chat/view/k;
+.class final synthetic Lkik/android/chat/view/k;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Lrx/functions/b;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/chat/view/k$a;
-    }
-.end annotation
+# instance fields
+.field private final a:Lkik/android/chat/view/BioExpandableView;
+
+
+# direct methods
+.method private constructor <init>(Lkik/android/chat/view/BioExpandableView;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkik/android/chat/view/k;->a:Lkik/android/chat/view/BioExpandableView;
+
+    return-void
+.end method
+
+.method public static a(Lkik/android/chat/view/BioExpandableView;)Lrx/functions/b;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/view/k;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/view/k;-><init>(Lkik/android/chat/view/BioExpandableView;)V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract a()V
-.end method
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-.method public abstract a(FF)V
-.end method
+    iget-object v0, p0, Lkik/android/chat/view/k;->a:Lkik/android/chat/view/BioExpandableView;
 
-.method public abstract a(I)V
-.end method
+    check-cast p1, Ljava/lang/String;
 
-.method public abstract a(Ljava/lang/String;)V
-.end method
+    check-cast p1, Ljava/lang/CharSequence;
 
-.method public abstract a(Lkik/android/chat/view/k$a;)V
-.end method
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-.method public abstract a(Z)V
-.end method
-
-.method public abstract b()V
-.end method
-
-.method public abstract c()V
-.end method
-
-.method public abstract d()V
-.end method
-
-.method public abstract e()V
-.end method
-
-.method public abstract f()V
-.end method
-
-.method public abstract g()V
-.end method
-
-.method public abstract getHeight()I
-.end method
-
-.method public abstract h()V
-.end method
-
-.method public abstract i()V
-.end method
-
-.method public abstract j()V
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public abstract l()V
-.end method
-
-.method public abstract m()I
+    return-void
 .end method

@@ -1,5 +1,5 @@
 .class final Lcom/google/common/io/f$1;
-.super Lcom/google/common/collect/w;
+.super Lcom/google/common/collect/r;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/common/collect/w",
+        "Lcom/google/common/collect/r",
         "<",
         "Ljava/io/File;",
         ">;"
@@ -28,8 +28,8 @@
     .locals 0
 
     .prologue
-    .line 807
-    invoke-direct {p0}, Lcom/google/common/collect/w;-><init>()V
+    .line 824
+    invoke-direct {p0}, Lcom/google/common/collect/r;-><init>()V
 
     return-void
 .end method
@@ -40,7 +40,7 @@
     .locals 1
 
     .prologue
-    .line 823
+    .line 840
     const-string v0, "Files.fileTreeTraverser()"
 
     return-object v0

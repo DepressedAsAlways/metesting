@@ -40,7 +40,7 @@
 
     .prologue
     .line 35
-    const v0, 0x7f040022
+    const v0, 0x7f040024
 
     return v0
 .end method
@@ -87,19 +87,19 @@
     return-void
 .end method
 
+.method protected final d()V
+    .locals 0
+
+    .prologue
+    .line 61
+    return-void
+.end method
+
 .method protected final e()V
     .locals 0
 
     .prologue
     .line 66
-    return-void
-.end method
-
-.method protected final e_()V
-    .locals 0
-
-    .prologue
-    .line 61
     return-void
 .end method
 
@@ -131,7 +131,7 @@
     invoke-super {p0, p1, p2}, Lcom/kik/cards/browser/CaptchaWindowFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 30
-    const v0, 0x7f1000a5
+    const v0, 0x7f1000d9
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/a;
+.implements Lrx/functions/a;
 
 
 # annotations
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/j;
+.field final synthetic a:Lrx/k;
 
 .field final synthetic b:Lcom/github/a/a/a$a;
 
 
 # direct methods
-.method constructor <init>(Lcom/github/a/a/a$a;Lrx/j;)V
+.method constructor <init>(Lcom/github/a/a/a$a;Lrx/k;)V
     .locals 0
 
     .prologue
     .line 74
     iput-object p1, p0, Lcom/github/a/a/a$a$1;->b:Lcom/github/a/a/a$a;
 
-    iput-object p2, p0, Lcom/github/a/a/a$a$1;->a:Lrx/j;
+    iput-object p2, p0, Lcom/github/a/a/a$a$1;->a:Lrx/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +45,9 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/github/a/a/a$a$1;->a:Lrx/j;
+    iget-object v0, p0, Lcom/github/a/a/a$a$1;->a:Lrx/k;
 
-    invoke-interface {v0}, Lrx/j;->unsubscribe()V
+    invoke-interface {v0}, Lrx/k;->unsubscribe()V
 
     .line 79
     iget-object v0, p0, Lcom/github/a/a/a$a$1;->b:Lcom/github/a/a/a$a;

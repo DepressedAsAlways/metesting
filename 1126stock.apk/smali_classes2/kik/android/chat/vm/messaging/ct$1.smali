@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/aq;
+.implements Lkik/android/chat/vm/av;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/messaging/ct;->o()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lkik/android/chat/vm/messaging/ct;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field final synthetic a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
 .field final synthetic b:Lkik/android/chat/vm/messaging/ct;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/messaging/ct;Ljava/lang/String;)V
+.method constructor <init>(Lkik/android/chat/vm/messaging/ct;Lkik/core/datatypes/messageExtensions/ContentMessage;)V
     .locals 0
 
     .prologue
-    .line 146
+    .line 293
     iput-object p1, p0, Lkik/android/chat/vm/messaging/ct$1;->b:Lkik/android/chat/vm/messaging/ct;
 
-    iput-object p2, p0, Lkik/android/chat/vm/messaging/ct$1;->a:Ljava/lang/String;
+    iput-object p2, p0, Lkik/android/chat/vm/messaging/ct$1;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,70 +44,36 @@
     .locals 1
 
     .prologue
-    .line 150
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$1;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final b()Lkik/core/datatypes/messageExtensions/ContentMessage;
-    .locals 1
-
-    .prologue
-    .line 156
+    .line 297
     iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$1;->b:Lkik/android/chat/vm/messaging/ct;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->l()Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->u()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final c()Lkik/core/datatypes/Message;
+.method public final b()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 162
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$1;->b:Lkik/android/chat/vm/messaging/ct;
+    .line 303
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$1;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/messaging/ct;->s()Lkik/core/datatypes/Message;
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final d()Ljava/util/Map;
+.method public final c()I
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map",
-            "<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
 
     .prologue
-    .line 168
+    .line 309
     const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final e()Z
-    .locals 1
-
-    .prologue
-    .line 174
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/ct$1;->a:Ljava/lang/String;
-
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/ct;->d(Ljava/lang/String;)Z
-
-    move-result v0
 
     return v0
 .end method

@@ -1,80 +1,45 @@
-.class public final Lkik/android/util/bo;
+.class final synthetic Lkik/android/util/bo;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Landroid/text/InputFilter;
+.implements Lrx/functions/b;
 
 
 # instance fields
-.field private a:Ljava/util/regex/Pattern;
+.field private final a:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+.method private constructor <init>(Landroid/content/Context;)V
+    .locals 0
 
-    .prologue
-    .line 24
-    invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    iput-object p1, p0, Lkik/android/util/bo;->a:Landroid/content/Context;
 
-    invoke-direct {p0, v0}, Lkik/android/util/bo;-><init>(Ljava/util/regex/Pattern;)V
-
-    .line 25
     return-void
 .end method
 
-.method private constructor <init>(Ljava/util/regex/Pattern;)V
-    .locals 0
+.method public static a(Landroid/content/Context;)Lrx/functions/b;
+    .locals 1
 
-    .prologue
-    .line 28
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lkik/android/util/bo;
 
-    .line 29
-    iput-object p1, p0, Lkik/android/util/bo;->a:Ljava/util/regex/Pattern;
+    invoke-direct {v0, p0}, Lkik/android/util/bo;-><init>(Landroid/content/Context;)V
 
-    .line 30
-    return-void
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
-    .locals 2
+.method public final call(Ljava/lang/Object;)V
+    .locals 1
 
-    .prologue
-    const/4 v0, 0x0
+    iget-object v0, p0, Lkik/android/util/bo;->a:Landroid/content/Context;
 
-    .line 36
-    iget-object v1, p0, Lkik/android/util/bo;->a:Ljava/util/regex/Pattern;
+    check-cast p1, Ljava/lang/Throwable;
 
-    if-nez v1, :cond_1
+    invoke-static {v0, p1}, Lkik/android/util/bk;->a(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 46
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 41
-    :cond_1
-    iget-object v1, p0, Lkik/android/util/bo;->a:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v1, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v1
-
-    .line 42
-    invoke-virtual {v1}, Ljava/util/regex/Matcher;->matches()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 43
-    const-string v0, ""
-
-    goto :goto_0
+    return-void
 .end method

@@ -7,11 +7,11 @@
 
 
 # virtual methods
-.method public abstract a()Lrx/c;
+.method public abstract b()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;"

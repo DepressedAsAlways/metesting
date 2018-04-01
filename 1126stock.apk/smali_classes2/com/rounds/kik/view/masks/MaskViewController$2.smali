@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/b;
+.implements Lrx/functions/b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/b/b",
+        "Lrx/functions/b",
         "<",
         "Ljava/lang/Throwable;",
         ">;"
@@ -42,7 +42,7 @@
     .locals 0
 
     .prologue
-    .line 109
+    .line 125
     iput-object p1, p0, Lcom/rounds/kik/view/masks/MaskViewController$2;->d:Lcom/rounds/kik/view/masks/MaskViewController;
 
     iput-object p2, p0, Lcom/rounds/kik/view/masks/MaskViewController$2;->a:Ljava/lang/String;
@@ -62,10 +62,10 @@
     .locals 3
 
     .prologue
-    .line 109
+    .line 125
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 1113
+    .line 1129
     iget-object v0, p0, Lcom/rounds/kik/view/masks/MaskViewController$2;->d:Lcom/rounds/kik/view/masks/MaskViewController;
 
     # getter for: Lcom/rounds/kik/view/masks/MaskViewController;->mTeardown:Z
@@ -75,7 +75,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1114
+    .line 1130
     iget-object v0, p0, Lcom/rounds/kik/view/masks/MaskViewController$2;->d:Lcom/rounds/kik/view/masks/MaskViewController;
 
     # getter for: Lcom/rounds/kik/view/masks/MaskViewController;->mSubscriptions:Landroid/support/v4/util/ArrayMap;
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0, v1}, Landroid/support/v4/util/ArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1116
+    .line 1132
     :cond_0
     # getter for: Lcom/rounds/kik/view/masks/MaskViewController;->LOGGER:Lcom/rounds/kik/logs/VideoLogger;
     invoke-static {}, Lcom/rounds/kik/view/masks/MaskViewController;->access$600()Lcom/rounds/kik/logs/VideoLogger;
@@ -124,6 +124,6 @@
 
     invoke-virtual {v0, v1, p1}, Lcom/rounds/kik/logs/VideoLogger;->error(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 109
+    .line 125
     return-void
 .end method

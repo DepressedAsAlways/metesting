@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ar;
+.implements Lkik/android/chat/vm/bv;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lkik/android/chat/vm/messaging/IContentMessageViewModel$ItemUploadState;",
         ">;",
-        "Lkik/android/chat/vm/ar;"
+        "Lkik/android/chat/vm/bv;"
     }
 .end annotation
 

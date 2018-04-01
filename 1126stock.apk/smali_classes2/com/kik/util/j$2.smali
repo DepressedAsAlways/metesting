@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/b/a;
+.field final synthetic a:Lrx/functions/a;
 
 
 # direct methods
-.method constructor <init>(Lrx/b/a;)V
+.method constructor <init>(Lrx/functions/a;)V
     .locals 0
 
     .prologue
-    .line 316
-    iput-object p1, p0, Lcom/kik/util/j$2;->a:Lrx/b/a;
+    .line 383
+    iput-object p1, p0, Lcom/kik/util/j$2;->a:Lrx/functions/a;
 
     invoke-direct {p0}, Lcom/kik/util/f;-><init>()V
 
@@ -37,20 +37,20 @@
     .locals 1
 
     .prologue
-    .line 320
-    iget-object v0, p0, Lcom/kik/util/j$2;->a:Lrx/b/a;
+    .line 387
+    iget-object v0, p0, Lcom/kik/util/j$2;->a:Lrx/functions/a;
 
     if-nez v0, :cond_0
 
-    .line 325
+    .line 392
     :goto_0
     return-void
 
-    .line 324
+    .line 391
     :cond_0
-    iget-object v0, p0, Lcom/kik/util/j$2;->a:Lrx/b/a;
+    iget-object v0, p0, Lcom/kik/util/j$2;->a:Lrx/functions/a;
 
-    invoke-interface {v0}, Lrx/b/a;->a()V
+    invoke-interface {v0}, Lrx/functions/a;->a()V
 
     goto :goto_0
 .end method

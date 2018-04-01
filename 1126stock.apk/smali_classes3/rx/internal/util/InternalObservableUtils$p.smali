@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/g;
+.implements Lrx/functions/g;
 
 
 # annotations
@@ -24,46 +24,46 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/b/g",
+        "Lrx/functions/g",
         "<",
-        "Lrx/c",
+        "Lrx/d",
         "<TT;>;",
-        "Lrx/c",
+        "Lrx/d",
         "<TR;>;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final a:Lrx/b/g;
+.field final a:Lrx/functions/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<-",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;+",
-            "Lrx/c",
+            "Lrx/d",
             "<TR;>;>;"
         }
     .end annotation
 .end field
 
-.field final b:Lrx/f;
+.field final b:Lrx/g;
 
 
 # direct methods
-.method public constructor <init>(Lrx/b/g;Lrx/f;)V
+.method public constructor <init>(Lrx/functions/g;Lrx/g;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<-",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;+",
-            "Lrx/c",
+            "Lrx/d",
             "<TR;>;>;",
-            "Lrx/f;",
+            "Lrx/g;",
             ")V"
         }
     .end annotation
@@ -73,10 +73,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 192
-    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$p;->a:Lrx/b/g;
+    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$p;->a:Lrx/functions/g;
 
     .line 193
-    iput-object p2, p0, Lrx/internal/util/InternalObservableUtils$p;->b:Lrx/f;
+    iput-object p2, p0, Lrx/internal/util/InternalObservableUtils$p;->b:Lrx/g;
 
     .line 194
     return-void
@@ -89,20 +89,20 @@
 
     .prologue
     .line 185
-    check-cast p1, Lrx/c;
+    check-cast p1, Lrx/d;
 
     .line 1200
-    iget-object v0, p0, Lrx/internal/util/InternalObservableUtils$p;->a:Lrx/b/g;
+    iget-object v0, p0, Lrx/internal/util/InternalObservableUtils$p;->a:Lrx/functions/g;
 
-    invoke-interface {v0, p1}, Lrx/b/g;->call(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lrx/functions/g;->call(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/c;
+    check-cast v0, Lrx/d;
 
-    iget-object v1, p0, Lrx/internal/util/InternalObservableUtils$p;->b:Lrx/f;
+    iget-object v1, p0, Lrx/internal/util/InternalObservableUtils$p;->b:Lrx/g;
 
-    invoke-virtual {v0, v1}, Lrx/c;->a(Lrx/f;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/d;->a(Lrx/g;)Lrx/d;
 
     move-result-object v0
 

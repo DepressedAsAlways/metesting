@@ -8,18 +8,14 @@
 
 # instance fields
 .field protected _findMeCheckBox:Landroid/widget/CheckBox;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009c
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000d0
     .end annotation
 .end field
 
 .field protected _uploadContactInfoCheckboxContainer:Landroid/view/ViewGroup;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10009b
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000cf
     .end annotation
 .end field
 
@@ -37,7 +33,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/IAddressBookIntegration;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/android/util/bj;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/IAddressBookIntegration;Lcom/kik/android/Mixpanel;Ljava/lang/String;Lkik/android/util/bd;)V
     .locals 1
 
     .prologue
@@ -59,7 +55,7 @@
     .line 44
     new-instance v0, Lkik/android/chat/presentation/f;
 
-    invoke-direct {v0, p0, p2, p5}, Lkik/android/chat/presentation/f;-><init>(Lkik/android/chat/view/c;Lkik/core/interfaces/IAddressBookIntegration;Lkik/android/util/bj;)V
+    invoke-direct {v0, p0, p2, p5}, Lkik/android/chat/presentation/f;-><init>(Lkik/android/chat/view/c;Lkik/core/interfaces/IAddressBookIntegration;Lkik/android/util/bd;)V
 
     iput-object v0, p0, Lkik/android/addressbook/PrivacyOptionsDialog;->f:Lkik/android/chat/presentation/e;
 
@@ -171,7 +167,7 @@
     :cond_0
     iget-object v1, p0, Lkik/android/addressbook/PrivacyOptionsDialog;->a:Landroid/content/Context;
 
-    const v2, 0x7f04010a
+    const v2, 0x7f04013f
 
     const/4 v3, 0x0
 
@@ -180,7 +176,7 @@
     move-result-object v1
 
     .line 88
-    invoke-static {p0, v1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 90
     new-instance v2, Lkik/android/chat/fragment/KikDialogFragment$a;
@@ -201,7 +197,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0903e0
+    const v4, 0x7f0903f4
 
     new-instance v5, Lkik/android/addressbook/PrivacyOptionsDialog$2;
 

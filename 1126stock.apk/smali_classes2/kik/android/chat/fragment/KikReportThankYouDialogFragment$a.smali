@@ -35,7 +35,7 @@
     invoke-static {v0, p2}, Lkik/android/chat/fragment/KikReportThankYouDialogFragment;->a(Lkik/android/chat/fragment/KikReportThankYouDialogFragment;Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;)Lkik/android/chat/vm/ReportDialogViewModel$ReportReason;
 
     .line 77
-    const v0, 0x7f040066
+    const v0, 0x7f040078
 
     const/4 v1, 0x0
 

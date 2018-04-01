@@ -13,26 +13,20 @@
 
 # instance fields
 .field _bodyView:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100380
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100411
     .end annotation
 .end field
 
 .field _imageView:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10037e
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10040f
     .end annotation
 .end field
 
 .field _titleView:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10037f
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100410
     .end annotation
 .end field
 
@@ -102,7 +96,7 @@
 
     .line 33
     :cond_0
-    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 34
     iget-object v0, p0, Lkik/android/chat/fragment/TrophyDialogFragment;->_imageView:Landroid/widget/ImageView;

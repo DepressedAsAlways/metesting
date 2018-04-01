@@ -25,21 +25,6 @@
     return-void
 .end method
 
-.method private P()V
-    .locals 2
-
-    .prologue
-    .line 306
-    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->r:Landroid/os/Handler;
-
-    const v1, 0xdead
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    .line 307
-    return-void
-.end method
-
 .method public static a(Lcom/kik/cards/web/kik/KikContentMessageParcelable;Ljava/lang/String;Ljava/lang/String;)Lkik/android/chat/fragment/MediaItemFragment;
     .locals 1
 
@@ -62,7 +47,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->P()V
+    invoke-direct {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->t()V
 
     return-void
 .end method
@@ -72,7 +57,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0, p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->g(I)V
+    invoke-direct {p0, p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->c(I)V
 
     return-void
 .end method
@@ -92,7 +77,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0, p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h(I)V
+    invoke-direct {p0, p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->d(I)V
 
     return-void
 .end method
@@ -107,7 +92,7 @@
     return v0
 .end method
 
-.method private g(I)V
+.method private c(I)V
     .locals 2
 
     .prologue
@@ -123,7 +108,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->c(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->c(Ljava/lang/Throwable;)V
 
     .line 299
     :goto_0
@@ -136,19 +121,19 @@
     invoke-virtual {v0, p1}, Landroid/widget/SeekBar;->setProgress(I)V
 
     .line 298
-    invoke-direct {p0, p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h(I)V
+    invoke-direct {p0, p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->d(I)V
 
     goto :goto_0
 .end method
 
-.method private h(I)V
+.method private d(I)V
     .locals 2
 
     .prologue
     .line 328
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_fullscreenCurrentTime:Landroid/widget/TextView;
 
-    invoke-static {p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->i(I)Ljava/lang/String;
+    invoke-static {p1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->e(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -158,7 +143,7 @@
     return-void
 .end method
 
-.method private static i(I)Ljava/lang/String;
+.method private static e(I)Ljava/lang/String;
     .locals 3
 
     .prologue
@@ -229,6 +214,21 @@
     goto :goto_0
 .end method
 
+.method private t()V
+    .locals 2
+
+    .prologue
+    .line 306
+    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->r:Landroid/os/Handler;
+
+    const v1, 0xdead
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 307
+    return-void
+.end method
+
 
 # virtual methods
 .method protected final a()V
@@ -248,7 +248,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->c(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->c(Ljava/lang/Throwable;)V
 
     .line 1314
     :goto_0
@@ -263,7 +263,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->c(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->c(Ljava/lang/Throwable;)V
 
     .line 157
     :goto_1
@@ -301,7 +301,7 @@
     :cond_1
     iget-object v2, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_fullscreenCurrentTime:Landroid/widget/TextView;
 
-    invoke-static {v1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->i(I)Ljava/lang/String;
+    invoke-static {v1}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->e(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -310,7 +310,7 @@
     .line 1273
     iget-object v1, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_fullscreenTotalTime:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->i(I)Ljava/lang/String;
+    invoke-static {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -374,7 +374,7 @@
     .line 1225
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_fullscreenScrubber:Landroid/widget/RelativeLayout;
 
-    invoke-static {v0, v1}, Lkik/android/util/as;->a(Landroid/view/View;Z)V
+    invoke-static {v0, v1}, Lkik/android/util/an;->a(Landroid/view/View;Z)V
 
     .line 1228
     :cond_0
@@ -389,7 +389,7 @@
     .line 1229
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_videoPauseIcon:Landroid/widget/ImageView;
 
-    invoke-static {v0, v1}, Lkik/android/util/as;->a(Landroid/view/View;Z)V
+    invoke-static {v0, v1}, Lkik/android/util/an;->a(Landroid/view/View;Z)V
 
     .line 1246
     :cond_1
@@ -419,7 +419,7 @@
 
     aput-object v3, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 1236
     :cond_4
@@ -438,7 +438,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     goto :goto_1
 
@@ -449,7 +449,7 @@
     .line 1243
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_fullscreenScrubber:Landroid/widget/RelativeLayout;
 
-    invoke-static {v0, v2}, Lkik/android/util/as;->a(Landroid/view/View;Z)V
+    invoke-static {v0, v2}, Lkik/android/util/an;->a(Landroid/view/View;Z)V
 
     .line 1245
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_textureView:Lkik/android/widget/KikTextureVideoView;
@@ -463,7 +463,7 @@
     .line 1246
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_videoPauseIcon:Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lkik/android/util/as;->a(Landroid/view/View;Z)V
+    invoke-static {v0, v2}, Lkik/android/util/an;->a(Landroid/view/View;Z)V
 
     goto :goto_1
 
@@ -481,7 +481,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     goto :goto_1
 .end method
@@ -491,7 +491,7 @@
 
     .prologue
     .line 142
-    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->p()Z
+    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->l()Z
 
     move-result v0
 
@@ -520,12 +520,12 @@
     goto :goto_0
 .end method
 
-.method protected final e()V
+.method protected final d()V
     .locals 2
 
     .prologue
     .line 163
-    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h:Lkik/android/e/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h:Lkik/android/f/f;
 
     if-nez v0, :cond_0
 
@@ -544,15 +544,15 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 178
-    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h:Lkik/android/e/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h:Lkik/android/f/f;
 
-    invoke-interface {v0}, Lkik/android/e/f;->f()Z
+    invoke-interface {v0}, Lkik/android/f/f;->e()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->p()Z
+    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->l()Z
 
     move-result v0
 
@@ -577,9 +577,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 183
-    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h:Lkik/android/e/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h:Lkik/android/f/f;
 
-    invoke-interface {v0}, Lkik/android/e/f;->e()V
+    invoke-interface {v0}, Lkik/android/f/f;->d()V
 
     .line 184
     invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->c()Z
@@ -587,7 +587,7 @@
     goto :goto_0
 .end method
 
-.method protected final f()V
+.method protected final e()V
     .locals 4
 
     .prologue
@@ -596,10 +596,10 @@
     const/4 v2, 0x0
 
     .line 191
-    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->k()V
+    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->j()V
 
     .line 2282
-    invoke-direct {p0, v2}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->g(I)V
+    invoke-direct {p0, v2}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->c(I)V
 
     .line 193
     invoke-virtual {p0, v2}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->a(Z)V
@@ -617,7 +617,7 @@
 
     aput-object v1, v0, v3
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 195
     new-array v0, v3, [Landroid/view/View;
@@ -626,7 +626,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 196
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->_textureView:Lkik/android/widget/KikTextureVideoView;
@@ -642,7 +642,7 @@
     return-void
 .end method
 
-.method protected final g()V
+.method protected final f()V
     .locals 3
 
     .prologue
@@ -657,13 +657,13 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 211
     return-void
 .end method
 
-.method public final h()V
+.method public final g()V
     .locals 1
 
     .prologue
@@ -681,19 +681,19 @@
     if-eqz v0, :cond_0
 
     .line 354
-    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->i()Z
+    invoke-virtual {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h()Z
 
     .line 356
     :cond_0
     return-void
 .end method
 
-.method public final i()Z
+.method public final h()Z
     .locals 3
 
     .prologue
     .line 125
-    invoke-super {p0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->i()Z
+    invoke-super {p0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->h()Z
 
     move-result v0
 
@@ -730,26 +730,26 @@
     return v0
 .end method
 
-.method public final j()V
+.method public final i()V
     .locals 0
 
     .prologue
     .line 136
-    invoke-super {p0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->i()Z
+    invoke-super {p0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->h()Z
 
     .line 137
     return-void
 .end method
 
-.method protected final k()V
+.method protected final j()V
     .locals 0
 
     .prologue
     .line 203
-    invoke-super {p0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->k()V
+    invoke-super {p0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->j()V
 
     .line 204
-    invoke-direct {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->P()V
+    invoke-direct {p0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->t()V
 
     .line 205
     return-void

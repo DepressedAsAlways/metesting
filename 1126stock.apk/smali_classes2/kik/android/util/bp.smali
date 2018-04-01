@@ -3,183 +3,99 @@
 .source "SourceFile"
 
 
-# static fields
-.field private static a:Lkik/android/util/cb;
+# instance fields
+.field private a:Ljava/lang/String;
+
+.field private b:Ljava/lang/String;
+
+.field private c:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .prologue
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 14
+    iput-object p1, p0, Lkik/android/util/bp;->a:Ljava/lang/String;
+
+    .line 15
+    iput-object p3, p0, Lkik/android/util/bp;->b:Ljava/lang/String;
+
+    .line 16
+    iput-object p2, p0, Lkik/android/util/bp;->c:Ljava/lang/String;
+
     .line 17
-    new-instance v0, Lkik/android/util/by;
-
-    invoke-direct {v0}, Lkik/android/util/by;-><init>()V
-
-    sput-object v0, Lkik/android/util/bp;->a:Lkik/android/util/cb;
-
     return-void
 .end method
 
-.method public static a(Lkik/core/interfaces/ac;)J
+
+# virtual methods
+.method public final a()Ljava/lang/String;
     .locals 2
 
     .prologue
-    .line 27
-    const-string v0, "kik.registrationtime"
+    .line 21
+    iget-object v0, p0, Lkik/android/util/bp;->a:Ljava/lang/String;
 
-    invoke-interface {p0, v0}, Lkik/core/interfaces/ac;->u(Ljava/lang/String;)Ljava/lang/Long;
+    .line 22
+    iget-object v1, p0, Lkik/android/util/bp;->c:Ljava/lang/String;
+
+    invoke-static {v1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 23
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+    const-string v1, " "
 
-    move-result-wide v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    return-wide v0
+    move-result-object v0
+
+    iget-object v1, p0, Lkik/android/util/bp;->c:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 25
+    :cond_0
+    return-object v0
 .end method
 
-.method public static b(Lkik/core/interfaces/ac;)Z
-    .locals 14
+.method public final b()Ljava/lang/String;
+    .locals 1
 
     .prologue
-    const-wide/16 v12, 0x3c
+    .line 30
+    iget-object v0, p0, Lkik/android/util/bp;->b:Ljava/lang/String;
 
-    const-wide/16 v10, 0x1e
+    return-object v0
+.end method
 
-    const/4 v4, 0x1
+.method public final c()Ljava/lang/String;
+    .locals 1
 
-    const-wide/16 v8, 0x0
-
-    .line 32
-    invoke-static {p0}, Lkik/android/util/bp;->a(Lkik/core/interfaces/ac;)J
-
-    move-result-wide v2
-
-    .line 34
-    const-string v0, "kik.android.util.email.reminder.timestamp"
-
-    invoke-interface {p0, v0}, Lkik/core/interfaces/ac;->u(Ljava/lang/String;)Ljava/lang/Long;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
+    .prologue
     .line 35
-    const-string v5, "kik.android.util.email.reminder.number.shown"
+    iget-object v0, p0, Lkik/android/util/bp;->c:Ljava/lang/String;
 
-    invoke-interface {p0, v5}, Lkik/core/interfaces/ac;->t(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
-
-    move-result v5
-
-    .line 39
-    cmp-long v6, v0, v8
-
-    if-nez v6, :cond_0
-
-    .line 40
-    cmp-long v0, v2, v8
-
-    if-nez v0, :cond_5
-
-    sget-object v0, Lkik/android/util/bp;->a:Lkik/android/util/cb;
-
-    invoke-interface {v0}, Lkik/android/util/cb;->a()J
-
-    move-result-wide v0
-
-    .line 41
-    :goto_0
-    const-string v6, "kik.android.util.email.reminder.timestamp"
-
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v7
-
-    invoke-interface {p0, v6, v7}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Long;)Z
-
-    .line 44
-    :cond_0
-    sget-object v6, Lkik/android/util/bp;->a:Lkik/android/util/cb;
-
-    invoke-interface {v6}, Lkik/android/util/cb;->a()J
-
-    move-result-wide v6
-
-    .line 1021
-    sub-long v0, v6, v0
-
-    .line 1022
-    sget-object v6, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
-
-    sget-object v7, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-virtual {v6, v0, v1, v7}, Ljava/util/concurrent/TimeUnit;->convert(JLjava/util/concurrent/TimeUnit;)J
-
-    move-result-wide v0
-
-    .line 46
-    cmp-long v6, v2, v8
-
-    if-eqz v6, :cond_1
-
-    const-wide/16 v6, 0xa
-
-    cmp-long v6, v0, v6
-
-    if-ltz v6, :cond_1
-
-    cmp-long v6, v0, v10
-
-    if-gez v6, :cond_1
-
-    if-eqz v5, :cond_4
-
-    :cond_1
-    cmp-long v6, v0, v10
-
-    if-ltz v6, :cond_3
-
-    cmp-long v6, v0, v12
-
-    if-gtz v6, :cond_3
-
-    if-ne v5, v4, :cond_2
-
-    cmp-long v2, v2, v8
-
-    if-nez v2, :cond_4
-
-    :cond_2
-    if-eqz v5, :cond_4
-
-    :cond_3
-    cmp-long v0, v0, v12
-
-    if-ltz v0, :cond_6
-
-    :cond_4
-    move v0, v4
-
-    :goto_1
-    return v0
-
-    :cond_5
-    move-wide v0, v2
-
-    .line 40
-    goto :goto_0
-
-    .line 46
-    :cond_6
-    const/4 v0, 0x0
-
-    goto :goto_1
+    return-object v0
 .end method

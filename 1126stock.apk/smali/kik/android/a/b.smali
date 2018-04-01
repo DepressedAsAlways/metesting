@@ -55,9 +55,9 @@
 
 .field private j:Lcom/kik/clientmetrics/a/a;
 
-.field private k:Lkik/core/f/d;
+.field private k:Lkik/core/e/d;
 
-.field private l:Lkik/core/interfaces/ac;
+.field private l:Lkik/core/interfaces/ad;
 
 
 # direct methods
@@ -77,7 +77,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/kik/events/c;Lkik/core/interfaces/ac;Lcom/kik/events/c;ZLkik/android/util/an;Lkik/core/interfaces/s;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/kik/events/c;Lkik/core/interfaces/ad;Lcom/kik/events/c;ZLkik/android/util/ai;Lkik/core/interfaces/s;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -88,12 +88,12 @@
             "<",
             "Ljava/lang/Boolean;",
             ">;",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             "Lcom/kik/events/c",
             "<",
             "Lkik/core/z;",
             ">;Z",
-            "Lkik/android/util/an;",
+            "Lkik/android/util/ai;",
             "Lkik/core/interfaces/s;",
             ")V"
         }
@@ -164,7 +164,7 @@
     invoke-direct {v1, p2, v0, p6}, Lcom/kik/clientmetrics/b;-><init>(Ljava/lang/String;Ljava/io/File;Z)V
 
     .line 148
-    invoke-interface {p7}, Lkik/android/util/an;->c()Landroid/content/SharedPreferences;
+    invoke-interface {p7}, Lkik/android/util/ai;->c()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -214,7 +214,7 @@
     invoke-virtual/range {v0 .. v5}, Ljava/util/Timer;->scheduleAtFixedRate(Ljava/util/TimerTask;JJ)V
 
     .line 159
-    iput-object p4, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ac;
+    iput-object p4, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ad;
 
     .line 161
     iget-object v0, p0, Lkik/android/a/b;->i:Lcom/kik/events/d;
@@ -244,12 +244,12 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lkik/android/a/b;)Lkik/core/interfaces/ac;
+.method static synthetic b(Lkik/android/a/b;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -301,11 +301,11 @@
     if-eqz v0, :cond_0
 
     .line 178
-    iget-object v0, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ad;
 
     const-string v1, "enc_metrics_anon_id"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ac;->r(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -345,13 +345,13 @@
     iput-boolean v0, p0, Lkik/android/a/b;->b:Z
 
     .line 1196
-    iget-object v0, p0, Lkik/android/a/b;->k:Lkik/core/f/d;
+    iget-object v0, p0, Lkik/android/a/b;->k:Lkik/core/e/d;
 
     const-string v1, "enc_metrics_anon_id"
 
     const-class v2, Lcom/kik/xdata/model/clientmetrics/XMetricsAnonymousId;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/f/d;->b(Ljava/lang/String;Ljava/lang/Class;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2}, Lkik/core/e/d;->b(Ljava/lang/String;Ljava/lang/Class;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -359,19 +359,19 @@
 
     invoke-direct {v1, p0}, Lkik/android/a/b$4;-><init>(Lkik/android/a/b;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method
 
-.method public final a(Lkik/core/f/f;)V
+.method public final a(Lkik/core/e/f;)V
     .locals 0
 
     .prologue
     .line 169
-    check-cast p1, Lkik/core/f/d;
+    check-cast p1, Lkik/core/e/d;
 
-    iput-object p1, p0, Lkik/android/a/b;->k:Lkik/core/f/d;
+    iput-object p1, p0, Lkik/android/a/b;->k:Lkik/core/e/d;
 
     .line 170
     return-void
@@ -382,16 +382,16 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/a/b;->l:Lkik/core/interfaces/ad;
 
     const-string v1, "enc_metrics_anon_id"
 
     iget-object v2, p0, Lkik/android/a/b;->c:Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ac;->c(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->c(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 242
-    iget-object v0, p0, Lkik/android/a/b;->k:Lkik/core/f/d;
+    iget-object v0, p0, Lkik/android/a/b;->k:Lkik/core/e/d;
 
     const-string v1, "enc_metrics_anon_id"
 
@@ -407,7 +407,7 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v1, v2, v3}, Lkik/core/f/d;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2, v3}, Lkik/core/e/d;->a(Ljava/lang/String;Ljava/lang/String;Lcom/dyuproject/protostuff/p;)Lcom/kik/events/Promise;
 
     .line 244
     return-void

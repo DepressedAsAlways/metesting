@@ -1,19 +1,25 @@
 .class final Lkik/android/chat/fragment/KikChatFragment$4;
-.super Ljava/lang/Object;
+.super Lcom/kik/events/k;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/view/View$OnTouchListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikChatFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lkik/android/chat/fragment/KikChatFragment;->onActivityCreated(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x0
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/kik/events/k",
+        "<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
 .end annotation
 
 
@@ -26,56 +32,48 @@
     .locals 0
 
     .prologue
-    .line 868
+    .line 1084
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$4;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 1
+.method public final synthetic b(Ljava/lang/Object;)V
+    .locals 2
 
     .prologue
-    .line 872
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+    .line 1084
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 2088
+    iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$4;->a:Lkik/android/chat/fragment/KikChatFragment;
+
+    invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->r(Lkik/android/chat/fragment/KikChatFragment;)Z
 
     move-result v0
 
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
 
-    .line 881
-    :goto_0
-    :pswitch_0
-    const/4 v0, 0x0
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    return v0
+    move-result v0
 
-    .line 874
-    :pswitch_1
-    const v0, 0x3ecccccd    # 0.4f
+    if-nez v0, :cond_0
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->setAlpha(F)V
+    .line 2089
+    iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$4;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    goto :goto_0
+    new-instance v1, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;
 
-    .line 878
-    :pswitch_2
-    const/high16 v0, 0x3f800000    # 1.0f
+    invoke-direct {v1}, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;-><init>()V
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->setAlpha(F)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikChatFragment;->startFragmentForResult(Lkik/android/util/ad;)Lcom/kik/events/Promise;
 
-    goto :goto_0
-
-    .line 872
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_2
-        :pswitch_0
-        :pswitch_2
-    .end packed-switch
+    .line 1084
+    :cond_0
+    return-void
 .end method

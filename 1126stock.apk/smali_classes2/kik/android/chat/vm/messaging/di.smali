@@ -1,89 +1,53 @@
-.class public interface abstract Lkik/android/chat/vm/messaging/di;
+.class final synthetic Lkik/android/chat/vm/messaging/di;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/messaging/IMessageViewModel;
+.implements Lrx/functions/g;
+
+
+# instance fields
+.field private final a:Lkik/android/chat/vm/messaging/ct;
+
+.field private final b:[B
+
+
+# direct methods
+.method private constructor <init>(Lkik/android/chat/vm/messaging/ct;[B)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkik/android/chat/vm/messaging/di;->a:Lkik/android/chat/vm/messaging/ct;
+
+    iput-object p2, p0, Lkik/android/chat/vm/messaging/di;->b:[B
+
+    return-void
+.end method
+
+.method public static a(Lkik/android/chat/vm/messaging/ct;[B)Lrx/functions/g;
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/messaging/di;
+
+    invoke-direct {v0, p0, p1}, Lkik/android/chat/vm/messaging/di;-><init>(Lkik/android/chat/vm/messaging/ct;[B)V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract aA_()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-.method public abstract aB_()V
-.end method
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/di;->a:Lkik/android/chat/vm/messaging/ct;
 
-.method public abstract ay_()Ljava/lang/String;
-.end method
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/di;->b:[B
 
-.method public abstract az_()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end method
+    check-cast p1, Ljava/lang/Boolean;
 
-.method public abstract f()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;"
-        }
-    .end annotation
-.end method
+    invoke-static {v0, v1, p1}, Lkik/android/chat/vm/messaging/ct;->a(Lkik/android/chat/vm/messaging/ct;[BLjava/lang/Boolean;)Lrx/d;
 
-.method public abstract g()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
+    move-result-object v0
 
-.method public abstract h()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract i()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract q()Ljava/lang/String;
+    return-object v0
 .end method

@@ -54,8 +54,10 @@
     :goto_0
     sput-object v0, Lcom/google/common/io/e;->b:Lcom/google/common/io/e$c;
 
+    .line 95
     return-void
 
+    .line 96
     :cond_0
     sget-object v0, Lcom/google/common/io/e$a;->a:Lcom/google/common/io/e$a;
 
@@ -66,7 +68,7 @@
     .locals 2
 
     .prologue
-    .line 113
+    .line 114
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 110
@@ -78,8 +80,8 @@
 
     iput-object v0, p0, Lcom/google/common/io/e;->c:Ljava/util/Deque;
 
-    .line 114
-    invoke-static {p1}, Lcom/google/common/base/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 115
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -87,7 +89,7 @@
 
     iput-object v0, p0, Lcom/google/common/io/e;->a:Lcom/google/common/io/e$c;
 
-    .line 115
+    .line 116
     return-void
 .end method
 
@@ -113,6 +115,9 @@
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
+    .annotation build Lcom/google/errorprone/annotations/CanIgnoreReturnValue;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -122,15 +127,15 @@
     .end annotation
 
     .prologue
-    .line 125
+    .line 127
     if-eqz p1, :cond_0
 
-    .line 126
+    .line 128
     iget-object v0, p0, Lcom/google/common/io/e;->c:Ljava/util/Deque;
 
     invoke-interface {v0, p1}, Ljava/util/Deque;->addFirst(Ljava/lang/Object;)V
 
-    .line 129
+    .line 131
     :cond_0
     return-object p1
 .end method
@@ -144,18 +149,18 @@
     .end annotation
 
     .prologue
-    .line 146
-    invoke-static {p1}, Lcom/google/common/base/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 147
-    iput-object p1, p0, Lcom/google/common/io/e;->d:Ljava/lang/Throwable;
-
     .line 148
-    const-class v0, Ljava/io/IOException;
-
-    invoke-static {p1, v0}, Lcom/google/common/base/n;->a(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 149
+    iput-object p1, p0, Lcom/google/common/io/e;->d:Ljava/lang/Throwable;
+
+    .line 150
+    const-class v0, Ljava/io/IOException;
+
+    invoke-static {p1, v0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
+
+    .line 151
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -172,12 +177,12 @@
     .end annotation
 
     .prologue
-    .line 208
+    .line 210
     iget-object v0, p0, Lcom/google/common/io/e;->d:Ljava/lang/Throwable;
 
     move-object v1, v0
 
-    .line 211
+    .line 213
     :goto_0
     iget-object v0, p0, Lcom/google/common/io/e;->c:Ljava/util/Deque;
 
@@ -187,7 +192,7 @@
 
     if-nez v0, :cond_1
 
-    .line 212
+    .line 214
     iget-object v0, p0, Lcom/google/common/io/e;->c:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->removeFirst()Ljava/lang/Object;
@@ -196,7 +201,7 @@
 
     check-cast v0, Ljava/io/Closeable;
 
-    .line 214
+    .line 216
     :try_start_0
     invoke-interface {v0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -204,19 +209,19 @@
 
     goto :goto_0
 
-    .line 215
+    .line 217
     :catch_0
     move-exception v2
 
-    .line 216
+    .line 218
     if-nez v1, :cond_0
 
     move-object v1, v2
 
-    .line 217
+    .line 219
     goto :goto_0
 
-    .line 219
+    .line 221
     :cond_0
     iget-object v3, p0, Lcom/google/common/io/e;->a:Lcom/google/common/io/e$c;
 
@@ -224,7 +229,7 @@
 
     goto :goto_0
 
-    .line 224
+    .line 226
     :cond_1
     iget-object v0, p0, Lcom/google/common/io/e;->d:Ljava/lang/Throwable;
 
@@ -232,19 +237,19 @@
 
     if-eqz v1, :cond_2
 
-    .line 225
+    .line 227
     const-class v0, Ljava/io/IOException;
 
-    invoke-static {v1, v0}, Lcom/google/common/base/n;->a(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    invoke-static {v1, v0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 226
+    .line 228
     new-instance v0, Ljava/lang/AssertionError;
 
     invoke-direct {v0, v1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v0
 
-    .line 228
+    .line 230
     :cond_2
     return-void
 .end method

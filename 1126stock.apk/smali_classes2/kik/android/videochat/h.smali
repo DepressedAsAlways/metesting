@@ -33,7 +33,7 @@
         value = {
             "Lcom/rounds/kik/analytics/IReporterProxy",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
@@ -145,7 +145,7 @@
 
 
 # virtual methods
-.method protected abstract a(Lkik/core/datatypes/m;)Lcom/rounds/kik/Conversation;
+.method protected abstract a(Lkik/core/datatypes/l;)Lcom/rounds/kik/Conversation;
 .end method
 
 .method final a()Lcom/rounds/kik/analytics/IReporterProxy;
@@ -216,7 +216,7 @@
     move-exception v0
 
     :try_start_2
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 

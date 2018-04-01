@@ -30,7 +30,7 @@
     .locals 0
 
     .prologue
-    .line 236
+    .line 244
     iput-object p1, p0, Lcom/kik/b/b$2;->c:Lcom/kik/b/b;
 
     iput-boolean p2, p0, Lcom/kik/b/b$2;->a:Z
@@ -48,23 +48,23 @@
     .locals 2
 
     .prologue
-    .line 240
+    .line 248
     iget-boolean v0, p0, Lcom/kik/b/b$2;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 241
+    .line 249
     iget-object v0, p0, Lcom/kik/b/b$2;->c:Lcom/kik/b/b;
 
     iget-object v1, p0, Lcom/kik/b/b$2;->b:Lorg/json/JSONObject;
 
     invoke-static {v0, v1}, Lcom/kik/b/b;->a(Lcom/kik/b/b;Lorg/json/JSONObject;)V
 
-    .line 246
+    .line 254
     :goto_0
     return-void
 
-    .line 244
+    .line 252
     :cond_0
     iget-object v0, p0, Lcom/kik/b/b$2;->c:Lcom/kik/b/b;
 

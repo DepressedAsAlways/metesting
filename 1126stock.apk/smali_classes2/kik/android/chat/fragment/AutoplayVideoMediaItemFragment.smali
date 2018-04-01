@@ -88,17 +88,17 @@
     goto :goto_0
 .end method
 
-.method protected final e()V
+.method protected final d()V
     .locals 1
 
     .prologue
     .line 74
-    iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->h:Lkik/android/e/f;
+    iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->h:Lkik/android/f/f;
 
-    invoke-interface {v0}, Lkik/android/e/f;->e()V
+    invoke-interface {v0}, Lkik/android/f/f;->d()V
 
     .line 75
-    invoke-virtual {p0}, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->p()Z
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->l()Z
 
     move-result v0
 
@@ -112,7 +112,7 @@
     return-void
 .end method
 
-.method protected final f()V
+.method protected final e()V
     .locals 3
 
     .prologue
@@ -144,7 +144,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 88
     iget-object v0, p0, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->_textureView:Lkik/android/widget/KikTextureVideoView;
@@ -159,7 +159,7 @@
     goto :goto_0
 .end method
 
-.method protected final g()V
+.method protected final f()V
     .locals 0
 
     .prologue
@@ -167,7 +167,7 @@
     return-void
 .end method
 
-.method public final h()V
+.method public final g()V
     .locals 0
 
     .prologue
@@ -230,7 +230,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->p()Z
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AutoplayVideoMediaItemFragment;->l()Z
 
     move-result v0
 

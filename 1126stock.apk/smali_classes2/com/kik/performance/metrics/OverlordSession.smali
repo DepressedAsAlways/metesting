@@ -130,7 +130,7 @@
     iput-object v0, p0, Lcom/kik/performance/metrics/OverlordSession;->b:Lcom/kik/performance/metrics/c$a;
 
     .line 64
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v0
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 119
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v0
 
@@ -263,7 +263,7 @@
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-static {v1}, Lkik/core/util/v;->a(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
@@ -296,7 +296,7 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->b(Ljava/lang/Throwable;)V
 
     .line 95
     :cond_1

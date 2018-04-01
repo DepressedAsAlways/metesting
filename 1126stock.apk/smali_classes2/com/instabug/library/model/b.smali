@@ -1,4 +1,4 @@
-.class public Lcom/instabug/library/model/b;
+.class public abstract Lcom/instabug/library/model/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -7,198 +7,96 @@
 
 
 # instance fields
-.field private a:Ljava/lang/String;
+.field protected a:Ljava/lang/String;
 
-.field private b:Ljava/lang/String;
+.field protected b:Lcom/instabug/library/model/State;
 
 .field private c:Z
 
-.field private d:Ljava/lang/String;
-
-.field private e:Ljava/lang/String;
-
-.field private f:Z
+.field private d:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 1
 
     .prologue
-    .line 17
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 15
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/instabug/library/model/b;->f:Z
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
-    iput-object p1, p0, Lcom/instabug/library/model/b;->b:Ljava/lang/String;
+    .line 14
+    iput-boolean v0, p0, Lcom/instabug/library/model/b;->c:Z
 
-    .line 19
-    iput-object p2, p0, Lcom/instabug/library/model/b;->a:Ljava/lang/String;
+    .line 15
+    iput-boolean v0, p0, Lcom/instabug/library/model/b;->d:Z
 
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public a()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 23
-    iget-object v0, p0, Lcom/instabug/library/model/b;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final a(Ljava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 63
-    iput-object p1, p0, Lcom/instabug/library/model/b;->e:Ljava/lang/String;
-
-    .line 64
-    return-void
-.end method
-
-.method public final a(Z)V
-    .locals 0
-
-    .prologue
-    .line 43
-    iput-boolean p1, p0, Lcom/instabug/library/model/b;->f:Z
-
-    .line 44
-    return-void
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 31
+    .line 18
     iget-object v0, p0, Lcom/instabug/library/model/b;->a:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final b(Ljava/lang/String;)V
+.method public final b(Z)Lcom/instabug/library/model/b;
     .locals 0
 
     .prologue
-    .line 71
-    iput-object p1, p0, Lcom/instabug/library/model/b;->d:Ljava/lang/String;
-
-    .line 72
-    return-void
-.end method
-
-.method public final b(Z)V
-    .locals 0
-
-    .prologue
-    .line 51
+    .line 44
     iput-boolean p1, p0, Lcom/instabug/library/model/b;->c:Z
 
-    .line 52
-    return-void
+    .line 45
+    return-object p0
 .end method
 
-.method public final c()Z
+.method public f()Lcom/instabug/library/model/State;
     .locals 1
 
     .prologue
-    .line 39
-    iget-boolean v0, p0, Lcom/instabug/library/model/b;->f:Z
+    .line 31
+    iget-object v0, p0, Lcom/instabug/library/model/b;->b:Lcom/instabug/library/model/State;
 
-    return v0
+    return-object v0
 .end method
 
-.method public final d()Z
+.method public final l()Z
     .locals 1
 
     .prologue
-    .line 55
+    .line 40
     iget-boolean v0, p0, Lcom/instabug/library/model/b;->c:Z
 
     return v0
 .end method
 
-.method public final e()Ljava/lang/String;
+.method public final m()Z
     .locals 1
 
     .prologue
-    .line 67
-    iget-object v0, p0, Lcom/instabug/library/model/b;->e:Ljava/lang/String;
+    .line 50
+    iget-boolean v0, p0, Lcom/instabug/library/model/b;->d:Z
 
-    return-object v0
+    return v0
 .end method
 
-.method public final f()Ljava/lang/String;
+.method public final n()Lcom/instabug/library/model/b;
     .locals 1
 
     .prologue
-    .line 75
-    iget-object v0, p0, Lcom/instabug/library/model/b;->d:Ljava/lang/String;
+    .line 54
+    const/4 v0, 0x1
 
-    return-object v0
-.end method
+    iput-boolean v0, p0, Lcom/instabug/library/model/b;->d:Z
 
-.method public toString()Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 47
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "Attachment:["
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lcom/instabug/library/model/b;->b:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ", "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/instabug/library/model/b;->a:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ", "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-boolean v1, p0, Lcom/instabug/library/model/b;->f:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "]"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    .line 55
+    return-object p0
 .end method

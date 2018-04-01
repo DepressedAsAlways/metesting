@@ -18,18 +18,14 @@
 
 # instance fields
 .field protected _testsList:Landroid/widget/ListView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000a1
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1000d5
     .end annotation
 .end field
 
 .field protected _title:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1000f5
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10011b
     .end annotation
 .end field
 
@@ -45,7 +41,7 @@
     .end annotation
 .end field
 
-.field protected d:Lkik/android/util/an;
+.field protected d:Lkik/android/util/ai;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -63,7 +59,7 @@
 
 .field private i:Lkik/android/chat/fragment/AbTestsFragment$a;
 
-.field private j:Lcom/kik/view/adapters/u;
+.field private j:Lcom/kik/view/adapters/x;
 
 .field private k:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -272,7 +268,7 @@
     .locals 3
 
     .prologue
-    .line 2069
+    .line 1069
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object v0
@@ -289,10 +285,10 @@
 
     move-result-object v0
 
-    .line 2070
-    iget-object v1, p0, Lkik/android/chat/fragment/AbTestsFragment;->d:Lkik/android/util/an;
+    .line 1070
+    iget-object v1, p0, Lkik/android/chat/fragment/AbTestsFragment;->d:Lkik/android/util/ai;
 
-    invoke-interface {v1}, Lkik/android/util/an;->c()Landroid/content/SharedPreferences;
+    invoke-interface {v1}, Lkik/android/util/ai;->c()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -300,12 +296,12 @@
 
     move-result-object v1
 
-    .line 2071
+    .line 1071
     const-string v2, "kik.deviceid"
 
     invoke-interface {v1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 2072
+    .line 1072
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 46
@@ -317,17 +313,17 @@
 
     .prologue
     .line 46
-    .line 2165
+    .line 1165
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
 
     new-array v2, v0, [Ljava/lang/CharSequence;
 
-    .line 2166
+    .line 1166
     const/4 v0, 0x0
 
-    .line 2167
+    .line 1167
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -347,19 +343,19 @@
 
     check-cast v0, Lkik/core/abtesting/h;
 
-    .line 2168
+    .line 1168
     invoke-interface {v0}, Lkik/core/abtesting/h;->a()Ljava/lang/String;
 
     move-result-object v0
 
     aput-object v0, v2, v1
 
-    .line 2169
+    .line 1169
     add-int/lit8 v0, v1, 0x1
 
     move v1, v0
 
-    .line 2170
+    .line 1170
     goto :goto_0
 
     .line 46
@@ -367,12 +363,12 @@
     return-object v2
 .end method
 
-.method static synthetic b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/u;
+.method static synthetic b(Lkik/android/chat/fragment/AbTestsFragment;)Lcom/kik/view/adapters/x;
     .locals 1
 
     .prologue
     .line 46
-    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     return-object v0
 .end method
@@ -419,45 +415,15 @@
 
 
 # virtual methods
-.method protected final a(Lcom/kik/events/d;)V
-    .locals 2
-
-    .prologue
-    .line 177
-    invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->a(Lcom/kik/events/d;)V
-
-    .line 179
-    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->b:Lkik/core/abtesting/e;
-
-    invoke-virtual {v0}, Lkik/core/abtesting/e;->i()Lcom/kik/events/c;
-
-    move-result-object v0
-
-    new-instance v1, Lkik/android/chat/fragment/AbTestsFragment$3;
-
-    invoke-direct {v1, p0}, Lkik/android/chat/fragment/AbTestsFragment$3;-><init>(Lkik/android/chat/fragment/AbTestsFragment;)V
-
-    invoke-virtual {p1, v0, v1}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
-
-    .line 195
-    return-void
-.end method
-
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
 
     .prologue
     .line 78
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {p0}, Lkik/android/chat/fragment/AbTestsFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 78
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/AbTestsFragment;)V
 
     .line 80
@@ -484,28 +450,28 @@
     invoke-super {p0, p1, p2, p3}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     .line 88
-    const v0, 0x7f040020
+    const v0, 0x7f040022
 
     invoke-virtual {p1, v0, p2, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v2
 
     .line 89
-    invoke-static {p0, v2}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v2}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 91
     invoke-direct {p0}, Lkik/android/chat/fragment/AbTestsFragment;->a()V
 
     .line 93
-    new-instance v0, Lcom/kik/view/adapters/u;
+    new-instance v0, Lcom/kik/view/adapters/x;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/AbTestsFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/kik/view/adapters/u;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/kik/view/adapters/x;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iput-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     .line 94
     new-instance v0, Lkik/android/chat/fragment/AbTestsFragment$b;
@@ -552,43 +518,43 @@
     iput-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->i:Lkik/android/chat/fragment/AbTestsFragment$a;
 
     .line 99
-    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     const-string v1, "Assigned Experiments"
 
     iget-object v3, p0, Lkik/android/chat/fragment/AbTestsFragment;->f:Lkik/android/chat/fragment/AbTestsFragment$b;
 
-    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/u;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 100
-    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     const-string v1, "Overridden Experiments"
 
     iget-object v3, p0, Lkik/android/chat/fragment/AbTestsFragment;->g:Lkik/android/chat/fragment/AbTestsFragment$e;
 
-    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/u;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 101
-    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     const-string v1, "Available Experiments"
 
     iget-object v3, p0, Lkik/android/chat/fragment/AbTestsFragment;->h:Lkik/android/chat/fragment/AbTestsFragment$c;
 
-    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/u;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 102
-    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     const-string v1, "Misc"
 
     iget-object v3, p0, Lkik/android/chat/fragment/AbTestsFragment;->i:Lkik/android/chat/fragment/AbTestsFragment$a;
 
-    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/u;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
+    invoke-virtual {v0, v1, v3}, Lcom/kik/view/adapters/x;->d(Ljava/lang/String;Landroid/widget/Adapter;)V
 
     .line 104
-    const v0, 0x7f040108
+    const v0, 0x7f04013d
 
     const/4 v1, 0x0
 
@@ -643,7 +609,7 @@
     .line 121
     iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->_testsList:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/u;
+    iget-object v1, p0, Lkik/android/chat/fragment/AbTestsFragment;->j:Lcom/kik/view/adapters/x;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -665,4 +631,28 @@
 
     .line 160
     return-object v2
+.end method
+
+.method protected registerForegroundEvents(Lcom/kik/events/d;)V
+    .locals 2
+
+    .prologue
+    .line 177
+    invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->registerForegroundEvents(Lcom/kik/events/d;)V
+
+    .line 179
+    iget-object v0, p0, Lkik/android/chat/fragment/AbTestsFragment;->b:Lkik/core/abtesting/e;
+
+    invoke-virtual {v0}, Lkik/core/abtesting/e;->i()Lcom/kik/events/c;
+
+    move-result-object v0
+
+    new-instance v1, Lkik/android/chat/fragment/AbTestsFragment$3;
+
+    invoke-direct {v1, p0}, Lkik/android/chat/fragment/AbTestsFragment$3;-><init>(Lkik/android/chat/fragment/AbTestsFragment;)V
+
+    invoke-virtual {p1, v0, v1}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
+
+    .line 195
+    return-void
 .end method

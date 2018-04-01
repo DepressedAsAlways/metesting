@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ag;
-.implements Lkik/android/chat/vm/u;
+.implements Lkik/android/chat/vm/at;
+.implements Lkik/android/chat/vm/bg;
 
 
 # annotations
@@ -16,14 +16,14 @@
 
 
 # virtual methods
-.method public abstract Z_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
+.method public abstract Y_()Lkik/android/chat/vm/chats/search/IChatsSearchResultViewModel$LayoutType;
 .end method
 
-.method public abstract g()Lrx/c;
+.method public abstract h()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -31,13 +31,13 @@
     .end annotation
 .end method
 
-.method public abstract k()Lrx/c;
+.method public abstract k()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
-            "Lkik/core/interfaces/p",
+            "Lkik/core/interfaces/o",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -45,11 +45,11 @@
     .end annotation
 .end method
 
-.method public abstract l()Lrx/c;
+.method public abstract l()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"

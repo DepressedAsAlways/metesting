@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$a;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/c$a",
+        "Lrx/d$a",
         "<TT;>;"
     }
 .end annotation
@@ -37,13 +37,13 @@
     .end annotation
 .end field
 
-.field final b:Lrx/b/g;
+.field final b:Lrx/functions/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/b/a;",
-            "Lrx/j;",
+            "Lrx/functions/a;",
+            "Lrx/k;",
             ">;"
         }
     .end annotation
@@ -51,15 +51,15 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/Object;Lrx/b/g;)V
+.method constructor <init>(Ljava/lang/Object;Lrx/functions/g;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/b/a;",
-            "Lrx/j;",
+            "Lrx/functions/a;",
+            "Lrx/k;",
             ">;)V"
         }
     .end annotation
@@ -72,7 +72,7 @@
     iput-object p1, p0, Lrx/internal/util/ScalarSynchronousObservable$b;->a:Ljava/lang/Object;
 
     .line 154
-    iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$b;->b:Lrx/b/g;
+    iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$b;->b:Lrx/functions/g;
 
     .line 155
     return-void
@@ -85,18 +85,18 @@
 
     .prologue
     .line 148
-    check-cast p1, Lrx/i;
+    check-cast p1, Lrx/j;
 
     .line 1159
     new-instance v0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;
 
     iget-object v1, p0, Lrx/internal/util/ScalarSynchronousObservable$b;->a:Ljava/lang/Object;
 
-    iget-object v2, p0, Lrx/internal/util/ScalarSynchronousObservable$b;->b:Lrx/b/g;
+    iget-object v2, p0, Lrx/internal/util/ScalarSynchronousObservable$b;->b:Lrx/functions/g;
 
-    invoke-direct {v0, p1, v1, v2}, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;-><init>(Lrx/i;Ljava/lang/Object;Lrx/b/g;)V
+    invoke-direct {v0, p1, v1, v2}, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;-><init>(Lrx/j;Ljava/lang/Object;Lrx/functions/g;)V
 
-    invoke-virtual {p1, v0}, Lrx/i;->a(Lrx/e;)V
+    invoke-virtual {p1, v0}, Lrx/j;->a(Lrx/f;)V
 
     .line 148
     return-void

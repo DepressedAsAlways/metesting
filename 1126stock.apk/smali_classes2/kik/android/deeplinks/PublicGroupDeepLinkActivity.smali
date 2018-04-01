@@ -19,9 +19,9 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lkik/android/deeplinks/PublicGroupDeepLinkActivity;->c:Lkik/core/manager/n;
+    iget-object v0, p0, Lkik/android/deeplinks/PublicGroupDeepLinkActivity;->d:Lkik/core/manager/n;
 
-    .line 1196
+    .line 1226
     invoke-virtual {v0}, Lkik/core/manager/n;->a()Lkik/core/manager/n$c;
 
     move-result-object v0
@@ -29,7 +29,7 @@
     iget-object v0, v0, Lkik/core/manager/n$c;->b:Ljava/lang/String;
 
     .line 62
-    invoke-static {v0}, Lkik/android/util/bx;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lkik/android/util/bs;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
     move-result-object v0
 
     .line 2046
-    invoke-static {v0, p0}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/af;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
+    invoke-static {v0, p0}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
     move-result-object v0
 
@@ -108,11 +108,11 @@
     move-result-object v0
 
     .line 2055
-    invoke-static {v0, p0}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/af;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
+    invoke-static {v0, p0}, Lkik/android/chat/activity/KActivityLauncher;->a(Lkik/android/util/ad;Landroid/content/Context;)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
 
     move-result-object v0
 
-    const v1, 0x7f050016
+    const v1, 0x7f05001e
 
     .line 2056
     invoke-virtual {v0, v3, v1}, Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;->a(II)Lkik/android/chat/activity/KActivityLauncher$ActivityLaunchDescriptor;
@@ -142,9 +142,9 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lkik/android/deeplinks/PublicGroupDeepLinkActivity;->d:Lkik/core/f/c;
+    iget-object v0, p0, Lkik/android/deeplinks/PublicGroupDeepLinkActivity;->e:Lkik/core/e/c;
 
-    invoke-interface {v0}, Lkik/core/f/c;->a()Lcom/kik/events/Promise;
+    invoke-interface {v0}, Lkik/core/e/c;->a()Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -152,7 +152,7 @@
 
     invoke-direct {v1, p0, p1}, Lkik/android/deeplinks/PublicGroupDeepLinkActivity$1;-><init>(Lkik/android/deeplinks/PublicGroupDeepLinkActivity;Landroid/support/v4/app/TaskStackBuilder;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 29
     return-void

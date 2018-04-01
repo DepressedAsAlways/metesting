@@ -46,9 +46,11 @@
     return-void
 .end method
 
-.method static synthetic a()V
+.method public static a()V
     .locals 0
 
+    .prologue
+    .line 109
     return-void
 .end method
 
@@ -82,7 +84,7 @@
 
     .line 117
     :cond_1
-    invoke-static {p0, p2, p1}, Lkik/android/widget/e;->a(Lkik/android/widget/AutoScrollingRecyclerView;ZI)Ljava/lang/Runnable;
+    invoke-static {p0, p2, p1}, Lkik/android/widget/u;->a(Lkik/android/widget/AutoScrollingRecyclerView;ZI)Ljava/lang/Runnable;
 
     move-result-object v0
 
@@ -117,21 +119,19 @@
     .locals 2
 
     .prologue
-    .line 0
-    .line 1079
+    .line 85
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     invoke-direct {p0, v0, v1}, Lkik/android/widget/AutoScrollingRecyclerView;->a(IZ)V
 
-    .line 0
     return-void
 .end method
 
-.method public static a(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/c;)V
+.method public static a(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -143,7 +143,7 @@
         value = {
             "(",
             "Lkik/android/widget/AutoScrollingRecyclerView;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -152,11 +152,11 @@
 
     .prologue
     .line 73
-    const v0, 0x7f010050
+    const v0, 0x7f0100e1
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/b;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/r;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -166,7 +166,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 74
     return-void
@@ -176,16 +176,17 @@
     .locals 0
 
     .prologue
-    .line 1119
+    .line 119
     if-eqz p1, :cond_0
 
-    .line 1120
+    .line 120
     invoke-virtual {p0, p2}, Lkik/android/widget/AutoScrollingRecyclerView;->smoothScrollToPosition(I)V
 
+    .line 125
     :goto_0
     return-void
 
-    .line 1123
+    .line 123
     :cond_0
     invoke-virtual {p0, p2}, Lkik/android/widget/AutoScrollingRecyclerView;->scrollToPosition(I)V
 
@@ -196,21 +197,19 @@
     .locals 2
 
     .prologue
-    .line 0
-    .line 1085
+    .line 79
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     invoke-direct {p0, v0, v1}, Lkik/android/widget/AutoScrollingRecyclerView;->a(IZ)V
 
-    .line 0
     return-void
 .end method
 
-.method public static b(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/c;)V
+.method public static b(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -222,7 +221,7 @@
         value = {
             "(",
             "Lkik/android/widget/AutoScrollingRecyclerView;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;)V"
@@ -231,9 +230,9 @@
 
     .prologue
     .line 79
-    const v0, 0x7f010053
+    const v0, 0x7f0100e4
 
-    invoke-static {p0}, Lkik/android/widget/c;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/s;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -243,13 +242,13 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 80
     return-void
 .end method
 
-.method public static c(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/c;)V
+.method public static c(Lkik/android/widget/AutoScrollingRecyclerView;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -261,7 +260,7 @@
         value = {
             "(",
             "Lkik/android/widget/AutoScrollingRecyclerView;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;)V"
@@ -270,9 +269,9 @@
 
     .prologue
     .line 85
-    const v0, 0x7f010052
+    const v0, 0x7f0100e3
 
-    invoke-static {p0}, Lkik/android/widget/d;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/t;->a(Lkik/android/widget/AutoScrollingRecyclerView;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -282,7 +281,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 86
     return-void

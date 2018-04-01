@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final layoutManager:I = 0x7f010127
+.field public static final layoutManager:I = 0x7f0101e3
 
-.field public static final reverseLayout:I = 0x7f010129
+.field public static final reverseLayout:I = 0x7f0101e5
 
-.field public static final spanCount:I = 0x7f010128
+.field public static final spanCount:I = 0x7f0101e4
 
-.field public static final stackFromEnd:I = 0x7f01012a
+.field public static final stackFromEnd:I = 0x7f0101e6
 
-.field public static final transparent:I = 0x7f0101ee
+.field public static final transparent:I = 0x7f010251
 
 
 # direct methods

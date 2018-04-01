@@ -34,19 +34,19 @@
     .locals 1
 
     .prologue
-    .line 1427
+    .line 1465
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1428
+    .line 1466
     iput p1, p0, Lcom/kik/android/Mixpanel$a;->b:I
 
-    .line 1429
+    .line 1467
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Lcom/kik/android/Mixpanel$a;->a:Ljava/util/Set;
 
-    .line 1430
+    .line 1468
     return-void
 .end method

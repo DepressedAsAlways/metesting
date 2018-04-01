@@ -38,35 +38,35 @@
 
     aput-object v1, v0, v5
 
-    const-string v1, "sponseB\u001c\n\u001acom.kik.video.mobileremoteb\u0006proto3"
+    const-string v1, "sponseBl\n\u001acom.kik.video.mobileremoteZNgithub.com/kikinteractive/xiphias-api-mobileremote/generated/go/video/v1;videob\u0006proto3"
 
     aput-object v1, v0, v6
 
-    .line 804
+    .line 806
     new-instance v1, Lcom/kik/video/mobileremote/MobileVideoService$1;
 
     invoke-direct {v1}, Lcom/kik/video/mobileremote/MobileVideoService$1;-><init>()V
 
-    .line 812
+    .line 814
     const/4 v2, 0x4
 
     new-array v2, v2, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 815
+    .line 817
     invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    .line 816
+    .line 818
     invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
 
     aput-object v3, v2, v6
 
-    .line 817
+    .line 819
     invoke-static {}, Lcom/kik/xiphias/rpc/CommonRpcProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v3
@@ -75,20 +75,20 @@
 
     const/4 v3, 0x3
 
-    .line 818
+    .line 820
     invoke-static {}, Lcom/kik/video/VideoCommon;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v4
 
     aput-object v4, v2, v3
 
-    .line 813
+    .line 815
     invoke-static {v0, v2, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
     .line 1785
     sget-object v0, Lcom/kik/video/mobileremote/MobileVideoService;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 821
+    .line 823
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getMessageTypes()Ljava/util/List;
 
     move-result-object v0
@@ -101,7 +101,7 @@
 
     sput-object v0, Lcom/kik/video/mobileremote/MobileVideoService;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 822
+    .line 824
     new-instance v0, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     sget-object v1, Lcom/kik/video/mobileremote/MobileVideoService;->a:Lcom/google/protobuf/Descriptors$Descriptor;
@@ -120,35 +120,35 @@
 
     sput-object v0, Lcom/kik/video/mobileremote/MobileVideoService;->b:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
-    .line 827
+    .line 829
     invoke-static {}, Lcom/google/protobuf/ExtensionRegistry;->newInstance()Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object v0
 
-    .line 828
+    .line 830
     sget-object v1, Lcom/kik/protovalidation/ProtobufValidation;->a:Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;
 
     invoke-virtual {v0, v1}, Lcom/google/protobuf/ExtensionRegistry;->add(Lcom/google/protobuf/GeneratedMessage$GeneratedExtension;)V
 
-    .line 829
+    .line 831
     sget-object v1, Lcom/kik/video/mobileremote/MobileVideoService;->c:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 830
+    .line 832
     invoke-static {v1, v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalUpdateFileDescriptor(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/ExtensionRegistry;)V
 
-    .line 831
+    .line 833
     invoke-static {}, Lcom/kik/protovalidation/ProtobufValidation;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 832
+    .line 834
     invoke-static {}, Lcom/kik/ximodel/CommonModelProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 833
+    .line 835
     invoke-static {}, Lcom/kik/xiphias/rpc/CommonRpcProto;->getDescriptor()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 834
+    .line 836
     invoke-static {}, Lcom/kik/video/VideoCommon;->a()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 835
+    .line 837
     return-void
 .end method
 

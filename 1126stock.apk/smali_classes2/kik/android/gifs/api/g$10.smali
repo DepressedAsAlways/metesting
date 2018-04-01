@@ -1,11 +1,11 @@
 .class final Lkik/android/gifs/api/g$10;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/gifs/api/g;->d()Lcom/kik/events/Promise;
+    value = Lkik/android/gifs/api/g;->a(Ljava/lang/String;Lkik/android/gifs/api/GifApiProvider$GifSearchRating;Ljava/util/Locale;)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/String;",
         ">;"
@@ -34,12 +34,12 @@
     .locals 0
 
     .prologue
-    .line 271
+    .line 255
     iput-object p1, p0, Lkik/android/gifs/api/g$10;->b:Lkik/android/gifs/api/g;
 
     iput-object p2, p0, Lkik/android/gifs/api/g$10;->a:Lcom/kik/events/Promise;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -50,16 +50,16 @@
     .locals 2
 
     .prologue
-    .line 271
+    .line 255
     check-cast p1, Ljava/lang/String;
 
-    .line 1275
+    .line 1259
     iget-object v0, p0, Lkik/android/gifs/api/g$10;->b:Lkik/android/gifs/api/g;
 
     iget-object v1, p0, Lkik/android/gifs/api/g$10;->a:Lcom/kik/events/Promise;
 
     invoke-static {v0, v1, p1}, Lkik/android/gifs/api/g;->b(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
 
-    .line 271
+    .line 255
     return-void
 .end method

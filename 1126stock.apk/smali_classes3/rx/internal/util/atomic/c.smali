@@ -99,7 +99,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    invoke-static {p1}, Lrx/internal/util/a/i;->a(I)I
+    invoke-static {p1}, Lrx/internal/util/a/c;->a(I)I
 
     move-result v0
 

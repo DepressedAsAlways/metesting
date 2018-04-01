@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 431
+    .line 461
     invoke-direct {p0}, Lkik/android/chat/fragment/KikContactsListFragment$a;-><init>()V
 
     return-void
@@ -31,12 +31,12 @@
     .locals 1
 
     .prologue
-    .line 442
+    .line 472
     const-string v0, "KikPickUsersFragment.EXTRA_MIN_RESULTS"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->a(Ljava/lang/String;I)V
 
-    .line 443
+    .line 473
     return-object p0
 .end method
 
@@ -44,12 +44,12 @@
     .locals 1
 
     .prologue
-    .line 497
+    .line 527
     const-string v0, "KikPickUsersFragment.EXTRA_OK_BUTTON_TEXT"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 498
+    .line 528
     return-object p0
 .end method
 
@@ -67,12 +67,12 @@
     .end annotation
 
     .prologue
-    .line 475
+    .line 505
     const-string v0, "KikPickUsersFragment.EXTRA_PRESELECTED_USERS"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->a(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 476
+    .line 506
     return-object p0
 .end method
 
@@ -80,12 +80,12 @@
     .locals 1
 
     .prologue
-    .line 464
+    .line 494
     const-string v0, "KikPickUsersFragment.EXTRA_FILTER_SELF"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 465
+    .line 495
     return-object p0
 .end method
 
@@ -93,7 +93,7 @@
     .locals 2
 
     .prologue
-    .line 448
+    .line 478
     const-string v0, "KikPickUsersFragment.EXTRA_MIN_RESULTS"
 
     const/4 v1, 0x1
@@ -109,12 +109,12 @@
     .locals 1
 
     .prologue
-    .line 453
+    .line 483
     const-string v0, "KikPickUsersFragment.EXTRA_MAX_RESULTS"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->a(Ljava/lang/String;I)V
 
-    .line 454
+    .line 484
     return-object p0
 .end method
 
@@ -132,12 +132,12 @@
     .end annotation
 
     .prologue
-    .line 486
+    .line 516
     const-string v0, "KikPickUsersFragment.EXTRA_FILTERED_USERS"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->a(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 487
+    .line 517
     return-object p0
 .end method
 
@@ -145,10 +145,10 @@
     .locals 3
 
     .prologue
-    .line 459
+    .line 489
     const-string v0, "KikPickUsersFragment.EXTRA_MAX_RESULTS"
 
-    .line 1448
+    .line 1478
     const-string v1, "KikPickUsersFragment.EXTRA_MIN_RESULTS"
 
     const/4 v2, 0x1
@@ -157,7 +157,7 @@
 
     move-result v1
 
-    .line 459
+    .line 489
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->b(Ljava/lang/String;I)I
 
     move-result v0
@@ -169,7 +169,7 @@
     .locals 2
 
     .prologue
-    .line 470
+    .line 500
     const-string v0, "KikPickUsersFragment.EXTRA_FILTER_SELF"
 
     const/4 v1, 0x1
@@ -198,10 +198,10 @@
     .end annotation
 
     .prologue
-    .line 481
+    .line 511
     const-string v0, "KikPickUsersFragment.EXTRA_PRESELECTED_USERS"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->p(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->k(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -212,10 +212,10 @@
     .locals 1
 
     .prologue
-    .line 503
+    .line 533
     const-string v0, "KikPickUsersFragment.EXTRA_OK_BUTTON_TEXT"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikPickUsersFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -27,19 +27,19 @@
     .locals 0
 
     .prologue
-    .line 54
+    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 55
+    .line 60
     iput-object p1, p0, Lkik/android/chat/vm/IListViewModel$a;->a:Lkik/android/chat/vm/IListViewModel$ChangeType;
 
-    .line 56
+    .line 61
     iput p2, p0, Lkik/android/chat/vm/IListViewModel$a;->b:I
 
-    .line 57
+    .line 62
     iput p3, p0, Lkik/android/chat/vm/IListViewModel$a;->c:I
 
-    .line 58
+    .line 63
     return-void
 .end method
 
@@ -49,7 +49,7 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 50
+    .line 55
     new-instance v0, Lkik/android/chat/vm/IListViewModel$a;
 
     sget-object v1, Lkik/android/chat/vm/IListViewModel$ChangeType;->Reloaded:Lkik/android/chat/vm/IListViewModel$ChangeType;
@@ -91,7 +91,7 @@
     .locals 2
 
     .prologue
-    .line 45
+    .line 50
     new-instance v0, Lkik/android/chat/vm/IListViewModel$a;
 
     sget-object v1, Lkik/android/chat/vm/IListViewModel$ChangeType;->Modified:Lkik/android/chat/vm/IListViewModel$ChangeType;
@@ -105,7 +105,7 @@
     .locals 2
 
     .prologue
-    .line 40
+    .line 45
     new-instance v0, Lkik/android/chat/vm/IListViewModel$a;
 
     sget-object v1, Lkik/android/chat/vm/IListViewModel$ChangeType;->Removed:Lkik/android/chat/vm/IListViewModel$ChangeType;

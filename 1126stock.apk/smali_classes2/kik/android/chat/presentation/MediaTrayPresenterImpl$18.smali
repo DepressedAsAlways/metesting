@@ -1,11 +1,14 @@
 .class final Lkik/android/chat/presentation/MediaTrayPresenterImpl$18;
-.super Landroid/animation/AnimatorListenerAdapter;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(IIZ)V
+    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;-><init>(Lkik/android/util/KeyboardManipulator;Landroid/view/ViewGroup;ZZLcom/kik/components/CoreComponent;IIILkik/android/chat/presentation/r;Ljava/lang/String;Lkik/android/f/b;Lkik/android/chat/c;Lkik/android/chat/k;Lkik/android/chat/fragment/fr;Lkik/android/chat/vm/ay;Lkik/android/chat/fragment/fe;Lcom/kik/view/adapters/MediaTrayTabAdapter;Lkik/android/chat/vm/au;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,25 +26,27 @@
     .locals 0
 
     .prologue
-    .line 3672
+    .line 978
     iput-object p1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$18;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
+.method public final run()V
     .locals 1
 
     .prologue
-    .line 3676
+    .line 984
     iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$18;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->R(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Landroid/animation/Animator;
+    iget-object v0, v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->_newMessageBox:Lkik/android/widget/MediaBarEditText;
 
-    .line 3677
+    invoke-virtual {v0}, Lkik/android/widget/MediaBarEditText;->requestFocus()Z
+
+    .line 985
     return-void
 .end method

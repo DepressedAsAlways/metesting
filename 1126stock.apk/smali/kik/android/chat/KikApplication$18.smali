@@ -1,11 +1,11 @@
 .class final Lkik/android/chat/KikApplication$18;
-.super Lcom/kik/events/l;
+.super Landroid/os/AsyncTask;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/KikApplication;->a(Landroid/content/Context;Lkik/core/a;)V
+    value = Lkik/android/chat/KikApplication;->onCreate()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,9 +15,11 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Landroid/os/AsyncTask",
         "<",
-        "Ljava/lang/Object;",
+        "Ljava/lang/Void;",
+        "Ljava/lang/Void;",
+        "Ljava/lang/Void;",
         ">;"
     }
 .end annotation
@@ -32,32 +34,22 @@
     .locals 0
 
     .prologue
-    .line 1265
+    .line 1132
     iput-object p1, p0, Lkik/android/chat/KikApplication$18;->a:Lkik/android/chat/KikApplication;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
+.method protected final bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 1269
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)V
+    .line 1132
+    const/4 v0, 0x0
 
-    .line 1270
-    iget-object v0, p0, Lkik/android/chat/KikApplication$18;->a:Lkik/android/chat/KikApplication;
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->G(Lkik/android/chat/KikApplication;)Lkik/android/b/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/android/b/a;->a()V
-
-    .line 1271
-    return-void
+    return-object v0
 .end method

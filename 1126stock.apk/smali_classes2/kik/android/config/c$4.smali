@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/an;)V
+.method constructor <init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/ai;)V
     .locals 6
 
     .prologue
@@ -47,7 +47,7 @@
 
     move-object v5, p5
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/config/Configuration;-><init>(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Runnable;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/config/Configuration;-><init>(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Runnable;Lkik/android/util/ai;)V
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     return-object v0
 .end method
 
-.method protected final a(Lkik/android/util/an;)V
+.method protected final a(Lkik/android/util/ai;)V
     .locals 0
 
     .prologue
@@ -132,7 +132,7 @@
     return-object v0
 .end method
 
-.method protected final synthetic b(Lkik/android/util/an;)Ljava/lang/Object;
+.method protected final synthetic b(Lkik/android/util/ai;)Ljava/lang/Object;
     .locals 4
 
     .prologue
@@ -144,11 +144,11 @@
     .line 1218
     iget-object v2, p0, Lkik/android/config/c$4;->a:Lkik/android/config/c;
 
-    invoke-static {v2}, Lkik/android/config/c;->a(Lkik/android/config/c;)Lkik/android/util/an;
+    invoke-static {v2}, Lkik/android/config/c;->a(Lkik/android/config/c;)Lkik/android/util/ai;
 
     move-result-object v2
 
-    invoke-interface {v2}, Lkik/android/util/an;->c()Landroid/content/SharedPreferences;
+    invoke-interface {v2}, Lkik/android/util/ai;->c()Landroid/content/SharedPreferences;
 
     move-result-object v2
 

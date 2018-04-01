@@ -1,5 +1,5 @@
 .class public final Lrx/internal/util/ScalarSynchronousObservable;
-.super Lrx/c;
+.super Lrx/d;
 .source "SourceFile"
 
 
@@ -18,7 +18,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lrx/c",
+        "Lrx/d",
         "<TT;>;"
     }
 .end annotation
@@ -81,11 +81,11 @@
 
     invoke-direct {v0, p1}, Lrx/internal/util/ScalarSynchronousObservable$a;-><init>(Ljava/lang/Object;)V
 
-    invoke-static {v0}, Lrx/e/c;->a(Lrx/c$a;)Lrx/c$a;
+    invoke-static {v0}, Lrx/d/c;->a(Lrx/d$a;)Lrx/d$a;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lrx/c;-><init>(Lrx/c$a;)V
+    invoke-direct {p0, v0}, Lrx/d;-><init>(Lrx/d$a;)V
 
     .line 77
     iput-object p1, p0, Lrx/internal/util/ScalarSynchronousObservable;->b:Ljava/lang/Object;
@@ -94,16 +94,16 @@
     return-void
 .end method
 
-.method static a(Lrx/i;Ljava/lang/Object;)Lrx/e;
+.method static a(Lrx/j;Ljava/lang/Object;)Lrx/f;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;TT;)",
-            "Lrx/e;"
+            "Lrx/f;"
         }
     .end annotation
 
@@ -116,7 +116,7 @@
     .line 60
     new-instance v0, Lrx/internal/producers/SingleProducer;
 
-    invoke-direct {v0, p0, p1}, Lrx/internal/producers/SingleProducer;-><init>(Lrx/i;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1}, Lrx/internal/producers/SingleProducer;-><init>(Lrx/j;Ljava/lang/Object;)V
 
     .line 62
     :goto_0
@@ -125,7 +125,7 @@
     :cond_0
     new-instance v0, Lrx/internal/util/ScalarSynchronousObservable$c;
 
-    invoke-direct {v0, p0, p1}, Lrx/internal/util/ScalarSynchronousObservable$c;-><init>(Lrx/i;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1}, Lrx/internal/util/ScalarSynchronousObservable$c;-><init>(Lrx/j;Ljava/lang/Object;)V
 
     goto :goto_0
 .end method
@@ -153,7 +153,7 @@
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
+.method public final b()Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -168,14 +168,14 @@
     return-object v0
 .end method
 
-.method public final c(Lrx/f;)Lrx/c;
+.method public final c(Lrx/g;)Lrx/d;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/f;",
+            "Lrx/g;",
             ")",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;"
         }
     .end annotation
@@ -200,9 +200,9 @@
 
     iget-object v2, p0, Lrx/internal/util/ScalarSynchronousObservable;->b:Ljava/lang/Object;
 
-    invoke-direct {v1, v2, v0}, Lrx/internal/util/ScalarSynchronousObservable$b;-><init>(Ljava/lang/Object;Lrx/b/g;)V
+    invoke-direct {v1, v2, v0}, Lrx/internal/util/ScalarSynchronousObservable$b;-><init>(Ljava/lang/Object;Lrx/functions/g;)V
 
-    invoke-static {v1}, Lrx/internal/util/ScalarSynchronousObservable;->a(Lrx/c$a;)Lrx/c;
+    invoke-static {v1}, Lrx/internal/util/ScalarSynchronousObservable;->b(Lrx/d$a;)Lrx/d;
 
     move-result-object v0
 
@@ -212,23 +212,23 @@
     :cond_0
     new-instance v0, Lrx/internal/util/ScalarSynchronousObservable$2;
 
-    invoke-direct {v0, p0, p1}, Lrx/internal/util/ScalarSynchronousObservable$2;-><init>(Lrx/internal/util/ScalarSynchronousObservable;Lrx/f;)V
+    invoke-direct {v0, p0, p1}, Lrx/internal/util/ScalarSynchronousObservable$2;-><init>(Lrx/internal/util/ScalarSynchronousObservable;Lrx/g;)V
 
     goto :goto_0
 .end method
 
-.method public final h(Lrx/b/g;)Lrx/c;
+.method public final i(Lrx/functions/g;)Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<-TT;+",
-            "Lrx/c",
+            "Lrx/d",
             "<+TR;>;>;)",
-            "Lrx/c",
+            "Lrx/d",
             "<TR;>;"
         }
     .end annotation
@@ -237,9 +237,9 @@
     .line 228
     new-instance v0, Lrx/internal/util/ScalarSynchronousObservable$3;
 
-    invoke-direct {v0, p0, p1}, Lrx/internal/util/ScalarSynchronousObservable$3;-><init>(Lrx/internal/util/ScalarSynchronousObservable;Lrx/b/g;)V
+    invoke-direct {v0, p0, p1}, Lrx/internal/util/ScalarSynchronousObservable$3;-><init>(Lrx/internal/util/ScalarSynchronousObservable;Lrx/functions/g;)V
 
-    invoke-static {v0}, Lrx/internal/util/ScalarSynchronousObservable;->a(Lrx/c$a;)Lrx/c;
+    invoke-static {v0}, Lrx/internal/util/ScalarSynchronousObservable;->b(Lrx/d$a;)Lrx/d;
 
     move-result-object v0
 

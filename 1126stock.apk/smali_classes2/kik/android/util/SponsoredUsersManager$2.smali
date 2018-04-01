@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/android/volley/i$b;
+.implements Lcom/android/volley/h$b;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/android/volley/i$b",
+        "Lcom/android/volley/h$b",
         "<",
         "Lorg/json/JSONArray;",
         ">;"
@@ -38,7 +38,7 @@
     .locals 0
 
     .prologue
-    .line 186
+    .line 189
     iput-object p1, p0, Lkik/android/util/SponsoredUsersManager$2;->b:Lkik/android/util/SponsoredUsersManager;
 
     iput-object p2, p0, Lkik/android/util/SponsoredUsersManager$2;->a:Lkik/android/util/SponsoredUsersManager$PromotionType;
@@ -54,16 +54,16 @@
     .locals 2
 
     .prologue
-    .line 186
+    .line 189
     check-cast p1, Lorg/json/JSONArray;
 
-    .line 1190
+    .line 1193
     iget-object v0, p0, Lkik/android/util/SponsoredUsersManager$2;->b:Lkik/android/util/SponsoredUsersManager;
 
     iget-object v1, p0, Lkik/android/util/SponsoredUsersManager$2;->a:Lkik/android/util/SponsoredUsersManager$PromotionType;
 
     invoke-static {v0, p1, v1}, Lkik/android/util/SponsoredUsersManager;->a(Lkik/android/util/SponsoredUsersManager;Lorg/json/JSONArray;Lkik/android/util/SponsoredUsersManager$PromotionType;)V
 
-    .line 186
+    .line 189
     return-void
 .end method

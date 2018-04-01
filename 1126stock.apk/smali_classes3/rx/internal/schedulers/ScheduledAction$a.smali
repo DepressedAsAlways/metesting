@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/j;
+.implements Lrx/k;
 
 
 # annotations

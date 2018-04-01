@@ -18,17 +18,19 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/kik/video/VideoCommon$ConvoVideoState$a;,
+        Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;,
         Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;,
-        Lcom/kik/video/VideoCommon$ConvoVideoState$b;
+        Lcom/kik/video/VideoCommon$ConvoVideoState$a;
     }
 .end annotation
 
 
 # static fields
-.field private static final a:Lcom/kik/video/VideoCommon$ConvoVideoState;
+.field public static final CONVO_ID_FIELD_NUMBER:I = 0x1
 
-.field private static final b:Lcom/google/protobuf/Parser;
+.field private static final DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+.field private static final PARSER:Lcom/google/protobuf/Parser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/protobuf/Parser",
@@ -38,6 +40,10 @@
         }
     .end annotation
 .end field
+
+.field public static final TIMESTAMP_FIELD_NUMBER:I = 0x3
+
+.field public static final USER_STATES_FIELD_NUMBER:I = 0x2
 
 .field private static final serialVersionUID:J
 
@@ -73,14 +79,14 @@
 
     invoke-direct {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState;-><init>()V
 
-    sput-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
+    sput-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
 
     .line 4108
     new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$1;
 
     invoke-direct {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState$1;-><init>()V
 
-    sput-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->b:Lcom/google/protobuf/Parser;
+    sput-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
 
     return-void
 .end method
@@ -272,7 +278,7 @@
     iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
 
     .line 1928
-    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;->g()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;->parser()Lcom/google/protobuf/Parser;
 
     move-result-object v2
 
@@ -403,7 +409,7 @@
     .end sparse-switch
 .end method
 
-.method synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;B)V
+.method synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;Lcom/kik/video/VideoCommon$1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -441,7 +447,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+.method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/video/VideoCommon$1;)V
     .locals 0
 
     .prologue
@@ -451,17 +457,17 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/kik/video/VideoCommon$ConvoVideoState;Lcom/google/protobuf/Timestamp;)Lcom/google/protobuf/Timestamp;
-    .locals 0
+.method static synthetic access$3400()Z
+    .locals 1
 
     .prologue
     .line 1872
-    iput-object p1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
+    sget-boolean v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->alwaysUseFieldBuilders:Z
 
-    return-object p1
+    return v0
 .end method
 
-.method static synthetic a(Lcom/kik/video/VideoCommon$ConvoVideoState;Lcom/kik/video/VideoCommon$ConvoId;)Lcom/kik/video/VideoCommon$ConvoId;
+.method static synthetic access$3602(Lcom/kik/video/VideoCommon$ConvoVideoState;Lcom/kik/video/VideoCommon$ConvoId;)Lcom/kik/video/VideoCommon$ConvoId;
     .locals 0
 
     .prologue
@@ -471,47 +477,7 @@
     return-object p1
 .end method
 
-.method public static a(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$a;
-    .locals 1
-
-    .prologue
-    .line 3093
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
-
-    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->f()Lcom/kik/video/VideoCommon$ConvoVideoState$a;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;->a(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic a(Lcom/kik/video/VideoCommon$ConvoVideoState;Ljava/util/List;)Ljava/util/List;
-    .locals 0
-
-    .prologue
-    .line 1872
-    iput-object p1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
-
-    return-object p1
-.end method
-
-.method static synthetic b(Lcom/kik/video/VideoCommon$ConvoVideoState;)I
-    .locals 1
-
-    .prologue
-    .line 1872
-    const/4 v0, 0x0
-
-    iput v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->bitField0_:I
-
-    return v0
-.end method
-
-.method static synthetic c(Lcom/kik/video/VideoCommon$ConvoVideoState;)Ljava/util/List;
+.method static synthetic access$3700(Lcom/kik/video/VideoCommon$ConvoVideoState;)Ljava/util/List;
     .locals 1
 
     .prologue
@@ -521,17 +487,333 @@
     return-object v0
 .end method
 
-.method public static g()Lcom/kik/video/VideoCommon$ConvoVideoState;
+.method static synthetic access$3702(Lcom/kik/video/VideoCommon$ConvoVideoState;Ljava/util/List;)Ljava/util/List;
+    .locals 0
+
+    .prologue
+    .line 1872
+    iput-object p1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+
+    return-object p1
+.end method
+
+.method static synthetic access$3802(Lcom/kik/video/VideoCommon$ConvoVideoState;Lcom/google/protobuf/Timestamp;)Lcom/google/protobuf/Timestamp;
+    .locals 0
+
+    .prologue
+    .line 1872
+    iput-object p1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
+
+    return-object p1
+.end method
+
+.method static synthetic access$3902(Lcom/kik/video/VideoCommon$ConvoVideoState;I)I
+    .locals 0
+
+    .prologue
+    .line 1872
+    iput p1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->bitField0_:I
+
+    return p1
+.end method
+
+.method static synthetic access$4000()Z
     .locals 1
 
     .prologue
-    .line 4104
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .line 1872
+    sget-boolean v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->alwaysUseFieldBuilders:Z
+
+    return v0
+.end method
+
+.method static synthetic access$4100()Lcom/google/protobuf/Parser;
+    .locals 1
+
+    .prologue
+    .line 1872
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
-.method public static h()Lcom/google/protobuf/Parser;
+.method public static getDefaultInstance()Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+
+    .prologue
+    .line 4104
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    return-object v0
+.end method
+
+.method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 1960
+    invoke-static {}, Lcom/kik/video/VideoCommon;->f()Lcom/google/protobuf/Descriptors$Descriptor;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+    .locals 1
+
+    .prologue
+    .line 3090
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->toBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+    .locals 1
+
+    .prologue
+    .line 3093
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->toBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;->mergeFrom(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3064
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 3065
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    .line 3064
+    return-object v0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3071
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 3072
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    .line 3071
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3032
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3038
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3077
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 3078
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    .line 3077
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3084
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 3085
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    .line 3084
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3052
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 3053
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    .line 3052
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3059
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 3060
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    .line 3059
+    return-object v0
+.end method
+
+.method public static parseFrom([B)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3042
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    return-object v0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 3048
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    return-object v0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -545,146 +827,13 @@
 
     .prologue
     .line 4118
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->b:Lcom/google/protobuf/Parser;
-
-    return-object v0
-.end method
-
-.method static synthetic i()Z
-    .locals 1
-
-    .prologue
-    .line 1872
-    sget-boolean v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->alwaysUseFieldBuilders:Z
-
-    return v0
-.end method
-
-.method static synthetic j()Z
-    .locals 1
-
-    .prologue
-    .line 1872
-    sget-boolean v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->alwaysUseFieldBuilders:Z
-
-    return v0
-.end method
-
-.method static synthetic k()Lcom/google/protobuf/Parser;
-    .locals 1
-
-    .prologue
-    .line 1872
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->b:Lcom/google/protobuf/Parser;
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 1
-
-    .prologue
-    .line 2778
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->convoId_:Lcom/kik/video/VideoCommon$ConvoId;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public final b()Lcom/kik/video/VideoCommon$ConvoId;
-    .locals 1
-
-    .prologue
-    .line 2788
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->convoId_:Lcom/kik/video/VideoCommon$ConvoId;
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoId;->f()Lcom/kik/video/VideoCommon$ConvoId;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->convoId_:Lcom/kik/video/VideoCommon$ConvoId;
-
-    goto :goto_0
-.end method
-
-.method public final c()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List",
-            "<",
-            "Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 2817
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
-
-    return-object v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    .prologue
-    .line 2901
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public final e()Lcom/google/protobuf/Timestamp;
-    .locals 1
-
-    .prologue
-    .line 2916
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Lcom/google/protobuf/Timestamp;->getDefaultInstance()Lcom/google/protobuf/Timestamp;
-
-    move-result-object v0
-
-    :goto_0
-    return-object v0
-
-    :cond_0
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
-
-    goto :goto_0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -719,11 +868,11 @@
     check-cast p1, Lcom/kik/video/VideoCommon$ConvoVideoState;
 
     .line 2990
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->a()Z
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasConvoId()Z
 
     move-result v0
 
-    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->a()Z
+    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasConvoId()Z
 
     move-result v3
 
@@ -733,7 +882,7 @@
 
     .line 2991
     :goto_1
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->a()Z
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasConvoId()Z
 
     move-result v3
 
@@ -742,12 +891,12 @@
     .line 2992
     if-eqz v0, :cond_6
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->b()Lcom/kik/video/VideoCommon$ConvoId;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
 
     move-result-object v0
 
     .line 2993
-    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->b()Lcom/kik/video/VideoCommon$ConvoId;
+    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
 
     move-result-object v3
 
@@ -764,13 +913,15 @@
     :goto_2
     if-eqz v0, :cond_7
 
-    .line 4817
-    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getUserStatesList()Ljava/util/List;
 
-    .line 5817
-    iget-object v3, p1, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+    move-result-object v0
 
     .line 2996
+    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getUserStatesList()Ljava/util/List;
+
+    move-result-object v3
+
     invoke-interface {v0, v3}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -783,11 +934,11 @@
     :goto_3
     if-eqz v0, :cond_8
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->d()Z
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasTimestamp()Z
 
     move-result v0
 
-    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->d()Z
+    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasTimestamp()Z
 
     move-result v3
 
@@ -797,7 +948,7 @@
 
     .line 2998
     :goto_4
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->d()Z
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasTimestamp()Z
 
     move-result v3
 
@@ -806,12 +957,12 @@
     .line 2999
     if-eqz v0, :cond_4
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->e()Lcom/google/protobuf/Timestamp;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getTimestamp()Lcom/google/protobuf/Timestamp;
 
     move-result-object v0
 
     .line 3000
-    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->e()Lcom/google/protobuf/Timestamp;
+    invoke-virtual {p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getTimestamp()Lcom/google/protobuf/Timestamp;
 
     move-result-object v3
 
@@ -856,45 +1007,49 @@
     goto :goto_0
 .end method
 
-.method public final f()Lcom/kik/video/VideoCommon$ConvoVideoState$a;
-    .locals 2
+.method public final getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
+    .locals 1
 
     .prologue
-    const/4 v1, 0x0
+    .line 2788
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->convoId_:Lcom/kik/video/VideoCommon$ConvoId;
 
-    .line 3096
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
+    if-nez v0, :cond_0
 
-    if-ne p0, v0, :cond_0
+    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoId;->f()Lcom/kik/video/VideoCommon$ConvoId;
 
-    new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;-><init>(B)V
+    move-result-object v0
 
     :goto_0
     return-object v0
 
     :cond_0
-    new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->convoId_:Lcom/kik/video/VideoCommon$ConvoId;
 
-    invoke-direct {v0, v1}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;-><init>(B)V
+    goto :goto_0
+.end method
 
-    .line 3097
-    invoke-virtual {v0, p0}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;->a(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+.method public final getConvoIdOrBuilder()Lcom/kik/video/VideoCommon$b;
+    .locals 1
+
+    .prologue
+    .line 2798
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
 
     move-result-object v0
 
-    goto :goto_0
+    return-object v0
 .end method
 
 .method public final bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
     .prologue
-    .line 10127
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
-
     .line 1872
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getDefaultInstanceForType()Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    move-result-object v0
+
     return-object v0
 .end method
 
@@ -902,10 +1057,21 @@
     .locals 1
 
     .prologue
-    .line 9127
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
-
     .line 1872
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getDefaultInstanceForType()Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getDefaultInstanceForType()Lcom/kik/video/VideoCommon$ConvoVideoState;
+    .locals 1
+
+    .prologue
+    .line 4127
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
+
     return-object v0
 .end method
 
@@ -923,7 +1089,7 @@
 
     .prologue
     .line 4123
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->b:Lcom/google/protobuf/Parser;
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
@@ -956,7 +1122,7 @@
     const/4 v0, 0x1
 
     .line 2964
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->b()Lcom/kik/video/VideoCommon$ConvoId;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
 
     move-result-object v2
 
@@ -1014,7 +1180,7 @@
     const/4 v0, 0x3
 
     .line 2972
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->e()Lcom/google/protobuf/Timestamp;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getTimestamp()Lcom/google/protobuf/Timestamp;
 
     move-result-object v1
 
@@ -1036,6 +1202,40 @@
     goto :goto_1
 .end method
 
+.method public final getTimestamp()Lcom/google/protobuf/Timestamp;
+    .locals 1
+
+    .prologue
+    .line 2916
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/google/protobuf/Timestamp;->getDefaultInstance()Lcom/google/protobuf/Timestamp;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
+
+    goto :goto_0
+.end method
+
+.method public final getTimestampOrBuilder()Lcom/google/protobuf/TimestampOrBuilder;
+    .locals 1
+
+    .prologue
+    .line 2931
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getTimestamp()Lcom/google/protobuf/Timestamp;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
@@ -1046,6 +1246,130 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final getUserStates(I)Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;
+    .locals 1
+
+    .prologue
+    .line 2866
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;
+
+    return-object v0
+.end method
+
+.method public final getUserStatesCount()I
+    .locals 1
+
+    .prologue
+    .line 2850
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final getUserStatesList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 2817
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public final getUserStatesOrBuilder(I)Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    .locals 1
+
+    .prologue
+    .line 2883
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+
+    return-object v0
+.end method
+
+.method public final getUserStatesOrBuilderList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<+",
+            "Lcom/kik/video/VideoCommon$ConvoVideoState$a;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 2834
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public final hasConvoId()Z
+    .locals 1
+
+    .prologue
+    .line 2778
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->convoId_:Lcom/kik/video/VideoCommon$ConvoId;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public final hasTimestamp()Z
+    .locals 1
+
+    .prologue
+    .line 2901
+    iget-object v0, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->timestamp_:Lcom/google/protobuf/Timestamp;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public final hashCode()I
@@ -1077,7 +1401,7 @@
     add-int/lit16 v0, v0, 0x30b
 
     .line 3012
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->a()Z
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasConvoId()Z
 
     move-result v1
 
@@ -1091,7 +1415,7 @@
     .line 3014
     mul-int/lit8 v0, v0, 0x35
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->b()Lcom/kik/video/VideoCommon$ConvoId;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
 
     move-result-object v1
 
@@ -1101,15 +1425,12 @@
 
     add-int/2addr v0, v1
 
-    .line 5850
+    .line 3016
     :cond_1
-    iget-object v1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getUserStatesCount()I
 
     move-result v1
 
-    .line 3016
     if-lez v1, :cond_2
 
     .line 3017
@@ -1120,10 +1441,10 @@
     .line 3018
     mul-int/lit8 v0, v0, 0x35
 
-    .line 6817
-    iget-object v1, p0, Lcom/kik/video/VideoCommon$ConvoVideoState;->userStates_:Ljava/util/List;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getUserStatesList()Ljava/util/List;
 
-    .line 3018
+    move-result-object v1
+
     invoke-interface {v1}, Ljava/util/List;->hashCode()I
 
     move-result v1
@@ -1132,7 +1453,7 @@
 
     .line 3020
     :cond_2
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->d()Z
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->hasTimestamp()Z
 
     move-result v1
 
@@ -1146,7 +1467,7 @@
     .line 3022
     mul-int/lit8 v0, v0, 0x35
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->e()Lcom/google/protobuf/Timestamp;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getTimestamp()Lcom/google/protobuf/Timestamp;
 
     move-result-object v1
 
@@ -1185,7 +1506,7 @@
 
     const-class v1, Lcom/kik/video/VideoCommon$ConvoVideoState;
 
-    const-class v2, Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    const-class v2, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     .line 1966
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
@@ -1227,73 +1548,122 @@
     goto :goto_0
 .end method
 
-.method public final synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
+.method public final bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
-    .line 8090
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
-
-    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->f()Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    .line 1872
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->newBuilderForType()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     move-result-object v0
 
-    .line 1872
     return-object v0
 .end method
 
-.method protected final synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+.method protected final bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+    .locals 1
+
+    .prologue
+    .line 1872
+    invoke-virtual {p0, p1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .prologue
+    .line 1872
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->newBuilderForType()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final newBuilderForType()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+    .locals 1
+
+    .prologue
+    .line 3088
+    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState;->newBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected final newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
     .locals 2
 
     .prologue
-    .line 7103
-    new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    .line 3103
+    new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
+    invoke-direct {v0, p1, v1}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;Lcom/kik/video/VideoCommon$1;)V
 
-    .line 1872
+    .line 3104
     return-object v0
 .end method
 
-.method public final synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
-    .locals 1
-
-    .prologue
-    .line 9090
-    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
-
-    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->f()Lcom/kik/video/VideoCommon$ConvoVideoState$a;
-
-    move-result-object v0
-
-    .line 1872
-    return-object v0
-.end method
-
-.method public final synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
+.method public final bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
     .line 1872
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->f()Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->toBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
+.method public final bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
     .prologue
     .line 1872
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->f()Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->toBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final toBuilder()Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 3096
+    sget-object v0, Lcom/kik/video/VideoCommon$ConvoVideoState;->DEFAULT_INSTANCE:Lcom/kik/video/VideoCommon$ConvoVideoState;
+
+    if-ne p0, v0, :cond_0
+
+    new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    invoke-direct {v0, v1}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;-><init>(Lcom/kik/video/VideoCommon$1;)V
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    new-instance v0, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    invoke-direct {v0, v1}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;-><init>(Lcom/kik/video/VideoCommon$1;)V
+
+    .line 3097
+    invoke-virtual {v0, p0}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;->mergeFrom(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public final writeTo(Lcom/google/protobuf/CodedOutputStream;)V
@@ -1313,7 +1683,7 @@
     .line 2947
     const/4 v0, 0x1
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->b()Lcom/kik/video/VideoCommon$ConvoId;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getConvoId()Lcom/kik/video/VideoCommon$ConvoId;
 
     move-result-object v1
 
@@ -1363,7 +1733,7 @@
     .line 2953
     const/4 v0, 0x3
 
-    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->e()Lcom/google/protobuf/Timestamp;
+    invoke-virtual {p0}, Lcom/kik/video/VideoCommon$ConvoVideoState;->getTimestamp()Lcom/google/protobuf/Timestamp;
 
     move-result-object v1
 

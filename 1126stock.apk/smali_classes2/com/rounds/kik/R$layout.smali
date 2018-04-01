@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final mask_item_view:I = 0x7f0400e3
+.field public static final mask_item_view:I = 0x7f040112
 
-.field public static final mask_menu_view:I = 0x7f0400e4
+.field public static final mask_menu_view:I = 0x7f040113
 
-.field public static final video_mode_slide_panel_view:I = 0x7f04013b
+.field public static final video_mode_slide_panel_view:I = 0x7f040181
 
-.field public static final video_view:I = 0x7f04013c
+.field public static final video_view:I = 0x7f040182
 
 
 # direct methods

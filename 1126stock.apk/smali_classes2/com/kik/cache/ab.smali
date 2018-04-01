@@ -1,125 +1,68 @@
-.class public final Lcom/kik/cache/ab;
-.super Lcom/android/volley/Request;
-.source "SourceFile"
+.class final synthetic Lcom/kik/cache/ab;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/functions/g;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/android/volley/Request",
-        "<[B>;"
-    }
-.end annotation
-
-
-# instance fields
-.field private a:Lcom/android/volley/i$b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/android/volley/i$b",
-            "<[B>;"
-        }
-    .end annotation
-.end field
+# static fields
+.field private static final a:Lcom/kik/cache/ab;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lcom/android/volley/i$a;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    .prologue
-    .line 19
-    const/4 v0, 0x0
+    new-instance v0, Lcom/kik/cache/ab;
 
-    invoke-direct {p0, v0, p1, p2}, Lcom/android/volley/Request;-><init>(ILjava/lang/String;Lcom/android/volley/i$a;)V
+    invoke-direct {v0}, Lcom/kik/cache/ab;-><init>()V
 
-    .line 20
+    sput-object v0, Lcom/kik/cache/ab;->a:Lcom/kik/cache/ab;
+
     return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lcom/kik/cache/ab;->a:Lcom/kik/cache/ab;
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method protected final a(Lcom/android/volley/g;)Lcom/android/volley/i;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/android/volley/g;",
-            ")",
-            "Lcom/android/volley/i",
-            "<[B>;"
-        }
-    .end annotation
-
-    .prologue
-    .line 25
-    iget-object v0, p1, Lcom/android/volley/g;->b:[B
-
-    if-eqz v0, :cond_0
-
-    .line 26
-    iget-object v0, p1, Lcom/android/volley/g;->b:[B
-
-    invoke-static {p1}, Lcom/android/volley/toolbox/e;->a(Lcom/android/volley/g;)Lcom/android/volley/a$a;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Lcom/android/volley/i;->a(Ljava/lang/Object;Lcom/android/volley/a$a;)Lcom/android/volley/i;
-
-    move-result-object v0
-
-    .line 28
-    :goto_0
-    return-object v0
-
-    :cond_0
-    new-instance v0, Lcom/android/volley/ParseError;
-
-    invoke-direct {v0}, Lcom/android/volley/ParseError;-><init>()V
-
-    invoke-static {v0}, Lcom/android/volley/i;->a(Lcom/android/volley/VolleyError;)Lcom/android/volley/i;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public final a(Lcom/android/volley/i$b;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/android/volley/i$b",
-            "<[B>;)V"
-        }
-    .end annotation
-
-    .prologue
-    .line 44
-    iput-object p1, p0, Lcom/kik/cache/ab;->a:Lcom/android/volley/i$b;
-
-    .line 45
-    return-void
-.end method
-
-.method protected final synthetic b(Ljava/lang/Object;)V
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 13
-    check-cast p1, [B
+    .line 0
+    check-cast p1, Landroid/graphics/Bitmap;
 
-    .line 1034
-    iget-object v0, p0, Lcom/kik/cache/ab;->a:Lcom/android/volley/i$b;
+    .line 1096
+    if-eqz p1, :cond_0
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x1
 
-    .line 1035
-    iget-object v0, p0, Lcom/kik/cache/ab;->a:Lcom/android/volley/i$b;
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-interface {v0, p1}, Lcom/android/volley/i$b;->a(Ljava/lang/Object;)V
+    move-result-object v0
 
-    .line 13
+    .line 0
+    return-object v0
+
+    .line 1096
     :cond_0
-    return-void
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

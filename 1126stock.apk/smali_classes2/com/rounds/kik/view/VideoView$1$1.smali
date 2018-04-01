@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 105
+    .line 108
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 2
 
     .prologue
-    .line 109
+    .line 112
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v0, v0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -56,12 +56,12 @@
 
     check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 110
+    .line 113
     const/16 v1, 0x33
 
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
-    .line 111
+    .line 114
     iget-object v1, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v1, v1, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -73,14 +73,14 @@
 
     invoke-virtual {v1, v0}, Lcom/rounds/kik/view/VideoModeSlidePanel;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 112
+    .line 115
     const/high16 v0, 0x3f800000    # 1.0f
 
     const/16 v1, 0x96
 
     invoke-static {v0, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetSceneVisibility(FI)V
 
-    .line 113
+    .line 116
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v0, v0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/masks/MaskMenuView;->animateShow()V
 
-    .line 114
+    .line 117
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v0, v0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -104,7 +104,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/VideoModeSlidePanel;->onChangedMode()V
 
-    .line 115
+    .line 118
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v0, v0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -114,7 +114,7 @@
     # setter for: Lcom/rounds/kik/view/VideoView;->mOnVideoModeChanging:Z
     invoke-static {v0, v1}, Lcom/rounds/kik/view/VideoView;->access$602(Lcom/rounds/kik/view/VideoView;Z)Z
 
-    .line 116
+    .line 119
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v0, v0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -126,7 +126,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 117
+    .line 120
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
     iget-object v0, v0, Lcom/rounds/kik/view/VideoView$1;->a:Lcom/rounds/kik/view/VideoView;
@@ -138,7 +138,7 @@
 
     invoke-interface {v0}, Lcom/rounds/kik/view/VideoView$IOnVideoModeChangeListener;->onVideoModeChangedToFull()V
 
-    .line 119
+    .line 122
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$1$1;->a:Lcom/rounds/kik/view/VideoView$1;
 
@@ -153,6 +153,6 @@
 
     invoke-interface {v0, v1}, Lcom/rounds/kik/VideoController$VideoViewListener;->onChangeVideoPlaneViewMode(I)V
 
-    .line 120
+    .line 123
     return-void
 .end method

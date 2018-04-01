@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 702
+    .line 742
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$b;->b:Lcom/rounds/kik/view/VideoView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
     .locals 0
 
     .prologue
-    .line 702
+    .line 742
     invoke-direct {p0, p1}, Lcom/rounds/kik/view/VideoView$b;-><init>(Lcom/rounds/kik/view/VideoView;)V
 
     return-void
@@ -50,7 +50,7 @@
     .locals 0
 
     .prologue
-    .line 719
+    .line 759
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .locals 0
 
     .prologue
-    .line 713
+    .line 753
     return-void
 .end method
 
@@ -66,7 +66,7 @@
     .locals 0
 
     .prologue
-    .line 725
+    .line 765
     return-void
 .end method
 
@@ -74,6 +74,6 @@
     .locals 0
 
     .prologue
-    .line 707
+    .line 747
     return-void
 .end method

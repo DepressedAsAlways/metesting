@@ -45,7 +45,7 @@
 
 .field private mConnected:Z
 
-.field private final mGson:Lcom/google/gson/d;
+.field private final mGson:Lcom/google/gson/e;
 
 .field private volatile mIsInCall:Z
 
@@ -104,9 +104,9 @@
     invoke-virtual {v0, v1, v2}, Lcom/rounds/kik/logs/VideoLogger;->videoInfo(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 100
-    new-instance v0, Lcom/google/gson/e;
+    new-instance v0, Lcom/google/gson/f;
 
-    invoke-direct {v0}, Lcom/google/gson/e;-><init>()V
+    invoke-direct {v0}, Lcom/google/gson/f;-><init>()V
 
     const-class v1, Lcom/rounds/kik/conference/messaging/BaseVidyoMessage;
 
@@ -114,15 +114,15 @@
 
     invoke-direct {v2}, Lcom/rounds/kik/conference/messaging/VidyoMessageDeserializer;-><init>()V
 
-    invoke-virtual {v0, v1, v2}, Lcom/google/gson/e;->a(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/e;
+    invoke-virtual {v0, v1, v2}, Lcom/google/gson/f;->a(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/f;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/gson/e;->b()Lcom/google/gson/d;
+    invoke-virtual {v0}, Lcom/google/gson/f;->b()Lcom/google/gson/e;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/d;
+    iput-object v0, p0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/e;
 
     .line 101
     iput-object p1, p0, Lcom/rounds/kik/conference/ConferenceManager;->mObserver:Lcom/rounds/kik/conference/ConferenceObserver;
@@ -226,9 +226,9 @@
     .line 291
     sget-object v0, Lcom/rounds/kik/conference/ConferenceManager;->sInstance:Lcom/rounds/kik/conference/ConferenceManager;
 
-    iget-object v0, v0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/d;
+    iget-object v0, v0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/e;
 
-    invoke-virtual {v0, v1}, Lcom/google/gson/d;->a(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/google/gson/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -256,9 +256,9 @@
     .line 298
     sget-object v1, Lcom/rounds/kik/conference/ConferenceManager;->sInstance:Lcom/rounds/kik/conference/ConferenceManager;
 
-    iget-object v1, v1, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/d;
+    iget-object v1, v1, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/e;
 
-    invoke-virtual {v1, v0}, Lcom/google/gson/d;->a(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Lcom/google/gson/e;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1036,11 +1036,11 @@
     .prologue
     .line 375
     :try_start_0
-    iget-object v0, p0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/d;
+    iget-object v0, p0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/e;
 
     const-class v1, Lcom/rounds/kik/conference/messaging/BaseVidyoMessage;
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/gson/d;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lcom/google/gson/e;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1169,11 +1169,11 @@
     .prologue
     .line 348
     :try_start_0
-    iget-object v0, p0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/d;
+    iget-object v0, p0, Lcom/rounds/kik/conference/ConferenceManager;->mGson:Lcom/google/gson/e;
 
     const-class v1, Lcom/rounds/kik/conference/messaging/BaseVidyoMessage;
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/gson/d;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Lcom/google/gson/e;->a(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 

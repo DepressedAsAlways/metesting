@@ -2,10 +2,13 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkik/android/chat/vm/at;
+
 
 # virtual methods
-.method public abstract a()Z
+.method public abstract b()Lkik/core/datatypes/f;
 .end method
 
-.method public abstract b()Z
+.method public abstract d()Lkik/android/chat/vm/IBadgeViewModel;
 .end method

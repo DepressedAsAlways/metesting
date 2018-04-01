@@ -37,7 +37,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
@@ -48,7 +48,7 @@
         value = {
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;"
         }
     .end annotation
@@ -71,11 +71,11 @@
             ">;",
             "Ljava/util/List",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;",
             "Lcom/kik/events/Promise",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;",
             "Ljava/lang/String;",
             ")V"
@@ -96,12 +96,12 @@
     iput-object p3, p0, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel$ChatSearchResults;->c:Lcom/kik/events/Promise;
 
     .line 64
-    invoke-static {p1}, Lkik/core/util/m;->b(Ljava/util/List;)I
+    invoke-static {p1}, Lkik/core/util/l;->b(Ljava/util/List;)I
 
     move-result v0
 
     .line 65
-    invoke-static {p2}, Lkik/core/util/m;->b(Ljava/util/List;)I
+    invoke-static {p2}, Lkik/core/util/l;->b(Ljava/util/List;)I
 
     move-result v1
 

@@ -1,86 +1,94 @@
 .class public final Lkik/android/chat/vm/messaging/a/a;
-.super Lkik/android/chat/vm/messaging/bq;
+.super Lkik/android/chat/vm/messaging/ct;
 .source "SourceFile"
 
 
 # instance fields
-.field private final B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+.field private final f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
 
 # direct methods
 .method public constructor <init>(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
-    .locals 8
+    .locals 9
 
     .prologue
+    const/4 v2, 0x0
+
     const/4 v1, 0x0
 
-    .line 29
-    invoke-static {}, Lrx/c;->c()Lrx/c;
+    .line 30
+    invoke-static {}, Lrx/d;->c()Lrx/d;
 
     move-result-object v3
 
-    invoke-static {v1}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v1}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v4
 
-    invoke-static {v1}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v1}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v5
 
-    invoke-static {v1}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v1}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v6
 
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v7
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v8
 
     move-object v0, p0
 
     move-object v2, v1
 
-    invoke-direct/range {v0 .. v7}, Lkik/android/chat/vm/messaging/bq;-><init>(Lkik/core/datatypes/Message;Ljava/lang/String;Lrx/c;Lrx/c;Lrx/c;Lrx/c;Lrx/c;)V
-
-    .line 31
-    iput-object p1, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    invoke-direct/range {v0 .. v8}, Lkik/android/chat/vm/messaging/ct;-><init>(Lkik/core/datatypes/Message;Ljava/lang/String;Lrx/d;Lrx/d;Lrx/d;Lrx/d;Lrx/d;Lrx/d;)V
 
     .line 32
+    iput-object p1, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
+
+    .line 33
     return-void
 .end method
 
 
 # virtual methods
-.method public final an()Ljava/lang/String;
+.method public final aB()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 60
-    .line 2037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 61
+    .line 2038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 3034
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->E()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->G()Z
 
     move-result v0
 
-    .line 60
+    .line 61
     if-nez v0, :cond_0
 
-    .line 4037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 4038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 3140
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/en;->b(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+    .line 3148
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/gf;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
 
     move-result v0
 
-    .line 60
+    .line 61
     if-eqz v0, :cond_1
 
     :cond_0
@@ -90,38 +98,38 @@
     return-object v0
 
     :cond_1
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/bq;->an()Ljava/lang/String;
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aB()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final ao()Ljava/lang/String;
+.method public final aC()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 66
-    .line 5037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 67
+    .line 5038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 6034
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->E()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->G()Z
 
     move-result v0
 
-    .line 66
+    .line 67
     if-nez v0, :cond_0
 
-    .line 7037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 7038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 6140
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/en;->b(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+    .line 6148
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/gf;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
 
     move-result v0
 
-    .line 66
+    .line 67
     if-eqz v0, :cond_1
 
     :cond_0
@@ -131,60 +139,60 @@
     return-object v0
 
     :cond_1
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/bq;->ao()Ljava/lang/String;
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aC()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final ap()I
+.method public final aD()I
     .locals 1
 
     .prologue
-    .line 116
+    .line 124
     const/4 v0, 0x2
 
     return v0
 .end method
 
-.method public final aq()I
+.method public final aF()I
     .locals 1
 
     .prologue
-    .line 122
+    .line 130
     const/4 v0, 0x1
 
     return v0
 .end method
 
-.method public final ar()Ljava/lang/String;
+.method public final aH()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 128
+    .line 136
     const/4 v0, 0x0
 
     return-object v0
 .end method
 
-.method public final as()Z
+.method public final aJ()Z
     .locals 1
 
     .prologue
-    .line 72
-    .line 8037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 73
+    .line 8038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 9034
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->E()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->G()Z
 
     move-result v0
 
-    .line 72
+    .line 73
     if-nez v0, :cond_0
 
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/bq;->as()Z
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aJ()Z
 
     move-result v0
 
@@ -202,12 +210,12 @@
     goto :goto_0
 .end method
 
-.method public final at()F
+.method public final aK()F
     .locals 1
 
     .prologue
-    .line 43
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->as()Z
+    .line 44
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->aJ()Z
 
     move-result v0
 
@@ -224,12 +232,12 @@
     goto :goto_0
 .end method
 
-.method public final au()F
+.method public final aL()F
     .locals 1
 
     .prologue
-    .line 49
-    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->as()Z
+    .line 50
+    invoke-virtual {p0}, Lkik/android/chat/vm/messaging/a/a;->aJ()Z
 
     move-result v0
 
@@ -246,22 +254,22 @@
     goto :goto_0
 .end method
 
-.method public final av()Lkik/android/widget/ContentPreviewImageView$ContentType;
+.method public final aM()Lkik/android/widget/ContentPreviewImageView$ContentType;
     .locals 1
 
     .prologue
-    .line 134
+    .line 142
     sget-object v0, Lkik/android/widget/ContentPreviewImageView$ContentType;->MEDIA_TRAY:Lkik/android/widget/ContentPreviewImageView$ContentType;
 
     return-object v0
 .end method
 
-.method public final aw()Lrx/c;
+.method public final aN()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -269,16 +277,16 @@
     .end annotation
 
     .prologue
-    .line 78
-    .line 10037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 79
+    .line 10038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 11034
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->E()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->G()Z
 
     move-result v0
 
-    .line 78
+    .line 79
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
@@ -287,7 +295,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
@@ -295,19 +303,19 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0}, Lkik/android/chat/vm/messaging/bq;->aw()Lrx/c;
+    invoke-super {p0}, Lkik/android/chat/vm/messaging/ct;->aN()Lrx/d;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final ax()Lrx/c;
-    .locals 3
+.method public final aO()Lrx/d;
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;"
@@ -315,66 +323,66 @@
     .end annotation
 
     .prologue
-    .line 84
-    .line 11037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 85
+    .line 11038
+    iget-object v2, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 12037
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 12038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 13034
-    invoke-virtual {v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->E()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->G()Z
 
-    move-result v1
-
-    .line 86
-    if-eqz v1, :cond_0
+    move-result v0
 
     .line 87
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/a/a;->v:Lcom/kik/e/p;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
+    .line 88
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lcom/kik/storage/s;
 
-    move-result-object v0
-
-    invoke-interface {v1, v0}, Lcom/kik/e/p;->j(Ljava/lang/String;)Landroid/graphics/Bitmap;
-
-    move-result-object v0
-
-    .line 89
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
-
-    move-result-object v0
-
-    .line 110
-    :goto_0
-    return-object v0
-
-    .line 92
-    :cond_0
-    const-string v1, "png-preview"
-
-    invoke-virtual {v0, v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/r;
+    invoke-virtual {v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 93
-    const-string v2, "preview"
-
-    invoke-virtual {v0, v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/r;
+    invoke-interface {v0, v1}, Lcom/kik/storage/s;->k(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 96
-    if-nez v1, :cond_1
+    .line 90
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    .line 118
+    :goto_0
+    return-object v0
+
+    .line 93
+    :cond_0
+    const-string v0, "png-preview"
+
+    invoke-virtual {v2, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
+
+    move-result-object v1
+
+    .line 94
+    const-string v0, "preview"
+
+    invoke-virtual {v2, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->a(Ljava/lang/String;)Lkik/core/datatypes/q;
+
+    move-result-object v0
 
     .line 97
-    if-nez v0, :cond_2
+    if-nez v1, :cond_1
 
     .line 98
+    if-nez v0, :cond_2
+
+    .line 99
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
@@ -385,48 +393,85 @@
 
     .line 108
     :cond_2
-    invoke-static {}, Lkik/core/util/h;->a()Lkik/core/util/h;
+    invoke-static {}, Lkik/core/util/g;->a()Lkik/core/util/g;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lkik/core/util/h;->a(Lkik/core/datatypes/r;)[B
+    invoke-virtual {v1, v0}, Lkik/core/util/g;->b(Lkik/core/datatypes/q;)Lkik/core/util/g$a;
+
+    move-result-object v1
+
+    .line 109
+    iget-object v0, v1, Lkik/core/util/g$a;->a:[B
+
+    if-nez v0, :cond_4
+
+    .line 110
+    invoke-virtual {v2}, Lkik/core/datatypes/messageExtensions/ContentMessage;->L()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 110
+    .line 111
+    if-nez v0, :cond_3
+
+    .line 112
+    const-string v0, "int-file-url-local"
+
+    invoke-virtual {v2, v0}, Lkik/core/datatypes/messageExtensions/ContentMessage;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 114
+    :cond_3
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "PreviewContentMessageViewModel.previewImage - bytes is null, getBytesFromImage failed: \'"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v3, v1, Lkik/core/util/g$a;->b:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\'\n,content message file path: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
+
+    .line 118
+    :cond_4
+    iget-object v0, v1, Lkik/core/util/g$a;->a:[B
+
     invoke-static {v0}, Lkik/android/util/h;->a([B)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method public final h()Z
-    .locals 1
-
-    .prologue
-    .line 140
-    .line 13037
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
-
-    .line 140
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/en;->b(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final k()Lrx/c;
+.method public final j()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -434,26 +479,42 @@
     .end annotation
 
     .prologue
-    .line 146
+    .line 154
     const/4 v0, 0x0
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    invoke-static {v0}, Lrx/c;->b(Ljava/lang/Object;)Lrx/c;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method protected final l()Lkik/core/datatypes/messageExtensions/ContentMessage;
+.method protected final k()Lkik/core/datatypes/messageExtensions/ContentMessage;
     .locals 1
 
     .prologue
-    .line 37
-    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->B:Lkik/core/datatypes/messageExtensions/ContentMessage;
+    .line 38
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     return-object v0
+.end method
+
+.method public final p()Z
+    .locals 1
+
+    .prologue
+    .line 148
+    .line 13038
+    iget-object v0, p0, Lkik/android/chat/vm/messaging/a/a;->f:Lkik/core/datatypes/messageExtensions/ContentMessage;
+
+    .line 148
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/gf;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+
+    move-result v0
+
+    return v0
 .end method

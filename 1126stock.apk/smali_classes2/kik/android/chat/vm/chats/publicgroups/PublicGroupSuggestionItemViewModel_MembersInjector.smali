@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/chats/publicgroups/w;",
+        "Lkik/android/chat/vm/chats/publicgroups/y;",
         ">;"
     }
 .end annotation
@@ -23,12 +23,12 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/a;",
+            "Lcom/kik/core/domain/a/c;",
             ">;"
         }
     .end annotation
@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 10
+    .line 11
     const-class v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -95,14 +95,14 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/a;",
+            "Lcom/kik/core/domain/a/c;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -120,10 +120,10 @@
     .end annotation
 
     .prologue
-    .line 17
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
+    .line 30
     sget-boolean v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -136,11 +136,11 @@
 
     throw v0
 
-    .line 19
+    .line 31
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 20
+    .line 32
     sget-boolean v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -153,11 +153,11 @@
 
     throw v0
 
-    .line 21
+    .line 33
     :cond_1
     iput-object p2, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 22
+    .line 34
     sget-boolean v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -170,11 +170,11 @@
 
     throw v0
 
-    .line 23
+    .line 35
     :cond_2
     iput-object p3, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 24
+    .line 36
     sget-boolean v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_3
@@ -187,22 +187,22 @@
 
     throw v0
 
-    .line 25
+    .line 37
     :cond_3
     iput-object p4, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;
 
-    .line 26
+    .line 38
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/a;",
+            "Lcom/kik/core/domain/a/c;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -218,16 +218,16 @@
             ">;)",
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/w;",
+            "Lkik/android/chat/vm/chats/publicgroups/y;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 40
+    .line 45
     new-instance v0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -238,13 +238,13 @@
     .locals 2
 
     .prologue
-    .line 10
-    check-cast p1, Lkik/android/chat/vm/chats/publicgroups/w;
+    .line 11
+    check-cast p1, Lkik/android/chat/vm/chats/publicgroups/y;
 
-    .line 1030
+    .line 1051
     if-nez p1, :cond_0
 
-    .line 1031
+    .line 1052
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -253,13 +253,19 @@
 
     throw v0
 
-    .line 1033
+    .line 1054
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->b:Ldagger/b;
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
-    .line 1034
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/core/domain/a/c;
+
+    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/a;->a:Lcom/kik/core/domain/a/c;
+
+    .line 1055
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -268,9 +274,9 @@
 
     check-cast v0, Lkik/core/interfaces/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/w;->a:Lkik/core/interfaces/b;
+    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/y;->b:Lkik/core/interfaces/b;
 
-    .line 1035
+    .line 1056
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -279,9 +285,9 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/w;->b:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/y;->c:Landroid/content/res/Resources;
 
-    .line 1036
+    .line 1057
     iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->e:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -290,8 +296,8 @@
 
     check-cast v0, Lcom/kik/android/Mixpanel;
 
-    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/w;->c:Lcom/kik/android/Mixpanel;
+    iput-object v0, p1, Lkik/android/chat/vm/chats/publicgroups/y;->d:Lcom/kik/android/Mixpanel;
 
-    .line 10
+    .line 11
     return-void
 .end method

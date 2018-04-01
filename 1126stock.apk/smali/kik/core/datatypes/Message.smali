@@ -33,7 +33,7 @@
         value = {
             "Ljava/util/Vector",
             "<",
-            "Lkik/core/datatypes/messageExtensions/f;",
+            "Lkik/core/datatypes/messageExtensions/MessageAttachment;",
             ">;"
         }
     .end annotation
@@ -78,7 +78,7 @@
     .locals 11
 
     .prologue
-    .line 199
+    .line 208
     const/4 v9, 0x0
 
     move-object v1, p0
@@ -97,7 +97,7 @@
 
     invoke-direct/range {v1 .. v9}, Lkik/core/datatypes/Message;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;JIB)V
 
-    .line 200
+    .line 209
     return-void
 .end method
 
@@ -105,7 +105,7 @@
     .locals 11
 
     .prologue
-    .line 204
+    .line 213
     const/4 v9, 0x0
 
     const/4 v10, 0x0
@@ -126,7 +126,7 @@
 
     invoke-direct/range {v1 .. v10}, Lkik/core/datatypes/Message;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;JIZI)V
 
-    .line 205
+    .line 214
     return-void
 .end method
 
@@ -136,22 +136,22 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 208
+    .line 217
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 36
+    .line 40
     iput-boolean v0, p0, Lkik/core/datatypes/Message;->g:Z
 
-    .line 37
+    .line 41
     iput-boolean v0, p0, Lkik/core/datatypes/Message;->h:Z
 
-    .line 39
+    .line 43
     iput-boolean v0, p0, Lkik/core/datatypes/Message;->j:Z
 
-    .line 60
+    .line 64
     iput-boolean v0, p0, Lkik/core/datatypes/Message;->r:Z
 
-    .line 61
+    .line 65
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->r:Z
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -164,43 +164,43 @@
 
     iput-object v0, p0, Lkik/core/datatypes/Message;->s:Lrx/subjects/a;
 
-    .line 123
+    .line 127
     sget-object v0, Lkik/core/datatypes/Message$MessageSource;->DEFAULT:Lkik/core/datatypes/Message$MessageSource;
 
     iput-object v0, p0, Lkik/core/datatypes/Message;->u:Lkik/core/datatypes/Message$MessageSource;
 
-    .line 209
+    .line 218
     iput-object p1, p0, Lkik/core/datatypes/Message;->a:Ljava/lang/String;
 
-    .line 210
+    .line 219
     iput-object p2, p0, Lkik/core/datatypes/Message;->b:Ljava/lang/String;
 
-    .line 211
+    .line 220
     iput-boolean p3, p0, Lkik/core/datatypes/Message;->c:Z
 
-    .line 212
+    .line 221
     iput p7, p0, Lkik/core/datatypes/Message;->d:I
 
-    .line 213
+    .line 222
     iput-object p4, p0, Lkik/core/datatypes/Message;->f:Ljava/lang/String;
 
-    .line 214
+    .line 223
     iput-wide p5, p0, Lkik/core/datatypes/Message;->n:J
 
-    .line 215
+    .line 224
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
     iput-object v0, p0, Lkik/core/datatypes/Message;->i:Ljava/util/Vector;
 
-    .line 216
+    .line 225
     iput-boolean p8, p0, Lkik/core/datatypes/Message;->g:Z
 
-    .line 217
+    .line 226
     iput p9, p0, Lkik/core/datatypes/Message;->e:I
 
-    .line 218
+    .line 227
     return-void
 .end method
 
@@ -208,7 +208,7 @@
     .locals 1
 
     .prologue
-    .line 127
+    .line 131
     sget-object v0, Lkik/core/datatypes/Message$MessageSource;->DEFAULT:Lkik/core/datatypes/Message$MessageSource;
 
     invoke-static {p0, v0}, Lkik/core/datatypes/Message;->a(Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;)Lkik/core/datatypes/Message;
@@ -222,7 +222,7 @@
     .locals 9
 
     .prologue
-    .line 139
+    .line 143
     new-instance v1, Lkik/core/datatypes/Message;
 
     const/4 v4, 0x0
@@ -246,19 +246,19 @@
     .locals 2
 
     .prologue
-    .line 149
+    .line 153
     invoke-static {p1, p2}, Lkik/core/datatypes/Message;->a(Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;)Lkik/core/datatypes/Message;
 
     move-result-object v0
 
-    .line 150
-    new-instance v1, Lkik/core/datatypes/messageExtensions/g;
+    .line 154
+    new-instance v1, Lkik/core/datatypes/messageExtensions/k;
 
-    invoke-direct {v1, p0}, Lkik/core/datatypes/messageExtensions/g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, p0}, Lkik/core/datatypes/messageExtensions/k;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/f;)V
+    invoke-virtual {v0, v1}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
 
-    .line 151
+    .line 155
     return-object v0
 .end method
 
@@ -266,7 +266,7 @@
     .locals 9
 
     .prologue
-    .line 132
+    .line 136
     new-instance v1, Lkik/core/datatypes/Message;
 
     const/4 v4, 0x1
@@ -279,7 +279,7 @@
 
     move-result-object v5
 
-    invoke-static {}, Lkik/core/util/w;->b()J
+    invoke-static {}, Lkik/core/util/v;->b()J
 
     move-result-wide v6
 
@@ -291,10 +291,10 @@
 
     invoke-direct/range {v1 .. v8}, Lkik/core/datatypes/Message;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;JI)V
 
-    .line 1371
+    .line 1381
     iput-object p1, v1, Lkik/core/datatypes/Message;->u:Lkik/core/datatypes/Message$MessageSource;
 
-    .line 134
+    .line 138
     return-object v1
 .end method
 
@@ -318,18 +318,18 @@
     .end annotation
 
     .prologue
-    .line 171
+    .line 175
     invoke-static {p1, p3}, Lkik/core/datatypes/Message;->a(Ljava/lang/String;Lkik/core/datatypes/Message$MessageSource;)Lkik/core/datatypes/Message;
 
     move-result-object v0
 
-    .line 172
-    new-instance v1, Lkik/core/datatypes/j;
+    .line 176
+    new-instance v1, Lkik/core/datatypes/FriendPickerAttachment;
 
-    invoke-direct {v1, p0}, Lkik/core/datatypes/j;-><init>(Ljava/util/List;)V
+    invoke-direct {v1, p0}, Lkik/core/datatypes/FriendPickerAttachment;-><init>(Ljava/util/List;)V
 
-    .line 173
-    new-instance v2, Lkik/core/datatypes/messageExtensions/g;
+    .line 177
+    new-instance v2, Lkik/core/datatypes/messageExtensions/k;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -339,7 +339,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, p4}, Lkik/core/net/d/e;->a(Lkik/core/datatypes/j;Lkik/core/interfaces/v;)Ljava/lang/String;
+    invoke-static {v1, p4}, Lkik/core/net/messageExtensions/e;->a(Lkik/core/datatypes/FriendPickerAttachment;Lkik/core/interfaces/v;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -351,25 +351,25 @@
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Lkik/core/datatypes/messageExtensions/g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lkik/core/datatypes/messageExtensions/k;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v2}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/f;)V
+    invoke-virtual {v0, v2}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
 
-    .line 174
-    invoke-virtual {v0, v1}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/f;)V
+    .line 178
+    invoke-virtual {v0, v1}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
 
-    .line 176
+    .line 180
     invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply;->g()Lcom/kik/messagepath/model/Keyboards$SuggestedReply$a;
 
     move-result-object v1
 
-    .line 177
+    .line 181
     invoke-static {}, Lcom/kik/messagepath/model/Keyboards$FriendPickerSuggestedReply;->a()Lcom/kik/messagepath/model/Keyboards$FriendPickerSuggestedReply$a;
 
     move-result-object v2
 
-    .line 178
-    invoke-static {p0}, Lkik/core/g/l;->a(Ljava/util/List;)Ljava/util/List;
+    .line 182
+    invoke-static {p0}, Lkik/core/xiphias/aa;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v3
 
@@ -377,45 +377,35 @@
 
     move-result-object v2
 
-    .line 177
+    .line 181
     invoke-virtual {v1, v2}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply$a;->a(Lcom/kik/messagepath/model/Keyboards$FriendPickerSuggestedReply$a;)Lcom/kik/messagepath/model/Keyboards$SuggestedReply$a;
 
     move-result-object v1
 
-    .line 179
+    .line 183
     invoke-virtual {v1, p2}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply$a;->a(Ljava/lang/String;)Lcom/kik/messagepath/model/Keyboards$SuggestedReply$a;
 
     move-result-object v1
 
-    .line 180
+    .line 184
     invoke-virtual {v1}, Lcom/kik/messagepath/model/Keyboards$SuggestedReply$a;->a()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
     move-result-object v1
 
-    .line 1500
+    .line 1509
     iput-object v1, v0, Lkik/core/datatypes/Message;->q:Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
-    .line 182
+    .line 186
     return-object v0
 .end method
 
 
 # virtual methods
 .method public final A()Z
-    .locals 1
-
-    .prologue
-    .line 505
-    iget-boolean v0, p0, Lkik/core/datatypes/Message;->k:Z
-
-    return v0
-.end method
-
-.method public final B()Z
     .locals 3
 
     .prologue
-    .line 510
+    .line 519
     iget-object v0, p0, Lkik/core/datatypes/Message;->i:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->iterator()Ljava/util/Iterator;
@@ -433,9 +423,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/messageExtensions/f;
+    check-cast v0, Lkik/core/datatypes/messageExtensions/MessageAttachment;
 
-    .line 511
+    .line 520
     instance-of v2, v0, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     if-eqz v2, :cond_0
@@ -448,10 +438,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 512
+    .line 521
     const/4 v0, 0x1
 
-    .line 515
+    .line 524
     :goto_0
     return v0
 
@@ -461,82 +451,132 @@
     goto :goto_0
 .end method
 
-.method public final C()Z
+.method public final B()Z
     .locals 1
 
     .prologue
-    .line 520
+    .line 529
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->j:Z
 
     return v0
+.end method
+
+.method public final C()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
+    .locals 1
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
+
+    .prologue
+    .line 560
+    .line 18554
+    iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
+
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->o()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 560
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 561
+    iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
+
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->p()Lcom/kik/messagepath/model/TextMarkdown$TextMarkdownAttachment;
+
+    move-result-object v0
+
+    .line 563
+    :goto_1
+    return-object v0
+
+    .line 18554
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    .line 563
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_1
 .end method
 
 .method public final a()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 238
-    const-class v0, Lkik/core/datatypes/messageExtensions/g;
-
-    invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/f;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/datatypes/messageExtensions/g;
-
-    .line 239
-    if-eqz v0, :cond_0
-
-    .line 240
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/g;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 250
-    :goto_0
-    return-object v0
-
-    .line 242
-    :cond_0
-    const-class v0, Lkik/core/datatypes/messageExtensions/l;
-
-    invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/f;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/datatypes/messageExtensions/l;
-
-    .line 243
-    if-eqz v0, :cond_1
-
-    .line 244
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/l;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 246
-    :cond_1
+    .line 247
     const-class v0, Lkik/core/datatypes/messageExtensions/k;
 
-    invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/f;
+    invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
 
     move-result-object v0
 
     check-cast v0, Lkik/core/datatypes/messageExtensions/k;
 
-    .line 247
-    if-eqz v0, :cond_2
-
     .line 248
+    if-eqz v0, :cond_0
+
+    .line 249
     invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/k;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 259
+    :goto_0
+    return-object v0
+
+    .line 251
+    :cond_0
+    const-class v0, Lkik/core/datatypes/messageExtensions/o;
+
+    invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/datatypes/messageExtensions/o;
+
+    .line 252
+    if-eqz v0, :cond_1
+
+    .line 253
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/o;->a()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 250
+    .line 255
+    :cond_1
+    const-class v0, Lkik/core/datatypes/messageExtensions/n;
+
+    invoke-static {p0, v0}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
+
+    move-result-object v0
+
+    check-cast v0, Lkik/core/datatypes/messageExtensions/n;
+
+    .line 256
+    if-eqz v0, :cond_2
+
+    .line 257
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/n;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 259
     :cond_2
     const/4 v0, 0x0
 
@@ -547,10 +587,10 @@
     .locals 0
 
     .prologue
-    .line 500
+    .line 509
     iput-object p1, p0, Lkik/core/datatypes/Message;->q:Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
-    .line 501
+    .line 510
     return-void
 .end method
 
@@ -558,23 +598,23 @@
     .locals 0
 
     .prologue
-    .line 371
+    .line 381
     iput-object p1, p0, Lkik/core/datatypes/Message;->u:Lkik/core/datatypes/Message$MessageSource;
 
-    .line 372
+    .line 382
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/messageExtensions/f;)V
+.method public final a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
     .locals 1
 
     .prologue
-    .line 353
+    .line 363
     iget-object v0, p0, Lkik/core/datatypes/Message;->i:Ljava/util/Vector;
 
     invoke-virtual {v0, p1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
-    .line 354
+    .line 364
     return-void
 .end method
 
@@ -582,10 +622,10 @@
     .locals 0
 
     .prologue
-    .line 65
+    .line 69
     iput-boolean p1, p0, Lkik/core/datatypes/Message;->k:Z
 
-    .line 66
+    .line 70
     return-void
 .end method
 
@@ -593,14 +633,14 @@
     .locals 1
 
     .prologue
-    .line 442
+    .line 452
     if-nez p1, :cond_0
 
-    .line 453
+    .line 463
     :goto_0
     return-void
 
-    .line 447
+    .line 457
     :cond_0
     :try_start_0
     invoke-static {p1}, Lcom/kik/messagepath/model/CoreMessage;->a([B)Lcom/kik/messagepath/model/CoreMessage;
@@ -609,14 +649,14 @@
 
     iput-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    .line 448
+    .line 458
     iput-object p1, p0, Lkik/core/datatypes/Message;->o:[B
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 453
+    .line 463
     :catch_0
     move-exception v0
 
@@ -631,32 +671,32 @@
 
     const/16 v2, -0x64
 
-    .line 222
+    .line 231
     if-ne p1, v2, :cond_0
 
     iget v1, p0, Lkik/core/datatypes/Message;->d:I
 
     if-eq v1, v2, :cond_0
 
-    .line 223
+    .line 232
     iput p1, p0, Lkik/core/datatypes/Message;->d:I
 
-    .line 233
+    .line 242
     :goto_0
     return v0
 
-    .line 227
+    .line 236
     :cond_0
     iget v1, p0, Lkik/core/datatypes/Message;->d:I
 
     if-le p1, v1, :cond_1
 
-    .line 228
+    .line 237
     iput p1, p0, Lkik/core/datatypes/Message;->d:I
 
     goto :goto_0
 
-    .line 233
+    .line 242
     :cond_1
     const/4 v0, 0x0
 
@@ -667,49 +707,49 @@
     .locals 2
 
     .prologue
-    .line 323
-    .line 11265
+    .line 333
+    .line 12274
     iget-boolean v0, p1, Lkik/core/datatypes/Message;->c:Z
 
-    .line 12265
+    .line 13274
     iget-boolean v1, p0, Lkik/core/datatypes/Message;->c:Z
 
-    .line 323
+    .line 333
     if-ne v0, v1, :cond_0
 
-    .line 12302
+    .line 13311
     iget-object v0, p1, Lkik/core/datatypes/Message;->a:Ljava/lang/String;
 
-    .line 13302
+    .line 14311
     iget-object v1, p0, Lkik/core/datatypes/Message;->a:Ljava/lang/String;
 
-    .line 323
+    .line 333
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 14294
+    .line 15303
     iget-object v0, p1, Lkik/core/datatypes/Message;->b:Ljava/lang/String;
 
-    .line 15294
+    .line 16303
     iget-object v1, p0, Lkik/core/datatypes/Message;->b:Ljava/lang/String;
 
-    .line 323
+    .line 333
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 16255
+    .line 17264
     iget-object v0, p1, Lkik/core/datatypes/Message;->f:Ljava/lang/String;
 
-    .line 17255
+    .line 18264
     iget-object v1, p0, Lkik/core/datatypes/Message;->f:Ljava/lang/String;
 
-    .line 323
+    .line 333
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -731,7 +771,7 @@
     .locals 1
 
     .prologue
-    .line 255
+    .line 264
     iget-object v0, p0, Lkik/core/datatypes/Message;->f:Ljava/lang/String;
 
     return-object v0
@@ -741,39 +781,39 @@
     .locals 11
 
     .prologue
-    .line 308
+    .line 317
     new-instance v1, Lkik/core/datatypes/Message;
 
-    .line 2294
+    .line 2303
     iget-object v3, p0, Lkik/core/datatypes/Message;->b:Ljava/lang/String;
 
-    .line 3265
+    .line 3274
     iget-boolean v4, p0, Lkik/core/datatypes/Message;->c:Z
 
-    .line 4255
+    .line 4264
     iget-object v5, p0, Lkik/core/datatypes/Message;->f:Ljava/lang/String;
 
-    .line 4276
+    .line 4285
     iget-wide v6, p0, Lkik/core/datatypes/Message;->n:J
 
-    .line 5260
+    .line 5269
     iget v8, p0, Lkik/core/datatypes/Message;->d:I
 
-    .line 5333
+    .line 5343
     iget-boolean v9, p0, Lkik/core/datatypes/Message;->g:Z
 
-    .line 6281
+    .line 6290
     iget v10, p0, Lkik/core/datatypes/Message;->e:I
 
     move-object v2, p1
 
-    .line 308
+    .line 317
     invoke-direct/range {v1 .. v10}, Lkik/core/datatypes/Message;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;JIZI)V
 
-    .line 6348
+    .line 6358
     iget-object v0, p0, Lkik/core/datatypes/Message;->i:Ljava/util/Vector;
 
-    .line 309
+    .line 318
     invoke-virtual {v0}, Ljava/util/Vector;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -789,39 +829,45 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/messageExtensions/f;
+    check-cast v0, Lkik/core/datatypes/messageExtensions/MessageAttachment;
 
-    .line 310
-    invoke-virtual {v1, v0}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/f;)V
+    .line 319
+    invoke-virtual {v1, v0}, Lkik/core/datatypes/Message;->a(Lkik/core/datatypes/messageExtensions/MessageAttachment;)V
 
     goto :goto_0
 
-    .line 6457
+    .line 6514
     :cond_0
+    iget-boolean v0, p0, Lkik/core/datatypes/Message;->k:Z
+
+    .line 7069
+    iput-boolean v0, v1, Lkik/core/datatypes/Message;->k:Z
+
+    .line 7467
     iget-object v0, p0, Lkik/core/datatypes/Message;->o:[B
 
-    .line 313
+    .line 323
     invoke-virtual {v1, v0}, Lkik/core/datatypes/Message;->a([B)V
 
-    .line 7386
+    .line 8396
     iget-object v0, p0, Lkik/core/datatypes/Message;->l:Ljava/lang/String;
 
-    .line 8381
+    .line 9391
     iput-object v0, v1, Lkik/core/datatypes/Message;->l:Ljava/lang/String;
 
-    .line 8432
+    .line 9442
     iget-object v0, p0, Lkik/core/datatypes/Message;->m:Ljava/lang/String;
 
-    .line 8437
+    .line 9447
     iput-object v0, v1, Lkik/core/datatypes/Message;->m:Ljava/lang/String;
 
-    .line 9376
+    .line 10386
     iget-object v0, p0, Lkik/core/datatypes/Message;->u:Lkik/core/datatypes/Message$MessageSource;
 
-    .line 10371
+    .line 11381
     iput-object v0, v1, Lkik/core/datatypes/Message;->u:Lkik/core/datatypes/Message$MessageSource;
 
-    .line 318
+    .line 328
     return-object v1
 .end method
 
@@ -829,10 +875,10 @@
     .locals 0
 
     .prologue
-    .line 328
+    .line 338
     iput-boolean p1, p0, Lkik/core/datatypes/Message;->g:Z
 
-    .line 329
+    .line 339
     return-void
 .end method
 
@@ -840,7 +886,7 @@
     .locals 1
 
     .prologue
-    .line 260
+    .line 269
     iget v0, p0, Lkik/core/datatypes/Message;->d:I
 
     return v0
@@ -850,10 +896,10 @@
     .locals 0
 
     .prologue
-    .line 381
+    .line 391
     iput-object p1, p0, Lkik/core/datatypes/Message;->l:Ljava/lang/String;
 
-    .line 382
+    .line 392
     return-void
 .end method
 
@@ -861,10 +907,10 @@
     .locals 0
 
     .prologue
-    .line 338
+    .line 348
     iput-boolean p1, p0, Lkik/core/datatypes/Message;->t:Z
 
-    .line 339
+    .line 349
     return-void
 .end method
 
@@ -872,10 +918,10 @@
     .locals 0
 
     .prologue
-    .line 437
+    .line 447
     iput-object p1, p0, Lkik/core/datatypes/Message;->m:Ljava/lang/String;
 
-    .line 438
+    .line 448
     return-void
 .end method
 
@@ -883,10 +929,10 @@
     .locals 2
 
     .prologue
-    .line 477
+    .line 487
     iput-boolean p1, p0, Lkik/core/datatypes/Message;->r:Z
 
-    .line 478
+    .line 488
     iget-object v0, p0, Lkik/core/datatypes/Message;->s:Lrx/subjects/a;
 
     iget-boolean v1, p0, Lkik/core/datatypes/Message;->r:Z
@@ -897,7 +943,7 @@
 
     invoke-virtual {v0, v1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 479
+    .line 489
     return-void
 .end method
 
@@ -905,7 +951,7 @@
     .locals 1
 
     .prologue
-    .line 265
+    .line 274
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->c:Z
 
     return v0
@@ -915,7 +961,7 @@
     .locals 2
 
     .prologue
-    .line 276
+    .line 285
     iget-wide v0, p0, Lkik/core/datatypes/Message;->n:J
 
     return-wide v0
@@ -925,10 +971,10 @@
     .locals 0
 
     .prologue
-    .line 525
+    .line 534
     iput-boolean p1, p0, Lkik/core/datatypes/Message;->j:Z
 
-    .line 526
+    .line 535
     return-void
 .end method
 
@@ -936,7 +982,7 @@
     .locals 1
 
     .prologue
-    .line 281
+    .line 290
     iget v0, p0, Lkik/core/datatypes/Message;->e:I
 
     return v0
@@ -946,14 +992,14 @@
     .locals 1
 
     .prologue
-    .line 286
+    .line 295
     iget v0, p0, Lkik/core/datatypes/Message;->e:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lkik/core/datatypes/Message;->e:I
 
-    .line 287
+    .line 296
     return-void
 .end method
 
@@ -961,7 +1007,7 @@
     .locals 1
 
     .prologue
-    .line 294
+    .line 303
     iget-object v0, p0, Lkik/core/datatypes/Message;->b:Ljava/lang/String;
 
     return-object v0
@@ -971,7 +1017,7 @@
     .locals 1
 
     .prologue
-    .line 302
+    .line 311
     iget-object v0, p0, Lkik/core/datatypes/Message;->a:Ljava/lang/String;
 
     return-object v0
@@ -981,7 +1027,7 @@
     .locals 1
 
     .prologue
-    .line 333
+    .line 343
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->g:Z
 
     return v0
@@ -991,7 +1037,7 @@
     .locals 1
 
     .prologue
-    .line 343
+    .line 353
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->t:Z
 
     return v0
@@ -1004,13 +1050,13 @@
             "()",
             "Ljava/util/Vector",
             "<",
-            "Lkik/core/datatypes/messageExtensions/f;",
+            "Lkik/core/datatypes/messageExtensions/MessageAttachment;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 348
+    .line 358
     iget-object v0, p0, Lkik/core/datatypes/Message;->i:Ljava/util/Vector;
 
     return-object v0
@@ -1020,7 +1066,7 @@
     .locals 1
 
     .prologue
-    .line 361
+    .line 371
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->h:Z
 
     return v0
@@ -1030,12 +1076,12 @@
     .locals 1
 
     .prologue
-    .line 366
+    .line 376
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/core/datatypes/Message;->h:Z
 
-    .line 367
+    .line 377
     return-void
 .end method
 
@@ -1043,7 +1089,7 @@
     .locals 1
 
     .prologue
-    .line 376
+    .line 386
     iget-object v0, p0, Lkik/core/datatypes/Message;->u:Lkik/core/datatypes/Message$MessageSource;
 
     return-object v0
@@ -1053,7 +1099,7 @@
     .locals 1
 
     .prologue
-    .line 386
+    .line 396
     iget-object v0, p0, Lkik/core/datatypes/Message;->l:Ljava/lang/String;
 
     return-object v0
@@ -1063,15 +1109,15 @@
     .locals 1
 
     .prologue
-    .line 391
+    .line 401
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    .line 392
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->a()Z
+    .line 402
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->c()Z
 
     move-result v0
 
@@ -1079,8 +1125,8 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    .line 393
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    .line 403
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
@@ -1088,12 +1134,12 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    .line 394
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    .line 404
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->b()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->hasInitiator()Z
 
     move-result v0
 
@@ -1101,12 +1147,12 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    .line 395
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    .line 405
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->c()Lcom/kik/ximodel/XiBareUserJid;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->getInitiator()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
@@ -1120,7 +1166,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 391
+    .line 401
     goto :goto_0
 .end method
 
@@ -1128,36 +1174,36 @@
     .locals 1
 
     .prologue
-    .line 404
+    .line 414
     invoke-virtual {p0}, Lkik/core/datatypes/Message;->q()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 405
+    .line 415
     const/4 v0, 0x0
 
-    .line 408
+    .line 418
     :goto_0
     return-object v0
 
     :cond_0
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->c()Lcom/kik/ximodel/XiBareUserJid;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->getInitiator()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/g/l;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/l;
+    invoke-static {v0}, Lkik/core/xiphias/aa;->a(Lcom/kik/ximodel/XiBareUserJid;)Lkik/core/datatypes/k;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lkik/core/datatypes/l;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1168,14 +1214,14 @@
     .locals 1
 
     .prologue
-    .line 413
+    .line 423
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     if-eqz v0, :cond_0
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->a()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->c()Z
 
     move-result v0
 
@@ -1183,29 +1229,29 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    .line 414
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    .line 424
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 415
+    .line 425
     :cond_0
     sget-object v0, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment$Rule;->UNRECOGNIZED:Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment$Rule;
 
-    .line 418
+    .line 428
     :goto_0
     return-object v0
 
     :cond_1
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->b()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->d()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->f()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment$Rule;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment;->getRule()Lcom/kik/messagepath/model/VisibilityRules$VisibilityRulesAttachment$Rule;
 
     move-result-object v0
 
@@ -1216,23 +1262,23 @@
     .locals 1
 
     .prologue
-    .line 423
+    .line 433
     invoke-virtual {p0}, Lkik/core/datatypes/Message;->q()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 424
+    .line 434
     invoke-virtual {p0}, Lkik/core/datatypes/Message;->r()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 427
+    .line 437
     :goto_0
     return-object v0
 
-    .line 17294
+    .line 18303
     :cond_0
     iget-object v0, p0, Lkik/core/datatypes/Message;->b:Ljava/lang/String;
 
@@ -1243,7 +1289,7 @@
     .locals 2
 
     .prologue
-    .line 271
+    .line 280
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "message: "
@@ -1269,7 +1315,7 @@
     .locals 1
 
     .prologue
-    .line 432
+    .line 442
     iget-object v0, p0, Lkik/core/datatypes/Message;->m:Ljava/lang/String;
 
     return-object v0
@@ -1279,54 +1325,38 @@
     .locals 1
 
     .prologue
-    .line 457
+    .line 467
     iget-object v0, p0, Lkik/core/datatypes/Message;->o:[B
 
     return-object v0
 .end method
 
-.method public final w()Lrx/c;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 462
-    iget-object v0, p0, Lkik/core/datatypes/Message;->s:Lrx/subjects/a;
-
-    return-object v0
-.end method
-
-.method public final x()Z
+.method public final w()Z
     .locals 1
 
     .prologue
-    .line 472
+    .line 482
     iget-boolean v0, p0, Lkik/core/datatypes/Message;->r:Z
 
     return v0
 .end method
 
-.method public final y()Lcom/kik/messagepath/model/Keyboards$Keyboard;
+.method public final x()Lcom/kik/messagepath/model/Keyboards$Keyboard;
     .locals 2
+    .annotation runtime Ljavax/annotation/Nullable;
+    .end annotation
 
     .prologue
-    .line 483
+    const/4 v1, 0x0
+
+    .line 494
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
     if-eqz v0, :cond_0
 
-    .line 484
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->e()Z
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->g()Z
 
     move-result v0
 
@@ -1334,32 +1364,36 @@
 
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->f()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->h()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;->getKeyboardsList()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/util/m;->a(Ljava/util/List;)Z
+    invoke-static {v0}, Lkik/core/util/l;->a(Ljava/util/List;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 486
+    const/4 v0, 0x1
+
+    .line 495
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 497
     iget-object v0, p0, Lkik/core/datatypes/Message;->p:Lcom/kik/messagepath/model/CoreMessage;
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->f()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/CoreMessage;->h()Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;->a()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$KeyboardAttachment;->getKeyboardsList()Ljava/util/List;
 
     move-result-object v0
-
-    const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1367,22 +1401,39 @@
 
     check-cast v0, Lcom/kik/messagepath/model/Keyboards$Keyboard;
 
-    .line 490
-    :goto_0
+    .line 499
+    :goto_1
     return-object v0
 
     :cond_0
+    move v0, v1
+
+    .line 494
+    goto :goto_0
+
+    .line 499
+    :cond_1
     const/4 v0, 0x0
 
-    goto :goto_0
+    goto :goto_1
 .end method
 
-.method public final z()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
+.method public final y()Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
     .locals 1
 
     .prologue
-    .line 495
+    .line 504
     iget-object v0, p0, Lkik/core/datatypes/Message;->q:Lcom/kik/messagepath/model/Keyboards$SuggestedReply;
 
     return-object v0
+.end method
+
+.method public final z()Z
+    .locals 1
+
+    .prologue
+    .line 514
+    iget-boolean v0, p0, Lkik/core/datatypes/Message;->k:Z
+
+    return v0
 .end method

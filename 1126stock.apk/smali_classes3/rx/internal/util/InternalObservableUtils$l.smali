@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/f;
+.implements Lrx/functions/f;
 
 
 # annotations
@@ -22,19 +22,19 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/b/f",
+        "Lrx/functions/f",
         "<",
-        "Lrx/c/b",
+        "Lrx/b/b",
         "<TT;>;>;"
     }
 .end annotation
 
 
 # instance fields
-.field private final a:Lrx/c;
+.field private final a:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;"
         }
     .end annotation
@@ -42,12 +42,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lrx/c;)V
+.method constructor <init>(Lrx/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;)V"
         }
     .end annotation
@@ -57,19 +57,9 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 248
-    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$l;->a:Lrx/c;
+    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$l;->a:Lrx/d;
 
     .line 249
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lrx/c;B)V
-    .locals 0
-
-    .prologue
-    .line 244
-    invoke-direct {p0, p1}, Lrx/internal/util/InternalObservableUtils$l;-><init>(Lrx/c;)V
-
     return-void
 .end method
 
@@ -81,10 +71,10 @@
     .prologue
     .line 244
     .line 9253
-    iget-object v0, p0, Lrx/internal/util/InternalObservableUtils$l;->a:Lrx/c;
+    iget-object v0, p0, Lrx/internal/util/InternalObservableUtils$l;->a:Lrx/d;
 
-    .line 9453
-    invoke-static {v0}, Lrx/internal/operators/OperatorReplay;->d(Lrx/c;)Lrx/c/b;
+    .line 9559
+    invoke-static {v0}, Lrx/internal/operators/OperatorReplay;->c(Lrx/d;)Lrx/b/b;
 
     move-result-object v0
 

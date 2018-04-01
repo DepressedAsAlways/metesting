@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 597
+    .line 644
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$3;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +40,12 @@
     .locals 3
 
     .prologue
-    .line 601
+    .line 648
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 602
+    .line 649
     const-string v1, "photoUrl"
 
     iget-object v2, p0, Lkik/android/chat/fragment/ViewPictureFragment$3;->a:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -56,16 +56,16 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 603
+    .line 650
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$3;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/ViewPictureFragment;->a(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v0}, Lkik/android/chat/fragment/ViewPictureFragment;->setResultData(Landroid/os/Bundle;)V
 
-    .line 604
+    .line 651
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$3;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->B()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->finish()V
 
-    .line 605
+    .line 652
     return-void
 .end method

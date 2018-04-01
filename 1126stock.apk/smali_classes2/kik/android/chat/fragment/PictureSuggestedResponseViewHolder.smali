@@ -1,17 +1,15 @@
 .class public Lkik/android/chat/fragment/PictureSuggestedResponseViewHolder;
-.super Lkik/android/chat/fragment/hm;
+.super Lkik/android/chat/fragment/ft;
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/fragment/o;
+.implements Lkik/android/chat/fragment/n;
 
 
 # instance fields
 .field _imageView:Lkik/android/widget/KikNetworkedImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100290
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100318
     .end annotation
 .end field
 
@@ -24,10 +22,10 @@
 
     .prologue
     .line 35
-    invoke-direct {p0, p1}, Lkik/android/chat/fragment/hm;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, p1}, Lkik/android/chat/fragment/ft;-><init>(Landroid/view/View;)V
 
     .line 36
-    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 37
     iput-object p2, p0, Lkik/android/chat/fragment/PictureSuggestedResponseViewHolder;->b:Lkik/android/chat/presentation/bw;
@@ -49,7 +47,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0400bc
+    const v1, 0x7f0400ec
 
     const/4 v2, 0x0
 

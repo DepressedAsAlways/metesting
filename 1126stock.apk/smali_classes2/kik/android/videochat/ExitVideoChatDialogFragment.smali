@@ -43,5 +43,7 @@
 .method static synthetic c()V
     .locals 0
 
+    .prologue
+    .line 11
     return-void
 .end method

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/widget/b;->b()Lrx/c;
+    value = Lkik/android/chat/vm/widget/b;->d()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/c$a",
+        "Lrx/d$a",
         "<",
         "Landroid/graphics/Bitmap;",
         ">;"
@@ -53,35 +53,35 @@
     const/4 v3, 0x0
 
     .line 73
-    check-cast p1, Lrx/i;
+    check-cast p1, Lrx/j;
 
     .line 1077
     iget-object v0, p0, Lkik/android/chat/vm/widget/b$1;->a:Lkik/android/chat/vm/widget/b;
 
-    iget-object v0, v0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/aa;
+    iget-object v0, v0, Lkik/android/chat/vm/widget/b;->d:Lkik/core/datatypes/z;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/aa;->g()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/z;->g()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0, v3, v3}, Lcom/kik/cache/an;->a(Ljava/lang/String;II)Lcom/kik/cache/an;
+    invoke-static {v0, v3, v3}, Lcom/kik/cache/SimpleUrlRequest;->getSimpleUrlRequest(Ljava/lang/String;II)Lcom/kik/cache/SimpleUrlRequest;
 
     move-result-object v1
 
     .line 1079
     iget-object v0, p0, Lkik/android/chat/vm/widget/b$1;->a:Lkik/android/chat/vm/widget/b;
 
-    iget-object v0, v0, Lkik/android/chat/vm/widget/b;->a:Lcom/kik/cache/ae;
+    iget-object v0, v0, Lkik/android/chat/vm/widget/b;->a:Lcom/kik/cache/KikVolleyImageLoader;
 
     new-instance v2, Lkik/android/chat/vm/widget/b$1$1;
 
-    invoke-direct {v2, p0, p1}, Lkik/android/chat/vm/widget/b$1$1;-><init>(Lkik/android/chat/vm/widget/b$1;Lrx/i;)V
+    invoke-direct {v2, p0, p1}, Lkik/android/chat/vm/widget/b$1$1;-><init>(Lkik/android/chat/vm/widget/b$1;Lrx/j;)V
 
     move v4, v3
 
     move v5, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->b(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     .line 73
     return-void

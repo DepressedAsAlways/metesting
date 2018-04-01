@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/view/aj;
+.implements Lkik/android/chat/view/ak;
 
 
 # direct methods
@@ -29,9 +29,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/chat/fragment/hf;
+    check-cast v0, Lkik/android/chat/fragment/fn;
 
-    invoke-virtual {v0, p1, p2}, Lkik/android/chat/fragment/hf;->a(Landroid/view/View;I)V
+    invoke-virtual {v0, p1, p2}, Lkik/android/chat/fragment/fn;->a(Landroid/view/View;I)V
 
     .line 26
     return-void

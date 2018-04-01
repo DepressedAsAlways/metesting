@@ -1,11 +1,11 @@
 .class final Lkik/android/gifs/vm/a$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lkik/android/gifs/vm/a;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkik/android/gifs/vm/a;->a(Lkik/android/gifs/vm/a;Lrx/j;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lkik/android/gifs/view/c;",
         ">;"
@@ -24,22 +24,22 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/i;
+.field final synthetic a:Lrx/j;
 
 .field final synthetic b:Lkik/android/gifs/vm/a;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/gifs/vm/a;Lrx/i;)V
+.method constructor <init>(Lkik/android/gifs/vm/a;Lrx/j;)V
     .locals 0
 
     .prologue
     .line 56
     iput-object p1, p0, Lkik/android/gifs/vm/a$1;->b:Lkik/android/gifs/vm/a;
 
-    iput-object p2, p0, Lkik/android/gifs/vm/a$1;->a:Lrx/i;
+    iput-object p2, p0, Lkik/android/gifs/vm/a$1;->a:Lrx/j;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -66,11 +66,11 @@
     .line 1063
     iget-object v1, p0, Lkik/android/gifs/vm/a$1;->b:Lkik/android/gifs/vm/a;
 
-    invoke-static {v1}, Lkik/android/gifs/vm/a;->a(Lkik/android/gifs/vm/a;)Lrx/b/b;
+    invoke-static {v1}, Lkik/android/gifs/vm/a;->a(Lkik/android/gifs/vm/a;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lrx/b/b;->call(Ljava/lang/Object;)V
+    invoke-interface {v1, v0}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
     .line 1064
     iget-object v1, p0, Lkik/android/gifs/vm/a$1;->b:Lkik/android/gifs/vm/a;
@@ -79,9 +79,9 @@
 
     .line 1066
     :cond_0
-    iget-object v0, p0, Lkik/android/gifs/vm/a$1;->a:Lrx/i;
+    iget-object v0, p0, Lkik/android/gifs/vm/a$1;->a:Lrx/j;
 
-    invoke-virtual {v0, p1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lrx/j;->a(Ljava/lang/Object;)V
 
     .line 56
     return-void

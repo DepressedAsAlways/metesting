@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/e;
+.implements Lrx/f;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicInteger;",
-        "Lrx/e;"
+        "Lrx/f;"
     }
 .end annotation
 
@@ -23,10 +23,10 @@
 
 
 # instance fields
-.field final child:Lrx/i;
+.field final child:Lrx/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;"
         }
     .end annotation
@@ -42,12 +42,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lrx/i;)V
+.method public constructor <init>(Lrx/j;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;)V"
         }
     .end annotation
@@ -57,27 +57,27 @@
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     .line 47
-    iput-object p1, p0, Lrx/internal/producers/SingleDelayedProducer;->child:Lrx/i;
+    iput-object p1, p0, Lrx/internal/producers/SingleDelayedProducer;->child:Lrx/j;
 
     .line 48
     return-void
 .end method
 
-.method private static a(Lrx/i;Ljava/lang/Object;)V
+.method private static a(Lrx/j;Ljava/lang/Object;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;TT;)V"
         }
     .end annotation
 
     .prologue
     .line 98
-    invoke-virtual {p0}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {p0}, Lrx/j;->isUnsubscribed()Z
 
     move-result v0
 
@@ -91,19 +91,19 @@
     .line 102
     :cond_1
     :try_start_0
-    invoke-virtual {p0, p1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {p0, p1}, Lrx/j;->a(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 107
-    invoke-virtual {p0}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {p0}, Lrx/j;->isUnsubscribed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 110
-    invoke-virtual {p0}, Lrx/i;->bb_()V
+    invoke-virtual {p0}, Lrx/j;->b()V
 
     goto :goto_0
 
@@ -111,7 +111,7 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0, p0, p1}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v0, p0, p1}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;Lrx/e;Ljava/lang/Object;)V
 
     goto :goto_0
 .end method
@@ -188,11 +188,11 @@
     if-eqz v0, :cond_1
 
     .line 67
-    iget-object v0, p0, Lrx/internal/producers/SingleDelayedProducer;->child:Lrx/i;
+    iget-object v0, p0, Lrx/internal/producers/SingleDelayedProducer;->child:Lrx/j;
 
     iget-object v1, p0, Lrx/internal/producers/SingleDelayedProducer;->value:Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lrx/internal/producers/SingleDelayedProducer;->a(Lrx/i;Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lrx/internal/producers/SingleDelayedProducer;->a(Lrx/j;Ljava/lang/Object;)V
 
     goto :goto_0
 .end method
@@ -250,9 +250,9 @@
     if-eqz v0, :cond_1
 
     .line 85
-    iget-object v0, p0, Lrx/internal/producers/SingleDelayedProducer;->child:Lrx/i;
+    iget-object v0, p0, Lrx/internal/producers/SingleDelayedProducer;->child:Lrx/j;
 
-    invoke-static {v0, p1}, Lrx/internal/producers/SingleDelayedProducer;->a(Lrx/i;Ljava/lang/Object;)V
+    invoke-static {v0, p1}, Lrx/internal/producers/SingleDelayedProducer;->a(Lrx/j;Ljava/lang/Object;)V
 
     goto :goto_0
 .end method

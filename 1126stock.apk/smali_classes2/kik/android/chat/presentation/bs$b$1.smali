@@ -40,7 +40,7 @@
     .locals 9
 
     .prologue
-    const v8, 0x7f0f0097
+    const v8, 0x7f0e00a7
 
     .line 68
     iget-object v0, p0, Lkik/android/chat/presentation/bs$b$1;->a:Lkik/android/chat/presentation/bs$b;
@@ -63,11 +63,11 @@
     .line 70
     iget-object v2, p0, Lkik/android/chat/presentation/bs$b$1;->a:Lkik/android/chat/presentation/bs$b;
 
-    invoke-static {v2}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ac;
+    invoke-static {v2}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ad;
 
     move-result-object v2
 
-    const v3, 0x7f090331
+    const v3, 0x7f090345
 
     const/4 v4, 0x1
 
@@ -89,16 +89,16 @@
 
     move-result-object v0
 
-    invoke-interface {v2, v0}, Lkik/android/chat/view/ac;->c(Ljava/lang/String;)V
+    invoke-interface {v2, v0}, Lkik/android/chat/view/ad;->c(Ljava/lang/String;)V
 
     .line 71
     iget-object v0, p0, Lkik/android/chat/presentation/bs$b$1;->a:Lkik/android/chat/presentation/bs$b;
 
-    invoke-static {v0}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ac;
+    invoke-static {v0}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ad;
 
     move-result-object v0
 
-    invoke-interface {v0, v8}, Lkik/android/chat/view/ac;->b(I)V
+    invoke-interface {v0, v8}, Lkik/android/chat/view/ad;->b(I)V
 
     .line 78
     :goto_0
@@ -108,26 +108,26 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/presentation/bs$b$1;->a:Lkik/android/chat/presentation/bs$b;
 
-    invoke-static {v0}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ac;
+    invoke-static {v0}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ad;
 
     move-result-object v0
 
-    const v1, 0x7f090330
+    const v1, 0x7f090344
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->c(Ljava/lang/String;)V
 
     .line 75
     iget-object v0, p0, Lkik/android/chat/presentation/bs$b$1;->a:Lkik/android/chat/presentation/bs$b;
 
-    invoke-static {v0}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ac;
+    invoke-static {v0}, Lkik/android/chat/presentation/bs$b;->b(Lkik/android/chat/presentation/bs$b;)Lkik/android/chat/view/ad;
 
     move-result-object v0
 
-    invoke-interface {v0, v8}, Lkik/android/chat/view/ac;->b(I)V
+    invoke-interface {v0, v8}, Lkik/android/chat/view/ad;->b(I)V
 
     .line 76
     iget-object v0, p0, Lkik/android/chat/presentation/bs$b$1;->a:Lkik/android/chat/presentation/bs$b;

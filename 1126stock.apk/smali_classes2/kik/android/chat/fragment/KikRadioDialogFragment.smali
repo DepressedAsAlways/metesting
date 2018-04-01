@@ -14,9 +14,9 @@
 # instance fields
 .field private g:Lkik/android/chat/vm/DialogViewModel;
 
-.field private h:Lkik/android/chat/vm/z;
+.field private h:Lkik/android/chat/vm/ay;
 
-.field private i:Lkik/android/d/w;
+.field private i:Lkik/android/e/y;
 
 
 # direct methods
@@ -30,12 +30,11 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/chat/fragment/KikRadioDialogFragment;Lkik/android/chat/vm/q;Landroid/content/DialogInterface;I)V
+.method static synthetic a(Lkik/android/chat/fragment/KikRadioDialogFragment;Lkik/android/chat/vm/aj;Landroid/content/DialogInterface;I)V
     .locals 1
 
     .prologue
-    .line 0
-    .line 2060
+    .line 60
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->d:Lkik/android/chat/fragment/KikDialogFragment$b;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$b;->b()Landroid/content/DialogInterface$OnClickListener;
@@ -44,10 +43,10 @@
 
     invoke-interface {v0, p2, p3}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 2062
-    invoke-interface {p1}, Lkik/android/chat/vm/q;->j()V
+    .line 61
+    invoke-interface {p1}, Lkik/android/chat/vm/aj;->j()V
 
-    .line 0
+    .line 62
     return-void
 .end method
 
@@ -57,10 +56,10 @@
     .locals 0
 
     .prologue
-    .line 90
+    .line 89
     iput-object p1, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->g:Lkik/android/chat/vm/DialogViewModel;
 
-    .line 91
+    .line 90
     return-void
 .end method
 
@@ -77,25 +76,25 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b00dd
+    const v2, 0x7f0b0113
 
     invoke-direct {v1, v0, v2}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     .line 35
-    iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/z;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/ay;
 
     if-nez v0, :cond_0
 
     .line 36
-    new-instance v0, Lkik/android/chat/vm/as;
+    new-instance v0, Lkik/android/chat/vm/bz;
 
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikRadioDialogFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lkik/android/chat/vm/as;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lkik/android/chat/vm/bz;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/z;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/ay;
 
     .line 39
     :cond_0
@@ -103,19 +102,19 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
+    invoke-static {v0}, Lkik/android/util/r;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
     .line 41
     iget-object v2, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->g:Lkik/android/chat/vm/DialogViewModel;
 
-    iget-object v3, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/z;
+    iget-object v3, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/ay;
 
-    invoke-virtual {v2, v0, v3}, Lkik/android/chat/vm/DialogViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-virtual {v2, v0, v3}, Lkik/android/chat/vm/DialogViewModel;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 43
-    new-instance v2, Lkik/android/chat/vm/h;
+    new-instance v2, Lkik/android/chat/vm/n;
 
     iget-object v3, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->g:Lkik/android/chat/vm/DialogViewModel;
 
@@ -123,12 +122,12 @@
 
     move-result-object v3
 
-    invoke-direct {v2, v3}, Lkik/android/chat/vm/h;-><init>(Ljava/util/List;)V
+    invoke-direct {v2, v3}, Lkik/android/chat/vm/n;-><init>(Ljava/util/List;)V
 
     .line 44
-    iget-object v3, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/z;
+    iget-object v3, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->h:Lkik/android/chat/vm/ay;
 
-    invoke-interface {v2, v0, v3}, Lkik/android/chat/vm/q;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-interface {v2, v0, v3}, Lkik/android/chat/vm/aj;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 47
     invoke-virtual {p0}, Lkik/android/chat/fragment/KikRadioDialogFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
@@ -139,7 +138,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f040068
+    const v3, 0x7f04007a
 
     const/4 v4, 0x0
 
@@ -149,26 +148,26 @@
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/d/w;
+    check-cast v0, Lkik/android/e/y;
 
-    iput-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->i:Lkik/android/d/w;
+    iput-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->i:Lkik/android/e/y;
 
     .line 48
-    iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->i:Lkik/android/d/w;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->i:Lkik/android/e/y;
 
-    invoke-virtual {v0, v2}, Lkik/android/d/w;->a(Lkik/android/chat/vm/q;)V
+    invoke-virtual {v0, v2}, Lkik/android/e/y;->a(Lkik/android/chat/vm/aj;)V
 
     .line 49
-    iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->i:Lkik/android/d/w;
+    iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->i:Lkik/android/e/y;
 
-    invoke-virtual {v0}, Lkik/android/d/w;->getRoot()Landroid/view/View;
+    invoke-virtual {v0}, Lkik/android/e/y;->getRoot()Landroid/view/View;
 
     move-result-object v0
 
     .line 51
     invoke-virtual {v1, v0}, Landroid/support/v7/app/AlertDialog$Builder;->b(Landroid/view/View;)Landroid/support/v7/app/AlertDialog$Builder;
 
-    .line 1085
+    .line 1084
     invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikRadioDialogFragment;->a(Landroid/view/View;)V
 
     .line 54
@@ -189,19 +188,19 @@
 
     move-result-object v0
 
-    invoke-static {p0, v2}, Lkik/android/chat/fragment/eu;->a(Lkik/android/chat/fragment/KikRadioDialogFragment;Lkik/android/chat/vm/q;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0, v2}, Lkik/android/chat/fragment/cz;->a(Lkik/android/chat/fragment/KikRadioDialogFragment;Lkik/android/chat/vm/aj;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v2
 
     invoke-virtual {v1, v0, v2}, Landroid/support/v7/app/AlertDialog$Builder;->a(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
 
-    .line 67
+    .line 66
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->e:Lkik/android/chat/fragment/KikDialogFragment$b;
 
     if-eqz v0, :cond_2
 
-    .line 68
+    .line 67
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->e:Lkik/android/chat/fragment/KikDialogFragment$b;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$b;->a()Ljava/lang/String;
@@ -216,13 +215,13 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/support/v7/app/AlertDialog$Builder;->b(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
 
-    .line 71
+    .line 70
     :cond_2
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->f:Lkik/android/chat/fragment/KikDialogFragment$b;
 
     if-eqz v0, :cond_3
 
-    .line 72
+    .line 71
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->f:Lkik/android/chat/fragment/KikDialogFragment$b;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/KikDialogFragment$b;->a()Ljava/lang/String;
@@ -237,24 +236,24 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/support/v7/app/AlertDialog$Builder;->c(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
 
-    .line 75
+    .line 74
     :cond_3
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment;->g:Lkik/android/chat/vm/DialogViewModel;
 
-    invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel;->F_()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/android/chat/vm/DialogViewModel;->H_()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Landroid/support/v7/app/AlertDialog$Builder;->a(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
 
-    .line 77
+    .line 76
     invoke-virtual {v1}, Landroid/support/v7/app/AlertDialog$Builder;->d()Landroid/support/v7/app/AlertDialog;
 
     move-result-object v0
 
-    .line 78
+    .line 77
     invoke-virtual {v0, v6}, Landroid/support/v7/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    .line 80
+    .line 79
     return-object v0
 .end method

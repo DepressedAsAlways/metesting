@@ -1,9 +1,9 @@
 .class public final Lrx/internal/schedulers/b;
-.super Lrx/f;
+.super Lrx/g;
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/internal/schedulers/g;
+.implements Lrx/internal/schedulers/i;
 
 
 # annotations
@@ -17,17 +17,17 @@
 
 
 # static fields
-.field static final b:I
+.field static final a:I
 
-.field static final c:Lrx/internal/schedulers/b$c;
+.field static final b:Lrx/internal/schedulers/b$c;
 
-.field static final d:Lrx/internal/schedulers/b$b;
+.field static final c:Lrx/internal/schedulers/b$b;
 
 
 # instance fields
-.field final e:Ljava/util/concurrent/ThreadFactory;
+.field final d:Ljava/util/concurrent/ThreadFactory;
 
-.field final f:Ljava/util/concurrent/atomic/AtomicReference;
+.field final e:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference",
@@ -76,7 +76,7 @@
 
     .line 43
     :cond_1
-    sput v0, Lrx/internal/schedulers/b;->b:I
+    sput v0, Lrx/internal/schedulers/b;->a:I
 
     .line 48
     new-instance v0, Lrx/internal/schedulers/b$c;
@@ -86,7 +86,7 @@
     invoke-direct {v0, v1}, Lrx/internal/schedulers/b$c;-><init>(Ljava/util/concurrent/ThreadFactory;)V
 
     .line 49
-    sput-object v0, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$c;
+    sput-object v0, Lrx/internal/schedulers/b;->b:Lrx/internal/schedulers/b$c;
 
     invoke-virtual {v0}, Lrx/internal/schedulers/b$c;->unsubscribe()V
 
@@ -97,7 +97,7 @@
 
     invoke-direct {v0, v1, v2}, Lrx/internal/schedulers/b$b;-><init>(Ljava/util/concurrent/ThreadFactory;I)V
 
-    sput-object v0, Lrx/internal/schedulers/b;->d:Lrx/internal/schedulers/b$b;
+    sput-object v0, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$b;
 
     return-void
 .end method
@@ -107,33 +107,33 @@
 
     .prologue
     .line 95
-    invoke-direct {p0}, Lrx/f;-><init>()V
+    invoke-direct {p0}, Lrx/g;-><init>()V
 
     .line 96
-    iput-object p1, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/ThreadFactory;
+    iput-object p1, p0, Lrx/internal/schedulers/b;->d:Ljava/util/concurrent/ThreadFactory;
 
     .line 97
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
-    sget-object v1, Lrx/internal/schedulers/b;->d:Lrx/internal/schedulers/b$b;
+    sget-object v1, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$b;
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lrx/internal/schedulers/b;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 1108
     new-instance v0, Lrx/internal/schedulers/b$b;
 
-    iget-object v1, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/ThreadFactory;
+    iget-object v1, p0, Lrx/internal/schedulers/b;->d:Ljava/util/concurrent/ThreadFactory;
 
-    sget v2, Lrx/internal/schedulers/b;->b:I
+    sget v2, Lrx/internal/schedulers/b;->a:I
 
     invoke-direct {v0, v1, v2}, Lrx/internal/schedulers/b$b;-><init>(Ljava/util/concurrent/ThreadFactory;I)V
 
     .line 1109
-    iget-object v1, p0, Lrx/internal/schedulers/b;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v1, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
-    sget-object v2, Lrx/internal/schedulers/b;->d:Lrx/internal/schedulers/b$b;
+    sget-object v2, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$b;
 
     invoke-virtual {v1, v2, v0}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -151,12 +151,12 @@
 
 
 # virtual methods
-.method public final a(Lrx/b/a;)Lrx/j;
+.method public final a(Lrx/functions/a;)Lrx/k;
     .locals 4
 
     .prologue
     .line 135
-    iget-object v0, p0, Lrx/internal/schedulers/b;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -173,7 +173,7 @@
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
-    invoke-virtual {v0, p1, v2, v3, v1}, Lrx/internal/schedulers/b$c;->b(Lrx/b/a;JLjava/util/concurrent/TimeUnit;)Lrx/internal/schedulers/ScheduledAction;
+    invoke-virtual {v0, p1, v2, v3, v1}, Lrx/internal/schedulers/b$c;->b(Lrx/functions/a;JLjava/util/concurrent/TimeUnit;)Lrx/internal/schedulers/ScheduledAction;
 
     move-result-object v0
 
@@ -186,7 +186,7 @@
     .prologue
     .line 117
     :cond_0
-    iget-object v0, p0, Lrx/internal/schedulers/b;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -195,7 +195,7 @@
     check-cast v0, Lrx/internal/schedulers/b$b;
 
     .line 118
-    sget-object v1, Lrx/internal/schedulers/b;->d:Lrx/internal/schedulers/b$b;
+    sget-object v1, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$b;
 
     if-ne v0, v1, :cond_1
 
@@ -205,9 +205,9 @@
 
     .line 121
     :cond_1
-    iget-object v1, p0, Lrx/internal/schedulers/b;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v1, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
-    sget-object v2, Lrx/internal/schedulers/b;->d:Lrx/internal/schedulers/b$b;
+    sget-object v2, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$b;
 
     invoke-virtual {v1, v0, v2}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -221,14 +221,14 @@
     goto :goto_0
 .end method
 
-.method public final b()Lrx/f$a;
+.method public final b()Lrx/g$a;
     .locals 2
 
     .prologue
     .line 103
     new-instance v1, Lrx/internal/schedulers/b$a;
 
-    iget-object v0, p0, Lrx/internal/schedulers/b;->f:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lrx/internal/schedulers/b;->e:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 

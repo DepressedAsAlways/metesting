@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,16 +15,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/m;",
+        "Lkik/core/datatypes/l;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/m;
+.field final synthetic a:Lkik/core/datatypes/l;
 
 .field final synthetic b:Lcom/kik/android/Mixpanel$d;
 
@@ -34,20 +34,20 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Lkik/core/datatypes/m;Lcom/kik/android/Mixpanel$d;Ljava/lang/String;)V
+.method constructor <init>(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Lkik/core/datatypes/l;Lcom/kik/android/Mixpanel$d;Ljava/lang/String;)V
     .locals 0
 
     .prologue
-    .line 1528
+    .line 1599
     iput-object p1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    iput-object p2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->a:Lkik/core/datatypes/m;
+    iput-object p2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->a:Lkik/core/datatypes/l;
 
     iput-object p3, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->b:Lcom/kik/android/Mixpanel$d;
 
     iput-object p4, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->c:Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -58,26 +58,26 @@
     .locals 3
 
     .prologue
-    .line 1528
-    .line 2532
+    .line 1599
+    .line 2603
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->d(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/z;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->i(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/z;->g()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->h()V
 
-    .line 2534
+    .line 2605
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    iget-object v1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->a:Lkik/core/datatypes/m;
+    iget-object v1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->a:Lkik/core/datatypes/l;
 
     iget-object v2, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->b:Lcom/kik/android/Mixpanel$d;
 
-    invoke-static {v0, v1, v2}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Lkik/core/datatypes/m;Lcom/kik/android/Mixpanel$d;)V
+    invoke-static {v0, v1, v2}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->a(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;Lkik/core/datatypes/l;Lcom/kik/android/Mixpanel$d;)V
 
-    .line 1528
+    .line 1599
     return-void
 .end method
 
@@ -91,14 +91,14 @@
 
     const/4 v1, 0x0
 
-    .line 1540
+    .line 1611
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->e(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/z;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->j(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lkik/android/chat/vm/z;->g()V
+    invoke-interface {v0}, Lkik/android/chat/vm/ay;->h()V
 
     .line 2055
     if-eqz p1, :cond_0
@@ -126,30 +126,30 @@
     :cond_1
     move v0, v2
 
-    .line 1542
+    .line 1613
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 1543
+    .line 1614
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->f(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/z;
+    invoke-static {v0}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->k(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    iget-object v1, v1, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->l:Landroid/content/res/Resources;
+    iget-object v1, v1, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
 
-    const v2, 0x7f0900fd
+    const v2, 0x7f0900fe
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/z;->a(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/ay;->b(Ljava/lang/String;)V
 
-    .line 1555
+    .line 1626
     :goto_1
     return-void
 
@@ -159,24 +159,24 @@
     .line 2057
     goto :goto_0
 
-    .line 1546
+    .line 1617
     :cond_3
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    iget-object v0, v0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->l:Landroid/content/res/Resources;
+    iget-object v0, v0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
 
-    const v3, 0x7f09041f
+    const v3, 0x7f090433
 
-    .line 1547
+    .line 1618
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     iget-object v3, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    iget-object v3, v3, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->l:Landroid/content/res/Resources;
+    iget-object v3, v3, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->o:Landroid/content/res/Resources;
 
-    const v4, 0x7f0900ee
+    const v4, 0x7f0900ef
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -184,7 +184,7 @@
 
     aput-object v5, v2, v1
 
-    .line 1548
+    .line 1619
     invoke-virtual {v3, v4, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -214,16 +214,16 @@
 
     move-result-object v0
 
-    .line 1550
+    .line 1621
     iget-object v1, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->d:Lkik/android/chat/vm/messaging/AbstractMessageViewModel;
 
-    invoke-static {v1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->g(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/z;
+    invoke-static {v1}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel;->l(Lkik/android/chat/vm/messaging/AbstractMessageViewModel;)Lkik/android/chat/vm/ay;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lkik/android/chat/vm/z;->a(Lkik/android/chat/vm/DialogViewModel;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/vm/ay;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 1552
+    .line 1623
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->b:Lcom/kik/android/Mixpanel$d;
 
     const-string v1, "Destination"
@@ -232,7 +232,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
-    .line 1553
+    .line 1624
     iget-object v0, p0, Lkik/android/chat/vm/messaging/AbstractMessageViewModel$5;->b:Lcom/kik/android/Mixpanel$d;
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V

@@ -8,13 +8,13 @@
     .locals 2
 
     .prologue
-    .line 14
+    .line 13
     if-nez p0, :cond_0
 
-    .line 15
+    .line 14
     const/4 v0, 0x0
 
-    .line 17
+    .line 16
     :goto_0
     return v0
 
@@ -34,13 +34,13 @@
     .locals 2
 
     .prologue
-    .line 22
+    .line 21
     if-nez p0, :cond_0
 
-    .line 23
+    .line 22
     const/4 v0, 0x0
 
-    .line 25
+    .line 24
     :goto_0
     return v0
 
@@ -60,13 +60,13 @@
     .locals 2
 
     .prologue
-    .line 30
+    .line 29
     if-nez p0, :cond_0
 
-    .line 31
+    .line 30
     const/4 v0, 0x0
 
-    .line 33
+    .line 32
     :goto_0
     return v0
 
@@ -78,6 +78,46 @@
     invoke-interface {p0, v0, v1}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
+
+    goto :goto_0
+.end method
+
+.method public static d(Lkik/core/interfaces/b;)Z
+    .locals 3
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 37
+    if-nez p0, :cond_1
+
+    .line 41
+    :cond_0
+    :goto_0
+    return v0
+
+    :cond_1
+    const-string v1, "profile_daysonkik_android"
+
+    const-string v2, "show"
+
+    invoke-interface {p0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const-string v1, "profile-bios"
+
+    const-string v2, "show-profile-bios"
+
+    invoke-interface {p0, v1, v2}, Lkik/core/interfaces/b;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x1
 
     goto :goto_0
 .end method

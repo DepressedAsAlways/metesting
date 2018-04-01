@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/android/volley/i$a;
+.implements Lrx/functions/g;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZZ)Lcom/kik/cache/ae$d;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/kik/cache/ae;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,47 +16,69 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lrx/functions/g",
+        "<",
+        "Landroid/graphics/Bitmap;",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic a:Ljava/lang/String;
+.field a:Z
 
-.field final synthetic b:Ljava/lang/String;
+.field final synthetic b:Landroid/graphics/Bitmap;
 
 .field final synthetic c:Lcom/kik/cache/ae;
 
 
 # direct methods
-.method constructor <init>(Lcom/kik/cache/ae;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method constructor <init>(Lcom/kik/cache/ae;Landroid/graphics/Bitmap;)V
+    .locals 1
 
     .prologue
-    .line 334
+    .line 75
     iput-object p1, p0, Lcom/kik/cache/ae$2;->c:Lcom/kik/cache/ae;
 
-    iput-object p2, p0, Lcom/kik/cache/ae$2;->a:Ljava/lang/String;
-
-    iput-object p3, p0, Lcom/kik/cache/ae$2;->b:Ljava/lang/String;
+    iput-object p2, p0, Lcom/kik/cache/ae$2;->b:Landroid/graphics/Bitmap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 76
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/kik/cache/ae$2;->a:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/android/volley/VolleyError;)V
-    .locals 3
+.method public final bridge synthetic call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .prologue
-    .line 338
-    iget-object v0, p0, Lcom/kik/cache/ae$2;->c:Lcom/kik/cache/ae;
+    .line 75
+    check-cast p1, Landroid/graphics/Bitmap;
 
-    iget-object v1, p0, Lcom/kik/cache/ae$2;->a:Ljava/lang/String;
+    .line 1081
+    if-nez p1, :cond_0
 
-    iget-object v2, p0, Lcom/kik/cache/ae$2;->b:Ljava/lang/String;
+    .line 1082
+    iget-object p1, p0, Lcom/kik/cache/ae$2;->b:Landroid/graphics/Bitmap;
 
-    invoke-static {v0, v1, v2, p1}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ae;Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/VolleyError;)V
+    :goto_0
+    return-object p1
 
-    .line 339
-    return-void
+    .line 1084
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/kik/cache/ae$2;->a:Z
+
+    goto :goto_0
 .end method

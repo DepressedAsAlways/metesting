@@ -46,7 +46,7 @@
     invoke-virtual {p0, v0}, Lkik/android/widget/HeightClampedIconImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 25
-    sget-object v0, Lkik/android/k$a;->G:[I
+    sget-object v0, Lkik/android/R$styleable;->HeightClampedIconImageView:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 

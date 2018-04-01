@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/j;
+.implements Lrx/k;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "<",
         "Lrx/internal/subscriptions/Unsubscribed;",
         ">;",
-        "Lrx/j;"
+        "Lrx/k;"
     }
 .end annotation
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$c;
+.implements Lcom/kik/entity/model/ElementCommon$g;
 
 
 # annotations
@@ -51,14 +51,14 @@
     .locals 1
 
     .prologue
-    .line 4603
+    .line 5142
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
     invoke-direct {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;-><init>()V
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    .line 4611
+    .line 5150
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$1;
 
     invoke-direct {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$1;-><init>()V
@@ -72,20 +72,20 @@
     .locals 1
 
     .prologue
-    .line 4124
+    .line 4663
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
 
-    .line 4224
+    .line 4763
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedIsInitialized:B
 
-    .line 4125
+    .line 4664
     const-string v0, ""
 
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
-    .line 4126
+    .line 4665
     return-void
 .end method
 
@@ -100,27 +100,27 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 4137
+    .line 4676
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;-><init>()V
 
-    .line 4140
+    .line 4679
     const/4 v0, 0x0
 
-    .line 4141
+    .line 4680
     :cond_0
     :goto_0
     if-nez v0, :cond_1
 
-    .line 4142
+    .line 4681
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
     move-result v2
 
-    .line 4143
+    .line 4682
     sparse-switch v2, :sswitch_data_0
 
-    .line 4148
+    .line 4687
     invoke-virtual {p1, v2}, Lcom/google/protobuf/CodedInputStream;->skipField(I)Z
 
     move-result v2
@@ -129,22 +129,22 @@
 
     move v0, v1
 
-    .line 4149
+    .line 4688
     goto :goto_0
 
     :sswitch_0
     move v0, v1
 
-    .line 4146
+    .line 4685
     goto :goto_0
 
-    .line 4154
+    .line 4693
     :sswitch_1
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readStringRequireUtf8()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4156
+    .line 4695
     iput-object v2, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
@@ -153,7 +153,7 @@
 
     goto :goto_0
 
-    .line 4162
+    .line 4701
     :catch_0
     move-exception v0
 
@@ -166,7 +166,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4167
+    .line 4706
     :catchall_0
     move-exception v0
 
@@ -177,20 +177,20 @@
     :cond_1
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->makeExtensionsImmutable()V
 
-    .line 4168
+    .line 4707
     return-void
 
-    .line 4163
+    .line 4702
     :catch_1
     move-exception v0
 
-    .line 4164
+    .line 4703
     :try_start_2
     new-instance v1, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-direct {v1, v0}, Lcom/google/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
 
-    .line 4165
+    .line 4704
     invoke-virtual {v1, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object v0
@@ -199,7 +199,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 4143
+    .line 4682
     nop
 
     :sswitch_data_0
@@ -218,7 +218,7 @@
     .end annotation
 
     .prologue
-    .line 4116
+    .line 4655
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;-><init>(Lcom/google/protobuf/CodedInputStream;)V
 
     return-void
@@ -235,15 +235,15 @@
     .end annotation
 
     .prologue
-    .line 4122
+    .line 4661
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
-    .line 4224
+    .line 4763
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedIsInitialized:B
 
-    .line 4123
+    .line 4662
     return-void
 .end method
 
@@ -251,7 +251,7 @@
     .locals 0
 
     .prologue
-    .line 4116
+    .line 4655
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
     return-void
@@ -261,10 +261,10 @@
     .locals 1
 
     .prologue
-    .line 4348
+    .line 4887
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     move-result-object v0
 
@@ -279,33 +279,47 @@
     .locals 0
 
     .prologue
-    .line 4116
+    .line 4655
     iput-object p1, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
     return-object p1
+.end method
+
+.method public static b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+    .locals 1
+
+    .prologue
+    .line 4884
+    sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
+
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method static synthetic b(Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;)Ljava/lang/Object;
     .locals 1
 
     .prologue
-    .line 4116
+    .line 4655
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method public static c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
+.method public static d()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
     .locals 1
 
     .prologue
-    .line 4607
+    .line 5146
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
     return-object v0
 .end method
 
-.method public static d()Lcom/google/protobuf/Parser;
+.method public static e()Lcom/google/protobuf/Parser;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -318,56 +332,56 @@
     .end annotation
 
     .prologue
-    .line 4621
+    .line 5160
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
-.method static synthetic e()Z
+.method static synthetic f()Z
     .locals 1
 
     .prologue
-    .line 4116
+    .line 4655
     sget-boolean v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->alwaysUseFieldBuilders:Z
 
     return v0
 .end method
 
-.method static synthetic f()Lcom/google/protobuf/Parser;
+.method static synthetic g()Lcom/google/protobuf/Parser;
     .locals 1
 
     .prologue
-    .line 4116
+    .line 4655
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
 
-.method private g()Lcom/google/protobuf/ByteString;
+.method private h()Lcom/google/protobuf/ByteString;
     .locals 2
 
     .prologue
-    .line 4212
+    .line 4751
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
-    .line 4213
+    .line 4752
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 4214
+    .line 4753
     check-cast v0, Ljava/lang/String;
 
-    .line 4215
+    .line 4754
     invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    .line 4217
+    .line 4756
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
-    .line 4220
+    .line 4759
     :goto_0
     return-object v0
 
@@ -383,43 +397,43 @@
     .locals 2
 
     .prologue
-    .line 4192
+    .line 4731
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
-    .line 4193
+    .line 4732
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 4194
+    .line 4733
     check-cast v0, Ljava/lang/String;
 
-    .line 4200
+    .line 4739
     :goto_0
     return-object v0
 
-    .line 4196
+    .line 4735
     :cond_0
     check-cast v0, Lcom/google/protobuf/ByteString;
 
-    .line 4198
+    .line 4737
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4199
+    .line 4738
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
     goto :goto_0
 .end method
 
-.method public final b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+.method public final c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
     .locals 2
 
     .prologue
     const/4 v1, 0x0
 
-    .line 4351
+    .line 4890
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
     if-ne p0, v0, :cond_0
@@ -436,7 +450,7 @@
 
     invoke-direct {v0, v1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;-><init>(B)V
 
-    .line 4352
+    .line 4891
     invoke-virtual {v0, p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;->a(Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;)Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     move-result-object v0
@@ -450,37 +464,37 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 4256
+    .line 4795
     if-ne p1, p0, :cond_1
 
-    .line 4267
+    .line 4806
     :cond_0
     :goto_0
     return v0
 
-    .line 4259
+    .line 4798
     :cond_1
     instance-of v1, p1, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
     if-nez v1, :cond_2
 
-    .line 4260
+    .line 4799
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     goto :goto_0
 
-    .line 4262
+    .line 4801
     :cond_2
     check-cast p1, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    .line 4265
+    .line 4804
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4266
+    .line 4805
     invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a()Ljava/lang/String;
 
     move-result-object v2
@@ -493,7 +507,7 @@
 
     const/4 v0, 0x0
 
-    .line 4267
+    .line 4806
     goto :goto_0
 .end method
 
@@ -501,10 +515,10 @@
     .locals 1
 
     .prologue
-    .line 8630
+    .line 9169
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    .line 4116
+    .line 4655
     return-object v0
 .end method
 
@@ -512,10 +526,10 @@
     .locals 1
 
     .prologue
-    .line 7630
+    .line 8169
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    .line 4116
+    .line 4655
     return-object v0
 .end method
 
@@ -532,7 +546,7 @@
     .end annotation
 
     .prologue
-    .line 4626
+    .line 5165
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -542,24 +556,24 @@
     .locals 2
 
     .prologue
-    .line 4242
+    .line 4781
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedSize:I
 
-    .line 4243
+    .line 4782
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 4250
+    .line 4789
     :goto_0
     return v0
 
-    .line 4245
+    .line 4784
     :cond_0
     const/4 v0, 0x0
 
-    .line 4246
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->g()Lcom/google/protobuf/ByteString;
+    .line 4785
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->h()Lcom/google/protobuf/ByteString;
 
     move-result-object v1
 
@@ -569,7 +583,7 @@
 
     if-nez v1, :cond_1
 
-    .line 4247
+    .line 4786
     const/4 v0, 0x1
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
@@ -580,7 +594,7 @@
 
     add-int/lit8 v0, v0, 0x0
 
-    .line 4249
+    .line 4788
     :cond_1
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedSize:I
 
@@ -591,7 +605,7 @@
     .locals 1
 
     .prologue
-    .line 4131
+    .line 4670
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -603,19 +617,19 @@
     .locals 2
 
     .prologue
-    .line 4272
+    .line 4811
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedHashCode:I
 
     if-eqz v0, :cond_0
 
-    .line 4273
+    .line 4812
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedHashCode:I
 
-    .line 4281
+    .line 4820
     :goto_0
     return v0
 
-    .line 4276
+    .line 4815
     :cond_0
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -627,12 +641,12 @@
 
     add-int/lit16 v0, v0, 0x30b
 
-    .line 4277
+    .line 4816
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 4278
+    .line 4817
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a()Ljava/lang/String;
@@ -645,7 +659,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4279
+    .line 4818
     mul-int/lit8 v0, v0, 0x1d
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
@@ -656,7 +670,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4280
+    .line 4819
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedHashCode:I
 
     goto :goto_0
@@ -666,8 +680,8 @@
     .locals 3
 
     .prologue
-    .line 4177
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->o()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .line 4716
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->q()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
@@ -675,12 +689,12 @@
 
     const-class v2, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
-    .line 4178
+    .line 4717
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 4177
+    .line 4716
     return-object v0
 .end method
 
@@ -690,17 +704,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 4226
+    .line 4765
     iget-byte v1, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedIsInitialized:B
 
-    .line 4227
+    .line 4766
     if-ne v1, v0, :cond_0
 
-    .line 4231
+    .line 4770
     :goto_0
     return v0
 
-    .line 4228
+    .line 4767
     :cond_0
     if-nez v1, :cond_1
 
@@ -708,7 +722,7 @@
 
     goto :goto_0
 
-    .line 4230
+    .line 4769
     :cond_1
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->memoizedIsInitialized:B
 
@@ -719,14 +733,14 @@
     .locals 1
 
     .prologue
-    .line 6345
+    .line 6884
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     move-result-object v0
 
-    .line 4116
+    .line 4655
     return-object v0
 .end method
 
@@ -734,14 +748,14 @@
     .locals 2
 
     .prologue
-    .line 5358
+    .line 5897
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 4116
+    .line 4655
     return-object v0
 .end method
 
@@ -749,14 +763,14 @@
     .locals 1
 
     .prologue
-    .line 7345
+    .line 7884
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->a:Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;
 
-    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+    invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     move-result-object v0
 
-    .line 4116
+    .line 4655
     return-object v0
 .end method
 
@@ -764,8 +778,8 @@
     .locals 1
 
     .prologue
-    .line 4116
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+    .line 4655
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     move-result-object v0
 
@@ -776,8 +790,8 @@
     .locals 1
 
     .prologue
-    .line 4116
-    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->b()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
+    .line 4655
+    invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->c()Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement$a;
 
     move-result-object v0
 
@@ -793,8 +807,8 @@
     .end annotation
 
     .prologue
-    .line 4236
-    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->g()Lcom/google/protobuf/ByteString;
+    .line 4775
+    invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->h()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
@@ -804,14 +818,14 @@
 
     if-nez v0, :cond_0
 
-    .line 4237
+    .line 4776
     const/4 v0, 0x1
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerKikAssetElement;->kikAssetId_:Ljava/lang/Object;
 
     invoke-static {p1, v0, v1}, Lcom/google/protobuf/GeneratedMessageV3;->writeString(Lcom/google/protobuf/CodedOutputStream;ILjava/lang/Object;)V
 
-    .line 4239
+    .line 4778
     :cond_0
     return-void
 .end method

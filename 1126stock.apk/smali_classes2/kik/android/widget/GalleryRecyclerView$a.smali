@@ -1,5 +1,5 @@
 .class public final Lkik/android/widget/GalleryRecyclerView$a;
-.super Lkik/android/widget/cm;
+.super Lkik/android/widget/dr;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/widget/cm",
+        "Lkik/android/widget/dr",
         "<",
-        "Lkik/android/gallery/vm/m;",
+        "Lkik/android/gallery/vm/p;",
         "Lkik/android/widget/GalleryRecyclerView$b;",
         ">;"
     }
@@ -30,7 +30,7 @@
         value = {
             "Lkik/android/chat/vm/IListViewModel",
             "<",
-            "Lkik/android/gallery/vm/m;",
+            "Lkik/android/gallery/vm/p;",
             ">;"
         }
     .end annotation
@@ -38,36 +38,36 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/android/widget/cm$a;Lkik/android/chat/vm/IListViewModel;)V
+.method public constructor <init>(Lkik/android/widget/dr$a;Lkik/android/chat/vm/IListViewModel;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/android/widget/cm$a",
+            "Lkik/android/widget/dr$a",
             "<",
-            "Lkik/android/gallery/vm/m;",
+            "Lkik/android/gallery/vm/p;",
             "Lkik/android/widget/GalleryRecyclerView$b;",
             ">;",
             "Lkik/android/chat/vm/IListViewModel",
             "<",
-            "Lkik/android/gallery/vm/m;",
+            "Lkik/android/gallery/vm/p;",
             ">;)V"
         }
     .end annotation
 
     .prologue
-    .line 106
-    invoke-direct {p0, p1, p2}, Lkik/android/widget/cm;-><init>(Lkik/android/widget/cm$a;Lkik/android/chat/vm/IListViewModel;)V
-
     .line 107
+    invoke-direct {p0, p1, p2}, Lkik/android/widget/dr;-><init>(Lkik/android/widget/dr$a;Lkik/android/chat/vm/IListViewModel;)V
+
+    .line 108
     iput-object p2, p0, Lkik/android/widget/GalleryRecyclerView$a;->a:Lkik/android/chat/vm/IListViewModel;
 
-    .line 109
+    .line 110
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lkik/android/widget/GalleryRecyclerView$a;->setHasStableIds(Z)V
 
-    .line 110
+    .line 111
     return-void
 .end method
 
@@ -77,18 +77,25 @@
     .locals 2
 
     .prologue
-    .line 115
+    .line 116
     iget-object v0, p0, Lkik/android/widget/GalleryRecyclerView$a;->a:Lkik/android/chat/vm/IListViewModel;
 
-    invoke-interface {v0, p1}, Lkik/android/chat/vm/IListViewModel;->d(I)Lkik/android/chat/vm/u;
+    invoke-interface {v0, p1}, Lkik/android/chat/vm/IListViewModel;->d(I)Lkik/android/chat/vm/at;
 
     move-result-object v0
 
-    check-cast v0, Lkik/android/gallery/vm/m;
+    .line 117
+    if-nez v0, :cond_0
 
-    invoke-interface {v0}, Lkik/android/gallery/vm/m;->j()J
+    const-wide/16 v0, -0x1
+
+    :goto_0
+    return-wide v0
+
+    :cond_0
+    invoke-interface {v0}, Lkik/android/chat/vm/at;->ah_()J
 
     move-result-wide v0
 
-    return-wide v0
+    goto :goto_0
 .end method

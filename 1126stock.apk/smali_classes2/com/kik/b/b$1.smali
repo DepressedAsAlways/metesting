@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 93
+    .line 94
     iput-object p1, p0, Lcom/kik/b/b$1;->a:Lcom/kik/b/b;
 
     invoke-direct {p0}, Lcom/kik/performance/metrics/a;-><init>()V
@@ -37,7 +37,7 @@
     .locals 5
 
     .prologue
-    .line 97
+    .line 98
     iget-object v0, p0, Lcom/kik/b/b$1;->a:Lcom/kik/b/b;
 
     invoke-virtual {p1}, Lcom/kik/performance/metrics/OverlordSession;->b()Ljava/lang/String;
@@ -56,6 +56,6 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/kik/b/b;->a(Ljava/lang/String;Lorg/json/JSONObject;Lorg/json/JSONObject;Z)V
 
-    .line 98
+    .line 99
     return-void
 .end method

@@ -12,7 +12,7 @@
         "Ljava/lang/Object;",
         "Ldagger/b",
         "<",
-        "Lkik/android/chat/vm/bj;",
+        "Lkik/android/chat/vm/cu;",
         ">;"
     }
 .end annotation
@@ -23,18 +23,7 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/c;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final c:Ljavax/inject/Provider;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -45,7 +34,7 @@
     .end annotation
 .end field
 
-.field private final d:Ljavax/inject/Provider;
+.field private final c:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -56,7 +45,7 @@
     .end annotation
 .end field
 
-.field private final e:Ljavax/inject/Provider;
+.field private final d:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -95,15 +84,11 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/c;",
-            ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/interfaces/b;",
@@ -120,10 +105,10 @@
     .end annotation
 
     .prologue
-    .line 17
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
+    .line 26
     sget-boolean v0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -136,11 +121,11 @@
 
     throw v0
 
-    .line 19
+    .line 27
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 20
+    .line 28
     sget-boolean v0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -153,11 +138,11 @@
 
     throw v0
 
-    .line 21
+    .line 29
     :cond_1
     iput-object p2, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 22
+    .line 30
     sget-boolean v0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -170,40 +155,19 @@
 
     throw v0
 
-    .line 23
+    .line 31
     :cond_2
     iput-object p3, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 24
-    sget-boolean v0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->a:Z
-
-    if-nez v0, :cond_3
-
-    if-nez p4, :cond_3
-
-    new-instance v0, Ljava/lang/AssertionError;
-
-    invoke-direct {v0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw v0
-
-    .line 25
-    :cond_3
-    iput-object p4, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->e:Ljavax/inject/Provider;
-
-    .line 26
+    .line 32
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/c;",
-            ">;",
             "Ljavax/inject/Provider",
             "<",
             "Lkik/core/interfaces/b;",
@@ -218,16 +182,16 @@
             ">;)",
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/bj;",
+            "Lkik/android/chat/vm/cu;",
             ">;"
         }
     .end annotation
 
     .prologue
-    .line 40
+    .line 38
     new-instance v0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct {v0, p0, p1, p2}, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -239,12 +203,12 @@
 
     .prologue
     .line 10
-    check-cast p1, Lkik/android/chat/vm/bj;
+    check-cast p1, Lkik/android/chat/vm/cu;
 
-    .line 1030
+    .line 1044
     if-nez p1, :cond_0
 
-    .line 1031
+    .line 1045
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -253,14 +217,9 @@
 
     throw v0
 
-    .line 1033
+    .line 1047
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->b:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1034
-    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->c:Ljavax/inject/Provider;
+    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->b:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -268,10 +227,10 @@
 
     check-cast v0, Lkik/core/interfaces/b;
 
-    iput-object v0, p1, Lkik/android/chat/vm/bj;->a:Lkik/core/interfaces/b;
+    iput-object v0, p1, Lkik/android/chat/vm/cu;->a:Lkik/core/interfaces/b;
 
-    .line 1035
-    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->d:Ljavax/inject/Provider;
+    .line 1048
+    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -279,10 +238,10 @@
 
     check-cast v0, Lkik/core/interfaces/v;
 
-    iput-object v0, p1, Lkik/android/chat/vm/bj;->b:Lkik/core/interfaces/v;
+    iput-object v0, p1, Lkik/android/chat/vm/cu;->b:Lkik/core/interfaces/v;
 
-    .line 1036
-    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->e:Ljavax/inject/Provider;
+    .line 1049
+    iget-object v0, p0, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -290,7 +249,7 @@
 
     check-cast v0, Landroid/content/res/Resources;
 
-    iput-object v0, p1, Lkik/android/chat/vm/bj;->c:Landroid/content/res/Resources;
+    iput-object v0, p1, Lkik/android/chat/vm/cu;->c:Landroid/content/res/Resources;
 
     .line 10
     return-void

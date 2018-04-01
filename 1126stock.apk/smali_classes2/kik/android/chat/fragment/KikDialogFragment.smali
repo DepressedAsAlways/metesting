@@ -238,7 +238,7 @@
     .prologue
     .line 31
     .line 1381
-    const v0, 0x7f0b00f0
+    const v0, 0x7f0b0128
 
     iput v0, p0, Lkik/android/chat/fragment/KikDialogFragment;->y:I
 
@@ -369,7 +369,7 @@
 
     .prologue
     .line 176
-    const v0, 0x7f090269
+    const v0, 0x7f09027d
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
@@ -886,13 +886,13 @@
     if-nez v0, :cond_a
 
     .line 244
-    const v0, 0x7f0b00dc
+    const v0, 0x7f0b0112
 
     goto/16 :goto_0
 
     .line 248
     :cond_a
-    const v0, 0x7f0b00dd
+    const v0, 0x7f0b0113
 
     goto/16 :goto_0
 .end method

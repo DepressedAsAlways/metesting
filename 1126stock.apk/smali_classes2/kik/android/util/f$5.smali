@@ -23,27 +23,27 @@
 
     const/16 v1, 0x7d
 
-    .line 122
+    .line 127
     invoke-direct {p0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 124
+    .line 129
     invoke-virtual {p0, v0}, Lkik/android/util/f$5;->setAntiAlias(Z)V
 
-    .line 125
+    .line 130
     invoke-virtual {p0, v0}, Lkik/android/util/f$5;->setDither(Z)V
 
-    .line 126
+    .line 131
     sget-object v0, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p0, v0}, Lkik/android/util/f$5;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 127
+    .line 132
     invoke-static {v1, v1, v1, v1}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Lkik/android/util/f$5;->setColor(I)V
 
-    .line 128
+    .line 133
     return-void
 .end method

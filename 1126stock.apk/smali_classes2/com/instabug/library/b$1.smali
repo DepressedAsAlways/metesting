@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/instabug/library/util/h$a;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -18,28 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic a:Landroid/view/View;
 
-.field final synthetic b:Ljava/util/List;
-
-.field final synthetic c:I
-
-.field final synthetic d:Lcom/instabug/library/b;
+.field final synthetic b:Lcom/instabug/library/b;
 
 
 # direct methods
-.method constructor <init>(Lcom/instabug/library/b;Landroid/app/Activity;Ljava/util/List;I)V
+.method constructor <init>(Lcom/instabug/library/b;Landroid/view/View;)V
     .locals 0
 
     .prologue
-    .line 91
-    iput-object p1, p0, Lcom/instabug/library/b$1;->d:Lcom/instabug/library/b;
+    .line 60
+    iput-object p1, p0, Lcom/instabug/library/b$1;->b:Lcom/instabug/library/b;
 
-    iput-object p2, p0, Lcom/instabug/library/b$1;->a:Landroid/app/Activity;
-
-    iput-object p3, p0, Lcom/instabug/library/b$1;->b:Ljava/util/List;
-
-    iput p4, p0, Lcom/instabug/library/b$1;->c:I
+    iput-object p2, p0, Lcom/instabug/library/b$1;->a:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,122 +40,58 @@
 
 
 # virtual methods
-.method public final a(Z)V
-    .locals 3
+.method public final run()V
+    .locals 4
 
     .prologue
-    .line 99
-    if-nez p1, :cond_0
+    .line 63
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 100
-    iget-object v0, p0, Lcom/instabug/library/b$1;->d:Lcom/instabug/library/b;
+    const/16 v1, 0xc
 
-    iget-object v1, p0, Lcom/instabug/library/b$1;->a:Landroid/app/Activity;
+    if-lt v0, v1, :cond_0
 
-    iget-object v2, p0, Lcom/instabug/library/b$1;->b:Ljava/util/List;
+    .line 64
+    iget-object v0, p0, Lcom/instabug/library/b$1;->a:Landroid/view/View;
 
-    invoke-static {v0, v1, v2}, Lcom/instabug/library/b;->a(Lcom/instabug/library/b;Landroid/content/Context;Ljava/util/List;)V
+    invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
-    .line 102
+    move-result v0
+
+    .line 65
+    iget-object v1, p0, Lcom/instabug/library/b$1;->a:Landroid/view/View;
+
+    int-to-float v2, v0
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setTranslationY(F)V
+
+    .line 66
+    iget-object v1, p0, Lcom/instabug/library/b$1;->a:Landroid/view/View;
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
+
+    .line 67
+    iget-object v1, p0, Lcom/instabug/library/b$1;->a:Landroid/view/View;
+
+    invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v1
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {v1, v2, v3}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
+
+    move-result-object v1
+
+    neg-int v0, v0
+
+    int-to-float v0, v0
+
+    invoke-virtual {v1, v0}, Landroid/view/ViewPropertyAnimator;->translationYBy(F)Landroid/view/ViewPropertyAnimator;
+
+    .line 69
     :cond_0
     return-void
-.end method
-
-.method public final onClick()V
-    .locals 3
-
-    .prologue
-    .line 94
-    iget-object v1, p0, Lcom/instabug/library/b$1;->a:Landroid/app/Activity;
-
-    iget-object v0, p0, Lcom/instabug/library/b$1;->b:Ljava/util/List;
-
-    iget v2, p0, Lcom/instabug/library/b$1;->c:I
-
-    .line 1109
-    packed-switch v2, :pswitch_data_0
-
-    .line 1122
-    :goto_0
-    return-void
-
-    .line 1111
-    :pswitch_0
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, -0x1
-
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/instabug/library/model/g;
-
-    .line 1112
-    instance-of v2, v1, Lcom/instabug/library/InstabugFeedbackActivity;
-
-    if-eqz v2, :cond_0
-
-    .line 1113
-    check-cast v1, Lcom/instabug/library/InstabugFeedbackActivity;
-
-    invoke-virtual {v0}, Lcom/instabug/library/model/g;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Lcom/instabug/library/InstabugFeedbackActivity;->a(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 1116
-    :cond_0
-    invoke-virtual {v0}, Lcom/instabug/library/model/g;->f()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0}, Lcom/instabug/library/model/g;->g()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v1, v2, v0}, Lcom/instabug/library/j;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    move-result-object v0
-
-    .line 1117
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-
-    goto :goto_0
-
-    .line 1121
-    :pswitch_1
-    instance-of v0, v1, Lcom/instabug/library/InstabugFeedbackActivity;
-
-    if-eqz v0, :cond_1
-
-    .line 1122
-    check-cast v1, Lcom/instabug/library/InstabugFeedbackActivity;
-
-    invoke-virtual {v1}, Lcom/instabug/library/InstabugFeedbackActivity;->a()V
-
-    goto :goto_0
-
-    .line 1124
-    :cond_1
-    invoke-static {v1}, Lcom/instabug/library/j;->a(Landroid/content/Context;)Landroid/content/Intent;
-
-    move-result-object v0
-
-    .line 1125
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-
-    goto :goto_0
-
-    .line 1109
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_1
-    .end packed-switch
 .end method

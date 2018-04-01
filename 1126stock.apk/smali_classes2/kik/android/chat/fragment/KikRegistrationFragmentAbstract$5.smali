@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 500
+    .line 521
     iput-object p1, p0, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract$5;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,11 +50,11 @@
     .locals 1
 
     .prologue
-    .line 504
+    .line 525
     iget-object v0, p0, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract$5;->a:Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->e()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;->d()V
 
-    .line 505
+    .line 526
     return-void
 .end method

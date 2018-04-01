@@ -1,5 +1,5 @@
 .class final Lkik/android/videochat/VideoChatViewController$3;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/util/List",
         "<",
@@ -34,10 +34,10 @@
     .locals 0
 
     .prologue
-    .line 356
+    .line 386
     iput-object p1, p0, Lkik/android/videochat/VideoChatViewController$3;->a:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -48,27 +48,27 @@
     .locals 1
 
     .prologue
-    .line 356
+    .line 386
     check-cast p1, Ljava/util/List;
 
-    .line 1360
+    .line 1390
     if-eqz p1, :cond_0
 
-    .line 1361
+    .line 1391
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$3;->a:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0, p1}, Lkik/android/videochat/VideoChatViewController;->a(Lkik/android/videochat/VideoChatViewController;Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0, p1}, Lkik/android/videochat/VideoChatViewController;->b(Lkik/android/videochat/VideoChatViewController;Ljava/util/List;)Ljava/util/List;
 
-    .line 1362
+    .line 1392
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$3;->a:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->b(Lkik/android/videochat/VideoChatViewController;)Lcom/rounds/kik/VideoController;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->n(Lkik/android/videochat/VideoChatViewController;)Lcom/rounds/kik/VideoController;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/rounds/kik/VideoController;->setMasks(Ljava/util/List;)V
 
-    .line 356
+    .line 386
     :cond_0
     return-void
 .end method
@@ -77,9 +77,9 @@
     .locals 0
 
     .prologue
-    .line 369
-    invoke-static {p1}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    .line 399
+    invoke-static {p1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
-    .line 370
+    .line 400
     return-void
 .end method

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/g;
+.implements Lrx/functions/g;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrx/internal/util/ScalarSynchronousObservable;->c(Lrx/f;)Lrx/c;
+    value = Lrx/internal/util/ScalarSynchronousObservable;->c(Lrx/g;)Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,30 +19,30 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/b/g",
+        "Lrx/functions/g",
         "<",
-        "Lrx/b/a;",
-        "Lrx/j;",
+        "Lrx/functions/a;",
+        "Lrx/k;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lrx/f;
+.field final synthetic a:Lrx/g;
 
 .field final synthetic b:Lrx/internal/util/ScalarSynchronousObservable;
 
 
 # direct methods
-.method constructor <init>(Lrx/internal/util/ScalarSynchronousObservable;Lrx/f;)V
+.method constructor <init>(Lrx/internal/util/ScalarSynchronousObservable;Lrx/g;)V
     .locals 0
 
     .prologue
     .line 106
     iput-object p1, p0, Lrx/internal/util/ScalarSynchronousObservable$2;->b:Lrx/internal/util/ScalarSynchronousObservable;
 
-    iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$2;->a:Lrx/f;
+    iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$2;->a:Lrx/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,21 +56,21 @@
 
     .prologue
     .line 106
-    check-cast p1, Lrx/b/a;
+    check-cast p1, Lrx/functions/a;
 
     .line 1109
-    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$2;->a:Lrx/f;
+    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$2;->a:Lrx/g;
 
-    invoke-virtual {v0}, Lrx/f;->b()Lrx/f$a;
+    invoke-virtual {v0}, Lrx/g;->b()Lrx/g$a;
 
     move-result-object v0
 
     .line 1110
     new-instance v1, Lrx/internal/util/ScalarSynchronousObservable$2$1;
 
-    invoke-direct {v1, p0, p1, v0}, Lrx/internal/util/ScalarSynchronousObservable$2$1;-><init>(Lrx/internal/util/ScalarSynchronousObservable$2;Lrx/b/a;Lrx/f$a;)V
+    invoke-direct {v1, p0, p1, v0}, Lrx/internal/util/ScalarSynchronousObservable$2$1;-><init>(Lrx/internal/util/ScalarSynchronousObservable$2;Lrx/functions/a;Lrx/g$a;)V
 
-    invoke-virtual {v0, v1}, Lrx/f$a;->a(Lrx/b/a;)Lrx/j;
+    invoke-virtual {v0, v1}, Lrx/g$a;->a(Lrx/functions/a;)Lrx/k;
 
     .line 106
     return-object v0

@@ -43,7 +43,7 @@
     .line 211
     iget-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding$1;->a:Lkik/android/chat/activity/KikPlatformLanding;
 
-    invoke-static {v0}, Lkik/android/chat/activity/KikPlatformLanding;->a(Lkik/android/chat/activity/KikPlatformLanding;)Lkik/android/internal/platform/b;
+    invoke-static {v0}, Lkik/android/chat/activity/KikPlatformLanding;->a(Lkik/android/chat/activity/KikPlatformLanding;)Lkik/android/internal/platform/PlatformHelper;
 
     move-result-object v0
 
@@ -51,7 +51,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/internal/platform/b;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Z)V
+    invoke-virtual {v0, v1, v2}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Z)V
 
     .line 212
     iget-object v0, p0, Lkik/android/chat/activity/KikPlatformLanding$1;->a:Lkik/android/chat/activity/KikPlatformLanding;

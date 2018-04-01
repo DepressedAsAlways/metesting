@@ -1,182 +1,95 @@
-.class public final Lkik/android/util/bl;
+.class final synthetic Lkik/android/util/bl;
 .super Ljava/lang/Object;
-.source "SourceFile"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
-# static fields
-.field public static final a:Ljava/util/regex/Pattern;
+# instance fields
+.field private final a:Lkik/android/chat/fragment/KikScopedDialogFragment;
 
-.field public static final b:Ljava/util/regex/Pattern;
+.field private final b:Lkik/core/datatypes/ac;
 
-.field public static final c:Ljava/util/regex/Pattern;
+.field private final c:Lcom/kik/android/Mixpanel;
 
-.field public static final d:Ljava/util/regex/Pattern;
+.field private final d:Ljava/lang/String;
 
-.field public static final e:Ljava/util/regex/Pattern;
+.field private final e:Landroid/content/Context;
 
-.field public static final f:Ljava/util/regex/Pattern;
+.field private final f:Lkik/core/interfaces/b;
 
-.field public static final g:Ljava/util/regex/Pattern;
+.field private final g:Lcom/kik/cache/KikVolleyImageLoader;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method private constructor <init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
+    .locals 0
 
-    .prologue
-    .line 38
-    const-string v0, "((aero|arpa|asia|a[cdefgilmnoqrstuwxz])|(biz|b[abdefghijmnorstvwyz])|(cat|com|coop|c[acdfghiklmnoruvxyz])|d[ejkmoz]|(edu|e[cegrstu])|f[ijkmor]|(gov|g[abdefghilmnpqrstuwy])|h[kmnrtu]|(info|int|i[delmnoqrst])|(jobs|j[emop])|k[eghimnprwyz]|l[abcikrstuvy]|(mil|mobi|museum|m[acdeghklmnopqrstuvwxyz])|(name|net|n[acefgilopruz])|(org|om)|(pro|p[aefghklmnrstwy])|qa|r[eosuw]|s[abcdeghijklmnortuvyz]|(tel|travel|t[cdfghjklmnoprtvwz])|u[agksyz]|v[aceginu]|w[fs]|(xn\\-\\-0zwm56d|xn\\-\\-11b5bs3a9aj6g|xn\\-\\-80akhbyknj4f|xn\\-\\-9t4b11yi5a|xn\\-\\-deba0ad|xn\\-\\-g6w251d|xn\\-\\-hgbk6aj7f53bba|xn\\-\\-hlcj6aya9esc7a|xn\\-\\-jxalpdlp|xn\\-\\-kgbechtv|xn\\-\\-zckzah)|y[etu]|z[amw])"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    iput-object p1, p0, Lkik/android/util/bl;->a:Lkik/android/chat/fragment/KikScopedDialogFragment;
 
-    move-result-object v0
+    iput-object p2, p0, Lkik/android/util/bl;->b:Lkik/core/datatypes/ac;
 
-    sput-object v0, Lkik/android/util/bl;->a:Ljava/util/regex/Pattern;
+    iput-object p3, p0, Lkik/android/util/bl;->c:Lcom/kik/android/Mixpanel;
 
-    .line 61
-    const-string v0, "((?:(http|https|Http|Https|rtsp|Rtsp):\\/\\/(?:(?:[a-zA-Z0-9\\$\\-\\_\\.\\+\\!\\*\\\'\\(\\)\\,\\;\\?\\&\\=]|(?:\\%[a-fA-F0-9]{2})){1,64}(?:\\:(?:[a-zA-Z0-9\\$\\-\\_\\.\\+\\!\\*\\\'\\(\\)\\,\\;\\?\\&\\=]|(?:\\%[a-fA-F0-9]{2})){1,25})?\\@)?)?((?:(?:[a-zA-Z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef][a-zA-Z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef\\-]{0,64}\\.)+(?:(?:aero|arpa|asia|a[cdefgilmnoqrstuwxz])|(?:biz|b[abdefghijmnorstvwyz])|(?:cat|com|coop|c[acdfghiklmnoruvxyz])|d[ejkmoz]|(?:edu|e[cegrstu])|f[ijkmor]|(?:gov|g[abdefghilmnpqrstuwy])|h[kmnrtu]|(?:info|int|i[delmnoqrst])|(?:jobs|j[emop])|k[eghimnprwyz]|l[abcikrstuvy]|(?:mil|mobi|museum|m[acdeghklmnopqrstuvwxyz])|(?:name|net|n[acefgilopruz])|(?:org|om)|(?:pro|p[aefghklmnrstwy])|qa|r[eosuw]|s[abcdeghijklmnortuvyz]|(?:tel|travel|t[cdfghjklmnoprtvwz])|u[agksyz]|v[aceginu]|w[fs]|(?:xn\\-\\-0zwm56d|xn\\-\\-11b5bs3a9aj6g|xn\\-\\-80akhbyknj4f|xn\\-\\-9t4b11yi5a|xn\\-\\-deba0ad|xn\\-\\-g6w251d|xn\\-\\-hgbk6aj7f53bba|xn\\-\\-hlcj6aya9esc7a|xn\\-\\-jxalpdlp|xn\\-\\-kgbechtv|xn\\-\\-zckzah)|y[etu]|z[amw]))|(?:(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9])\\.(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9]|0)\\.(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9]|0)\\.(?:25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[0-9])))(?:\\:\\d{1,5})?)(\\/(?:(?:[a-zA-Z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef\\;\\/\\?\\:\\@\\&\\=\\#\\~\\-\\.\\+\\!\\*\\\'\\(\\)\\,\\_])|(?:\\%[a-fA-F0-9]{2}))*)?(?:\\b|$)"
+    iput-object p4, p0, Lkik/android/util/bl;->d:Ljava/lang/String;
 
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    iput-object p5, p0, Lkik/android/util/bl;->e:Landroid/content/Context;
 
-    move-result-object v0
+    iput-object p6, p0, Lkik/android/util/bl;->f:Lkik/core/interfaces/b;
 
-    sput-object v0, Lkik/android/util/bl;->b:Ljava/util/regex/Pattern;
-
-    .line 71
-    const-string v0, "((25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9])\\.(25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9]|0)\\.(25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[1-9]|0)\\.(25[0-5]|2[0-4][0-9]|[0-1][0-9]{2}|[1-9][0-9]|[0-9]))"
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bl;->c:Ljava/util/regex/Pattern;
-
-    .line 73
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "(((([a-zA-Z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef][a-zA-Z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef\\-]*)*[a-zA-Z0-9\u00a0-\ud7ff\uf900-\ufdcf\ufdf0-\uffef]\\.)+"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    sget-object v1, Lkik/android/util/bl;->a:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ")|"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    sget-object v1, Lkik/android/util/bl;->c:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ")"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bl;->d:Ljava/util/regex/Pattern;
-
-    .line 75
-    const-string v0, "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}\\@[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}(\\.[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})+"
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bl;->e:Ljava/util/regex/Pattern;
-
-    .line 77
-    const-string v0, "#[A-Za-z0-9_.]{2,32}\\b"
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bl;->f:Ljava/util/regex/Pattern;
-
-    .line 93
-    const-string v0, "(\\+[0-9]+[\\- \\.]*)?(\\([0-9]+\\)[\\- \\.]*)?([0-9][0-9\\- \\.][0-9\\- \\.]+[0-9])"
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bl;->g:Ljava/util/regex/Pattern;
+    iput-object p7, p0, Lkik/android/util/bl;->g:Lcom/kik/cache/KikVolleyImageLoader;
 
     return-void
 .end method
 
-.method public static final a(Ljava/util/regex/Matcher;)Ljava/lang/String;
-    .locals 6
+.method public static a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)Landroid/content/DialogInterface$OnClickListener;
+    .locals 8
 
-    .prologue
-    .line 139
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Lkik/android/util/bl;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    move-object v1, p0
 
-    .line 140
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
+    move-object v2, p1
 
-    move-result-object v2
+    move-object v3, p2
 
-    .line 142
-    const/4 v0, 0x0
+    move-object v4, p3
 
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    move-object v5, p4
 
-    move-result v3
+    move-object v6, p5
 
-    :goto_0
-    if-ge v0, v3, :cond_2
+    move-object v7, p6
 
-    .line 143
-    invoke-virtual {v2, v0}, Ljava/lang/String;->charAt(I)C
-
-    move-result v4
-
-    .line 145
-    const/16 v5, 0x2b
-
-    if-eq v4, v5, :cond_0
-
-    invoke-static {v4}, Ljava/lang/Character;->isDigit(C)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    .line 146
-    :cond_0
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 142
-    :cond_1
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 149
-    :cond_2
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
+    invoke-direct/range {v0 .. v7}, Lkik/android/util/bl;-><init>(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;)V
 
     return-object v0
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 8
+
+    iget-object v0, p0, Lkik/android/util/bl;->a:Lkik/android/chat/fragment/KikScopedDialogFragment;
+
+    iget-object v1, p0, Lkik/android/util/bl;->b:Lkik/core/datatypes/ac;
+
+    iget-object v2, p0, Lkik/android/util/bl;->c:Lcom/kik/android/Mixpanel;
+
+    iget-object v3, p0, Lkik/android/util/bl;->d:Ljava/lang/String;
+
+    iget-object v4, p0, Lkik/android/util/bl;->e:Landroid/content/Context;
+
+    iget-object v5, p0, Lkik/android/util/bl;->f:Lkik/core/interfaces/b;
+
+    iget-object v6, p0, Lkik/android/util/bl;->g:Lcom/kik/cache/KikVolleyImageLoader;
+
+    move v7, p2
+
+    invoke-static/range {v0 .. v7}, Lkik/android/util/bk;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Lkik/core/datatypes/ac;Lcom/kik/android/Mixpanel;Ljava/lang/String;Landroid/content/Context;Lkik/core/interfaces/b;Lcom/kik/cache/KikVolleyImageLoader;I)V
+
+    return-void
 .end method

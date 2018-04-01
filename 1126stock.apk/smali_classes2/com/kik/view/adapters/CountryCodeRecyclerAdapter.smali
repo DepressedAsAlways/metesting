@@ -87,7 +87,7 @@
 
     .prologue
     .line 128
-    invoke-static {p1}, Lcom/google/common/base/l;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, Lcom/google/common/base/Strings;->isNullOrEmpty(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -115,7 +115,7 @@
 
     invoke-direct {v2, p0, p1}, Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$1;-><init>(Lcom/kik/view/adapters/CountryCodeRecyclerAdapter;Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lcom/google/common/collect/f;->a(Ljava/util/Collection;Lcom/google/common/base/i;)Ljava/util/Collection;
+    invoke-static {v1, v2}, Lcom/google/common/collect/e;->a(Ljava/util/Collection;Lcom/google/common/base/Predicate;)Ljava/util/Collection;
 
     move-result-object v1
 
@@ -244,7 +244,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0400db
+    const v1, 0x7f04010a
 
     invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -269,16 +269,16 @@
 
     move-result-object v0
 
-    const v1, 0x7f0400dc
+    const v1, 0x7f04010b
 
     invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v1
 
     .line 85
-    new-instance v0, Lkik/android/widget/ce;
+    new-instance v0, Lkik/android/widget/di;
 
-    invoke-direct {v0, v1}, Lkik/android/widget/ce;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, v1}, Lkik/android/widget/di;-><init>(Landroid/view/View;)V
 
     goto :goto_0
 

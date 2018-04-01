@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/cache/ae$b;
+.implements Lcom/kik/cache/KikVolleyImageLoader$b;
 
 
 # annotations
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/z;
+.field final synthetic a:Lkik/core/datatypes/y;
 
 .field final synthetic b:Lkik/android/chat/vm/widget/a;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/widget/a;Lkik/core/datatypes/z;)V
+.method constructor <init>(Lkik/android/chat/vm/widget/a;Lkik/core/datatypes/y;)V
     .locals 0
 
     .prologue
     .line 79
     iput-object p1, p0, Lkik/android/chat/vm/widget/a$1;->b:Lkik/android/chat/vm/widget/a;
 
-    iput-object p2, p0, Lkik/android/chat/vm/widget/a$1;->a:Lkik/core/datatypes/z;
+    iput-object p2, p0, Lkik/android/chat/vm/widget/a$1;->a:Lkik/core/datatypes/y;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,11 +65,17 @@
 
     .line 92
     :cond_0
-    invoke-static {}, Lkik/android/internal/platform/b;->a()Lkik/android/internal/platform/b;
+    invoke-static {}, Lkik/android/internal/platform/PlatformHelper;->a()Lkik/android/internal/platform/PlatformHelper;
 
-    iget-object v0, p0, Lkik/android/chat/vm/widget/a$1;->a:Lkik/core/datatypes/z;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/a$1;->a:Lkik/core/datatypes/y;
 
-    invoke-static {v0, p1}, Lkik/android/internal/platform/b;->a(Lkik/core/datatypes/z;[B)Lkik/core/datatypes/messageExtensions/ContentMessage;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/a$1;->b:Lkik/android/chat/vm/widget/a;
+
+    invoke-virtual {v1}, Lkik/android/chat/vm/widget/a;->d()Lkik/android/internal/platform/PlatformHelper$StickerSource;
+
+    move-result-object v1
+
+    invoke-static {v0, p1, v1}, Lkik/android/internal/platform/PlatformHelper;->a(Lkik/core/datatypes/y;[BLkik/android/internal/platform/PlatformHelper$StickerSource;)Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     move-result-object v0
 
@@ -83,9 +89,9 @@
     .line 94
     iget-object v0, p0, Lkik/android/chat/vm/widget/a$1;->b:Lkik/android/chat/vm/widget/a;
 
-    iget-object v1, p0, Lkik/android/chat/vm/widget/a$1;->a:Lkik/core/datatypes/z;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/a$1;->a:Lkik/core/datatypes/y;
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/vm/widget/a;->b(Lkik/core/datatypes/z;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/vm/widget/a;->b(Lkik/core/datatypes/y;)V
 
     .line 96
     :cond_1

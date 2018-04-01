@@ -15,40 +15,25 @@
 .end annotation
 
 
-# static fields
-.field protected static final e:J
-
-
 # instance fields
-.field protected consumerIndex:J
+.field protected b:J
+
+.field protected c:[Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[TE;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .prologue
-    .line 63
-    const-class v0, Lrx/internal/util/a/t;
-
-    const-string v1, "consumerIndex"
-
-    invoke-static {v0, v1}, Lrx/internal/util/a/ae;->a(Ljava/lang/Class;Ljava/lang/String;)J
-
-    move-result-wide v0
-
-    sput-wide v0, Lrx/internal/util/a/t;->e:J
-
-    return-void
-.end method
-
-.method public constructor <init>(I)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 65
-    invoke-direct {p0, p1}, Lrx/internal/util/a/v;-><init>(I)V
+    .line 42
+    invoke-direct {p0}, Lrx/internal/util/a/v;-><init>()V
 
-    .line 66
     return-void
 .end method

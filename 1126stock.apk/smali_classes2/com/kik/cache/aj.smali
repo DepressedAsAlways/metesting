@@ -3,95 +3,218 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/android/volley/toolbox/f;
+.implements Lkik/core/interfaces/o;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkik/core/interfaces/o",
+        "<",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final a:Lorg/apache/http/ProtocolVersion;
+.field private final a:Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lrx/d",
+            "<",
+            "Lcom/kik/core/domain/users/a/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final b:Lcom/kik/cache/KikVolleyImageLoader;
+
+.field private final c:Landroid/content/res/Resources;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method public constructor <init>(Lrx/d;Lcom/kik/cache/KikVolleyImageLoader;Landroid/content/res/Resources;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lrx/d",
+            "<",
+            "Lcom/kik/core/domain/users/a/c;",
+            ">;",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            "Landroid/content/res/Resources;",
+            ")V"
+        }
+    .end annotation
 
     .prologue
-    const/4 v2, 0x1
-
-    .line 22
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 24
-    new-instance v0, Lorg/apache/http/ProtocolVersion;
+    .line 29
+    iput-object p1, p0, Lcom/kik/cache/aj;->a:Lrx/d;
 
-    const-string v1, "HTTP"
+    .line 30
+    iput-object p2, p0, Lcom/kik/cache/aj;->b:Lcom/kik/cache/KikVolleyImageLoader;
 
-    invoke-direct {v0, v1, v2, v2}, Lorg/apache/http/ProtocolVersion;-><init>(Ljava/lang/String;II)V
+    .line 31
+    iput-object p3, p0, Lcom/kik/cache/aj;->c:Landroid/content/res/Resources;
 
-    iput-object v0, p0, Lcom/kik/cache/aj;->a:Lorg/apache/http/ProtocolVersion;
+    .line 32
+    return-void
+.end method
 
+.method static synthetic a(Lcom/kik/cache/aj;IILandroid/graphics/Bitmap;Lcom/kik/core/domain/users/a/c;)Lrx/d;
+    .locals 7
+
+    .prologue
+    const/4 v5, 0x0
+
+    .line 44
+    if-nez p4, :cond_0
+
+    .line 45
+    iget-object v0, p0, Lcom/kik/cache/aj;->c:Landroid/content/res/Resources;
+
+    invoke-static {v0, p1, p2}, Lcom/kik/cache/d;->a(Landroid/content/res/Resources;II)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
+
+    move-result-object v0
+
+    .line 54
+    :goto_0
+    return-object v0
+
+    .line 49
+    :cond_0
+    sget-object v1, Lcom/kik/cache/KikImageRequest;->EMPTY_BITMAP_LISTENER:Lcom/android/volley/h$b;
+
+    sget-object v4, Lcom/kik/cache/KikImageRequest;->EMPTY_ERROR_LISTENER:Lcom/android/volley/h$a;
+
+    move-object v0, p4
+
+    move v2, p1
+
+    move v3, p2
+
+    move v6, v5
+
+    invoke-static/range {v0 .. v6}, Lcom/kik/cache/UserByteImageRequest;->getContactImageRequest(Lcom/kik/core/domain/users/a/c;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZZ)Lcom/kik/cache/UserByteImageRequest;
+
+    move-result-object v0
+
+    .line 54
+    invoke-static {p0, v0, p1, p2}, Lcom/kik/cache/al;->a(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)Lrx/functions/b;
+
+    move-result-object v0
+
+    sget-object v1, Lrx/Emitter$BackpressureMode;->LATEST:Lrx/Emitter$BackpressureMode;
+
+    invoke-static {v0, v1}, Lrx/d;->a(Lrx/functions/b;Lrx/Emitter$BackpressureMode;)Lrx/d;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/kik/cache/aj$1;
+
+    invoke-direct {v1, p0, p3}, Lcom/kik/cache/aj$1;-><init>(Lcom/kik/cache/aj;Landroid/graphics/Bitmap;)V
+
+    .line 80
+    invoke-virtual {v0, v1}, Lrx/d;->e(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/kik/cache/am;->a()Lrx/functions/g;
+
+    move-result-object v1
+
+    .line 96
+    invoke-virtual {v0, v1}, Lrx/d;->c(Lrx/functions/g;)Lrx/d;
+
+    move-result-object v0
+
+    goto :goto_0
+.end method
+
+.method static synthetic a(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;IILrx/Emitter;)V
+    .locals 6
+
+    .prologue
+    .line 57
+    iget-object v0, p0, Lcom/kik/cache/aj;->b:Lcom/kik/cache/KikVolleyImageLoader;
+
+    new-instance v2, Lcom/kik/cache/aj$2;
+
+    invoke-direct {v2, p0, p4}, Lcom/kik/cache/aj$2;-><init>(Lcom/kik/cache/aj;Lrx/Emitter;)V
+
+    const/4 v5, 0x0
+
+    move-object v1, p1
+
+    move v3, p2
+
+    move v4, p3
+
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
+
+    move-result-object v0
+
+    .line 76
+    invoke-virtual {v0}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    .line 77
+    const/4 v0, 0x0
+
+    invoke-interface {p4, v0}, Lrx/Emitter;->a(Ljava/lang/Object;)V
+
+    .line 79
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/android/volley/Request;Ljava/util/Map;)Lorg/apache/http/HttpResponse;
-    .locals 5
+.method public final a(II)Lrx/d;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lcom/android/volley/Request",
-            "<*>;",
-            "Ljava/util/Map",
+            "(II)",
+            "Lrx/d",
             "<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)",
-            "Lorg/apache/http/HttpResponse;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Lcom/android/volley/AuthFailureError;
+            "Landroid/graphics/Bitmap;",
+            ">;"
         }
     .end annotation
 
     .prologue
-    .line 30
-    new-instance v0, Lorg/apache/http/message/BasicHttpResponse;
+    .line 37
+    iget-object v0, p0, Lcom/kik/cache/aj;->c:Landroid/content/res/Resources;
 
-    new-instance v1, Lorg/apache/http/message/BasicStatusLine;
+    invoke-static {v0, p1, p2}, Lcom/kik/cache/d;->a(Landroid/content/res/Resources;II)Landroid/graphics/Bitmap;
 
-    iget-object v2, p0, Lcom/kik/cache/aj;->a:Lorg/apache/http/ProtocolVersion;
+    move-result-object v0
 
-    const/16 v3, 0xc8
+    .line 1043
+    iget-object v1, p0, Lcom/kik/cache/aj;->a:Lrx/d;
 
-    const-string v4, "OK"
+    invoke-static {p0, p1, p2, v0}, Lcom/kik/cache/ak;->a(Lcom/kik/cache/aj;IILandroid/graphics/Bitmap;)Lrx/functions/g;
 
-    invoke-direct {v1, v2, v3, v4}, Lorg/apache/http/message/BasicStatusLine;-><init>(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Lorg/apache/http/message/BasicHttpResponse;-><init>(Lorg/apache/http/StatusLine;)V
+    invoke-virtual {v1, v0}, Lrx/d;->d(Lrx/functions/g;)Lrx/d;
 
-    .line 31
-    new-instance v1, Lorg/apache/http/entity/BasicHttpEntity;
+    move-result-object v0
 
-    invoke-direct {v1}, Lorg/apache/http/entity/BasicHttpEntity;-><init>()V
-
-    .line 32
-    new-instance v2, Ljava/io/ByteArrayInputStream;
-
-    const/4 v3, 0x0
-
-    new-array v3, v3, [B
-
-    invoke-direct {v2, v3}, Ljava/io/ByteArrayInputStream;-><init>([B)V
-
-    invoke-virtual {v1, v2}, Lorg/apache/http/entity/BasicHttpEntity;->setContent(Ljava/io/InputStream;)V
-
-    .line 33
-    invoke-virtual {v0, v1}, Lorg/apache/http/message/BasicHttpResponse;->setEntity(Lorg/apache/http/HttpEntity;)V
-
-    .line 34
+    .line 37
     return-object v0
 .end method

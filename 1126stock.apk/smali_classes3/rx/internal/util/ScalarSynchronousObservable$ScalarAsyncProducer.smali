@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/a;
-.implements Lrx/e;
+.implements Lrx/f;
+.implements Lrx/functions/a;
 
 
 # annotations
@@ -23,8 +23,8 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicBoolean;",
-        "Lrx/b/a;",
-        "Lrx/e;"
+        "Lrx/f;",
+        "Lrx/functions/a;"
     }
 .end annotation
 
@@ -34,22 +34,22 @@
 
 
 # instance fields
-.field final actual:Lrx/i;
+.field final actual:Lrx/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;"
         }
     .end annotation
 .end field
 
-.field final onSchedule:Lrx/b/g;
+.field final onSchedule:Lrx/functions/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/b/a;",
-            "Lrx/j;",
+            "Lrx/functions/a;",
+            "Lrx/k;",
             ">;"
         }
     .end annotation
@@ -65,17 +65,17 @@
 
 
 # direct methods
-.method public constructor <init>(Lrx/i;Ljava/lang/Object;Lrx/b/g;)V
+.method public constructor <init>(Lrx/j;Ljava/lang/Object;Lrx/functions/g;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;TT;",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/b/a;",
-            "Lrx/j;",
+            "Lrx/functions/a;",
+            "Lrx/k;",
             ">;)V"
         }
     .end annotation
@@ -85,13 +85,13 @@
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     .line 177
-    iput-object p1, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->actual:Lrx/i;
+    iput-object p1, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->actual:Lrx/j;
 
     .line 178
     iput-object p2, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->value:Ljava/lang/Object;
 
     .line 179
-    iput-object p3, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->onSchedule:Lrx/b/g;
+    iput-object p3, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->onSchedule:Lrx/functions/g;
 
     .line 180
     return-void
@@ -104,10 +104,10 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->actual:Lrx/i;
+    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->actual:Lrx/j;
 
     .line 195
-    invoke-virtual {v0}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {v0}, Lrx/j;->isUnsubscribed()Z
 
     move-result v1
 
@@ -124,19 +124,19 @@
 
     .line 200
     :try_start_0
-    invoke-virtual {v0, v1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lrx/j;->a(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 205
-    invoke-virtual {v0}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {v0}, Lrx/j;->isUnsubscribed()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 208
-    invoke-virtual {v0}, Lrx/i;->bb_()V
+    invoke-virtual {v0}, Lrx/j;->b()V
 
     goto :goto_0
 
@@ -144,7 +144,7 @@
     :catch_0
     move-exception v2
 
-    invoke-static {v2, v0, v1}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v2, v0, v1}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;Lrx/e;Ljava/lang/Object;)V
 
     goto :goto_0
 .end method
@@ -198,17 +198,17 @@
     if-eqz v0, :cond_1
 
     .line 188
-    iget-object v1, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->actual:Lrx/i;
+    iget-object v1, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->actual:Lrx/j;
 
-    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->onSchedule:Lrx/b/g;
+    iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$ScalarAsyncProducer;->onSchedule:Lrx/functions/g;
 
-    invoke-interface {v0, p0}, Lrx/b/g;->call(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p0}, Lrx/functions/g;->call(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/j;
+    check-cast v0, Lrx/k;
 
-    invoke-virtual {v1, v0}, Lrx/i;->a(Lrx/j;)V
+    invoke-virtual {v1, v0}, Lrx/j;->a(Lrx/k;)V
 
     .line 190
     :cond_1

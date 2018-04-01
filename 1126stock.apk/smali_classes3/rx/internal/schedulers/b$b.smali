@@ -76,7 +76,7 @@
     if-nez v0, :cond_0
 
     .line 77
-    sget-object v0, Lrx/internal/schedulers/b;->c:Lrx/internal/schedulers/b$c;
+    sget-object v0, Lrx/internal/schedulers/b;->b:Lrx/internal/schedulers/b$c;
 
     .line 80
     :goto_0

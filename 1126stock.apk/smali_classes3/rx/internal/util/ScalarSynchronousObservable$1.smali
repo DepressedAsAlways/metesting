@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/g;
+.implements Lrx/functions/g;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrx/internal/util/ScalarSynchronousObservable;->c(Lrx/f;)Lrx/c;
+    value = Lrx/internal/util/ScalarSynchronousObservable;->c(Lrx/g;)Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,10 +19,10 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/b/g",
+        "Lrx/functions/g",
         "<",
-        "Lrx/b/a;",
-        "Lrx/j;",
+        "Lrx/functions/a;",
+        "Lrx/k;",
         ">;"
     }
 .end annotation
@@ -56,12 +56,12 @@
 
     .prologue
     .line 99
-    check-cast p1, Lrx/b/a;
+    check-cast p1, Lrx/functions/a;
 
     .line 1102
     iget-object v0, p0, Lrx/internal/util/ScalarSynchronousObservable$1;->a:Lrx/internal/schedulers/b;
 
-    invoke-virtual {v0, p1}, Lrx/internal/schedulers/b;->a(Lrx/b/a;)Lrx/j;
+    invoke-virtual {v0, p1}, Lrx/internal/schedulers/b;->a(Lrx/functions/a;)Lrx/k;
 
     move-result-object v0
 

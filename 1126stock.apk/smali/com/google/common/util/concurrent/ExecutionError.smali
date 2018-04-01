@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 40
+    .line 35
     invoke-direct {p0}, Ljava/lang/Error;-><init>()V
 
     return-void
@@ -26,9 +26,9 @@
     .end param
 
     .prologue
-    .line 60
+    .line 55
     invoke-direct {p0, p1}, Ljava/lang/Error;-><init>(Ljava/lang/Throwable;)V
 
-    .line 61
+    .line 56
     return-void
 .end method

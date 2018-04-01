@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/m;
+.field final synthetic a:Lkik/core/datatypes/l;
 
 .field final synthetic b:Lkik/core/datatypes/f;
 
@@ -26,14 +26,14 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Lkik/core/datatypes/m;Lkik/core/datatypes/f;)V
+.method constructor <init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Lkik/core/datatypes/l;Lkik/core/datatypes/f;)V
     .locals 0
 
     .prologue
-    .line 590
+    .line 616
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->c:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iput-object p2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->a:Lkik/core/datatypes/m;
+    iput-object p2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->a:Lkik/core/datatypes/l;
 
     iput-object p3, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->b:Lkik/core/datatypes/f;
 
@@ -48,21 +48,21 @@
     .locals 3
 
     .prologue
-    .line 594
+    .line 620
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->c:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a:Lkik/core/interfaces/v;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->a:Lkik/core/datatypes/m;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->a:Lkik/core/datatypes/l;
 
-    invoke-virtual {v1}, Lkik/core/datatypes/m;->a()Lkik/core/datatypes/l;
+    invoke-virtual {v1}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$7;->b:Lkik/core/datatypes/f;
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/l;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/v;->a(Lkik/core/datatypes/k;Lkik/core/datatypes/f;)Lcom/kik/events/Promise;
 
-    .line 595
+    .line 621
     return-void
 .end method

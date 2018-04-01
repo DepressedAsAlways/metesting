@@ -3,9 +3,9 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/d;
 .implements Lrx/e;
-.implements Lrx/j;
+.implements Lrx/f;
+.implements Lrx/k;
 
 
 # annotations
@@ -24,10 +24,10 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicLong;",
-        "Lrx/d",
+        "Lrx/e",
         "<TT;>;",
-        "Lrx/e;",
-        "Lrx/j;"
+        "Lrx/f;",
+        "Lrx/k;"
     }
 .end annotation
 
@@ -37,10 +37,10 @@
 
 
 # instance fields
-.field final actual:Lrx/i;
+.field final actual:Lrx/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;"
         }
     .end annotation
@@ -59,29 +59,29 @@
 
 
 # direct methods
-.method public constructor <init>(Lrx/subjects/PublishSubject$PublishSubjectState;Lrx/i;)V
+.method public constructor <init>(Lrx/subjects/PublishSubject$PublishSubjectState;Lrx/j;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lrx/subjects/PublishSubject$PublishSubjectState",
             "<TT;>;",
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;)V"
         }
     .end annotation
 
     .prologue
-    .line 265
+    .line 264
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
-    .line 266
+    .line 265
     iput-object p1, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->parent:Lrx/subjects/PublishSubject$PublishSubjectState;
 
-    .line 267
-    iput-object p2, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/i;
+    .line 266
+    iput-object p2, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/j;
 
-    .line 268
+    .line 267
     return-void
 .end method
 
@@ -91,38 +91,38 @@
     .locals 5
 
     .prologue
-    .line 272
+    .line 271
     invoke-static {p1, p2}, Lrx/internal/operators/a;->a(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 274
+    .line 273
     :cond_0
     invoke-virtual {p0}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->get()J
 
     move-result-wide v0
 
-    .line 275
+    .line 274
     const-wide/high16 v2, -0x8000000000000000L
 
     cmp-long v2, v0, v2
 
     if-nez v2, :cond_2
 
-    .line 284
+    .line 283
     :cond_1
     :goto_0
     return-void
 
-    .line 278
+    .line 277
     :cond_2
     invoke-static {v0, v1, p1, p2}, Lrx/internal/operators/a;->a(JJ)J
 
     move-result-wide v2
 
-    .line 279
+    .line 278
     invoke-virtual {p0, v0, v1, v2, v3}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->compareAndSet(JJ)Z
 
     move-result v0
@@ -141,49 +141,49 @@
     .end annotation
 
     .prologue
-    .line 300
+    .line 299
     invoke-virtual {p0}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->get()J
 
     move-result-wide v0
 
-    .line 301
+    .line 300
     const-wide/high16 v2, -0x8000000000000000L
 
     cmp-long v2, v0, v2
 
     if-eqz v2, :cond_0
 
-    .line 302
+    .line 301
     iget-wide v2, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->produced:J
 
-    .line 303
+    .line 302
     cmp-long v0, v0, v2
 
     if-eqz v0, :cond_1
 
-    .line 304
+    .line 303
     const-wide/16 v0, 0x1
 
     add-long/2addr v0, v2
 
     iput-wide v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->produced:J
 
-    .line 305
-    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/i;
+    .line 304
+    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/j;
 
-    invoke-virtual {v0, p1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lrx/j;->a(Ljava/lang/Object;)V
 
-    .line 311
+    .line 310
     :cond_0
     :goto_0
     return-void
 
-    .line 307
+    .line 306
     :cond_1
     invoke-virtual {p0}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->unsubscribe()V
 
-    .line 308
-    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/i;
+    .line 307
+    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/j;
 
     new-instance v1, Lrx/exceptions/MissingBackpressureException;
 
@@ -191,7 +191,7 @@
 
     invoke-direct {v1, v2}, Lrx/exceptions/MissingBackpressureException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lrx/i;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {v0, v1}, Lrx/j;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method
@@ -200,7 +200,7 @@
     .locals 4
 
     .prologue
-    .line 315
+    .line 314
     invoke-virtual {p0}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->get()J
 
     move-result-wide v0
@@ -211,21 +211,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 316
-    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/i;
+    .line 315
+    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/j;
 
-    invoke-virtual {v0, p1}, Lrx/i;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {v0, p1}, Lrx/j;->a(Ljava/lang/Throwable;)V
 
-    .line 318
+    .line 317
     :cond_0
     return-void
 .end method
 
-.method public final bb_()V
+.method public final b()V
     .locals 4
 
     .prologue
-    .line 322
+    .line 321
     invoke-virtual {p0}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->get()J
 
     move-result-wide v0
@@ -236,12 +236,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 323
-    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/i;
+    .line 322
+    iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->actual:Lrx/j;
 
-    invoke-virtual {v0}, Lrx/i;->bb_()V
+    invoke-virtual {v0}, Lrx/j;->b()V
 
-    .line 325
+    .line 324
     :cond_0
     return-void
 .end method
@@ -250,7 +250,7 @@
     .locals 4
 
     .prologue
-    .line 288
+    .line 287
     invoke-virtual {p0}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->get()J
 
     move-result-wide v0
@@ -278,7 +278,7 @@
     .prologue
     const-wide/high16 v2, -0x8000000000000000L
 
-    .line 293
+    .line 292
     invoke-virtual {p0, v2, v3}, Lrx/subjects/PublishSubject$PublishSubjectProducer;->getAndSet(J)J
 
     move-result-wide v0
@@ -287,12 +287,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 294
+    .line 293
     iget-object v0, p0, Lrx/subjects/PublishSubject$PublishSubjectProducer;->parent:Lrx/subjects/PublishSubject$PublishSubjectState;
 
     invoke-virtual {v0, p0}, Lrx/subjects/PublishSubject$PublishSubjectState;->a(Lrx/subjects/PublishSubject$PublishSubjectProducer;)V
 
-    .line 296
+    .line 295
     :cond_0
     return-void
 .end method

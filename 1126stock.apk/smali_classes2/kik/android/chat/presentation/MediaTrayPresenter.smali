@@ -12,16 +12,26 @@
 
 
 # virtual methods
+.method public abstract a(Lrx/d;)Lrx/k;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lrx/d",
+            "<",
+            "Lkik/core/datatypes/messageExtensions/ContentMessage;",
+            ">;)",
+            "Lrx/k;"
+        }
+    .end annotation
+.end method
+
 .method public abstract a(I)V
 .end method
 
 .method public abstract a(ILjava/lang/String;)V
 .end method
 
-.method public abstract a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse$SavedCard;)V
-.end method
-
-.method public abstract a(Lcom/nhaarman/supertooltips/b;)V
+.method public abstract a(Lcom/nhaarman/supertooltips/a;)V
 .end method
 
 .method public abstract a(Ljava/lang/String;)V
@@ -31,6 +41,19 @@
 .end method
 
 .method public abstract a(Lkik/core/datatypes/messageExtensions/ContentMessage;)V
+.end method
+
+.method public abstract b(Lrx/d;)Lrx/k;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lrx/d",
+            "<",
+            "Lkik/core/datatypes/messageExtensions/ContentMessage;",
+            ">;)",
+            "Lrx/k;"
+        }
+    .end annotation
 .end method
 
 .method public abstract b(Ljava/lang/String;)V
@@ -96,11 +119,11 @@
 .method public abstract t()V
 .end method
 
-.method public abstract u()Lrx/c;
+.method public abstract u()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Void;",
             ">;"
@@ -108,5 +131,17 @@
     .end annotation
 .end method
 
-.method public abstract v()V
+.method public abstract v()Lrx/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lrx/d",
+            "<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract w()V
 .end method

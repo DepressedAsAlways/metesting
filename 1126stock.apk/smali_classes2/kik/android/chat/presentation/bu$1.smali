@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/presentation/bu$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/String;",
         ">;"
@@ -35,7 +35,7 @@
     .line 222
     iput-object p1, p0, Lkik/android/chat/presentation/bu$1;->a:Lkik/android/chat/presentation/bu;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Lkik/android/chat/presentation/r;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/presentation/r;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 1227
     iget-object v0, p0, Lkik/android/chat/presentation/bu$1;->a:Lkik/android/chat/presentation/bu;
@@ -103,7 +103,7 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2}, Lkik/android/chat/presentation/r;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-interface {v1, v2}, Lkik/android/chat/presentation/r;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 244
     iget-object v1, p0, Lkik/android/chat/presentation/bu$1;->a:Lkik/android/chat/presentation/bu;
@@ -130,10 +130,10 @@
     .line 240
     const-string v1, "Unexpected exception when requesting Phone Verification verification code."
 
-    invoke-static {v1}, Lkik/android/util/bc;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
     .line 241
-    invoke-static {p1}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {p1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method

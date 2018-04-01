@@ -1,5 +1,5 @@
 .class final Lkik/android/challenge/SafetyNetValidator$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<[B>;"
     }
 .end annotation
@@ -33,7 +33,7 @@
     .line 101
     iput-object p1, p0, Lkik/android/challenge/SafetyNetValidator$1;->a:Lkik/android/challenge/SafetyNetValidator;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method

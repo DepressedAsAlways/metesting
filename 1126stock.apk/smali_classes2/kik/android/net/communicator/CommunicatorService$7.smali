@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 556
+    .line 549
     iput-object p1, p0, Lkik/android/net/communicator/CommunicatorService$7;->a:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -37,7 +37,7 @@
     .locals 4
 
     .prologue
-    .line 561
+    .line 554
     const-string v0, "networkInfo"
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
@@ -46,7 +46,7 @@
 
     check-cast v0, Landroid/net/NetworkInfo;
 
-    .line 563
+    .line 556
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
@@ -57,7 +57,7 @@
 
     const/4 v1, 0x1
 
-    .line 564
+    .line 557
     :goto_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -72,27 +72,27 @@
     :goto_1
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 566
+    .line 559
     if-eqz v1, :cond_2
 
-    .line 567
+    .line 560
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$7;->a:Lkik/android/net/communicator/CommunicatorService;
 
     const-string v1, "Connectivity change"
 
     invoke-static {v0, v1}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;Ljava/lang/String;)V
 
-    .line 578
+    .line 571
     :goto_2
     return-void
 
-    .line 563
+    .line 556
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 564
+    .line 557
     :cond_1
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->toString()Ljava/lang/String;
 
@@ -100,7 +100,7 @@
 
     goto :goto_1
 
-    .line 572
+    .line 565
     :cond_2
     :try_start_0
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$7;->a:Lkik/android/net/communicator/CommunicatorService;
@@ -111,7 +111,7 @@
 
     goto :goto_2
 
-    .line 578
+    .line 571
     :catch_0
     move-exception v0
 

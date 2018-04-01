@@ -18,7 +18,7 @@
         "Ljava/lang/Object;",
         "Lkik/android/chat/presentation/bv",
         "<",
-        "Lkik/android/chat/view/ab;",
+        "Lkik/android/chat/view/ac;",
         ">;"
     }
 .end annotation

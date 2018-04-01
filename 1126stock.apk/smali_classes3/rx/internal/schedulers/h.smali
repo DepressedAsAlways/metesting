@@ -1,116 +1,121 @@
-.class final Lrx/internal/schedulers/h;
+.class public final Lrx/internal/schedulers/h;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lrx/b/a;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lrx/internal/schedulers/h$a;
+    }
+.end annotation
 
 
-# instance fields
-.field private final a:Lrx/b/a;
-
-.field private final b:Lrx/f$a;
-
-.field private final c:J
+# static fields
+.field public static final a:J
 
 
 # direct methods
-.method public constructor <init>(Lrx/b/a;Lrx/f$a;J)V
-    .locals 1
-
-    .prologue
-    .line 27
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 28
-    iput-object p1, p0, Lrx/internal/schedulers/h;->a:Lrx/b/a;
-
-    .line 29
-    iput-object p2, p0, Lrx/internal/schedulers/h;->b:Lrx/f$a;
-
-    .line 30
-    iput-wide p3, p0, Lrx/internal/schedulers/h;->c:J
-
-    .line 31
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
+.method static constructor <clinit>()V
     .locals 4
 
     .prologue
-    .line 35
-    iget-object v0, p0, Lrx/internal/schedulers/h;->b:Lrx/f$a;
-
-    invoke-virtual {v0}, Lrx/f$a;->isUnsubscribed()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 54
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 39
-    :cond_1
-    iget-wide v0, p0, Lrx/internal/schedulers/h;->c:J
-
-    .line 1173
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    .line 39
-    sub-long/2addr v0, v2
-
-    .line 40
-    const-wide/16 v2, 0x0
-
-    cmp-long v2, v0, v2
-
-    if-lez v2, :cond_2
-
-    .line 42
-    :try_start_0
-    invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 50
-    :cond_2
-    :goto_1
-    iget-object v0, p0, Lrx/internal/schedulers/h;->b:Lrx/f$a;
-
-    invoke-virtual {v0}, Lrx/f$a;->isUnsubscribed()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 53
-    iget-object v0, p0, Lrx/internal/schedulers/h;->a:Lrx/b/a;
-
-    invoke-interface {v0}, Lrx/b/a;->a()V
-
-    goto :goto_0
-
     .line 43
-    :catch_0
-    move-exception v0
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
+
+    const-string v1, "rx.scheduler.drift-tolerance"
+
+    const-wide/16 v2, 0xf
 
     .line 44
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    invoke-static {v1, v2, v3}, Ljava/lang/Long;->getLong(Ljava/lang/String;J)Ljava/lang/Long;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    .line 43
+    invoke-virtual {v0, v2, v3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    move-result-wide v0
+
+    sput-wide v0, Lrx/internal/schedulers/h;->a:J
 
     .line 45
-    invoke-static {v0}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
+    return-void
+.end method
 
-    goto :goto_1
+.method public static a(Lrx/g$a;Lrx/functions/a;JJLjava/util/concurrent/TimeUnit;)Lrx/k;
+    .locals 16
+
+    .prologue
+    .line 59
+    move-object/from16 v0, p6
+
+    move-wide/from16 v1, p4
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    move-result-wide v13
+
+    .line 60
+    sget-object v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 1120
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v6
+
+    .line 60
+    invoke-virtual {v4, v6, v7}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    move-result-wide v6
+
+    .line 61
+    move-object/from16 v0, p6
+
+    move-wide/from16 v1, p2
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    move-result-wide v4
+
+    add-long v8, v6, v4
+
+    .line 63
+    new-instance v4, Lrx/internal/subscriptions/SequentialSubscription;
+
+    invoke-direct {v4}, Lrx/internal/subscriptions/SequentialSubscription;-><init>()V
+
+    .line 64
+    new-instance v11, Lrx/internal/subscriptions/SequentialSubscription;
+
+    invoke-direct {v11, v4}, Lrx/internal/subscriptions/SequentialSubscription;-><init>(Lrx/k;)V
+
+    .line 66
+    new-instance v5, Lrx/internal/schedulers/h$1;
+
+    move-object/from16 v10, p1
+
+    move-object/from16 v12, p0
+
+    invoke-direct/range {v5 .. v14}, Lrx/internal/schedulers/h$1;-><init>(JJLrx/functions/a;Lrx/internal/subscriptions/SequentialSubscription;Lrx/g$a;J)V
+
+    .line 98
+    move-object/from16 v0, p0
+
+    move-wide/from16 v1, p2
+
+    move-object/from16 v3, p6
+
+    invoke-virtual {v0, v5, v1, v2, v3}, Lrx/g$a;->a(Lrx/functions/a;JLjava/util/concurrent/TimeUnit;)Lrx/k;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Lrx/internal/subscriptions/SequentialSubscription;->b(Lrx/k;)Z
+
+    .line 99
+    return-object v11
 .end method

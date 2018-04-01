@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/events/e;
+.implements Landroid/webkit/DownloadListener;
 
 
 # annotations
@@ -16,16 +16,6 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/kik/events/e",
-        "<",
-        "Ljava/lang/Object;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
 .field final synthetic a:Lcom/kik/cards/web/CardsWebViewFragment;
@@ -36,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 412
+    .line 401
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$45;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,21 +36,38 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
+.method public final onDownloadStart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
+    .locals 3
 
     .prologue
-    .line 417
+    .line 406
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$45;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->f(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/events/g;
+    invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    .line 407
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
+    .line 408
+    new-instance v1, Landroid/content/Intent;
 
-    .line 418
+    const-string v2, "android.intent.action.VIEW"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 409
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 410
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    .line 412
+    :cond_0
     return-void
 .end method

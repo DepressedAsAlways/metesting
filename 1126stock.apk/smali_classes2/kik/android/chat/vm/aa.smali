@@ -1,84 +1,53 @@
-.class public interface abstract Lkik/android/chat/vm/aa;
+.class final synthetic Lkik/android/chat/vm/aa;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ao;
-.implements Lkik/android/chat/vm/y;
+.implements Lcom/google/common/base/Predicate;
+
+
+# static fields
+.field private static final a:Lkik/android/chat/vm/aa;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/aa;
+
+    invoke-direct {v0}, Lkik/android/chat/vm/aa;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/aa;->a:Lkik/android/chat/vm/aa;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lcom/google/common/base/Predicate;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/aa;->a:Lkik/android/chat/vm/aa;
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract d()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end method
+.method public final apply(Ljava/lang/Object;)Z
+    .locals 1
 
-.method public abstract e()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
+    check-cast p1, Lkik/core/chat/profile/EmojiStatus$Name;
 
-.method public abstract h()Lrx/b/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/b/b",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
+    invoke-static {p1}, Lkik/android/chat/vm/t;->b(Lkik/core/chat/profile/EmojiStatus$Name;)Z
 
-.method public abstract j()V
-.end method
+    move-result v0
 
-.method public abstract s_()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract t_()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract u_()Lrx/b/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/b/b",
-            "<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
+    return v0
 .end method

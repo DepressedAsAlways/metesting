@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # annotations
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 193
+    .line 185
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$5;->a:Lcom/rounds/kik/view/VideoView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,38 +36,26 @@
 
 
 # virtual methods
-.method public final onGlobalLayout()V
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0x10
+    .annotation build Landroid/annotation/SuppressLint;
+        value = {
+            "ClickableViewAccessibility"
+        }
     .end annotation
 
     .prologue
-    .line 198
+    .line 190
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$5;->a:Lcom/rounds/kik/view/VideoView;
 
-    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->getHeight()I
-
-    move-result v0
-
-    if-lez v0, :cond_0
-
-    .line 199
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$5;->a:Lcom/rounds/kik/view/VideoView;
-
-    invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    # getter for: Lcom/rounds/kik/view/VideoView;->mGestureDetector:Landroid/view/GestureDetector;
+    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$1300(Lcom/rounds/kik/view/VideoView;)Landroid/view/GestureDetector;
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-virtual {v0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 200
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$5;->a:Lcom/rounds/kik/view/VideoView;
+    move-result v0
 
-    # invokes: Lcom/rounds/kik/view/VideoView;->reportOnViewAdded()V
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$1400(Lcom/rounds/kik/view/VideoView;)V
-
-    .line 202
-    :cond_0
-    return-void
+    return v0
 .end method

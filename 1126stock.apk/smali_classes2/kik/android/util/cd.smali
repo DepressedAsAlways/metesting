@@ -1,96 +1,60 @@
 .class public final Lkik/android/util/cd;
-.super Ljava/lang/Object;
+.super Lkik/android/util/bu;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnTouchListener;
 
-
-# instance fields
-.field private a:F
-
-.field private b:F
+# static fields
+.field private static a:Lkik/android/util/cd;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .prologue
-    .line 11
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 16
+    new-instance v0, Lkik/android/util/cd;
+
+    invoke-direct {v0}, Lkik/android/util/cd;-><init>()V
+
+    sput-object v0, Lkik/android/util/cd;->a:Lkik/android/util/cd;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()Landroid/graphics/Point;
-    .locals 3
+.method private constructor <init>()V
+    .locals 0
 
     .prologue
-    .line 28
-    new-instance v0, Landroid/graphics/Point;
+    .line 25
+    invoke-direct {p0}, Lkik/android/util/bu;-><init>()V
 
-    iget v1, p0, Lkik/android/util/cd;->a:F
+    .line 26
+    return-void
+.end method
 
-    float-to-int v1, v1
+.method public static a()Landroid/text/method/MovementMethod;
+    .locals 1
 
-    iget v2, p0, Lkik/android/util/cd;->b:F
-
-    float-to-int v2, v2
-
-    invoke-direct {v0, v1, v2}, Landroid/graphics/Point;-><init>(II)V
+    .prologue
+    .line 20
+    sget-object v0, Lkik/android/util/cd;->a:Lkik/android/util/cd;
 
     return-object v0
 .end method
 
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 2
+
+# virtual methods
+.method public final onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
+    .locals 1
 
     .prologue
-    .line 19
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+    .line 31
+    const-class v0, Landroid/text/style/ClickableSpan;
+
+    invoke-static {p1, p2, p3, v0}, Lkik/android/util/cd;->a(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;Ljava/lang/Class;)Z
 
     move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 20
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    move-result v0
-
-    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    add-float/2addr v0, v1
-
-    iput v0, p0, Lkik/android/util/cd;->a:F
-
-    .line 21
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    move-result v0
-
-    invoke-virtual {p1}, Landroid/view/View;->getTop()I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    add-float/2addr v0, v1
-
-    iput v0, p0, Lkik/android/util/cd;->b:F
-
-    .line 23
-    :cond_0
-    const/4 v0, 0x0
 
     return v0
 .end method

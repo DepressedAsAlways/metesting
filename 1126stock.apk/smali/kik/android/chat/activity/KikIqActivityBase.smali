@@ -11,15 +11,15 @@
 
 
 # instance fields
-.field private a:Lkik/core/net/outgoing/ad;
+.field private a:Lkik/core/net/outgoing/i;
 
 .field private e:Landroid/app/Dialog;
 
-.field protected i:Ljava/lang/String;
+.field protected k:Ljava/lang/String;
 
-.field protected j:Ljava/lang/String;
+.field protected l:Ljava/lang/String;
 
-.field protected k:Lkik/core/interfaces/ICommunication;
+.field protected m:Lkik/core/interfaces/ICommunication;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -52,7 +52,7 @@
     invoke-direct {p0}, Lkik/android/chat/activity/KikActivityBase;-><init>()V
 
     .line 24
-    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/ad;
+    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/i;
 
     .line 29
     iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->e:Landroid/app/Dialog;
@@ -60,12 +60,12 @@
     .line 30
     const-string v0, ""
 
-    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->i:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->k:Ljava/lang/String;
 
     .line 31
     const-string v0, ""
 
-    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->j:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->l:Ljava/lang/String;
 
     return-void
 .end method
@@ -118,7 +118,7 @@
     .line 1109
     new-instance v0, Landroid/support/v7/app/AlertDialog$Builder;
 
-    const v1, 0x7f0b00dd
+    const v1, 0x7f0b0113
 
     invoke-direct {v0, p0, v1}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
@@ -133,7 +133,7 @@
     invoke-virtual {v0, p2}, Landroid/support/v7/app/AlertDialog;->a(Ljava/lang/CharSequence;)V
 
     .line 1112
-    const v1, 0x7f090269
+    const v1, 0x7f09027d
 
     invoke-virtual {p0, v1}, Lkik/android/chat/activity/KikIqActivityBase;->getString(I)Ljava/lang/String;
 
@@ -167,75 +167,6 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/net/outgoing/ae;I)V
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 127
-    iget-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/ad;
-
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 128
-    packed-switch p2, :pswitch_data_0
-
-    .line 160
-    :goto_0
-    :pswitch_0
-    return-void
-
-    .line 137
-    :pswitch_1
-    invoke-direct {p0, v1}, Lkik/android/chat/activity/KikIqActivityBase;->a(Landroid/app/Dialog;)V
-
-    .line 138
-    iput-object v1, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/ad;
-
-    goto :goto_0
-
-    .line 142
-    :pswitch_2
-    new-instance v0, Lkik/android/chat/activity/KikIqActivityBase$2;
-
-    invoke-direct {v0, p0}, Lkik/android/chat/activity/KikIqActivityBase$2;-><init>(Lkik/android/chat/activity/KikIqActivityBase;)V
-
-    invoke-virtual {p0, v0}, Lkik/android/chat/activity/KikIqActivityBase;->runOnUiThread(Ljava/lang/Runnable;)V
-
-    .line 152
-    iput-object v1, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/ad;
-
-    goto :goto_0
-
-    .line 158
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "Dropping unexpected iq: "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 128
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_1
-        :pswitch_2
-    .end packed-switch
-.end method
-
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
 
@@ -257,22 +188,22 @@
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/activity/KikIqActivityBase;)V
 
     .line 42
-    const v0, 0x7f0903e8
+    const v0, 0x7f0903fc
 
     invoke-virtual {p0, v0}, Lkik/android/chat/activity/KikIqActivityBase;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->i:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->k:Ljava/lang/String;
 
     .line 43
-    const v0, 0x7f0904eb
+    const v0, 0x7f0904ff
 
     invoke-virtual {p0, v0}, Lkik/android/chat/activity/KikIqActivityBase;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->j:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->l:Ljava/lang/String;
 
     .line 44
     return-void
@@ -298,4 +229,73 @@
 
     .line 205
     return-void
+.end method
+
+.method public stanzaStateChanged(Lkik/core/net/outgoing/j;I)V
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 127
+    iget-object v0, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/i;
+
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 128
+    packed-switch p2, :pswitch_data_0
+
+    .line 160
+    :goto_0
+    :pswitch_0
+    return-void
+
+    .line 137
+    :pswitch_1
+    invoke-direct {p0, v1}, Lkik/android/chat/activity/KikIqActivityBase;->a(Landroid/app/Dialog;)V
+
+    .line 138
+    iput-object v1, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/i;
+
+    goto :goto_0
+
+    .line 142
+    :pswitch_2
+    new-instance v0, Lkik/android/chat/activity/KikIqActivityBase$2;
+
+    invoke-direct {v0, p0}, Lkik/android/chat/activity/KikIqActivityBase$2;-><init>(Lkik/android/chat/activity/KikIqActivityBase;)V
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/activity/KikIqActivityBase;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    .line 152
+    iput-object v1, p0, Lkik/android/chat/activity/KikIqActivityBase;->a:Lkik/core/net/outgoing/i;
+
+    goto :goto_0
+
+    .line 158
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Dropping unexpected iq: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    goto :goto_0
+
+    .line 128
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+    .end packed-switch
 .end method

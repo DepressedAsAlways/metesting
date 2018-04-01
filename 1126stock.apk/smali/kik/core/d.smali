@@ -16,26 +16,29 @@
 
 
 # virtual methods
-.method public abstract a(Lkik/core/interfaces/ac;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ae;)Lkik/core/interfaces/IAddressBookIntegration;
+.method public abstract a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ag;)Lkik/core/interfaces/IAddressBookIntegration;
 .end method
 
 .method public abstract a()Lkik/core/interfaces/ICommunication;
 .end method
 
-.method public abstract a(Lkik/core/interfaces/y;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;)Lkik/core/interfaces/ac;
+.method public abstract a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/v;Lkik/core/interfaces/ad;Lkik/core/interfaces/ag;Lkik/core/interfaces/l;Ljava/util/concurrent/ExecutorService;Lkik/core/e/y;)Lkik/core/interfaces/IConversation;
 .end method
 
-.method public abstract a(Lkik/core/interfaces/ac;Lkik/core/interfaces/ICommunication;)Lkik/core/interfaces/ae;
+.method public abstract a(Lkik/core/interfaces/z;Ljava/util/concurrent/ExecutorService;Lkik/core/net/e;)Lkik/core/interfaces/ad;
 .end method
 
-.method public abstract a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ac;Lkik/core/interfaces/y;Lkik/core/interfaces/ae;)Lkik/core/interfaces/e;
+.method public abstract a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;)Lkik/core/interfaces/ag;
 .end method
 
-.method public abstract a(Lkik/core/interfaces/ac;Lkik/core/interfaces/ICommunication;Lkik/core/net/e;Lcom/kik/events/c;)Lkik/core/interfaces/f;
+.method public abstract a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/ad;Lkik/core/interfaces/z;Lkik/core/interfaces/ag;)Lkik/core/interfaces/e;
+.end method
+
+.method public abstract a(Lkik/core/interfaces/ad;Lkik/core/interfaces/ICommunication;Lkik/core/net/e;Lcom/kik/events/c;)Lkik/core/interfaces/f;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/core/interfaces/ad;",
             "Lkik/core/interfaces/ICommunication;",
             "Lkik/core/net/e;",
             "Lcom/kik/events/c",
@@ -47,23 +50,20 @@
     .end annotation
 .end method
 
-.method public abstract a(Lkik/core/interfaces/ICommunication;Lkik/core/interfaces/v;Lkik/core/interfaces/ac;Lkik/core/interfaces/ae;Lkik/core/interfaces/m;Ljava/util/concurrent/ExecutorService;Lkik/core/f/w;)Lkik/core/interfaces/j;
+.method public abstract b()Lkik/core/interfaces/k;
 .end method
 
-.method public abstract b()Lkik/core/interfaces/l;
-.end method
-
-.method public abstract c()Lkik/core/interfaces/y;
+.method public abstract c()Lkik/core/interfaces/z;
 .end method
 
 .method public abstract e()Lkik/core/net/e;
 .end method
 
-.method public abstract f()Lkik/core/interfaces/af;
+.method public abstract f()Lkik/core/interfaces/ah;
 .end method
 
 .method public abstract g()Lkik/core/interfaces/d;
 .end method
 
-.method public abstract h()Lkik/core/interfaces/z;
+.method public abstract h()Lkik/core/interfaces/aa;
 .end method

@@ -25,15 +25,15 @@
     .locals 0
 
     .prologue
-    .line 177
+    .line 190
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 178
+    .line 191
     iput-object p1, p0, Lkik/android/gallery/vm/a$a;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 179
+    .line 192
     iput-object p2, p0, Lkik/android/gallery/vm/a$a;->b:Ljava/lang/String;
 
-    .line 180
+    .line 193
     return-void
 .end method

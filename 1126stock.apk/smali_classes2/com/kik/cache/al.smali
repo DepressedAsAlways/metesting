@@ -1,176 +1,63 @@
-.class public final Lcom/kik/cache/al;
-.super Lcom/kik/cache/aa;
-.source "SourceFile"
+.class final synthetic Lcom/kik/cache/al;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/functions/b;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/kik/cache/aa",
-        "<",
-        "Lkik/core/datatypes/o;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field private final a:Lcom/kik/cache/aj;
+
+.field private final b:Lcom/kik/cache/UserByteImageRequest;
+
+.field private final c:I
+
+.field private final d:I
 
 
 # direct methods
-.method private constructor <init>(Lkik/core/datatypes/o;Ljava/lang/String;Lcom/android/volley/i$b;Landroid/graphics/Bitmap$Config;Lcom/android/volley/i$a;)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkik/core/datatypes/o;",
-            "Ljava/lang/String;",
-            "Lcom/android/volley/i$b",
-            "<",
-            "Landroid/graphics/Bitmap;",
-            ">;",
-            "Landroid/graphics/Bitmap$Config;",
-            "Lcom/android/volley/i$a;",
-            ")V"
-        }
-    .end annotation
+.method private constructor <init>(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)V
+    .locals 0
 
-    .prologue
-    const/4 v4, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 36
-    move-object v0, p0
+    iput-object p1, p0, Lcom/kik/cache/al;->a:Lcom/kik/cache/aj;
 
-    move-object v1, p1
+    iput-object p2, p0, Lcom/kik/cache/al;->b:Lcom/kik/cache/UserByteImageRequest;
 
-    move-object v2, p2
+    iput p3, p0, Lcom/kik/cache/al;->c:I
 
-    move-object v3, p3
+    iput p4, p0, Lcom/kik/cache/al;->d:I
 
-    move v5, v4
-
-    move-object v6, p4
-
-    move-object v7, p5
-
-    invoke-direct/range {v0 .. v7}, Lcom/kik/cache/aa;-><init>(Ljava/lang/Object;Ljava/lang/String;Lcom/android/volley/i$b;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/i$a;)V
-
-    .line 37
     return-void
 .end method
 
-.method public static a(Lkik/core/datatypes/o;)Lcom/kik/cache/al;
-    .locals 6
+.method public static a(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)Lrx/functions/b;
+    .locals 1
 
-    .prologue
-    const/4 v0, 0x0
-
-    .line 19
-    invoke-virtual {p0}, Lkik/core/datatypes/o;->e()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 20
-    if-nez v1, :cond_1
-
-    .line 31
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 23
-    :cond_1
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 25
-    const-string v3, "/thumb.jpg"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    .line 27
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 31
     new-instance v0, Lcom/kik/cache/al;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/kik/cache/al;-><init>(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;II)V
 
-    move-result-object v2
-
-    sget-object v3, Lcom/kik/cache/ac;->f:Lcom/android/volley/i$b;
-
-    sget-object v4, Lcom/kik/cache/al;->b:Landroid/graphics/Bitmap$Config;
-
-    sget-object v5, Lcom/kik/cache/ac;->e:Lcom/android/volley/i$a;
-
-    move-object v1, p0
-
-    invoke-direct/range {v0 .. v5}, Lcom/kik/cache/al;-><init>(Lkik/core/datatypes/o;Ljava/lang/String;Lcom/android/volley/i$b;Landroid/graphics/Bitmap$Config;Lcom/android/volley/i$a;)V
-
-    goto :goto_0
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(II)Ljava/lang/String;
-    .locals 3
+.method public final call(Ljava/lang/Object;)V
+    .locals 4
 
-    .prologue
-    .line 42
-    invoke-virtual {p0}, Lcom/kik/cache/al;->x()Ljava/lang/Object;
+    iget-object v0, p0, Lcom/kik/cache/al;->a:Lcom/kik/cache/aj;
 
-    move-result-object v0
+    iget-object v1, p0, Lcom/kik/cache/al;->b:Lcom/kik/cache/UserByteImageRequest;
 
-    check-cast v0, Lkik/core/datatypes/o;
+    iget v2, p0, Lcom/kik/cache/al;->c:I
 
-    invoke-virtual {v0}, Lkik/core/datatypes/o;->e()Ljava/lang/String;
+    iget v3, p0, Lcom/kik/cache/al;->d:I
 
-    move-result-object v0
+    check-cast p1, Lrx/Emitter;
 
-    .line 43
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-static {v0, v1, v2, v3, p1}, Lcom/kik/cache/aj;->a(Lcom/kik/cache/aj;Lcom/kik/cache/UserByteImageRequest;IILrx/Emitter;)V
 
-    const-string v2, "#W"
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, "#H"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "#!#PublicGroupAdapterImageRequest"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

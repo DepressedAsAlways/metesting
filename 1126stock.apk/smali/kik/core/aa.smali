@@ -4,8 +4,8 @@
 
 
 # virtual methods
-.method public abstract a(Lkik/core/datatypes/l;Ljava/lang/String;)V
+.method public abstract a(Lkik/core/datatypes/k;Ljava/lang/String;)V
 .end method
 
-.method public abstract b(Lkik/core/datatypes/l;Ljava/lang/String;)V
+.method public abstract b(Lkik/core/datatypes/k;Ljava/lang/String;)V
 .end method

@@ -45,7 +45,8 @@
     iput-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;->a:Ljava/lang/Object;
 
     .line 2047
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->d()Z
+    # getter for: Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->access$1500()Z
 
     .line 1038
     return-void
@@ -74,7 +75,8 @@
     iput-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;->a:Ljava/lang/Object;
 
     .line 3047
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->d()Z
+    # getter for: Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->access$1500()Z
 
     .line 1044
     return-void
@@ -104,7 +106,8 @@
 
     .line 1136
     :try_start_0
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->e()Lcom/google/protobuf/Parser;
+    # getter for: Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->access$1800()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -303,12 +306,13 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+    invoke-direct {v0, p0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/antispam/safetynet/rpc/SafetynetService$1;)V
 
     .line 1076
     iget-object v1, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;->a:Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;Ljava/lang/Object;)Ljava/lang/Object;
+    # setter for: Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
+    invoke-static {v0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->access$1702(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1077
     invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;->onBuilt()V
@@ -324,7 +328,7 @@
 
     .prologue
     .line 1117
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->c()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getDefaultInstance()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
     move-result-object v0
 
@@ -336,7 +340,7 @@
 
     .line 1118
     :cond_0
-    invoke-virtual {p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getJws()Ljava/lang/String;
 
     move-result-object v0
 
@@ -347,7 +351,8 @@
     if-nez v0, :cond_1
 
     .line 1119
-    invoke-static {p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Ljava/lang/Object;
+    # getter for: Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
+    invoke-static {p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->access$1700(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -702,7 +707,7 @@
 
     .prologue
     .line 11063
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->c()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getDefaultInstance()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
     move-result-object v0
 
@@ -715,7 +720,7 @@
 
     .prologue
     .line 10063
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->c()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getDefaultInstance()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
     move-result-object v0
 

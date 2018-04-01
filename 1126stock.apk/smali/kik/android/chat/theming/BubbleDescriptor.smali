@@ -78,7 +78,7 @@
     iput v0, p0, Lkik/android/chat/theming/BubbleDescriptor;->c:I
 
     .line 39
-    invoke-static {p5}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {p5}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v0
 

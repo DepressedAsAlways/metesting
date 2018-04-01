@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 744
+    .line 797
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$6;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-direct {p0, p2}, Landroid/widget/MediaController;-><init>(Landroid/content/Context;)V
@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 754
+    .line 807
     return-void
 .end method
 
@@ -45,11 +45,11 @@
     .locals 1
 
     .prologue
-    .line 759
+    .line 812
     sget v0, Lkik/android/chat/fragment/CameraFragment;->a:I
 
     invoke-super {p0, v0}, Landroid/widget/MediaController;->show(I)V
 
-    .line 760
+    .line 813
     return-void
 .end method

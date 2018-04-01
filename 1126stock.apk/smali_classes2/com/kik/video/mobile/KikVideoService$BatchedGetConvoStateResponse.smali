@@ -242,7 +242,7 @@
     iget-object v3, p0, Lcom/kik/video/mobile/KikVideoService$BatchedGetConvoStateResponse;->latestStates_:Ljava/util/List;
 
     .line 872
-    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState;->h()Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState;->parser()Lcom/google/protobuf/Parser;
 
     move-result-object v4
 

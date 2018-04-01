@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/kik/cards/web/CardsWebViewFragment;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/kik/cards/web/CardsWebViewFragment;->g()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1717
+    .line 1705
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$28;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,14 +37,20 @@
 
 # virtual methods
 .method public final run()V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 1721
+    .line 1708
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$28;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->v(Lcom/kik/cards/web/CardsWebViewFragment;)V
+    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->v(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/events/g;
 
-    .line 1722
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/kik/events/g;->a(Ljava/lang/Object;)V
+
+    .line 1709
     return-void
 .end method

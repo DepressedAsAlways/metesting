@@ -1,11 +1,11 @@
 .class final Lkik/android/chat/fragment/KikChatFragment$6;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikChatFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    value = Lkik/android/chat/fragment/KikChatFragment;->handleBackPress()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -32,48 +32,36 @@
     .locals 0
 
     .prologue
-    .line 1023
+    .line 2034
     iput-object p1, p0, Lkik/android/chat/fragment/KikChatFragment$6;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;)V
-    .locals 2
+.method public final synthetic a(Ljava/lang/Object;)V
+    .locals 1
 
     .prologue
-    .line 1023
+    .line 2034
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 2027
-    iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$6;->a:Lkik/android/chat/fragment/KikChatFragment;
-
-    invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->o(Lkik/android/chat/fragment/KikChatFragment;)Z
+    .line 3038
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 2028
+    .line 3039
     iget-object v0, p0, Lkik/android/chat/fragment/KikChatFragment$6;->a:Lkik/android/chat/fragment/KikChatFragment;
 
-    new-instance v1, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;
+    invoke-static {v0}, Lkik/android/chat/fragment/KikChatFragment;->o(Lkik/android/chat/fragment/KikChatFragment;)V
 
-    invoke-direct {v1}, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;-><init>()V
-
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikChatFragment;->a(Lkik/android/util/af;)Lcom/kik/events/Promise;
-
-    .line 1023
+    .line 2034
     :cond_0
     return-void
 .end method

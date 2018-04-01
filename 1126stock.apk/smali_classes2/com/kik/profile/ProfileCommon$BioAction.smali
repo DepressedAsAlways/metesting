@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/profile/ProfileCommon$a;
+.implements Lcom/kik/profile/ProfileCommon$b;
 
 
 # annotations

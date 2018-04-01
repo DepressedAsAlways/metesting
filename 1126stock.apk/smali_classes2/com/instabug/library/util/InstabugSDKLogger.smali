@@ -24,7 +24,9 @@
 
     .prologue
     .line 69
-    invoke-static {}, Lcom/instabug/library/Instabug;->isDebugEnabled()Z
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->b()Z
 
     move-result v0
 
@@ -168,29 +170,52 @@
     .locals 1
 
     .prologue
-    .line 123
+    .line 127
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 130
+    :goto_0
+    return-void
+
+    .line 129
+    :cond_0
     invoke-static {p0}, Lcom/instabug/library/util/InstabugSDKLogger;->logTag(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 124
-    return-void
+    goto :goto_0
 .end method
 
 .method public static e(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
 
     .prologue
-    .line 138
+    .line 144
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->b()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 145
     invoke-static {p0}, Lcom/instabug/library/util/InstabugSDKLogger;->logTag(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0, p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 139
+    .line 147
+    :cond_0
     return-void
 .end method
 
@@ -199,7 +224,7 @@
 
     .prologue
     .line 99
-    invoke-static {p0}, Lcom/instabug/library/util/InstabugSDKLogger;->logTag(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
 
     .line 100
     return-void
@@ -256,6 +281,9 @@
     .locals 0
 
     .prologue
+    .line 40
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
     .line 41
     return-void
 .end method
@@ -264,43 +292,82 @@
     .locals 1
 
     .prologue
-    .line 111
+    .line 113
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 116
+    :goto_0
+    return-void
+
+    .line 115
+    :cond_0
     invoke-static {p0}, Lcom/instabug/library/util/InstabugSDKLogger;->logTag(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 112
-    return-void
+    goto :goto_0
 .end method
 
 .method public static wtf(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 1
 
     .prologue
-    .line 150
+    .line 158
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 161
+    :goto_0
+    return-void
+
+    .line 160
+    :cond_0
     invoke-static {p0}, Lcom/instabug/library/util/InstabugSDKLogger;->logTag(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0, p1}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 151
-    return-void
+    goto :goto_0
 .end method
 
 .method public static wtf(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
 
     .prologue
-    .line 165
+    .line 175
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 178
+    :goto_0
+    return-void
+
+    .line 177
+    :cond_0
     invoke-static {p0}, Lcom/instabug/library/util/InstabugSDKLogger;->logTag(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0, p1, p2}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 166
-    return-void
+    goto :goto_0
 .end method

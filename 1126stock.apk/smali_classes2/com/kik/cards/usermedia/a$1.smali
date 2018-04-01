@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/events/q;
+.implements Lcom/kik/events/p;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/kik/events/q",
+        "Lcom/kik/events/p",
         "<",
         "Landroid/content/Intent;",
         "Ljava/util/List",
@@ -84,7 +84,7 @@
     .line 1049
     iget-object v1, p0, Lcom/kik/cards/usermedia/a$1;->c:Lcom/kik/cards/usermedia/a;
 
-    invoke-static {v1}, Lcom/kik/cards/usermedia/a;->a(Lcom/kik/cards/usermedia/a;)Lkik/core/interfaces/ac;
+    invoke-static {v1}, Lcom/kik/cards/usermedia/a;->a(Lcom/kik/cards/usermedia/a;)Lkik/core/interfaces/ad;
 
     move-result-object v1
 
@@ -94,7 +94,7 @@
 
     iget-object v3, p0, Lcom/kik/cards/usermedia/a$1;->a:Ljava/io/File;
 
-    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ac;->a(Ljava/util/UUID;Ljava/io/File;)V
+    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ad;->a(Ljava/util/UUID;Ljava/io/File;)V
 
     .line 40
     :cond_0

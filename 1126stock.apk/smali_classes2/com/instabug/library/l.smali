@@ -1,111 +1,687 @@
-.class public Lcom/instabug/library/l;
-.super Lcom/instabug/library/h;
+.class public final Lcom/instabug/library/l;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
-.implements Lcom/instabug/library/a;
+.implements Lcom/instabug/library/tracking/b$a;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/instabug/library/l$a;
-    }
-.end annotation
+# static fields
+.field private static a:Lcom/instabug/library/l;
 
 
 # instance fields
-.field private a:Landroid/widget/ImageView;
+.field private b:Lcom/instabug/library/g/d;
+
+.field private c:Landroid/content/Context;
+
+.field private d:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .prologue
-    .line 21
-    invoke-direct {p0}, Lcom/instabug/library/h;-><init>()V
-
-    .line 148
-    return-void
-.end method
-
-.method private d()V
+.method private constructor <init>(Lcom/instabug/library/g/d;Landroid/content/Context;)V
     .locals 4
 
     .prologue
-    .line 123
-    invoke-static {}, Lcom/instabug/library/Instabug;->getSettingsBundle()Lcom/instabug/library/u;
+    .line 63
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1220
-    invoke-static {}, Lcom/instabug/library/s;->g()J
+    .line 64
+    iput-object p1, p0, Lcom/instabug/library/l;->b:Lcom/instabug/library/g/d;
+
+    .line 65
+    iput-object p2, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    .line 66
+    new-instance v0, Lcom/instabug/library/tracking/b;
+
+    invoke-direct {v0, p0}, Lcom/instabug/library/tracking/b;-><init>(Lcom/instabug/library/tracking/b$a;)V
+
+    .line 68
+    iget-object v1, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    invoke-static {v1}, Landroid/support/v4/content/LocalBroadcastManager;->getInstance(Landroid/content/Context;)Landroid/support/v4/content/LocalBroadcastManager;
+
+    move-result-object v1
+
+    new-instance v2, Landroid/content/IntentFilter;
+
+    const-string v3, "current_activity_lifecycle_changed"
+
+    invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v0, v2}, Landroid/support/v4/content/LocalBroadcastManager;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
+
+    .line 70
+    return-void
+.end method
+
+.method static synthetic a(Lcom/instabug/library/l;)Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    .line 47
+    iget-object v0, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method public static a()Lcom/instabug/library/l;
+    .locals 1
+
+    .prologue
+    .line 60
+    sget-object v0, Lcom/instabug/library/l;->a:Lcom/instabug/library/l;
+
+    return-object v0
+.end method
+
+.method public static a(Lcom/instabug/library/g/d;Landroid/content/Context;)V
+    .locals 1
+
+    .prologue
+    .line 55
+    sget-object v0, Lcom/instabug/library/l;->a:Lcom/instabug/library/l;
+
+    if-nez v0, :cond_0
+
+    .line 56
+    new-instance v0, Lcom/instabug/library/l;
+
+    invoke-direct {v0, p0, p1}, Lcom/instabug/library/l;-><init>(Lcom/instabug/library/g/d;Landroid/content/Context;)V
+
+    sput-object v0, Lcom/instabug/library/l;->a:Lcom/instabug/library/l;
+
+    .line 57
+    :cond_0
+    return-void
+.end method
+
+.method private a(Lcom/instabug/library/model/Session$SessionState;)V
+    .locals 4
+
+    .prologue
+    .line 231
+    sget-object v0, Lcom/instabug/library/model/Session$SessionState;->Finish:Lcom/instabug/library/model/Session$SessionState;
+
+    invoke-virtual {p1, v0}, Lcom/instabug/library/model/Session$SessionState;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 232
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lcom/instabug/library/g/d;->d(Z)V
+
+    .line 233
+    sget-object v0, Lcom/instabug/library/core/eventbus/coreeventbus/SDKCoreEvent;->SESSION_FINISHED:Lcom/instabug/library/core/eventbus/coreeventbus/SDKCoreEvent;
+
+    invoke-static {v0}, Lcom/instabug/library/core/eventbus/coreeventbus/b;->a(Lcom/instabug/library/core/eventbus/coreeventbus/SDKCoreEvent;)V
+
+    .line 240
+    :goto_0
+    invoke-static {}, Lcom/instabug/library/core/eventbus/b;->a()Lcom/instabug/library/core/eventbus/b;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/instabug/library/core/eventbus/b;->a(Ljava/lang/Object;)V
+
+    .line 242
+    iget-object v0, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    new-instance v1, Landroid/content/Intent;
+
+    iget-object v2, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    const-class v3, Lcom/instabug/library/network/worker/uploader/InstabugSessionUploaderService;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 243
+    iget-object v0, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    new-instance v1, Landroid/content/Intent;
+
+    iget-object v2, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    const-class v3, Lcom/instabug/library/bugreporting/network/InstabugBugsUploaderService;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 244
+    iget-object v0, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    new-instance v1, Landroid/content/Intent;
+
+    iget-object v2, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    const-class v3, Lcom/instabug/library/messaging/InstabugMessageUploaderService;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 245
+    iget-object v0, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    new-instance v1, Landroid/content/Intent;
+
+    iget-object v2, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    const-class v3, Lcom/instabug/library/network/worker/fetcher/InstabugFeaturesFetcherService;
+
+    invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 246
+    return-void
+
+    .line 236
+    :cond_0
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Lcom/instabug/library/g/d;->d(Z)V
+
+    .line 237
+    sget-object v0, Lcom/instabug/library/core/eventbus/coreeventbus/SDKCoreEvent;->SESSION_STARTED:Lcom/instabug/library/core/eventbus/coreeventbus/SDKCoreEvent;
+
+    invoke-static {v0}, Lcom/instabug/library/core/eventbus/coreeventbus/b;->a(Lcom/instabug/library/core/eventbus/coreeventbus/SDKCoreEvent;)V
+
+    goto :goto_0
+.end method
+
+.method private static d()V
+    .locals 2
+
+    .prologue
+    .line 222
+    invoke-static {}, Lcom/instabug/library/bugreporting/a;->a()Lcom/instabug/library/bugreporting/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/bugreporting/a;->c()Lcom/instabug/library/bugreporting/model/Bug;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 223
+    invoke-static {}, Lcom/instabug/library/bugreporting/a;->a()Lcom/instabug/library/bugreporting/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/bugreporting/a;->c()Lcom/instabug/library/bugreporting/model/Bug;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/bugreporting/model/Bug;->e()Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 224
+    invoke-static {}, Lcom/instabug/library/bugreporting/a;->a()Lcom/instabug/library/bugreporting/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/bugreporting/a;->c()Lcom/instabug/library/bugreporting/model/Bug;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/bugreporting/model/Bug;->e()Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    .line 225
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/instabug/library/model/Attachment;
+
+    .line 226
+    invoke-static {}, Lcom/instabug/library/bugreporting/a;->a()Lcom/instabug/library/bugreporting/a;
+
+    invoke-static {v0}, Lcom/instabug/library/bugreporting/a;->a(Lcom/instabug/library/model/Attachment;)V
+
+    goto :goto_0
+
+    .line 228
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/instabug/library/tracking/a;)V
+    .locals 4
+
+    .prologue
+    .line 257
+    sget-object v0, Lcom/instabug/library/l$3;->a:[I
+
+    invoke-virtual {p1}, Lcom/instabug/library/tracking/a;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    packed-switch v0, :pswitch_data_0
+
+    .line 274
+    :goto_0
+    return-void
+
+    .line 259
+    :pswitch_0
+    invoke-static {}, Lcom/instabug/library/g;->a()Lcom/instabug/library/g;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/instabug/library/Feature;->INSTABUG:Lcom/instabug/library/Feature;
+
+    invoke-virtual {v0, v1}, Lcom/instabug/library/g;->a(Lcom/instabug/library/Feature;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget v0, p0, Lcom/instabug/library/l;->d:I
+
+    if-nez v0, :cond_1
+
+    .line 260
+    invoke-static {}, Lcom/instabug/library/analytics/AnalyticsObserver;->getInstance()Lcom/instabug/library/analytics/AnalyticsObserver;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/analytics/AnalyticsObserver;->catchSessionStart()V
+
+    .line 2073
+    const-string v0, "Session started"
+
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2084
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, Lcom/instabug/library/l$1;
+
+    invoke-direct {v1, p0}, Lcom/instabug/library/l$1;-><init>(Lcom/instabug/library/l;)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    .line 2098
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 2075
+    invoke-static {}, Lcom/instabug/library/g;->a()Lcom/instabug/library/g;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/instabug/library/Feature;->INSTABUG:Lcom/instabug/library/Feature;
+
+    invoke-virtual {v0, v1}, Lcom/instabug/library/g;->a(Lcom/instabug/library/Feature;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 2119
+    const-string v0, "Handling session started"
+
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2120
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 123
+    const-wide/16 v2, 0x3e8
+
+    div-long/2addr v0, v2
+
+    invoke-static {v0, v1}, Lcom/instabug/library/g/d;->f(J)V
+
+    .line 2122
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->t()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 2123
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->u()V
+
+    .line 2129
+    :cond_0
+    :goto_1
+    sget-object v0, Lcom/instabug/library/model/Session$SessionState;->Start:Lcom/instabug/library/model/Session$SessionState;
+
+    invoke-direct {p0, v0}, Lcom/instabug/library/l;->a(Lcom/instabug/library/model/Session$SessionState;)V
+
+    .line 263
+    :cond_1
+    iget v0, p0, Lcom/instabug/library/l;->d:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lcom/instabug/library/l;->d:I
+
+    goto :goto_0
+
+    .line 2125
+    :cond_2
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->v()Ljava/util/Date;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v0
+
     const-wide/16 v2, 0x0
 
     cmp-long v0, v0, v2
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    .line 124
-    invoke-static {}, Lcom/instabug/library/internal/d/a/f;->a()Lcom/instabug/library/internal/d/a/g;
+    .line 2126
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lcom/instabug/library/g/d;->a(J)V
+
+    goto :goto_1
+
+    .line 266
+    :pswitch_1
+    invoke-static {}, Lcom/instabug/library/g;->a()Lcom/instabug/library/g;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/instabug/library/internal/d/a/g;->b()Ljava/util/List;
+    iget-object v1, p0, Lcom/instabug/library/l;->c:Landroid/content/Context;
+
+    .line 3127
+    new-instance v2, Ljava/lang/Thread;
+
+    new-instance v3, Lcom/instabug/library/g$1;
+
+    invoke-direct {v3, v0, v1}, Lcom/instabug/library/g$1;-><init>(Lcom/instabug/library/g;Landroid/content/Context;)V
+
+    invoke-direct {v2, v3}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    .line 3143
+    invoke-virtual {v2}, Ljava/lang/Thread;->start()V
+
+    .line 267
+    invoke-static {}, Lcom/instabug/library/g;->a()Lcom/instabug/library/g;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    sget-object v1, Lcom/instabug/library/Feature;->INSTABUG:Lcom/instabug/library/Feature;
+
+    invoke-virtual {v0, v1}, Lcom/instabug/library/g;->a(Lcom/instabug/library/Feature;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_3
 
-    .line 125
-    invoke-static {}, Lcom/instabug/library/InstabugFeaturesManager;->getInstance()Lcom/instabug/library/InstabugFeaturesManager;
+    iget v0, p0, Lcom/instabug/library/l;->d:I
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_3
+
+    .line 268
+    invoke-static {}, Lcom/instabug/library/analytics/AnalyticsObserver;->getInstance()Lcom/instabug/library/analytics/AnalyticsObserver;
 
     move-result-object v0
 
-    sget-object v1, Lcom/instabug/library/Feature;->IN_APP_MESSAGING:Lcom/instabug/library/Feature;
+    invoke-virtual {v0}, Lcom/instabug/library/analytics/AnalyticsObserver;->catchSessionEnd()V
 
-    invoke-virtual {v0, v1}, Lcom/instabug/library/InstabugFeaturesManager;->getFeatureState(Lcom/instabug/library/Feature;)Lcom/instabug/library/Feature$State;
+    .line 269
+    invoke-virtual {p0}, Lcom/instabug/library/l;->b()V
+
+    .line 271
+    :cond_3
+    iget v0, p0, Lcom/instabug/library/l;->d:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lcom/instabug/library/l;->d:I
+
+    goto/16 :goto_0
+
+    .line 257
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final b()V
+    .locals 10
+
+    .prologue
+    .line 133
+    const-string v0, "Session finished"
+
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1149
+    new-instance v0, Ljava/lang/Thread;
+
+    new-instance v1, Lcom/instabug/library/l$2;
+
+    invoke-direct {v1, p0}, Lcom/instabug/library/l$2;-><init>(Lcom/instabug/library/l;)V
+
+    invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    .line 1161
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 136
+    invoke-static {}, Lcom/instabug/library/g;->a()Lcom/instabug/library/g;
 
     move-result-object v0
 
-    sget-object v1, Lcom/instabug/library/Feature$State;->DISABLED:Lcom/instabug/library/Feature$State;
+    sget-object v1, Lcom/instabug/library/Feature;->INSTABUG:Lcom/instabug/library/Feature;
 
-    if-ne v0, v1, :cond_1
+    invoke-virtual {v0, v1}, Lcom/instabug/library/g;->a(Lcom/instabug/library/Feature;)Z
 
-    .line 126
-    :cond_0
-    iget-object v0, p0, Lcom/instabug/library/l;->a:Landroid/widget/ImageView;
+    move-result v0
 
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    if-eqz v0, :cond_6
 
     .line 137
-    :goto_0
-    return-void
+    invoke-static {}, Lcom/instabug/library/g/d;->ac()J
 
-    .line 128
-    :cond_1
-    invoke-static {}, Lcom/instabug/library/internal/d/a/f;->f()I
+    move-result-wide v0
+
+    const-wide/16 v2, 0x0
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_7
+
+    .line 1165
+    const-string v0, "Handling session finished"
+
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1166
+    const/4 v1, -0x1
+
+    .line 1167
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->E()Z
 
     move-result v0
 
-    .line 130
-    new-instance v1, Ljava/lang/StringBuilder;
+    if-eqz v0, :cond_0
 
-    const-string v2, "Unread count is "
+    .line 1168
+    const/4 v1, 0x1
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 1169
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-static {}, Lcom/instabug/library/g/d;->F()V
+
+    .line 1171
+    :cond_0
+    const-string v6, "{}"
+
+    .line 1172
+    invoke-static {}, Lcom/instabug/library/internal/storage/cache/UserAttributesCacheManager;->getAll()Ljava/util/HashMap;
+
+    move-result-object v0
+
+    .line 1173
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->size()I
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 1174
+    new-instance v2, Lcom/instabug/library/model/e;
+
+    invoke-direct {v2}, Lcom/instabug/library/model/e;-><init>()V
+
+    .line 1175
+    invoke-virtual {v2, v0}, Lcom/instabug/library/model/e;->a(Ljava/util/HashMap;)V
+
+    .line 1177
+    :try_start_0
+    invoke-virtual {v2}, Lcom/instabug/library/model/e;->toJson()Ljava/lang/String;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v6
+
+    .line 1182
+    :cond_1
+    :goto_0
+    const-string v7, "[]"
+
+    .line 1184
+    :try_start_1
+    invoke-static {}, Lcom/instabug/library/logging/InstabugUserEventLogger;->getInstance()Lcom/instabug/library/logging/InstabugUserEventLogger;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/logging/InstabugUserEventLogger;->getUserEvents()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/instabug/library/user/a;->a(Ljava/util/List;)Lorg/json/JSONArray;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 1185
+    invoke-static {}, Lcom/instabug/library/logging/InstabugUserEventLogger;->getInstance()Lcom/instabug/library/logging/InstabugUserEventLogger;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/instabug/library/logging/InstabugUserEventLogger;->clearAll()V
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 1189
+    :goto_1
+    new-instance v0, Lcom/instabug/library/model/Session;
+
+    invoke-static {}, Lcom/instabug/library/g/d;->ac()J
+
+    move-result-wide v2
+
+    .line 1190
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v4
+
+    const-wide/16 v8, 0x3e8
+
+    div-long/2addr v4, v8
+
+    invoke-static {}, Lcom/instabug/library/g/d;->ac()J
+
+    move-result-wide v8
+
+    sub-long/2addr v4, v8
+
+    invoke-direct/range {v0 .. v7}, Lcom/instabug/library/model/Session;-><init>(IJJLjava/lang/String;Ljava/lang/String;)V
+
+    .line 1192
+    invoke-static {}, Lcom/instabug/library/internal/storage/cache/SessionsCacheManager;->getCache()Lcom/instabug/library/internal/storage/cache/InMemoryCache;
+
+    move-result-object v1
+
+    .line 1193
+    if-eqz v1, :cond_2
+
+    .line 1194
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "Adding session "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " to cache "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v1}, Lcom/instabug/library/internal/storage/cache/InMemoryCache;->getValues()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -115,524 +691,163 @@
 
     invoke-static {p0, v1}, Lcom/instabug/library/util/InstabugSDKLogger;->v(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 131
-    if-eqz v0, :cond_2
-
-    .line 132
-    iget-object v0, p0, Lcom/instabug/library/l;->a:Landroid/widget/ImageView;
-
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
-
-    move-result-object v1
-
-    sget v2, Lcom/instabug/library/R$b;->c:I
-
-    invoke-static {v1, v2}, Lcom/instabug/library/util/a;->a(Landroid/content/Context;I)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    goto :goto_0
-
-    .line 134
+    .line 1196
     :cond_2
-    iget-object v0, p0, Lcom/instabug/library/l;->a:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/instabug/library/internal/storage/cache/SessionsCacheManager;->addSession(Lcom/instabug/library/model/Session;)V
 
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 1197
+    invoke-static {}, Lcom/instabug/library/internal/storage/cache/SessionsCacheManager;->saveCacheToDisk()V
 
-    move-result-object v1
-
-    sget v2, Lcom/instabug/library/R$b;->b:I
-
-    invoke-static {v1, v2}, Lcom/instabug/library/util/a;->a(Landroid/content/Context;I)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    goto :goto_0
-.end method
-
-
-# virtual methods
-.method protected final a()I
-    .locals 1
-
-    .prologue
-    .line 82
-    sget v0, Lcom/instabug/library/R$g;->m:I
-
-    return v0
-.end method
-
-.method protected final a(Landroid/os/Bundle;)V
-    .locals 0
-
-    .prologue
-    .line 78
-    return-void
-.end method
-
-.method public final a(Z)V
-    .locals 2
-
-    .prologue
-    .line 116
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "Is visible "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    .line 1199
+    invoke-static {}, Lcom/instabug/library/Instabug;->getState()Lcom/instabug/library/InstabugState;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v1, Lcom/instabug/library/InstabugState;->RECORDING_VIDEO:Lcom/instabug/library/InstabugState;
+
+    if-eq v0, v1, :cond_3
+
+    .line 1200
+    invoke-static {}, Lcom/instabug/library/Instabug;->getState()Lcom/instabug/library/InstabugState;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    sget-object v1, Lcom/instabug/library/InstabugState;->RECORDING_VIDEO_FOR_CHAT:Lcom/instabug/library/InstabugState;
 
-    .line 117
-    if-eqz p1, :cond_0
+    if-ne v0, v1, :cond_5
 
-    .line 118
-    invoke-direct {p0}, Lcom/instabug/library/l;->d()V
+    .line 1207
+    :cond_3
+    sget-object v0, Lcom/instabug/library/InstabugState;->ENABLED:Lcom/instabug/library/InstabugState;
 
-    .line 120
-    :cond_0
-    return-void
-.end method
+    invoke-static {v0}, Lcom/instabug/library/Instabug;->setState(Lcom/instabug/library/InstabugState;)V
 
-.method protected final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 87
-    sget v0, Lcom/instabug/library/R$i;->i:I
-
-    invoke-virtual {p0, v0}, Lcom/instabug/library/l;->getString(I)Ljava/lang/String;
+    .line 1209
+    invoke-static {}, Lcom/instabug/library/m;->a()Lcom/instabug/library/m;
 
     move-result-object v0
 
-    return-object v0
-.end method
-
-.method protected final b(Landroid/os/Bundle;)V
-    .locals 0
-
-    .prologue
-    .line 73
-    return-void
-.end method
-
-.method protected final c()V
-    .locals 0
-
-    .prologue
-    .line 93
-    return-void
-.end method
-
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-
-    .prologue
-    .line 97
-    invoke-virtual {p1}, Landroid/view/View;->getId()I
+    invoke-virtual {v0}, Lcom/instabug/library/m;->d()Z
 
     move-result v0
 
-    .line 99
-    sget v1, Lcom/instabug/library/R$f;->ae:I
+    if-eqz v0, :cond_4
 
-    if-ne v0, v1, :cond_1
+    .line 1210
+    const-string v0, "Aborting video recording"
 
-    .line 100
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
+    .line 1211
+    invoke-static {}, Lcom/instabug/library/m;->a()Lcom/instabug/library/m;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->beginTransaction()Landroid/support/v4/app/FragmentTransaction;
+    invoke-virtual {v0}, Lcom/instabug/library/m;->c()V
+
+    .line 1212
+    invoke-static {}, Lcom/instabug/library/invocation/b;->b()Lcom/instabug/library/invocation/b;
 
     move-result-object v0
 
-    .line 101
-    invoke-virtual {v0, p0}, Landroid/support/v4/app/FragmentTransaction;->remove(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    invoke-virtual {v0}, Lcom/instabug/library/invocation/b;->h()V
 
-    move-result-object v0
+    .line 1215
+    :cond_4
+    const-string v0, "dumping hangingBug"
 
-    .line 102
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentTransaction;->commit()I
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 103
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 1216
+    invoke-static {}, Lcom/instabug/library/l;->d()V
 
-    move-result-object v0
+    .line 1218
+    invoke-static {}, Lcom/instabug/library/g/d;->a()Lcom/instabug/library/g/d;
 
-    check-cast v0, Lcom/instabug/library/l$a;
+    const/4 v0, 0x0
 
-    invoke-interface {v0}, Lcom/instabug/library/l$a;->b()V
+    invoke-static {v0}, Lcom/instabug/library/g/d;->l(Z)V
 
-    .line 112
-    :cond_0
-    :goto_0
+    .line 1202
+    :cond_5
+    sget-object v0, Lcom/instabug/library/model/Session$SessionState;->Finish:Lcom/instabug/library/model/Session$SessionState;
+
+    invoke-direct {p0, v0}, Lcom/instabug/library/l;->a(Lcom/instabug/library/model/Session$SessionState;)V
+
+    .line 143
+    :cond_6
+    :goto_2
     return-void
 
-    .line 104
-    :cond_1
-    sget v1, Lcom/instabug/library/R$f;->ag:I
+    .line 1178
+    :catch_0
+    move-exception v0
 
-    if-ne v0, v1, :cond_2
+    .line 1179
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    .line 105
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    const-string v3, "parsing user attributes got error: "
 
-    move-result-object v0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
+    invoke-virtual {v0}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentManager;->beginTransaction()Landroid/support/v4/app/FragmentTransaction;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    .line 106
-    invoke-virtual {v0, p0}, Landroid/support/v4/app/FragmentTransaction;->remove(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    .line 107
-    invoke-virtual {v0}, Landroid/support/v4/app/FragmentTransaction;->commit()I
+    invoke-static {p0, v2, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->e(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 108
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    goto/16 :goto_0
 
-    move-result-object v0
+    .line 1186
+    :catch_1
+    move-exception v0
 
-    check-cast v0, Lcom/instabug/library/l$a;
+    .line 1187
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-interface {v0}, Lcom/instabug/library/l$a;->c()V
+    const-string v3, "parsing user events got error: "
 
-    goto :goto_0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 109
-    :cond_2
-    sget v1, Lcom/instabug/library/R$f;->t:I
+    invoke-virtual {v0}, Lorg/json/JSONException;->getMessage()Ljava/lang/String;
 
-    if-ne v0, v1, :cond_0
+    move-result-object v3
 
-    .line 110
-    invoke-virtual {p0}, Lcom/instabug/library/l;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    check-cast v0, Lcom/instabug/library/l$a;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-interface {v0}, Lcom/instabug/library/l$a;->d()V
+    move-result-object v2
 
-    goto :goto_0
+    invoke-static {p0, v2, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->e(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    goto/16 :goto_1
+
+    .line 140
+    :cond_7
+    const-string v0, "Instabug SDK is enabled after session started, Session ignored"
+
+    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_2
 .end method
 
-.method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 5
+.method public final c()I
+    .locals 1
 
     .prologue
-    const/16 v4, 0x8
+    .line 277
+    iget v0, p0, Lcom/instabug/library/l;->d:I
 
-    const/4 v3, 0x0
-
-    .line 27
-    invoke-super {p0, p1, p2}, Lcom/instabug/library/h;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 28
-    sget v0, Lcom/instabug/library/R$f;->ae:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 29
-    sget v0, Lcom/instabug/library/R$f;->ag:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 1140
-    sget v0, Lcom/instabug/library/R$f;->aa:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    sget-object v1, Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;->INVOCATION_HEADER:Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;
-
-    sget v2, Lcom/instabug/library/R$i;->m:I
-
-    .line 1141
-    invoke-virtual {p0, v2}, Lcom/instabug/library/l;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lcom/instabug/library/util/k;->a(Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 1142
-    sget v0, Lcom/instabug/library/R$f;->af:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    sget-object v1, Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;->REPORT_BUG:Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;
-
-    sget v2, Lcom/instabug/library/R$i;->f:I
-
-    .line 1143
-    invoke-virtual {p0, v2}, Lcom/instabug/library/l;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lcom/instabug/library/util/k;->a(Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 1144
-    sget v0, Lcom/instabug/library/R$f;->ah:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    sget-object v1, Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;->REPORT_FEEDBACK:Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;
-
-    sget v2, Lcom/instabug/library/R$i;->k:I
-
-    .line 1145
-    invoke-virtual {p0, v2}, Lcom/instabug/library/l;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lcom/instabug/library/util/k;->a(Lcom/instabug/library/IBGCustomTextPlaceHolder$Key;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 33
-    sget v0, Lcom/instabug/library/R$f;->t:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    iput-object v0, p0, Lcom/instabug/library/l;->a:Landroid/widget/ImageView;
-
-    .line 34
-    iget-object v0, p0, Lcom/instabug/library/l;->a:Landroid/widget/ImageView;
-
-    invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 35
-    sget v0, Lcom/instabug/library/R$f;->aj:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    .line 36
-    const-string v1, "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"
-
-    invoke-virtual {v1}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object v1
-
-    invoke-static {v1, v3}, Landroid/util/Base64;->decode([BI)[B
-
-    move-result-object v1
-
-    .line 37
-    array-length v2, v1
-
-    invoke-static {v1, v3, v2}, Landroid/graphics/BitmapFactory;->decodeByteArray([BII)Landroid/graphics/Bitmap;
-
-    move-result-object v1
-
-    .line 38
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
-
-    .line 39
-    invoke-static {}, Lcom/instabug/library/Instabug;->getColorTheme()Lcom/instabug/library/IBGColorTheme;
-
-    move-result-object v1
-
-    sget-object v2, Lcom/instabug/library/IBGColorTheme;->IBGColorThemeLight:Lcom/instabug/library/IBGColorTheme;
-
-    if-ne v1, v2, :cond_0
-
-    .line 40
-    new-instance v1, Landroid/graphics/PorterDuffColorFilter;
-
-    const v2, -0x8c8c8d
-
-    sget-object v3, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
-
-    invoke-direct {v1, v2, v3}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setColorFilter(Landroid/graphics/ColorFilter;)V
-
-    .line 43
-    :cond_0
-    sget v0, Lcom/instabug/library/R$f;->ak:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
-    .line 44
-    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 46
-    invoke-direct {p0}, Lcom/instabug/library/l;->d()V
-
-    .line 48
-    invoke-static {}, Lcom/instabug/library/InstabugFeaturesManager;->getInstance()Lcom/instabug/library/InstabugFeaturesManager;
-
-    move-result-object v2
-
-    sget-object v3, Lcom/instabug/library/Feature;->WHITE_LABELING:Lcom/instabug/library/Feature;
-
-    invoke-virtual {v2, v3}, Lcom/instabug/library/InstabugFeaturesManager;->getFeatureState(Lcom/instabug/library/Feature;)Lcom/instabug/library/Feature$State;
-
-    move-result-object v2
-
-    sget-object v3, Lcom/instabug/library/Feature$State;->ENABLED:Lcom/instabug/library/Feature$State;
-
-    if-ne v2, v3, :cond_1
-
-    .line 50
-    sget v2, Lcom/instabug/library/R$f;->e:I
-
-    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
-
-    .line 51
-    sget v2, Lcom/instabug/library/R$f;->ai:I
-
-    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
-
-    .line 55
-    :cond_1
-    const-string v2, "Instabug.com"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
-    .line 56
-    const-string v2, "&"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    const-string v2, ","
-
-    .line 57
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    const-string v2, "  "
-
-    .line 58
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    const-string v2, "_"
-
-    .line 59
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    const-string v2, "-"
-
-    .line 60
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    .line 61
-    :cond_2
-    const-string v1, "Powered by Instabug.com"
-
-    .line 67
-    :cond_3
-    :goto_0
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 68
-    return-void
-
-    .line 64
-    :cond_4
-    const-string v1, "Powered by Instabug.com"
-
-    goto :goto_0
+    return v0
 .end method

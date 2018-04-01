@@ -3,33 +3,33 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/gifs/vm/bm;
+.implements Lkik/android/chat/vm/at;
 
 
 # virtual methods
-.method public abstract a(Landroid/graphics/Bitmap;)Lkik/core/datatypes/messageExtensions/ContentMessage;
+.method public abstract b()Landroid/graphics/drawable/Drawable;
 .end method
 
-.method public abstract a(Lkik/android/gifs/api/GifResponseData$MediaType;)V
-.end method
-
-.method public abstract k()Lkik/android/gifs/api/GifResponseData;
-.end method
-
-.method public abstract l()Landroid/graphics/Point;
-.end method
-
-.method public abstract m()Lrx/c;
+.method public abstract d()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
-            "Ljava/lang/Boolean;",
+            "Lkik/android/gifs/view/c;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract n()V
+.method public abstract e()Ljava/lang/String;
+.end method
+
+.method public abstract g()Ljava/lang/String;
+.end method
+
+.method public abstract j()V
+.end method
+
+.method public abstract k()Z
 .end method

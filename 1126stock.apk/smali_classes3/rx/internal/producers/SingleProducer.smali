@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/e;
+.implements Lrx/f;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicBoolean;",
-        "Lrx/e;"
+        "Lrx/f;"
     }
 .end annotation
 
@@ -23,10 +23,10 @@
 
 
 # instance fields
-.field final child:Lrx/i;
+.field final child:Lrx/j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;"
         }
     .end annotation
@@ -42,12 +42,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lrx/i;Ljava/lang/Object;)V
+.method public constructor <init>(Lrx/j;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/i",
+            "Lrx/j",
             "<-TT;>;TT;)V"
         }
     .end annotation
@@ -57,7 +57,7 @@
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     .line 41
-    iput-object p1, p0, Lrx/internal/producers/SingleProducer;->child:Lrx/i;
+    iput-object p1, p0, Lrx/internal/producers/SingleProducer;->child:Lrx/j;
 
     .line 42
     iput-object p2, p0, Lrx/internal/producers/SingleProducer;->value:Ljava/lang/Object;
@@ -112,10 +112,10 @@
     if-eqz v0, :cond_1
 
     .line 57
-    iget-object v0, p0, Lrx/internal/producers/SingleProducer;->child:Lrx/i;
+    iget-object v0, p0, Lrx/internal/producers/SingleProducer;->child:Lrx/j;
 
     .line 59
-    invoke-virtual {v0}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {v0}, Lrx/j;->isUnsubscribed()Z
 
     move-result v1
 
@@ -126,19 +126,19 @@
 
     .line 65
     :try_start_0
-    invoke-virtual {v0, v1}, Lrx/i;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Lrx/j;->a(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 71
-    invoke-virtual {v0}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {v0}, Lrx/j;->isUnsubscribed()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
     .line 75
-    invoke-virtual {v0}, Lrx/i;->bb_()V
+    invoke-virtual {v0}, Lrx/j;->b()V
 
     goto :goto_0
 
@@ -146,7 +146,7 @@
     :catch_0
     move-exception v2
 
-    invoke-static {v2, v0, v1}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;Lrx/d;Ljava/lang/Object;)V
+    invoke-static {v2, v0, v1}, Lrx/exceptions/a;->a(Ljava/lang/Throwable;Lrx/e;Ljava/lang/Object;)V
 
     goto :goto_0
 .end method

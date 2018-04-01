@@ -85,13 +85,13 @@
 
     .line 1136
     :cond_3
-    invoke-virtual {p1}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v3
 
     if-nez v3, :cond_4
 
-    invoke-virtual {p2}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {p2}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v3
 
@@ -99,7 +99,7 @@
 
     .line 1140
     :cond_4
-    invoke-virtual {p1}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -112,7 +112,7 @@
 
     .line 1143
     :cond_5
-    invoke-virtual {p2}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {p2}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
 
     .line 1146
     :cond_6
-    invoke-virtual {p1}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {p1}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
 
     move-result v0
 
-    invoke-virtual {p2}, Lcom/kik/message/model/attachments/RenderInstruction;->c()Ljava/lang/Integer;
+    invoke-virtual {p2}, Lcom/kik/message/model/attachments/RenderInstruction;->b()Ljava/lang/Integer;
 
     move-result-object v1
 

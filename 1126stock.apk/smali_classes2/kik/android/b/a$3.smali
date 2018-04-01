@@ -1,5 +1,5 @@
 .class final Lkik/android/b/a$3;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/util/Map",
         "<",
@@ -42,7 +42,7 @@
 
     iput-object p2, p0, Lkik/android/b/a$3;->a:Lcom/kik/events/Promise;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     check-cast p1, Ljava/util/Map;
 
     .line 1109
-    invoke-super {p0}, Lcom/kik/events/l;->a()V
+    invoke-super {p0}, Lcom/kik/events/k;->a()V
 
     .line 1110
     new-instance v0, Ljava/util/ArrayList;
@@ -163,7 +163,7 @@
     :cond_4
     iget-object v0, p0, Lkik/android/b/a$3;->b:Lkik/android/b/a;
 
-    invoke-static {v0}, Lkik/android/b/a;->b(Lkik/android/b/a;)Lkik/core/interfaces/ac;
+    invoke-static {v0}, Lkik/android/b/a;->b(Lkik/android/b/a;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
@@ -173,7 +173,7 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 1131
     iget-object v0, p0, Lkik/android/b/a$3;->a:Lcom/kik/events/Promise;

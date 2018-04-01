@@ -43,10 +43,10 @@
 
 .field static final ERROR_EXTRACTOR:Lrx/internal/util/InternalObservableUtils$e;
 
-.field public static final ERROR_NOT_IMPLEMENTED:Lrx/b/b;
+.field public static final ERROR_NOT_IMPLEMENTED:Lrx/functions/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<",
             "Ljava/lang/Throwable;",
             ">;"
@@ -54,10 +54,10 @@
     .end annotation
 .end field
 
-.field public static final IS_EMPTY:Lrx/c$b;
+.field public static final IS_EMPTY:Lrx/d$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/c$b",
+            "Lrx/d$b",
             "<",
             "Ljava/lang/Boolean;",
             "Ljava/lang/Object;",
@@ -134,18 +134,18 @@
 
     invoke-direct {v0}, Lrx/internal/util/InternalObservableUtils$c;-><init>()V
 
-    sput-object v0, Lrx/internal/util/InternalObservableUtils;->ERROR_NOT_IMPLEMENTED:Lrx/b/b;
+    sput-object v0, Lrx/internal/util/InternalObservableUtils;->ERROR_NOT_IMPLEMENTED:Lrx/functions/b;
 
     .line 63
-    new-instance v0, Lrx/internal/operators/m;
+    new-instance v0, Lrx/internal/operators/q;
 
     .line 1034
     sget-object v1, Lrx/internal/util/UtilityFunctions$AlwaysTrue;->INSTANCE:Lrx/internal/util/UtilityFunctions$AlwaysTrue;
 
     .line 63
-    invoke-direct {v0, v1}, Lrx/internal/operators/m;-><init>(Lrx/b/g;)V
+    invoke-direct {v0, v1}, Lrx/internal/operators/q;-><init>(Lrx/functions/g;)V
 
-    sput-object v0, Lrx/internal/util/InternalObservableUtils;->IS_EMPTY:Lrx/c$b;
+    sput-object v0, Lrx/internal/util/InternalObservableUtils;->IS_EMPTY:Lrx/d$b;
 
     return-void
 .end method
@@ -162,11 +162,10 @@
     .line 33
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 383
     return-void
 .end method
 
-.method public static createCollectorCaller(Lrx/b/c;)Lrx/b/h;
+.method public static createCollectorCaller(Lrx/functions/c;)Lrx/functions/h;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -175,9 +174,9 @@
             "R:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/b/c",
+            "Lrx/functions/c",
             "<TR;-TT;>;)",
-            "Lrx/b/h",
+            "Lrx/functions/h",
             "<TR;TT;TR;>;"
         }
     .end annotation
@@ -186,31 +185,31 @@
     .line 366
     new-instance v0, Lrx/internal/util/InternalObservableUtils$a;
 
-    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$a;-><init>(Lrx/b/c;)V
+    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$a;-><init>(Lrx/functions/c;)V
 
     return-object v0
 .end method
 
-.method public static final createRepeatDematerializer(Lrx/b/g;)Lrx/b/g;
+.method public static createRepeatDematerializer(Lrx/functions/g;)Lrx/functions/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<-",
-            "Lrx/c",
+            "Lrx/d",
             "<+",
             "Ljava/lang/Void;",
             ">;+",
-            "Lrx/c",
+            "Lrx/d",
             "<*>;>;)",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/c",
+            "Lrx/d",
             "<+",
             "Lrx/Notification",
             "<*>;>;",
-            "Lrx/c",
+            "Lrx/d",
             "<*>;>;"
         }
     .end annotation
@@ -219,12 +218,12 @@
     .line 146
     new-instance v0, Lrx/internal/util/InternalObservableUtils$i;
 
-    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$i;-><init>(Lrx/b/g;)V
+    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$i;-><init>(Lrx/functions/g;)V
 
     return-object v0
 .end method
 
-.method public static createReplaySelectorAndObserveOn(Lrx/b/g;Lrx/f;)Lrx/b/g;
+.method public static createReplaySelectorAndObserveOn(Lrx/functions/g;Lrx/g;)Lrx/functions/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -233,19 +232,19 @@
             "R:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<-",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;+",
-            "Lrx/c",
+            "Lrx/d",
             "<TR;>;>;",
-            "Lrx/f;",
+            "Lrx/g;",
             ")",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;",
-            "Lrx/c",
+            "Lrx/d",
             "<TR;>;>;"
         }
     .end annotation
@@ -254,23 +253,23 @@
     .line 182
     new-instance v0, Lrx/internal/util/InternalObservableUtils$p;
 
-    invoke-direct {v0, p0, p1}, Lrx/internal/util/InternalObservableUtils$p;-><init>(Lrx/b/g;Lrx/f;)V
+    invoke-direct {v0, p0, p1}, Lrx/internal/util/InternalObservableUtils$p;-><init>(Lrx/functions/g;Lrx/g;)V
 
     return-object v0
 .end method
 
-.method public static createReplaySupplier(Lrx/c;)Lrx/b/f;
-    .locals 2
+.method public static createReplaySupplier(Lrx/d;)Lrx/functions/f;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;)",
-            "Lrx/b/f",
+            "Lrx/functions/f",
             "<",
-            "Lrx/c/b",
+            "Lrx/b/b",
             "<TT;>;>;"
         }
     .end annotation
@@ -279,25 +278,23 @@
     .line 241
     new-instance v0, Lrx/internal/util/InternalObservableUtils$l;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lrx/internal/util/InternalObservableUtils$l;-><init>(Lrx/c;B)V
+    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$l;-><init>(Lrx/d;)V
 
     return-object v0
 .end method
 
-.method public static createReplaySupplier(Lrx/c;I)Lrx/b/f;
-    .locals 2
+.method public static createReplaySupplier(Lrx/d;I)Lrx/functions/f;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;I)",
-            "Lrx/b/f",
+            "Lrx/functions/f",
             "<",
-            "Lrx/c/b",
+            "Lrx/b/b",
             "<TT;>;>;"
         }
     .end annotation
@@ -306,28 +303,26 @@
     .line 265
     new-instance v0, Lrx/internal/util/InternalObservableUtils$j;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, p1, v1}, Lrx/internal/util/InternalObservableUtils$j;-><init>(Lrx/c;IB)V
+    invoke-direct {v0, p0, p1}, Lrx/internal/util/InternalObservableUtils$j;-><init>(Lrx/d;I)V
 
     return-object v0
 .end method
 
-.method public static createReplaySupplier(Lrx/c;IJLjava/util/concurrent/TimeUnit;Lrx/f;)Lrx/b/f;
-    .locals 10
+.method public static createReplaySupplier(Lrx/d;IJLjava/util/concurrent/TimeUnit;Lrx/g;)Lrx/functions/f;
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;IJ",
             "Ljava/util/concurrent/TimeUnit;",
-            "Lrx/f;",
+            "Lrx/g;",
             ")",
-            "Lrx/b/f",
+            "Lrx/functions/f",
             "<",
-            "Lrx/c/b",
+            "Lrx/b/b",
             "<TT;>;>;"
         }
     .end annotation
@@ -335,8 +330,6 @@
     .prologue
     .line 333
     new-instance v1, Lrx/internal/util/InternalObservableUtils$m;
-
-    const/4 v8, 0x0
 
     move-object v2, p0
 
@@ -348,26 +341,26 @@
 
     move-object v7, p5
 
-    invoke-direct/range {v1 .. v8}, Lrx/internal/util/InternalObservableUtils$m;-><init>(Lrx/c;IJLjava/util/concurrent/TimeUnit;Lrx/f;B)V
+    invoke-direct/range {v1 .. v7}, Lrx/internal/util/InternalObservableUtils$m;-><init>(Lrx/d;IJLjava/util/concurrent/TimeUnit;Lrx/g;)V
 
     return-object v1
 .end method
 
-.method public static createReplaySupplier(Lrx/c;JLjava/util/concurrent/TimeUnit;Lrx/f;)Lrx/b/f;
+.method public static createReplaySupplier(Lrx/d;JLjava/util/concurrent/TimeUnit;Lrx/g;)Lrx/functions/f;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;J",
             "Ljava/util/concurrent/TimeUnit;",
-            "Lrx/f;",
+            "Lrx/g;",
             ")",
-            "Lrx/b/f",
+            "Lrx/functions/f",
             "<",
-            "Lrx/c/b",
+            "Lrx/b/b",
             "<TT;>;>;"
         }
     .end annotation
@@ -375,8 +368,6 @@
     .prologue
     .line 296
     new-instance v0, Lrx/internal/util/InternalObservableUtils$k;
-
-    const/4 v6, 0x0
 
     move-object v1, p0
 
@@ -386,31 +377,31 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v6}, Lrx/internal/util/InternalObservableUtils$k;-><init>(Lrx/c;JLjava/util/concurrent/TimeUnit;Lrx/f;B)V
+    invoke-direct/range {v0 .. v5}, Lrx/internal/util/InternalObservableUtils$k;-><init>(Lrx/d;JLjava/util/concurrent/TimeUnit;Lrx/g;)V
 
     return-object v0
 .end method
 
-.method public static final createRetryDematerializer(Lrx/b/g;)Lrx/b/g;
+.method public static createRetryDematerializer(Lrx/functions/g;)Lrx/functions/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<-",
-            "Lrx/c",
+            "Lrx/d",
             "<+",
             "Ljava/lang/Throwable;",
             ">;+",
-            "Lrx/c",
+            "Lrx/d",
             "<*>;>;)",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
-            "Lrx/c",
+            "Lrx/d",
             "<+",
             "Lrx/Notification",
             "<*>;>;",
-            "Lrx/c",
+            "Lrx/d",
             "<*>;>;"
         }
     .end annotation
@@ -419,19 +410,19 @@
     .line 211
     new-instance v0, Lrx/internal/util/InternalObservableUtils$n;
 
-    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$n;-><init>(Lrx/b/g;)V
+    invoke-direct {v0, p0}, Lrx/internal/util/InternalObservableUtils$n;-><init>(Lrx/functions/g;)V
 
     return-object v0
 .end method
 
-.method public static equalsWith(Ljava/lang/Object;)Lrx/b/g;
+.method public static equalsWith(Ljava/lang/Object;)Lrx/functions/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
             "Ljava/lang/Object;",
             "Ljava/lang/Boolean;",
@@ -448,14 +439,14 @@
     return-object v0
 .end method
 
-.method public static isInstanceOf(Ljava/lang/Class;)Lrx/b/g;
+.method public static isInstanceOf(Ljava/lang/Class;)Lrx/functions/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Class",
             "<*>;)",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
             "Ljava/lang/Object;",
             "Ljava/lang/Boolean;",

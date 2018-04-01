@@ -1,160 +1,59 @@
-.class public final Lcom/kik/e/n;
-.super Lcom/kik/e/m;
-.source "SourceFile"
+.class final synthetic Lcom/kik/e/n;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lrx/functions/g;
+
+
+# instance fields
+.field private final a:Lcom/kik/e/a;
+
+.field private final b:Ljava/lang/String;
+
+.field private final c:Ljava/math/BigDecimal;
 
 
 # direct methods
-.method public constructor <init>(Landroid/database/Cursor;)V
+.method private constructor <init>(Lcom/kik/e/a;Ljava/lang/String;Ljava/math/BigDecimal;)V
     .locals 0
 
-    .prologue
-    .line 27
-    invoke-direct {p0, p1}, Lcom/kik/e/m;-><init>(Landroid/database/Cursor;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
+    iput-object p1, p0, Lcom/kik/e/n;->a:Lcom/kik/e/a;
+
+    iput-object p2, p0, Lcom/kik/e/n;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/kik/e/n;->c:Ljava/math/BigDecimal;
+
     return-void
 .end method
 
-.method public static a(Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;)Landroid/content/ContentValues;
-    .locals 6
+.method public static a(Lcom/kik/e/a;Ljava/lang/String;Ljava/math/BigDecimal;)Lrx/functions/g;
+    .locals 1
 
-    .prologue
-    const/4 v1, 0x0
+    new-instance v0, Lcom/kik/e/n;
 
-    .line 32
-    new-instance v2, Landroid/content/ContentValues;
+    invoke-direct {v0, p0, p1, p2}, Lcom/kik/e/n;-><init>(Lcom/kik/e/a;Ljava/lang/String;Ljava/math/BigDecimal;)V
 
-    invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
+    return-object v0
+.end method
 
-    .line 33
-    if-eqz p0, :cond_0
 
-    .line 34
-    const-string v0, "body"
+# virtual methods
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->d()Ljava/lang/String;
+    iget-object v0, p0, Lcom/kik/e/n;->a:Lcom/kik/e/a;
 
-    move-result-object v3
+    iget-object v1, p0, Lcom/kik/e/n;->b:Ljava/lang/String;
 
-    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v2, p0, Lcom/kik/e/n;->c:Ljava/math/BigDecimal;
 
-    .line 35
-    const-string v0, "friend_attribute_type"
+    check-cast p1, Lkin/sdk/core/e;
 
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->b()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 36
-    const-string v0, "name"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->i()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 37
-    const-string v3, "referrer_jid"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->c()Lkik/core/datatypes/l;
+    invoke-static {v0, v1, v2, p1}, Lcom/kik/e/a;->a(Lcom/kik/e/a;Ljava/lang/String;Ljava/math/BigDecimal;Lkin/sdk/core/e;)Ljava/lang/String;
 
     move-result-object v0
 
-    if-nez v0, :cond_1
-
-    move-object v0, v1
-
-    :goto_0
-    invoke-virtual {v2, v3, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 38
-    const-string v0, "reply"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->e()Z
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    .line 39
-    const-string v0, "timestamp"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->g()J
-
-    move-result-wide v4
-
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
-
-    .line 40
-    const-string v0, "url"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->j()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v0, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 41
-    const-string v0, "group_jid"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->k()Lkik/core/datatypes/l;
-
-    move-result-object v3
-
-    if-nez v3, :cond_2
-
-    :goto_1
-    invoke-virtual {v2, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 42
-    const-string v0, "local"
-
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->l()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    .line 44
-    :cond_0
-    return-object v2
-
-    .line 37
-    :cond_1
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->c()Lkik/core/datatypes/l;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/core/datatypes/l;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 41
-    :cond_2
-    invoke-virtual {p0}, Lkik/core/datatypes/messageExtensions/FriendAttributeMessageAttachment;->k()Lkik/core/datatypes/l;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lkik/core/datatypes/l;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_1
+    return-object v0
 .end method

@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/android/videochat/c;Lkik/core/datatypes/m;Lkik/core/interfaces/j;Lkik/android/videochat/j$b;)V
+.method public constructor <init>(Lkik/android/videochat/c;Lkik/core/datatypes/l;Lkik/core/interfaces/IConversation;Lkik/android/videochat/j$b;)V
     .locals 6
 
     .prologue
@@ -45,7 +45,7 @@
 
     move-object v5, p4
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/videochat/j$a;-><init>(Lkik/android/videochat/j;Lkik/android/videochat/c;Lkik/core/datatypes/m;Lkik/core/interfaces/j;Lkik/android/videochat/j$b;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/videochat/j$a;-><init>(Lkik/android/videochat/j;Lkik/android/videochat/c;Lkik/core/datatypes/l;Lkik/core/interfaces/IConversation;Lkik/android/videochat/j$b;)V
 
     iput-object v0, p0, Lkik/android/videochat/j;->b:Lkik/android/videochat/j$c;
 

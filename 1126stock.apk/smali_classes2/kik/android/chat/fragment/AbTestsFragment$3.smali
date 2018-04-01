@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/AbTestsFragment;->a(Lcom/kik/events/d;)V
+    value = Lkik/android/chat/fragment/AbTestsFragment;->registerForegroundEvents(Lcom/kik/events/d;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -63,7 +63,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/AbTestsFragment$3$1;-><init>(Lkik/android/chat/fragment/AbTestsFragment$3;)V
 
-    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/AbTestsFragment;->b(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lkik/android/chat/fragment/AbTestsFragment;->runOnUiIfAttached(Ljava/lang/Runnable;)V
 
     .line 180
     return-void

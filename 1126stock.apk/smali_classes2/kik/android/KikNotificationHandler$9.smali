@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 417
+    .line 419
     invoke-static {}, Lkik/core/manager/trophy/TrophyType;->values()[Lkik/core/manager/trophy/TrophyType;
 
     move-result-object v0

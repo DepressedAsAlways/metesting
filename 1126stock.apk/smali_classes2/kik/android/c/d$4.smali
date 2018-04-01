@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 151
+    .line 160
     iput-object p1, p0, Lkik/android/c/d$4;->e:Lkik/android/c/d;
 
     invoke-direct {p0, p2, p3, p4}, Lkik/android/c/n;-><init>(Landroid/view/SurfaceView;Landroid/os/Handler;Lkik/android/c/b$c;)V
@@ -37,14 +37,14 @@
     .locals 1
 
     .prologue
-    .line 155
+    .line 164
     iget-object v0, p0, Lkik/android/c/d$4;->a:Landroid/view/View$OnTouchListener;
 
     invoke-virtual {p0, v0}, Lkik/android/c/d$4;->a(Landroid/view/View$OnTouchListener;)Lkik/android/c/b;
 
-    .line 156
+    .line 165
     invoke-super {p0, p1}, Lkik/android/c/n;->surfaceCreated(Landroid/view/SurfaceHolder;)V
 
-    .line 157
+    .line 166
     return-void
 .end method

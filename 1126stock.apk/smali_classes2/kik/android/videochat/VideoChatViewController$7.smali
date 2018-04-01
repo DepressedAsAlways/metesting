@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 488
+    .line 523
     iput-object p1, p0, Lkik/android/videochat/VideoChatViewController$7;->a:Lkik/android/videochat/VideoChatViewController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,17 +40,17 @@
     .locals 4
 
     .prologue
-    .line 492
+    .line 527
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 493
+    .line 528
     const-string v1, "android.settings.APPLICATION_DETAILS_SETTINGS"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 494
+    .line 529
     const-string v1, "package"
 
     const-string v2, "kik.android"
@@ -61,22 +61,22 @@
 
     move-result-object v1
 
-    .line 495
+    .line 530
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 496
+    .line 531
     iget-object v1, p0, Lkik/android/videochat/VideoChatViewController$7;->a:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->m(Lkik/android/videochat/VideoChatViewController;)Lkik/android/chat/activity/FragmentWrapperActivity;
+    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->y(Lkik/android/videochat/VideoChatViewController;)Lkik/android/chat/activity/FragmentWrapperActivity;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Lkik/android/chat/activity/FragmentWrapperActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 497
+    .line 532
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$7;->a:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->c(Lkik/android/videochat/VideoChatViewController;)Lkik/android/videochat/c;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->o(Lkik/android/videochat/VideoChatViewController;)Lkik/android/videochat/c;
 
     move-result-object v0
 
@@ -88,6 +88,6 @@
 
     invoke-interface {v0, v1}, Lcom/rounds/kik/analytics/IReporterProxy;->onPermissionsDialogSettingsTap(Lcom/rounds/kik/analytics/IReporterProxy$VideoPermissionType;)V
 
-    .line 498
+    .line 533
     return-void
 .end method

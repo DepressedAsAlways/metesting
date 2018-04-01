@@ -159,11 +159,11 @@
 
     iget-object v2, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity$1;->a:Lcom/kik/cards/usermedia/CustomGalleryActivity;
 
-    const v3, 0x7f0b00dd
+    const v3, 0x7f0b0113
 
     invoke-direct {v1, v2, v3}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
-    const v2, 0x7f090443
+    const v2, 0x7f090457
 
     invoke-virtual {v1, v2}, Landroid/support/v7/app/AlertDialog$Builder;->a(I)Landroid/support/v7/app/AlertDialog$Builder;
 
@@ -179,7 +179,7 @@
 
     iget-object v0, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity$1;->a:Lcom/kik/cards/usermedia/CustomGalleryActivity;
 
-    const v2, 0x7f09011b
+    const v2, 0x7f09011c
 
     .line 189
     invoke-virtual {v0, v2}, Lcom/kik/cards/usermedia/CustomGalleryActivity;->getString(I)Ljava/lang/String;
@@ -192,7 +192,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090269
+    const v1, 0x7f09027d
 
     .line 190
     invoke-virtual {v0, v1}, Landroid/support/v7/app/AlertDialog$Builder;->b(I)Landroid/support/v7/app/AlertDialog$Builder;
@@ -211,7 +211,7 @@
     :cond_2
     iget-object v2, p0, Lcom/kik/cards/usermedia/CustomGalleryActivity$1;->a:Lcom/kik/cards/usermedia/CustomGalleryActivity;
 
-    const v3, 0x7f09011c
+    const v3, 0x7f09011d
 
     .line 190
     invoke-virtual {v2, v3}, Lcom/kik/cards/usermedia/CustomGalleryActivity;->getString(I)Ljava/lang/String;

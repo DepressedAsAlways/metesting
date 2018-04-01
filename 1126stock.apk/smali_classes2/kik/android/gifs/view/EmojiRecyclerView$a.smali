@@ -1,5 +1,5 @@
 .class public final Lkik/android/gifs/view/EmojiRecyclerView$a;
-.super Lkik/android/widget/cm$c;
+.super Lkik/android/widget/dr$c;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/widget/cm$c",
+        "Lkik/android/widget/dr$c",
         "<",
-        "Lkik/android/gifs/vm/bj;",
+        "Lkik/android/gifs/vm/bk;",
         ">;"
     }
 .end annotation
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lkik/android/widget/cm$c;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, v0}, Lkik/android/widget/dr$c;-><init>(Landroid/view/View;)V
 
     .line 81
     iput-object p1, p0, Lkik/android/gifs/view/EmojiRecyclerView$a;->a:Landroid/databinding/ViewDataBinding;
@@ -53,12 +53,12 @@
 
     .prologue
     .line 73
-    check-cast p1, Lkik/android/gifs/vm/bj;
+    check-cast p1, Lkik/android/gifs/vm/bk;
 
     .line 1087
     iget-object v0, p0, Lkik/android/gifs/view/EmojiRecyclerView$a;->a:Landroid/databinding/ViewDataBinding;
 
-    const/16 v1, 0xa
+    const/16 v1, 0xe
 
     invoke-virtual {v0, v1, p1}, Landroid/databinding/ViewDataBinding;->setVariable(ILjava/lang/Object;)Z
 

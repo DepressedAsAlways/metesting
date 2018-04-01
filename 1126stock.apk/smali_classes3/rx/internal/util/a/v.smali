@@ -1,5 +1,5 @@
 .class abstract Lrx/internal/util/a/v;
-.super Lrx/internal/util/a/x;
+.super Lrx/internal/util/a/w;
 .source "SourceFile"
 
 
@@ -9,20 +9,19 @@
         "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Lrx/internal/util/a/x",
+        "Lrx/internal/util/a/w",
         "<TE;>;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method constructor <init>()V
     .locals 0
 
     .prologue
-    .line 56
-    invoke-direct {p0, p1}, Lrx/internal/util/a/x;-><init>(I)V
+    .line 38
+    invoke-direct {p0}, Lrx/internal/util/a/w;-><init>()V
 
-    .line 57
     return-void
 .end method

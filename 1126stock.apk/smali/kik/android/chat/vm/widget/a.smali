@@ -1,5 +1,5 @@
 .class public abstract Lkik/android/chat/vm/widget/a;
-.super Lkik/android/chat/vm/b;
+.super Lkik/android/chat/vm/c;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/chat/vm/b",
+        "Lkik/android/chat/vm/c",
         "<",
         "Lkik/android/chat/vm/widget/y;",
         ">;",
@@ -19,12 +19,12 @@
 
 
 # instance fields
-.field a:Lkik/core/interfaces/aa;
+.field a:Lkik/core/interfaces/ab;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field b:Lcom/kik/cache/ae;
+.field b:Lcom/kik/cache/KikVolleyImageLoader;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 
@@ -35,19 +35,19 @@
 
 .field protected c:Lkik/core/interfaces/h;
 
-.field private d:Lkik/android/widget/ap;
+.field private d:Lkik/android/widget/bq;
 
 
 # direct methods
-.method public constructor <init>(Lkik/android/widget/ap;)V
+.method public constructor <init>(Lkik/android/widget/bq;)V
     .locals 0
 
     .prologue
     .line 39
-    invoke-direct {p0}, Lkik/android/chat/vm/b;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
 
     .line 40
-    iput-object p1, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/ap;
+    iput-object p1, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/bq;
 
     .line 41
     return-void
@@ -55,7 +55,7 @@
 
 
 # virtual methods
-.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+.method public a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
     .locals 0
 
     .prologue
@@ -63,18 +63,18 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/vm/widget/a;)V
 
     .line 47
-    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/b;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/z;)V
+    invoke-super {p0, p1, p2}, Lkik/android/chat/vm/c;->a(Lcom/kik/components/CoreComponent;Lkik/android/chat/vm/ay;)V
 
     .line 48
     return-void
 .end method
 
-.method public a(Lkik/core/datatypes/z;)V
+.method public a(Lkik/core/datatypes/y;)V
     .locals 6
 
     .prologue
     .line 61
-    iget-object v0, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/ap;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/bq;
 
     if-nez v0, :cond_1
 
@@ -90,9 +90,9 @@
     move-result-wide v0
 
     .line 68
-    iget-object v2, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/ap;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/bq;
 
-    invoke-interface {v2}, Lkik/android/widget/ap;->a()J
+    invoke-interface {v2}, Lkik/android/widget/bq;->a()J
 
     move-result-wide v2
 
@@ -105,34 +105,34 @@
     if-lez v2, :cond_0
 
     .line 1076
-    iget-object v2, p0, Lkik/android/chat/vm/widget/a;->a:Lkik/core/interfaces/aa;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/a;->a:Lkik/core/interfaces/ab;
 
-    invoke-interface {v2, p1}, Lkik/core/interfaces/aa;->a(Lkik/core/datatypes/z;)V
+    invoke-interface {v2, p1}, Lkik/core/interfaces/ab;->a(Lkik/core/datatypes/y;)V
 
     .line 1077
-    new-instance v2, Lcom/kik/cache/ab;
+    new-instance v2, Lcom/kik/cache/KikImageBytesRequest;
 
-    invoke-virtual {p1}, Lkik/core/datatypes/z;->c()Ljava/lang/String;
+    invoke-virtual {p1}, Lkik/core/datatypes/y;->c()Ljava/lang/String;
 
     move-result-object v3
 
-    sget-object v4, Lcom/kik/cache/ac;->e:Lcom/android/volley/i$a;
+    sget-object v4, Lcom/kik/cache/KikImageRequest;->EMPTY_ERROR_LISTENER:Lcom/android/volley/h$a;
 
-    invoke-direct {v2, v3, v4}, Lcom/kik/cache/ab;-><init>(Ljava/lang/String;Lcom/android/volley/i$a;)V
+    invoke-direct {v2, v3, v4}, Lcom/kik/cache/KikImageBytesRequest;-><init>(Ljava/lang/String;Lcom/android/volley/h$a;)V
 
     .line 1078
-    iget-object v3, p0, Lkik/android/chat/vm/widget/a;->b:Lcom/kik/cache/ae;
+    iget-object v3, p0, Lkik/android/chat/vm/widget/a;->b:Lcom/kik/cache/KikVolleyImageLoader;
 
     new-instance v4, Lkik/android/chat/vm/widget/a$1;
 
-    invoke-direct {v4, p0, p1}, Lkik/android/chat/vm/widget/a$1;-><init>(Lkik/android/chat/vm/widget/a;Lkik/core/datatypes/z;)V
+    invoke-direct {v4, p0, p1}, Lkik/android/chat/vm/widget/a$1;-><init>(Lkik/android/chat/vm/widget/a;Lkik/core/datatypes/y;)V
 
-    invoke-virtual {v3, v2, v4}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ab;Lcom/kik/cache/ae$b;)V
+    invoke-virtual {v3, v2, v4}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageBytesRequest;Lcom/kik/cache/KikVolleyImageLoader$b;)V
 
     .line 70
-    iget-object v2, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/ap;
+    iget-object v2, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/bq;
 
-    invoke-interface {v2, v0, v1}, Lkik/android/widget/ap;->a(J)V
+    invoke-interface {v2, v0, v1}, Lkik/android/widget/bq;->a(J)V
 
     goto :goto_0
 .end method
@@ -148,20 +148,20 @@
     return-void
 .end method
 
-.method public c()V
+.method public al_()V
     .locals 1
 
     .prologue
     const/4 v0, 0x0
 
     .line 53
-    iput-object v0, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/ap;
+    iput-object v0, p0, Lkik/android/chat/vm/widget/a;->d:Lkik/android/widget/bq;
 
     .line 54
     iput-object v0, p0, Lkik/android/chat/vm/widget/a;->c:Lkik/core/interfaces/h;
 
     .line 55
-    invoke-super {p0}, Lkik/android/chat/vm/b;->c()V
+    invoke-super {p0}, Lkik/android/chat/vm/c;->al_()V
 
     .line 56
     return-void

@@ -36,7 +36,7 @@
             "Lcom/google/protobuf/SingleFieldBuilderV3",
             "<",
             "Lcom/kik/video/VideoCommon$ConvoVideoState;",
-            "Lcom/kik/video/VideoCommon$ConvoVideoState$a;",
+            "Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;",
             "Lcom/kik/video/VideoCommon$c;",
             ">;"
         }
@@ -459,15 +459,15 @@
     iget-object v1, p0, Lcom/kik/video/mobileremote/MobileVideoService$OnConvoVideoStateChangedNotification$a;->a:Lcom/kik/video/VideoCommon$ConvoVideoState;
 
     .line 2564
-    invoke-static {v1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->a(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    invoke-static {v1}, Lcom/kik/video/VideoCommon$ConvoVideoState;->newBuilder(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;->a(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$a;
+    invoke-virtual {v1, v0}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;->mergeFrom(Lcom/kik/video/VideoCommon$ConvoVideoState;)Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState$a;->a()Lcom/kik/video/VideoCommon$ConvoVideoState;
+    invoke-virtual {v0}, Lcom/kik/video/VideoCommon$ConvoVideoState$Builder;->buildPartial()Lcom/kik/video/VideoCommon$ConvoVideoState;
 
     move-result-object v0
 

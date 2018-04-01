@@ -25,9 +25,9 @@
 
 .field private d:Landroid/app/Application;
 
-.field private e:Lkik/core/interfaces/ac;
+.field private e:Lkik/core/interfaces/ad;
 
-.field private f:Lcom/kik/e/p;
+.field private f:Lcom/kik/storage/s;
 
 .field private g:Landroid/os/HandlerThread;
 
@@ -122,7 +122,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Landroid/app/Application;Lkik/core/interfaces/ac;Lcom/kik/e/p;Lkik/android/util/an;)V
+.method private constructor <init>(Landroid/app/Application;Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/android/util/ai;)V
     .locals 2
 
     .prologue
@@ -199,7 +199,7 @@
     .line 97
     new-instance v0, Lkik/android/util/d$b;
 
-    invoke-interface {p2}, Lkik/core/interfaces/ac;->p()Ljava/lang/String;
+    invoke-interface {p2}, Lkik/core/interfaces/ad;->q()Ljava/lang/String;
 
     move-result-object v1
 
@@ -218,30 +218,30 @@
     iput-object p1, p0, Lkik/android/util/d;->d:Landroid/app/Application;
 
     .line 100
-    iput-object p2, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ac;
+    iput-object p2, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
     .line 101
     const-string v0, "KikPrecachePrefs"
 
-    invoke-interface {p4, v0}, Lkik/android/util/an;->a(Ljava/lang/String;)Landroid/content/SharedPreferences;
+    invoke-interface {p4, v0}, Lkik/android/util/ai;->a(Ljava/lang/String;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/util/d;->c:Landroid/content/SharedPreferences;
 
     .line 102
-    iput-object p3, p0, Lkik/android/util/d;->f:Lcom/kik/e/p;
+    iput-object p3, p0, Lkik/android/util/d;->f:Lcom/kik/storage/s;
 
     .line 103
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/util/d;)Lcom/kik/e/p;
+.method static synthetic a(Lkik/android/util/d;)Lcom/kik/storage/s;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lkik/android/util/d;->f:Lcom/kik/e/p;
+    iget-object v0, p0, Lkik/android/util/d;->f:Lcom/kik/storage/s;
 
     return-object v0
 .end method
@@ -271,7 +271,7 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/app/Application;Lkik/core/interfaces/ac;Lcom/kik/e/p;Lkik/android/util/an;)V
+.method public static a(Landroid/app/Application;Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/android/util/ai;)V
     .locals 1
 
     .prologue
@@ -283,7 +283,7 @@
     .line 81
     new-instance v0, Lkik/android/util/d;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/util/d;-><init>(Landroid/app/Application;Lkik/core/interfaces/ac;Lcom/kik/e/p;Lkik/android/util/an;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lkik/android/util/d;-><init>(Landroid/app/Application;Lkik/core/interfaces/ad;Lcom/kik/storage/s;Lkik/android/util/ai;)V
 
     sput-object v0, Lkik/android/util/d;->b:Lkik/android/util/d;
 
@@ -491,9 +491,9 @@
     :try_start_3
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lkik/android/util/d;->e:Lkik/core/interfaces/ac;
+    iget-object v2, v0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
-    invoke-static {v2}, Lkik/core/z;->b(Lkik/core/interfaces/ac;)Lkik/core/z;
+    invoke-static {v2}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v9
 
@@ -584,11 +584,11 @@
     .line 1382
     const-string v6, "x-kik-jid"
 
-    invoke-virtual {v9}, Lkik/core/z;->a()Lkik/core/datatypes/l;
+    invoke-virtual {v9}, Lkik/core/z;->a()Lkik/core/datatypes/k;
 
     move-result-object v17
 
-    invoke-virtual/range {v17 .. v17}, Lkik/core/datatypes/l;->a()Ljava/lang/String;
+    invoke-virtual/range {v17 .. v17}, Lkik/core/datatypes/k;->a()Ljava/lang/String;
 
     move-result-object v17
 
@@ -1466,7 +1466,7 @@
     return-void
 .end method
 
-.method public static a(Lkik/core/interfaces/ac;Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
+.method public static a(Lkik/core/interfaces/ad;Lkik/core/datatypes/messageExtensions/ContentMessage;)Z
     .locals 2
 
     .prologue
@@ -1492,7 +1492,7 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {p0, v0}, Lkik/core/interfaces/ac;->c(Ljava/io/File;)Z
+    invoke-interface {p0, v0}, Lkik/core/interfaces/ad;->c(Ljava/io/File;)Z
 
     move-result v0
 
@@ -1560,9 +1560,9 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0, p2}, Lkik/core/interfaces/ac;->A(Ljava/lang/String;)Z
+    invoke-interface {v0, p2}, Lkik/core/interfaces/ad;->B(Ljava/lang/String;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1580,9 +1580,9 @@
     .line 440
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ac;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -1598,7 +1598,7 @@
     .line 443
     if-eqz v2, :cond_2
 
-    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/util/d;->e:Lkik/core/interfaces/ad;
 
     const/4 v3, 0x1
 
@@ -1608,7 +1608,7 @@
 
     move-object v1, p2
 
-    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
+    invoke-interface/range {v0 .. v5}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Object;ZZZ)Ljava/io/File;
 
     move-result-object v0
 
@@ -2332,16 +2332,16 @@
 
 
 # virtual methods
-.method public final a(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Lcom/kik/cache/ae;Lcom/kik/cache/ContentImageView;Lcom/android/volley/i$a;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
-    .locals 7
+.method public final a(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/cache/ContentImageView;Lcom/android/volley/h$a;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    .locals 9
 
     .prologue
-    const/4 v5, 0x0
+    const/4 v7, 0x0
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     .line 706
-    invoke-static {p2}, Lkik/core/net/d/a;->a(Ljava/lang/String;)Z
+    invoke-static {p2}, Lkik/core/net/messageExtensions/a;->a(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2350,53 +2350,53 @@
     if-eqz p1, :cond_1
 
     .line 707
-    sget-object v0, Lcom/kik/cache/ac;->f:Lcom/android/volley/i$b;
+    sget-object v0, Lcom/kik/cache/KikImageRequest;->EMPTY_BITMAP_LISTENER:Lcom/android/volley/h$b;
 
-    invoke-static {p2, v0, p5}, Lcom/kik/cache/a;->a(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)Lcom/kik/cache/a;
+    invoke-static {p2, v0, v3, v3, p5}, Lcom/kik/cache/Base64ImageRequest;->makeBase64Request(Ljava/lang/String;Lcom/android/volley/h$b;IILcom/android/volley/h$a;)Lcom/kik/cache/Base64ImageRequest;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 708
     invoke-virtual {p1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v0
 
-    move-object v1, v0
-
     .line 723
     :goto_0
-    if-eqz v2, :cond_4
+    if-eqz v1, :cond_4
 
     .line 724
-    new-instance v0, Lcom/kik/events/Promise;
+    new-instance v6, Lcom/kik/events/Promise;
 
-    invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
+    invoke-direct {v6}, Lcom/kik/events/Promise;-><init>()V
 
     .line 727
     if-eqz p1, :cond_0
 
     .line 728
-    iget-object v3, p0, Lkik/android/util/d;->i:Ljava/util/HashSet;
+    iget-object v2, p0, Lkik/android/util/d;->i:Ljava/util/HashSet;
 
     invoke-virtual {p1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v3, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 730
     :cond_0
-    new-instance v3, Lkik/android/util/d$1;
+    new-instance v2, Lkik/android/util/d$1;
 
-    invoke-direct {v3, p0, v1, v0, p1}, Lkik/android/util/d$1;-><init>(Lkik/android/util/d;Ljava/lang/String;Lcom/kik/events/Promise;Lkik/core/datatypes/messageExtensions/ContentMessage;)V
+    invoke-direct {v2, p0, v0, v6, p1}, Lkik/android/util/d$1;-><init>(Lkik/android/util/d;Ljava/lang/String;Lcom/kik/events/Promise;Lkik/core/datatypes/messageExtensions/ContentMessage;)V
 
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
-    move-object v1, p3
+    move-object v0, p3
 
-    move v5, v4
+    move v4, v3
 
-    invoke-virtual/range {v1 .. v6}, Lcom/kik/cache/ae;->b(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->b(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
+
+    move-object v0, v6
 
     .line 769
     :goto_1
@@ -2407,26 +2407,28 @@
     if-eqz p1, :cond_2
 
     .line 711
-    sget-object v2, Lcom/kik/cache/ac;->f:Lcom/android/volley/i$b;
+    sget-object v2, Lcom/kik/cache/KikImageRequest;->EMPTY_BITMAP_LISTENER:Lcom/android/volley/h$b;
 
     move-object v0, p1
 
     move-object v1, p2
 
-    move-object v3, p5
+    move v4, v3
 
-    move-object v6, p6
+    move-object v5, p5
 
-    invoke-static/range {v0 .. v6}, Lcom/kik/cache/k;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;ZLkik/core/z;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/k;
+    move v6, v3
 
-    move-result-object v2
+    move-object v8, p6
+
+    invoke-static/range {v0 .. v8}, Lcom/kik/cache/ContentImageRequest;->getContentImageRequest(Lkik/core/datatypes/messageExtensions/ContentMessage;Ljava/lang/String;Lcom/android/volley/h$b;IILcom/android/volley/h$a;ZLkik/core/z;Lcom/kik/android/Mixpanel;)Lcom/kik/cache/ContentImageRequest;
+
+    move-result-object v1
 
     .line 713
     invoke-virtual {p1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
     move-result-object v0
-
-    move-object v1, v0
 
     goto :goto_0
 
@@ -2443,22 +2445,20 @@
 
     move-result v1
 
-    invoke-static {p2, v0, v1}, Lcom/kik/cache/an;->a(Ljava/lang/String;II)Lcom/kik/cache/an;
+    invoke-static {p2, v0, v1}, Lcom/kik/cache/SimpleUrlRequest;->getSimpleUrlRequest(Ljava/lang/String;II)Lcom/kik/cache/SimpleUrlRequest;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 717
     invoke-static {p2}, Lkik/android/util/d;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    move-object v1, v0
-
     goto :goto_0
 
     .line 720
     :cond_3
-    invoke-static {v5}, Lcom/kik/events/m;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
+    invoke-static {v7}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -2466,7 +2466,7 @@
 
     .line 769
     :cond_4
-    invoke-static {v5}, Lcom/kik/events/m;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
+    invoke-static {v7}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

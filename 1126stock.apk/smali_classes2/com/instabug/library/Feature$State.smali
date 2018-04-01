@@ -40,7 +40,7 @@
 
     const/4 v2, 0x0
 
-    .line 113
+    .line 151
     new-instance v0, Lcom/instabug/library/Feature$State;
 
     const-string v1, "ENABLED"
@@ -49,7 +49,7 @@
 
     sput-object v0, Lcom/instabug/library/Feature$State;->ENABLED:Lcom/instabug/library/Feature$State;
 
-    .line 120
+    .line 158
     new-instance v0, Lcom/instabug/library/Feature$State;
 
     const-string v1, "DISABLED"
@@ -58,7 +58,7 @@
 
     sput-object v0, Lcom/instabug/library/Feature$State;->DISABLED:Lcom/instabug/library/Feature$State;
 
-    .line 106
+    .line 144
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/instabug/library/Feature$State;
@@ -85,7 +85,7 @@
     .end annotation
 
     .prologue
-    .line 106
+    .line 144
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -95,7 +95,7 @@
     .locals 1
 
     .prologue
-    .line 106
+    .line 144
     const-class v0, Lcom/instabug/library/Feature$State;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -111,7 +111,7 @@
     .locals 1
 
     .prologue
-    .line 106
+    .line 144
     sget-object v0, Lcom/instabug/library/Feature$State;->$VALUES:[Lcom/instabug/library/Feature$State;
 
     invoke-virtual {v0}, [Lcom/instabug/library/Feature$State;->clone()Ljava/lang/Object;

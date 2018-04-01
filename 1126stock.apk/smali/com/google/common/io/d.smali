@@ -12,7 +12,7 @@
     .locals 1
 
     .prologue
-    .line 39
+    .line 37
     const-class v0, Lcom/google/common/io/d;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 42
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

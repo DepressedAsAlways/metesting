@@ -66,7 +66,7 @@
 
     .prologue
     .line 44
-    invoke-static {}, Lrx/e/c;->a()Lrx/b/f;
+    invoke-static {}, Lrx/d/c;->a()Lrx/functions/f;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
     return-object v0
 
     :cond_0
-    invoke-interface {v0}, Lrx/b/f;->call()Ljava/lang/Object;
+    invoke-interface {v0}, Lrx/functions/f;->call()Ljava/lang/Object;
 
     move-result-object v0
 

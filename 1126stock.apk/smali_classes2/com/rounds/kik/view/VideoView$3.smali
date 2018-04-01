@@ -1,11 +1,14 @@
 .class final Lcom/rounds/kik/view/VideoView$3;
-.super Lcom/rounds/kik/view/VideoView$b;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/rounds/kik/view/VideoView;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/rounds/kik/view/VideoView;->refreshVideoSurfaceView(Lcom/rounds/kik/view/VideoSurface;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,164 +18,104 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/rounds/kik/view/VideoView;
+.field final synthetic a:Lcom/rounds/kik/view/VideoSurface;
+
+.field final synthetic b:Lcom/rounds/kik/view/VideoView;
 
 
 # direct methods
-.method constructor <init>(Lcom/rounds/kik/view/VideoView;)V
-    .locals 1
+.method constructor <init>(Lcom/rounds/kik/view/VideoView;Lcom/rounds/kik/view/VideoSurface;)V
+    .locals 0
 
     .prologue
-    .line 126
-    iput-object p1, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
+    .line 682
+    iput-object p1, p0, Lcom/rounds/kik/view/VideoView$3;->b:Lcom/rounds/kik/view/VideoView;
 
-    const/4 v0, 0x0
+    iput-object p2, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoSurface;
 
-    invoke-direct {p0, p1, v0}, Lcom/rounds/kik/view/VideoView$b;-><init>(Lcom/rounds/kik/view/VideoView;B)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 8
+.method public final run()V
+    .locals 4
 
     .prologue
-    const/4 v1, 0x0
+    .line 686
+    const/4 v1, 0x1
 
-    .line 141
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
+    .line 687
+    const/4 v0, 0x0
 
-    # getter for: Lcom/rounds/kik/view/VideoView;->mOnVideoModeChanging:Z
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$600(Lcom/rounds/kik/view/VideoView;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mIsScrolling:Z
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$900(Lcom/rounds/kik/view/VideoView;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 142
-    :cond_0
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # setter for: Lcom/rounds/kik/view/VideoView;->mNeedToShowHint:Z
-    invoke-static {v0, v1}, Lcom/rounds/kik/view/VideoView;->access$1002(Lcom/rounds/kik/view/VideoView;Z)Z
-
-    .line 143
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mVideoModeSlidePanel:Lcom/rounds/kik/view/VideoModeSlidePanel;
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$400(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoModeSlidePanel;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoModeSlidePanel;->setHinting(Z)V
-
-    .line 155
     :goto_0
-    return-void
+    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$3;->b:Lcom/rounds/kik/view/VideoView;
 
-    .line 146
-    :cond_1
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
+    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
+    invoke-static {v2}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
 
-    iget-object v1, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
+    move-result-object v2
 
-    # getter for: Lcom/rounds/kik/view/VideoView;->mVideoModeSlidePanel:Lcom/rounds/kik/view/VideoModeSlidePanel;
-    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$400(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoModeSlidePanel;
+    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getChildCount()I
+
+    move-result v2
+
+    if-ge v0, v2, :cond_1
+
+    .line 688
+    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$3;->b:Lcom/rounds/kik/view/VideoView;
+
+    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
+    invoke-static {v2}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoSurface;
+
+    if-ne v2, v3, :cond_0
+
+    .line 693
+    :goto_1
+    iget-object v1, p0, Lcom/rounds/kik/view/VideoView$3;->b:Lcom/rounds/kik/view/VideoView;
+
+    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
+    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/rounds/kik/view/VideoModeSlidePanel;->getStartScrollX()I
+    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoSurface;
 
-    move-result v1
+    invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
 
-    const-wide/16 v2, 0xfa
+    .line 694
+    iget-object v1, p0, Lcom/rounds/kik/view/VideoView$3;->b:Lcom/rounds/kik/view/VideoView;
 
-    const-wide/16 v4, 0x384
+    # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
+    invoke-static {v1}, Lcom/rounds/kik/view/VideoView;->access$100(Lcom/rounds/kik/view/VideoView;)Landroid/widget/FrameLayout;
 
-    # getter for: Lcom/rounds/kik/view/VideoView;->HINT_ANIM_HIDE_INTERPOLATOR:Landroid/animation/TimeInterpolator;
-    invoke-static {}, Lcom/rounds/kik/view/VideoView;->access$1100()Landroid/animation/TimeInterpolator;
+    move-result-object v1
 
-    move-result-object v6
+    iget-object v2, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoSurface;
 
-    new-instance v7, Lcom/rounds/kik/view/VideoView$3$1;
+    invoke-virtual {v1, v2, v0}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;I)V
 
-    invoke-direct {v7, p0}, Lcom/rounds/kik/view/VideoView$3$1;-><init>(Lcom/rounds/kik/view/VideoView$3;)V
-
-    # invokes: Lcom/rounds/kik/view/VideoView;->animateScroll(IJJLandroid/animation/TimeInterpolator;Landroid/animation/Animator$AnimatorListener;)V
-    invoke-static/range {v0 .. v7}, Lcom/rounds/kik/view/VideoView;->access$1200(Lcom/rounds/kik/view/VideoView;IJJLandroid/animation/TimeInterpolator;Landroid/animation/Animator$AnimatorListener;)V
-
-    goto :goto_0
-.end method
-
-.method public final onAnimationStart(Landroid/animation/Animator;)V
-    .locals 2
-
-    .prologue
-    const/4 v1, 0x0
-
-    .line 130
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mOnVideoModeChanging:Z
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$600(Lcom/rounds/kik/view/VideoView;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mIsScrolling:Z
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$900(Lcom/rounds/kik/view/VideoView;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 131
-    :cond_0
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # setter for: Lcom/rounds/kik/view/VideoView;->mNeedToShowHint:Z
-    invoke-static {v0, v1}, Lcom/rounds/kik/view/VideoView;->access$1002(Lcom/rounds/kik/view/VideoView;Z)Z
-
-    .line 132
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mVideoModeSlidePanel:Lcom/rounds/kik/view/VideoModeSlidePanel;
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$400(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoModeSlidePanel;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoModeSlidePanel;->setHinting(Z)V
-
-    .line 136
-    :goto_0
+    .line 695
     return-void
 
-    .line 135
-    :cond_1
-    iget-object v0, p0, Lcom/rounds/kik/view/VideoView$3;->a:Lcom/rounds/kik/view/VideoView;
-
-    # getter for: Lcom/rounds/kik/view/VideoView;->mVideoModeSlidePanel:Lcom/rounds/kik/view/VideoModeSlidePanel;
-    invoke-static {v0}, Lcom/rounds/kik/view/VideoView;->access$400(Lcom/rounds/kik/view/VideoView;)Lcom/rounds/kik/view/VideoModeSlidePanel;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoModeSlidePanel;->setHinting(Z)V
+    .line 687
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
+
+    :cond_1
+    move v0, v1
+
+    goto :goto_1
 .end method

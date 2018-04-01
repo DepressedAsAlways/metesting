@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/ac;
+.field protected b:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -472,9 +472,9 @@
     invoke-virtual {v2, v0, v1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     .line 1199
-    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ac;->l()J
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->l()J
 
     move-result-wide v0
 
@@ -501,9 +501,9 @@
 
     .line 1205
     :cond_3
-    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ac;->m()J
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->m()J
 
     move-result-wide v0
 
@@ -655,18 +655,18 @@
     iput-wide v0, p0, Lkik/android/f;->m:J
 
     .line 125
-    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ac;->m()J
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->m()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lkik/android/f;->o:J
 
     .line 126
-    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/f;->b:Lkik/core/interfaces/ad;
 
-    invoke-interface {v0}, Lkik/core/interfaces/ac;->l()J
+    invoke-interface {v0}, Lkik/core/interfaces/ad;->l()J
 
     move-result-wide v0
 

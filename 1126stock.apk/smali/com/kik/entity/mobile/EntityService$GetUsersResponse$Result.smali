@@ -69,7 +69,7 @@
 
     const/4 v3, 0x0
 
-    .line 1095
+    .line 1100
     new-instance v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     const-string v1, "OK"
@@ -78,7 +78,7 @@
 
     sput-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->OK:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
-    .line 1099
+    .line 1108
     new-instance v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     const-string v1, "PARTIAL"
@@ -87,7 +87,7 @@
 
     sput-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->PARTIAL:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
-    .line 1100
+    .line 1109
     new-instance v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     const-string v1, "UNRECOGNIZED"
@@ -98,7 +98,7 @@
 
     sput-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->UNRECOGNIZED:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
-    .line 1090
+    .line 1095
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
@@ -117,14 +117,14 @@
 
     sput-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->$VALUES:[Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
-    .line 1142
+    .line 1155
     new-instance v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result$1;
 
     invoke-direct {v0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result$1;-><init>()V
 
     sput-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
-    .line 1162
+    .line 1175
     invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->values()[Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     move-result-object v0
@@ -143,13 +143,13 @@
     .end annotation
 
     .prologue
-    .line 1178
+    .line 1191
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 1179
+    .line 1192
     iput p3, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->value:I
 
-    .line 1180
+    .line 1193
     return-void
 .end method
 
@@ -157,28 +157,28 @@
     .locals 1
 
     .prologue
-    .line 1130
+    .line 1143
     packed-switch p0, :pswitch_data_0
 
-    .line 1133
+    .line 1146
     const/4 v0, 0x0
 
     :goto_0
     return-object v0
 
-    .line 1131
+    .line 1144
     :pswitch_0
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->OK:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     goto :goto_0
 
-    .line 1132
+    .line 1145
     :pswitch_1
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->PARTIAL:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     goto :goto_0
 
-    .line 1130
+    .line 1143
     nop
 
     :pswitch_data_0
@@ -192,7 +192,7 @@
     .locals 2
 
     .prologue
-    .line 1159
+    .line 1172
     invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse;->a()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -225,7 +225,7 @@
     .end annotation
 
     .prologue
-    .line 1139
+    .line 1152
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -237,7 +237,7 @@
     .end annotation
 
     .prologue
-    .line 1126
+    .line 1139
     invoke-static {p0}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->forNumber(I)Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     move-result-object v0
@@ -249,7 +249,7 @@
     .locals 2
 
     .prologue
-    .line 1166
+    .line 1179
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -260,7 +260,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1167
+    .line 1180
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "EnumValueDescriptor is not for this type."
@@ -269,7 +269,7 @@
 
     throw v0
 
-    .line 1170
+    .line 1183
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getIndex()I
 
@@ -279,10 +279,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1171
+    .line 1184
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->UNRECOGNIZED:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
-    .line 1173
+    .line 1186
     :goto_0
     return-object v0
 
@@ -302,7 +302,7 @@
     .locals 1
 
     .prologue
-    .line 1090
+    .line 1095
     const-class v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -318,7 +318,7 @@
     .locals 1
 
     .prologue
-    .line 1090
+    .line 1095
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->$VALUES:[Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     invoke-virtual {v0}, [Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->clone()Ljava/lang/Object;
@@ -336,7 +336,7 @@
     .locals 1
 
     .prologue
-    .line 1155
+    .line 1168
     invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -348,12 +348,12 @@
     .locals 2
 
     .prologue
-    .line 1114
+    .line 1127
     sget-object v0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->UNRECOGNIZED:Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;
 
     if-ne p0, v0, :cond_0
 
-    .line 1115
+    .line 1128
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Can\'t get the number of an unknown enum value."
@@ -362,7 +362,7 @@
 
     throw v0
 
-    .line 1118
+    .line 1131
     :cond_0
     iget v0, p0, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->value:I
 
@@ -373,7 +373,7 @@
     .locals 2
 
     .prologue
-    .line 1151
+    .line 1164
     invoke-static {}, Lcom/kik/entity/mobile/EntityService$GetUsersResponse$Result;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0

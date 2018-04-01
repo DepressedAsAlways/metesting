@@ -1,5 +1,5 @@
 .class final Lcom/kik/cards/web/iap/b$4;
-.super Lkik/android/util/av;
+.super Lkik/android/util/aq;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/util/av",
+        "Lkik/android/util/aq",
         "<",
         "Ljava/lang/Void;",
         "Ljava/lang/Void;",
@@ -37,7 +37,7 @@
     .line 195
     iput-object p1, p0, Lcom/kik/cards/web/iap/b$4;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-direct {p0}, Lkik/android/util/av;-><init>()V
+    invoke-direct {p0}, Lkik/android/util/aq;-><init>()V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .line 199
     iget-object v0, p0, Lcom/kik/cards/web/iap/b$4;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->f(Lcom/kik/cards/web/iap/b;)Lcom/android/b/a/a;
+    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->f(Lcom/kik/cards/web/iap/b;)Lcom/android/a/a/a;
 
     move-result-object v0
 
@@ -66,7 +66,7 @@
     .line 201
     new-instance v0, Ljava/util/ArrayList;
 
-    sget-object v1, Lcom/kik/cards/web/iap/InAppPurchasePlugin;->a:[Ljava/lang/String;
+    sget-object v1, Lcom/kik/cards/web/iap/InAppPurchasePlugin;->BILLING_AVAILABLE_SKUS:[Ljava/lang/String;
 
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -95,7 +95,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/kik/cards/web/iap/b$4;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->f(Lcom/kik/cards/web/iap/b;)Lcom/android/b/a/a;
+    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->f(Lcom/kik/cards/web/iap/b;)Lcom/android/a/a/a;
 
     move-result-object v0
 
@@ -113,7 +113,7 @@
 
     const-string v4, "inapp"
 
-    invoke-interface {v0, v2, v3, v4, v1}, Lcom/android/b/a/a;->a(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+    invoke-interface {v0, v2, v3, v4, v1}, Lcom/android/a/a/a;->a(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -171,7 +171,7 @@
     invoke-direct {v3, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     .line 222
-    new-instance v0, Lkik/core/datatypes/k;
+    new-instance v0, Lkik/core/datatypes/j;
 
     const-string v4, "productId"
 
@@ -185,7 +185,7 @@
 
     move-result-object v3
 
-    invoke-direct {v0, v4, v3}, Lkik/core/datatypes/k;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v4, v3}, Lkik/core/datatypes/j;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v1, v0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
@@ -213,11 +213,11 @@
     .line 226
     iget-object v0, p0, Lcom/kik/cards/web/iap/b$4;->a:Lcom/kik/cards/web/iap/b;
 
-    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ac;
+    invoke-static {v0}, Lcom/kik/cards/web/iap/b;->c(Lcom/kik/cards/web/iap/b;)Lkik/core/interfaces/ad;
 
     move-result-object v0
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ac;->a(Ljava/util/Vector;)Z
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->a(Ljava/util/Vector;)Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
@@ -230,7 +230,7 @@
     move-exception v0
 
     :goto_2
-    invoke-static {v0}, Lkik/android/util/bc;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->b(Ljava/lang/Throwable;)V
 
     goto :goto_1
 

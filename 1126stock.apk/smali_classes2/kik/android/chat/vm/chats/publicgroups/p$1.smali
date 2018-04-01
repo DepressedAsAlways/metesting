@@ -3,31 +3,41 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/view/ai$a;
+.implements Lkik/core/interfaces/o;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/vm/chats/publicgroups/p;->a(Lkik/android/chat/view/TransitionableSearchBarViewImpl;Lkik/android/chat/vm/chats/publicgroups/g;)V
+    value = Lkik/android/chat/vm/chats/publicgroups/p;->j()Lrx/d;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkik/core/interfaces/o",
+        "<",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Lkik/android/chat/vm/chats/publicgroups/g;
+.field final synthetic a:Lkik/android/chat/vm/chats/publicgroups/p;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/chats/publicgroups/g;)V
+.method constructor <init>(Lkik/android/chat/vm/chats/publicgroups/p;)V
     .locals 0
 
     .prologue
-    .line 35
-    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/g;
+    .line 110
+    iput-object p1, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,44 +46,42 @@
 
 
 # virtual methods
-.method public final a()V
-    .locals 0
+.method public final a(II)Lrx/d;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lrx/d",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
 
     .prologue
-    .line 50
-    return-void
-.end method
+    .line 114
+    .line 1120
+    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/p;
 
-.method public final a(Ljava/lang/String;)V
-    .locals 1
+    iget-object v0, v0, Lkik/android/chat/vm/chats/publicgroups/p;->b:Landroid/content/res/Resources;
 
-    .prologue
-    .line 44
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/g;
+    const v1, 0x7f02025d
 
-    invoke-interface {v0, p1}, Lkik/android/chat/vm/chats/publicgroups/g;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    .line 45
-    return-void
-.end method
+    move-result-object v0
 
-.method public final a(Z)V
-    .locals 0
+    check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
-    .prologue
-    .line 39
-    return-void
-.end method
+    .line 1121
+    invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
-.method public final b()V
-    .locals 1
+    move-result-object v0
 
-    .prologue
-    .line 55
-    iget-object v0, p0, Lkik/android/chat/vm/chats/publicgroups/p$1;->a:Lkik/android/chat/vm/chats/publicgroups/g;
+    invoke-static {v0}, Lrx/d;->b(Ljava/lang/Object;)Lrx/d;
 
-    invoke-interface {v0}, Lkik/android/chat/vm/chats/publicgroups/g;->e()V
+    move-result-object v0
 
-    .line 56
-    return-void
+    .line 114
+    return-object v0
 .end method

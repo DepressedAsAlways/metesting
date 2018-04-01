@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/KikApplication$14;
-.super Ljava/util/TimerTask;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -13,6 +13,15 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/kik/events/k",
+        "<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
 .field final synthetic a:Lkik/android/chat/KikApplication;
@@ -23,30 +32,25 @@
     .locals 0
 
     .prologue
-    .line 833
+    .line 867
     iput-object p1, p0, Lkik/android/chat/KikApplication$14;->a:Lkik/android/chat/KikApplication;
 
-    invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final a(Ljava/lang/Object;)V
     .locals 1
 
     .prologue
-    .line 839
-    invoke-static {}, Ljava/lang/System;->runFinalization()V
+    .line 871
+    iget-object v0, p0, Lkik/android/chat/KikApplication$14;->a:Lkik/android/chat/KikApplication;
 
-    .line 840
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->F(Lkik/android/chat/KikApplication;)V
 
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    .line 841
+    .line 872
     return-void
 .end method

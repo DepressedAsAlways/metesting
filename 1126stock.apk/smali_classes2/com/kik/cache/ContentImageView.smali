@@ -448,14 +448,14 @@
 
 
 # virtual methods
-.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/ai;
+.method protected final a(Landroid/graphics/Bitmap;Ljava/lang/String;)Lkik/android/widget/bh;
     .locals 1
 
     .prologue
     .line 122
-    new-instance v0, Lkik/android/widget/bp;
+    new-instance v0, Lkik/android/widget/cr;
 
-    invoke-direct {v0, p1, p2}, Lkik/android/widget/bp;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
+    invoke-direct {v0, p1, p2}, Lkik/android/widget/cr;-><init>(Landroid/graphics/Bitmap;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -500,7 +500,7 @@
     return-void
 .end method
 
-.method protected final a(Lcom/kik/cache/ae$d;Z)V
+.method protected final a(Lcom/kik/cache/KikVolleyImageLoader$c;Z)V
     .locals 1
 
     .prologue
@@ -508,14 +508,14 @@
     invoke-virtual {p0}, Lcom/kik/cache/ContentImageView;->d()V
 
     .line 94
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 95
-    invoke-virtual {p1}, Lcom/kik/cache/ae$d;->b()Landroid/graphics/Bitmap;
+    invoke-virtual {p1}, Lcom/kik/cache/KikVolleyImageLoader$c;->b()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -526,7 +526,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lcom/kik/cache/ae;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/z;Lcom/kik/cache/ae$e;)V
+.method public final a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lcom/kik/cache/KikVolleyImageLoader;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/z;Lcom/kik/cache/KikVolleyImageLoader$d;)V
     .locals 6
 
     .prologue
@@ -538,12 +538,12 @@
     iput-object p1, p0, Lcom/kik/cache/ContentImageView;->a:Lkik/core/datatypes/messageExtensions/ContentMessage;
 
     .line 78
-    invoke-static {p1, p3, p4, p5}, Lcom/kik/cache/k;->a(Lkik/core/datatypes/messageExtensions/ContentMessage;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/z;)Lcom/kik/cache/ac;
+    invoke-static {p1, p3, p4, p5}, Lcom/kik/cache/ContentImageRequest;->getContentMessageRequest(Lkik/core/datatypes/messageExtensions/ContentMessage;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/z;)Lcom/kik/cache/KikImageRequest;
 
     move-result-object v1
 
     .line 81
-    invoke-virtual {p0, v1, p2, v5, v5}, Lcom/kik/cache/ContentImageView;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae;ZZ)V
+    invoke-virtual {p0, v1, p2, v5, v5}, Lcom/kik/cache/ContentImageView;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader;ZZ)V
 
     move-object v0, p2
 
@@ -552,7 +552,7 @@
     move v4, v3
 
     .line 82
-    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/ae;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae$e;IIZ)Lcom/kik/cache/ae$d;
+    invoke-virtual/range {v0 .. v5}, Lcom/kik/cache/KikVolleyImageLoader;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader$d;IIZ)Lcom/kik/cache/KikVolleyImageLoader$c;
 
     .line 83
     return-void

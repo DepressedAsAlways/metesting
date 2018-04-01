@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b$c;
+.implements Lrx/c;
 
 
 # annotations
@@ -58,22 +58,22 @@
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>()V
 
-    const v1, 0x7f0903ba
+    const v1, 0x7f0903ce
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
-    const v1, 0x7f0905a5
+    const v1, 0x7f0905ff
 
     .line 136
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikDialogFragment$a;->b(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     move-result-object v0
 
-    const v1, 0x7f0903c3
+    const v1, 0x7f0903d7
 
-    invoke-static {p0}, Lkik/android/chat/fragment/gx;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment$2;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/fa;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment$2;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v2
 
@@ -82,9 +82,9 @@
 
     move-result-object v0
 
-    const v1, 0x7f0905f0
+    const v1, 0x7f09065a
 
-    invoke-static {p0}, Lkik/android/chat/fragment/gy;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment$2;)Landroid/content/DialogInterface$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/fragment/fb;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment$2;)Landroid/content/DialogInterface$OnClickListener;
 
     move-result-object v2
 
@@ -134,7 +134,7 @@
     return-void
 .end method
 
-.method public final a(Lrx/j;)V
+.method public final a(Lrx/k;)V
     .locals 0
 
     .prologue

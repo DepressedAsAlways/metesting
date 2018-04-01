@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/aq;
+.implements Lkik/android/chat/vm/bu;
 
 
 # instance fields
@@ -74,7 +74,7 @@
     return-object v0
 .end method
 
-.method public final c()Lkik/core/datatypes/Message;
+.method public final d()Lkik/core/datatypes/Message;
     .locals 1
 
     .prologue
@@ -84,7 +84,7 @@
     return-object v0
 .end method
 
-.method public final d()Ljava/util/Map;
+.method public final e()Ljava/util/Map;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -129,7 +129,7 @@
     return-object v0
 .end method
 
-.method public final e()Z
+.method public final g()Z
     .locals 1
 
     .prologue

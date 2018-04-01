@@ -46,7 +46,22 @@
     throw v0
 .end method
 
-.method public final a(Lkik/android/chat/vm/ae;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
+.method public final a(Lkik/android/chat/vm/ay;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
+    .locals 1
+
+    .prologue
+    .line 130
+    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment$a;->a:Lkik/android/chat/fragment/KikDialogFragment;
+
+    check-cast v0, Lkik/android/chat/fragment/KikGranReportDialogFragment;
+
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/ay;)Lkik/android/chat/vm/ay;
+
+    .line 131
+    return-object p0
+.end method
+
+.method public final a(Lkik/android/chat/vm/be;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
     .locals 1
 
     .prologue
@@ -56,23 +71,8 @@
     check-cast v0, Lkik/android/chat/fragment/KikGranReportDialogFragment;
 
     .line 124
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/ae;)Lkik/android/chat/vm/ae;
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/be;)Lkik/android/chat/vm/be;
 
     .line 125
-    return-object p0
-.end method
-
-.method public final a(Lkik/android/chat/vm/z;)Lkik/android/chat/fragment/KikGranReportDialogFragment$a;
-    .locals 1
-
-    .prologue
-    .line 130
-    iget-object v0, p0, Lkik/android/chat/fragment/KikGranReportDialogFragment$a;->a:Lkik/android/chat/fragment/KikDialogFragment;
-
-    check-cast v0, Lkik/android/chat/fragment/KikGranReportDialogFragment;
-
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/KikGranReportDialogFragment;->a(Lkik/android/chat/fragment/KikGranReportDialogFragment;Lkik/android/chat/vm/z;)Lkik/android/chat/vm/z;
-
-    .line 131
     return-object p0
 .end method

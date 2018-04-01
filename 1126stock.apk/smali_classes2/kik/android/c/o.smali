@@ -95,7 +95,7 @@
     move-exception v0
 
     :goto_1
-    invoke-static {v0}, Lkik/android/util/bc;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->b(Ljava/lang/Throwable;)V
 
     .line 101
     iget-object v0, p0, Lkik/android/c/o;->c:Lkik/android/c/b$b;

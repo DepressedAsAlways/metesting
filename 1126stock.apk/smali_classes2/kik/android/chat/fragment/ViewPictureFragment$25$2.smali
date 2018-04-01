@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 451
+    .line 495
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$25$2;->b:Lkik/android/chat/fragment/ViewPictureFragment$25;
 
     iput-object p2, p0, Lkik/android/chat/fragment/ViewPictureFragment$25$2;->a:Ljava/lang/Throwable;
@@ -44,25 +44,25 @@
     .locals 1
 
     .prologue
-    .line 455
+    .line 499
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$25$2;->a:Ljava/lang/Throwable;
 
     instance-of v0, v0, Lkik/android/FileSizeTooLargeException;
 
     if-eqz v0, :cond_0
 
-    .line 456
+    .line 500
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$25$2;->b:Lkik/android/chat/fragment/ViewPictureFragment$25;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ViewPictureFragment$25;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-static {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->g(Lkik/android/chat/fragment/ViewPictureFragment;)V
 
-    .line 461
+    .line 505
     :goto_0
     return-void
 
-    .line 459
+    .line 503
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$25$2;->b:Lkik/android/chat/fragment/ViewPictureFragment$25;
 

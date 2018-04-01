@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 2940
+    .line 3479
     invoke-static {}, Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;->values()[Lcom/kik/entity/model/ElementCommon$ProfilePicExtensionDetail$KindCase;
 
     move-result-object v0

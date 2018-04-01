@@ -19,20 +19,20 @@
 
 
 # virtual methods
-.method public abstract aE_()Z
+.method public abstract aH_()Z
 .end method
 
-.method public abstract aF_()V
+.method public abstract d()V
 .end method
 
 .method public abstract e()V
 .end method
 
-.method public abstract f()Lrx/c;
+.method public abstract f()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/drawable/Drawable;",
             ">;"
@@ -40,11 +40,11 @@
     .end annotation
 .end method
 
-.method public abstract g()Lrx/b/g;
+.method public abstract h()Lrx/functions/g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/b/g",
+            "Lrx/functions/g",
             "<",
             "Ljava/lang/Integer;",
             "Ljava/lang/Boolean;",

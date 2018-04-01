@@ -24,9 +24,11 @@
 
 
 # static fields
-.field private static final a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+.field private static final DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
-.field private static final b:Lcom/google/protobuf/Parser;
+.field public static final JWS_FIELD_NUMBER:I = 0x1
+
+.field private static final PARSER:Lcom/google/protobuf/Parser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/protobuf/Parser",
@@ -56,14 +58,14 @@
 
     invoke-direct {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;-><init>()V
 
-    sput-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    sput-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
     .line 1261
     new-instance v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$1;
 
     invoke-direct {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$1;-><init>()V
 
-    sput-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->b:Lcom/google/protobuf/Parser;
+    sput-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-void
 .end method
@@ -89,7 +91,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lcom/google/protobuf/CodedInputStream;)V
+.method private constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -209,7 +211,7 @@
     .end sparse-switch
 .end method
 
-.method synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;B)V
+.method synthetic constructor <init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;Lcom/kik/antispam/safetynet/rpc/SafetynetService$1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -219,7 +221,7 @@
 
     .prologue
     .line 771
-    invoke-direct {p0, p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;-><init>(Lcom/google/protobuf/CodedInputStream;)V
+    invoke-direct {p0, p1, p2}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     return-void
 .end method
@@ -247,7 +249,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+.method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/antispam/safetynet/rpc/SafetynetService$1;)V
     .locals 0
 
     .prologue
@@ -257,51 +259,7 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 771
-    iget-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method static synthetic a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .prologue
-    .line 771
-    iput-object p1, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
-
-    return-object p1
-.end method
-
-.method public static b()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
-    .locals 1
-
-    .prologue
-    .line 1000
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    invoke-direct {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->g()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static c()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-    .locals 1
-
-    .prologue
-    .line 1257
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    return-object v0
-.end method
-
-.method static synthetic d()Z
+.method static synthetic access$1500()Z
     .locals 1
 
     .prologue
@@ -311,83 +269,436 @@
     return v0
 .end method
 
-.method static synthetic e()Lcom/google/protobuf/Parser;
+.method static synthetic access$1700(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Ljava/lang/Object;
     .locals 1
 
     .prologue
     .line 771
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->b:Lcom/google/protobuf/Parser;
+    iget-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method private f()Lcom/google/protobuf/ByteString;
-    .locals 2
+.method static synthetic access$1702(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .prologue
-    .line 867
-    iget-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
+    .line 771
+    iput-object p1, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
 
-    .line 868
-    instance-of v1, v0, Ljava/lang/String;
+    return-object p1
+.end method
 
-    if-eqz v1, :cond_0
+.method static synthetic access$1800()Lcom/google/protobuf/Parser;
+    .locals 1
 
-    .line 869
-    check-cast v0, Ljava/lang/String;
+    .prologue
+    .line 771
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 870
-    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+    return-object v0
+.end method
+
+.method static synthetic access$1900(Lcom/google/protobuf/ByteString;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/IllegalArgumentException;
+        }
+    .end annotation
+
+    .prologue
+    .line 771
+    invoke-static {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->checkByteStringIsUtf8(Lcom/google/protobuf/ByteString;)V
+
+    return-void
+.end method
+
+.method public static getDefaultInstance()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+
+    .prologue
+    .line 1257
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    return-object v0
+.end method
+
+.method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    .prologue
+    .line 827
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService;->c()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 
-    .line 872
-    iput-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
-
-    .line 875
-    :goto_0
     return-object v0
-
-    :cond_0
-    check-cast v0, Lcom/google/protobuf/ByteString;
-
-    goto :goto_0
 .end method
 
-.method private g()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
-    .locals 2
+.method public static newBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    .locals 1
 
     .prologue
-    const/4 v1, 0x0
+    .line 1000
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
-    .line 1006
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    invoke-virtual {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->toBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
-    if-ne p0, v0, :cond_0
+    move-result-object v0
 
-    new-instance v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
-
-    invoke-direct {v0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;-><init>(B)V
-
-    :goto_0
     return-object v0
+.end method
 
-    :cond_0
-    new-instance v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+.method public static newBuilder(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    .locals 1
 
-    invoke-direct {v0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;-><init>(B)V
+    .prologue
+    .line 1003
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
 
-    .line 1007
+    invoke-virtual {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->toBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    move-result-object v0
+
     invoke-virtual {v0, p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
     move-result-object v0
 
-    goto :goto_0
+    return-object v0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 974
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 975
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 974
+    return-object v0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 981
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 982
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseDelimitedWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 981
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 942
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 948
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 987
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 988
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 987
+    return-object v0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 994
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 995
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 994
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 962
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 963
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 962
+    return-object v0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .prologue
+    .line 969
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    .line 970
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->parseWithIOException(Lcom/google/protobuf/Parser;Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/Message;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 969
+    return-object v0
+.end method
+
+.method public static parseFrom([B)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 952
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    return-object v0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .prologue
+    .line 958
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    return-object v0
+.end method
+
+.method public static parser()Lcom/google/protobuf/Parser;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/protobuf/Parser",
+            "<",
+            "Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 1271
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .prologue
+    const/4 v0, 0x1
+
+    .line 911
+    if-ne p1, p0, :cond_1
+
+    .line 922
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 914
+    :cond_1
+    instance-of v1, p1, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    if-nez v1, :cond_2
+
+    .line 915
+    invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 917
+    :cond_2
+    check-cast p1, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    .line 920
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getJws()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 921
+    invoke-virtual {p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getJws()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/4 v0, 0x0
+
+    .line 922
+    goto :goto_0
+.end method
+
+.method public final bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
+    .locals 1
+
+    .prologue
+    .line 771
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getDefaultInstanceForType()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
+    .locals 1
+
+    .prologue
+    .line 771
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getDefaultInstanceForType()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getDefaultInstanceForType()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+    .locals 1
+
+    .prologue
+    .line 1280
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    return-object v0
+.end method
+
+.method public final getJws()Ljava/lang/String;
     .locals 2
 
     .prologue
@@ -421,79 +732,37 @@
     goto :goto_0
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final getJwsBytes()Lcom/google/protobuf/ByteString;
+    .locals 2
 
     .prologue
-    const/4 v0, 0x1
+    .line 867
+    iget-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
 
-    .line 911
-    if-ne p1, p0, :cond_1
+    .line 868
+    instance-of v1, v0, Ljava/lang/String;
 
-    .line 922
-    :cond_0
+    if-eqz v1, :cond_0
+
+    .line 869
+    check-cast v0, Ljava/lang/String;
+
+    .line 870
+    invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+
+    move-result-object v0
+
+    .line 872
+    iput-object v0, p0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->jws_:Ljava/lang/Object;
+
+    .line 875
     :goto_0
-    return v0
+    return-object v0
 
-    .line 914
-    :cond_1
-    instance-of v1, p1, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    if-nez v1, :cond_2
-
-    .line 915
-    invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
+    :cond_0
+    check-cast v0, Lcom/google/protobuf/ByteString;
 
     goto :goto_0
-
-    .line 917
-    :cond_2
-    check-cast p1, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    .line 920
-    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 921
-    invoke-virtual {p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    const/4 v0, 0x0
-
-    .line 922
-    goto :goto_0
-.end method
-
-.method public final bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
-    .locals 1
-
-    .prologue
-    .line 5280
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    .line 771
-    return-object v0
-.end method
-
-.method public final bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
-    .locals 1
-
-    .prologue
-    .line 4280
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    .line 771
-    return-object v0
 .end method
 
 .method public final getParserForType()Lcom/google/protobuf/Parser;
@@ -510,7 +779,7 @@
 
     .prologue
     .line 1276
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->b:Lcom/google/protobuf/Parser;
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
 .end method
@@ -536,7 +805,7 @@
     const/4 v0, 0x0
 
     .line 901
-    invoke-direct {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->f()Lcom/google/protobuf/ByteString;
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getJwsBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v1
 
@@ -612,7 +881,7 @@
     .line 933
     mul-int/lit8 v0, v0, 0x35
 
-    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getJws()Ljava/lang/String;
 
     move-result-object v1
 
@@ -692,73 +961,122 @@
     goto :goto_0
 .end method
 
-.method public final synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
+.method public final bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
-    .line 3000
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    invoke-direct {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->g()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    .line 771
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->newBuilderForType()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
     move-result-object v0
 
-    .line 771
     return-object v0
 .end method
 
-.method protected final synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+.method protected final bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/google/protobuf/Message$Builder;
+    .locals 1
+
+    .prologue
+    .line 771
+    invoke-virtual {p0, p1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .prologue
+    .line 771
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->newBuilderForType()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final newBuilderForType()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    .locals 1
+
+    .prologue
+    .line 998
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->newBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected final newBuilderForType(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
     .locals 2
 
     .prologue
-    .line 2013
+    .line 1013
     new-instance v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 771
+    .line 1014
     return-object v0
 .end method
 
-.method public final synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
-    .locals 1
-
-    .prologue
-    .line 4000
-    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->a:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
-
-    invoke-direct {v0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->g()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
-
-    move-result-object v0
-
-    .line 771
-    return-object v0
-.end method
-
-.method public final synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
+.method public final bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
     .prologue
     .line 771
-    invoke-direct {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->g()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->toBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
+.method public final bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
     .prologue
     .line 771
-    invoke-direct {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->g()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->toBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final toBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 1006
+    sget-object v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->DEFAULT_INSTANCE:Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;
+
+    if-ne p0, v0, :cond_0
+
+    new-instance v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;-><init>(B)V
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    new-instance v0, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    invoke-direct {v0, v1}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;-><init>(B)V
+
+    .line 1007
+    invoke-virtual {v0, p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public final writeTo(Lcom/google/protobuf/CodedOutputStream;)V
@@ -771,7 +1089,7 @@
 
     .prologue
     .line 891
-    invoke-direct {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->f()Lcom/google/protobuf/ByteString;
+    invoke-virtual {p0}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->getJwsBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 

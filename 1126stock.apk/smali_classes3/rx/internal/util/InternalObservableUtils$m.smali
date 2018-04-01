@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/f;
+.implements Lrx/functions/f;
 
 
 # annotations
@@ -22,9 +22,9 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/b/f",
+        "Lrx/functions/f",
         "<",
-        "Lrx/c/b",
+        "Lrx/b/b",
         "<TT;>;>;"
     }
 .end annotation
@@ -35,14 +35,14 @@
 
 .field private final b:Ljava/util/concurrent/TimeUnit;
 
-.field private final c:Lrx/f;
+.field private final c:Lrx/g;
 
 .field private final d:I
 
-.field private final e:Lrx/c;
+.field private final e:Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;"
         }
     .end annotation
@@ -50,15 +50,15 @@
 
 
 # direct methods
-.method private constructor <init>(Lrx/c;IJLjava/util/concurrent/TimeUnit;Lrx/f;)V
+.method constructor <init>(Lrx/d;IJLjava/util/concurrent/TimeUnit;Lrx/g;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/c",
+            "Lrx/d",
             "<TT;>;IJ",
             "Ljava/util/concurrent/TimeUnit;",
-            "Lrx/f;",
+            "Lrx/g;",
             ")V"
         }
     .end annotation
@@ -74,25 +74,15 @@
     iput-object p5, p0, Lrx/internal/util/InternalObservableUtils$m;->b:Ljava/util/concurrent/TimeUnit;
 
     .line 347
-    iput-object p6, p0, Lrx/internal/util/InternalObservableUtils$m;->c:Lrx/f;
+    iput-object p6, p0, Lrx/internal/util/InternalObservableUtils$m;->c:Lrx/g;
 
     .line 348
     iput p2, p0, Lrx/internal/util/InternalObservableUtils$m;->d:I
 
     .line 349
-    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$m;->e:Lrx/c;
+    iput-object p1, p0, Lrx/internal/util/InternalObservableUtils$m;->e:Lrx/d;
 
     .line 350
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lrx/c;IJLjava/util/concurrent/TimeUnit;Lrx/f;B)V
-    .locals 1
-
-    .prologue
-    .line 336
-    invoke-direct/range {p0 .. p6}, Lrx/internal/util/InternalObservableUtils$m;-><init>(Lrx/c;IJLjava/util/concurrent/TimeUnit;Lrx/f;)V
-
     return-void
 .end method
 
@@ -104,7 +94,7 @@
     .prologue
     .line 336
     .line 9354
-    iget-object v1, p0, Lrx/internal/util/InternalObservableUtils$m;->e:Lrx/c;
+    iget-object v1, p0, Lrx/internal/util/InternalObservableUtils$m;->e:Lrx/d;
 
     iget v6, p0, Lrx/internal/util/InternalObservableUtils$m;->d:I
 
@@ -112,12 +102,12 @@
 
     iget-object v4, p0, Lrx/internal/util/InternalObservableUtils$m;->b:Ljava/util/concurrent/TimeUnit;
 
-    iget-object v5, p0, Lrx/internal/util/InternalObservableUtils$m;->c:Lrx/f;
+    iget-object v5, p0, Lrx/internal/util/InternalObservableUtils$m;->c:Lrx/g;
 
-    .line 9818
+    .line 9924
     if-gez v6, :cond_0
 
-    .line 9819
+    .line 9925
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "bufferSize < 0"
@@ -126,9 +116,9 @@
 
     throw v0
 
-    .line 9821
+    .line 9927
     :cond_0
-    invoke-static/range {v1 .. v6}, Lrx/internal/operators/OperatorReplay;->a(Lrx/c;JLjava/util/concurrent/TimeUnit;Lrx/f;I)Lrx/c/b;
+    invoke-static/range {v1 .. v6}, Lrx/internal/operators/OperatorReplay;->a(Lrx/d;JLjava/util/concurrent/TimeUnit;Lrx/g;I)Lrx/b/b;
 
     move-result-object v0
 

@@ -186,11 +186,11 @@
 
     iget-object v2, p0, Lkik/android/net/http/b;->k:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
     .line 92
     iget-object v0, p0, Lkik/android/net/http/b;->e:Lcom/kik/events/d;
@@ -201,11 +201,11 @@
 
     iget-object v2, p0, Lkik/android/net/http/b;->k:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
     .line 93
     return-void

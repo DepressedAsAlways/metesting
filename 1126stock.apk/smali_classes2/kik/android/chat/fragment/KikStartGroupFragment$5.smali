@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 288
+    .line 304
     invoke-static {}, Lkik/core/profile/GroupManager$HashtagAvailabilityState;->values()[Lkik/core/profile/GroupManager$HashtagAvailabilityState;
 
     move-result-object v0

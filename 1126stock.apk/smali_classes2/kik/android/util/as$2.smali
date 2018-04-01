@@ -1,55 +1,57 @@
 .class final Lkik/android/util/as$2;
-.super Landroid/animation/AnimatorListenerAdapter;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/util/as;->a(Landroid/view/View;FJ)V
+    value = Lkik/android/util/as;->handleMessage(Landroid/os/Message;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroid/view/View;
+.field final synthetic a:Lkik/core/datatypes/Message;
+
+.field final synthetic b:Lkik/android/util/as;
 
 
 # direct methods
-.method constructor <init>(Landroid/view/View;)V
+.method constructor <init>(Lkik/android/util/as;Lkik/core/datatypes/Message;)V
     .locals 0
 
     .prologue
-    .line 249
-    iput-object p1, p0, Lkik/android/util/as$2;->a:Landroid/view/View;
+    .line 94
+    iput-object p1, p0, Lkik/android/util/as$2;->b:Lkik/android/util/as;
 
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    iput-object p2, p0, Lkik/android/util/as$2;->a:Lkik/core/datatypes/Message;
+
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 3
+.method public final a(Ljava/lang/Object;)V
+    .locals 2
 
     .prologue
-    .line 253
-    const/4 v0, 0x1
+    .line 99
+    iget-object v0, p0, Lkik/android/util/as$2;->b:Lkik/android/util/as;
 
-    new-array v0, v0, [Landroid/view/View;
+    invoke-static {v0}, Lkik/android/util/as;->e(Lkik/android/util/as;)Lkik/core/interfaces/IConversation;
 
-    const/4 v1, 0x0
+    move-result-object v0
 
-    iget-object v2, p0, Lkik/android/util/as$2;->a:Landroid/view/View;
+    iget-object v1, p0, Lkik/android/util/as$2;->a:Lkik/core/datatypes/Message;
 
-    aput-object v2, v0, v1
+    invoke-interface {v0, v1}, Lkik/core/interfaces/IConversation;->c(Lkik/core/datatypes/Message;)Lcom/kik/events/Promise;
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
-
-    .line 254
+    .line 100
     return-void
 .end method

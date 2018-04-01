@@ -9,11 +9,11 @@
 # instance fields
 .field private a:Lcom/kik/cards/web/a;
 
-.field private b:Lkik/core/interfaces/ac;
+.field private b:Lkik/core/interfaces/ad;
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/cards/web/a;Lkik/core/interfaces/ac;)V
+.method public constructor <init>(Lcom/kik/cards/web/a;Lkik/core/interfaces/ad;)V
     .locals 0
 
     .prologue
@@ -24,7 +24,7 @@
     iput-object p1, p0, Lcom/kik/cards/usermedia/a;->a:Lcom/kik/cards/web/a;
 
     .line 30
-    iput-object p2, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ac;
+    iput-object p2, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ad;
 
     .line 31
     return-void
@@ -137,12 +137,12 @@
     goto :goto_2
 .end method
 
-.method static synthetic a(Lcom/kik/cards/usermedia/a;)Lkik/core/interfaces/ac;
+.method static synthetic a(Lcom/kik/cards/usermedia/a;)Lkik/core/interfaces/ad;
     .locals 1
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lcom/kik/cards/usermedia/a;->b:Lkik/core/interfaces/ad;
 
     return-object v0
 .end method
@@ -200,7 +200,7 @@
 
     invoke-direct {v2, p0, v0, p3}, Lcom/kik/cards/usermedia/a$1;-><init>(Lcom/kik/cards/usermedia/a;Ljava/io/File;Z)V
 
-    invoke-static {v1, v2}, Lcom/kik/events/m;->b(Lcom/kik/events/Promise;Lcom/kik/events/q;)Lcom/kik/events/Promise;
+    invoke-static {v1, v2}, Lcom/kik/events/l;->b(Lcom/kik/events/Promise;Lcom/kik/events/p;)Lcom/kik/events/Promise;
 
     move-result-object v0
 

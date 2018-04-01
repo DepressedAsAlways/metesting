@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field protected a:Lcom/android/volley/h;
+.field protected a:Lcom/android/volley/g;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     .locals 4
 
     .prologue
-    .line 46
+    .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 47
+    .line 42
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p1}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
@@ -34,35 +34,35 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 49
-    new-instance v1, Lcom/android/volley/toolbox/g;
+    .line 44
+    new-instance v1, Lcom/android/volley/toolbox/f;
 
-    invoke-direct {v1}, Lcom/android/volley/toolbox/g;-><init>()V
+    invoke-direct {v1}, Lcom/android/volley/toolbox/f;-><init>()V
 
-    .line 50
+    .line 45
     new-instance v2, Lcom/android/volley/toolbox/a;
 
-    invoke-direct {v2, v1}, Lcom/android/volley/toolbox/a;-><init>(Lcom/android/volley/toolbox/f;)V
+    invoke-direct {v2, v1}, Lcom/android/volley/toolbox/a;-><init>(Lcom/android/volley/toolbox/e;)V
 
-    .line 52
-    new-instance v1, Lcom/android/volley/h;
+    .line 47
+    new-instance v1, Lcom/android/volley/g;
 
-    new-instance v3, Lcom/android/volley/toolbox/c;
+    new-instance v3, Lcom/android/volley/toolbox/DiskBasedCache;
 
-    invoke-direct {v3, v0}, Lcom/android/volley/toolbox/c;-><init>(Ljava/io/File;)V
+    invoke-direct {v3, v0}, Lcom/android/volley/toolbox/DiskBasedCache;-><init>(Ljava/io/File;)V
 
     const/4 v0, 0x1
 
-    invoke-direct {v1, v3, v2, v0}, Lcom/android/volley/h;-><init>(Lcom/android/volley/a;Lcom/android/volley/e;I)V
+    invoke-direct {v1, v3, v2, v0}, Lcom/android/volley/g;-><init>(Lcom/android/volley/Cache;Lcom/android/volley/d;I)V
 
-    iput-object v1, p0, Lkik/android/gifs/api/GifApiProvider;->a:Lcom/android/volley/h;
+    iput-object v1, p0, Lkik/android/gifs/api/GifApiProvider;->a:Lcom/android/volley/g;
 
-    .line 53
-    iget-object v0, p0, Lkik/android/gifs/api/GifApiProvider;->a:Lcom/android/volley/h;
+    .line 48
+    iget-object v0, p0, Lkik/android/gifs/api/GifApiProvider;->a:Lcom/android/volley/g;
 
-    invoke-virtual {v0}, Lcom/android/volley/h;->a()V
+    invoke-virtual {v0}, Lcom/android/volley/g;->a()V
 
-    .line 54
+    .line 49
     return-void
 .end method
 
@@ -128,25 +128,6 @@
     .end annotation
 .end method
 
-.method public final a(Ljava/lang/String;)V
-    .locals 1
-
-    .prologue
-    .line 171
-    iget-object v0, p0, Lkik/android/gifs/api/GifApiProvider;->a:Lcom/android/volley/h;
-
-    if-eqz v0, :cond_0
-
-    .line 172
-    iget-object v0, p0, Lkik/android/gifs/api/GifApiProvider;->a:Lcom/android/volley/h;
-
-    invoke-virtual {v0, p1}, Lcom/android/volley/h;->a(Ljava/lang/Object;)V
-
-    .line 174
-    :cond_0
-    return-void
-.end method
-
 .method public abstract a(Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;I)V
 .end method
 
@@ -164,11 +145,11 @@
     .end annotation
 .end method
 
-.method public abstract b()Lrx/c;
+.method public abstract b()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Lkik/android/gifs/api/GifResponseData;",
             ">;"
@@ -176,11 +157,11 @@
     .end annotation
 .end method
 
-.method public abstract c()Lrx/c;
+.method public abstract c()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;"

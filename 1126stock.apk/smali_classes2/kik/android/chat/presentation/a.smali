@@ -34,7 +34,7 @@
             "(",
             "Ljava/util/Collection",
             "<",
-            "Lkik/core/datatypes/m;",
+            "Lkik/core/datatypes/l;",
             ">;)V"
         }
     .end annotation

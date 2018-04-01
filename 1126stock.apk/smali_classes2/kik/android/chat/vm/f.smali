@@ -1,138 +1,280 @@
-.class public final Lkik/android/chat/vm/f;
-.super Ljava/lang/Object;
+.class public abstract Lkik/android/chat/vm/f;
+.super Lkik/android/chat/vm/c;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lkik/android/chat/vm/f$a;
+        "<ViewPagerItemViewModel::",
+        "Lkik/android/chat/vm/bs;",
+        ">",
+        "Lkik/android/chat/vm/c",
+        "<TViewPagerItemViewModel;>;"
     }
 .end annotation
 
 
 # instance fields
-.field private a:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
+.field private final a:Ljava/lang/Object;
 
-.field private b:Ljava/lang/String;
-
-.field private c:Ljava/util/List;
+.field private b:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/List",
+            "Ljava/util/Map",
             "<",
-            "Lkik/android/chat/vm/f$a;",
-            ">;"
+            "Ljava/lang/String;",
+            "TViewPagerItemViewModel;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 1
 
     .prologue
-    .line 57
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 14
+    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
 
-    .line 13
-    sget-object v0, Lkik/android/chat/vm/DialogViewModel$DialogStyle;->PLAIN:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
+    .line 16
+    new-instance v0, Ljava/lang/Object;
 
-    iput-object v0, p0, Lkik/android/chat/vm/f;->a:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    .line 53
-    new-instance v0, Ljava/util/ArrayList;
+    iput-object v0, p0, Lkik/android/chat/vm/f;->a:Ljava/lang/Object;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    .line 18
+    new-instance v0, Ljava/util/HashMap;
 
-    iput-object v0, p0, Lkik/android/chat/vm/f;->c:Ljava/util/List;
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 1073
-    iput-object p1, p0, Lkik/android/chat/vm/f;->b:Ljava/lang/String;
+    iput-object v0, p0, Lkik/android/chat/vm/f;->b:Ljava/util/Map;
 
-    .line 59
     return-void
+.end method
+
+.method static synthetic a(Lkik/android/chat/vm/f;Ljava/lang/String;)V
+    .locals 2
+
+    .prologue
+    .line 40
+    iget-object v1, p0, Lkik/android/chat/vm/f;->a:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 41
+    :try_start_0
+    iget-object v0, p0, Lkik/android/chat/vm/f;->b:Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 42
+    monitor-exit v1
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 63
-    iget-object v0, p0, Lkik/android/chat/vm/f;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final a(Ljava/lang/String;Ljava/lang/Runnable;)Lkik/android/chat/vm/f;
-    .locals 2
-
-    .prologue
-    .line 91
-    new-instance v0, Lkik/android/chat/vm/f$a;
-
-    invoke-direct {v0, p1, p2}, Lkik/android/chat/vm/f$a;-><init>(Ljava/lang/String;Ljava/lang/Runnable;)V
-
-    .line 1080
-    iget-object v1, p0, Lkik/android/chat/vm/f;->c:Ljava/util/List;
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 91
-    return-object p0
-.end method
-
-.method public final a(Ljava/util/List;)Lkik/android/chat/vm/f;
-    .locals 1
+.method protected final a(Ljava/lang/String;I)Lkik/android/chat/vm/c$a;
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/List",
-            "<",
-            "Lkik/android/chat/vm/f$a;",
-            ">;)",
-            "Lkik/android/chat/vm/f;"
+            "Ljava/lang/String;",
+            "I)",
+            "Lkik/android/chat/vm/c",
+            "<TViewPagerItemViewModel;>.a;"
         }
     .end annotation
 
     .prologue
-    .line 106
-    iget-object v0, p0, Lkik/android/chat/vm/f;->c:Ljava/util/List;
+    const/4 v2, 0x0
 
-    invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    .line 25
+    iget-object v3, p0, Lkik/android/chat/vm/f;->a:Ljava/lang/Object;
 
-    .line 107
-    return-object p0
+    monitor-enter v3
+
+    .line 26
+    :try_start_0
+    iget-object v1, p0, Lkik/android/chat/vm/f;->b:Ljava/util/Map;
+
+    invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lkik/android/chat/vm/bs;
+
+    .line 29
+    if-eqz v1, :cond_0
+
+    instance-of v4, v1, Lkik/android/chat/vm/e;
+
+    if-eqz v4, :cond_0
+
+    .line 30
+    move-object v0, v1
+
+    check-cast v0, Lkik/android/chat/vm/e;
+
+    move-object v2, v0
+
+    invoke-virtual {v2}, Lkik/android/chat/vm/e;->G_()Z
+
+    move-result v2
+
+    .line 33
+    :cond_0
+    if-eqz v1, :cond_1
+
+    if-eqz v2, :cond_1
+
+    .line 34
+    new-instance v2, Lkik/android/chat/vm/c$a;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v2, p0, v1, v4}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
+
+    monitor-exit v3
+
+    move-object v1, v2
+
+    .line 48
+    :goto_0
+    return-object v1
+
+    .line 37
+    :cond_1
+    invoke-virtual {p0, p2}, Lkik/android/chat/vm/f;->e(I)Lkik/android/chat/vm/at;
+
+    move-result-object v1
+
+    check-cast v1, Lkik/android/chat/vm/bs;
+
+    .line 39
+    invoke-interface {v1}, Lkik/android/chat/vm/bs;->aJ_()Lrx/b;
+
+    move-result-object v2
+
+    invoke-static {p0, p1}, Lkik/android/chat/vm/g;->a(Lkik/android/chat/vm/f;Ljava/lang/String;)Lrx/functions/a;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Lrx/b;->b(Lrx/functions/a;)Lrx/k;
+
+    .line 45
+    iget-object v2, p0, Lkik/android/chat/vm/f;->b:Ljava/util/Map;
+
+    invoke-interface {v2, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 46
+    monitor-exit v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 48
+    new-instance v2, Lkik/android/chat/vm/c$a;
+
+    const/4 v3, 0x1
+
+    invoke-direct {v2, p0, v1, v3}, Lkik/android/chat/vm/c$a;-><init>(Lkik/android/chat/vm/c;Lkik/android/chat/vm/at;Z)V
+
+    move-object v1, v2
+
+    goto :goto_0
+
+    .line 46
+    :catchall_0
+    move-exception v1
+
+    :try_start_1
+    monitor-exit v3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v1
 .end method
 
-.method public final b()Ljava/util/List;
-    .locals 1
+.method public al_()V
+    .locals 2
+
+    .prologue
+    .line 64
+    iget-object v1, p0, Lkik/android/chat/vm/f;->a:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 65
+    :try_start_0
+    invoke-super {p0}, Lkik/android/chat/vm/c;->al_()V
+
+    .line 66
+    monitor-exit v1
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method protected final q_()Ljava/util/List;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Ljava/util/List",
-            "<",
-            "Lkik/android/chat/vm/f$a;",
-            ">;"
+            "<TViewPagerItemViewModel;>;"
         }
     .end annotation
 
     .prologue
-    .line 68
-    iget-object v0, p0, Lkik/android/chat/vm/f;->c:Ljava/util/List;
+    .line 54
+    iget-object v1, p0, Lkik/android/chat/vm/f;->a:Ljava/lang/Object;
+
+    monitor-enter v1
+
+    .line 55
+    :try_start_0
+    new-instance v0, Ljava/util/ArrayList;
+
+    iget-object v2, p0, Lkik/android/chat/vm/f;->b:Ljava/util/Map;
+
+    invoke-interface {v2}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v2
+
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    monitor-exit v1
 
     return-object v0
-.end method
 
-.method public final c()Lkik/android/chat/vm/DialogViewModel$DialogStyle;
-    .locals 1
+    .line 56
+    :catchall_0
+    move-exception v0
 
-    .prologue
-    .line 101
-    iget-object v0, p0, Lkik/android/chat/vm/f;->a:Lkik/android/chat/vm/DialogViewModel$DialogStyle;
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-object v0
+    throw v0
 .end method

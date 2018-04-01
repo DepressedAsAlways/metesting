@@ -63,7 +63,7 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/Throwable;)V
 
     :cond_0
     move v0, v1

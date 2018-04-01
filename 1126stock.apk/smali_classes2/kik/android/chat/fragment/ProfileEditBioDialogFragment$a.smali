@@ -52,14 +52,14 @@
     return-object p0
 .end method
 
-.method public final a(Lkik/android/chat/vm/z;)Lkik/android/chat/fragment/ProfileEditBioDialogFragment$a;
+.method public final a(Lkik/android/chat/vm/ay;)Lkik/android/chat/fragment/ProfileEditBioDialogFragment$a;
     .locals 1
 
     .prologue
     .line 213
     iget-object v0, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment$a;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    invoke-static {v0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;Lkik/android/chat/vm/z;)Lkik/android/chat/vm/z;
+    invoke-static {v0, p1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->a(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;Lkik/android/chat/vm/ay;)Lkik/android/chat/vm/ay;
 
     .line 214
     return-object p0
@@ -72,7 +72,7 @@
     .line 225
     iget-object v0, p0, Lkik/android/chat/fragment/ProfileEditBioDialogFragment$a;->a:Lkik/android/chat/fragment/ProfileEditBioDialogFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->c(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Lkik/android/chat/vm/z;
+    invoke-static {v0}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment;->f(Lkik/android/chat/fragment/ProfileEditBioDialogFragment;)Lkik/android/chat/vm/ay;
 
     move-result-object v0
 

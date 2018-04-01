@@ -1,11 +1,14 @@
 .class final Lcom/kik/cards/web/CardsWebViewFragment$30;
-.super Lcom/kik/events/l;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/cards/web/CardsWebViewFragment;->a(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
+    value = Lcom/kik/cards/web/CardsWebViewFragment;->a(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,103 +16,89 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/kik/events/l",
-        "<",
-        "Ljava/lang/Boolean;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field final synthetic a:Landroid/webkit/GeolocationPermissions$Callback;
-
-.field final synthetic b:Ljava/lang/String;
-
-.field final synthetic c:Lcom/kik/cards/web/CardsWebViewFragment;
+.field final synthetic a:Lcom/kik/cards/web/CardsWebViewFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;Landroid/webkit/GeolocationPermissions$Callback;Ljava/lang/String;)V
+.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;)V
     .locals 0
 
     .prologue
-    .line 2030
-    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->c:Lcom/kik/cards/web/CardsWebViewFragment;
+    .line 1879
+    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Landroid/webkit/GeolocationPermissions$Callback;
-
-    iput-object p3, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->b:Ljava/lang/String;
-
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;)V
+.method public final run()V
     .locals 4
 
     .prologue
-    .line 2030
-    check-cast p1, Ljava/lang/Boolean;
+    .line 1883
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    .line 3034
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)V
+    invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->j()V
 
-    .line 3035
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 1884
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    move-result v0
+    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->c(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/cards/web/c;
+
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3036
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Landroid/webkit/GeolocationPermissions$Callback;
+    .line 1885
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->b:Ljava/lang/String;
+    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->c(Lcom/kik/cards/web/CardsWebViewFragment;)Lcom/kik/cards/web/c;
 
-    const/4 v2, 0x1
+    move-result-object v0
 
-    const/4 v3, 0x0
+    invoke-virtual {v0}, Lcom/kik/cards/web/c;->getUrl()Ljava/lang/String;
 
-    invoke-interface {v0, v1, v2, v3}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
+    move-result-object v0
 
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    .line 1887
+    :try_start_0
+    iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Lcom/kik/cards/web/CardsWebViewFragment;
+
+    new-instance v2, Landroid/content/Intent;
+
+    const-string v3, "android.intent.action.VIEW"
+
+    invoke-direct {v2, v3, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1893
+    :cond_0
     :goto_0
     return-void
 
-    .line 3039
-    :cond_0
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->c:Lcom/kik/cards/web/CardsWebViewFragment;
+    .line 1890
+    :catch_0
+    move-exception v0
 
-    iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->b:Ljava/lang/String;
+    invoke-static {}, Lcom/kik/cards/web/CardsWebViewFragment;->n()Lorg/slf4j/b;
 
-    iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Landroid/webkit/GeolocationPermissions$Callback;
+    move-result-object v0
 
-    invoke-static {v0, v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/CardsWebViewFragment;Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
+    const-string v1, "No activity found to handle fullscreen"
+
+    invoke-interface {v0, v1}, Lorg/slf4j/b;->error(Ljava/lang/String;)V
 
     goto :goto_0
-.end method
-
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 3
-
-    .prologue
-    .line 2046
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)V
-
-    .line 2047
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->c:Lcom/kik/cards/web/CardsWebViewFragment;
-
-    iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->b:Ljava/lang/String;
-
-    iget-object v2, p0, Lcom/kik/cards/web/CardsWebViewFragment$30;->a:Landroid/webkit/GeolocationPermissions$Callback;
-
-    invoke-static {v0, v1, v2}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lcom/kik/cards/web/CardsWebViewFragment;Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
-
-    .line 2048
-    return-void
 .end method

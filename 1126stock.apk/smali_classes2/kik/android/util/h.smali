@@ -8,7 +8,7 @@
 
 .field private static b:I
 
-.field private static final c:Lkik/android/util/ap;
+.field private static final c:Lkik/android/util/ak;
 
 .field private static final d:Lorg/slf4j/b;
 
@@ -31,13 +31,13 @@
     sput v0, Lkik/android/util/h;->b:I
 
     .line 48
-    new-instance v0, Lkik/android/util/ap;
+    new-instance v0, Lkik/android/util/ak;
 
     sget v1, Lkik/android/util/h;->b:I
 
-    invoke-direct {v0, v1}, Lkik/android/util/ap;-><init>(I)V
+    invoke-direct {v0, v1}, Lkik/android/util/ak;-><init>(I)V
 
-    sput-object v0, Lkik/android/util/h;->c:Lkik/android/util/ap;
+    sput-object v0, Lkik/android/util/h;->c:Lkik/android/util/ak;
 
     .line 53
     const-string v0, "BitmapUtils"
@@ -305,16 +305,16 @@
     mul-int v2, v3, v7
 
     .line 1164
-    sget-object v1, Lkik/android/util/h;->c:Lkik/android/util/ap;
+    sget-object v1, Lkik/android/util/h;->c:Lkik/android/util/ak;
 
-    invoke-virtual {v1, v2}, Lkik/android/util/ap;->a(I)[I
+    invoke-virtual {v1, v2}, Lkik/android/util/ak;->a(I)[I
 
     move-result-object v1
 
     .line 1165
-    sget-object v4, Lkik/android/util/h;->c:Lkik/android/util/ap;
+    sget-object v4, Lkik/android/util/h;->c:Lkik/android/util/ak;
 
-    invoke-virtual {v4, v2}, Lkik/android/util/ap;->a(I)[I
+    invoke-virtual {v4, v2}, Lkik/android/util/ak;->a(I)[I
 
     move-result-object v9
 
@@ -343,14 +343,14 @@
     move-result-object v2
 
     .line 1180
-    sget-object v3, Lkik/android/util/h;->c:Lkik/android/util/ap;
+    sget-object v3, Lkik/android/util/h;->c:Lkik/android/util/ak;
 
-    invoke-virtual {v3, v1}, Lkik/android/util/ap;->a([I)V
+    invoke-virtual {v3, v1}, Lkik/android/util/ak;->a([I)V
 
     .line 1181
-    sget-object v1, Lkik/android/util/h;->c:Lkik/android/util/ap;
+    sget-object v1, Lkik/android/util/h;->c:Lkik/android/util/ak;
 
-    invoke-virtual {v1, v9}, Lkik/android/util/ap;->a([I)V
+    invoke-virtual {v1, v9}, Lkik/android/util/ak;->a([I)V
 
     .line 1182
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
@@ -559,7 +559,7 @@
     .locals 2
 
     .prologue
-    .line 523
+    .line 556
     const/4 v0, 0x0
 
     :try_start_0
@@ -571,7 +571,7 @@
 
     move-result-object v0
 
-    .line 526
+    .line 559
     :goto_0
     return-object v0
 
@@ -587,7 +587,7 @@
     .locals 2
 
     .prologue
-    .line 541
+    .line 574
     const/4 v0, 0x0
 
     :try_start_0
@@ -599,7 +599,7 @@
 
     move-result-object v0
 
-    .line 544
+    .line 577
     :goto_0
     return-object v0
 
@@ -918,6 +918,56 @@
     goto :goto_4
 .end method
 
+.method public static b(Ljava/lang/String;)F
+    .locals 1
+
+    .prologue
+    .line 417
+    invoke-static {p0}, Lkik/android/util/h;->a(Ljava/lang/String;)I
+
+    move-result v0
+
+    .line 1429
+    packed-switch v0, :pswitch_data_0
+
+    .line 1437
+    :pswitch_0
+    const/4 v0, 0x0
+
+    .line 1435
+    :goto_0
+    return v0
+
+    .line 1431
+    :pswitch_1
+    const/high16 v0, 0x43340000    # 180.0f
+
+    goto :goto_0
+
+    .line 1433
+    :pswitch_2
+    const/high16 v0, 0x42b40000    # 90.0f
+
+    goto :goto_0
+
+    .line 1435
+    :pswitch_3
+    const/high16 v0, 0x43870000    # 270.0f
+
+    goto :goto_0
+
+    .line 1429
+    :pswitch_data_0
+    .packed-switch 0x3
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+        :pswitch_0
+        :pswitch_3
+    .end packed-switch
+.end method
+
 .method public static b(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
 
@@ -954,7 +1004,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->d(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
@@ -1005,38 +1055,38 @@
 
     const/high16 v1, -0x40800000    # -1.0f
 
-    .line 417
+    .line 450
     if-nez p0, :cond_1
 
-    .line 418
+    .line 451
     const/4 p0, 0x0
 
-    .line 461
+    .line 494
     :cond_0
     :goto_0
     return-object p0
 
-    .line 420
+    .line 453
     :cond_1
     const/4 v0, 0x1
 
     if-eq p1, v0, :cond_0
 
-    .line 424
+    .line 457
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 425
+    .line 458
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 427
+    .line 460
     :pswitch_0
     invoke-virtual {v5, v1, v2}, Landroid/graphics/Matrix;->setScale(FF)V
 
-    .line 455
+    .line 488
     :goto_1
     const/4 v1, 0x0
 
@@ -1059,70 +1109,70 @@
 
     move-result-object v0
 
-    .line 456
+    .line 489
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->recycle()V
     :try_end_0
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
 
     move-object p0, v0
 
-    .line 457
+    .line 490
     goto :goto_0
 
-    .line 430
+    .line 463
     :pswitch_1
     invoke-virtual {v5, v6}, Landroid/graphics/Matrix;->setRotate(F)V
 
     goto :goto_1
 
-    .line 433
+    .line 466
     :pswitch_2
     invoke-virtual {v5, v6}, Landroid/graphics/Matrix;->setRotate(F)V
 
-    .line 434
+    .line 467
     invoke-virtual {v5, v1, v2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     goto :goto_1
 
-    .line 437
+    .line 470
     :pswitch_3
     invoke-virtual {v5, v4}, Landroid/graphics/Matrix;->setRotate(F)V
 
-    .line 438
+    .line 471
     invoke-virtual {v5, v1, v2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     goto :goto_1
 
-    .line 441
+    .line 474
     :pswitch_4
     invoke-virtual {v5, v4}, Landroid/graphics/Matrix;->setRotate(F)V
 
     goto :goto_1
 
-    .line 444
+    .line 477
     :pswitch_5
     invoke-virtual {v5, v3}, Landroid/graphics/Matrix;->setRotate(F)V
 
-    .line 445
+    .line 478
     invoke-virtual {v5, v1, v2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     goto :goto_1
 
-    .line 448
+    .line 481
     :pswitch_6
     invoke-virtual {v5, v3}, Landroid/graphics/Matrix;->setRotate(F)V
 
     goto :goto_1
 
-    .line 460
+    .line 493
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 425
+    .line 458
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_0

@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field private c:Lkik/android/util/an;
+.field private c:Lkik/android/util/ai;
 
 .field private d:Ljava/util/Hashtable;
     .annotation system Ldalvik/annotation/Signature;
@@ -153,12 +153,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lkik/android/config/c;)Lkik/android/util/an;
+.method static synthetic a(Lkik/android/config/c;)Lkik/android/util/ai;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v0, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     return-object v0
 .end method
@@ -231,7 +231,7 @@
     return-object v0
 .end method
 
-.method public final a(Lkik/android/util/an;)V
+.method public final a(Lkik/android/util/ai;)V
     .locals 10
 
     .prologue
@@ -244,7 +244,7 @@
     const/4 v7, 0x0
 
     .line 79
-    iput-object p1, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iput-object p1, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     .line 1095
     new-instance v6, Ljava/util/ArrayList;
@@ -256,9 +256,9 @@
 
     const-string v1, "inline_bot_server_search_config"
 
-    iget-object v2, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v2, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
-    invoke-direct {v0, v1, v7, v3, v2}, Lkik/android/config/a;-><init>(Ljava/lang/String;ZLjava/lang/Runnable;Lkik/android/util/an;)V
+    invoke-direct {v0, v1, v7, v3, v2}, Lkik/android/config/a;-><init>(Ljava/lang/String;ZLjava/lang/Runnable;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -267,9 +267,9 @@
 
     const-string v1, "show-lock-icon"
 
-    iget-object v2, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v2, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
-    invoke-direct {v0, v1, v7, v3, v2}, Lkik/android/config/a;-><init>(Ljava/lang/String;ZLjava/lang/Runnable;Lkik/android/util/an;)V
+    invoke-direct {v0, v1, v7, v3, v2}, Lkik/android/config/a;-><init>(Ljava/lang/String;ZLjava/lang/Runnable;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -303,11 +303,11 @@
 
     aput-object v1, v4, v8
 
-    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$2;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$2;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -334,11 +334,11 @@
 
     aput-object v1, v4, v8
 
-    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$3;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$3;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -365,11 +365,11 @@
 
     aput-object v1, v4, v8
 
-    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$4;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$4;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -396,11 +396,11 @@
 
     aput-object v1, v4, v8
 
-    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$5;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$5;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/Boolean;[Ljava/lang/Boolean;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -444,11 +444,11 @@
 
     move-result-object v3
 
-    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v5, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$6;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Lkik/android/util/an;)V
+    invoke-direct/range {v0 .. v5}, Lkik/android/config/c$6;-><init>(Lkik/android/config/c;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Lkik/android/util/ai;)V
 
     invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -526,7 +526,7 @@
     goto :goto_0
 .end method
 
-.method public final b(Lkik/android/util/an;)Ljava/lang/String;
+.method public final b(Lkik/android/util/ai;)Ljava/lang/String;
     .locals 3
 
     .prologue
@@ -538,7 +538,7 @@
     if-eqz v0, :cond_0
 
     .line 332
-    invoke-interface {p1}, Lkik/android/util/an;->c()Landroid/content/SharedPreferences;
+    invoke-interface {p1}, Lkik/android/util/ai;->c()Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -620,9 +620,9 @@
     if-eqz v1, :cond_0
 
     .line 317
-    iget-object v1, p0, Lkik/android/config/c;->c:Lkik/android/util/an;
+    iget-object v1, p0, Lkik/android/config/c;->c:Lkik/android/util/ai;
 
-    invoke-interface {v1}, Lkik/android/util/an;->c()Landroid/content/SharedPreferences;
+    invoke-interface {v1}, Lkik/android/util/ai;->c()Landroid/content/SharedPreferences;
 
     move-result-object v1
 

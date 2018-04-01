@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/j;
+.implements Lrx/k;
 
 
 # annotations
@@ -81,7 +81,7 @@
 
     iget-object v1, p0, Lrx/internal/schedulers/ScheduledAction$Remover2;->s:Lrx/internal/schedulers/ScheduledAction;
 
-    invoke-virtual {v0, v1}, Lrx/internal/util/h;->b(Lrx/j;)V
+    invoke-virtual {v0, v1}, Lrx/internal/util/h;->b(Lrx/k;)V
 
     .line 198
     :cond_0

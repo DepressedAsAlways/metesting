@@ -14,54 +14,42 @@
 
 # instance fields
 .field _editedSizeText:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100115
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10013b
     .end annotation
 .end field
 
 .field _saveButton:Landroid/view/View;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100116
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10013c
     .end annotation
 .end field
 
 .field _videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100111
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100137
     .end annotation
 .end field
 
 .field _videoPlayIcon:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100113
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100139
     .end annotation
 .end field
 
 .field _videoView:Landroid/widget/VideoView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100112
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100138
     .end annotation
 .end field
 
 .field _videoViewContainer:Landroid/widget/FrameLayout;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10010f
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100135
     .end annotation
 .end field
 
-.field a:Lcom/kik/e/p;
+.field a:Lcom/kik/storage/s;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -89,10 +77,10 @@
     .end annotation
 .end field
 
-.field private i:Lkik/android/util/av;
+.field private i:Lkik/android/util/aq;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkik/android/util/av",
+            "Lkik/android/util/aq",
             "<",
             "Ljava/lang/Void;",
             "Ljava/lang/Void;",
@@ -110,21 +98,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 52
+    .line 55
     invoke-direct {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;-><init>()V
 
-    .line 75
+    .line 78
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->d:Z
 
-    .line 77
+    .line 80
     iput v1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->f:F
 
-    .line 78
+    .line 81
     iput v1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->g:F
 
-    .line 79
+    .line 82
     const/4 v0, 0x0
 
     iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->h:Lcom/kik/events/Promise;
@@ -136,7 +124,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     iget v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->f:F
 
     return v0
@@ -146,7 +134,7 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 55
     iput p1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->f:F
 
     return p1
@@ -156,7 +144,7 @@
     .locals 13
 
     .prologue
-    const v12, 0x7f09021b
+    const v12, 0x7f09022f
 
     const-wide/16 v2, 0x0
 
@@ -166,7 +154,7 @@
 
     const/4 v8, 0x0
 
-    .line 522
+    .line 533
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     invoke-virtual {v0}, Lkik/android/widget/VideoKeyFrameView;->c()F
@@ -195,7 +183,7 @@
 
     double-to-long v0, v0
 
-    .line 523
+    .line 534
     const-wide/16 v4, 0x3e8
 
     div-long v4, v0, v4
@@ -204,7 +192,7 @@
 
     div-long/2addr v4, v6
 
-    .line 524
+    .line 535
     const-wide/16 v6, 0x3e8
 
     div-long/2addr v0, v6
@@ -213,7 +201,7 @@
 
     rem-long/2addr v0, v6
 
-    .line 528
+    .line 539
     cmp-long v6, v4, v10
 
     if-nez v6, :cond_0
@@ -224,25 +212,25 @@
 
     if-nez v6, :cond_0
 
-    .line 529
+    .line 540
     const-wide/16 v0, 0x2
 
     move-wide v4, v0
 
     move-wide v0, v2
 
-    .line 533
+    .line 544
     :cond_0
     cmp-long v6, v4, v2
 
     if-nez v6, :cond_2
 
-    .line 534
+    .line 545
     cmp-long v2, v0, v10
 
     if-nez v2, :cond_1
 
-    .line 535
+    .line 546
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -251,17 +239,17 @@
 
     move-result-object v0
 
-    const v1, 0x7f090276
+    const v1, 0x7f09028a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 560
+    .line 571
     :goto_0
     return-object v0
 
-    .line 538
+    .line 549
     :cond_1
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -271,7 +259,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090325
+    const v3, 0x7f090339
 
     new-array v4, v9, [Ljava/lang/Object;
 
@@ -287,18 +275,18 @@
 
     goto :goto_0
 
-    .line 541
+    .line 552
     :cond_2
     cmp-long v6, v4, v10
 
     if-nez v6, :cond_5
 
-    .line 542
+    .line 553
     cmp-long v2, v0, v2
 
     if-nez v2, :cond_3
 
-    .line 543
+    .line 554
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -307,7 +295,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090272
+    const v1, 0x7f090286
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -315,13 +303,13 @@
 
     goto :goto_0
 
-    .line 545
+    .line 556
     :cond_3
     cmp-long v2, v0, v10
 
     if-nez v2, :cond_4
 
-    .line 546
+    .line 557
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -334,7 +322,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090272
+    const v2, 0x7f090286
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -358,7 +346,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090276
+    const v2, 0x7f09028a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -374,7 +362,7 @@
 
     goto :goto_0
 
-    .line 549
+    .line 560
     :cond_4
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -388,7 +376,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090272
+    const v4, 0x7f090286
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -412,7 +400,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090325
+    const v4, 0x7f090339
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -436,13 +424,13 @@
 
     goto/16 :goto_0
 
-    .line 553
+    .line 564
     :cond_5
     cmp-long v2, v0, v2
 
     if-nez v2, :cond_6
 
-    .line 554
+    .line 565
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
@@ -465,13 +453,13 @@
 
     goto/16 :goto_0
 
-    .line 556
+    .line 567
     :cond_6
     cmp-long v2, v0, v10
 
     if-nez v2, :cond_7
 
-    .line 557
+    .line 568
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -514,7 +502,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090276
+    const v2, 0x7f09028a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -530,7 +518,7 @@
 
     goto/16 :goto_0
 
-    .line 560
+    .line 571
     :cond_7
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -574,7 +562,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090325
+    const v4, 0x7f090339
 
     new-array v5, v9, [Ljava/lang/Object;
 
@@ -603,7 +591,7 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 55
     iput-boolean p1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->d:Z
 
     return p1
@@ -613,7 +601,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     iget v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->g:F
 
     return v0
@@ -623,7 +611,7 @@
     .locals 0
 
     .prologue
-    .line 52
+    .line 55
     iput p1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->g:F
 
     return p1
@@ -633,7 +621,7 @@
     .locals 2
 
     .prologue
-    .line 52
+    .line 55
     iget-wide v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->e:J
 
     return-wide v0
@@ -643,7 +631,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->c:Ljava/lang/String;
 
     return-object v0
@@ -655,27 +643,27 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3254
+    .line 3265
     new-instance v0, Lkik/android/chat/fragment/VideoTrimmingFragment$b;
 
     invoke-direct {v0, p0, v1}, Lkik/android/chat/fragment/VideoTrimmingFragment$b;-><init>(Lkik/android/chat/fragment/VideoTrimmingFragment;B)V
 
-    .line 3255
+    .line 3266
     new-array v1, v1, [Ljava/lang/Void;
 
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/VideoTrimmingFragment$b;->a([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 3257
+    .line 3268
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
     iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->h:Lcom/kik/events/Promise;
 
-    .line 3258
+    .line 3269
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->h:Lcom/kik/events/Promise;
 
-    .line 52
+    .line 55
     return-object v0
 .end method
 
@@ -685,8 +673,8 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 52
-    .line 4245
+    .line 55
+    .line 4256
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->isPlaying()Z
@@ -695,20 +683,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 4246
+    .line 4257
     iput-boolean v1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->d:Z
 
-    .line 4247
+    .line 4258
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoPlayIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 4248
+    .line 4259
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->pause()V
 
-    .line 52
+    .line 55
     :cond_0
     return-void
 .end method
@@ -717,7 +705,7 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     invoke-direct {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->a()Ljava/lang/String;
 
     move-result-object v0
@@ -729,20 +717,20 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     iget-boolean v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->d:Z
 
     return v0
 .end method
 
-.method static synthetic i(Lkik/android/chat/fragment/VideoTrimmingFragment;)Lkik/android/util/av;
+.method static synthetic i(Lkik/android/chat/fragment/VideoTrimmingFragment;)Lkik/android/util/aq;
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
     return-object v0
 .end method
@@ -751,18 +739,18 @@
     .locals 1
 
     .prologue
-    .line 52
+    .line 55
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->h:Lcom/kik/events/Promise;
 
     return-object v0
 .end method
 
-.method static synthetic k(Lkik/android/chat/fragment/VideoTrimmingFragment;)Lkik/android/util/av;
+.method static synthetic k(Lkik/android/chat/fragment/VideoTrimmingFragment;)Lkik/android/util/aq;
     .locals 1
 
     .prologue
-    .line 52
-    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    .line 55
+    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
     return-object v0
 .end method
@@ -771,71 +759,86 @@
     .locals 2
 
     .prologue
-    .line 52
-    .line 4264
+    .line 55
+    .line 4275
     new-instance v0, Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
     invoke-direct {v0, p0}, Lkik/android/chat/fragment/VideoTrimmingFragment$3;-><init>(Lkik/android/chat/fragment/VideoTrimmingFragment;)V
 
-    iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
-    .line 4312
-    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    .line 4323
+    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lkik/android/util/av;->a([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lkik/android/util/aq;->a([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 52
+    .line 55
     return-void
 .end method
 
 
 # virtual methods
-.method public final n()Z
+.method protected getInputAdjustType()I
+    .locals 1
+
+    .prologue
+    .line 329
+    const/16 v0, 0x20
+
+    return v0
+.end method
+
+.method public getRequestedStatusBarColor()I
+    .locals 1
+
+    .prologue
+    .line 393
+    const/high16 v0, -0x1000000
+
+    return v0
+.end method
+
+.method public handleBackPress()Z
     .locals 2
 
     .prologue
-    .line 569
+    .line 580
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->setResultData(Landroid/os/Bundle;)V
+
+    .line 581
     sget-object v0, Lcom/rounds/kik/analytics/group/ChatAlbumEvents;->CHAT_ALBUM_CAMROLL_ZOOMEDIMAGE_CANCEL_TAP:Lcom/rounds/kik/analytics/group/ChatAlbumEvents;
 
     invoke-virtual {v0}, Lcom/rounds/kik/analytics/group/ChatAlbumEvents;->builder()Lcom/rounds/kik/analytics/group/ChatAlbumEvents$Builder;
 
     move-result-object v0
 
-    .line 570
+    .line 582
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/rounds/kik/analytics/group/ChatAlbumEvents$Builder;->isVideo(Z)Lcom/rounds/kik/analytics/group/ChatAlbumEvents$Builder;
 
-    .line 571
+    .line 583
     iget-object v1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->c:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Lcom/rounds/kik/analytics/group/ChatAlbumEvents$Builder;->assetId(Ljava/lang/String;)Lcom/rounds/kik/analytics/group/ChatAlbumEvents$Builder;
 
-    .line 573
+    .line 585
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-static {v1, v0}, Lcom/rounds/kik/analytics/Reporter;->report(Landroid/content/Context;Lcom/rounds/kik/analytics/AnalyticsEvent$Builder;)V
 
-    .line 575
-    invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->n()Z
+    .line 587
+    invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->handleBackPress()Z
 
     move-result v0
-
-    return v0
-.end method
-
-.method public final o()I
-    .locals 1
-
-    .prologue
-    .line 382
-    const/high16 v0, -0x1000000
 
     return v0
 .end method
@@ -844,35 +847,31 @@
     .locals 2
 
     .prologue
-    .line 84
-    .line 1088
-    invoke-virtual {p0}, Lkik/android/chat/fragment/KikFragmentBase;->getActivity()Landroid/support/v4/app/FragmentActivity;
+    .line 88
+    invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getCoreComponent()Lcom/kik/components/CoreComponent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/s;->a(Landroid/content/Context;)Lcom/kik/components/CoreComponent;
-
-    move-result-object v0
-
-    .line 84
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/chat/fragment/VideoTrimmingFragment;)V
 
-    .line 85
+    .line 89
     invoke-super {p0, p1}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 93
-    invoke-static {}, Lcom/kik/sdkutils/c;->a()Z
+    .line 97
+    const/16 v0, 0x15
+
+    invoke-static {v0}, Lcom/kik/sdkutils/c;->c(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 94
+    .line 98
     const-string v0, "SC"
 
     invoke-static {v0}, Ljava/security/Security;->removeProvider(Ljava/lang/String;)V
 
-    .line 95
+    .line 99
     new-instance v0, Lorg/spongycastle/jce/provider/BouncyCastleProvider;
 
     invoke-direct {v0}, Lorg/spongycastle/jce/provider/BouncyCastleProvider;-><init>()V
@@ -881,13 +880,13 @@
 
     invoke-static {v0, v1}, Ljava/security/Security;->insertProviderAt(Ljava/security/Provider;I)I
 
-    .line 98
+    .line 102
     :cond_0
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1413
+    .line 1424
     const-string v1, "VIDEO_PATH"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -896,7 +895,7 @@
 
     iput-object v1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->c:Ljava/lang/String;
 
-    .line 1414
+    .line 1425
     const-string v1, "VIDEO_DURATION"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
@@ -905,7 +904,7 @@
 
     iput-wide v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->e:J
 
-    .line 99
+    .line 103
     return-void
 .end method
 
@@ -919,8 +918,8 @@
 
     const/high16 v8, 0x447a0000    # 1000.0f
 
-    .line 130
-    const v2, 0x7f040030
+    .line 141
+    const v2, 0x7f040031
 
     invoke-virtual {p1, v2, p2, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -928,15 +927,15 @@
 
     iput-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->b:Landroid/view/View;
 
-    .line 132
+    .line 143
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->b:Landroid/view/View;
 
-    invoke-static {p0, v2}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v2}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 134
+    .line 145
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->c:Ljava/lang/String;
 
-    .line 1420
+    .line 1431
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoViewContainer:Landroid/widget/FrameLayout;
 
     if-eqz v3, :cond_0
@@ -947,7 +946,7 @@
 
     if-nez v2, :cond_2
 
-    .line 135
+    .line 146
     :cond_0
     :goto_0
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_saveButton:Landroid/view/View;
@@ -958,7 +957,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 175
+    .line 186
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
@@ -967,7 +966,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f02034c
+    const v4, 0x7f02039a
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -975,12 +974,12 @@
 
     iget-object v4, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
-    .line 176
+    .line 187
     invoke-virtual {v4}, Lkik/android/widget/VideoKeyFrameView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v5, 0x7f02034d
+    const v5, 0x7f02039b
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -988,51 +987,51 @@
 
     iget-object v5, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
-    .line 177
+    .line 188
     invoke-virtual {v5}, Lkik/android/widget/VideoKeyFrameView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    const v6, 0x7f02035c
+    const v6, 0x7f0203ac
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v5
 
-    .line 175
+    .line 186
     invoke-virtual {v2, v3, v4, v5}, Lkik/android/widget/VideoKeyFrameView;->a(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 178
+    .line 189
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     invoke-virtual {v2}, Lkik/android/widget/VideoKeyFrameView;->a()V
 
-    .line 179
+    .line 190
     new-instance v2, Landroid/graphics/Paint;
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
-    .line 180
+    .line 191
     const/high16 v3, 0x7f000000
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 181
+    .line 192
     new-instance v3, Landroid/graphics/Paint;
 
     invoke-direct {v3}, Landroid/graphics/Paint;-><init>()V
 
-    .line 182
+    .line 193
     const v4, 0x7f6a6a6a
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 183
+    .line 194
     iget-object v4, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     invoke-virtual {v4, v2, v3}, Lkik/android/widget/VideoKeyFrameView;->a(Landroid/graphics/Paint;Landroid/graphics/Paint;)V
 
-    .line 184
+    .line 195
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->c:Ljava/lang/String;
@@ -1041,24 +1040,24 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lkik/android/widget/VideoKeyFrameView;->a(Ljava/lang/String;J)V
 
-    .line 186
+    .line 197
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     invoke-virtual {v2}, Lkik/android/widget/VideoKeyFrameView;->bringToFront()V
 
-    .line 1497
+    .line 1508
     new-instance v2, Ljava/io/File;
 
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->c:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1498
+    .line 1509
     invoke-virtual {v2}, Ljava/io/File;->length()J
 
     move-result-wide v4
 
-    .line 1499
+    .line 1510
     iget-wide v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->e:J
 
     .line 2166
@@ -1068,17 +1067,17 @@
 
     move-result v6
 
-    .line 1501
+    .line 1512
     if-nez v6, :cond_1
 
-    .line 1502
+    .line 1513
     const-wide/32 v6, 0xf00000
 
     cmp-long v6, v4, v6
 
     if-lez v6, :cond_1
 
-    .line 1505
+    .line 1516
     const/high16 v2, 0x4b400000    # 1.2582912E7f
 
     long-to-float v3, v4
@@ -1099,13 +1098,13 @@
 
     double-to-long v2, v2
 
-    .line 1509
+    .line 1520
     :cond_1
     cmp-long v4, v2, v0
 
     if-lez v4, :cond_3
 
-    .line 1514
+    .line 1525
     :goto_1
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
@@ -1119,7 +1118,7 @@
 
     invoke-virtual {v2, v3}, Lkik/android/widget/VideoKeyFrameView;->a(F)V
 
-    .line 1515
+    .line 1526
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     iget-wide v4, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->e:J
@@ -1130,14 +1129,14 @@
 
     invoke-virtual {v2, v3}, Lkik/android/widget/VideoKeyFrameView;->b(F)V
 
-    .line 1516
+    .line 1527
     long-to-float v0, v0
 
     div-float/2addr v0, v8
 
     iput v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->g:F
 
-    .line 189
+    .line 200
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_editedSizeText:Landroid/widget/TextView;
 
     invoke-direct {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->a()Ljava/lang/String;
@@ -1146,7 +1145,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 191
+    .line 202
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoKeyFrameView:Lkik/android/widget/VideoKeyFrameView;
 
     new-instance v1, Lkik/android/chat/fragment/VideoTrimmingFragment$2;
@@ -1155,12 +1154,12 @@
 
     invoke-virtual {v0, v1}, Lkik/android/widget/VideoKeyFrameView;->a(Lkik/android/widget/VideoKeyFrameView$b;)V
 
-    .line 240
+    .line 251
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->b:Landroid/view/View;
 
     return-object v0
 
-    .line 1423
+    .line 1434
     :cond_2
     const/4 v3, 0x2
 
@@ -1176,14 +1175,14 @@
 
     aput-object v5, v3, v4
 
-    invoke-static {v3}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v3}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
-    .line 1424
+    .line 1435
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoPlayIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v3}, Landroid/widget/ImageView;->bringToFront()V
 
-    .line 1425
+    .line 1436
     iget-object v3, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     invoke-static {v2}, Lkik/android/VideoContentProvider;->a(Ljava/lang/String;)Landroid/net/Uri;
@@ -1192,7 +1191,7 @@
 
     invoke-virtual {v3, v2}, Landroid/widget/VideoView;->setVideoURI(Landroid/net/Uri;)V
 
-    .line 1427
+    .line 1438
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     new-instance v3, Lkik/android/chat/fragment/VideoTrimmingFragment$4;
@@ -1201,7 +1200,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/VideoView;->setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
 
-    .line 1437
+    .line 1448
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     new-instance v3, Lkik/android/chat/fragment/VideoTrimmingFragment$5;
@@ -1210,7 +1209,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/VideoView;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
 
-    .line 1446
+    .line 1457
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoPlayIcon:Landroid/widget/ImageView;
 
     new-instance v3, Lkik/android/chat/fragment/VideoTrimmingFragment$6;
@@ -1219,7 +1218,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 1459
+    .line 1470
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoViewContainer:Landroid/widget/FrameLayout;
 
     new-instance v3, Lkik/android/chat/fragment/VideoTrimmingFragment$7;
@@ -1228,7 +1227,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 1480
+    .line 1491
     iget-object v2, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     new-instance v3, Lkik/android/chat/fragment/VideoTrimmingFragment$8;
@@ -1249,28 +1248,28 @@
     .locals 2
 
     .prologue
-    .line 338
-    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    .line 349
+    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
     if-eqz v0, :cond_0
 
-    .line 339
-    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    .line 350
+    iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lkik/android/util/av;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lkik/android/util/aq;->cancel(Z)Z
 
-    .line 340
+    .line 351
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/av;
+    iput-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->i:Lkik/android/util/aq;
 
-    .line 342
+    .line 353
     :cond_0
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onDestroy()V
 
-    .line 343
+    .line 354
     return-void
 .end method
 
@@ -1282,18 +1281,18 @@
 
     const/4 v3, 0x0
 
-    .line 324
+    .line 335
     invoke-super {p0}, Lkik/android/chat/fragment/KikScopedDialogFragment;->onPause()V
 
-    .line 3104
+    .line 3115
     invoke-virtual {p0}, Lkik/android/chat/fragment/VideoTrimmingFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 3105
+    .line 3116
     if-eqz v0, :cond_0
 
-    .line 3118
+    .line 3129
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0xb
@@ -1304,7 +1303,7 @@
 
     if-ge v1, v4, :cond_3
 
-    .line 3119
+    .line 3130
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -1315,7 +1314,7 @@
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setSystemUiVisibility(I)V
 
-    .line 326
+    .line 337
     :cond_0
     :goto_0
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
@@ -1326,7 +1325,7 @@
 
     if-lez v0, :cond_2
 
-    .line 327
+    .line 338
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->isPlaying()Z
@@ -1335,28 +1334,28 @@
 
     if-eqz v0, :cond_1
 
-    .line 328
+    .line 339
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoView:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->pause()V
 
-    .line 330
+    .line 341
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment;->_videoPlayIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 333
+    .line 344
     :cond_2
     return-void
 
-    .line 3121
+    .line 3132
     :cond_3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v1, v4, :cond_0
 
-    .line 3122
+    .line 3133
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -1370,12 +1369,18 @@
     goto :goto_0
 .end method
 
-.method protected final u()I
+.method protected screenOpenedEvent()Lcom/kik/metrics/b/t;
     .locals 1
 
     .prologue
-    .line 318
-    const/16 v0, 0x20
+    .line 109
+    invoke-static {}, Lcom/kik/metrics/b/bk;->b()Lcom/kik/metrics/b/bk$a;
 
-    return v0
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/kik/metrics/b/bk$a;->a()Lcom/kik/metrics/b/bk;
+
+    move-result-object v0
+
+    return-object v0
 .end method

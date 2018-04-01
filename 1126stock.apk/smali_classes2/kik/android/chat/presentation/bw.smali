@@ -37,7 +37,7 @@
     .end annotation
 .end method
 
-.method public abstract a(Lkik/android/chat/view/aj;)V
+.method public abstract a(Lkik/android/chat/view/ak;)V
 .end method
 
 .method public abstract a(Lkik/android/widget/KikNetworkedImageView;Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)V

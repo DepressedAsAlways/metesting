@@ -33,7 +33,7 @@
     .line 1121
     const-string v0, "introSource"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/PublicGroupIntroFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,20 +1,53 @@
-.class public interface abstract Lkik/android/chat/vm/messaging/db;
+.class final synthetic Lkik/android/chat/vm/messaging/db;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/messaging/IContentMessageViewModel;
+.implements Lrx/functions/g;
+
+
+# static fields
+.field private static final a:Lkik/android/chat/vm/messaging/db;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lkik/android/chat/vm/messaging/db;
+
+    invoke-direct {v0}, Lkik/android/chat/vm/messaging/db;-><init>()V
+
+    sput-object v0, Lkik/android/chat/vm/messaging/db;->a:Lkik/android/chat/vm/messaging/db;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a()Lrx/functions/g;
+    .locals 1
+
+    sget-object v0, Lkik/android/chat/vm/messaging/db;->a:Lkik/android/chat/vm/messaging/db;
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public abstract h()Lrx/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lrx/c",
-            "<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;"
-        }
-    .end annotation
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    check-cast p1, Lkik/android/chat/vm/messaging/IContentMessageViewModel$ItemUploadState;
+
+    invoke-static {p1}, Lkik/android/chat/vm/messaging/ct;->d(Lkik/android/chat/vm/messaging/IContentMessageViewModel$ItemUploadState;)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
 .end method

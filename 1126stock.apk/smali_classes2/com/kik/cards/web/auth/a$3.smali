@@ -1,5 +1,5 @@
 .class final Lcom/kik/cards/web/auth/a$3;
-.super Lkik/android/util/av;
+.super Lkik/android/util/aq;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkik/android/util/av",
+        "Lkik/android/util/aq",
         "<",
         "Ljava/lang/Void;",
         "Ljava/lang/Void;",
@@ -37,7 +37,7 @@
     .line 200
     iput-object p1, p0, Lcom/kik/cards/web/auth/a$3;->a:Lcom/kik/cards/web/auth/a;
 
-    invoke-direct {p0}, Lkik/android/util/av;-><init>()V
+    invoke-direct {p0}, Lkik/android/util/aq;-><init>()V
 
     return-void
 .end method
@@ -105,7 +105,7 @@
     check-cast p1, Ljava/lang/Void;
 
     .line 1220
-    invoke-super {p0, p1}, Lkik/android/util/av;->onPostExecute(Ljava/lang/Object;)V
+    invoke-super {p0, p1}, Lkik/android/util/aq;->onPostExecute(Ljava/lang/Object;)V
 
     .line 1221
     iget-object v0, p0, Lcom/kik/cards/web/auth/a$3;->a:Lcom/kik/cards/web/auth/a;

@@ -24,7 +24,7 @@
 
 .field private final k:Ljava/lang/String;
 
-.field private l:Lkik/core/f/e;
+.field private l:Lkik/core/e/e;
 
 .field private m:Ljava/lang/String;
 
@@ -87,7 +87,7 @@
 
 
 # direct methods
-.method protected constructor <init>(Landroid/content/Context;Lkik/core/f/e;)V
+.method protected constructor <init>(Landroid/content/Context;Lkik/core/e/e;)V
     .locals 8
 
     .prologue
@@ -101,21 +101,21 @@
     invoke-direct {p0, p1}, Lkik/android/gifs/api/GifApiProvider;-><init>(Landroid/content/Context;)V
 
     .line 56
-    invoke-static {}, Lrx/subjects/PublishSubject;->k()Lrx/subjects/PublishSubject;
+    invoke-static {}, Lrx/subjects/PublishSubject;->l()Lrx/subjects/PublishSubject;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/gifs/api/g;->q:Lrx/subjects/PublishSubject;
 
     .line 57
-    invoke-static {}, Lrx/subjects/PublishSubject;->k()Lrx/subjects/PublishSubject;
+    invoke-static {}, Lrx/subjects/PublishSubject;->l()Lrx/subjects/PublishSubject;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/gifs/api/g;->r:Lrx/subjects/PublishSubject;
 
     .line 62
-    iput-object p2, p0, Lkik/android/gifs/api/g;->l:Lkik/core/f/e;
+    iput-object p2, p0, Lkik/android/gifs/api/g;->l:Lkik/core/e/e;
 
     .line 64
     new-instance v0, Ljava/lang/StringBuilder;
@@ -423,14 +423,14 @@
     return-void
 .end method
 
-.method private static a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+.method private static a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
     .locals 1
 
     .prologue
     .line 284
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/gifs/api/h;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+    invoke-static {p0}, Lkik/android/gifs/api/h;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
 
     move-result-object v0
 
@@ -473,7 +473,7 @@
     .line 160
     iget-object v0, p0, Lkik/android/gifs/api/g;->n:Ljava/util/List;
 
-    invoke-static {v0}, Lcom/kik/events/m;->a(Ljava/lang/Object;)Lcom/kik/events/Promise;
+    invoke-static {v0}, Lcom/kik/events/l;->a(Ljava/lang/Object;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -521,22 +521,22 @@
     move-result-object v0
 
     .line 168
-    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->c(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    new-instance v1, Lkik/android/gifs/api/g$6;
+    new-instance v1, Lkik/android/gifs/api/g$7;
 
-    invoke-direct {v1, p0, p2}, Lkik/android/gifs/api/g$6;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
+    invoke-direct {v1, p0, p2}, Lkik/android/gifs/api/g$7;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 183
-    new-instance v0, Lkik/android/gifs/api/g$7;
+    new-instance v0, Lkik/android/gifs/api/g$8;
 
-    invoke-direct {v0, p0}, Lkik/android/gifs/api/g$7;-><init>(Lkik/android/gifs/api/g;)V
+    invoke-direct {v0, p0}, Lkik/android/gifs/api/g$8;-><init>(Lkik/android/gifs/api/g;)V
 
-    invoke-virtual {p2, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {p2, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 198
     iget-object v0, p0, Lkik/android/gifs/api/g;->p:Lcom/kik/events/Promise;
@@ -570,15 +570,15 @@
     iget-object v0, p0, Lkik/android/gifs/api/g;->i:Ljava/lang/String;
 
     :goto_0
-    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->c(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    new-instance v2, Lkik/android/gifs/api/g$5;
+    new-instance v2, Lkik/android/gifs/api/g$6;
 
-    invoke-direct {v2, p0, p1, v1}, Lkik/android/gifs/api/g$5;-><init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;Lcom/kik/events/Promise;)V
+    invoke-direct {v2, p0, p1, v1}, Lkik/android/gifs/api/g$6;-><init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 145
     return-object v1
@@ -600,6 +600,42 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method private a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    .prologue
+    .line 408
+    iget-object v0, p0, Lkik/android/gifs/api/g;->m:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 409
+    const-string v0, "&anon_id=%s"
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Lkik/android/gifs/api/g;->m:Ljava/lang/String;
+
+    aput-object v3, v1, v2
+
+    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 410
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 412
+    :cond_0
+    return-object p1
 .end method
 
 .method static synthetic a(Lkik/android/gifs/api/g;Ljava/lang/String;)Ljava/lang/String;
@@ -624,17 +660,31 @@
     return-object v0
 .end method
 
-.method private a(Lcom/android/volley/toolbox/k;)V
+.method private a(Lcom/kik/events/Promise;Lcom/android/volley/toolbox/JsonObjectRequest;)V
     .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lcom/kik/events/Promise",
+            "<TT;>;",
+            "Lcom/android/volley/toolbox/JsonObjectRequest;",
+            ")V"
+        }
+    .end annotation
 
     .prologue
+    .line 305
+    .line 2312
+    new-instance v0, Lkik/android/gifs/api/g$12;
+
+    invoke-direct {v0, p0, p2}, Lkik/android/gifs/api/g$12;-><init>(Lkik/android/gifs/api/g;Lcom/android/volley/toolbox/JsonObjectRequest;)V
+
+    invoke-virtual {p1, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
     .line 306
-    const-string v0, "GIF_EMOJI_KEY"
-
-    invoke-virtual {p1, v0}, Lcom/android/volley/toolbox/k;->a(Ljava/lang/Object;)V
-
-    .line 307
-    new-instance v0, Lcom/android/volley/c;
+    new-instance v0, Lcom/android/volley/b;
 
     const/16 v1, 0x1d4c
 
@@ -642,83 +692,73 @@
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/android/volley/c;-><init>(IIF)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/volley/b;-><init>(IIF)V
 
-    invoke-virtual {p1, v0}, Lcom/android/volley/toolbox/k;->a(Lcom/android/volley/k;)V
+    invoke-virtual {p2, v0}, Lcom/android/volley/toolbox/JsonObjectRequest;->setRetryPolicy(Lcom/android/volley/j;)V
+
+    .line 307
+    iget-object v0, p0, Lkik/android/gifs/api/g;->a:Lcom/android/volley/g;
+
+    invoke-virtual {v0, p2}, Lcom/android/volley/g;->a(Lcom/android/volley/Request;)Lcom/android/volley/Request;
 
     .line 308
-    iget-object v0, p0, Lkik/android/gifs/api/g;->a:Lcom/android/volley/h;
-
-    invoke-virtual {v0, p1}, Lcom/android/volley/h;->a(Lcom/android/volley/Request;)Lcom/android/volley/Request;
-
-    .line 309
     return-void
 .end method
 
 .method static synthetic a(Lcom/kik/events/Promise;Lorg/json/JSONObject;)V
-    .locals 3
+    .locals 2
 
     .prologue
-    .line 5292
-    invoke-static {p1}, Lkik/android/gifs/api/q;->b(Lorg/json/JSONObject;)Ljava/util/List;
+    .line 347
+    invoke-static {p1}, Lkik/android/gifs/api/q;->a(Lorg/json/JSONObject;)Lkik/android/gifs/api/d;
 
     move-result-object v0
 
-    .line 5293
+    .line 348
     if-nez v0, :cond_0
 
-    .line 5294
-    new-instance v1, Ljava/lang/Throwable;
+    .line 349
+    new-instance v0, Ljava/lang/Throwable;
 
-    const-string v2, "Null response"
+    const-string v1, "Null response"
 
-    invoke-direct {v1, v2}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {p0, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 5296
+    .line 354
+    :goto_0
+    return-void
+
+    .line 352
     :cond_0
     invoke-virtual {p0, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 0
-    return-void
+    goto :goto_0
 .end method
 
 .method static synthetic a(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
-    .locals 5
+    .locals 4
 
     .prologue
-    .line 3352
-    new-instance v0, Lcom/android/volley/toolbox/k;
+    .line 3361
+    new-instance v0, Lcom/android/volley/toolbox/JsonObjectRequest;
 
-    invoke-static {p1}, Lkik/android/gifs/api/l;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$b;
+    const/4 v1, 0x0
 
-    move-result-object v1
-
-    .line 3355
-    invoke-static {p1}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+    invoke-static {p1}, Lkik/android/gifs/api/l;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$b;
 
     move-result-object v2
 
-    invoke-direct {v0, p2, v1, v2}, Lcom/android/volley/toolbox/k;-><init>(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)V
+    .line 3364
+    invoke-static {p1}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
 
-    .line 3356
-    new-instance v1, Lcom/android/volley/c;
+    move-result-object v3
 
-    const/16 v2, 0x1d4c
+    invoke-direct {v0, p2, v1, v2, v3}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)V
 
-    const/4 v3, 0x0
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    invoke-direct {v1, v2, v3, v4}, Lcom/android/volley/c;-><init>(IIF)V
-
-    invoke-virtual {v0, v1}, Lcom/android/volley/toolbox/k;->a(Lcom/android/volley/k;)V
-
-    .line 3357
-    iget-object v1, p0, Lkik/android/gifs/api/g;->a:Lcom/android/volley/h;
-
-    invoke-virtual {v1, v0}, Lcom/android/volley/h;->a(Lcom/android/volley/Request;)Lcom/android/volley/Request;
+    .line 3365
+    invoke-direct {p0, p1, v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;Lcom/android/volley/toolbox/JsonObjectRequest;)V
 
     .line 30
     return-void
@@ -762,40 +802,82 @@
     return-void
 .end method
 
-.method private b(Ljava/lang/String;)Ljava/lang/String;
-    .locals 4
+.method private b(Ljava/lang/String;)Lcom/kik/events/Promise;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/kik/events/Promise",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
     .prologue
-    .line 401
-    iget-object v0, p0, Lkik/android/gifs/api/g;->m:Ljava/lang/String;
+    .line 417
+    new-instance v0, Lcom/kik/events/Promise;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 402
-    const-string v0, "&anon_id=%s"
+    .line 418
+    iget-object v1, p0, Lkik/android/gifs/api/g;->m:Ljava/lang/String;
 
-    const/4 v1, 0x1
+    if-nez v1, :cond_1
 
-    new-array v1, v1, [Ljava/lang/Object;
+    .line 2443
+    iget-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
 
-    const/4 v2, 0x0
+    if-nez v1, :cond_0
 
-    iget-object v3, p0, Lkik/android/gifs/api/g;->m:Ljava/lang/String;
+    .line 2444
+    iget-object v1, p0, Lkik/android/gifs/api/g;->l:Lkik/core/e/e;
 
-    aput-object v3, v1, v2
+    invoke-static {p0}, Lkik/android/gifs/api/p;->a(Lkik/android/gifs/api/g;)Lrx/functions/f;
 
-    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-interface {v1, v2}, Lkik/core/e/e;->a(Lrx/functions/f;)Lcom/kik/events/Promise;
 
-    .line 403
-    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p1
+    iput-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
 
-    .line 405
+    .line 2445
+    iget-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
+
+    new-instance v2, Lkik/android/gifs/api/g$3;
+
+    invoke-direct {v2, p0}, Lkik/android/gifs/api/g$3;-><init>(Lkik/android/gifs/api/g;)V
+
+    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
+    .line 2454
     :cond_0
-    return-object p1
+    iget-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
+
+    .line 419
+    new-instance v2, Lkik/android/gifs/api/g$2;
+
+    invoke-direct {v2, p0, v0, p1}, Lkik/android/gifs/api/g$2;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
+
+    .line 438
+    :goto_0
+    return-object v0
+
+    .line 436
+    :cond_1
+    invoke-direct {p0, p1}, Lkik/android/gifs/api/g;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
+
+    goto :goto_0
 .end method
 
 .method static synthetic b(Lkik/android/gifs/api/g;Ljava/lang/String;)Ljava/lang/String;
@@ -803,7 +885,7 @@
 
     .prologue
     .line 30
-    invoke-direct {p0, p1}, Lkik/android/gifs/api/g;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lkik/android/gifs/api/g;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -824,15 +906,15 @@
     .locals 3
 
     .prologue
-    .line 5318
+    .line 329
     invoke-static {p1}, Lkik/android/gifs/api/q;->c(Lorg/json/JSONObject;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 5319
+    .line 330
     if-nez v0, :cond_0
 
-    .line 5320
+    .line 331
     new-instance v1, Ljava/lang/Throwable;
 
     const-string v2, "Null response"
@@ -841,115 +923,39 @@
 
     invoke-virtual {p0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 5322
+    .line 333
     :cond_0
     invoke-virtual {p0, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    .line 0
+    .line 334
     return-void
 .end method
 
 .method static synthetic b(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
-    .locals 3
+    .locals 4
 
     .prologue
-    .line 4337
-    new-instance v0, Lcom/android/volley/toolbox/k;
+    .line 4346
+    new-instance v0, Lcom/android/volley/toolbox/JsonObjectRequest;
 
-    invoke-static {p1}, Lkik/android/gifs/api/k;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$b;
+    const/4 v1, 0x0
 
-    move-result-object v1
-
-    .line 4345
-    invoke-static {p1}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+    invoke-static {p1}, Lkik/android/gifs/api/k;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$b;
 
     move-result-object v2
 
-    invoke-direct {v0, p2, v1, v2}, Lcom/android/volley/toolbox/k;-><init>(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)V
+    .line 4354
+    invoke-static {p1}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
 
-    .line 4347
-    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->a(Lcom/android/volley/toolbox/k;)V
+    move-result-object v3
+
+    invoke-direct {v0, p2, v1, v2, v3}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)V
+
+    .line 4356
+    invoke-direct {p0, p1, v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;Lcom/android/volley/toolbox/JsonObjectRequest;)V
 
     .line 30
     return-void
-.end method
-
-.method private c(Ljava/lang/String;)Lcom/kik/events/Promise;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "Lcom/kik/events/Promise",
-            "<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .prologue
-    .line 410
-    new-instance v0, Lcom/kik/events/Promise;
-
-    invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
-
-    .line 411
-    iget-object v1, p0, Lkik/android/gifs/api/g;->m:Ljava/lang/String;
-
-    if-nez v1, :cond_1
-
-    .line 2436
-    iget-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
-
-    if-nez v1, :cond_0
-
-    .line 2437
-    iget-object v1, p0, Lkik/android/gifs/api/g;->l:Lkik/core/f/e;
-
-    invoke-static {p0}, Lkik/android/gifs/api/p;->a(Lkik/android/gifs/api/g;)Lrx/b/f;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2}, Lkik/core/f/e;->a(Lrx/b/f;)Lcom/kik/events/Promise;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
-
-    .line 2438
-    iget-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
-
-    new-instance v2, Lkik/android/gifs/api/g$2;
-
-    invoke-direct {v2, p0}, Lkik/android/gifs/api/g$2;-><init>(Lkik/android/gifs/api/g;)V
-
-    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
-
-    .line 2447
-    :cond_0
-    iget-object v1, p0, Lkik/android/gifs/api/g;->o:Lcom/kik/events/Promise;
-
-    .line 412
-    new-instance v2, Lkik/android/gifs/api/g$11;
-
-    invoke-direct {v2, p0, v0, p1}, Lkik/android/gifs/api/g$11;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;Ljava/lang/String;)V
-
-    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
-
-    .line 431
-    :goto_0
-    return-object v0
-
-    .line 429
-    :cond_1
-    invoke-direct {p0, p1}, Lkik/android/gifs/api/g;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
-
-    goto :goto_0
 .end method
 
 .method static synthetic c(Lkik/android/gifs/api/g;)Lcom/kik/events/Promise;
@@ -963,34 +969,32 @@
 .end method
 
 .method static synthetic c(Lcom/kik/events/Promise;Lorg/json/JSONObject;)V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 5338
-    invoke-static {p1}, Lkik/android/gifs/api/q;->a(Lorg/json/JSONObject;)Lkik/android/gifs/api/d;
+    .line 292
+    invoke-static {p1}, Lkik/android/gifs/api/q;->b(Lorg/json/JSONObject;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 5339
+    .line 293
     if-nez v0, :cond_0
 
-    .line 5340
-    new-instance v0, Ljava/lang/Throwable;
+    .line 294
+    new-instance v1, Ljava/lang/Throwable;
 
-    const-string v1, "Null response"
+    const-string v2, "Null response"
 
-    invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
+    invoke-virtual {p0, v1}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    :goto_0
-    return-void
-
-    .line 5343
+    .line 296
     :cond_0
     invoke-virtual {p0, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Object;)V
 
-    goto :goto_0
+    .line 297
+    return-void
 .end method
 
 .method static synthetic d(Lkik/android/gifs/api/g;)Lcom/kik/events/Promise;
@@ -1009,44 +1013,31 @@
     .locals 6
 
     .prologue
-    .line 6085
+    .line 5085
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 6362
-    new-instance v1, Lcom/android/volley/toolbox/k;
+    .line 5370
+    new-instance v1, Lcom/android/volley/toolbox/JsonObjectRequest;
 
     iget-object v2, p0, Lkik/android/gifs/api/g;->h:Ljava/lang/String;
 
-    invoke-static {v0}, Lkik/android/gifs/api/m;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$b;
+    const/4 v3, 0x0
 
-    move-result-object v3
-
-    .line 6370
-    invoke-static {v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+    invoke-static {v0}, Lkik/android/gifs/api/m;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$b;
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/android/volley/toolbox/k;-><init>(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)V
+    .line 5378
+    invoke-static {v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
 
-    .line 6371
-    new-instance v2, Lcom/android/volley/c;
+    move-result-object v5
 
-    const/16 v3, 0x1d4c
+    invoke-direct {v1, v2, v3, v4, v5}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)V
 
-    const/4 v4, 0x0
-
-    const/high16 v5, 0x3f800000    # 1.0f
-
-    invoke-direct {v2, v3, v4, v5}, Lcom/android/volley/c;-><init>(IIF)V
-
-    invoke-virtual {v1, v2}, Lcom/android/volley/toolbox/k;->a(Lcom/android/volley/k;)V
-
-    .line 6372
-    iget-object v2, p0, Lkik/android/gifs/api/g;->a:Lcom/android/volley/h;
-
-    invoke-virtual {v2, v1}, Lcom/android/volley/h;->a(Lcom/android/volley/Request;)Lcom/android/volley/Request;
+    .line 5379
+    invoke-direct {p0, v0, v1}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;Lcom/android/volley/toolbox/JsonObjectRequest;)V
 
     .line 0
     return-object v0
@@ -1065,19 +1056,19 @@
     .end annotation
 
     .prologue
-    .line 471
+    .line 478
     iget-object v0, p0, Lkik/android/gifs/api/g;->n:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 472
+    .line 479
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lkik/android/gifs/api/g;->n:Ljava/util/List;
 
-    .line 474
+    .line 481
     :cond_0
     iget-object v0, p0, Lkik/android/gifs/api/g;->n:Ljava/util/List;
 
@@ -1181,7 +1172,7 @@
     const/4 v2, 0x2
 
     .line 251
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -1194,8 +1185,8 @@
 
     const/4 v2, 0x3
 
-    .line 1453
-    sget-object v0, Lkik/android/gifs/api/g$3;->a:[I
+    .line 1460
+    sget-object v0, Lkik/android/gifs/api/g$4;->a:[I
 
     invoke-virtual {p2}, Lkik/android/gifs/api/GifApiProvider$GifSearchRating;->ordinal()I
 
@@ -1205,7 +1196,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1458
+    .line 1465
     const-string v0, "strict"
 
     .line 252
@@ -1222,32 +1213,32 @@
     move-result-object v0
 
     .line 254
-    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->c(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-direct {p0, v0}, Lkik/android/gifs/api/g;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    new-instance v2, Lkik/android/gifs/api/g$9;
+    new-instance v2, Lkik/android/gifs/api/g$10;
 
-    invoke-direct {v2, p0, v1}, Lkik/android/gifs/api/g$9;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
+    invoke-direct {v2, p0, v1}, Lkik/android/gifs/api/g$10;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 263
     return-object v1
 
-    .line 1461
+    .line 1468
     :pswitch_0
     const-string v0, "moderate"
 
     goto :goto_0
 
-    .line 1464
+    .line 1471
     :pswitch_1
     const-string v0, "off"
 
     goto :goto_0
 
-    .line 1453
+    .line 1460
     :pswitch_data_0
     .packed-switch 0x4
         :pswitch_0
@@ -1256,7 +1247,7 @@
 .end method
 
 .method public final a(Ljava/util/Locale;)Lcom/kik/events/Promise;
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1272,12 +1263,12 @@
     .end annotation
 
     .prologue
-    .line 314
+    .line 325
     new-instance v0, Lcom/kik/events/Promise;
 
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
-    .line 315
+    .line 326
     iget-object v1, p0, Lkik/android/gifs/api/g;->e:Ljava/lang/String;
 
     const/4 v2, 0x1
@@ -1292,24 +1283,26 @@
 
     move-result-object v1
 
-    .line 317
-    new-instance v2, Lcom/android/volley/toolbox/k;
+    .line 328
+    new-instance v2, Lcom/android/volley/toolbox/JsonObjectRequest;
 
-    invoke-static {v0}, Lkik/android/gifs/api/j;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$b;
+    const/4 v3, 0x0
 
-    move-result-object v3
-
-    .line 323
-    invoke-static {v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+    invoke-static {v0}, Lkik/android/gifs/api/j;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$b;
 
     move-result-object v4
 
-    invoke-direct {v2, v1, v3, v4}, Lcom/android/volley/toolbox/k;-><init>(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)V
+    .line 334
+    invoke-static {v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
 
-    .line 325
-    invoke-direct {p0, v2}, Lkik/android/gifs/api/g;->a(Lcom/android/volley/toolbox/k;)V
+    move-result-object v5
 
-    .line 327
+    invoke-direct {v2, v1, v3, v4, v5}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)V
+
+    .line 335
+    invoke-direct {p0, v0, v2}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;Lcom/android/volley/toolbox/JsonObjectRequest;)V
+
+    .line 336
     return-object v0
 .end method
 
@@ -1337,7 +1330,7 @@
 
     invoke-direct {v1, p0, p1}, Lkik/android/gifs/api/g$1;-><init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 105
     const/4 v0, 0x1
@@ -1350,18 +1343,18 @@
 .end method
 
 .method public final a(Ljava/lang/String;Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;I)V
-    .locals 5
+    .locals 6
 
     .prologue
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    .line 378
+    .line 385
     if-nez p2, :cond_0
 
-    .line 379
+    .line 386
     const-string v0, ""
 
-    .line 383
+    .line 390
     :goto_0
     :try_start_0
     const-string v1, "UTF-8"
@@ -1372,7 +1365,7 @@
 
     move-result-object v0
 
-    .line 2332
+    .line 2341
     :goto_1
     iget-object v1, p0, Lkik/android/gifs/api/g;->g:Ljava/lang/String;
 
@@ -1380,7 +1373,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    aput-object p1, v2, v4
+    aput-object p1, v2, v5
 
     const/4 v3, 0x1
 
@@ -1406,43 +1399,45 @@
 
     move-result-object v0
 
-    .line 390
-    new-instance v1, Lcom/android/volley/toolbox/k;
+    .line 397
+    new-instance v1, Lcom/android/volley/toolbox/JsonObjectRequest;
 
-    invoke-static {}, Lkik/android/gifs/api/n;->a()Lcom/android/volley/i$b;
+    const/4 v2, 0x0
 
-    move-result-object v2
-
-    invoke-static {}, Lkik/android/gifs/api/o;->a()Lcom/android/volley/i$a;
+    invoke-static {}, Lkik/android/gifs/api/n;->a()Lcom/android/volley/h$b;
 
     move-result-object v3
 
-    invoke-direct {v1, v0, v2, v3}, Lcom/android/volley/toolbox/k;-><init>(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)V
+    invoke-static {}, Lkik/android/gifs/api/o;->a()Lcom/android/volley/h$a;
 
-    .line 394
-    new-instance v0, Lcom/android/volley/c;
+    move-result-object v4
+
+    invoke-direct {v1, v0, v2, v3, v4}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)V
+
+    .line 401
+    new-instance v0, Lcom/android/volley/b;
 
     const/16 v2, 0x1d4c
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    invoke-direct {v0, v2, v4, v3}, Lcom/android/volley/c;-><init>(IIF)V
+    invoke-direct {v0, v2, v5, v3}, Lcom/android/volley/b;-><init>(IIF)V
 
-    invoke-virtual {v1, v0}, Lcom/android/volley/toolbox/k;->a(Lcom/android/volley/k;)V
+    invoke-virtual {v1, v0}, Lcom/android/volley/toolbox/JsonObjectRequest;->setRetryPolicy(Lcom/android/volley/j;)V
 
-    .line 396
-    iget-object v0, p0, Lkik/android/gifs/api/g;->a:Lcom/android/volley/h;
+    .line 403
+    iget-object v0, p0, Lkik/android/gifs/api/g;->a:Lcom/android/volley/g;
 
-    invoke-virtual {v0, v1}, Lcom/android/volley/h;->a(Lcom/android/volley/Request;)Lcom/android/volley/Request;
+    invoke-virtual {v0, v1}, Lcom/android/volley/g;->a(Lcom/android/volley/Request;)Lcom/android/volley/Request;
 
-    .line 397
+    .line 404
     return-void
 
-    .line 386
+    .line 393
     :catch_0
     move-exception v1
 
-    invoke-static {v1}, Lkik/android/util/bc;->d(Ljava/lang/Throwable;)V
+    invoke-static {v1}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
 
     goto :goto_1
 
@@ -1472,11 +1467,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lkik/android/gifs/api/g$4;
+    new-instance v1, Lkik/android/gifs/api/g$5;
 
-    invoke-direct {v1, p0, p1}, Lkik/android/gifs/api/g$4;-><init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;)V
+    invoke-direct {v1, p0, p1}, Lkik/android/gifs/api/g$5;-><init>(Lkik/android/gifs/api/g;Lkik/android/gifs/api/GifResponseData;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 119
     const/4 v0, 0x0
@@ -1488,12 +1483,12 @@
     return-object v0
 .end method
 
-.method public final b()Lrx/c;
+.method public final b()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Lkik/android/gifs/api/GifResponseData;",
             ">;"
@@ -1507,12 +1502,12 @@
     return-object v0
 .end method
 
-.method public final c()Lrx/c;
+.method public final c()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Integer;",
             ">;"
@@ -1547,22 +1542,22 @@
     .line 270
     iget-object v1, p0, Lkik/android/gifs/api/g;->c:Ljava/lang/String;
 
-    invoke-direct {p0, v1}, Lkik/android/gifs/api/g;->c(Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-direct {p0, v1}, Lkik/android/gifs/api/g;->b(Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v1
 
-    new-instance v2, Lkik/android/gifs/api/g$10;
+    new-instance v2, Lkik/android/gifs/api/g$11;
 
-    invoke-direct {v2, p0, v0}, Lkik/android/gifs/api/g$10;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
+    invoke-direct {v2, p0, v0}, Lkik/android/gifs/api/g$11;-><init>(Lkik/android/gifs/api/g;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 279
     return-object v0
 .end method
 
 .method public final e()Lcom/kik/events/Promise;
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1582,24 +1577,26 @@
     invoke-direct {v0}, Lcom/kik/events/Promise;-><init>()V
 
     .line 291
-    new-instance v1, Lcom/android/volley/toolbox/k;
+    new-instance v1, Lcom/android/volley/toolbox/JsonObjectRequest;
 
     iget-object v2, p0, Lkik/android/gifs/api/g;->d:Ljava/lang/String;
 
-    invoke-static {v0}, Lkik/android/gifs/api/i;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$b;
+    const/4 v3, 0x0
 
-    move-result-object v3
-
-    .line 297
-    invoke-static {v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/i$a;
+    invoke-static {v0}, Lkik/android/gifs/api/i;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$b;
 
     move-result-object v4
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/android/volley/toolbox/k;-><init>(Ljava/lang/String;Lcom/android/volley/i$b;Lcom/android/volley/i$a;)V
+    .line 297
+    invoke-static {v0}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;)Lcom/android/volley/h$a;
+
+    move-result-object v5
+
+    invoke-direct {v1, v2, v3, v4, v5}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/h$b;Lcom/android/volley/h$a;)V
 
     .line 299
-    invoke-direct {p0, v1}, Lkik/android/gifs/api/g;->a(Lcom/android/volley/toolbox/k;)V
+    invoke-direct {p0, v0, v1}, Lkik/android/gifs/api/g;->a(Lcom/kik/events/Promise;Lcom/android/volley/toolbox/JsonObjectRequest;)V
 
-    .line 301
+    .line 300
     return-object v0
 .end method

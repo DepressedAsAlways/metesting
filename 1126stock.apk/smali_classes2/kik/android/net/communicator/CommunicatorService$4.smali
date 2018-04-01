@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 312
+    .line 313
     iput-object p1, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     iput-boolean p2, p0, Lkik/android/net/communicator/CommunicatorService$4;->a:Z
@@ -44,14 +44,14 @@
     .locals 4
 
     .prologue
-    .line 317
+    .line 318
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;Z)Z
 
-    .line 320
+    .line 321
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-static {v0}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;)J
@@ -64,14 +64,14 @@
 
     if-lez v0, :cond_0
 
-    .line 321
+    .line 322
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     const-string v1, "Successfull connection"
 
     invoke-static {v0, v1}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;Ljava/lang/String;)V
 
-    .line 330
+    .line 331
     :goto_0
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
@@ -81,17 +81,17 @@
 
     invoke-static {v0, v2, v3}, Lkik/android/net/communicator/CommunicatorService;->c(Lkik/android/net/communicator/CommunicatorService;J)J
 
-    .line 331
+    .line 332
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lkik/android/net/communicator/CommunicatorService;->b(Lkik/android/net/communicator/CommunicatorService;Z)Z
 
-    .line 333
+    .line 334
     return-void
 
-    .line 324
+    .line 325
     :cond_0
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
@@ -108,7 +108,7 @@
     .locals 6
 
     .prologue
-    .line 345
+    .line 346
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Connection limiter going into effect. Server requesting a backoff of "
@@ -123,7 +123,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 346
+    .line 347
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     int-to-long v2, p1
@@ -134,7 +134,7 @@
 
     invoke-static {v0, v2, v3}, Lkik/android/net/communicator/CommunicatorService;->d(Lkik/android/net/communicator/CommunicatorService;J)V
 
-    .line 347
+    .line 348
     return-void
 .end method
 
@@ -142,7 +142,7 @@
     .locals 3
 
     .prologue
-    .line 338
+    .line 339
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$4;->b:Lkik/android/net/communicator/CommunicatorService;
 
     iget-boolean v1, p0, Lkik/android/net/communicator/CommunicatorService$4;->a:Z
@@ -151,6 +151,6 @@
 
     invoke-static {v0, v1, v2}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;ZLjava/lang/String;)V
 
-    .line 340
+    .line 341
     return-void
 .end method

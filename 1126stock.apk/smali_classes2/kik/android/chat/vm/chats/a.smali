@@ -3,23 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/u;
+.implements Lkik/android/chat/vm/at;
 
 
 # virtual methods
-.method public abstract J_()V
+.method public abstract L_()V
 .end method
 
-.method public abstract K_()Z
-.end method
-
-.method public abstract a()Lrx/c;
+.method public abstract b()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
-            "Lkik/core/interfaces/p",
+            "Lkik/core/interfaces/o",
             "<",
             "Landroid/graphics/Bitmap;",
             ">;>;"
@@ -27,11 +24,11 @@
     .end annotation
 .end method
 
-.method public abstract b()Lrx/c;
+.method public abstract d()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/String;",
             ">;"
@@ -39,11 +36,11 @@
     .end annotation
 .end method
 
-.method public abstract d()Lrx/c;
+.method public abstract e()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -51,5 +48,11 @@
     .end annotation
 .end method
 
-.method public abstract e()V
+.method public abstract g()V
+.end method
+
+.method public abstract h()Z
+.end method
+
+.method public abstract i()Lkik/android/chat/vm/IBadgeViewModel;
 .end method

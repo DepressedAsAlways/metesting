@@ -190,7 +190,7 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v2}, Lcom/nostra13/universalimageloader/b/c;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v2}, Lcom/nostra13/universalimageloader/a/c;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_1
     move v0, v1
@@ -244,7 +244,7 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v2}, Lcom/nostra13/universalimageloader/b/c;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v2}, Lcom/nostra13/universalimageloader/a/c;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_1
     move v0, v1

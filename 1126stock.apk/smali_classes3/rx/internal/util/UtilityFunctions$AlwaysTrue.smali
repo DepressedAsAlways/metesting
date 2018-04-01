@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/g;
+.implements Lrx/functions/g;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lrx/internal/util/UtilityFunctions$AlwaysTrue;",
         ">;",
-        "Lrx/b/g",
+        "Lrx/functions/g",
         "<",
         "Ljava/lang/Object;",
         "Ljava/lang/Boolean;",
@@ -44,7 +44,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 63
+    .line 59
     new-instance v0, Lrx/internal/util/UtilityFunctions$AlwaysTrue;
 
     const-string v1, "INSTANCE"
@@ -53,7 +53,7 @@
 
     sput-object v0, Lrx/internal/util/UtilityFunctions$AlwaysTrue;->INSTANCE:Lrx/internal/util/UtilityFunctions$AlwaysTrue;
 
-    .line 62
+    .line 58
     const/4 v0, 0x1
 
     new-array v0, v0, [Lrx/internal/util/UtilityFunctions$AlwaysTrue;
@@ -76,7 +76,7 @@
     .end annotation
 
     .prologue
-    .line 62
+    .line 58
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -86,7 +86,7 @@
     .locals 1
 
     .prologue
-    .line 62
+    .line 58
     const-class v0, Lrx/internal/util/UtilityFunctions$AlwaysTrue;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -102,7 +102,7 @@
     .locals 1
 
     .prologue
-    .line 62
+    .line 58
     sget-object v0, Lrx/internal/util/UtilityFunctions$AlwaysTrue;->$VALUES:[Lrx/internal/util/UtilityFunctions$AlwaysTrue;
 
     invoke-virtual {v0}, [Lrx/internal/util/UtilityFunctions$AlwaysTrue;->clone()Ljava/lang/Object;
@@ -120,7 +120,7 @@
     .locals 1
 
     .prologue
-    .line 67
+    .line 63
     const/4 v0, 0x1
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -134,7 +134,7 @@
     .locals 1
 
     .prologue
-    .line 62
+    .line 58
     invoke-virtual {p0, p1}, Lrx/internal/util/UtilityFunctions$AlwaysTrue;->call(Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object v0

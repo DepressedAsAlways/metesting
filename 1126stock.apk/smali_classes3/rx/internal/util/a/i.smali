@@ -1,25 +1,28 @@
-.class public final Lrx/internal/util/a/i;
-.super Ljava/lang/Object;
+.class abstract Lrx/internal/util/a/i;
+.super Lrx/internal/util/a/e;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lrx/internal/util/a/e",
+        "<TE;>;"
+    }
+.end annotation
+
+
 # direct methods
-.method public static a(I)I
-    .locals 2
+.method public constructor <init>(I)V
+    .locals 0
 
     .prologue
-    .line 32
-    const/4 v0, 0x1
+    .line 82
+    invoke-direct {p0, p1}, Lrx/internal/util/a/e;-><init>(I)V
 
-    add-int/lit8 v1, p0, -0x1
-
-    invoke-static {v1}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
-
-    move-result v1
-
-    rsub-int/lit8 v1, v1, 0x20
-
-    shl-int/2addr v0, v1
-
-    return v0
+    .line 83
+    return-void
 .end method

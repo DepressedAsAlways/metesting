@@ -157,7 +157,8 @@
 
     .line 611
     :try_start_0
-    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->g()Lcom/google/protobuf/Parser;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->PARSER:Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$1000()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -336,7 +337,8 @@
 
     .prologue
     .line 470
-    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->e()Z
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$400()Z
 
     move-result v0
 
@@ -418,7 +420,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {v1, p0, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+    invoke-direct {v1, p0, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/abtesting/rpc/AbService$1;)V
 
     .line 512
     iget-object v0, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->c:Lcom/google/protobuf/SingleFieldBuilderV3;
@@ -428,7 +430,8 @@
     .line 513
     iget-object v0, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->b:Lcom/kik/ximodel/XiBareUserJid;
 
-    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->a(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
+    # setter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->jid_:Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$602(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
     .line 517
     :goto_0
@@ -465,11 +468,15 @@
     :cond_0
     iget-object v0, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->d:Ljava/util/List;
 
-    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->a(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Ljava/util/List;)Ljava/util/List;
+    # setter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$702(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Ljava/util/List;)Ljava/util/List;
 
     .line 526
     :goto_1
-    invoke-static {v1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->a(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)I
+    const/4 v0, 0x0
+
+    # setter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->bitField0_:I
+    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$802(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;I)I
 
     .line 527
     invoke-virtual {p0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->onBuilt()V
@@ -487,7 +494,8 @@
 
     check-cast v0, Lcom/kik/ximodel/XiBareUserJid;
 
-    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->a(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
+    # setter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->jid_:Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$602(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
     goto :goto_0
 
@@ -499,7 +507,8 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->a(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Ljava/util/List;)Ljava/util/List;
+    # setter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {v1, v0}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$702(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;Ljava/util/List;)Ljava/util/List;
 
     goto :goto_1
 .end method
@@ -615,7 +624,7 @@
     const/4 v0, 0x0
 
     .line 567
-    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->d()Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;
+    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->getDefaultInstance()Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;
 
     move-result-object v1
 
@@ -627,14 +636,14 @@
 
     .line 568
     :cond_0
-    invoke-virtual {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->a()Z
+    invoke-virtual {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->hasJid()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 569
-    invoke-virtual {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b()Lcom/kik/ximodel/XiBareUserJid;
+    invoke-virtual {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->getJid()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v1
 
@@ -678,7 +687,8 @@
     if-nez v1, :cond_6
 
     .line 572
-    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$700(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
 
     move-result-object v0
 
@@ -698,7 +708,8 @@
     if-eqz v0, :cond_5
 
     .line 574
-    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$700(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
 
     move-result-object v0
 
@@ -743,7 +754,8 @@
     .line 578
     iget-object v0, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->d:Ljava/util/List;
 
-    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$700(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -753,7 +765,8 @@
 
     .line 583
     :cond_6
-    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$700(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -781,7 +794,8 @@
     iput-object v0, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->e:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
     .line 587
-    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$700(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -795,7 +809,8 @@
     iput v1, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->a:I
 
     .line 590
-    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->f()Z
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$900()Z
 
     move-result v1
 
@@ -815,7 +830,8 @@
     :cond_8
     iget-object v0, p0, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest$a;->e:Lcom/google/protobuf/RepeatedFieldBuilderV3;
 
-    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->b(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
+    # getter for: Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->participatingExperiments_:Ljava/util/List;
+    invoke-static {p1}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->access$700(Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;)Ljava/util/List;
 
     move-result-object v1
 
@@ -1220,7 +1236,7 @@
 
     .prologue
     .line 9497
-    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->d()Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;
+    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->getDefaultInstance()Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;
 
     move-result-object v0
 
@@ -1233,7 +1249,7 @@
 
     .prologue
     .line 8497
-    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->d()Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;
+    invoke-static {}, Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;->getDefaultInstance()Lcom/kik/abtesting/rpc/AbService$GetExperimentsRequest;
 
     move-result-object v0
 

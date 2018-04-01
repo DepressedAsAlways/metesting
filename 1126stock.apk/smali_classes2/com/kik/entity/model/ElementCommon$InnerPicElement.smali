@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/entity/model/ElementCommon$d;
+.implements Lcom/kik/entity/model/ElementCommon$h;
 
 
 # annotations
@@ -53,14 +53,14 @@
     .locals 1
 
     .prologue
-    .line 4054
+    .line 4593
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     invoke-direct {v0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;-><init>()V
 
     sput-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
-    .line 4062
+    .line 4601
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement$1;
 
     invoke-direct {v0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement$1;-><init>()V
@@ -74,25 +74,25 @@
     .locals 1
 
     .prologue
-    .line 3421
+    .line 3960
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageV3;-><init>()V
 
-    .line 3570
+    .line 4109
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedIsInitialized:B
 
-    .line 3422
+    .line 3961
     const-string v0, ""
 
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
-    .line 3423
+    .line 3962
     const-string v0, ""
 
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
-    .line 3424
+    .line 3963
     return-void
 .end method
 
@@ -107,27 +107,27 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 3435
+    .line 3974
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;-><init>()V
 
-    .line 3438
+    .line 3977
     const/4 v0, 0x0
 
-    .line 3439
+    .line 3978
     :cond_0
     :goto_0
     if-nez v0, :cond_1
 
-    .line 3440
+    .line 3979
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
     move-result v2
 
-    .line 3441
+    .line 3980
     sparse-switch v2, :sswitch_data_0
 
-    .line 3446
+    .line 3985
     invoke-virtual {p1, v2}, Lcom/google/protobuf/CodedInputStream;->skipField(I)Z
 
     move-result v2
@@ -136,22 +136,22 @@
 
     move v0, v1
 
-    .line 3447
+    .line 3986
     goto :goto_0
 
     :sswitch_0
     move v0, v1
 
-    .line 3444
+    .line 3983
     goto :goto_0
 
-    .line 3452
+    .line 3991
     :sswitch_1
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readStringRequireUtf8()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 3454
+    .line 3993
     iput-object v2, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
@@ -160,7 +160,7 @@
 
     goto :goto_0
 
-    .line 3466
+    .line 4005
     :catch_0
     move-exception v0
 
@@ -173,7 +173,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3471
+    .line 4010
     :catchall_0
     move-exception v0
 
@@ -181,14 +181,14 @@
 
     throw v0
 
-    .line 3458
+    .line 3997
     :sswitch_2
     :try_start_2
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readStringRequireUtf8()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 3460
+    .line 3999
     iput-object v2, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
     :try_end_2
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_2 .. :try_end_2} :catch_0
@@ -197,17 +197,17 @@
 
     goto :goto_0
 
-    .line 3467
+    .line 4006
     :catch_1
     move-exception v0
 
-    .line 3468
+    .line 4007
     :try_start_3
     new-instance v1, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-direct {v1, v0}, Lcom/google/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
 
-    .line 3469
+    .line 4008
     invoke-virtual {v1, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object v0
@@ -216,14 +216,14 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 3471
+    .line 4010
     :cond_1
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->makeExtensionsImmutable()V
 
-    .line 3472
+    .line 4011
     return-void
 
-    .line 3441
+    .line 3980
     :sswitch_data_0
     .sparse-switch
         0x0 -> :sswitch_0
@@ -241,7 +241,7 @@
     .end annotation
 
     .prologue
-    .line 3413
+    .line 3952
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;-><init>(Lcom/google/protobuf/CodedInputStream;)V
 
     return-void
@@ -258,15 +258,15 @@
     .end annotation
 
     .prologue
-    .line 3419
+    .line 3958
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
-    .line 3570
+    .line 4109
     const/4 v0, -0x1
 
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedIsInitialized:B
 
-    .line 3420
+    .line 3959
     return-void
 .end method
 
@@ -274,7 +274,7 @@
     .locals 0
 
     .prologue
-    .line 3413
+    .line 3952
     invoke-direct {p0, p1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;)V
 
     return-void
@@ -284,7 +284,7 @@
     .locals 1
 
     .prologue
-    .line 3704
+    .line 4243
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->c()Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
@@ -302,7 +302,7 @@
     .locals 0
 
     .prologue
-    .line 3413
+    .line 3952
     iput-object p1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
     return-object p1
@@ -312,7 +312,7 @@
     .locals 1
 
     .prologue
-    .line 3413
+    .line 3952
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
     return-object v0
@@ -322,7 +322,7 @@
     .locals 0
 
     .prologue
-    .line 3413
+    .line 3952
     iput-object p1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
     return-object p1
@@ -332,7 +332,7 @@
     .locals 1
 
     .prologue
-    .line 3413
+    .line 3952
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
     return-object v0
@@ -342,7 +342,7 @@
     .locals 1
 
     .prologue
-    .line 4058
+    .line 4597
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     return-object v0
@@ -361,7 +361,7 @@
     .end annotation
 
     .prologue
-    .line 4072
+    .line 4611
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -371,7 +371,7 @@
     .locals 1
 
     .prologue
-    .line 3413
+    .line 3952
     sget-boolean v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -381,7 +381,7 @@
     .locals 1
 
     .prologue
-    .line 3413
+    .line 3952
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -391,26 +391,26 @@
     .locals 2
 
     .prologue
-    .line 3516
+    .line 4055
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
-    .line 3517
+    .line 4056
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 3518
+    .line 4057
     check-cast v0, Ljava/lang/String;
 
-    .line 3519
+    .line 4058
     invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    .line 3521
+    .line 4060
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
-    .line 3524
+    .line 4063
     :goto_0
     return-object v0
 
@@ -424,26 +424,26 @@
     .locals 2
 
     .prologue
-    .line 3558
+    .line 4097
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
-    .line 3559
+    .line 4098
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 3560
+    .line 4099
     check-cast v0, Ljava/lang/String;
 
-    .line 3561
+    .line 4100
     invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    .line 3563
+    .line 4102
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
-    .line 3566
+    .line 4105
     :goto_0
     return-object v0
 
@@ -459,31 +459,31 @@
     .locals 2
 
     .prologue
-    .line 3496
+    .line 4035
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
-    .line 3497
+    .line 4036
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 3498
+    .line 4037
     check-cast v0, Ljava/lang/String;
 
-    .line 3504
+    .line 4043
     :goto_0
     return-object v0
 
-    .line 3500
+    .line 4039
     :cond_0
     check-cast v0, Lcom/google/protobuf/ByteString;
 
-    .line 3502
+    .line 4041
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3503
+    .line 4042
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
     goto :goto_0
@@ -493,31 +493,31 @@
     .locals 2
 
     .prologue
-    .line 3538
+    .line 4077
     iget-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
-    .line 3539
+    .line 4078
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 3540
+    .line 4079
     check-cast v0, Ljava/lang/String;
 
-    .line 3546
+    .line 4085
     :goto_0
     return-object v0
 
-    .line 3542
+    .line 4081
     :cond_0
     check-cast v0, Lcom/google/protobuf/ByteString;
 
-    .line 3544
+    .line 4083
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3545
+    .line 4084
     iput-object v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
     goto :goto_0
@@ -529,7 +529,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3707
+    .line 4246
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     if-ne p0, v0, :cond_0
@@ -546,7 +546,7 @@
 
     invoke-direct {v0, v1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;-><init>(B)V
 
-    .line 3708
+    .line 4247
     invoke-virtual {v0, p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;->a(Lcom/kik/entity/model/ElementCommon$InnerPicElement;)Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
     move-result-object v0
@@ -562,37 +562,37 @@
 
     const/4 v0, 0x1
 
-    .line 3608
+    .line 4147
     if-ne p1, p0, :cond_1
 
-    .line 3621
+    .line 4160
     :cond_0
     :goto_0
     return v0
 
-    .line 3611
+    .line 4150
     :cond_1
     instance-of v2, p1, Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     if-nez v2, :cond_2
 
-    .line 3612
+    .line 4151
     invoke-super {p0, p1}, Lcom/google/protobuf/GeneratedMessageV3;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     goto :goto_0
 
-    .line 3614
+    .line 4153
     :cond_2
     check-cast p1, Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
-    .line 3617
+    .line 4156
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 3618
+    .line 4157
     invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a()Ljava/lang/String;
 
     move-result-object v3
@@ -605,7 +605,7 @@
 
     move v2, v0
 
-    .line 3619
+    .line 4158
     :goto_1
     if-eqz v2, :cond_3
 
@@ -613,7 +613,7 @@
 
     move-result-object v2
 
-    .line 3620
+    .line 4159
     invoke-virtual {p1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->b()Ljava/lang/String;
 
     move-result-object v3
@@ -627,13 +627,13 @@
     :cond_3
     move v0, v1
 
-    .line 3621
+    .line 4160
     goto :goto_0
 
     :cond_4
     move v2, v1
 
-    .line 3618
+    .line 4157
     goto :goto_1
 .end method
 
@@ -641,10 +641,10 @@
     .locals 1
 
     .prologue
-    .line 8081
+    .line 8620
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
-    .line 3413
+    .line 3952
     return-object v0
 .end method
 
@@ -652,10 +652,10 @@
     .locals 1
 
     .prologue
-    .line 7081
+    .line 7620
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
-    .line 3413
+    .line 3952
     return-object v0
 .end method
 
@@ -672,7 +672,7 @@
     .end annotation
 
     .prologue
-    .line 4077
+    .line 4616
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->b:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -682,23 +682,23 @@
     .locals 3
 
     .prologue
-    .line 3591
+    .line 4130
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedSize:I
 
-    .line 3592
+    .line 4131
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 3602
+    .line 4141
     :goto_0
     return v0
 
-    .line 3594
+    .line 4133
     :cond_0
     const/4 v0, 0x0
 
-    .line 3595
+    .line 4134
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->h()Lcom/google/protobuf/ByteString;
 
     move-result-object v1
@@ -709,7 +709,7 @@
 
     if-nez v1, :cond_1
 
-    .line 3596
+    .line 4135
     const/4 v0, 0x1
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
@@ -720,7 +720,7 @@
 
     add-int/lit8 v0, v0, 0x0
 
-    .line 3598
+    .line 4137
     :cond_1
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->i()Lcom/google/protobuf/ByteString;
 
@@ -732,7 +732,7 @@
 
     if-nez v1, :cond_2
 
-    .line 3599
+    .line 4138
     const/4 v1, 0x2
 
     iget-object v2, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
@@ -743,7 +743,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3601
+    .line 4140
     :cond_2
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedSize:I
 
@@ -754,7 +754,7 @@
     .locals 1
 
     .prologue
-    .line 3429
+    .line 3968
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -766,19 +766,19 @@
     .locals 2
 
     .prologue
-    .line 3626
+    .line 4165
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedHashCode:I
 
     if-eqz v0, :cond_0
 
-    .line 3627
+    .line 4166
     iget v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedHashCode:I
 
-    .line 3637
+    .line 4176
     :goto_0
     return v0
 
-    .line 3630
+    .line 4169
     :cond_0
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -790,12 +790,12 @@
 
     add-int/lit16 v0, v0, 0x30b
 
-    .line 3631
+    .line 4170
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 3632
+    .line 4171
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a()Ljava/lang/String;
@@ -808,12 +808,12 @@
 
     add-int/2addr v0, v1
 
-    .line 3633
+    .line 4172
     mul-int/lit8 v0, v0, 0x25
 
     add-int/lit8 v0, v0, 0x2
 
-    .line 3634
+    .line 4173
     mul-int/lit8 v0, v0, 0x35
 
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->b()Ljava/lang/String;
@@ -826,7 +826,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3635
+    .line 4174
     mul-int/lit8 v0, v0, 0x1d
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
@@ -837,7 +837,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3636
+    .line 4175
     iput v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedHashCode:I
 
     goto :goto_0
@@ -847,8 +847,8 @@
     .locals 3
 
     .prologue
-    .line 3481
-    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->m()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+    .line 4020
+    invoke-static {}, Lcom/kik/entity/model/ElementCommon;->o()Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
@@ -856,12 +856,12 @@
 
     const-class v2, Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
-    .line 3482
+    .line 4021
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
 
     move-result-object v0
 
-    .line 3481
+    .line 4020
     return-object v0
 .end method
 
@@ -871,17 +871,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 3572
+    .line 4111
     iget-byte v1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedIsInitialized:B
 
-    .line 3573
+    .line 4112
     if-ne v1, v0, :cond_0
 
-    .line 3577
+    .line 4116
     :goto_0
     return v0
 
-    .line 3574
+    .line 4113
     :cond_0
     if-nez v1, :cond_1
 
@@ -889,7 +889,7 @@
 
     goto :goto_0
 
-    .line 3576
+    .line 4115
     :cond_1
     iput-byte v0, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->memoizedIsInitialized:B
 
@@ -900,14 +900,14 @@
     .locals 1
 
     .prologue
-    .line 5701
+    .line 6240
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->c()Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
     move-result-object v0
 
-    .line 3413
+    .line 3952
     return-object v0
 .end method
 
@@ -915,14 +915,14 @@
     .locals 2
 
     .prologue
-    .line 4714
+    .line 5253
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;-><init>(Lcom/google/protobuf/GeneratedMessageV3$BuilderParent;B)V
 
-    .line 3413
+    .line 3952
     return-object v0
 .end method
 
@@ -930,14 +930,14 @@
     .locals 1
 
     .prologue
-    .line 6701
+    .line 7240
     sget-object v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->a:Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     invoke-virtual {v0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->c()Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
     move-result-object v0
 
-    .line 3413
+    .line 3952
     return-object v0
 .end method
 
@@ -945,7 +945,7 @@
     .locals 1
 
     .prologue
-    .line 3413
+    .line 3952
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->c()Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
     move-result-object v0
@@ -957,7 +957,7 @@
     .locals 1
 
     .prologue
-    .line 3413
+    .line 3952
     invoke-virtual {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->c()Lcom/kik/entity/model/ElementCommon$InnerPicElement$a;
 
     move-result-object v0
@@ -974,7 +974,7 @@
     .end annotation
 
     .prologue
-    .line 3582
+    .line 4121
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->h()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
@@ -985,14 +985,14 @@
 
     if-nez v0, :cond_0
 
-    .line 3583
+    .line 4122
     const/4 v0, 0x1
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->fullSizedUrl_:Ljava/lang/Object;
 
     invoke-static {p1, v0, v1}, Lcom/google/protobuf/GeneratedMessageV3;->writeString(Lcom/google/protobuf/CodedOutputStream;ILjava/lang/Object;)V
 
-    .line 3585
+    .line 4124
     :cond_0
     invoke-direct {p0}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->i()Lcom/google/protobuf/ByteString;
 
@@ -1004,14 +1004,14 @@
 
     if-nez v0, :cond_1
 
-    .line 3586
+    .line 4125
     const/4 v0, 0x2
 
     iget-object v1, p0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;->thumbnailUrl_:Ljava/lang/Object;
 
     invoke-static {p1, v0, v1}, Lcom/google/protobuf/GeneratedMessageV3;->writeString(Lcom/google/protobuf/CodedOutputStream;ILjava/lang/Object;)V
 
-    .line 3588
+    .line 4127
     :cond_1
     return-void
 .end method

@@ -1,160 +1,171 @@
 .class public final Lkik/android/util/aw;
-.super Lcom/kik/util/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private a:Ljava/lang/String;
-
-.field private b:Ljava/lang/String;
-
-.field private c:Ljava/lang/String;
-
-.field private d:Ljava/lang/String;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/util/aw$a;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 0
-
-    .prologue
-    .line 18
-    invoke-direct {p0, p1}, Lcom/kik/util/a;-><init>(Landroid/content/Context;)V
-
-    .line 19
-    invoke-direct {p0}, Lkik/android/util/aw;->g()V
-
-    .line 20
-    return-void
-.end method
-
-.method private g()V
-    .locals 2
-
-    .prologue
-    .line 60
-    invoke-virtual {p0}, Lkik/android/util/aw;->b()Ljava/util/Properties;
-
-    move-result-object v0
-
-    .line 61
-    if-eqz v0, :cond_0
-
-    .line 62
-    const-string v1, "branch_name"
-
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lkik/android/util/aw;->a:Ljava/lang/String;
-
-    .line 63
-    const-string v1, "build_time"
-
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lkik/android/util/aw;->b:Ljava/lang/String;
-
-    .line 64
-    const-string v1, "commit_hash"
-
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lkik/android/util/aw;->c:Ljava/lang/String;
-
-    .line 65
-    const-string v1, "hostname"
-
-    invoke-virtual {v0, v1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lkik/android/util/aw;->d:Ljava/lang/String;
-
-    .line 67
-    :cond_0
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 25
-    iget-object v0, p0, Lkik/android/util/aw;->a:Ljava/lang/String;
-
-    if-nez v0, :cond_0
-
-    .line 26
-    invoke-direct {p0}, Lkik/android/util/aw;->g()V
-
-    .line 28
-    :cond_0
-    iget-object v0, p0, Lkik/android/util/aw;->a:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final d()Ljava/lang/String;
+.method public static a(Ljava/lang/String;)V
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lkik/android/util/aw;->b:Ljava/lang/String;
-
-    if-nez v0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 35
-    invoke-direct {p0}, Lkik/android/util/aw;->g()V
+    invoke-static {}, Lcom/crashlytics/android/a;->d()Lcom/crashlytics/android/a;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/crashlytics/android/a;->c:Lcom/crashlytics/android/core/h;
+
+    invoke-virtual {v0, p0}, Lcom/crashlytics/android/core/h;->a(Ljava/lang/String;)V
 
     .line 37
     :cond_0
-    iget-object v0, p0, Lkik/android/util/aw;->b:Ljava/lang/String;
-
-    return-object v0
+    return-void
 .end method
 
-.method public final e()Ljava/lang/String;
+.method public static a(Ljava/lang/Throwable;)V
     .locals 1
 
     .prologue
-    .line 43
-    iget-object v0, p0, Lkik/android/util/aw;->d:Ljava/lang/String;
+    .line 18
+    if-nez p0, :cond_0
 
-    if-nez v0, :cond_0
+    .line 27
+    :goto_0
+    return-void
 
+    .line 21
+    :cond_0
+    invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 22
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    goto :goto_0
+
+    .line 25
+    :cond_1
+    invoke-static {}, Lcom/crashlytics/android/a;->d()Lcom/crashlytics/android/a;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/crashlytics/android/a;->c:Lcom/crashlytics/android/core/h;
+
+    invoke-virtual {v0, p0}, Lcom/crashlytics/android/core/h;->a(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+.end method
+
+.method public static b(Ljava/lang/Throwable;)V
+    .locals 1
+
+    .prologue
     .line 44
-    invoke-direct {p0}, Lkik/android/util/aw;->g()V
+    if-nez p0, :cond_1
 
-    .line 46
+    .line 50
     :cond_0
-    iget-object v0, p0, Lkik/android/util/aw;->d:Ljava/lang/String;
+    :goto_0
+    return-void
 
-    return-object v0
+    .line 47
+    :cond_1
+    invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 48
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    goto :goto_0
 .end method
 
-.method public final f()Ljava/lang/String;
+.method public static c(Ljava/lang/Throwable;)V
     .locals 1
 
     .prologue
-    .line 52
-    iget-object v0, p0, Lkik/android/util/aw;->c:Ljava/lang/String;
+    .line 57
+    invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
 
-    if-nez v0, :cond_0
+    move-result v0
 
-    .line 53
-    invoke-direct {p0}, Lkik/android/util/aw;->g()V
+    if-eqz v0, :cond_0
 
-    .line 55
+    .line 58
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+
+    .line 61
     :cond_0
-    iget-object v0, p0, Lkik/android/util/aw;->c:Ljava/lang/String;
+    invoke-static {}, Lcom/crashlytics/android/a;->d()Lcom/crashlytics/android/a;
 
-    return-object v0
+    move-result-object v0
+
+    iget-object v0, v0, Lcom/crashlytics/android/a;->c:Lcom/crashlytics/android/core/h;
+
+    invoke-virtual {v0, p0}, Lcom/crashlytics/android/core/h;->a(Ljava/lang/Throwable;)V
+
+    .line 63
+    return-void
+.end method
+
+.method public static d(Ljava/lang/Throwable;)V
+    .locals 1
+
+    .prologue
+    .line 70
+    invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 71
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+
+    .line 73
+    :cond_0
+    return-void
+.end method
+
+.method public static e(Ljava/lang/Throwable;)V
+    .locals 1
+
+    .prologue
+    .line 80
+    invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 81
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 83
+    :cond_0
+    return-void
 .end method

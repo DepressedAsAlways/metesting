@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Lcom/kik/events/e;
 
 
 # annotations
@@ -16,26 +16,28 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/kik/events/e",
+        "<",
+        "Lcom/kik/cards/web/ExtendedWebView$NavigationRequest;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic a:Landroid/webkit/GeolocationPermissions$Callback;
-
-.field final synthetic b:Ljava/lang/String;
-
-.field final synthetic c:Lcom/kik/cards/web/CardsWebViewFragment;
+.field final synthetic a:Lcom/kik/cards/web/CardsWebViewFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;Landroid/webkit/GeolocationPermissions$Callback;Ljava/lang/String;)V
+.method constructor <init>(Lcom/kik/cards/web/CardsWebViewFragment;)V
     .locals 0
 
     .prologue
-    .line 2064
-    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->c:Lcom/kik/cards/web/CardsWebViewFragment;
-
-    iput-object p2, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->a:Landroid/webkit/GeolocationPermissions$Callback;
-
-    iput-object p3, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->b:Ljava/lang/String;
+    .line 321
+    iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,19 +46,122 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
+.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 3
 
     .prologue
-    const/4 v2, 0x0
+    .line 321
+    check-cast p2, Lcom/kik/cards/web/ExtendedWebView$NavigationRequest;
 
-    .line 2068
-    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->a:Landroid/webkit/GeolocationPermissions$Callback;
+    .line 1326
+    iget-object v0, p2, Lcom/kik/cards/web/ExtendedWebView$NavigationRequest;->url:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->b:Ljava/lang/String;
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    invoke-interface {v0, v1, v2, v2}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
+    move-result-object v0
 
-    .line 2069
+    .line 1328
+    invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "http"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "https"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "card"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "cards"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 1330
+    :cond_0
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->a:Lcom/kik/cards/web/CardsWebViewFragment;
+
+    invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->i()V
+
+    .line 1332
+    iget-boolean v0, p2, Lcom/kik/cards/web/ExtendedWebView$NavigationRequest;->popup:Z
+
+    if-eqz v0, :cond_2
+
+    .line 1333
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->a:Lcom/kik/cards/web/CardsWebViewFragment;
+
+    iget-object v1, p2, Lcom/kik/cards/web/ExtendedWebView$NavigationRequest;->url:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->d(Ljava/lang/String;)V
+
+    :cond_1
+    :goto_0
     return-void
+
+    .line 1336
+    :cond_2
+    iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$33;->a:Lcom/kik/cards/web/CardsWebViewFragment;
+
+    invoke-virtual {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->c()Lcom/kik/cards/web/PicardWebView;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "javascript:location.href=\'"
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p2, Lcom/kik/cards/web/ExtendedWebView$NavigationRequest;->url:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "\'"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/kik/cards/web/PicardWebView;->loadUrl(Ljava/lang/String;)V
+
+    goto :goto_0
 .end method

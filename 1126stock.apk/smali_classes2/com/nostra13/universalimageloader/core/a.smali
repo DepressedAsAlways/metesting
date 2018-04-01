@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method public static a(Landroid/content/Context;Lcom/nostra13/universalimageloader/a/a/b/a;JI)Lcom/nostra13/universalimageloader/a/a/a;
+.method public static a(Landroid/content/Context;Lcom/nostra13/universalimageloader/cache/disc/a/a;JI)Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
     .locals 8
 
     .prologue
@@ -22,7 +22,7 @@
     .line 1102
     const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Lcom/nostra13/universalimageloader/b/e;->a(Landroid/content/Context;Z)Ljava/io/File;
+    invoke-static {p0, v0}, Lcom/nostra13/universalimageloader/a/e;->a(Landroid/content/Context;Z)Ljava/io/File;
 
     move-result-object v2
 
@@ -64,7 +64,7 @@
     const-string v3, "uil-images"
 
     .line 3052
-    invoke-static {p0, v7}, Lcom/nostra13/universalimageloader/b/e;->a(Landroid/content/Context;Z)Ljava/io/File;
+    invoke-static {p0, v7}, Lcom/nostra13/universalimageloader/a/e;->a(Landroid/content/Context;Z)Ljava/io/File;
 
     move-result-object v1
 
@@ -90,7 +90,7 @@
     .line 89
     :goto_0
     :try_start_0
-    new-instance v0, Lcom/nostra13/universalimageloader/a/a/a/a/b;
+    new-instance v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;
 
     move-object v3, p1
 
@@ -98,7 +98,7 @@
 
     move v6, p4
 
-    invoke-direct/range {v0 .. v6}, Lcom/nostra13/universalimageloader/a/a/a/a/b;-><init>(Ljava/io/File;Ljava/io/File;Lcom/nostra13/universalimageloader/a/a/b/a;JI)V
+    invoke-direct/range {v0 .. v6}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;-><init>(Ljava/io/File;Ljava/io/File;Lcom/nostra13/universalimageloader/cache/disc/a/a;JI)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -110,18 +110,18 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lcom/nostra13/universalimageloader/b/c;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lcom/nostra13/universalimageloader/a/c;->a(Ljava/lang/Throwable;)V
 
     .line 4052
     :cond_3
-    invoke-static {p0, v7}, Lcom/nostra13/universalimageloader/b/e;->a(Landroid/content/Context;Z)Ljava/io/File;
+    invoke-static {p0, v7}, Lcom/nostra13/universalimageloader/a/e;->a(Landroid/content/Context;Z)Ljava/io/File;
 
     move-result-object v1
 
     .line 97
-    new-instance v0, Lcom/nostra13/universalimageloader/a/a/a/b;
+    new-instance v0, Lcom/nostra13/universalimageloader/cache/disc/impl/UnlimitedDiskCache;
 
-    invoke-direct {v0, v1, v2, p1}, Lcom/nostra13/universalimageloader/a/a/a/b;-><init>(Ljava/io/File;Ljava/io/File;Lcom/nostra13/universalimageloader/a/a/b/a;)V
+    invoke-direct {v0, v1, v2, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/UnlimitedDiskCache;-><init>(Ljava/io/File;Ljava/io/File;Lcom/nostra13/universalimageloader/cache/disc/a/a;)V
 
     goto :goto_1
 

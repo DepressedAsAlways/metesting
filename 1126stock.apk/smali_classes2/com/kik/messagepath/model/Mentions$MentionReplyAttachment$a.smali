@@ -58,7 +58,8 @@
     iput-object v0, p0, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
     .line 1352
-    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->f()Z
+    # getter for: Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->access$400()Z
 
     .line 343
     return-void
@@ -87,7 +88,8 @@
     iput-object v0, p0, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
     .line 2352
-    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->f()Z
+    # getter for: Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->alwaysUseFieldBuilders:Z
+    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->access$400()Z
 
     .line 349
     return-void
@@ -117,7 +119,8 @@
 
     .line 448
     :try_start_0
-    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->g()Lcom/google/protobuf/Parser;
+    # getter for: Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->PARSER:Lcom/google/protobuf/Parser;
+    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->access$700()Lcom/google/protobuf/Parser;
 
     move-result-object v0
 
@@ -357,7 +360,7 @@
 
     .prologue
     .line 430
-    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->d()Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;
+    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->getDefaultInstance()Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;
 
     move-result-object v0
 
@@ -369,14 +372,14 @@
 
     .line 431
     :cond_0
-    invoke-virtual {p1}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->a()Z
+    invoke-virtual {p1}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->hasOriginalMentioner()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 432
-    invoke-virtual {p1}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->b()Lcom/kik/ximodel/XiBareUserJid;
+    invoke-virtual {p1}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->getOriginalMentioner()Lcom/kik/ximodel/XiBareUserJid;
 
     move-result-object v0
 
@@ -443,7 +446,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {v1, p0, v0}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;B)V
+    invoke-direct {v1, p0, v0}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;-><init>(Lcom/google/protobuf/GeneratedMessageV3$Builder;Lcom/kik/messagepath/model/Mentions$1;)V
 
     .line 385
     iget-object v0, p0, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment$a;->b:Lcom/google/protobuf/SingleFieldBuilderV3;
@@ -453,7 +456,8 @@
     .line 386
     iget-object v0, p0, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment$a;->a:Lcom/kik/ximodel/XiBareUserJid;
 
-    invoke-static {v1, v0}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->a(Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
+    # setter for: Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->originalMentioner_:Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v1, v0}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->access$602(Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
     .line 390
     :goto_0
@@ -472,7 +476,8 @@
 
     check-cast v0, Lcom/kik/ximodel/XiBareUserJid;
 
-    invoke-static {v1, v0}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->a(Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
+    # setter for: Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->originalMentioner_:Lcom/kik/ximodel/XiBareUserJid;
+    invoke-static {v1, v0}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->access$602(Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;Lcom/kik/ximodel/XiBareUserJid;)Lcom/kik/ximodel/XiBareUserJid;
 
     goto :goto_0
 .end method
@@ -763,7 +768,7 @@
 
     .prologue
     .line 10372
-    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->d()Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;
+    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->getDefaultInstance()Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;
 
     move-result-object v0
 
@@ -776,7 +781,7 @@
 
     .prologue
     .line 9372
-    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->d()Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;
+    invoke-static {}, Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;->getDefaultInstance()Lcom/kik/messagepath/model/Mentions$MentionReplyAttachment;
 
     move-result-object v0
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/c$a",
+        "Lrx/d$a",
         "<TV;>;"
     }
 .end annotation
@@ -38,10 +38,10 @@
     .end annotation
 .end field
 
-.field private volatile d:Lrx/subjects/b;
+.field private volatile d:Lrx/subjects/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/subjects/b",
+            "Lrx/subjects/c",
             "<TV;TV;>;"
         }
     .end annotation
@@ -96,7 +96,7 @@
 
     .prologue
     .line 42
-    check-cast p1, Lrx/i;
+    check-cast p1, Lrx/j;
 
     .line 1056
     iget-object v0, p0, Lcom/github/a/a/a$a;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -115,11 +115,11 @@
 
     iget-object v1, p0, Lcom/github/a/a/a$a;->c:Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/github/a/a/a;->a(Lcom/github/a/a/a;Ljava/lang/Object;)Lrx/subjects/b;
+    invoke-static {v0, v1}, Lcom/github/a/a/a;->a(Lcom/github/a/a/a;Ljava/lang/Object;)Lrx/subjects/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/github/a/a/a$a;->d:Lrx/subjects/b;
+    iput-object v0, p0, Lcom/github/a/a/a$a;->d:Lrx/subjects/c;
 
     .line 1062
     iget-object v0, p0, Lcom/github/a/a/a$a;->a:Lcom/github/a/a/a;
@@ -131,7 +131,7 @@
     .line 1067
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/github/a/a/a$a;->d:Lrx/subjects/b;
+    iget-object v0, p0, Lcom/github/a/a/a$a;->d:Lrx/subjects/c;
 
     if-nez v0, :cond_1
 
@@ -142,22 +142,22 @@
 
     .line 1072
     :cond_1
-    iget-object v0, p0, Lcom/github/a/a/a$a;->d:Lrx/subjects/b;
+    iget-object v0, p0, Lcom/github/a/a/a$a;->d:Lrx/subjects/c;
 
-    invoke-virtual {v0, p1}, Lrx/subjects/b;->b(Lrx/i;)Lrx/j;
+    invoke-virtual {v0, p1}, Lrx/subjects/c;->b(Lrx/j;)Lrx/k;
 
     move-result-object v0
 
     .line 1074
     new-instance v1, Lcom/github/a/a/a$a$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/github/a/a/a$a$1;-><init>(Lcom/github/a/a/a$a;Lrx/j;)V
+    invoke-direct {v1, p0, v0}, Lcom/github/a/a/a$a$1;-><init>(Lcom/github/a/a/a$a;Lrx/k;)V
 
-    invoke-static {v1}, Lrx/g/a;->a(Lrx/b/a;)Lrx/g/a;
+    invoke-static {v1}, Lrx/f/a;->a(Lrx/functions/a;)Lrx/f/a;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lrx/i;->a(Lrx/j;)V
+    invoke-virtual {p1, v0}, Lrx/j;->a(Lrx/k;)V
 
     .line 42
     return-void

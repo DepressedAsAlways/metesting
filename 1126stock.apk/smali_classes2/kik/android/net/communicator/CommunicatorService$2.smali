@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 172
+    .line 173
     iput-object p1, p0, Lkik/android/net/communicator/CommunicatorService$2;->a:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +50,7 @@
     .locals 4
 
     .prologue
-    .line 177
+    .line 178
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$2;->a:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -59,6 +59,6 @@
 
     invoke-static {v0, v2, v3}, Lkik/android/net/communicator/CommunicatorService;->b(Lkik/android/net/communicator/CommunicatorService;J)J
 
-    .line 178
+    .line 179
     return-void
 .end method

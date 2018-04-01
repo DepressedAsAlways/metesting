@@ -1,54 +1,99 @@
 .class final Lrx/internal/util/g$2;
-.super Lrx/internal/util/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lrx/h$a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lrx/internal/util/g;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lrx/internal/util/g;->f(Lrx/functions/g;)Lrx/h;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x0
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lrx/internal/util/c",
-        "<",
-        "Ljava/util/Queue",
-        "<",
         "Ljava/lang/Object;",
-        ">;>;"
+        "Lrx/h$a",
+        "<TR;>;"
     }
 .end annotation
 
 
+# instance fields
+.field final synthetic a:Lrx/functions/g;
+
+.field final synthetic b:Lrx/internal/util/g;
+
+
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Lrx/internal/util/g;Lrx/functions/g;)V
     .locals 0
 
     .prologue
-    .line 277
-    invoke-direct {p0}, Lrx/internal/util/c;-><init>()V
+    .line 124
+    iput-object p1, p0, Lrx/internal/util/g$2;->b:Lrx/internal/util/g;
+
+    iput-object p2, p0, Lrx/internal/util/g$2;->a:Lrx/functions/g;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected final synthetic c()Ljava/lang/Object;
+.method public final synthetic call(Ljava/lang/Object;)V
     .locals 2
 
     .prologue
-    .line 1281
-    new-instance v0, Lrx/internal/util/a/j;
+    .line 124
+    check-cast p1, Lrx/i;
 
-    sget v1, Lrx/internal/util/g;->b:I
+    .line 1128
+    iget-object v0, p0, Lrx/internal/util/g$2;->a:Lrx/functions/g;
 
-    invoke-direct {v0, v1}, Lrx/internal/util/a/j;-><init>(I)V
+    iget-object v1, p0, Lrx/internal/util/g$2;->b:Lrx/internal/util/g;
 
-    .line 277
-    return-object v0
+    iget-object v1, v1, Lrx/internal/util/g;->b:Ljava/lang/Object;
+
+    invoke-interface {v0, v1}, Lrx/functions/g;->call(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lrx/h;
+
+    .line 1129
+    instance-of v1, v0, Lrx/internal/util/g;
+
+    if-eqz v1, :cond_0
+
+    .line 1130
+    check-cast v0, Lrx/internal/util/g;
+
+    iget-object v0, v0, Lrx/internal/util/g;->b:Ljava/lang/Object;
+
+    invoke-virtual {p1, v0}, Lrx/i;->a(Ljava/lang/Object;)V
+
+    :goto_0
+    return-void
+
+    .line 1132
+    :cond_0
+    new-instance v1, Lrx/internal/util/g$2$1;
+
+    invoke-direct {v1, p0, p1}, Lrx/internal/util/g$2$1;-><init>(Lrx/internal/util/g$2;Lrx/i;)V
+
+    .line 1143
+    invoke-virtual {p1, v1}, Lrx/i;->a(Lrx/k;)V
+
+    .line 1144
+    invoke-virtual {v0, v1}, Lrx/h;->a(Lrx/i;)Lrx/k;
+
+    goto :goto_0
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/ui/fragment/FragmentBase;->a(Landroid/view/View;Z)V
+    value = Lcom/kik/ui/fragment/FragmentBase;->showKeyBoard(Landroid/view/View;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -56,7 +56,7 @@
     .line 323
     iget-object v0, p0, Lcom/kik/ui/fragment/FragmentBase$2;->c:Lcom/kik/ui/fragment/FragmentBase;
 
-    invoke-static {v0}, Lcom/kik/ui/fragment/FragmentBase;->a(Lcom/kik/ui/fragment/FragmentBase;)Landroid/view/inputmethod/InputMethodManager;
+    invoke-static {v0}, Lcom/kik/ui/fragment/FragmentBase;->access$000(Lcom/kik/ui/fragment/FragmentBase;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v1
 

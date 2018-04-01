@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/KikConversationsFragment;->g()V
+    value = Lkik/android/chat/fragment/KikConversationsFragment;->c()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1200
+    .line 1220
     iput-object p1, p0, Lkik/android/chat/fragment/KikConversationsFragment$2;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -37,8 +37,8 @@
     .locals 3
 
     .prologue
-    .line 1211
-    const/4 v0, 0x2
+    .line 1231
+    const/4 v0, 0x3
 
     new-array v0, v0, [Landroid/view/View;
 
@@ -58,9 +58,17 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    const/4 v1, 0x2
 
-    .line 1212
+    iget-object v2, p0, Lkik/android/chat/fragment/KikConversationsFragment$2;->a:Lkik/android/chat/fragment/KikConversationsFragment;
+
+    iget-object v2, v2, Lkik/android/chat/fragment/KikConversationsFragment;->_settingsBadge:Lkik/android/widget/BadgeCover;
+
+    aput-object v2, v0, v1
+
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
+
+    .line 1232
     return-void
 .end method
 
@@ -68,7 +76,7 @@
     .locals 3
 
     .prologue
-    .line 1205
+    .line 1225
     iget-object v0, p0, Lkik/android/chat/fragment/KikConversationsFragment$2;->a:Lkik/android/chat/fragment/KikConversationsFragment;
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikConversationsFragment$2;->a:Lkik/android/chat/fragment/KikConversationsFragment;
@@ -81,8 +89,8 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikConversationsFragment;->a(Landroid/view/View;Z)V
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikConversationsFragment;->showKeyBoard(Landroid/view/View;Z)V
 
-    .line 1206
+    .line 1226
     return-void
 .end method

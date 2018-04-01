@@ -63,30 +63,6 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/datatypes/q;)V
-    .locals 2
-
-    .prologue
-    .line 33
-    if-nez p1, :cond_0
-
-    .line 35
-    :goto_0
-    return-void
-
-    .line 34
-    :cond_0
-    iget-object v0, p0, Lkik/android/chat/JoinGifTrayHelper;->a:Ljava/util/Set;
-
-    invoke-virtual {p1}, Lkik/core/datatypes/q;->b()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-.end method
-
 .method public final b(Ljava/lang/String;)Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;
     .locals 3
 
@@ -124,7 +100,7 @@
     :cond_1
     iget-object v0, p0, Lkik/android/chat/JoinGifTrayHelper;->b:Lkik/core/interfaces/b;
 
-    const-string v1, "join_gif_tray"
+    const-string v1, "join_gif_tray_release"
 
     invoke-interface {v0, v1}, Lkik/core/interfaces/b;->a(Ljava/lang/String;)Ljava/lang/String;
 

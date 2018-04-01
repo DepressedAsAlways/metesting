@@ -100,7 +100,7 @@
     move-result-object v0
 
     .line 170
-    invoke-virtual {v0}, Lkik/android/chat/fragment/MediaItemFragment;->M()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/MediaItemFragment;->q()V
 
     .line 173
     iget-object v0, p0, Lkik/android/chat/fragment/MediaViewerFragment$1;->a:Lkik/android/chat/fragment/MediaViewerFragment;

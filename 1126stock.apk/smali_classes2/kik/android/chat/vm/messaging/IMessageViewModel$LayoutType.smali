@@ -28,6 +28,8 @@
 
 .field public static final enum Attribution:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
+.field public static final enum Audio:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+
 .field public static final enum Content:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
 .field public static final enum Gif:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
@@ -62,7 +64,7 @@
 
     const/4 v3, 0x0
 
-    .line 23
+    .line 25
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Text"
@@ -71,7 +73,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Text:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 24
+    .line 26
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Status"
@@ -80,7 +82,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Status:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 25
+    .line 27
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "System"
@@ -89,7 +91,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->System:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 26
+    .line 28
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Video"
@@ -98,7 +100,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Video:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 27
+    .line 29
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Content"
@@ -107,7 +109,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Content:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 28
+    .line 30
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Sticker"
@@ -118,7 +120,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Sticker:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 29
+    .line 31
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Gif"
@@ -129,7 +131,7 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Gif:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 30
+    .line 32
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     const-string v1, "Web"
@@ -140,30 +142,41 @@
 
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Web:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 31
+    .line 33
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    const-string v1, "Attribution"
+    const-string v1, "Audio"
 
     const/16 v2, 0x8
 
     invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Attribution:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+    sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Audio:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 32
+    .line 34
     new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    const-string v1, "GroupInvite"
+    const-string v1, "Attribution"
 
     const/16 v2, 0x9
 
     invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;-><init>(Ljava/lang/String;I)V
 
+    sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Attribution:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+
+    .line 35
+    new-instance v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+
+    const-string v1, "GroupInvite"
+
+    const/16 v2, 0xa
+
+    invoke-direct {v0, v1, v2}, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;-><init>(Ljava/lang/String;I)V
+
     sput-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->GroupInvite:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
-    .line 21
-    const/16 v0, 0xa
+    .line 23
+    const/16 v0, 0xb
 
     new-array v0, v0, [Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
@@ -207,11 +220,17 @@
 
     const/16 v1, 0x8
 
-    sget-object v2, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Attribution:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+    sget-object v2, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Audio:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x9
+
+    sget-object v2, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->Attribution:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
 
     sget-object v2, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->GroupInvite:Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
@@ -231,7 +250,7 @@
     .end annotation
 
     .prologue
-    .line 21
+    .line 23
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -241,7 +260,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 23
     const-class v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -257,7 +276,7 @@
     .locals 1
 
     .prologue
-    .line 21
+    .line 23
     sget-object v0, Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->$VALUES:[Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;
 
     invoke-virtual {v0}, [Lkik/android/chat/vm/messaging/IMessageViewModel$LayoutType;->clone()Ljava/lang/Object;

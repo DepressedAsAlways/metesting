@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 543
+    .line 588
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$2;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,23 +40,23 @@
     .locals 4
 
     .prologue
-    .line 547
+    .line 592
     new-instance v0, Lkik/android/b/b;
 
     invoke-direct {v0}, Lkik/android/b/b;-><init>()V
 
-    .line 548
+    .line 593
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$2;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
-    invoke-static {v1}, Lkik/android/chat/fragment/ViewPictureFragment;->i(Lkik/android/chat/fragment/ViewPictureFragment;)Lkik/android/util/ch$c;
+    invoke-static {v1}, Lkik/android/chat/fragment/ViewPictureFragment;->i(Lkik/android/chat/fragment/ViewPictureFragment;)Lkik/android/util/ca$c;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lkik/android/util/ch$c;->a()Lcom/kik/contentlink/model/attachments/ContentUri;
+    invoke-virtual {v1}, Lkik/android/util/ca$c;->a()Lcom/kik/contentlink/model/attachments/ContentUri;
 
     move-result-object v1
 
-    .line 549
+    .line 594
     iget-object v2, p0, Lkik/android/chat/fragment/ViewPictureFragment$2;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v2, v2, Lkik/android/chat/fragment/ViewPictureFragment;->openButton:Landroid/view/ViewGroup;
@@ -75,8 +75,8 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/fragment/ViewPictureFragment$2$1;-><init>(Lkik/android/chat/fragment/ViewPictureFragment$2;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 562
+    .line 608
     return-void
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->e()V
+    value = Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->d()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -57,7 +57,7 @@
     :cond_0
     iget-object v0, p0, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment$4;->a:Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->i()Z
+    invoke-virtual {v0}, Lkik/android/chat/fragment/FullControlVideoMediaItemFragment;->h()Z
 
     goto :goto_0
 .end method

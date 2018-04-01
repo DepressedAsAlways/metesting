@@ -4,23 +4,23 @@
 
 
 # virtual methods
-.method public abstract a()Ljava/util/List;
+.method public abstract a()Lcom/kik/events/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Ljava/util/List",
+            "Lcom/kik/events/c",
             "<",
-            "Lkik/core/datatypes/i;",
+            "Ljava/lang/Void;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract a(Ljava/lang/String;)V
+.method public abstract a(Ljava/util/concurrent/ExecutorService;Lkik/core/a;)V
 .end method
 
-.method public abstract a(Lkik/core/datatypes/i;)Z
+.method public abstract b()V
 .end method
 
-.method public abstract b(Ljava/lang/String;)Z
+.method public abstract c()V
 .end method

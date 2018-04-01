@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 70
+    .line 73
     iput-object p1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$1;->a:Lkik/android/chat/fragment/ChatBubbleSelectionFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,7 +49,7 @@
     .end annotation
 
     .prologue
-    .line 74
+    .line 77
     iget-object v0, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$1;->a:Lkik/android/chat/fragment/ChatBubbleSelectionFragment;
 
     iget-object v0, v0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->_bubbleList:Landroid/widget/ListView;
@@ -60,22 +60,22 @@
 
     check-cast v0, Lkik/android/chat/theming/BubbleDescriptor;
 
-    .line 75
+    .line 78
     iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$1;->a:Lkik/android/chat/fragment/ChatBubbleSelectionFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->a:Lkik/android/chat/theming/ChatBubbleManager;
 
     invoke-virtual {v1, v0}, Lkik/android/chat/theming/ChatBubbleManager;->a(Lkik/android/chat/theming/BubbleDescriptor;)V
 
-    .line 76
+    .line 79
     iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$1;->a:Lkik/android/chat/fragment/ChatBubbleSelectionFragment;
 
     invoke-static {v1, v0}, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->a(Lkik/android/chat/fragment/ChatBubbleSelectionFragment;Lkik/android/chat/theming/BubbleDescriptor;)V
 
-    .line 77
+    .line 80
     if-eqz v0, :cond_0
 
-    .line 78
+    .line 81
     iget-object v1, p0, Lkik/android/chat/fragment/ChatBubbleSelectionFragment$1;->a:Lkik/android/chat/fragment/ChatBubbleSelectionFragment;
 
     iget-object v1, v1, Lkik/android/chat/fragment/ChatBubbleSelectionFragment;->b:Lcom/kik/android/Mixpanel;
@@ -88,7 +88,7 @@
 
     const-string v2, "Name"
 
-    .line 79
+    .line 82
     invoke-virtual {v0}, Lkik/android/chat/theming/BubbleDescriptor;->e()Ljava/lang/String;
 
     move-result-object v0
@@ -97,10 +97,10 @@
 
     move-result-object v0
 
-    .line 80
+    .line 83
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 82
+    .line 85
     :cond_0
     return-void
 .end method

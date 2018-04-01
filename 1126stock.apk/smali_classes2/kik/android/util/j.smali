@@ -536,7 +536,7 @@
     :catch_0
     move-exception v1
 
-    invoke-static {v1}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method
@@ -1562,7 +1562,7 @@
     :catch_0
     move-exception v1
 
-    invoke-static {v1}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method

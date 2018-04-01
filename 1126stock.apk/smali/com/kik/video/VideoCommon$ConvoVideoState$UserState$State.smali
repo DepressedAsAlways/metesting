@@ -221,7 +221,7 @@
 
     .prologue
     .line 2197
-    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;->a()Lcom/google/protobuf/Descriptors$Descriptor;
+    invoke-static {}, Lcom/kik/video/VideoCommon$ConvoVideoState$UserState;->getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
 

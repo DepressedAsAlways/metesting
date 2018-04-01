@@ -15,12 +15,12 @@
     .end annotation
 .end field
 
-.field protected b:Lkik/core/interfaces/j;
+.field protected b:Lkik/core/interfaces/IConversation;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected c:Lkik/core/interfaces/l;
+.field protected c:Lkik/core/interfaces/k;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -102,7 +102,7 @@
     .locals 1
 
     .prologue
-    .line 61
+    .line 62
     const-string v0, "CommunicatorService"
 
     invoke-static {v0}, Lorg/slf4j/c;->a(Ljava/lang/String;)Lorg/slf4j/b;
@@ -124,94 +124,94 @@
 
     const-wide/16 v2, 0x0
 
-    .line 38
+    .line 39
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
-    .line 55
+    .line 56
     const-wide/16 v0, 0x3e8
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->e:J
 
-    .line 57
+    .line 58
     iput-wide v2, p0, Lkik/android/net/communicator/CommunicatorService;->f:J
 
-    .line 58
+    .line 59
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/net/communicator/CommunicatorService;->g:Z
 
-    .line 59
+    .line 60
     const-wide/32 v0, 0x186a0
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->h:J
 
-    .line 63
+    .line 64
     iput-boolean v4, p0, Lkik/android/net/communicator/CommunicatorService;->j:Z
 
-    .line 65
+    .line 66
     iput-wide v2, p0, Lkik/android/net/communicator/CommunicatorService;->k:J
 
-    .line 67
+    .line 68
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->l:Ljava/util/Random;
 
-    .line 78
+    .line 79
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->m:J
 
-    .line 83
+    .line 84
     iput-boolean v4, p0, Lkik/android/net/communicator/CommunicatorService;->n:Z
 
-    .line 88
+    .line 89
     iput-wide v2, p0, Lkik/android/net/communicator/CommunicatorService;->o:J
 
-    .line 89
+    .line 90
     iput-wide v2, p0, Lkik/android/net/communicator/CommunicatorService;->p:J
 
-    .line 90
+    .line 91
     iput v4, p0, Lkik/android/net/communicator/CommunicatorService;->q:I
 
-    .line 94
+    .line 95
     new-instance v0, Lcom/kik/events/d;
 
     invoke-direct {v0}, Lcom/kik/events/d;-><init>()V
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
 
-    .line 107
+    .line 108
     iput-object v5, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
-    .line 110
+    .line 111
     iput-object v5, p0, Lkik/android/net/communicator/CommunicatorService;->w:Landroid/app/PendingIntent;
 
-    .line 155
+    .line 156
     new-instance v0, Lkik/android/net/communicator/CommunicatorService$1;
 
     invoke-direct {v0, p0}, Lkik/android/net/communicator/CommunicatorService$1;-><init>(Lkik/android/net/communicator/CommunicatorService;)V
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->x:Lcom/kik/events/e;
 
-    .line 172
+    .line 173
     new-instance v0, Lkik/android/net/communicator/CommunicatorService$2;
 
     invoke-direct {v0, p0}, Lkik/android/net/communicator/CommunicatorService$2;-><init>(Lkik/android/net/communicator/CommunicatorService;)V
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->y:Lcom/kik/events/e;
 
-    .line 181
+    .line 182
     new-instance v0, Lkik/android/net/communicator/CommunicatorService$3;
 
     invoke-direct {v0, p0}, Lkik/android/net/communicator/CommunicatorService$3;-><init>(Lkik/android/net/communicator/CommunicatorService;)V
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->z:Lcom/kik/events/e;
 
-    .line 556
+    .line 549
     new-instance v0, Lkik/android/net/communicator/CommunicatorService$7;
 
     invoke-direct {v0, p0}, Lkik/android/net/communicator/CommunicatorService$7;-><init>(Lkik/android/net/communicator/CommunicatorService;)V
@@ -225,7 +225,7 @@
     .locals 2
 
     .prologue
-    .line 38
+    .line 39
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->h:J
 
     return-wide v0
@@ -235,7 +235,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     iput-wide p1, p0, Lkik/android/net/communicator/CommunicatorService;->h:J
 
     return-wide p1
@@ -249,7 +249,7 @@
 
     const/4 v2, 0x0
 
-    .line 537
+    .line 538
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Blocking retries for another "
@@ -266,7 +266,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 538
+    .line 539
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
@@ -275,7 +275,7 @@
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->o:J
 
-    .line 540
+    .line 541
     invoke-static {v6, v7, p1, p2}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v4
@@ -288,7 +288,7 @@
 
     invoke-direct/range {v1 .. v6}, Lkik/android/net/communicator/CommunicatorService;->a(ZZJLjava/lang/String;)V
 
-    .line 541
+    .line 542
     return-void
 .end method
 
@@ -296,8 +296,8 @@
     .locals 7
 
     .prologue
-    .line 38
-    .line 6406
+    .line 39
+    .line 6407
     const/4 v2, 0x0
 
     const/4 v3, 0x1
@@ -310,7 +310,7 @@
 
     invoke-direct/range {v1 .. v6}, Lkik/android/net/communicator/CommunicatorService;->a(ZZJLjava/lang/String;)V
 
-    .line 38
+    .line 39
     return-void
 .end method
 
@@ -318,7 +318,7 @@
     .locals 0
 
     .prologue
-    .line 38
+    .line 39
     invoke-direct {p0, p1, p2}, Lkik/android/net/communicator/CommunicatorService;->a(ZLjava/lang/String;)V
 
     return-void
@@ -333,7 +333,7 @@
     .end annotation
 
     .prologue
-    .line 354
+    .line 355
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
 
     new-instance v1, Lkik/android/net/communicator/CommunicatorService$5;
@@ -342,7 +342,7 @@
 
     invoke-interface {v0, v1, p2, p3}, Lkik/core/interfaces/ICommunication;->a(Lkik/core/interfaces/ICommunication$b;J)V
 
-    .line 384
+    .line 385
     return-void
 .end method
 
@@ -350,7 +350,7 @@
     .locals 7
 
     .prologue
-    .line 397
+    .line 398
     const/4 v3, 0x0
 
     const-wide/16 v4, -0x1
@@ -363,7 +363,7 @@
 
     invoke-direct/range {v1 .. v6}, Lkik/android/net/communicator/CommunicatorService;->a(ZZJLjava/lang/String;)V
 
-    .line 398
+    .line 399
     return-void
 .end method
 
@@ -371,18 +371,18 @@
     .locals 10
 
     .prologue
-    .line 216
-    .line 1192
+    .line 217
+    .line 1193
     iget-boolean v0, p0, Lkik/android/net/communicator/CommunicatorService;->j:Z
 
     if-nez v0, :cond_0
 
-    .line 1193
+    .line 1194
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/net/communicator/CommunicatorService;->j:Z
 
-    .line 1194
+    .line 1195
     invoke-virtual {p0}, Lkik/android/net/communicator/CommunicatorService;->getApplication()Landroid/app/Application;
 
     move-result-object v0
@@ -395,7 +395,7 @@
 
     invoke-interface {v0, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/net/communicator/CommunicatorService;)V
 
-    .line 1196
+    .line 1197
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
 
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
@@ -408,58 +408,58 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
-    .line 1197
-    iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
-
-    iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->b:Lkik/core/interfaces/j;
-
-    invoke-interface {v1}, Lkik/core/interfaces/j;->e()Lcom/kik/events/c;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService;->y:Lcom/kik/events/e;
-
-    new-instance v3, Lcom/kik/events/j;
-
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
-
     .line 1198
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->b:Lkik/core/interfaces/j;
+    iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->b:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/j;->p()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->e()Lcom/kik/events/c;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService;->y:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
     .line 1199
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
 
-    iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->c:Lkik/core/interfaces/l;
+    iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->b:Lkik/core/interfaces/IConversation;
 
-    invoke-interface {v1}, Lkik/core/interfaces/l;->a()Lcom/kik/events/c;
+    invoke-interface {v1}, Lkik/core/interfaces/IConversation;->p()Lcom/kik/events/c;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService;->y:Lcom/kik/events/e;
 
-    new-instance v3, Lcom/kik/events/j;
+    new-instance v3, Lcom/kik/events/i;
 
-    invoke-direct {v3}, Lcom/kik/events/j;-><init>()V
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/q;)Lcom/kik/events/e;
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
 
     .line 1200
+    iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
+
+    iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->c:Lkik/core/interfaces/k;
+
+    invoke-interface {v1}, Lkik/core/interfaces/k;->a()Lcom/kik/events/c;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lkik/android/net/communicator/CommunicatorService;->y:Lcom/kik/events/e;
+
+    new-instance v3, Lcom/kik/events/i;
+
+    invoke-direct {v3}, Lcom/kik/events/i;-><init>()V
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;Lcom/kik/events/p;)Lcom/kik/events/e;
+
+    .line 1201
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
 
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
@@ -472,7 +472,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/kik/events/d;->a(Lcom/kik/events/c;Lcom/kik/events/e;)Lcom/kik/events/e;
 
-    .line 1202
+    .line 1203
     const-string v0, "connectivity"
 
     invoke-virtual {p0, v0}, Lkik/android/net/communicator/CommunicatorService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -483,7 +483,7 @@
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->s:Landroid/net/ConnectivityManager;
 
-    .line 1203
+    .line 1204
     const-string v0, "alarm"
 
     invoke-virtual {p0, v0}, Lkik/android/net/communicator/CommunicatorService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -494,7 +494,7 @@
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->t:Landroid/app/AlarmManager;
 
-    .line 1205
+    .line 1206
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->A:Landroid/content/BroadcastReceiver;
 
     new-instance v1, Landroid/content/IntentFilter;
@@ -505,19 +505,19 @@
 
     invoke-virtual {p0, v0, v1}, Lkik/android/net/communicator/CommunicatorService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 217
+    .line 218
     :cond_0
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
 
-    .line 219
+    .line 220
     if-eqz p2, :cond_1
 
-    .line 221
+    .line 222
     const-wide/16 v2, 0x3e8
 
     iput-wide v2, p0, Lkik/android/net/communicator/CommunicatorService;->e:J
 
-    .line 225
+    .line 226
     :cond_1
     :try_start_0
     invoke-interface {v0}, Lkik/core/interfaces/ICommunication;->m()I
@@ -526,7 +526,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 235
+    .line 236
     :pswitch_0
     const/4 v3, 0x0
 
@@ -540,18 +540,18 @@
 
     invoke-direct/range {v1 .. v6}, Lkik/android/net/communicator/CommunicatorService;->a(ZZJLjava/lang/String;)V
 
-    .line 1306
+    .line 1307
     :cond_2
     :goto_0
     return-void
 
-    .line 227
+    .line 228
     :pswitch_1
     if-eqz p2, :cond_3
 
     const-wide/16 v0, 0xbb8
 
-    .line 228
+    .line 229
     :goto_1
     invoke-direct {p0, p1, v0, v1}, Lkik/android/net/communicator/CommunicatorService;->a(ZJ)V
     :try_end_0
@@ -559,7 +559,7 @@
 
     goto :goto_0
 
-    .line 241
+    .line 242
     :catch_0
     move-exception v0
 
@@ -577,32 +577,32 @@
 
     goto :goto_0
 
-    .line 227
+    .line 228
     :cond_3
     const-wide/16 v0, 0x1f40
 
     goto :goto_1
 
-    .line 1278
+    .line 1279
     :pswitch_2
     :try_start_1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v2
 
-    .line 1279
+    .line 1280
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->o:J
 
     cmp-long v0, v2, v0
 
     if-gez v0, :cond_4
 
-    .line 1281
+    .line 1282
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->o:J
 
     sub-long/2addr v0, v2
 
-    .line 1282
+    .line 1283
     const/4 v3, 0x0
 
     const-wide/16 v4, 0x3e8
@@ -621,35 +621,35 @@
 
     goto :goto_0
 
-    .line 1287
+    .line 1288
     :cond_4
     const-wide/16 v0, 0x0
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->o:J
 
-    .line 1290
+    .line 1291
     iget-object v4, p0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
 
-    .line 2248
+    .line 2249
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->s:Landroid/net/ConnectivityManager;
 
     if-nez v0, :cond_5
 
-    .line 2249
+    .line 2250
     const/4 v0, 0x1
 
-    .line 1291
+    .line 1292
     :goto_2
     if-nez v0, :cond_7
 
-    .line 1293
+    .line 1294
     const-string v0, "no network available"
 
     invoke-direct {p0, p1, v0}, Lkik/android/net/communicator/CommunicatorService;->a(ZLjava/lang/String;)V
 
     goto :goto_0
 
-    .line 2251
+    .line 2252
     :cond_5
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->s:Landroid/net/ConnectivityManager;
 
@@ -657,7 +657,7 @@
 
     move-result-object v0
 
-    .line 2252
+    .line 2253
     if-eqz v0, :cond_6
 
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
@@ -675,7 +675,7 @@
 
     goto :goto_2
 
-    .line 1297
+    .line 1298
     :cond_7
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->p:J
 
@@ -683,7 +683,7 @@
 
     if-ltz v0, :cond_8
 
-    .line 2388
+    .line 2389
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
@@ -694,12 +694,12 @@
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->p:J
 
-    .line 2389
+    .line 2390
     const/4 v0, 0x0
 
     iput v0, p0, Lkik/android/net/communicator/CommunicatorService;->q:I
 
-    .line 1301
+    .line 1302
     :cond_8
     iget v0, p0, Lkik/android/net/communicator/CommunicatorService;->q:I
 
@@ -711,7 +711,7 @@
 
     if-lt v0, v1, :cond_9
 
-    .line 1304
+    .line 1305
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Connection limiter in effect. Retry number "
@@ -750,7 +750,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1305
+    .line 1306
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->p:J
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -767,7 +767,7 @@
 
     goto/16 :goto_0
 
-    .line 1308
+    .line 1309
     :cond_9
     invoke-interface {v4}, Lkik/core/interfaces/ICommunication;->n()Z
 
@@ -779,34 +779,34 @@
 
     if-eqz v0, :cond_2
 
-    .line 3257
+    .line 3258
     :cond_a
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->s:Landroid/net/ConnectivityManager;
 
     if-eqz v0, :cond_d
 
-    .line 3260
+    .line 3261
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->s:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v1
 
-    .line 3261
+    .line 3262
     if-nez v1, :cond_b
 
-    .line 3262
+    .line 3263
     const-string v0, "none"
 
     move-object v1, v0
 
-    .line 1312
+    .line 1313
     :goto_3
     new-instance v2, Lkik/android/net/communicator/CommunicatorService$4;
 
     invoke-direct {v2, p0, p1}, Lkik/android/net/communicator/CommunicatorService$4;-><init>(Lkik/android/net/communicator/CommunicatorService;Z)V
 
-    .line 3583
+    .line 3576
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v6
@@ -823,38 +823,38 @@
 
     const/4 v0, 0x1
 
-    .line 1312
+    .line 1313
     :goto_4
     invoke-interface {v4, v1, v2, v0}, Lkik/core/interfaces/ICommunication;->a(Ljava/lang/String;Lkik/core/interfaces/ICommunication$a;Z)V
 
     goto/16 :goto_0
 
-    .line 3265
+    .line 3266
     :cond_b
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->getTypeName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3266
+    .line 3267
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->getSubtypeName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3267
-    invoke-static {v0}, Lkik/core/util/v;->a(Ljava/lang/CharSequence;)Z
+    .line 3268
+    invoke-static {v0}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_d
 
-    .line 3268
-    invoke-static {v1}, Lkik/core/util/v;->a(Ljava/lang/CharSequence;)Z
+    .line 3269
+    invoke-static {v1}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_c
 
-    .line 3269
+    .line 3270
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -884,10 +884,10 @@
     :cond_c
     move-object v1, v0
 
-    .line 3271
+    .line 3272
     goto :goto_3
 
-    .line 3273
+    .line 3274
     :cond_d
     const-string v0, "unknown"
     :try_end_1
@@ -897,13 +897,13 @@
 
     goto :goto_3
 
-    .line 3583
+    .line 3576
     :cond_e
     const/4 v0, 0x0
 
     goto :goto_4
 
-    .line 225
+    .line 226
     nop
 
     :pswitch_data_0
@@ -919,20 +919,20 @@
     .locals 9
 
     .prologue
-    .line 411
+    .line 412
     if-eqz p1, :cond_0
 
-    .line 450
+    .line 451
     :goto_0
     return-void
 
-    .line 416
+    .line 417
     :cond_0
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->t:Landroid/app/AlarmManager;
 
     if-nez v0, :cond_1
 
-    .line 417
+    .line 418
     sget-object v0, Lkik/android/net/communicator/CommunicatorService;->i:Lorg/slf4j/b;
 
     const-string v1, "Not scheduling retry because alert manager has not been setup"
@@ -941,16 +941,16 @@
 
     goto :goto_0
 
-    .line 423
+    .line 424
     :cond_1
     if-eqz p2, :cond_2
 
-    .line 424
+    .line 425
     const-wide/16 v0, 0x3e8
 
     iput-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->e:J
 
-    .line 427
+    .line 428
     :cond_2
     const-wide/16 v0, 0x0
 
@@ -958,7 +958,7 @@
 
     if-lez v0, :cond_3
 
-    .line 436
+    .line 437
     :goto_1
     const-wide/32 v0, 0x668a0
 
@@ -966,24 +966,24 @@
 
     if-ltz v0, :cond_4
 
-    .line 4459
+    .line 4460
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 4460
+    .line 4461
     const-class v1, Lkik/android/net/communicator/CommunicatorService;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 4461
+    .line 4462
     const-string v1, "EXTRA_RESCHEDULE_IS_REPEATING"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 4462
+    .line 4463
     const/4 v1, 0x0
 
     const/high16 v2, 0x8000000
@@ -992,14 +992,14 @@
 
     move-result-object v6
 
-    .line 4463
+    .line 4464
     const-wide/32 v0, 0x668a0
 
     invoke-direct {p0, v0, v1}, Lkik/android/net/communicator/CommunicatorService;->b(J)J
 
     move-result-wide v2
 
-    .line 4464
+    .line 4465
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->t:Landroid/app/AlarmManager;
 
     const/4 v1, 0x0
@@ -1016,11 +1016,11 @@
 
     goto :goto_0
 
-    .line 431
+    .line 432
     :cond_3
     iget-wide p3, p0, Lkik/android/net/communicator/CommunicatorService;->e:J
 
-    .line 432
+    .line 433
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->e:J
 
     long-to-double v0, v0
@@ -1035,7 +1035,7 @@
 
     goto :goto_1
 
-    .line 441
+    .line 442
     :cond_4
     const-wide/16 v0, 0x1388
 
@@ -1043,7 +1043,7 @@
 
     if-gtz v0, :cond_8
 
-    .line 442
+    .line 443
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Scheduling wakelock retry, delay="
@@ -1062,15 +1062,15 @@
 
     invoke-virtual {v0, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4501
+    .line 4502
     invoke-direct {p0, p3, p4}, Lkik/android/net/communicator/CommunicatorService;->b(J)J
 
     move-result-wide v2
 
-    .line 4506
+    .line 4507
     const/4 v0, 0x0
 
-    .line 4507
+    .line 4508
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->a:Lkik/core/interfaces/ICommunication;
 
     invoke-interface {v1}, Lkik/core/interfaces/ICommunication;->m()I
@@ -1081,57 +1081,57 @@
 
     if-eq v1, v4, :cond_5
 
-    .line 4508
+    .line 4509
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->u:Lcom/kik/android/a/a;
 
     const-wide/16 v4, 0x3e8
 
     add-long/2addr v4, v2
 
-    invoke-virtual {v0, v4, v5}, Lcom/kik/android/a/a;->a(J)Lcom/kik/events/p;
+    invoke-virtual {v0, v4, v5}, Lcom/kik/android/a/a;->a(J)Lcom/kik/events/o;
 
     move-result-object v0
 
-    .line 4513
+    .line 4514
     :cond_5
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
     if-eqz v1, :cond_6
 
-    .line 4514
+    .line 4515
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->d:Landroid/os/Handler;
 
     iget-object v4, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 4516
+    .line 4517
     :cond_6
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->w:Landroid/app/PendingIntent;
 
     if-eqz v1, :cond_7
 
-    .line 4517
+    .line 4518
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->t:Landroid/app/AlarmManager;
 
     iget-object v4, p0, Lkik/android/net/communicator/CommunicatorService;->w:Landroid/app/PendingIntent;
 
     invoke-virtual {v1, v4}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 4518
+    .line 4519
     const/4 v1, 0x0
 
     iput-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->w:Landroid/app/PendingIntent;
 
-    .line 4521
+    .line 4522
     :cond_7
     new-instance v1, Lkik/android/net/communicator/CommunicatorService$6;
 
-    invoke-direct {v1, p0, v0}, Lkik/android/net/communicator/CommunicatorService$6;-><init>(Lkik/android/net/communicator/CommunicatorService;Lcom/kik/events/p;)V
+    invoke-direct {v1, p0, v0}, Lkik/android/net/communicator/CommunicatorService$6;-><init>(Lkik/android/net/communicator/CommunicatorService;Lcom/kik/events/o;)V
 
     iput-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
-    .line 4532
+    .line 4533
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->d:Landroid/os/Handler;
 
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
@@ -1140,7 +1140,7 @@
 
     goto/16 :goto_0
 
-    .line 447
+    .line 448
     :cond_8
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1160,47 +1160,47 @@
 
     invoke-virtual {v0, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5479
+    .line 5480
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_9
 
-    .line 5480
+    .line 5481
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->d:Landroid/os/Handler;
 
     iget-object v1, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 5481
+    .line 5482
     const/4 v0, 0x0
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
 
-    .line 5484
+    .line 5485
     :cond_9
     invoke-direct {p0, p3, p4}, Lkik/android/net/communicator/CommunicatorService;->b(J)J
 
     move-result-wide v0
 
-    .line 5485
+    .line 5486
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 5486
+    .line 5487
     const-class v3, Lkik/android/net/communicator/CommunicatorService;
 
     invoke-virtual {v2, p0, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 5487
+    .line 5488
     const-string v3, "EXTRA_RESCHEDULE_IS_REPEATING"
 
     const/4 v4, 0x0
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 5488
+    .line 5489
     const/4 v3, 0x0
 
     const/high16 v4, 0x8000000
@@ -1209,10 +1209,10 @@
 
     move-result-object v2
 
-    .line 5489
+    .line 5490
     iput-object v2, p0, Lkik/android/net/communicator/CommunicatorService;->w:Landroid/app/PendingIntent;
 
-    .line 5490
+    .line 5491
     iget-object v3, p0, Lkik/android/net/communicator/CommunicatorService;->t:Landroid/app/AlarmManager;
 
     const/4 v4, 0x0
@@ -1232,36 +1232,22 @@
     .locals 0
 
     .prologue
-    .line 38
+    .line 39
     iput-boolean p1, p0, Lkik/android/net/communicator/CommunicatorService;->n:Z
 
     return p1
 .end method
 
 .method private b(J)J
-    .locals 7
+    .locals 3
 
     .prologue
-    .line 553
-    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+    .line 546
+    iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->l:Ljava/util/Random;
 
-    const-wide/high16 v2, 0x3fd0000000000000L    # 0.25
+    invoke-static {v0, p1, p2}, Lkik/core/util/v;->a(Ljava/util/Random;J)J
 
-    iget-object v4, p0, Lkik/android/net/communicator/CommunicatorService;->l:Ljava/util/Random;
-
-    invoke-virtual {v4}, Ljava/util/Random;->nextDouble()D
-
-    move-result-wide v4
-
-    mul-double/2addr v2, v4
-
-    add-double/2addr v0, v2
-
-    long-to-double v2, p1
-
-    mul-double/2addr v0, v2
-
-    double-to-long v0, v0
+    move-result-wide v0
 
     return-wide v0
 .end method
@@ -1270,7 +1256,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     iput-wide p1, p0, Lkik/android/net/communicator/CommunicatorService;->m:J
 
     return-wide p1
@@ -1280,7 +1266,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->u:Lcom/kik/android/a/a;
 
     return-object v0
@@ -1290,7 +1276,7 @@
     .locals 0
 
     .prologue
-    .line 38
+    .line 39
     iput-boolean p1, p0, Lkik/android/net/communicator/CommunicatorService;->g:Z
 
     return p1
@@ -1300,7 +1286,7 @@
     .locals 2
 
     .prologue
-    .line 38
+    .line 39
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->k:J
 
     return-wide v0
@@ -1310,7 +1296,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     iput-wide p1, p0, Lkik/android/net/communicator/CommunicatorService;->f:J
 
     return-wide p1
@@ -1320,7 +1306,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     invoke-direct {p0, p1, p2}, Lkik/android/net/communicator/CommunicatorService;->a(J)V
 
     return-void
@@ -1330,7 +1316,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     iget-boolean v0, p0, Lkik/android/net/communicator/CommunicatorService;->g:Z
 
     return v0
@@ -1340,7 +1326,7 @@
     .locals 2
 
     .prologue
-    .line 38
+    .line 39
     iget-wide v0, p0, Lkik/android/net/communicator/CommunicatorService;->f:J
 
     return-wide v0
@@ -1350,7 +1336,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     iput-wide p1, p0, Lkik/android/net/communicator/CommunicatorService;->k:J
 
     return-wide p1
@@ -1362,7 +1348,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 38
+    .line 39
     invoke-direct {p0, v0, v0}, Lkik/android/net/communicator/CommunicatorService;->a(ZZ)V
 
     return-void
@@ -1372,7 +1358,7 @@
     .locals 1
 
     .prologue
-    .line 38
+    .line 39
     const/4 v0, 0x0
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->v:Ljava/lang/Runnable;
@@ -1389,7 +1375,7 @@
     .end annotation
 
     .prologue
-    .line 38
+    .line 39
     const/4 v0, 0x0
 
     const-wide/16 v2, 0xbb8
@@ -1405,7 +1391,7 @@
     .locals 1
 
     .prologue
-    .line 115
+    .line 116
     const/4 v0, 0x0
 
     return-object v0
@@ -1415,10 +1401,10 @@
     .locals 4
 
     .prologue
-    .line 121
+    .line 122
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
-    .line 122
+    .line 123
     new-instance v0, Landroid/os/Handler;
 
     invoke-virtual {p0}, Lkik/android/net/communicator/CommunicatorService;->getMainLooper()Landroid/os/Looper;
@@ -1429,7 +1415,7 @@
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->d:Landroid/os/Handler;
 
-    .line 124
+    .line 125
     new-instance v0, Lcom/kik/android/a/a;
 
     invoke-virtual {p0}, Lkik/android/net/communicator/CommunicatorService;->getApplicationContext()Landroid/content/Context;
@@ -1444,7 +1430,7 @@
 
     iput-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->u:Lcom/kik/android/a/a;
 
-    .line 125
+    .line 126
     return-void
 .end method
 
@@ -1452,15 +1438,15 @@
     .locals 1
 
     .prologue
-    .line 589
+    .line 582
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
-    .line 590
+    .line 583
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService;->r:Lcom/kik/events/d;
 
     invoke-virtual {v0}, Lcom/kik/events/d;->a()V
 
-    .line 591
+    .line 584
     return-void
 .end method
 
@@ -1470,29 +1456,29 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 131
-    .line 133
+    .line 132
+    .line 134
     if-eqz p1, :cond_0
 
-    .line 134
+    .line 135
     const-string v1, "EXTRA_RESCHEDULE_IS_REPEATING"
 
     invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    .line 135
+    .line 136
     const-string v2, "GCM_EXTRA"
 
     invoke-virtual {p1, v2, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 137
+    .line 138
     :goto_0
     invoke-direct {p0, v1, v0}, Lkik/android/net/communicator/CommunicatorService;->a(ZZ)V
 
-    .line 138
+    .line 139
     return-void
 
     :cond_0
@@ -1507,29 +1493,29 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 144
-    .line 146
+    .line 145
+    .line 147
     if-eqz p1, :cond_0
 
-    .line 147
+    .line 148
     const-string v1, "EXTRA_RESCHEDULE_IS_REPEATING"
 
     invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    .line 148
+    .line 149
     const-string v2, "GCM_EXTRA"
 
     invoke-virtual {p1, v2, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 151
+    .line 152
     :goto_0
     invoke-direct {p0, v1, v0}, Lkik/android/net/communicator/CommunicatorService;->a(ZZ)V
 
-    .line 152
+    .line 153
     const/4 v0, 0x1
 
     return v0

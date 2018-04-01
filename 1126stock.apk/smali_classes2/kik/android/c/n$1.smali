@@ -120,7 +120,7 @@
     :catch_1
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     .line 98
     iget-object v0, p0, Lkik/android/c/n$1;->a:Lkik/android/c/n;

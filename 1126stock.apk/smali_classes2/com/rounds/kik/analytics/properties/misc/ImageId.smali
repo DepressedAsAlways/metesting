@@ -1,5 +1,5 @@
 .class public Lcom/rounds/kik/analytics/properties/misc/ImageId;
-.super Lcom/rounds/kik/analytics/properties/primitives/StringProperty;
+.super Lcom/rounds/kik/analytics/properties/primitives/StringArrayProperty;
 .source "SourceFile"
 
 
@@ -8,11 +8,11 @@
     .locals 1
 
     .prologue
-    .line 12
+    .line 9
     const-string v0, "image_id"
 
-    invoke-direct {p0, v0, p1}, Lcom/rounds/kik/analytics/properties/primitives/StringProperty;-><init>(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, p1}, Lcom/rounds/kik/analytics/properties/primitives/StringArrayProperty;-><init>(Ljava/lang/String;Z)V
 
-    .line 13
+    .line 10
     return-void
 .end method

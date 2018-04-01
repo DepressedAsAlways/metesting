@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/f/f;Lkik/core/interfaces/ac;Lcom/kik/events/Promise;Lkik/core/interfaces/ae;Lkik/core/interfaces/y;Lkik/android/util/an;Lkik/core/interfaces/s;)V
+    value = Lcom/kik/android/b/g;-><init>(Landroid/content/Context;Lkik/core/e/f;Lkik/core/interfaces/ad;Lcom/kik/events/Promise;Lkik/core/interfaces/ag;Lkik/core/interfaces/z;Lkik/android/util/ai;Lkik/core/interfaces/s;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lcom/kik/events/e",
         "<",
-        "Lcom/kik/cache/ac;",
+        "Lcom/kik/cache/KikImageRequest;",
         ">;"
     }
 .end annotation
@@ -51,10 +51,10 @@
 
     .prologue
     .line 396
-    check-cast p2, Lcom/kik/cache/ac;
+    check-cast p2, Lcom/kik/cache/KikImageRequest;
 
     .line 1400
-    invoke-static {p2}, Lcom/kik/android/b/g;->a(Lcom/kik/cache/ac;)V
+    invoke-static {p2}, Lcom/kik/android/b/g;->a(Lcom/kik/cache/KikImageRequest;)V
 
     .line 396
     return-void

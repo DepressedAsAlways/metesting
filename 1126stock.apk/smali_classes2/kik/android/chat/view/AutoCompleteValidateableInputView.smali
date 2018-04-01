@@ -12,7 +12,7 @@
     invoke-direct {p0, p1}, Lkik/android/chat/view/ValidateableInputView;-><init>(Landroid/content/Context;)V
 
     .line 23
-    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->k()V
+    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->m()V
 
     .line 24
     return-void
@@ -26,7 +26,7 @@
     invoke-direct {p0, p1, p2}, Lkik/android/chat/view/ValidateableInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 29
-    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->k()V
+    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->m()V
 
     .line 30
     return-void
@@ -40,7 +40,7 @@
     invoke-direct {p0, p1, p2, p3}, Lkik/android/chat/view/ValidateableInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 35
-    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->k()V
+    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->m()V
 
     .line 36
     return-void
@@ -54,7 +54,7 @@
     invoke-direct {p0, p1, p2, p3, p4}, Lkik/android/chat/view/ValidateableInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 41
-    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->k()V
+    invoke-direct {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->m()V
 
     .line 42
     return-void
@@ -64,8 +64,7 @@
     .locals 1
 
     .prologue
-    .line 0
-    .line 10048
+    .line 48
     invoke-virtual {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->c()Landroid/widget/ListAdapter;
 
     move-result-object v0
@@ -76,15 +75,15 @@
 
     if-nez v0, :cond_0
 
-    .line 10049
+    .line 49
     invoke-virtual {p0}, Lkik/android/chat/view/AutoCompleteValidateableInputView;->d()V
 
-    .line 0
+    .line 51
     :cond_0
     return-void
 .end method
 
-.method private k()V
+.method private m()V
     .locals 2
 
     .prologue
@@ -105,7 +104,7 @@
     check-cast v0, Lkik/android/widget/KikAutoCompleteTextView;
 
     .line 47
-    invoke-static {p0}, Lkik/android/chat/view/g;->a(Lkik/android/chat/view/AutoCompleteValidateableInputView;)Landroid/view/View$OnClickListener;
+    invoke-static {p0}, Lkik/android/chat/view/h;->a(Lkik/android/chat/view/AutoCompleteValidateableInputView;)Landroid/view/View$OnClickListener;
 
     move-result-object v1
 
@@ -122,7 +121,7 @@
 
     .prologue
     .line 62
-    const v0, 0x7f040034
+    const v0, 0x7f04003c
 
     return v0
 .end method
@@ -170,7 +169,7 @@
     return-void
 .end method
 
-.method public final a(Lkik/core/interfaces/ag;)V
+.method public final a(Lkik/core/interfaces/ai;)V
     .locals 1
 
     .prologue
@@ -181,7 +180,7 @@
     check-cast v0, Lkik/android/widget/KikAutoCompleteTextView;
 
     .line 111
-    invoke-virtual {v0, p1}, Lkik/android/widget/KikAutoCompleteTextView;->a(Lkik/core/interfaces/ag;)V
+    invoke-virtual {v0, p1}, Lkik/android/widget/KikAutoCompleteTextView;->a(Lkik/core/interfaces/ai;)V
 
     .line 112
     return-void

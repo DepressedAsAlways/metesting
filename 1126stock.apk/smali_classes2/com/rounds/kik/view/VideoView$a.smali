@@ -25,12 +25,12 @@
     .locals 1
 
     .prologue
-    .line 734
+    .line 774
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/rounds/kik/view/VideoView$a;-><init>(Lcom/rounds/kik/view/VideoView;Z)V
 
-    .line 735
+    .line 775
     return-void
 .end method
 
@@ -40,18 +40,18 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 738
+    .line 778
     iput-object p1, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     invoke-direct {p0, p1, v0}, Lcom/rounds/kik/view/VideoView$b;-><init>(Lcom/rounds/kik/view/VideoView;B)V
 
-    .line 730
+    .line 770
     iput-boolean v0, p0, Lcom/rounds/kik/view/VideoView$a;->c:Z
 
-    .line 739
+    .line 779
     iput-boolean p2, p0, Lcom/rounds/kik/view/VideoView$a;->c:Z
 
-    .line 740
+    .line 780
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .locals 1
 
     .prologue
-    .line 728
+    .line 768
     iget-boolean v0, p0, Lcom/rounds/kik/view/VideoView$a;->c:Z
 
     return v0
@@ -77,7 +77,7 @@
 
     const/4 v1, 0x0
 
-    .line 751
+    .line 791
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mMaskMenu:Lcom/rounds/kik/view/masks/MaskMenuView;
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0, v3}, Lcom/rounds/kik/view/masks/MaskMenuView;->setVisibility(I)V
 
-    .line 752
+    .line 792
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mFullVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -97,7 +97,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/VideoSurface;->onPause()V
 
-    .line 753
+    .line 793
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mFullVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -107,13 +107,13 @@
 
     invoke-virtual {v0, v3}, Lcom/rounds/kik/view/VideoSurface;->setVisibility(I)V
 
-    .line 754
+    .line 794
     invoke-static {v2, v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->R3DSetSceneVisibility(FI)V
 
-    .line 755
+    .line 795
     invoke-static {v1}, Lcom/rounds/kik/media/NativeRoundsVidyoClient;->changeVideoPlaneViewMode(I)V
 
-    .line 756
+    .line 796
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mBubblesVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -123,7 +123,7 @@
 
     invoke-virtual {v0, v1}, Lcom/rounds/kik/view/VideoSurface;->setVisibility(I)V
 
-    .line 758
+    .line 798
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/VideoView;->getResources()Landroid/content/res/Resources;
@@ -136,12 +136,12 @@
 
     iget v0, v0, Landroid/content/res/Configuration;->orientation:I
 
-    .line 759
+    .line 799
     const/4 v1, 0x2
 
     if-eq v0, v1, :cond_0
 
-    .line 760
+    .line 800
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mBubblesVideoSurface:Lcom/rounds/kik/view/VideoSurface;
@@ -151,7 +151,7 @@
 
     invoke-virtual {v0}, Lcom/rounds/kik/view/VideoSurface;->onResume()V
 
-    .line 762
+    .line 802
     :cond_0
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
@@ -180,7 +180,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
-    .line 793
+    .line 844
     return-void
 .end method
 
@@ -188,7 +188,7 @@
     .locals 3
 
     .prologue
-    .line 745
+    .line 785
     iget-object v0, p0, Lcom/rounds/kik/view/VideoView$a;->a:Lcom/rounds/kik/view/VideoView;
 
     # getter for: Lcom/rounds/kik/view/VideoView;->mFrameContainer:Landroid/widget/FrameLayout;
@@ -210,6 +210,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setBackgroundColor(I)V
 
-    .line 746
+    .line 786
     return-void
 .end method

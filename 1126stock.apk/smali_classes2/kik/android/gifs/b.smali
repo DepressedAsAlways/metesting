@@ -17,7 +17,7 @@
 # instance fields
 .field private a:Landroid/content/Context;
 
-.field private b:Lcom/kik/e/p;
+.field private b:Lcom/kik/storage/s;
 
 .field private c:Lcom/kik/android/Mixpanel;
 
@@ -51,7 +51,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/kik/e/p;Lcom/kik/android/Mixpanel;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/kik/storage/s;Lcom/kik/android/Mixpanel;)V
     .locals 1
 
     .prologue
@@ -76,7 +76,7 @@
     iput-object p1, p0, Lkik/android/gifs/b;->a:Landroid/content/Context;
 
     .line 34
-    iput-object p2, p0, Lkik/android/gifs/b;->b:Lcom/kik/e/p;
+    iput-object p2, p0, Lkik/android/gifs/b;->b:Lcom/kik/storage/s;
 
     .line 35
     iput-object p3, p0, Lkik/android/gifs/b;->c:Lcom/kik/android/Mixpanel;
@@ -128,7 +128,7 @@
 
     invoke-direct {v1, p0, p5}, Lkik/android/gifs/b$3;-><init>(Lkik/android/gifs/b;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 1140
     :goto_0
@@ -156,7 +156,7 @@
 
     invoke-direct {v2, p0, v1, p5}, Lkik/android/gifs/b$4;-><init>(Lkik/android/gifs/b;Lkik/android/gifs/b$a;Lcom/kik/events/Promise;)V
 
-    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method
@@ -200,7 +200,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/kik/events/m;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
+    invoke-static {v0}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)Lcom/kik/events/Promise;
 
     move-result-object v4
 
@@ -246,17 +246,17 @@
 
     invoke-direct/range {v0 .. v5}, Lkik/android/gifs/b$1;-><init>(Lkik/android/gifs/b;Ljava/lang/String;Lkik/android/gifs/api/GifResponseData$MediaType;Lcom/kik/events/Promise;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v6, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 
     .line 1086
     :cond_1
-    iget-object v0, p0, Lkik/android/gifs/b;->b:Lcom/kik/e/p;
+    iget-object v0, p0, Lkik/android/gifs/b;->b:Lcom/kik/storage/s;
 
     iget-object v1, p0, Lkik/android/gifs/b;->c:Lcom/kik/android/Mixpanel;
 
-    invoke-interface {v0, p1, v1}, Lcom/kik/e/p;->a(Ljava/lang/String;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
+    invoke-interface {v0, p1, v1}, Lcom/kik/storage/s;->a(Ljava/lang/String;Lcom/kik/android/Mixpanel;)Lcom/kik/events/Promise;
 
     move-result-object v6
 
@@ -278,7 +278,7 @@
 
     invoke-direct/range {v0 .. v5}, Lkik/android/gifs/b$2;-><init>(Lkik/android/gifs/b;Ljava/lang/String;Lkik/android/gifs/api/GifResponseData$MediaType;Lcom/kik/events/Promise;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v6, v0}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method

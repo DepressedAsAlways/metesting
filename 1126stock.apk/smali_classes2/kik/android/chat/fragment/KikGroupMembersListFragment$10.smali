@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/m;
+.field final synthetic a:Lkik/core/datatypes/l;
 
 .field final synthetic b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Lkik/core/datatypes/m;)V
+.method constructor <init>(Lkik/android/chat/fragment/KikGroupMembersListFragment;Lkik/core/datatypes/l;)V
     .locals 0
 
     .prologue
-    .line 715
+    .line 741
     iput-object p1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iput-object p2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->a:Lkik/core/datatypes/m;
+    iput-object p2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->a:Lkik/core/datatypes/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,52 +44,54 @@
     .locals 3
 
     .prologue
-    .line 719
+    .line 745
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    const v1, 0x7f0901f5
+    iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    invoke-static {v1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->b(I)Ljava/lang/String;
+    const v2, 0x7f090209
+
+    invoke-virtual {v1, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->getStringFromResource(I)Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->b(Ljava/lang/String;Z)Lkik/android/chat/fragment/KikDialogFragment;
+    invoke-virtual {v0, v1, v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->showWaitDialog(Ljava/lang/String;Z)Lkik/android/chat/fragment/KikDialogFragment;
 
-    .line 720
+    .line 746
     iget-object v0, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->c:Lkik/core/interfaces/m;
+    iget-object v0, v0, Lkik/android/chat/fragment/KikGroupMembersListFragment;->c:Lkik/core/interfaces/l;
 
-    iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->a:Lkik/core/datatypes/m;
+    iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->a:Lkik/core/datatypes/l;
 
-    invoke-virtual {v1}, Lkik/core/datatypes/m;->b()Ljava/lang/String;
+    invoke-virtual {v1}, Lkik/core/datatypes/l;->k()Ljava/lang/String;
 
     move-result-object v1
 
     iget-object v2, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    invoke-static {v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->a(Lkik/android/chat/fragment/KikGroupMembersListFragment;)Lkik/core/datatypes/q;
+    invoke-static {v2}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->c(Lkik/android/chat/fragment/KikGroupMembersListFragment;)Lkik/core/datatypes/p;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lkik/core/datatypes/q;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Lkik/core/datatypes/p;->k()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/m;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/kik/events/Promise;
+    invoke-interface {v0, v1, v2}, Lkik/core/interfaces/l;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/chat/fragment/KikGroupMembersListFragment$10;->b:Lkik/android/chat/fragment/KikGroupMembersListFragment;
 
-    invoke-static {v1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->d(Lkik/android/chat/fragment/KikGroupMembersListFragment;)Lcom/kik/events/l;
+    invoke-static {v1}, Lkik/android/chat/fragment/KikGroupMembersListFragment;->f(Lkik/android/chat/fragment/KikGroupMembersListFragment;)Lcom/kik/events/k;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
-    .line 721
+    .line 747
     return-void
 .end method

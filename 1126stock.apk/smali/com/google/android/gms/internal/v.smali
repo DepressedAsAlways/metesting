@@ -1,28 +1,30 @@
-.class abstract Lcom/google/android/gms/internal/v;
-.super Lcom/google/android/gms/internal/zznt$zza;
+.class final Lcom/google/android/gms/internal/v;
+.super Ljava/lang/Object;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<R::",
-        "Lcom/google/android/gms/common/api/Result;",
-        ">",
-        "Lcom/google/android/gms/internal/zznt$zza",
-        "<TR;",
-        "Lcom/google/android/gms/internal/zzto;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:J
+
+.field public final b:Lcom/google/android/gms/internal/zzach;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/api/GoogleApiClient;)V
-    .locals 1
+.method public constructor <init>(Lcom/google/android/gms/internal/zzach;)V
+    .locals 2
 
-    sget-object v0, Lcom/google/android/gms/safetynet/SafetyNet;->zzaaz:Lcom/google/android/gms/common/api/Api$zzf;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, v0, p1}, Lcom/google/android/gms/internal/zznt$zza;-><init>(Lcom/google/android/gms/common/api/Api$zzc;Lcom/google/android/gms/common/api/GoogleApiClient;)V
+    invoke-static {}, Lcom/google/android/gms/ads/internal/zzbv;->zzeg()Lcom/google/android/gms/common/util/zzd;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/google/android/gms/common/util/zzd;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/google/android/gms/internal/v;->a:J
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/v;->b:Lcom/google/android/gms/internal/zzach;
 
     return-void
 .end method

@@ -55,7 +55,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/sdkutils/concurrent/f$1$1;-><init>(Lkik/android/sdkutils/concurrent/f$1;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     .line 65
     return-void

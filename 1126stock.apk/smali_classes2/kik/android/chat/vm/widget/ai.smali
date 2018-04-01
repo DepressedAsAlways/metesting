@@ -22,11 +22,11 @@
 .method public abstract a(Z)V
 .end method
 
-.method public abstract aP_()Lrx/b/h;
+.method public abstract aO_()Lrx/functions/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/b/h",
+            "Lrx/functions/h",
             "<",
             "Ljava/lang/Integer;",
             "Ljava/lang/Float;",

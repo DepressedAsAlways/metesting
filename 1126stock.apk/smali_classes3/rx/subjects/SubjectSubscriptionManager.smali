@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/c$a;
+.implements Lrx/d$a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lrx/subjects/SubjectSubscriptionManager$b;,
-        Lrx/subjects/SubjectSubscriptionManager$a;
+        Lrx/subjects/SubjectSubscriptionManager$a;,
+        Lrx/subjects/SubjectSubscriptionManager$State;
     }
 .end annotation
 
@@ -21,9 +21,9 @@
         ">",
         "Ljava/util/concurrent/atomic/AtomicReference",
         "<",
-        "Lrx/subjects/SubjectSubscriptionManager$a",
+        "Lrx/subjects/SubjectSubscriptionManager$State",
         "<TT;>;>;",
-        "Lrx/c$a",
+        "Lrx/d$a",
         "<TT;>;"
     }
 .end annotation
@@ -38,43 +38,34 @@
 
 .field volatile latest:Ljava/lang/Object;
 
-.field public final nl:Lrx/internal/operators/NotificationLite;
+.field onAdded:Lrx/functions/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/internal/operators/NotificationLite",
-            "<TT;>;"
-        }
-    .end annotation
-.end field
-
-.field onAdded:Lrx/b/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<",
-            "Lrx/subjects/SubjectSubscriptionManager$b",
+            "Lrx/subjects/SubjectSubscriptionManager$a",
             "<TT;>;>;"
         }
     .end annotation
 .end field
 
-.field onStart:Lrx/b/b;
+.field onStart:Lrx/functions/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<",
-            "Lrx/subjects/SubjectSubscriptionManager$b",
+            "Lrx/subjects/SubjectSubscriptionManager$a",
             "<TT;>;>;"
         }
     .end annotation
 .end field
 
-.field onTerminated:Lrx/b/b;
+.field onTerminated:Lrx/functions/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<",
-            "Lrx/subjects/SubjectSubscriptionManager$b",
+            "Lrx/subjects/SubjectSubscriptionManager$a",
             "<TT;>;>;"
         }
     .end annotation
@@ -86,8 +77,8 @@
     .locals 1
 
     .prologue
-    .line 53
-    sget-object v0, Lrx/subjects/SubjectSubscriptionManager$a;->e:Lrx/subjects/SubjectSubscriptionManager$a;
+    .line 51
+    sget-object v0, Lrx/subjects/SubjectSubscriptionManager$State;->EMPTY:Lrx/subjects/SubjectSubscriptionManager$State;
 
     invoke-direct {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
@@ -97,91 +88,68 @@
     iput-boolean v0, p0, Lrx/subjects/SubjectSubscriptionManager;->active:Z
 
     .line 44
-    invoke-static {}, Lrx/b/e;->a()Lrx/b/e$a;
+    invoke-static {}, Lrx/functions/Actions;->a()Lrx/functions/Actions$a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onStart:Lrx/b/b;
+    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onStart:Lrx/functions/b;
 
     .line 46
-    invoke-static {}, Lrx/b/e;->a()Lrx/b/e$a;
+    invoke-static {}, Lrx/functions/Actions;->a()Lrx/functions/Actions$a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onAdded:Lrx/b/b;
+    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onAdded:Lrx/functions/b;
 
     .line 48
-    invoke-static {}, Lrx/b/e;->a()Lrx/b/e$a;
+    invoke-static {}, Lrx/functions/Actions;->a()Lrx/functions/Actions$a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onTerminated:Lrx/b/b;
+    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onTerminated:Lrx/functions/b;
 
-    .line 50
-    invoke-static {}, Lrx/internal/operators/NotificationLite;->a()Lrx/internal/operators/NotificationLite;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->nl:Lrx/internal/operators/NotificationLite;
-
-    .line 54
+    .line 52
     return-void
 .end method
 
 
 # virtual methods
-.method final a(Lrx/subjects/SubjectSubscriptionManager$b;)V
-    .locals 9
+.method final a(Lrx/subjects/SubjectSubscriptionManager$a;)V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/subjects/SubjectSubscriptionManager$b",
+            "Lrx/subjects/SubjectSubscriptionManager$a",
             "<TT;>;)V"
         }
     .end annotation
 
     .prologue
-    const/4 v5, 0x0
-
-    .line 113
+    .line 111
     :cond_0
     invoke-virtual {p0}, Lrx/subjects/SubjectSubscriptionManager;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$a;
+    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$State;
 
-    .line 114
-    iget-boolean v1, v0, Lrx/subjects/SubjectSubscriptionManager$a;->a:Z
+    .line 112
+    iget-boolean v1, v0, Lrx/subjects/SubjectSubscriptionManager$State;->terminated:Z
 
     if-eqz v1, :cond_2
 
-    .line 119
+    .line 117
     :cond_1
     :goto_0
     return-void
 
-    .line 1170
+    .line 115
     :cond_2
-    iget-object v6, v0, Lrx/subjects/SubjectSubscriptionManager$a;->b:[Lrx/subjects/SubjectSubscriptionManager$b;
+    invoke-virtual {v0, p1}, Lrx/subjects/SubjectSubscriptionManager$State;->remove(Lrx/subjects/SubjectSubscriptionManager$a;)Lrx/subjects/SubjectSubscriptionManager$State;
 
-    .line 1171
-    array-length v7, v6
+    move-result-object v1
 
-    .line 1172
-    const/4 v1, 0x1
-
-    if-ne v7, v1, :cond_3
-
-    aget-object v1, v6, v5
-
-    if-ne v1, p1, :cond_3
-
-    .line 1173
-    sget-object v1, Lrx/subjects/SubjectSubscriptionManager$a;->e:Lrx/subjects/SubjectSubscriptionManager$a;
-
-    .line 118
-    :goto_1
+    .line 116
     if-eq v1, v0, :cond_1
 
     invoke-virtual {p0, v0, v1}, Lrx/subjects/SubjectSubscriptionManager;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -191,275 +159,155 @@
     if-eqz v0, :cond_0
 
     goto :goto_0
-
-    .line 1175
-    :cond_3
-    if-nez v7, :cond_4
-
-    move-object v1, v0
-
-    .line 1176
-    goto :goto_1
-
-    .line 1178
-    :cond_4
-    add-int/lit8 v1, v7, -0x1
-
-    new-array v3, v1, [Lrx/subjects/SubjectSubscriptionManager$b;
-
-    move v4, v5
-
-    move v2, v5
-
-    .line 1180
-    :goto_2
-    if-ge v4, v7, :cond_6
-
-    .line 1181
-    aget-object v8, v6, v4
-
-    .line 1182
-    if-eq v8, p1, :cond_9
-
-    .line 1183
-    add-int/lit8 v1, v7, -0x1
-
-    if-ne v2, v1, :cond_5
-
-    move-object v1, v0
-
-    .line 1184
-    goto :goto_1
-
-    .line 1186
-    :cond_5
-    add-int/lit8 v1, v2, 0x1
-
-    aput-object v8, v3, v2
-
-    .line 1180
-    :goto_3
-    add-int/lit8 v2, v4, 0x1
-
-    move v4, v2
-
-    move v2, v1
-
-    goto :goto_2
-
-    .line 1189
-    :cond_6
-    if-nez v2, :cond_7
-
-    .line 1190
-    sget-object v1, Lrx/subjects/SubjectSubscriptionManager$a;->e:Lrx/subjects/SubjectSubscriptionManager$a;
-
-    goto :goto_1
-
-    .line 1192
-    :cond_7
-    add-int/lit8 v1, v7, -0x1
-
-    if-ge v2, v1, :cond_8
-
-    .line 1193
-    new-array v1, v2, [Lrx/subjects/SubjectSubscriptionManager$b;
-
-    .line 1194
-    invoke-static {v3, v5, v1, v5, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 1197
-    :goto_4
-    new-instance v2, Lrx/subjects/SubjectSubscriptionManager$a;
-
-    iget-boolean v3, v0, Lrx/subjects/SubjectSubscriptionManager$a;->a:Z
-
-    invoke-direct {v2, v3, v1}, Lrx/subjects/SubjectSubscriptionManager$a;-><init>(Z[Lrx/subjects/SubjectSubscriptionManager$b;)V
-
-    move-object v1, v2
-
-    goto :goto_1
-
-    :cond_8
-    move-object v1, v3
-
-    goto :goto_4
-
-    :cond_9
-    move v1, v2
-
-    goto :goto_3
 .end method
 
-.method final a(Ljava/lang/Object;)[Lrx/subjects/SubjectSubscriptionManager$b;
+.method final a(Ljava/lang/Object;)[Lrx/subjects/SubjectSubscriptionManager$a;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")[",
-            "Lrx/subjects/SubjectSubscriptionManager$b",
+            "Lrx/subjects/SubjectSubscriptionManager$a",
             "<TT;>;"
         }
     .end annotation
 
     .prologue
-    .line 139
-    .line 2078
+    .line 137
+    .line 1076
     iput-object p1, p0, Lrx/subjects/SubjectSubscriptionManager;->latest:Ljava/lang/Object;
 
-    .line 140
+    .line 138
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lrx/subjects/SubjectSubscriptionManager;->active:Z
 
-    .line 142
+    .line 140
     invoke-virtual {p0}, Lrx/subjects/SubjectSubscriptionManager;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$a;
+    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$State;
 
-    .line 143
-    iget-boolean v0, v0, Lrx/subjects/SubjectSubscriptionManager$a;->a:Z
+    .line 141
+    iget-boolean v0, v0, Lrx/subjects/SubjectSubscriptionManager$State;->terminated:Z
 
     if-eqz v0, :cond_0
 
-    .line 144
-    sget-object v0, Lrx/subjects/SubjectSubscriptionManager$a;->c:[Lrx/subjects/SubjectSubscriptionManager$b;
+    .line 142
+    sget-object v0, Lrx/subjects/SubjectSubscriptionManager$State;->NO_OBSERVERS:[Lrx/subjects/SubjectSubscriptionManager$a;
 
-    .line 146
+    .line 144
     :goto_0
     return-object v0
 
     :cond_0
-    sget-object v0, Lrx/subjects/SubjectSubscriptionManager$a;->d:Lrx/subjects/SubjectSubscriptionManager$a;
+    sget-object v0, Lrx/subjects/SubjectSubscriptionManager$State;->TERMINATED:Lrx/subjects/SubjectSubscriptionManager$State;
 
     invoke-virtual {p0, v0}, Lrx/subjects/SubjectSubscriptionManager;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$a;
+    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$State;
 
-    iget-object v0, v0, Lrx/subjects/SubjectSubscriptionManager$a;->b:[Lrx/subjects/SubjectSubscriptionManager$b;
+    iget-object v0, v0, Lrx/subjects/SubjectSubscriptionManager$State;->observers:[Lrx/subjects/SubjectSubscriptionManager$a;
 
     goto :goto_0
 .end method
 
 .method public final synthetic call(Ljava/lang/Object;)V
-    .locals 6
+    .locals 3
 
     .prologue
-    const/4 v1, 0x0
-
     .line 35
-    check-cast p1, Lrx/i;
+    check-cast p1, Lrx/j;
 
-    .line 3058
-    new-instance v2, Lrx/subjects/SubjectSubscriptionManager$b;
+    .line 2056
+    new-instance v1, Lrx/subjects/SubjectSubscriptionManager$a;
 
-    invoke-direct {v2, p1}, Lrx/subjects/SubjectSubscriptionManager$b;-><init>(Lrx/i;)V
+    invoke-direct {v1, p1}, Lrx/subjects/SubjectSubscriptionManager$a;-><init>(Lrx/j;)V
 
-    .line 3069
+    .line 2067
     new-instance v0, Lrx/subjects/SubjectSubscriptionManager$1;
 
-    invoke-direct {v0, p0, v2}, Lrx/subjects/SubjectSubscriptionManager$1;-><init>(Lrx/subjects/SubjectSubscriptionManager;Lrx/subjects/SubjectSubscriptionManager$b;)V
+    invoke-direct {v0, p0, v1}, Lrx/subjects/SubjectSubscriptionManager$1;-><init>(Lrx/subjects/SubjectSubscriptionManager;Lrx/subjects/SubjectSubscriptionManager$a;)V
 
-    invoke-static {v0}, Lrx/g/e;->a(Lrx/b/a;)Lrx/j;
+    invoke-static {v0}, Lrx/f/e;->a(Lrx/functions/a;)Lrx/k;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lrx/i;->a(Lrx/j;)V
+    invoke-virtual {p1, v0}, Lrx/j;->a(Lrx/k;)V
 
-    .line 3060
-    iget-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onStart:Lrx/b/b;
+    .line 2058
+    iget-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onStart:Lrx/functions/b;
 
-    invoke-interface {v0, v2}, Lrx/b/b;->call(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
-    .line 3061
-    invoke-virtual {p1}, Lrx/i;->isUnsubscribed()Z
+    .line 2059
+    invoke-virtual {p1}, Lrx/j;->isUnsubscribed()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 3095
+    .line 2093
     :cond_0
     invoke-virtual {p0}, Lrx/subjects/SubjectSubscriptionManager;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$a;
+    check-cast v0, Lrx/subjects/SubjectSubscriptionManager$State;
 
-    .line 3096
-    iget-boolean v3, v0, Lrx/subjects/SubjectSubscriptionManager$a;->a:Z
+    .line 2094
+    iget-boolean v2, v0, Lrx/subjects/SubjectSubscriptionManager$State;->terminated:Z
 
-    if-eqz v3, :cond_2
+    if-eqz v2, :cond_2
 
-    .line 3097
-    iget-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onTerminated:Lrx/b/b;
+    .line 2095
+    iget-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onTerminated:Lrx/functions/b;
 
-    invoke-interface {v0, v2}, Lrx/b/b;->call(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
-    move v0, v1
+    .line 2096
+    const/4 v0, 0x0
 
-    .line 3062
+    .line 2060
     :goto_0
     if-eqz v0, :cond_1
 
-    invoke-virtual {p1}, Lrx/i;->isUnsubscribed()Z
+    invoke-virtual {p1}, Lrx/j;->isUnsubscribed()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3063
-    invoke-virtual {p0, v2}, Lrx/subjects/SubjectSubscriptionManager;->a(Lrx/subjects/SubjectSubscriptionManager$b;)V
+    .line 2061
+    invoke-virtual {p0, v1}, Lrx/subjects/SubjectSubscriptionManager;->a(Lrx/subjects/SubjectSubscriptionManager$a;)V
 
     .line 35
     :cond_1
     return-void
 
-    .line 3162
+    .line 2098
     :cond_2
-    iget-object v3, v0, Lrx/subjects/SubjectSubscriptionManager$a;->b:[Lrx/subjects/SubjectSubscriptionManager$b;
+    invoke-virtual {v0, v1}, Lrx/subjects/SubjectSubscriptionManager$State;->add(Lrx/subjects/SubjectSubscriptionManager$a;)Lrx/subjects/SubjectSubscriptionManager$State;
 
-    .line 3163
-    array-length v3, v3
+    move-result-object v2
 
-    .line 3164
-    add-int/lit8 v4, v3, 0x1
-
-    new-array v4, v4, [Lrx/subjects/SubjectSubscriptionManager$b;
-
-    .line 3165
-    iget-object v5, v0, Lrx/subjects/SubjectSubscriptionManager$a;->b:[Lrx/subjects/SubjectSubscriptionManager$b;
-
-    invoke-static {v5, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 3166
-    aput-object v2, v4, v3
-
-    .line 3167
-    new-instance v3, Lrx/subjects/SubjectSubscriptionManager$a;
-
-    iget-boolean v5, v0, Lrx/subjects/SubjectSubscriptionManager$a;->a:Z
-
-    invoke-direct {v3, v5, v4}, Lrx/subjects/SubjectSubscriptionManager$a;-><init>(Z[Lrx/subjects/SubjectSubscriptionManager$b;)V
-
-    .line 3101
-    invoke-virtual {p0, v0, v3}, Lrx/subjects/SubjectSubscriptionManager;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 2099
+    invoke-virtual {p0, v0, v2}, Lrx/subjects/SubjectSubscriptionManager;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3102
-    iget-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onAdded:Lrx/b/b;
+    .line 2100
+    iget-object v0, p0, Lrx/subjects/SubjectSubscriptionManager;->onAdded:Lrx/functions/b;
 
-    invoke-interface {v0, v2}, Lrx/b/b;->call(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
-    .line 3103
+    .line 2101
     const/4 v0, 0x1
 
     goto :goto_0

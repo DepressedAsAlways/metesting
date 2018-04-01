@@ -32,17 +32,17 @@
     .locals 1
 
     .prologue
-    .line 1021
+    .line 1031
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1022
+    .line 1032
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lkik/android/scan/fragment/ScanFragment$c;->a:Ljava/lang/ref/WeakReference;
 
-    .line 1023
+    .line 1033
     return-void
 .end method
 
@@ -52,10 +52,10 @@
     .locals 2
 
     .prologue
-    .line 1028
+    .line 1038
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 1029
+    .line 1039
     iget-object v0, p0, Lkik/android/scan/fragment/ScanFragment$c;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -64,51 +64,51 @@
 
     check-cast v0, Lkik/android/scan/fragment/ScanFragment;
 
-    .line 1030
+    .line 1040
     if-nez v0, :cond_0
 
-    .line 1031
+    .line 1041
     new-instance v0, Ljava/lang/IllegalAccessException;
 
     const-string v1, "Unable to post to fragment! Reference cleaned up!"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalAccessException;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->c(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->c(Ljava/lang/Throwable;)V
 
-    .line 1045
+    .line 1055
     :goto_0
     return-void
 
-    .line 1035
+    .line 1045
     :cond_0
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lkik/android/scan/fragment/ScanFragment$c;->removeMessages(I)V
 
-    .line 1036
+    .line 1046
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 1038
+    .line 1048
     :pswitch_0
     invoke-static {v0}, Lkik/android/scan/fragment/ScanFragment;->o(Lkik/android/scan/fragment/ScanFragment;)V
 
-    .line 1039
+    .line 1049
     invoke-static {v0}, Lkik/android/scan/fragment/ScanFragment;->p(Lkik/android/scan/fragment/ScanFragment;)V
 
     goto :goto_0
 
-    .line 1042
+    .line 1052
     :pswitch_1
     invoke-static {v0}, Lkik/android/scan/fragment/ScanFragment;->q(Lkik/android/scan/fragment/ScanFragment;)V
 
     goto :goto_0
 
-    .line 1036
+    .line 1046
     nop
 
     :pswitch_data_0

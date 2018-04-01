@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation build Lcom/google/errorprone/annotations/CanIgnoreReturnValue;
+.end annotation
+
 .annotation system Ldalvik/annotation/EnclosingClass;
     value = Lcom/google/common/hash/c;
 .end annotation
@@ -27,12 +30,12 @@
     .locals 1
 
     .prologue
-    .line 95
+    .line 103
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/google/common/hash/c$a;-><init>(B)V
 
-    .line 96
+    .line 104
     return-void
 .end method
 
@@ -42,15 +45,15 @@
     .prologue
     const/16 v2, 0x10
 
-    .line 107
+    .line 115
     invoke-direct {p0}, Lcom/google/common/hash/b;-><init>()V
 
-    .line 109
+    .line 117
     const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/google/common/base/h;->a(Z)V
+    invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 112
+    .line 121
     const/16 v0, 0x17
 
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
@@ -65,13 +68,13 @@
 
     iput-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
-    .line 115
+    .line 122
     iput v2, p0, Lcom/google/common/hash/c$a;->b:I
 
-    .line 116
+    .line 123
     iput v2, p0, Lcom/google/common/hash/c$a;->c:I
 
-    .line 117
+    .line 124
     return-void
 .end method
 
@@ -79,7 +82,7 @@
     .locals 2
 
     .prologue
-    .line 241
+    .line 256
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -90,10 +93,10 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 243
+    .line 258
     invoke-direct {p0}, Lcom/google/common/hash/c$a;->d()V
 
-    .line 245
+    .line 260
     :cond_0
     return-void
 .end method
@@ -102,12 +105,12 @@
     .locals 2
 
     .prologue
-    .line 248
+    .line 263
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 249
+    .line 264
     :goto_0
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
@@ -119,20 +122,20 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 252
+    .line 267
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, v0}, Lcom/google/common/hash/c$a;->a(Ljava/nio/ByteBuffer;)V
 
     goto :goto_0
 
-    .line 254
+    .line 269
     :cond_0
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->compact()Ljava/nio/ByteBuffer;
 
-    .line 255
+    .line 270
     return-void
 .end method
 
@@ -142,15 +145,15 @@
     .locals 1
 
     .prologue
-    .line 229
+    .line 244
     invoke-direct {p0}, Lcom/google/common/hash/c$a;->d()V
 
-    .line 230
+    .line 245
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 231
+    .line 246
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -159,12 +162,12 @@
 
     if-lez v0, :cond_0
 
-    .line 232
+    .line 247
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, v0}, Lcom/google/common/hash/c$a;->b(Ljava/nio/ByteBuffer;)V
 
-    .line 234
+    .line 249
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/hash/c$a;->b()Lcom/google/common/hash/HashCode;
 
@@ -177,15 +180,15 @@
     .locals 1
 
     .prologue
-    .line 202
+    .line 217
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putChar(C)Ljava/nio/ByteBuffer;
 
-    .line 203
+    .line 218
     invoke-direct {p0}, Lcom/google/common/hash/c$a;->c()V
 
-    .line 204
+    .line 219
     return-object p0
 .end method
 
@@ -193,7 +196,7 @@
     .locals 2
 
     .prologue
-    .line 180
+    .line 185
     const/4 v0, 0x0
 
     :goto_0
@@ -203,19 +206,19 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 181
+    .line 186
     invoke-interface {p1, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v1
 
     invoke-virtual {p0, v1}, Lcom/google/common/hash/c$a;->a(C)Lcom/google/common/hash/e;
 
-    .line 180
+    .line 185
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 183
+    .line 188
     :cond_0
     return-object p0
 .end method
@@ -234,10 +237,10 @@
     .end annotation
 
     .prologue
-    .line 223
+    .line 238
     invoke-interface {p2, p1, p0}, Lcom/google/common/hash/Funnel;->funnel(Ljava/lang/Object;Lcom/google/common/hash/g;)V
 
-    .line 224
+    .line 239
     return-object p0
 .end method
 
@@ -253,10 +256,10 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 145
+    .line 150
     array-length v1, p1
 
-    .line 1150
+    .line 1155
     invoke-static {p1, v0, v1}, Ljava/nio/ByteBuffer;->wrap([BII)Ljava/nio/ByteBuffer;
 
     move-result-object v1
@@ -267,7 +270,7 @@
 
     move-result-object v1
 
-    .line 1155
+    .line 1160
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v2
@@ -280,19 +283,19 @@
 
     if-gt v2, v3, :cond_0
 
-    .line 1156
+    .line 1161
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    .line 1157
+    .line 1162
     invoke-direct {p0}, Lcom/google/common/hash/c$a;->c()V
 
-    .line 1158
+    .line 1163
     :goto_0
     return-object p0
 
-    .line 1162
+    .line 1167
     :cond_0
     iget v2, p0, Lcom/google/common/hash/c$a;->b:I
 
@@ -304,11 +307,11 @@
 
     sub-int/2addr v2, v3
 
-    .line 1163
+    .line 1168
     :goto_1
     if-ge v0, v2, :cond_1
 
-    .line 1164
+    .line 1169
     iget-object v3, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->get()B
@@ -317,16 +320,16 @@
 
     invoke-virtual {v3, v4}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
-    .line 1163
+    .line 1168
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 1166
+    .line 1171
     :cond_1
     invoke-direct {p0}, Lcom/google/common/hash/c$a;->d()V
 
-    .line 1169
+    .line 1174
     :goto_2
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->remaining()I
 
@@ -336,12 +339,12 @@
 
     if-lt v0, v2, :cond_2
 
-    .line 1170
+    .line 1175
     invoke-virtual {p0, v1}, Lcom/google/common/hash/c$a;->a(Ljava/nio/ByteBuffer;)V
 
     goto :goto_2
 
-    .line 1174
+    .line 1179
     :cond_2
     iget-object v0, p0, Lcom/google/common/hash/c$a;->a:Ljava/nio/ByteBuffer;
 
@@ -354,7 +357,7 @@
     .locals 1
 
     .prologue
-    .line 77
+    .line 84
     invoke-virtual {p0, p1}, Lcom/google/common/hash/c$a;->a(Ljava/lang/CharSequence;)Lcom/google/common/hash/e;
 
     move-result-object v0
@@ -366,21 +369,21 @@
     .locals 2
 
     .prologue
-    .line 133
+    .line 138
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 134
+    .line 139
     iget v0, p0, Lcom/google/common/hash/c$a;->c:I
 
     add-int/lit8 v0, v0, 0x7
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 135
+    .line 140
     :goto_0
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
 
@@ -390,25 +393,25 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 136
+    .line 141
     const-wide/16 v0, 0x0
 
     invoke-virtual {p1, v0, v1}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     goto :goto_0
 
-    .line 138
+    .line 143
     :cond_0
     iget v0, p0, Lcom/google/common/hash/c$a;->c:I
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 139
+    .line 144
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 140
+    .line 145
     invoke-virtual {p0, p1}, Lcom/google/common/hash/c$a;->a(Ljava/nio/ByteBuffer;)V
 
-    .line 141
+    .line 146
     return-void
 .end method

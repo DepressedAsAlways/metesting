@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 4062
+    .line 4601
     invoke-direct {p0}, Lcom/google/protobuf/AbstractParser;-><init>()V
 
     return-void
@@ -45,13 +45,13 @@
     .end annotation
 
     .prologue
-    .line 5067
+    .line 5606
     new-instance v0, Lcom/kik/entity/model/ElementCommon$InnerPicElement;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1}, Lcom/kik/entity/model/ElementCommon$InnerPicElement;-><init>(Lcom/google/protobuf/CodedInputStream;B)V
 
-    .line 4062
+    .line 4601
     return-object v0
 .end method

@@ -36,7 +36,7 @@
     .line 77
     iget-object v0, p0, Lkik/android/chat/fragment/KikBasicDialog$a;->a:Lkik/android/chat/fragment/KikBasicDialog;
 
-    const v1, 0x7f040063
+    const v1, 0x7f040075
 
     const/4 v2, 0x0
 
@@ -57,7 +57,7 @@
 
     .prologue
     .line 158
-    const v0, 0x7f0201e8
+    const v0, 0x7f020258
 
     invoke-static {v0}, Lkik/android/chat/KikApplication;->f(I)Landroid/graphics/drawable/Drawable;
 
@@ -139,7 +139,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 168
     :cond_0
@@ -170,7 +170,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 90
     return-object p0
@@ -200,7 +200,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 126
     iget-object v0, p0, Lkik/android/chat/fragment/KikBasicDialog$a;->a:Lkik/android/chat/fragment/KikBasicDialog;
@@ -280,7 +280,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 103
     return-object p0
@@ -310,7 +310,7 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 140
     iget-object v0, p0, Lkik/android/chat/fragment/KikBasicDialog$a;->a:Lkik/android/chat/fragment/KikBasicDialog;
@@ -384,7 +384,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->d([Landroid/view/View;)V
 
     .line 113
     return-object p0

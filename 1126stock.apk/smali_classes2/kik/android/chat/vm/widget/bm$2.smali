@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/vm/widget/bm$2;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,22 +15,22 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/z;
+.field final synthetic a:Lkik/core/datatypes/y;
 
 .field final synthetic b:Lkik/android/chat/vm/widget/bm;
 
 
 # direct methods
-.method constructor <init>(Lkik/android/chat/vm/widget/bm;Lkik/core/datatypes/z;)V
+.method constructor <init>(Lkik/android/chat/vm/widget/bm;Lkik/core/datatypes/y;)V
     .locals 0
 
     .prologue
-    .line 205
+    .line 212
     iput-object p1, p0, Lkik/android/chat/vm/widget/bm$2;->b:Lkik/android/chat/vm/widget/bm;
 
-    iput-object p2, p0, Lkik/android/chat/vm/widget/bm$2;->a:Lkik/core/datatypes/z;
+    iput-object p2, p0, Lkik/android/chat/vm/widget/bm$2;->a:Lkik/core/datatypes/y;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -41,13 +41,13 @@
     .locals 2
 
     .prologue
-    .line 210
+    .line 217
     iget-object v0, p0, Lkik/android/chat/vm/widget/bm$2;->b:Lkik/android/chat/vm/widget/bm;
 
-    iget-object v1, p0, Lkik/android/chat/vm/widget/bm$2;->a:Lkik/core/datatypes/z;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/bm$2;->a:Lkik/core/datatypes/y;
 
-    invoke-static {v0, v1}, Lkik/android/chat/vm/widget/bm;->a(Lkik/android/chat/vm/widget/bm;Lkik/core/datatypes/z;)V
+    invoke-static {v0, v1}, Lkik/android/chat/vm/widget/bm;->a(Lkik/android/chat/vm/widget/bm;Lkik/core/datatypes/y;)V
 
-    .line 211
+    .line 218
     return-void
 .end method

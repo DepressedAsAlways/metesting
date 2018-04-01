@@ -52,10 +52,10 @@
     .locals 2
 
     .prologue
-    .line 1022
+    .line 22
     if-eqz p1, :cond_0
 
-    .line 1023
+    .line 23
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     iget v1, p1, Landroid/graphics/Point;->y:I
@@ -66,12 +66,12 @@
     .line 1044
     iput v0, p0, Lkik/android/gifs/view/AspectRatioGifView;->h:I
 
-    .line 0
+    .line 25
     :cond_0
     return-void
 .end method
 
-.method public static a(Lkik/android/gifs/view/AspectRatioGifView;Lrx/c;)V
+.method public static a(Lkik/android/gifs/view/AspectRatioGifView;Lrx/d;)V
     .locals 2
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -83,7 +83,7 @@
         value = {
             "(",
             "Lkik/android/gifs/view/AspectRatioGifView;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Landroid/graphics/Point;",
             ">;)V"
@@ -94,11 +94,11 @@
     .line 21
     const/high16 v0, 0x7f010000
 
-    invoke-static {p0}, Lkik/android/gifs/view/a;->a(Lkik/android/gifs/view/AspectRatioGifView;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/gifs/view/a;->a(Lkik/android/gifs/view/AspectRatioGifView;)Lrx/functions/b;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bk;->e(ILrx/b/b;Landroid/view/View;Lrx/c;)V
+    invoke-static {v0, v1, p0, p1}, Lcom/kik/util/bq;->e(ILrx/functions/b;Landroid/view/View;Lrx/d;)V
 
     .line 26
     return-void

@@ -27,11 +27,15 @@
 
 .field public static final enum GERMAN:Lcom/instabug/library/internal/module/InstabugLocale;
 
+.field public static final enum INDONESIAN:Lcom/instabug/library/internal/module/InstabugLocale;
+
 .field public static final enum ITALIAN:Lcom/instabug/library/internal/module/InstabugLocale;
 
 .field public static final enum JAPANESE:Lcom/instabug/library/internal/module/InstabugLocale;
 
 .field public static final enum KOREAN:Lcom/instabug/library/internal/module/InstabugLocale;
+
+.field public static final enum PERSIAN:Lcom/instabug/library/internal/module/InstabugLocale;
 
 .field public static final enum POLISH:Lcom/instabug/library/internal/module/InstabugLocale;
 
@@ -280,8 +284,32 @@
 
     sput-object v0, Lcom/instabug/library/internal/module/InstabugLocale;->CZECH:Lcom/instabug/library/internal/module/InstabugLocale;
 
+    new-instance v0, Lcom/instabug/library/internal/module/InstabugLocale;
+
+    const-string v1, "PERSIAN"
+
+    const/16 v2, 0x11
+
+    const-string v3, "fa"
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/instabug/library/internal/module/InstabugLocale;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v0, Lcom/instabug/library/internal/module/InstabugLocale;->PERSIAN:Lcom/instabug/library/internal/module/InstabugLocale;
+
+    new-instance v0, Lcom/instabug/library/internal/module/InstabugLocale;
+
+    const-string v1, "INDONESIAN"
+
+    const/16 v2, 0x12
+
+    const-string v3, "in"
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/instabug/library/internal/module/InstabugLocale;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v0, Lcom/instabug/library/internal/module/InstabugLocale;->INDONESIAN:Lcom/instabug/library/internal/module/InstabugLocale;
+
     .line 6
-    const/16 v0, 0x11
+    const/16 v0, 0x13
 
     new-array v0, v0, [Lcom/instabug/library/internal/module/InstabugLocale;
 
@@ -374,6 +402,18 @@
     const/16 v1, 0x10
 
     sget-object v2, Lcom/instabug/library/internal/module/InstabugLocale;->CZECH:Lcom/instabug/library/internal/module/InstabugLocale;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x11
+
+    sget-object v2, Lcom/instabug/library/internal/module/InstabugLocale;->PERSIAN:Lcom/instabug/library/internal/module/InstabugLocale;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x12
+
+    sget-object v2, Lcom/instabug/library/internal/module/InstabugLocale;->INDONESIAN:Lcom/instabug/library/internal/module/InstabugLocale;
 
     aput-object v2, v0, v1
 

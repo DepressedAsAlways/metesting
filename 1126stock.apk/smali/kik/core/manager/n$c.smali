@@ -43,21 +43,36 @@
 
 # direct methods
 .method public constructor <init>(Lorg/json/JSONObject;Lkik/core/manager/n;)V
+    .locals 1
+
+    .prologue
+    .line 68
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, p2, v0}, Lkik/core/manager/n$c;-><init>(Lorg/json/JSONObject;Lkik/core/manager/n;Z)V
+
+    .line 69
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/json/JSONObject;Lkik/core/manager/n;Z)V
     .locals 2
 
     .prologue
-    .line 64
+    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 65
+    .line 73
     const-string v0, "$deeplink_path"
 
     invoke-static {p1, v0}, Lkik/core/manager/n$c;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 66
-    if-eqz v0, :cond_0
+    .line 74
+    if-eqz v0, :cond_1
+
+    if-nez p3, :cond_0
 
     invoke-static {p2}, Lkik/core/manager/n;->a(Lkik/core/manager/n;)Ljava/util/Set;
 
@@ -67,12 +82,13 @@
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
-    .line 67
+    .line 75
+    :cond_0
     iput-object v0, p0, Lkik/core/manager/n$c;->a:Ljava/lang/String;
 
-    .line 73
+    .line 81
     :goto_0
     const-string v0, "~referring_link"
 
@@ -82,7 +98,7 @@
 
     iput-object v0, p0, Lkik/core/manager/n$c;->b:Ljava/lang/String;
 
-    .line 74
+    .line 82
     const-string v0, "explore_title"
 
     invoke-static {p1, v0}, Lkik/core/manager/n$c;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
@@ -91,7 +107,7 @@
 
     iput-object v0, p0, Lkik/core/manager/n$c;->c:Ljava/lang/String;
 
-    .line 75
+    .line 83
     const-string v0, "explore_subtitle"
 
     invoke-static {p1, v0}, Lkik/core/manager/n$c;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
@@ -100,7 +116,7 @@
 
     iput-object v0, p0, Lkik/core/manager/n$c;->d:Ljava/lang/String;
 
-    .line 76
+    .line 84
     const-string v0, "explore_button_title"
 
     invoke-static {p1, v0}, Lkik/core/manager/n$c;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
@@ -109,11 +125,11 @@
 
     iput-object v0, p0, Lkik/core/manager/n$c;->e:Ljava/lang/String;
 
-    .line 77
+    .line 85
     return-void
 
-    .line 70
-    :cond_0
+    .line 78
+    :cond_1
     const/4 v0, 0x0
 
     iput-object v0, p0, Lkik/core/manager/n$c;->a:Ljava/lang/String;
@@ -127,7 +143,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 91
+    .line 100
     if-eqz p0, :cond_0
 
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
@@ -136,12 +152,12 @@
 
     if-nez v1, :cond_1
 
-    .line 99
+    .line 108
     :cond_0
     :goto_0
     return-object v0
 
-    .line 96
+    .line 105
     :cond_1
     :try_start_0
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -152,7 +168,7 @@
 
     goto :goto_0
 
-    .line 99
+    .line 108
     :catch_0
     move-exception v1
 

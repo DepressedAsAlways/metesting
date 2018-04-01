@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/presentation/bs$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/String;",
         ">;"
@@ -35,7 +35,7 @@
     .line 197
     iput-object p1, p0, Lkik/android/chat/presentation/bs$1;->a:Lkik/android/chat/presentation/bs;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Lkik/android/chat/presentation/r;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/presentation/r;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 1202
     iget-object v0, p0, Lkik/android/chat/presentation/bs$1;->a:Lkik/android/chat/presentation/bs;
@@ -103,7 +103,7 @@
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2}, Lkik/android/chat/presentation/r;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-interface {v1, v2}, Lkik/android/chat/presentation/r;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 219
     const/16 v1, 0x191
@@ -113,13 +113,13 @@
     .line 220
     iget-object v1, p0, Lkik/android/chat/presentation/bs$1;->a:Lkik/android/chat/presentation/bs;
 
-    invoke-static {v1}, Lkik/android/chat/presentation/bs;->d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ac;
+    invoke-static {v1}, Lkik/android/chat/presentation/bs;->d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ad;
 
     move-result-object v1
 
-    const v2, 0x7f090115
+    const v2, 0x7f090116
 
-    invoke-interface {v1, v2}, Lkik/android/chat/view/ac;->a(I)V
+    invoke-interface {v1, v2}, Lkik/android/chat/view/ad;->a(I)V
 
     .line 222
     :cond_0
@@ -141,10 +141,10 @@
     .line 215
     const-string v1, "Unexpected exception when sending Phone Verification code."
 
-    invoke-static {v1}, Lkik/android/util/bc;->a(Ljava/lang/String;)V
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/String;)V
 
     .line 216
-    invoke-static {p1}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {p1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 .end method

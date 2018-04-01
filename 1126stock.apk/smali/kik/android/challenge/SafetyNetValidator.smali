@@ -142,30 +142,30 @@
 
     const/4 v5, 0x0
 
-    .line 3134
+    .line 2134
     invoke-interface {p1}, Lcom/google/android/gms/safetynet/SafetyNetApi$AttestationResult;->getStatus()Lcom/google/android/gms/common/api/Status;
 
     move-result-object v0
 
-    .line 3135
+    .line 2135
     invoke-interface {p1}, Lcom/google/android/gms/safetynet/SafetyNetApi$AttestationResult;->getJwsResult()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3137
+    .line 2137
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/Status;->isSuccess()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-static {v1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 3139
+    .line 2139
     :cond_0
     sget-object v1, Lkik/android/challenge/SafetyNetValidator;->a:Lorg/slf4j/b;
 
@@ -203,11 +203,11 @@
 
     invoke-interface {v1, v0}, Lorg/slf4j/b;->warn(Ljava/lang/String;)V
 
-    .line 3140
+    .line 2140
     :goto_0
     return-void
 
-    .line 3181
+    .line 2181
     :cond_1
     invoke-static {}, Lkik/android/util/DeviceUtils;->f()Z
 
@@ -215,7 +215,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 3184
+    .line 2184
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Success! SafetyNet result:\n"
@@ -230,19 +230,19 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3203
+    .line 2203
     const-string v0, "[.]"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v2
 
-    .line 3204
+    .line 2204
     array-length v0, v2
 
     if-eq v0, v3, :cond_3
 
-    .line 3205
+    .line 2205
     sget-object v0, Lkik/android/challenge/SafetyNetValidator;->a:Lorg/slf4j/b;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -269,24 +269,24 @@
 
     invoke-interface {v0, v2}, Lorg/slf4j/b;->error(Ljava/lang/String;)V
 
-    .line 3206
+    .line 2206
     const/4 v0, 0x0
 
-    .line 3186
+    .line 2186
     :goto_1
     if-nez v0, :cond_4
 
-    .line 3187
+    .line 2187
     sget-object v0, Lkik/android/challenge/SafetyNetValidator;->a:Lorg/slf4j/b;
 
     const-string v2, "Success; failure parsing response."
 
     invoke-interface {v0, v2}, Lorg/slf4j/b;->warn(Ljava/lang/String;)V
 
-    .line 3144
+    .line 2144
     :cond_2
     :goto_2
-    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->b()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
+    invoke-static {}, Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;->newBuilder()Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest$a;
 
     move-result-object v0
 
@@ -298,14 +298,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/core/g/f;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lkik/core/g/k;
+    invoke-static {v0}, Lkik/core/xiphias/j;->a(Lcom/kik/antispam/safetynet/rpc/SafetynetService$VerifyAttestationResultRequest;)Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/challenge/SafetyNetValidator;->b:Lkik/core/interfaces/ICommunication;
 
-    .line 3145
-    invoke-virtual {v0, v1}, Lkik/core/g/k;->a(Lkik/core/interfaces/ICommunication;)Lcom/kik/events/Promise;
+    .line 2145
+    invoke-virtual {v0, v1}, Lkik/core/xiphias/XiphiasRequest;->send(Lkik/core/interfaces/ICommunication;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -313,18 +313,18 @@
 
     invoke-direct {v1, p0}, Lkik/android/challenge/SafetyNetValidator$2;-><init>(Lkik/android/challenge/SafetyNetValidator;)V
 
-    .line 3146
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    .line 2146
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 
-    .line 3208
+    .line 2208
     :cond_3
     new-array v0, v3, [[B
 
     aget-object v3, v2, v5
 
-    .line 3209
+    .line 2209
     invoke-static {v3, v4}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v3
@@ -333,7 +333,7 @@
 
     aget-object v3, v2, v6
 
-    .line 3210
+    .line 2210
     invoke-static {v3, v4}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v3
@@ -342,7 +342,7 @@
 
     aget-object v2, v2, v7
 
-    .line 3211
+    .line 2211
     invoke-static {v2, v4}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v2
@@ -351,7 +351,7 @@
 
     goto :goto_1
 
-    .line 3191
+    .line 2191
     :cond_4
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -373,7 +373,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3192
+    .line 2192
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Data: "
@@ -394,7 +394,7 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3193
+    .line 2193
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Signature: "
@@ -422,17 +422,17 @@
     .locals 1
 
     .prologue
-    .line 3066
+    .line 66
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3067
+    .line 67
     invoke-direct {p0}, Lkik/android/challenge/SafetyNetValidator;->c()V
 
-    .line 0
+    .line 69
     :cond_0
     return-void
 .end method
@@ -442,7 +442,7 @@
 
     .prologue
     .line 49
-    .line 2120
+    .line 3120
     iget-object v0, p0, Lkik/android/challenge/SafetyNetValidator;->c:Lcom/google/android/gms/common/api/GoogleApiClient;
 
     invoke-virtual {v0}, Lcom/google/android/gms/common/api/GoogleApiClient;->isConnected()Z
@@ -451,16 +451,16 @@
 
     if-nez v0, :cond_0
 
-    .line 2123
+    .line 3123
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/challenge/SafetyNetValidator;->e:Z
 
-    .line 2124
+    .line 3124
     :goto_0
     return-void
 
-    .line 2127
+    .line 3127
     :cond_0
     sget-object v0, Lcom/google/android/gms/safetynet/SafetyNet;->SafetyNetApi:Lcom/google/android/gms/safetynet/SafetyNetApi;
 
@@ -474,19 +474,18 @@
 
     move-result-object v1
 
-    .line 2128
+    .line 3128
     invoke-virtual {v0, v1}, Lcom/google/android/gms/common/api/PendingResult;->setResultCallback(Lcom/google/android/gms/common/api/ResultCallback;)V
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lkik/core/g/m;)[B
+.method static synthetic a(Lkik/core/xiphias/ab;)[B
     .locals 1
 
     .prologue
-    .line 0
-    .line 4176
-    invoke-virtual {p0}, Lkik/core/g/m;->e()Ljava/lang/Object;
+    .line 176
+    invoke-virtual {p0}, Lkik/core/xiphias/ab;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -500,7 +499,6 @@
 
     move-result-object v0
 
-    .line 0
     return-object v0
 .end method
 
@@ -546,21 +544,21 @@
 
     .line 1176
     :cond_1
-    invoke-static {}, Lkik/core/g/f;->a()Lkik/core/g/k;
+    invoke-static {}, Lkik/core/xiphias/j;->a()Lkik/core/xiphias/XiphiasRequest;
 
     move-result-object v0
 
     iget-object v1, p0, Lkik/android/challenge/SafetyNetValidator;->b:Lkik/core/interfaces/ICommunication;
 
-    invoke-virtual {v0, v1}, Lkik/core/g/k;->a(Lkik/core/interfaces/ICommunication;)Lcom/kik/events/Promise;
+    invoke-virtual {v0, v1}, Lkik/core/xiphias/XiphiasRequest;->send(Lkik/core/interfaces/ICommunication;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
-    invoke-static {}, Lkik/android/challenge/e;->a()Lcom/kik/events/q;
+    invoke-static {}, Lkik/android/challenge/e;->a()Lcom/kik/events/p;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/kik/events/m;->b(Lcom/kik/events/Promise;Lcom/kik/events/q;)Lcom/kik/events/Promise;
+    invoke-static {v0, v1}, Lcom/kik/events/l;->b(Lcom/kik/events/Promise;Lcom/kik/events/p;)Lcom/kik/events/Promise;
 
     move-result-object v0
 
@@ -569,7 +567,7 @@
 
     invoke-direct {v1, p0}, Lkik/android/challenge/SafetyNetValidator$1;-><init>(Lkik/android/challenge/SafetyNetValidator;)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method
@@ -632,20 +630,20 @@
     move-result-object v0
 
     .line 237
-    const-class v1, Lkik/core/datatypes/messageExtensions/m;
+    const-class v1, Lkik/core/datatypes/messageExtensions/XiphiasMobileRemoteCallAttachment;
 
-    invoke-static {v0, v1}, Lkik/core/datatypes/messageExtensions/f;->a(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/f;
+    invoke-static {v0, v1}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/datatypes/messageExtensions/m;
+    check-cast v0, Lkik/core/datatypes/messageExtensions/XiphiasMobileRemoteCallAttachment;
 
     .line 241
     if-eqz v0, :cond_0
 
     const-string v1, "mobileremote.antispam.safetynet.v1.MobileSafetyNet"
 
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/m;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/XiphiasMobileRemoteCallAttachment;->getService()Ljava/lang/String;
 
     move-result-object v2
 
@@ -662,7 +660,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/m;->a()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/XiphiasMobileRemoteCallAttachment;->getService()Ljava/lang/String;
 
     move-result-object v2
 
@@ -676,14 +674,14 @@
 
     move-result-object v1
 
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/m;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/XiphiasMobileRemoteCallAttachment;->getMethod()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 243
-    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/m;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Lkik/core/datatypes/messageExtensions/XiphiasMobileRemoteCallAttachment;->getMethod()Ljava/lang/String;
 
     move-result-object v1
 

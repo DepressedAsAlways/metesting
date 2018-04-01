@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 269
+    .line 280
     iput-object p1, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .locals 4
 
     .prologue
-    .line 273
+    .line 284
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
     iget-object v0, v0, Lkik/android/chat/fragment/VideoTrimmingFragment$3;->a:Lkik/android/chat/fragment/VideoTrimmingFragment;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 275
+    .line 286
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
     iget-object v0, v0, Lkik/android/chat/fragment/VideoTrimmingFragment$3;->a:Lkik/android/chat/fragment/VideoTrimmingFragment;
@@ -90,7 +90,7 @@
 
     if-gez v0, :cond_1
 
-    .line 276
+    .line 287
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
     iget-object v0, v0, Lkik/android/chat/fragment/VideoTrimmingFragment$3;->a:Lkik/android/chat/fragment/VideoTrimmingFragment;
@@ -109,12 +109,12 @@
 
     invoke-virtual {v0, v1}, Lkik/android/widget/VideoKeyFrameView;->c(F)V
 
-    .line 285
+    .line 296
     :cond_0
     :goto_0
     return-void
 
-    .line 278
+    .line 289
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
@@ -154,7 +154,7 @@
 
     if-gez v0, :cond_2
 
-    .line 279
+    .line 290
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 
     iget-object v0, v0, Lkik/android/chat/fragment/VideoTrimmingFragment$3;->a:Lkik/android/chat/fragment/VideoTrimmingFragment;
@@ -175,7 +175,7 @@
 
     goto :goto_0
 
-    .line 282
+    .line 293
     :cond_2
     iget-object v0, p0, Lkik/android/chat/fragment/VideoTrimmingFragment$3$1;->a:Lkik/android/chat/fragment/VideoTrimmingFragment$3;
 

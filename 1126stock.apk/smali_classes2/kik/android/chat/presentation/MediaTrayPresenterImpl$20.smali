@@ -1,240 +1,173 @@
-.class final synthetic Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;
-.super Ljava/lang/Object;
+.class final Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a(Lkik/core/datatypes/Message$MessageSource;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x0
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/kik/events/k",
+        "<",
+        "Lkik/core/datatypes/l;",
+        ">;"
+    }
+.end annotation
 
-# static fields
-.field static final synthetic a:[I
 
-.field static final synthetic b:[I
+# instance fields
+.field final synthetic a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method constructor <init>(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)V
+    .locals 0
 
     .prologue
-    .line 1623
-    invoke-static {}, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->values()[Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;
+    .line 1130
+    iput-object p1, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Ljava/lang/Object;)V
+    .locals 4
+
+    .prologue
+    .line 1130
+    check-cast p1, Lkik/core/datatypes/l;
+
+    .line 2134
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->f()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2137
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    iget-object v0, v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->a:Lcom/kik/android/Mixpanel;
+
+    const-string v1, "Bot Mention Sent"
+
+    invoke-virtual {v0, v1}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    array-length v0, v0
+    const-string v1, "Participants Count"
 
-    new-array v0, v0, [I
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    sput-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->b:[I
+    .line 2138
+    invoke-static {v2}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->r(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)I
 
-    :try_start_0
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->b:[I
+    move-result v2
 
-    sget-object v1, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->GIF_BUTTON:Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;
+    int-to-long v2, v2
 
-    invoke-virtual {v1}, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->ordinal()I
+    invoke-virtual {v0, v1, v2, v3}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;J)Lcom/kik/android/Mixpanel$d;
 
-    move-result v1
+    move-result-object v0
 
-    const/4 v2, 0x1
+    const-string v1, "Content Type"
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_8
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    .line 2139
+    invoke-virtual {v2}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->y()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Bot Username"
+
+    .line 2140
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->l()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v0
+
+    const-string v1, "Byline Variant"
+
+    iget-object v2, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    .line 2141
+    invoke-static {v2}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->n(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/android/chat/presentation/s;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lkik/android/chat/presentation/s;->f()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
+
+    move-result-object v1
+
+    const-string v2, "Chat Id"
+
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
+
+    .line 2142
+    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->q(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/core/datatypes/l;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    const-string v0, ""
 
     :goto_0
-    :try_start_1
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->b:[I
-
-    sget-object v1, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->TRAY_OPEN:Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;
-
-    invoke-virtual {v1}, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_7
-
-    :goto_1
-    :try_start_2
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->b:[I
-
-    sget-object v1, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->GIF_BUTTON_TRENDING:Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;
-
-    invoke-virtual {v1}, Lkik/android/chat/JoinGifTrayHelper$JoinGifVariant;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_6
-
-    .line 2241
-    :goto_2
-    invoke-static {}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->values()[Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
+    invoke-virtual {v1, v2, v0}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    array-length v0, v0
+    .line 2143
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->g()Lcom/kik/android/Mixpanel$d;
 
-    new-array v0, v0, [I
+    move-result-object v0
 
-    sput-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
+    .line 2144
+    invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    :try_start_3
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
-
-    sget-object v1, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ClosedContent:Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
-
-    invoke-virtual {v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_5
-
-    :goto_3
-    :try_start_4
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
-
-    sget-object v1, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->Closed:Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
-
-    invoke-virtual {v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :goto_4
-    :try_start_5
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
-
-    sget-object v1, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->Open:Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
-
-    invoke-virtual {v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_3
-
-    :goto_5
-    :try_start_6
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
-
-    sget-object v1, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->Advanced:Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
-
-    invoke-virtual {v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_2
-
-    :goto_6
-    :try_start_7
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
-
-    sget-object v1, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->Simple:Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
-
-    invoke-virtual {v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_1
-
-    :goto_7
-    :try_start_8
-    sget-object v0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:[I
-
-    sget-object v1, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->SuggestedResponse:Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;
-
-    invoke-virtual {v1}, Lkik/android/chat/presentation/MediaTrayPresenterImpl$KeyboardState;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x6
-
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_0
-
-    :goto_8
+    .line 1130
+    :cond_0
     return-void
 
-    :catch_0
-    move-exception v0
+    .line 2142
+    :cond_1
+    iget-object v0, p0, Lkik/android/chat/presentation/MediaTrayPresenterImpl$20;->a:Lkik/android/chat/presentation/MediaTrayPresenterImpl;
 
-    goto :goto_8
+    invoke-static {v0}, Lkik/android/chat/presentation/MediaTrayPresenterImpl;->q(Lkik/android/chat/presentation/MediaTrayPresenterImpl;)Lkik/core/datatypes/l;
 
-    :catch_1
-    move-exception v0
+    move-result-object v0
 
-    goto :goto_7
+    invoke-virtual {v0}, Lkik/core/datatypes/l;->j()Lkik/core/datatypes/k;
 
-    :catch_2
-    move-exception v0
+    move-result-object v0
 
-    goto :goto_6
+    invoke-virtual {v0}, Lkik/core/datatypes/k;->c()Ljava/lang/String;
 
-    :catch_3
-    move-exception v0
-
-    goto :goto_5
-
-    :catch_4
-    move-exception v0
-
-    goto :goto_4
-
-    :catch_5
-    move-exception v0
-
-    goto :goto_3
-
-    :catch_6
-    move-exception v0
-
-    goto :goto_2
-
-    :catch_7
-    move-exception v0
-
-    goto :goto_1
-
-    :catch_8
-    move-exception v0
+    move-result-object v0
 
     goto :goto_0
 .end method

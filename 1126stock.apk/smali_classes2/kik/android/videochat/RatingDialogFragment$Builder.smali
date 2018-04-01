@@ -16,42 +16,32 @@
 
 # instance fields
 .field protected _fiveStar:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100320
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1003b3
     .end annotation
 .end field
 
 .field protected _fourStar:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10031f
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1003b2
     .end annotation
 .end field
 
 .field protected _oneStar:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10031c
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1003af
     .end annotation
 .end field
 
 .field protected _threeStar:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10031e
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1003b1
     .end annotation
 .end field
 
 .field protected _twoStar:Landroid/widget/ImageView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f10031d
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f1003b0
     .end annotation
 .end field
 
@@ -67,11 +57,11 @@
     .end annotation
 .end field
 
-.field private final c:Lkik/android/videochat/aq;
+.field private final c:Lkik/android/videochat/ar;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/android/videochat/aq;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/android/videochat/ar;)V
     .locals 10
 
     .prologue
@@ -86,10 +76,10 @@
     iput-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->a:Lkik/android/chat/fragment/KikDialogFragment;
 
     .line 57
-    iput-object p2, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/aq;
+    iput-object p2, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/ar;
 
     .line 59
-    const v0, 0x7f04010f
+    const v0, 0x7f040153
 
     const/4 v1, 0x0
 
@@ -101,7 +91,7 @@
     invoke-virtual {p0, v0}, Lkik/android/videochat/RatingDialogFragment$Builder;->a(Landroid/view/View;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 61
-    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 63
     iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->_oneStar:Landroid/widget/ImageView;
@@ -191,7 +181,7 @@
 
     .line 73
     :cond_0
-    const v0, 0x7f090444
+    const v0, 0x7f090458
 
     invoke-static {p0}, Lkik/android/videochat/f;->a(Lkik/android/videochat/RatingDialogFragment$Builder;)Landroid/content/DialogInterface$OnClickListener;
 
@@ -200,7 +190,7 @@
     invoke-virtual {p0, v0, v1}, Lkik/android/videochat/RatingDialogFragment$Builder;->a(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 76
-    const v0, 0x7f090256
+    const v0, 0x7f09026a
 
     invoke-static {p0}, Lkik/android/videochat/g;->a(Lkik/android/videochat/RatingDialogFragment$Builder;)Landroid/content/DialogInterface$OnClickListener;
 
@@ -209,7 +199,7 @@
     invoke-virtual {p0, v0, v1}, Lkik/android/videochat/RatingDialogFragment$Builder;->b(ILandroid/content/DialogInterface$OnClickListener;)Lkik/android/chat/fragment/KikDialogFragment$a;
 
     .line 80
-    const v0, 0x7f090606
+    const v0, 0x7f090672
 
     invoke-virtual {p0, v0}, Lkik/android/videochat/RatingDialogFragment$Builder;->a(I)Lkik/android/chat/fragment/KikDialogFragment$a;
 
@@ -223,22 +213,15 @@
 .end method
 
 .method static synthetic a(Lkik/android/videochat/RatingDialogFragment$Builder;)V
-    .locals 2
+    .locals 1
 
     .prologue
-    .line 0
-    .line 2074
-    iget-object v1, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/aq;
+    .line 77
+    iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/ar;
 
-    iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->a:Lkik/android/chat/fragment/KikDialogFragment;
+    invoke-interface {v0}, Lkik/android/videochat/ar;->b()V
 
-    check-cast v0, Lkik/android/videochat/RatingDialogFragment;
-
-    iget v0, v0, Lkik/android/videochat/RatingDialogFragment;->g:I
-
-    invoke-interface {v1, v0}, Lkik/android/videochat/aq;->a(I)V
-
-    .line 0
+    .line 78
     return-void
 .end method
 
@@ -246,8 +229,7 @@
     .locals 4
 
     .prologue
-    .line 0
-    .line 1070
+    .line 70
     iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->b:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -326,7 +308,7 @@
     if-gt v1, v2, :cond_0
 
     .line 1097
-    const v1, 0x7f0202c6
+    const v1, 0x7f020311
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -334,28 +316,33 @@
 
     .line 1100
     :cond_0
-    const v1, 0x7f0202c7
+    const v1, 0x7f020312
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_0
 
-    .line 0
+    .line 70
     :cond_1
     return-void
 .end method
 
 .method static synthetic b(Lkik/android/videochat/RatingDialogFragment$Builder;)V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 0
-    .line 2077
-    iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/aq;
+    .line 74
+    iget-object v1, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/ar;
 
-    invoke-interface {v0}, Lkik/android/videochat/aq;->b()V
+    iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->a:Lkik/android/chat/fragment/KikDialogFragment;
 
-    .line 0
+    check-cast v0, Lkik/android/videochat/RatingDialogFragment;
+
+    iget v0, v0, Lkik/android/videochat/RatingDialogFragment;->g:I
+
+    invoke-interface {v1, v0}, Lkik/android/videochat/ar;->a(I)V
+
+    .line 75
     return-void
 .end method
 
@@ -366,9 +353,9 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/aq;
+    iget-object v0, p0, Lkik/android/videochat/RatingDialogFragment$Builder;->c:Lkik/android/videochat/ar;
 
-    invoke-interface {v0}, Lkik/android/videochat/aq;->a()V
+    invoke-interface {v0}, Lkik/android/videochat/ar;->a()V
 
     .line 88
     invoke-super {p0}, Lkik/android/chat/fragment/KikDialogFragment$a;->a()Lkik/android/chat/fragment/KikDialogFragment;

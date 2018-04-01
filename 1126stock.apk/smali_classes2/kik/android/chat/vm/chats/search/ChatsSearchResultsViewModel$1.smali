@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
-        "Lkik/core/datatypes/m;",
+        "Lkik/core/datatypes/l;",
         ">;"
     }
 .end annotation
@@ -39,7 +39,7 @@
 
     iput-object p2, p0, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel$1;->a:Lkik/android/sdkutils/concurrent/c;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method

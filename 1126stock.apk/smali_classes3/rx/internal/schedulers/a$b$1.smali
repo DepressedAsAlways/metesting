@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/a;
+.implements Lrx/functions/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrx/internal/schedulers/a$b;->a(Lrx/b/a;JLjava/util/concurrent/TimeUnit;)Lrx/j;
+    value = Lrx/internal/schedulers/a$b;->a(Lrx/functions/a;JLjava/util/concurrent/TimeUnit;)Lrx/k;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 
 # instance fields
-.field final synthetic a:Lrx/b/a;
+.field final synthetic a:Lrx/functions/a;
 
 .field final synthetic b:Lrx/internal/schedulers/a$b;
 
 
 # direct methods
-.method constructor <init>(Lrx/internal/schedulers/a$b;Lrx/b/a;)V
+.method constructor <init>(Lrx/internal/schedulers/a$b;Lrx/functions/a;)V
     .locals 0
 
     .prologue
-    .line 222
+    .line 224
     iput-object p1, p0, Lrx/internal/schedulers/a$b$1;->b:Lrx/internal/schedulers/a$b;
 
-    iput-object p2, p0, Lrx/internal/schedulers/a$b$1;->a:Lrx/b/a;
+    iput-object p2, p0, Lrx/internal/schedulers/a$b$1;->a:Lrx/functions/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 225
+    .line 227
     iget-object v0, p0, Lrx/internal/schedulers/a$b$1;->b:Lrx/internal/schedulers/a$b;
 
     invoke-virtual {v0}, Lrx/internal/schedulers/a$b;->isUnsubscribed()Z
@@ -53,15 +53,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 229
+    .line 231
     :goto_0
     return-void
 
-    .line 228
+    .line 230
     :cond_0
-    iget-object v0, p0, Lrx/internal/schedulers/a$b$1;->a:Lrx/b/a;
+    iget-object v0, p0, Lrx/internal/schedulers/a$b$1;->a:Lrx/functions/a;
 
-    invoke-interface {v0}, Lrx/b/a;->a()V
+    invoke-interface {v0}, Lrx/functions/a;->a()V
 
     goto :goto_0
 .end method

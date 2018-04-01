@@ -3,99 +3,69 @@
 .source "SourceFile"
 
 
-# instance fields
-.field private a:Ljava/lang/String;
-
-.field private b:Ljava/lang/String;
-
-.field private c:Ljava/lang/String;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lkik/android/util/bt$a;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
 
     .prologue
-    .line 13
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 28
+    invoke-static {p0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
-    .line 14
-    iput-object p1, p0, Lkik/android/util/bt;->a:Ljava/lang/String;
+    move-result v0
 
-    .line 15
-    iput-object p3, p0, Lkik/android/util/bt;->b:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
-    .line 16
-    iput-object p2, p0, Lkik/android/util/bt;->c:Ljava/lang/String;
+    .line 29
+    const-string v0, ""
 
-    .line 17
-    return-void
-.end method
+    .line 36
+    :goto_0
+    return-object v0
 
+    .line 31
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
-# virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .prologue
-    .line 21
-    iget-object v0, p0, Lkik/android/util/bt;->a:Ljava/lang/String;
+    .line 32
+    const-string v1, "+"
 
-    .line 22
-    iget-object v1, p0, Lkik/android/util/bt;->c:Ljava/lang/String;
-
-    invoke-static {v1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-virtual {p0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-eqz v1, :cond_1
 
-    .line 23
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 33
+    const/16 v1, 0x2b
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 35
+    :cond_1
+    const-string v1, "[^0-9]"
 
-    move-result-object v0
+    const-string v2, ""
 
-    const-string v1, " "
+    invoke-virtual {p0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lkik/android/util/bt;->c:Ljava/lang/String;
+    move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
+    .line 36
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 25
-    :cond_0
-    return-object v0
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 30
-    iget-object v0, p0, Lkik/android/util/bt;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final c()Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 35
-    iget-object v0, p0, Lkik/android/util/bt;->c:Ljava/lang/String;
-
-    return-object v0
+    goto :goto_0
 .end method

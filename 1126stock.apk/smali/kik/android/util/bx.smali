@@ -3,2275 +3,1476 @@
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lkik/android/util/bx$a;
-    }
-.end annotation
-
-
 # static fields
-.field private static final a:Ljava/text/SimpleDateFormat;
-
-.field private static final b:Ljava/text/SimpleDateFormat;
-
-.field private static final c:Ljava/text/SimpleDateFormat;
-
-.field private static final d:Ljava/text/SimpleDateFormat;
-
-.field private static final e:Ljava/text/SimpleDateFormat;
-
-.field private static f:Z
-
-.field private static g:Ljava/lang/String;
-
-.field private static h:Ljava/lang/String;
-
-.field private static i:Ljava/lang/String;
-
-.field private static j:Ljava/lang/String;
-
-.field private static k:Ljava/lang/String;
-
-.field private static l:Ljava/lang/String;
-
-.field private static m:[Ljava/lang/String;
-
-.field private static n:Ljava/util/Random;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .prologue
-    .line 40
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    const-string v1, "M/d/yyyy"
-
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lkik/android/util/bx;->a:Ljava/text/SimpleDateFormat;
-
-    .line 41
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    const-string v1, "EEE, MMM d"
-
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lkik/android/util/bx;->b:Ljava/text/SimpleDateFormat;
-
-    .line 42
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    const-string v1, "MMM d, y"
-
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lkik/android/util/bx;->c:Ljava/text/SimpleDateFormat;
-
-    .line 43
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    const-string v1, "h:mm a"
-
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lkik/android/util/bx;->d:Ljava/text/SimpleDateFormat;
-
-    .line 44
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    const-string v1, "E"
-
-    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lkik/android/util/bx;->e:Ljava/text/SimpleDateFormat;
-
-    .line 46
-    const/4 v0, 0x0
-
-    sput-boolean v0, Lkik/android/util/bx;->f:Z
-
-    .line 69
-    new-instance v0, Ljava/util/Random;
-
-    invoke-direct {v0}, Ljava/util/Random;-><init>()V
-
-    sput-object v0, Lkik/android/util/bx;->n:Ljava/util/Random;
-
-    return-void
-.end method
-
-.method public static a()Ljava/lang/String;
-    .locals 3
-
-    .prologue
-    .line 430
-    const/4 v0, 0x6
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    const/4 v1, 0x0
-
-    const v2, 0x7f0900f4
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x1
-
-    const v2, 0x7f0900f5
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x2
-
-    const v2, 0x7f0900f6
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x3
-
-    const v2, 0x7f0900f7
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x4
-
-    const v2, 0x7f0900f8
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    const/4 v1, 0x5
-
-    const v2, 0x7f0900f9
-
-    invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
-
-    .line 431
-    sput-object v0, Lkik/android/util/bx;->m:[Ljava/lang/String;
-
-    sget-object v1, Lkik/android/util/bx;->n:Ljava/util/Random;
-
-    sget-object v2, Lkik/android/util/bx;->m:[Ljava/lang/String;
-
-    array-length v2, v2
-
-    invoke-virtual {v1, v2}, Ljava/util/Random;->nextInt(I)I
-
-    move-result v1
-
-    aget-object v0, v0, v1
-
-    return-object v0
-.end method
-
-.method public static a(JJLandroid/content/res/Resources;)Ljava/lang/String;
-    .locals 4
-
-    .prologue
-    .line 592
-    new-instance v0, Ljava/util/Date;
-
-    invoke-direct {v0, p0, p1}, Ljava/util/Date;-><init>(J)V
-
-    .line 594
-    invoke-static {p0, p1, p2, p3, p4}, Lkik/android/util/bx;->c(JJLandroid/content/res/Resources;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 595
-    sget-object v2, Lkik/android/util/bx;->d:Ljava/text/SimpleDateFormat;
-
-    invoke-virtual {v2, v0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 597
-    invoke-static {v1, v0}, Lkik/android/util/bx;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 4
-
-    .prologue
-    .line 75
-    :try_start_0
-    const-string v0, "MD5"
-
-    invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
-
-    move-result-object v0
-
-    .line 76
-    invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/security/MessageDigest;->update([B)V
-
-    .line 77
-    invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
-
-    move-result-object v1
-
-    .line 80
-    new-instance v2, Ljava/lang/StringBuffer;
-
-    invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
-
-    .line 81
-    const/4 v0, 0x0
-
-    :goto_0
-    array-length v3, v1
-
-    if-ge v0, v3, :cond_0
-
-    .line 82
-    aget-byte v3, v1, v0
-
-    and-int/lit16 v3, v3, 0xff
-
-    invoke-static {v3}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    .line 81
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 84
-    :cond_0
-    invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result-object v0
-
-    .line 90
-    :goto_1
-    return-object v0
-
-    .line 88
-    :catch_0
-    move-exception v0
-
-    invoke-virtual {v0}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
-
-    .line 90
-    const-string v0, ""
-
-    goto :goto_1
-.end method
-
-.method private static a(Ljava/util/List;)Ljava/lang/String;
-    .locals 6
+.field public static final a:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/String;",
-            ">;)",
-            "Ljava/lang/String;"
-        }
-    .end annotation
-
-    .prologue
-    const/4 v2, 0x0
-
-    .line 394
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 4425
-    const v0, 0x7f0903e4
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 420
-    :goto_0
-    return-object v0
-
-    .line 398
-    :cond_0
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    const/4 v1, 0x3
-
-    if-le v0, v1, :cond_3
-
-    const/4 v0, 0x1
-
-    move v1, v0
-
-    .line 399
-    :goto_1
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    mul-int/lit8 v0, v0, 0x7
-
-    invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    .line 401
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    :goto_2
-    if-ge v2, v4, :cond_5
-
-    .line 402
-    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 404
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v5
-
-    if-lez v5, :cond_2
-
-    .line 405
-    if-nez v1, :cond_1
-
-    add-int/lit8 v5, v4, -0x1
-
-    if-ge v2, v5, :cond_4
-
-    .line 406
-    :cond_1
-    const-string v5, ", "
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 412
-    :goto_3
-    add-int/lit8 v5, v4, -0x1
-
-    if-ne v2, v5, :cond_2
-
-    .line 413
-    const-string v5, "and "
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 417
-    :cond_2
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 401
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_2
-
-    :cond_3
-    move v1, v2
-
-    .line 398
-    goto :goto_1
-
-    .line 409
-    :cond_4
-    const/16 v5, 0x20
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    goto :goto_3
-
-    .line 420
-    :cond_5
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public static a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/lang/String;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/String;",
-            ">;",
-            "Lkik/core/interfaces/v;",
-            ")",
-            "Ljava/lang/String;"
-        }
-    .end annotation
-
-    .prologue
-    .line 380
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 3425
-    :cond_0
-    const v0, 0x7f0903e4
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 389
-    :goto_0
-    return-object v0
-
-    .line 384
-    :cond_1
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 385
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 386
-    const/4 v3, 0x1
-
-    invoke-interface {p1, v0, v3}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/m;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/android/util/bx;->a(Lkik/core/datatypes/m;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    .line 389
-    :cond_2
-    invoke-static {v1}, Lkik/android/util/bx;->a(Ljava/util/List;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public static a(Ljava/util/List;Lkik/core/interfaces/v;I)Ljava/lang/String;
-    .locals 6
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List",
-            "<",
-            "Ljava/lang/String;",
-            ">;",
-            "Lkik/core/interfaces/v;",
-            "I)",
-            "Ljava/lang/String;"
-        }
-    .end annotation
-
-    .prologue
-    const/4 v5, 0x1
-
-    .line 354
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 2425
-    :cond_0
-    const v0, 0x7f0903e4
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 375
-    :goto_0
-    return-object v0
-
-    .line 358
-    :cond_1
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 360
-    const/4 v0, 0x0
-
-    .line 361
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    move v1, v0
-
-    :goto_1
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 362
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-interface {p1, v0, v5}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/m;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/android/util/bx;->a(Lkik/core/datatypes/m;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v4, ", "
-
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 363
-    if-lez p2, :cond_5
-
-    add-int/lit8 v0, v1, 0x1
-
-    if-ge v0, p2, :cond_2
-
-    :goto_2
-    move v1, v0
-
-    .line 366
-    goto :goto_1
-
-    .line 368
-    :cond_2
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v0
-
-    if-le v0, v5, :cond_3
-
-    .line 369
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, -0x2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v1
-
-    const-string v3, ""
-
-    invoke-virtual {v2, v0, v1, v3}, Ljava/lang/StringBuilder;->replace(IILjava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 371
-    :cond_3
-    if-lez p2, :cond_4
-
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-le v0, p2, :cond_4
-
-    .line 372
-    const-string v0, "..."
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 375
-    :cond_4
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_5
-    move v0, v1
-
-    goto :goto_2
-.end method
-
-.method public static a(Lkik/core/datatypes/m;)Ljava/lang/String;
-    .locals 1
-
-    .prologue
-    .line 258
-    if-nez p0, :cond_0
-
-    .line 259
-    const-string v0, ""
-
-    .line 266
-    :goto_0
-    return-object v0
-
-    .line 262
-    :cond_0
-    invoke-virtual {p0}, Lkik/core/datatypes/m;->i()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p0}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 263
-    invoke-virtual {p0}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 266
-    :cond_1
-    invoke-virtual {p0}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_2
-
-    const v0, 0x7f090307
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    :goto_1
-    invoke-static {v0}, Lkik/android/util/bx;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_2
-    invoke-virtual {p0}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_1
-.end method
-
-.method public static a(Lkik/core/datatypes/o;)Ljava/lang/String;
-    .locals 4
-
-    .prologue
-    .line 318
-    invoke-virtual {p0}, Lkik/core/datatypes/o;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 319
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 320
-    invoke-virtual {p0}, Lkik/core/datatypes/o;->g()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 321
-    invoke-virtual {p0}, Lkik/core/datatypes/o;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 336
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 323
-    :cond_1
-    invoke-virtual {p0}, Lkik/core/datatypes/o;->d()Ljava/util/List;
-
-    move-result-object v0
-
-    .line 324
-    if-eqz v0, :cond_2
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    if-nez v1, :cond_3
-
-    .line 1425
-    :cond_2
-    const v0, 0x7f0903e4
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 327
-    :cond_3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 328
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/datatypes/n;
-
-    .line 329
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0}, Lkik/core/datatypes/n;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v3, ", "
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_1
-
-    .line 331
-    :cond_4
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v0
-
-    const/4 v2, 0x1
-
-    if-le v0, v2, :cond_5
-
-    .line 332
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, -0x2
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v2
-
-    const-string v3, ""
-
-    invoke-virtual {v1, v0, v2, v3}, Ljava/lang/StringBuilder;->replace(IILjava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 334
-    :cond_5
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public static a(Lkik/core/datatypes/q;Lkik/core/interfaces/v;)Ljava/lang/String;
-    .locals 2
-
-    .prologue
-    .line 298
-    invoke-virtual {p0}, Lkik/core/datatypes/q;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 299
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 300
-    invoke-virtual {p0}, Lkik/core/datatypes/q;->b()Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    invoke-interface {p1, v0, v1}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/m;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 301
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 302
-    invoke-virtual {p0}, Lkik/core/datatypes/q;->O()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 303
-    invoke-virtual {p0}, Lkik/core/datatypes/q;->P()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 313
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 306
-    :cond_1
-    invoke-virtual {p0}, Lkik/core/datatypes/q;->z()Ljava/util/List;
-
-    move-result-object v0
-
-    .line 1341
-    const/4 v1, -0x1
-
-    invoke-static {v0, p1, v1}, Lkik/android/util/bx;->a(Ljava/util/List;Lkik/core/interfaces/v;I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public static a(Lkik/core/interfaces/j;Lkik/core/interfaces/v;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 11
-
-    .prologue
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    .line 168
-    invoke-interface {p0}, Lkik/core/interfaces/j;->G()Ljava/util/List;
-
-    move-result-object v8
-
-    .line 169
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 170
-    const/4 v0, 0x0
-
-    .line 171
-    invoke-interface {v8}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    if-le v1, v2, :cond_1
-
-    move v1, v2
-
-    :goto_0
-    move v6, v3
-
-    move v4, v3
-
-    move v5, v3
-
-    move-object v7, v0
-
-    .line 176
-    :goto_1
-    invoke-interface {v8}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-ge v6, v0, :cond_5
-
-    .line 177
-    invoke-interface {v8, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lkik/core/datatypes/f;
-
-    invoke-virtual {v0}, Lkik/core/datatypes/f;->d()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 178
-    if-eqz v0, :cond_0
-
-    .line 179
-    invoke-interface {p1, v0, v2}, Lkik/core/interfaces/v;->a(Ljava/lang/String;Z)Lkik/core/datatypes/m;
-
-    move-result-object v7
-
-    .line 181
-    :cond_0
-    if-eqz v7, :cond_a
-
-    .line 182
-    invoke-virtual {v7}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_3
-
-    .line 185
-    invoke-virtual {v7}, Lkik/core/datatypes/m;->v()Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    if-eqz v1, :cond_2
-
-    .line 186
-    invoke-virtual {v7}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkik/android/util/bx;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 193
-    :goto_2
-    invoke-interface {v8}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, -0x1
-
-    if-eq v6, v0, :cond_a
-
-    .line 194
-    const-string v0, ", "
-
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move v0, v5
-
-    .line 176
-    :goto_3
-    add-int/lit8 v5, v6, 0x1
-
-    move v6, v5
-
-    move v5, v0
-
-    goto :goto_1
-
-    :cond_1
-    move v1, v3
-
-    .line 171
-    goto :goto_0
-
-    .line 191
-    :cond_2
-    invoke-virtual {v7}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_2
-
-    .line 200
-    :cond_3
-    invoke-virtual {v7}, Lkik/core/datatypes/m;->v()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_a
-
-    invoke-virtual {v7}, Lkik/core/datatypes/m;->c()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_a
-
-    .line 201
-    if-nez v4, :cond_9
-
-    .line 202
-    const-string v0, "%s"
-
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 203
-    invoke-interface {v8}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, -0x1
-
-    if-eq v6, v0, :cond_4
-
-    .line 204
-    const-string v0, ", "
-
-    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    :cond_4
-    move v0, v2
-
-    .line 208
-    :goto_4
-    add-int/lit8 v4, v5, 0x1
-
-    move v10, v0
-
-    move v0, v4
-
-    move v4, v10
-
-    goto :goto_3
-
-    .line 212
-    :cond_5
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 214
-    new-array v1, v2, [Ljava/lang/Object;
-
-    aput-object v0, v1, v3
-
-    invoke-static {p2, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 216
-    const-string v0, ""
-
-    .line 218
-    if-eqz v4, :cond_6
-
-    .line 219
-    if-le v5, v2, :cond_7
-
-    .line 220
-    new-array v0, v2, [Ljava/lang/Object;
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    aput-object v5, v0, v3
-
-    invoke-static {p4, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 221
-    new-array v2, v2, [Ljava/lang/Object;
-
-    aput-object v0, v2, v3
-
-    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 230
-    :goto_5
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    .line 231
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v5
-
-    const/4 v6, 0x2
-
-    if-lt v5, v6, :cond_6
-
-    add-int/lit8 v5, v2, -0x2
-
-    invoke-virtual {v0, v5}, Ljava/lang/String;->charAt(I)C
-
-    move-result v5
-
-    const/16 v6, 0x2c
-
-    if-ne v5, v6, :cond_6
-
-    .line 232
-    add-int/lit8 v2, v2, -0x2
-
-    invoke-virtual {v0, v3, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 235
-    :cond_6
-    if-eqz v4, :cond_8
-
-    :goto_6
-    return-object v0
-
-    .line 224
-    :cond_7
-    new-array v0, v2, [Ljava/lang/Object;
-
-    aput-object p3, v0, v3
-
-    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_5
-
-    :cond_8
-    move-object v0, v1
-
-    .line 235
-    goto :goto_6
-
-    :cond_9
-    move v0, v4
-
-    goto :goto_4
-
-    :cond_a
-    move v0, v5
-
-    goto/16 :goto_3
-.end method
-
-.method public static a([B)Ljava/lang/String;
-    .locals 6
-
-    .prologue
-    .line 520
-    if-nez p0, :cond_0
-
-    .line 521
-    const-string v0, ""
-
-    .line 527
-    :goto_0
-    return-object v0
-
-    .line 523
-    :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    array-length v0, p0
-
-    mul-int/lit8 v0, v0, 0x2
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    .line 524
-    array-length v2, p0
-
-    const/4 v0, 0x0
-
-    :goto_1
-    if-ge v0, v2, :cond_1
-
-    aget-byte v3, p0, v0
-
-    .line 525
-    const-string v4, "0123456789abcdef"
-
-    and-int/lit16 v5, v3, 0xf0
-
-    shr-int/lit8 v5, v5, 0x4
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->charAt(I)C
-
-    move-result v4
-
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    const-string v5, "0123456789abcdef"
-
-    and-int/lit8 v3, v3, 0xf
-
-    invoke-virtual {v5, v3}, Ljava/lang/String;->charAt(I)C
-
-    move-result v3
-
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 524
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1
-
-    .line 527
-    :cond_1
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public static a(Ljava/lang/CharSequence;Lkik/core/util/u;Lcom/kik/android/b/g;)Ljava/util/List;
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/CharSequence;",
-            "Lkik/core/util/u;",
-            "Lcom/kik/android/b/g;",
-            ")",
-            "Ljava/util/List",
+            "Ljava/util/Set",
             "<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
+.end field
+
+.field private static b:Ljava/lang/StringBuilder;
+
+.field private static c:Ljava/util/Formatter;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
 
     .prologue
-    .line 436
-    new-instance v1, Ljava/util/ArrayList;
+    .line 52
+    new-instance v0, Ljava/util/HashSet;
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    const/4 v1, 0x1
 
-    .line 438
-    if-eqz p0, :cond_0
+    new-array v1, v1, [Ljava/lang/String;
 
-    invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
+
+    const-string v3, ".mp4"
+
+    aput-object v3, v1, v2
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    sput-object v0, Lkik/android/util/bx;->a:Ljava/util/Set;
+
+    .line 56
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sput-object v0, Lkik/android/util/bx;->b:Ljava/lang/StringBuilder;
+
+    .line 57
+    new-instance v0, Ljava/util/Formatter;
+
+    sget-object v1, Lkik/android/util/bx;->b:Ljava/lang/StringBuilder;
+
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Ljava/util/Formatter;-><init>(Ljava/lang/Appendable;Ljava/util/Locale;)V
+
+    sput-object v0, Lkik/android/util/bx;->c:Ljava/util/Formatter;
+
+    return-void
+.end method
+
+.method private static a(Lcom/googlecode/mp4parser/authoring/Track;DZ)D
+    .locals 13
+
+    .prologue
+    .line 414
+    invoke-interface {p0}, Lcom/googlecode/mp4parser/authoring/Track;->getSyncSamples()[J
 
     move-result-object v0
 
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    array-length v0, v0
 
-    move-result v0
+    new-array v6, v0, [D
 
-    if-eqz v0, :cond_1
+    .line 415
+    const-wide/16 v4, 0x0
 
-    :cond_0
-    move-object v0, v1
+    .line 416
+    const-wide/16 v2, 0x0
 
-    .line 455
+    .line 417
+    const/4 v0, 0x0
+
     :goto_0
-    return-object v0
+    invoke-interface {p0}, Lcom/googlecode/mp4parser/authoring/Track;->getSampleDurations()[J
 
-    .line 442
+    move-result-object v1
+
+    array-length v1, v1
+
+    if-ge v0, v1, :cond_1
+
+    .line 418
+    invoke-interface {p0}, Lcom/googlecode/mp4parser/authoring/Track;->getSampleDurations()[J
+
+    move-result-object v1
+
+    aget-wide v8, v1, v0
+
+    .line 420
+    invoke-interface {p0}, Lcom/googlecode/mp4parser/authoring/Track;->getSyncSamples()[J
+
+    move-result-object v1
+
+    const-wide/16 v10, 0x1
+
+    add-long/2addr v10, v4
+
+    invoke-static {v1, v10, v11}, Ljava/util/Arrays;->binarySearch([JJ)I
+
+    move-result v1
+
+    if-ltz v1, :cond_0
+
+    .line 422
+    invoke-interface {p0}, Lcom/googlecode/mp4parser/authoring/Track;->getSyncSamples()[J
+
+    move-result-object v1
+
+    const-wide/16 v10, 0x1
+
+    add-long/2addr v10, v4
+
+    invoke-static {v1, v10, v11}, Ljava/util/Arrays;->binarySearch([JJ)I
+
+    move-result v1
+
+    aput-wide v2, v6, v1
+
+    .line 424
+    :cond_0
+    long-to-double v8, v8
+
+    invoke-interface {p0}, Lcom/googlecode/mp4parser/authoring/Track;->getTrackMetaData()Lcom/googlecode/mp4parser/authoring/TrackMetaData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/googlecode/mp4parser/authoring/TrackMetaData;->getTimescale()J
+
+    move-result-wide v10
+
+    long-to-double v10, v10
+
+    div-double/2addr v8, v10
+
+    add-double/2addr v2, v8
+
+    .line 425
+    const-wide/16 v8, 0x1
+
+    add-long/2addr v4, v8
+
+    .line 417
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 428
     :cond_1
-    invoke-static {}, Lkik/core/util/u;->b()[Ljava/lang/String;
+    const-wide/16 v2, 0x0
 
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v3
-
-    .line 444
-    invoke-virtual {p1, p0}, Lkik/core/util/u;->b(Ljava/lang/CharSequence;)[Lkik/core/util/l$a;
-
-    move-result-object v4
-
-    .line 446
-    array-length v5, v4
+    .line 429
+    array-length v5, v6
 
     const/4 v0, 0x0
 
-    move v2, v0
+    move v4, v0
 
     :goto_1
-    if-ge v2, v5, :cond_3
+    if-ge v4, v5, :cond_4
 
-    aget-object v0, v4, v2
+    aget-wide v0, v6, v4
 
-    .line 447
-    invoke-virtual {v0}, Lkik/core/util/l$a;->c()Ljava/lang/String;
+    .line 430
+    cmpl-double v7, v0, p1
 
-    move-result-object v0
+    if-lez v7, :cond_3
 
-    invoke-virtual {v0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+    .line 431
+    if-eqz p3, :cond_2
 
-    move-result-object v6
+    .line 440
+    :goto_2
+    return-wide v0
 
-    .line 449
-    invoke-virtual {p2, v6}, Lcom/kik/android/b/g;->b(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 450
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    invoke-interface {v3, v6}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 452
     :cond_2
-    invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    move-wide v0, v2
 
-    .line 446
-    add-int/lit8 v0, v2, 0x1
+    .line 435
+    goto :goto_2
 
-    move v2, v0
+    .line 429
+    :cond_3
+    add-int/lit8 v2, v4, 0x1
+
+    move v4, v2
+
+    move-wide v2, v0
 
     goto :goto_1
 
-    :cond_3
-    move-object v0, v1
+    .line 440
+    :cond_4
+    add-int/lit8 v0, v5, -0x1
 
-    .line 455
+    aget-wide v0, v6, v0
+
+    goto :goto_2
+.end method
+
+.method public static a(Landroid/media/MediaMetadataRetriever;I)I
+    .locals 1
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0xa
+    .end annotation
+
+    .prologue
+    .line 449
+    invoke-virtual {p0, p1}, Landroid/media/MediaMetadataRetriever;->extractMetadata(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 451
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v0
+
+    .line 454
+    :goto_0
+    return v0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, -0x1
+
     goto :goto_0
 .end method
 
-.method public static a(JZ)Lkik/android/util/bx$a;
-    .locals 12
+.method public static a(Landroid/content/Context;Landroid/net/Uri;)J
+    .locals 3
 
     .prologue
-    const-wide/32 v10, 0xea60
+    const-wide/16 v0, -0x1
 
+    .line 300
+    if-nez p1, :cond_1
+
+    .line 324
+    :cond_0
+    :goto_0
+    return-wide v0
+
+    .line 305
+    :cond_1
+    const/16 v2, 0xa
+
+    invoke-static {v2}, Lcom/kik/sdkutils/c;->a(I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 306
+    new-instance v2, Landroid/media/MediaMetadataRetriever;
+
+    invoke-direct {v2}, Landroid/media/MediaMetadataRetriever;-><init>()V
+
+    .line 308
+    :try_start_0
+    invoke-virtual {v2, p0, p1}, Landroid/media/MediaMetadataRetriever;->setDataSource(Landroid/content/Context;Landroid/net/Uri;)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 314
+    const/16 v0, 0x9
+
+    invoke-static {v2, v0}, Lkik/android/util/bx;->b(Landroid/media/MediaMetadataRetriever;I)J
+
+    move-result-wide v0
+
+    .line 315
+    invoke-virtual {v2}, Landroid/media/MediaMetadataRetriever;->release()V
+
+    goto :goto_0
+
+    .line 318
+    :cond_2
+    invoke-static {p0, p1}, Landroid/media/MediaPlayer;->create(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/MediaPlayer;
+
+    move-result-object v2
+
+    .line 319
+    if-eqz v2, :cond_0
+
+    .line 320
+    invoke-virtual {v2}, Landroid/media/MediaPlayer;->getDuration()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    .line 321
+    invoke-virtual {v2}, Landroid/media/MediaPlayer;->release()V
+
+    goto :goto_0
+
+    .line 312
+    :catch_0
+    move-exception v2
+
+    goto :goto_0
+.end method
+
+.method private static a(II)Landroid/graphics/Bitmap;
+    .locals 1
+
+    .prologue
+    .line 246
+    :try_start_0
+    sget-object v0, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
+
+    invoke-static {p0, p1, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v0
+
+    .line 249
+    :goto_0
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+    .locals 6
+
+    .prologue
+    const/4 v2, 0x1
+
+    const/16 v1, 0x60
+
+    .line 150
+    if-nez p1, :cond_0
+
+    .line 151
+    const/4 v0, 0x0
+
+    .line 209
+    :goto_0
+    return-object v0
+
+    .line 155
+    :cond_0
+    const/16 v0, 0xa
+
+    invoke-static {v0}, Lcom/kik/sdkutils/c;->a(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 156
+    new-instance v3, Landroid/media/MediaMetadataRetriever;
+
+    invoke-direct {v3}, Landroid/media/MediaMetadataRetriever;-><init>()V
+
+    .line 158
+    :try_start_0
+    invoke-static {p1}, Lkik/android/VideoContentProvider;->a(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    invoke-virtual {v3, p0, v0}, Landroid/media/MediaMetadataRetriever;->setDataSource(Landroid/content/Context;Landroid/net/Uri;)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 167
+    invoke-static {v3}, Lkik/android/util/bx;->a(Landroid/media/MediaMetadataRetriever;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    .line 171
+    if-nez v0, :cond_1
+
+    .line 172
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, Lkik/android/util/bx;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    .line 175
+    :cond_1
+    if-nez v0, :cond_2
+
+    .line 182
+    const/16 v2, 0xe
+
+    :try_start_1
+    invoke-static {v2}, Lcom/kik/sdkutils/c;->a(I)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    .line 183
+    const/16 v2, 0x13
+
+    invoke-static {v3, v2}, Lkik/android/util/bx;->a(Landroid/media/MediaMetadataRetriever;I)I
+
+    move-result v2
+
+    .line 184
+    const/16 v4, 0x12
+
+    invoke-static {v3, v4}, Lkik/android/util/bx;->a(Landroid/media/MediaMetadataRetriever;I)I
+
+    move-result v4
+
+    .line 186
+    if-le v2, v4, :cond_3
+
+    .line 187
+    mul-int/lit8 v4, v4, 0x60
+
+    div-int v2, v4, v2
+
+    .line 196
+    :goto_1
+    invoke-static {v2, v1}, Lkik/android/util/bx;->a(II)Landroid/graphics/Bitmap;
+    :try_end_1
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_1
+
+    move-result-object v0
+
+    .line 203
+    :cond_2
+    :goto_2
+    invoke-virtual {v3}, Landroid/media/MediaMetadataRetriever;->release()V
+
+    goto :goto_0
+
+    .line 163
+    :catch_0
+    move-exception v0
+
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    .line 164
+    invoke-static {p1, v2}, Lkik/android/util/bx;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 191
+    :cond_3
+    mul-int/lit8 v2, v2, 0x60
+
+    :try_start_2
+    div-int/2addr v2, v4
+    :try_end_2
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_2 .. :try_end_2} :catch_1
+
+    move v5, v2
+
+    move v2, v1
+
+    move v1, v5
+
+    .line 192
+    goto :goto_1
+
+    .line 199
+    :catch_1
+    move-exception v1
+
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    goto :goto_2
+
+    .line 206
+    :cond_4
+    invoke-static {p1, v2}, Lkik/android/util/bx;->a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_5
+    move v2, v1
+
+    goto :goto_1
+.end method
+
+.method private static a(Landroid/media/MediaMetadataRetriever;)Landroid/graphics/Bitmap;
+    .locals 2
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0xa
+    .end annotation
+
+    .prologue
+    .line 132
+    const-wide/16 v0, 0x0
+
+    :try_start_0
+    invoke-virtual {p0, v0, v1}, Landroid/media/MediaMetadataRetriever;->getFrameAtTime(J)Landroid/graphics/Bitmap;
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v0
+
+    .line 135
+    :goto_0
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private static a(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
+    .locals 3
+
+    .prologue
+    .line 223
+    const/4 v0, 0x0
+
+    .line 225
+    const/4 v1, 0x1
+
+    :try_start_0
+    invoke-static {p0, v1}, Landroid/media/ThumbnailUtils;->createVideoThumbnail(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    :try_end_0
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v0
+
+    .line 231
+    :goto_0
+    if-nez v0, :cond_0
+
+    if-eqz p1, :cond_0
+
+    .line 233
+    const/16 v1, 0x60
+
+    const/16 v2, 0x60
+
+    :try_start_1
+    invoke-static {v1, v2}, Lkik/android/util/bx;->a(II)Landroid/graphics/Bitmap;
+    :try_end_1
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_1
+
+    move-result-object v0
+
+    .line 240
+    :cond_0
+    :goto_1
+    return-object v0
+
+    .line 228
+    :catch_0
+    move-exception v1
+
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    .line 236
+    :catch_1
+    move-exception v1
+
+    invoke-static {v1}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    goto :goto_1
+.end method
+
+.method public static a(I)Ljava/lang/String;
+    .locals 9
+
+    .prologue
     const/4 v8, 0x2
 
     const/4 v7, 0x1
 
     const/4 v6, 0x0
 
-    .line 1056
-    sget-boolean v0, Lkik/android/util/bx;->f:Z
+    .line 62
+    div-int/lit16 v1, p0, 0x3e8
 
+    .line 64
+    rem-int/lit8 v0, v1, 0x3c
+
+    .line 65
+    div-int/lit8 v2, v1, 0x3c
+
+    rem-int/lit8 v2, v2, 0x3c
+
+    .line 66
+    div-int/lit16 v1, v1, 0xe10
+
+    .line 68
     if-nez v0, :cond_0
 
-    .line 1057
-    sput-boolean v7, Lkik/android/util/bx;->f:Z
+    if-nez v2, :cond_0
 
-    .line 1059
-    const v0, 0x7f09056e
+    if-nez v1, :cond_0
 
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+    .line 70
+    add-int/lit8 v0, v0, 0x1
 
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bx;->g:Ljava/lang/String;
-
-    .line 1060
-    const v0, 0x7f090273
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bx;->h:Ljava/lang/String;
-
-    .line 1061
-    const v0, 0x7f0904d4
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bx;->i:Ljava/lang/String;
-
-    .line 1062
-    const v0, 0x7f0904d3
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bx;->j:Ljava/lang/String;
-
-    .line 1063
-    const v0, 0x7f09047d
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bx;->k:Ljava/lang/String;
-
-    .line 1064
-    const v0, 0x7f0900fb
-
-    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lkik/android/util/bx;->l:Ljava/lang/String;
-
-    .line 104
+    .line 73
     :cond_0
-    new-instance v0, Lkik/android/util/bx$a;
+    sget-object v3, Lkik/android/util/bx;->b:Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Lkik/android/util/bx$a;-><init>()V
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->setLength(I)V
 
-    .line 105
-    iput v6, v0, Lkik/android/util/bx$a;->b:I
+    .line 74
+    if-lez v1, :cond_1
 
-    .line 106
-    invoke-static {}, Lkik/core/util/w;->b()J
+    .line 75
+    sget-object v3, Lkik/android/util/bx;->c:Ljava/util/Formatter;
 
-    move-result-wide v2
+    const-string v4, "%d:%02d:%02d"
 
-    sub-long/2addr v2, p0
+    const/4 v5, 0x3
 
-    .line 107
-    const-wide/32 v4, 0x1d4c0
+    new-array v5, v5, [Ljava/lang/Object;
 
-    cmp-long v1, v2, v4
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-gtz v1, :cond_2
+    move-result-object v1
 
-    .line 108
-    if-eqz p2, :cond_1
+    aput-object v1, v5, v6
 
-    .line 109
-    sget-object v1, Lkik/android/util/bx;->g:Ljava/lang/String;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
+    move-result-object v1
 
-    .line 161
+    aput-object v1, v5, v7
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, v5, v8
+
+    invoke-virtual {v3, v4, v5}, Ljava/util/Formatter;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/Formatter;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 78
     :goto_0
     return-object v0
 
-    .line 112
     :cond_1
-    sget-object v1, Lkik/android/util/bx;->h:Ljava/lang/String;
+    sget-object v1, Lkik/android/util/bx;->c:Ljava/util/Formatter;
 
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
+    const-string v3, "%d:%02d"
 
-    goto :goto_0
+    new-array v4, v8, [Ljava/lang/Object;
 
-    .line 116
-    :cond_2
-    const-wide/32 v4, 0x36ee80
-
-    cmp-long v1, v2, v4
-
-    if-gez v1, :cond_4
-
-    .line 117
-    if-eqz p2, :cond_3
-
-    .line 118
-    sget-object v1, Lkik/android/util/bx;->i:Ljava/lang/String;
-
-    new-array v4, v7, [Ljava/lang/Object;
-
-    div-long/2addr v2, v10
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
     aput-object v2, v4, v6
 
-    invoke-static {v1, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v0
 
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
+    aput-object v0, v4, v7
 
-    goto :goto_0
+    invoke-virtual {v1, v3, v4}, Ljava/util/Formatter;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/util/Formatter;
 
-    .line 121
-    :cond_3
-    sget-object v1, Lkik/android/util/bx;->j:Ljava/lang/String;
+    move-result-object v0
 
-    new-array v4, v7, [Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/util/Formatter;->toString()Ljava/lang/String;
 
-    div-long/2addr v2, v10
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    aput-object v2, v4, v6
-
-    invoke-static {v1, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
+    move-result-object v0
 
     goto :goto_0
+.end method
 
-    .line 125
-    :cond_4
-    const-wide/32 v4, 0x1ee62800
+.method public static a(Ljava/lang/String;Ljava/lang/String;FF)Ljava/lang/String;
+    .locals 25
 
-    cmp-long v1, v2, v4
+    .prologue
+    .line 335
+    :try_start_0
+    invoke-static/range {p0 .. p0}, Lcom/googlecode/mp4parser/authoring/container/mp4/MovieCreator;->build(Ljava/lang/String;)Lcom/googlecode/mp4parser/authoring/Movie;
 
-    if-gez v1, :cond_8
+    move-result-object v18
 
-    .line 126
-    sget-object v1, Lkik/android/util/bx;->d:Ljava/text/SimpleDateFormat;
+    .line 337
+    invoke-virtual/range {v18 .. v18}, Lcom/googlecode/mp4parser/authoring/Movie;->getTracks()Ljava/util/List;
 
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    move-result-object v7
+
+    .line 338
+    new-instance v2, Ljava/util/LinkedList;
+
+    invoke-direct {v2}, Ljava/util/LinkedList;-><init>()V
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v2}, Lcom/googlecode/mp4parser/authoring/Movie;->setTracks(Ljava/util/List;)V
+
+    .line 341
+    move/from16 v0, p2
+
+    float-to-double v10, v0
+
+    .line 342
+    move/from16 v0, p3
+
+    float-to-double v2, v0
+
+    const-wide/high16 v4, 0x3ff0000000000000L    # 1.0
+
+    sub-double v8, v2, v4
+
+    .line 344
+    const/4 v3, 0x0
+
+    .line 349
+    invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v12
+
+    :goto_0
+    invoke-interface {v12}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v12}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
+    check-cast v2, Lcom/googlecode/mp4parser/authoring/Track;
 
-    move-result-object v1
-
-    .line 127
-    sget-object v2, Lkik/android/util/bx;->e:Ljava/text/SimpleDateFormat;
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 128
-    sget-object v3, Lkik/android/util/bx;->e:Ljava/text/SimpleDateFormat;
-
-    invoke-static {}, Lkik/core/util/w;->b()J
-
-    move-result-wide v4
-
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    .line 350
+    invoke-interface {v2}, Lcom/googlecode/mp4parser/authoring/Track;->getSyncSamples()[J
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
+    if-eqz v4, :cond_8
+
+    invoke-interface {v2}, Lcom/googlecode/mp4parser/authoring/Track;->getSyncSamples()[J
+
+    move-result-object v4
+
+    array-length v4, v4
+
+    if-lez v4, :cond_8
+
+    .line 351
+    if-eqz v3, :cond_0
+
+    .line 356
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    const-string v3, "The startTime has already been corrected by another track with SyncSample. Not Supported."
+
+    invoke-direct {v2, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v2
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_1
+
+    .line 405
+    :catch_0
+    move-exception v2
+
+    :goto_1
+    invoke-static {v2}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
+
+    .line 407
+    const/16 p1, 0x0
+
+    :goto_2
+    return-object p1
+
+    .line 358
+    :cond_0
+    const/4 v3, 0x0
+
+    :try_start_1
+    invoke-static {v2, v10, v11, v3}, Lkik/android/util/bx;->a(Lcom/googlecode/mp4parser/authoring/Track;DZ)D
+
+    move-result-wide v4
+
+    .line 359
+    const/4 v3, 0x1
+
+    invoke-static {v2, v8, v9, v3}, Lkik/android/util/bx;->a(Lcom/googlecode/mp4parser/authoring/Track;DZ)D
+
+    move-result-wide v2
+
+    .line 360
+    const/4 v6, 0x1
+
+    :goto_3
+    move-wide v8, v2
+
+    move-wide v10, v4
+
+    move v3, v6
+
+    .line 362
+    goto :goto_0
+
+    .line 364
+    :cond_1
+    invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v19
+
+    :goto_4
+    invoke-interface/range {v19 .. v19}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    invoke-interface/range {v19 .. v19}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    check-cast v3, Lcom/googlecode/mp4parser/authoring/Track;
+
+    .line 365
+    const-wide/16 v14, 0x0
+
+    .line 366
+    const-wide/16 v16, 0x0
+
+    .line 367
+    const-wide/high16 v12, -0x4010000000000000L    # -1.0
+
+    .line 368
+    const-wide/16 v4, -0x1
+
+    .line 369
+    const-wide/16 v6, -0x1
+
+    .line 371
+    const/4 v2, 0x0
+
+    move-wide/from16 v23, v12
+
+    move-wide v12, v14
+
+    move-wide/from16 v14, v23
+
+    :goto_5
+    invoke-interface {v3}, Lcom/googlecode/mp4parser/authoring/Track;->getSampleDurations()[J
+
+    move-result-object v20
+
+    move-object/from16 v0, v20
+
+    array-length v0, v0
+
+    move/from16 v20, v0
+
+    move/from16 v0, v20
+
+    if-ge v2, v0, :cond_4
+
+    .line 372
+    invoke-interface {v3}, Lcom/googlecode/mp4parser/authoring/Track;->getSampleDurations()[J
+
+    move-result-object v20
+
+    aget-wide v20, v20, v2
+
+    .line 374
+    cmpl-double v22, v16, v14
+
+    if-lez v22, :cond_2
+
+    cmpg-double v22, v16, v10
+
+    if-gtz v22, :cond_2
+
+    move-wide v4, v12
+
+    .line 378
+    :cond_2
+    cmpl-double v14, v16, v14
+
+    if-lez v14, :cond_3
+
+    cmpg-double v14, v16, v8
+
+    if-gtz v14, :cond_3
+
+    move-wide v6, v12
+
+    .line 383
+    :cond_3
+    move-wide/from16 v0, v20
+
+    long-to-double v14, v0
+
+    invoke-interface {v3}, Lcom/googlecode/mp4parser/authoring/Track;->getTrackMetaData()Lcom/googlecode/mp4parser/authoring/TrackMetaData;
+
+    move-result-object v20
+
+    invoke-virtual/range {v20 .. v20}, Lcom/googlecode/mp4parser/authoring/TrackMetaData;->getTimescale()J
+
+    move-result-wide v20
+
+    move-wide/from16 v0, v20
+
+    long-to-double v0, v0
+
+    move-wide/from16 v20, v0
+
+    div-double v14, v14, v20
+
+    add-double v14, v14, v16
+
+    .line 384
+    const-wide/16 v20, 0x1
+
+    add-long v12, v12, v20
+
+    .line 371
+    add-int/lit8 v2, v2, 0x1
+
+    move-wide/from16 v23, v16
+
+    move-wide/from16 v16, v14
+
+    move-wide/from16 v14, v23
+
+    goto :goto_5
+
+    .line 386
+    :cond_4
+    new-instance v12, Lcom/googlecode/mp4parser/authoring/tracks/AppendTrack;
+
+    const/4 v2, 0x1
+
+    new-array v13, v2, [Lcom/googlecode/mp4parser/authoring/Track;
+
+    const/4 v14, 0x0
+
+    new-instance v2, Lcom/googlecode/mp4parser/authoring/tracks/CroppedTrack;
+
+    invoke-direct/range {v2 .. v7}, Lcom/googlecode/mp4parser/authoring/tracks/CroppedTrack;-><init>(Lcom/googlecode/mp4parser/authoring/Track;JJ)V
+
+    aput-object v2, v13, v14
+
+    invoke-direct {v12, v13}, Lcom/googlecode/mp4parser/authoring/tracks/AppendTrack;-><init>([Lcom/googlecode/mp4parser/authoring/Track;)V
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v0, v12}, Lcom/googlecode/mp4parser/authoring/Movie;->addTrack(Lcom/googlecode/mp4parser/authoring/Track;)V
+
+    goto :goto_4
+
+    .line 405
+    :catch_1
+    move-exception v2
+
+    goto/16 :goto_1
+
+    .line 388
+    :cond_5
+    new-instance v2, Lcom/googlecode/mp4parser/authoring/builder/DefaultMp4Builder;
+
+    invoke-direct {v2}, Lcom/googlecode/mp4parser/authoring/builder/DefaultMp4Builder;-><init>()V
+
+    move-object/from16 v0, v18
+
+    invoke-virtual {v2, v0}, Lcom/googlecode/mp4parser/authoring/builder/DefaultMp4Builder;->build(Lcom/googlecode/mp4parser/authoring/Movie;)Lcom/coremedia/iso/boxes/Container;
+
+    move-result-object v3
+
+    .line 390
+    const-string v2, "/moov/"
+
+    invoke-static {v3, v2}, Lcom/googlecode/mp4parser/util/Path;->getPath(Lcom/coremedia/iso/boxes/Container;Ljava/lang/String;)Lcom/coremedia/iso/boxes/Box;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_6
+
+    const-string v2, "/moov/"
+
+    invoke-static {v3, v2}, Lcom/googlecode/mp4parser/util/Path;->getPath(Lcom/coremedia/iso/boxes/Container;Ljava/lang/String;)Lcom/coremedia/iso/boxes/Box;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_7
+
+    const-string v2, "/moov/"
+
+    invoke-static {v3, v2}, Lcom/googlecode/mp4parser/util/Path;->getPath(Lcom/coremedia/iso/boxes/Container;Ljava/lang/String;)Lcom/coremedia/iso/boxes/Box;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/coremedia/iso/boxes/MovieBox;
+
+    invoke-virtual {v2}, Lcom/coremedia/iso/boxes/MovieBox;->getMovieHeaderBox()Lcom/coremedia/iso/boxes/MovieHeaderBox;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/coremedia/iso/boxes/MovieHeaderBox;->getDuration()J
+
+    move-result-wide v4
+
+    const-wide/16 v6, 0x0
+
+    cmp-long v2, v4, v6
+
+    if-nez v2, :cond_7
+
+    .line 391
+    :cond_6
+    const/16 p1, 0x0
+
+    goto/16 :goto_2
+
+    .line 395
+    :cond_7
+    new-instance v2, Ljava/io/FileOutputStream;
+
+    move-object/from16 v0, p1
+
+    invoke-direct {v2, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;)V
+
+    .line 396
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->getChannel()Ljava/nio/channels/FileChannel;
+
+    move-result-object v4
+
+    .line 397
+    invoke-interface {v3, v4}, Lcom/coremedia/iso/boxes/Container;->writeContainer(Ljava/nio/channels/WritableByteChannel;)V
+
+    .line 399
+    invoke-virtual {v4}, Ljava/nio/channels/FileChannel;->close()V
+
+    .line 400
+    invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto/16 :goto_2
+
+    :cond_8
+    move-wide v4, v10
+
+    move v6, v3
+
+    move-wide v2, v8
+
+    goto/16 :goto_3
+.end method
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ad;)Z
+    .locals 5
+
+    .prologue
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    .line 483
+    if-eqz p0, :cond_0
+
+    if-eqz p1, :cond_0
+
+    if-nez p2, :cond_1
+
+    :cond_0
+    move v0, v2
+
+    .line 509
+    :goto_0
+    return v0
+
+    .line 486
+    :cond_1
+    invoke-interface {p2, p1}, Lkik/core/interfaces/IConversation;->a(Ljava/lang/String;)Lkik/core/datatypes/f;
+
+    move-result-object v0
+
+    .line 487
+    if-eqz v0, :cond_2
+
+    invoke-interface {p2, v0}, Lkik/core/interfaces/IConversation;->a(Lkik/core/datatypes/f;)I
+
+    move-result v0
+
+    if-eq v0, v1, :cond_3
+
+    :cond_2
+    move v0, v2
+
+    .line 488
+    goto :goto_0
+
+    .line 491
+    :cond_3
+    const-string v0, "connectivity"
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/net/ConnectivityManager;
+
+    .line 492
+    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+
+    move-result-object v0
+
+    .line 494
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
+
+    move-result v3
+
+    if-nez v3, :cond_5
+
+    :cond_4
+    move v0, v2
+
+    .line 495
+    goto :goto_0
+
+    .line 498
+    :cond_5
+    const v3, 0x7f0904e1
+
+    invoke-static {v3}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 499
+    const-string v4, "kik.chat.video.prefetch"
+
+    invoke-interface {p3, v4, v3}, Lkik/core/interfaces/ad;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 500
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_6
 
-    .line 129
-    if-eqz p2, :cond_5
-
-    .line 130
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 134
-    :cond_5
-    sget-object v2, Lkik/android/util/bx;->k:Ljava/lang/String;
-
-    new-array v3, v7, [Ljava/lang/Object;
-
-    aput-object v1, v3, v6
-
-    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    iput-object v2, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    .line 135
-    iget-object v2, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    invoke-virtual {v2, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-
-    move-result v1
-
-    iput v1, v0, Lkik/android/util/bx$a;->b:I
-
-    goto :goto_0
-
-    .line 140
-    :cond_6
-    if-eqz p2, :cond_7
-
-    .line 141
-    iput-object v2, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 145
-    :cond_7
-    sget-object v3, Lkik/android/util/bx;->l:Ljava/lang/String;
-
-    new-array v4, v8, [Ljava/lang/Object;
-
-    aput-object v2, v4, v6
-
-    aput-object v1, v4, v7
-
-    invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    iput-object v2, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    .line 146
-    iget-object v2, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    invoke-virtual {v2, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-
-    move-result v1
-
-    iput v1, v0, Lkik/android/util/bx$a;->b:I
-
-    goto/16 :goto_0
-
-    .line 152
-    :cond_8
-    sget-object v1, Lkik/android/util/bx;->a:Ljava/text/SimpleDateFormat;
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 153
-    if-eqz p2, :cond_9
-
-    .line 154
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    goto/16 :goto_0
-
-    .line 158
-    :cond_9
-    sget-object v2, Lkik/android/util/bx;->d:Ljava/text/SimpleDateFormat;
-
-    invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 159
-    sget-object v3, Lkik/android/util/bx;->l:Ljava/lang/String;
-
-    new-array v4, v8, [Ljava/lang/Object;
-
-    aput-object v1, v4, v6
-
-    aput-object v2, v4, v7
-
-    invoke-static {v3, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    .line 160
-    iget-object v1, v0, Lkik/android/util/bx$a;->a:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-
-    move-result v1
-
-    iput v1, v0, Lkik/android/util/bx$a;->b:I
-
-    goto/16 :goto_0
-.end method
-
-.method public static a(Ljava/lang/CharSequence;)Z
-    .locals 1
-
-    .prologue
-    .line 460
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+    .line 501
+    invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-ne v0, v1, :cond_7
 
-    .line 461
-    :cond_0
-    const/4 v0, 0x0
+    move v0, v1
 
-    .line 463
-    :goto_0
-    return v0
+    .line 502
+    goto :goto_0
 
-    :cond_1
-    sget-object v0, Lkik/android/util/bl;->b:Ljava/util/regex/Pattern;
+    .line 505
+    :cond_6
+    const v0, 0x7f0904e0
 
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    invoke-static {v0}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
+    if-eqz v0, :cond_7
+
+    move v0, v1
+
+    .line 506
     goto :goto_0
-.end method
 
-.method public static a(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 1
-
-    .prologue
-    .line 490
-    if-eqz p0, :cond_0
-
-    if-nez p1, :cond_1
-
-    .line 491
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 493
-    :goto_0
-    return v0
-
-    :cond_1
-    invoke-static {p0, p1}, Lorg/apache/a/b/c;->b(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    goto :goto_0
-.end method
-
-.method public static a([Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 4
-
-    .prologue
-    const/4 v0, 0x0
-
-    .line 505
-    if-eqz p0, :cond_0
-
-    if-nez p1, :cond_1
-
-    .line 513
-    :cond_0
-    :goto_0
-    return v0
-
-    .line 508
-    :cond_1
-    array-length v2, p0
-
-    move v1, v0
-
-    :goto_1
-    if-ge v1, v2, :cond_0
-
-    aget-object v3, p0, v1
+    :cond_7
+    move v0, v2
 
     .line 509
-    invoke-static {v3, p1}, Lkik/android/util/bx;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    goto :goto_0
+.end method
 
-    move-result v3
+.method public static a(Ljava/lang/String;)Z
+    .locals 2
 
-    if-eqz v3, :cond_2
+    .prologue
+    const/4 v0, 0x0
 
-    .line 510
+    .line 84
+    if-nez p0, :cond_1
+
+    .line 91
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 87
+    :cond_1
+    const-string v1, "."
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    move-result v1
+
+    .line 88
+    if-ltz v1, :cond_0
+
+    .line 91
+    sget-object v0, Lkik/android/util/bx;->a:Ljava/util/Set;
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    goto :goto_0
+.end method
+
+.method public static a(Ljava/lang/String;J)Z
+    .locals 7
+
+    .prologue
     const/4 v0, 0x1
+
+    .line 514
+    const-wide/32 v2, 0x1d4c0
+
+    cmp-long v1, p1, v2
+
+    if-lez v1, :cond_1
+
+    .line 527
+    :cond_0
+    :goto_0
+    return v0
+
+    .line 1166
+    :cond_1
+    const/16 v1, 0x12
+
+    invoke-static {v1}, Lcom/kik/sdkutils/c;->a(I)Z
+
+    move-result v1
+
+    .line 519
+    if-eqz v1, :cond_2
+
+    .line 520
+    invoke-static {p0}, Lkik/android/util/z;->b(Ljava/lang/String;)J
+
+    move-result-wide v2
+
+    .line 527
+    :goto_1
+    const-wide/32 v4, 0xf00000
+
+    cmp-long v1, v2, v4
+
+    if-gtz v1, :cond_0
+
+    const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 508
+    .line 523
     :cond_2
-    add-int/lit8 v1, v1, 0x1
+    new-instance v1, Ljava/io/File;
+
+    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 524
+    invoke-virtual {v1}, Ljava/io/File;->length()J
+
+    move-result-wide v2
 
     goto :goto_1
 .end method
 
-.method public static b(JJLandroid/content/res/Resources;)Ljava/lang/String;
-    .locals 8
-
-    .prologue
-    .line 610
-    invoke-static {p0, p1, p2, p3, p4}, Lkik/android/util/bx;->c(JJLandroid/content/res/Resources;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 4556
-    sub-long v2, p2, p0
-
-    .line 4558
-    const-wide/32 v4, 0x1d4c0
-
-    cmp-long v0, v2, v4
-
-    if-gtz v0, :cond_1
-
-    .line 4559
-    const v0, 0x7f09056e
-
-    invoke-virtual {p4, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 613
-    :goto_0
-    if-nez v0, :cond_0
-
-    .line 614
-    new-instance v0, Ljava/util/Date;
-
-    invoke-direct {v0, p0, p1}, Ljava/util/Date;-><init>(J)V
-
-    .line 615
-    sget-object v2, Lkik/android/util/bx;->d:Ljava/text/SimpleDateFormat;
-
-    invoke-virtual {v2, v0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 618
-    :cond_0
-    invoke-static {v1, v0}, Lkik/android/util/bx;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    .line 4562
-    :cond_1
-    const-wide/32 v4, 0x1b7740
-
-    cmp-long v0, v2, v4
-
-    if-gtz v0, :cond_2
-
-    .line 4563
-    const v0, 0x7f0904d3
-
-    const/4 v4, 0x1
-
-    new-array v4, v4, [Ljava/lang/Object;
-
-    const/4 v5, 0x0
-
-    const-wide/32 v6, 0xea60
-
-    div-long/2addr v2, v6
-
-    invoke-static {v2, v3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    move-result-object v2
-
-    aput-object v2, v4, v5
-
-    invoke-virtual {p4, v0, v4}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 4566
-    :cond_2
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
-.method public static b(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    .prologue
-    .line 240
-    if-nez p0, :cond_1
-
-    .line 241
-    const-string v0, ""
-
-    .line 249
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 244
-    :cond_1
-    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 245
-    const-string v1, " "
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-
-    move-result v1
-
-    .line 246
-    const/4 v2, -0x1
-
-    if-eq v1, v2, :cond_0
-
-    .line 247
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method private static b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static b(Landroid/media/MediaMetadataRetriever;I)J
     .locals 2
-
-    .prologue
-    .line 571
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 573
-    if-eqz p0, :cond_0
-
-    .line 574
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 575
-    const-string v1, " "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 578
-    :cond_0
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 580
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method private static c(JJLandroid/content/res/Resources;)Ljava/lang/String;
-    .locals 6
-
-    .prologue
-    const-wide/32 v4, 0x5265c00
-
-    .line 532
-    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0, p1}, Ljava/util/TimeZone;->getOffset(J)I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    add-long/2addr v0, p0
-
-    div-long/2addr v0, v4
-
-    .line 533
-    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p2, p3}, Ljava/util/TimeZone;->getOffset(J)I
-
-    move-result v2
-
-    int-to-long v2, v2
-
-    add-long/2addr v2, p2
-
-    div-long/2addr v2, v4
-
-    .line 534
-    sub-long v0, v2, v0
-
-    .line 536
-    new-instance v2, Ljava/util/Date;
-
-    invoke-direct {v2, p0, p1}, Ljava/util/Date;-><init>(J)V
-
-    .line 537
-    new-instance v3, Ljava/util/Date;
-
-    invoke-direct {v3, p2, p3}, Ljava/util/Date;-><init>(J)V
-
-    .line 539
-    const-wide/16 v4, 0x0
-
-    cmp-long v4, v0, v4
-
-    if-nez v4, :cond_0
-
-    .line 540
-    const/4 v0, 0x0
-
-    .line 551
-    :goto_0
-    return-object v0
-
-    .line 543
-    :cond_0
-    const-wide/16 v4, 0x1
-
-    cmp-long v0, v0, v4
-
-    if-nez v0, :cond_1
-
-    .line 544
-    const v0, 0x7f0904d8
-
-    invoke-virtual {p4, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 547
-    :cond_1
-    invoke-virtual {v2}, Ljava/util/Date;->getYear()I
-
-    move-result v0
-
-    invoke-virtual {v3}, Ljava/util/Date;->getYear()I
-
-    move-result v1
-
-    if-ne v0, v1, :cond_2
-
-    .line 548
-    sget-object v0, Lkik/android/util/bx;->b:Ljava/text/SimpleDateFormat;
-
-    invoke-virtual {v0, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 551
-    :cond_2
-    sget-object v0, Lkik/android/util/bx;->c:Ljava/text/SimpleDateFormat;
-
-    invoke-virtual {v0, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-.end method
-
-.method public static c(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-    .param p0    # Ljava/lang/String;
-        .annotation runtime Ljavax/annotation/Nullable;
-        .end annotation
-    .end param
-    .annotation runtime Ljavax/annotation/Nonnull;
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0xa
     .end annotation
 
     .prologue
-    .line 293
-    if-nez p0, :cond_0
+    .line 464
+    invoke-virtual {p0, p1}, Landroid/media/MediaMetadataRetriever;->extractMetadata(I)Ljava/lang/String;
 
-    const-string p0, ""
+    move-result-object v0
 
-    :cond_0
-    return-object p0
-.end method
+    .line 466
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-.method public static d(Ljava/lang/String;)Z
-    .locals 1
+    move-result-wide v0
 
-    .prologue
-    .line 478
-    if-eqz p0, :cond_0
-
-    const-string v0, ""
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
+    .line 469
     :goto_0
-    return v0
+    return-wide v0
 
-    :cond_1
-    const/4 v0, 0x0
+    :catch_0
+    move-exception v0
+
+    const-wide/16 v0, -0x1
 
     goto :goto_0
 .end method
 
-.method public static e(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
+.method public static b(Ljava/lang/String;)Landroid/graphics/Bitmap;
+    .locals 2
+    .annotation build Landroid/annotation/TargetApi;
+        value = 0xa
+    .end annotation
 
     .prologue
-    .line 623
-    invoke-static {p0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    const/4 v0, 0x0
 
-    move-result v0
+    .line 103
+    if-nez p0, :cond_0
 
-    if-eqz v0, :cond_0
-
-    .line 627
+    .line 115
     :goto_0
-    return-object p0
+    return-object v0
 
-    .line 626
+    .line 106
     :cond_0
-    invoke-static {p0}, Landroid/text/TextUtils;->htmlEncode(Ljava/lang/String;)Ljava/lang/String;
+    new-instance v1, Landroid/media/MediaMetadataRetriever;
+
+    invoke-direct {v1}, Landroid/media/MediaMetadataRetriever;-><init>()V
+
+    .line 108
+    :try_start_0
+    invoke-virtual {v1, p0}, Landroid/media/MediaMetadataRetriever;->setDataSource(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 115
+    invoke-static {v1}, Lkik/android/util/bx;->a(Landroid/media/MediaMetadataRetriever;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 627
-    const-string v1, " "
+    goto :goto_0
 
-    const-string v2, "&nbsp;"
+    .line 112
+    :catch_0
+    move-exception v1
 
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    goto :goto_0
+.end method
 
-    move-result-object p0
+.method public static c(Ljava/lang/String;)I
+    .locals 2
+
+    .prologue
+    const/4 v0, -0x1
+
+    .line 261
+    if-nez p0, :cond_0
+
+    .line 288
+    :goto_0
+    return v0
+
+    .line 266
+    :cond_0
+    const/16 v1, 0xa
+
+    invoke-static {v1}, Lcom/kik/sdkutils/c;->a(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 267
+    new-instance v1, Landroid/media/MediaMetadataRetriever;
+
+    invoke-direct {v1}, Landroid/media/MediaMetadataRetriever;-><init>()V
+
+    .line 269
+    :try_start_0
+    invoke-virtual {v1, p0}, Landroid/media/MediaMetadataRetriever;->setDataSource(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 275
+    const/16 v0, 0x9
+
+    invoke-static {v1, v0}, Lkik/android/util/bx;->a(Landroid/media/MediaMetadataRetriever;I)I
+
+    move-result v0
+
+    .line 276
+    invoke-virtual {v1}, Landroid/media/MediaMetadataRetriever;->release()V
+
+    goto :goto_0
+
+    .line 280
+    :cond_1
+    :try_start_1
+    new-instance v1, Landroid/media/MediaPlayer;
+
+    invoke-direct {v1}, Landroid/media/MediaPlayer;-><init>()V
+
+    .line 281
+    invoke-virtual {v1, p0}, Landroid/media/MediaPlayer;->setDataSource(Ljava/lang/String;)V
+
+    .line 282
+    invoke-virtual {v1}, Landroid/media/MediaPlayer;->getDuration()I
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 273
+    :catch_0
+    move-exception v1
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v1
 
     goto :goto_0
 .end method

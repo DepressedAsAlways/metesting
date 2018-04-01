@@ -1,14 +1,11 @@
 .class final Lcom/instabug/library/d/b$1;
-.super Ljava/lang/Object;
+.super Lrx/j;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/instabug/library/d/b;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/instabug/library/d/b;->a([I)Lcom/instabug/library/d/b$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,68 +13,104 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lrx/j",
+        "<",
+        "Landroid/graphics/Bitmap;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic a:Lcom/instabug/library/model/c;
-
-.field final synthetic b:Lcom/instabug/library/d/b;
+.field final synthetic a:Lcom/instabug/library/d/b;
 
 
 # direct methods
-.method constructor <init>(Lcom/instabug/library/d/b;Lcom/instabug/library/model/c;)V
+.method constructor <init>(Lcom/instabug/library/d/b;)V
     .locals 0
 
     .prologue
-    .line 196
-    iput-object p1, p0, Lcom/instabug/library/d/b$1;->b:Lcom/instabug/library/d/b;
+    .line 84
+    iput-object p1, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/d/b;
 
-    iput-object p2, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/model/c;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lrx/j;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final synthetic a(Ljava/lang/Object;)V
+    .locals 1
 
     .prologue
-    .line 199
-    const-string v0, "getPreservedActivity().runOnUiThread"
+    .line 84
+    check-cast p1, Landroid/graphics/Bitmap;
 
-    invoke-static {p0, v0}, Lcom/instabug/library/util/InstabugSDKLogger;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 1098
+    iget-object v0, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/d/b;
 
-    .line 201
-    iget-object v0, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/model/c;
-
-    invoke-virtual {v0}, Lcom/instabug/library/model/c;->a()Ljava/lang/String;
+    invoke-static {v0}, Lcom/instabug/library/d/b;->a(Lcom/instabug/library/d/b;)Lcom/instabug/library/d/b/a;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/instabug/library/d/b$1;->b:Lcom/instabug/library/d/b;
+    if-eqz v0, :cond_0
 
-    invoke-static {v1}, Lcom/instabug/library/d/b;->a(Lcom/instabug/library/d/b;)Lcom/instabug/library/model/c;
+    .line 1099
+    iget-object v0, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/d/b;
 
-    move-result-object v1
+    invoke-static {v0}, Lcom/instabug/library/d/b;->a(Lcom/instabug/library/d/b;)Lcom/instabug/library/d/b/a;
 
-    invoke-virtual {v1}, Lcom/instabug/library/model/c;->a()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    invoke-interface {v0, p1}, Lcom/instabug/library/d/b/a;->a(Landroid/graphics/Bitmap;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 84
+    :cond_0
+    return-void
+.end method
 
-    move-result v0
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 1
+
+    .prologue
+    .line 89
+    const-string v0, "Screenshot capture failed"
+
+    invoke-static {v0}, Lcom/instabug/library/d/d/a;->b(Ljava/lang/CharSequence;)V
+
+    .line 90
+    invoke-static {p1}, Lcom/instabug/library/d/d/a;->a(Ljava/lang/Throwable;)V
+
+    .line 92
+    iget-object v0, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/d/b;
+
+    invoke-static {v0}, Lcom/instabug/library/d/b;->a(Lcom/instabug/library/d/b;)Lcom/instabug/library/d/b/a;
+
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 202
-    iget-object v0, p0, Lcom/instabug/library/d/b$1;->b:Lcom/instabug/library/d/b;
+    .line 93
+    iget-object v0, p0, Lcom/instabug/library/d/b$1;->a:Lcom/instabug/library/d/b;
 
-    invoke-static {v0}, Lcom/instabug/library/d/b;->b(Lcom/instabug/library/d/b;)V
+    invoke-static {v0}, Lcom/instabug/library/d/b;->a(Lcom/instabug/library/d/b;)Lcom/instabug/library/d/b/a;
 
-    .line 204
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lcom/instabug/library/d/b/a;->a(Ljava/lang/Throwable;)V
+
+    .line 95
     :cond_0
+    return-void
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .prologue
+    .line 86
     return-void
 .end method

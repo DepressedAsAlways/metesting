@@ -23,12 +23,12 @@
 
 
 # instance fields
-.field private final b:Ldagger/b;
+.field private final b:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikScopedDialogFragment;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lcom/kik/metrics/c/d;",
             ">;"
         }
     .end annotation
@@ -50,7 +50,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ICommunication;",
+            "Lcom/kik/android/Mixpanel;",
             ">;"
         }
     .end annotation
@@ -61,7 +61,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
+            "Lkik/core/interfaces/ICommunication;",
             ">;"
         }
     .end annotation
@@ -72,7 +72,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/f/e;",
+            "Lkik/core/e/e;",
             ">;"
         }
     .end annotation
@@ -117,14 +117,18 @@
     goto :goto_0
 .end method
 
-.method private constructor <init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+.method private constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikScopedDialogFragment;",
+            "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/metrics/c/d;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -136,11 +140,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/f/e;",
+            "Lkik/core/e/e;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -150,10 +150,10 @@
     .end annotation
 
     .prologue
-    .line 22
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 23
+    .line 37
     sget-boolean v0, Lkik/android/widget/GifWidget_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -166,11 +166,11 @@
 
     throw v0
 
-    .line 24
+    .line 38
     :cond_0
-    iput-object p1, p0, Lkik/android/widget/GifWidget_MembersInjector;->b:Ldagger/b;
+    iput-object p1, p0, Lkik/android/widget/GifWidget_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 25
+    .line 39
     sget-boolean v0, Lkik/android/widget/GifWidget_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -183,11 +183,11 @@
 
     throw v0
 
-    .line 26
+    .line 40
     :cond_1
     iput-object p2, p0, Lkik/android/widget/GifWidget_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 27
+    .line 41
     sget-boolean v0, Lkik/android/widget/GifWidget_MembersInjector;->a:Z
 
     if-nez v0, :cond_2
@@ -200,11 +200,11 @@
 
     throw v0
 
-    .line 28
+    .line 42
     :cond_2
     iput-object p3, p0, Lkik/android/widget/GifWidget_MembersInjector;->d:Ljavax/inject/Provider;
 
-    .line 29
+    .line 43
     sget-boolean v0, Lkik/android/widget/GifWidget_MembersInjector;->a:Z
 
     if-nez v0, :cond_3
@@ -217,11 +217,11 @@
 
     throw v0
 
-    .line 30
+    .line 44
     :cond_3
     iput-object p4, p0, Lkik/android/widget/GifWidget_MembersInjector;->e:Ljavax/inject/Provider;
 
-    .line 31
+    .line 45
     sget-boolean v0, Lkik/android/widget/GifWidget_MembersInjector;->a:Z
 
     if-nez v0, :cond_4
@@ -234,11 +234,11 @@
 
     throw v0
 
-    .line 32
+    .line 46
     :cond_4
     iput-object p5, p0, Lkik/android/widget/GifWidget_MembersInjector;->f:Ljavax/inject/Provider;
 
-    .line 33
+    .line 47
     sget-boolean v0, Lkik/android/widget/GifWidget_MembersInjector;->a:Z
 
     if-nez v0, :cond_5
@@ -251,22 +251,26 @@
 
     throw v0
 
-    .line 34
+    .line 48
     :cond_5
     iput-object p6, p0, Lkik/android/widget/GifWidget_MembersInjector;->g:Ljavax/inject/Provider;
 
-    .line 35
+    .line 49
     return-void
 .end method
 
-.method public static a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+.method public static a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikScopedDialogFragment;",
+            "Lkik/core/interfaces/ad;",
+            ">;",
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/metrics/c/d;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -278,11 +282,7 @@
             ">;",
             "Ljavax/inject/Provider",
             "<",
-            "Landroid/content/res/Resources;",
-            ">;",
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/f/e;",
+            "Lkik/core/e/e;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -296,7 +296,7 @@
     .end annotation
 
     .prologue
-    .line 51
+    .line 58
     new-instance v0, Lkik/android/widget/GifWidget_MembersInjector;
 
     move-object v1, p0
@@ -311,7 +311,7 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lkik/android/widget/GifWidget_MembersInjector;-><init>(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    invoke-direct/range {v0 .. v6}, Lkik/android/widget/GifWidget_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
 
     return-object v0
 .end method
@@ -325,10 +325,10 @@
     .line 13
     check-cast p1, Lkik/android/widget/GifWidget;
 
-    .line 1039
+    .line 1069
     if-nez p1, :cond_0
 
-    .line 1040
+    .line 1070
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -337,14 +337,19 @@
 
     throw v0
 
-    .line 1042
+    .line 1072
     :cond_0
-    iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->b:Ldagger/b;
+    iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->b:Ljavax/inject/Provider;
 
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment_MembersInjector;->a(Lkik/android/chat/fragment/KikScopedDialogFragment;Ljavax/inject/Provider;)V
 
-    .line 1043
+    .line 1074
     iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->c:Ljavax/inject/Provider;
+
+    invoke-static {p1, v0}, Lkik/android/chat/fragment/KikScopedDialogFragment_MembersInjector;->b(Lkik/android/chat/fragment/KikScopedDialogFragment;Ljavax/inject/Provider;)V
+
+    .line 1076
+    iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->d:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -354,8 +359,8 @@
 
     iput-object v0, p1, Lkik/android/widget/GifWidget;->a:Lcom/kik/android/Mixpanel;
 
-    .line 1044
-    iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->d:Ljavax/inject/Provider;
+    .line 1077
+    iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->e:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
@@ -365,29 +370,18 @@
 
     iput-object v0, p1, Lkik/android/widget/GifWidget;->b:Lkik/core/interfaces/ICommunication;
 
-    .line 1045
-    iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->e:Ljavax/inject/Provider;
-
-    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/res/Resources;
-
-    iput-object v0, p1, Lkik/android/widget/GifWidget;->c:Landroid/content/res/Resources;
-
-    .line 1046
+    .line 1078
     iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->f:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lkik/core/f/e;
+    check-cast v0, Lkik/core/e/e;
 
-    iput-object v0, p1, Lkik/android/widget/GifWidget;->d:Lkik/core/f/e;
+    iput-object v0, p1, Lkik/android/widget/GifWidget;->c:Lkik/core/e/e;
 
-    .line 1047
+    .line 1079
     iget-object v0, p0, Lkik/android/widget/GifWidget_MembersInjector;->g:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
@@ -396,7 +390,7 @@
 
     check-cast v0, Lkik/android/chat/JoinGifTrayHelper;
 
-    iput-object v0, p1, Lkik/android/widget/GifWidget;->e:Lkik/android/chat/JoinGifTrayHelper;
+    iput-object v0, p1, Lkik/android/widget/GifWidget;->d:Lkik/android/chat/JoinGifTrayHelper;
 
     .line 13
     return-void

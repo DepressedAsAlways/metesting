@@ -1,5 +1,5 @@
 .class final Lkik/android/challenge/a$2;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Landroid/os/Bundle;",
         ">;"
@@ -39,7 +39,7 @@
 
     iput-object p2, p0, Lkik/android/challenge/a$2;->a:Lcom/kik/events/Promise;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     check-cast p1, Landroid/os/Bundle;
 
     .line 1075
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)V
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
     .line 1076
     const-string v0, "extra.resultUrl"
@@ -66,7 +66,7 @@
     .line 1077
     iget-object v1, p0, Lkik/android/challenge/a$2;->b:Lkik/android/challenge/a;
 
-    invoke-static {v1}, Lkik/android/challenge/a;->a(Lkik/android/challenge/a;)Lkik/core/interfaces/ac;
+    invoke-static {v1}, Lkik/android/challenge/a;->a(Lkik/android/challenge/a;)Lkik/core/interfaces/ad;
 
     move-result-object v1
 
@@ -78,7 +78,7 @@
 
     move-result-object v3
 
-    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ac;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    invoke-interface {v1, v2, v3}, Lkik/core/interfaces/ad;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
 
     .line 1078
     iget-object v1, p0, Lkik/android/challenge/a$2;->a:Lcom/kik/events/Promise;
@@ -94,7 +94,7 @@
 
     .prologue
     .line 84
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)V
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
     .line 85
     iget-object v0, p0, Lkik/android/challenge/a$2;->a:Lcom/kik/events/Promise;

@@ -1,5 +1,5 @@
 .class final Lcom/kik/cards/web/CardsWebViewFragment$19;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/Object;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 953
+    .line 962
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$19;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,11 +46,11 @@
     .locals 1
 
     .prologue
-    .line 958
+    .line 967
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$19;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
-    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->r(Lcom/kik/cards/web/CardsWebViewFragment;)V
+    invoke-static {v0}, Lcom/kik/cards/web/CardsWebViewFragment;->s(Lcom/kik/cards/web/CardsWebViewFragment;)V
 
-    .line 959
+    .line 968
     return-void
 .end method

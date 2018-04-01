@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkik/android/util/bc;->c(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->c(Ljava/lang/Throwable;)V
 
     .line 56
     :cond_1

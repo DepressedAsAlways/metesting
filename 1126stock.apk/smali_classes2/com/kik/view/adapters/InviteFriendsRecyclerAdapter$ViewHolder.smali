@@ -24,18 +24,14 @@
 .field private c:Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$a;
 
 .field contactName:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100298
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100320
     .end annotation
 .end field
 
 .field phoneNumberOrEmail:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f100299
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f100321
     .end annotation
 .end field
 
@@ -69,7 +65,7 @@
     invoke-direct {p0, p1}, Landroid/support/v7/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
     .line 44
-    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 45
     iput-object p2, p0, Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$ViewHolder;->c:Lcom/kik/view/adapters/InviteFriendsRecyclerAdapter$a;
@@ -134,7 +130,7 @@
 
     iget-object v1, p1, Lkik/android/addressbook/AndroidAddressBookCursorWrapper$AndroidAddressBookEntry;->c:Ljava/lang/String;
 
-    invoke-static {v1}, Lkik/core/util/v;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lkik/core/util/u;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -156,7 +152,7 @@
     .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f100296
+            0x7f10031e
         }
     .end annotation
 

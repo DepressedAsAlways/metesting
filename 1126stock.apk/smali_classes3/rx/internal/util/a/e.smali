@@ -16,7 +16,7 @@
 
 
 # static fields
-.field private static final e:J
+.field protected static final d:J
 
 
 # instance fields
@@ -33,11 +33,11 @@
 
     const-string v1, "consumerIndex"
 
-    invoke-static {v0, v1}, Lrx/internal/util/a/ae;->a(Ljava/lang/Class;Ljava/lang/String;)J
+    invoke-static {v0, v1}, Lrx/internal/util/a/y;->a(Ljava/lang/Class;Ljava/lang/String;)J
 
     move-result-wide v0
 
-    sput-wide v0, Lrx/internal/util/a/e;->e:J
+    sput-wide v0, Lrx/internal/util/a/e;->d:J
 
     return-void
 .end method
@@ -70,9 +70,9 @@
 
     .prologue
     .line 73
-    sget-object v0, Lrx/internal/util/a/ae;->a:Lsun/misc/Unsafe;
+    sget-object v0, Lrx/internal/util/a/y;->a:Lsun/misc/Unsafe;
 
-    sget-wide v2, Lrx/internal/util/a/e;->e:J
+    sget-wide v2, Lrx/internal/util/a/e;->d:J
 
     move-object v1, p0
 

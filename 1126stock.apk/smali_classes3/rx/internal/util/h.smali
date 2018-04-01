@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/j;
+.implements Lrx/k;
 
 
 # instance fields
@@ -12,7 +12,7 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lrx/j;",
+            "Lrx/k;",
             ">;"
         }
     .end annotation
@@ -33,7 +33,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lrx/j;)V
+.method public constructor <init>(Lrx/k;)V
     .locals 1
 
     .prologue
@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method public varargs constructor <init>([Lrx/j;)V
+.method public varargs constructor <init>([Lrx/k;)V
     .locals 2
 
     .prologue
@@ -80,12 +80,12 @@
 
 
 # virtual methods
-.method public final a(Lrx/j;)V
+.method public final a(Lrx/k;)V
     .locals 1
 
     .prologue
     .line 71
-    invoke-interface {p1}, Lrx/j;->isUnsubscribed()Z
+    invoke-interface {p1}, Lrx/k;->isUnsubscribed()Z
 
     move-result v0
 
@@ -151,12 +151,12 @@
 
     .line 88
     :cond_3
-    invoke-interface {p1}, Lrx/j;->unsubscribe()V
+    invoke-interface {p1}, Lrx/k;->unsubscribe()V
 
     goto :goto_0
 .end method
 
-.method public final b(Lrx/j;)V
+.method public final b(Lrx/k;)V
     .locals 2
 
     .prologue
@@ -203,7 +203,7 @@
     if-eqz v0, :cond_1
 
     .line 103
-    invoke-interface {p1}, Lrx/j;->unsubscribe()V
+    invoke-interface {p1}, Lrx/k;->unsubscribe()V
 
     goto :goto_0
 
@@ -295,11 +295,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lrx/j;
+    check-cast v0, Lrx/k;
 
     .line 1136
     :try_start_1
-    invoke-interface {v0}, Lrx/j;->unsubscribe()V
+    invoke-interface {v0}, Lrx/k;->unsubscribe()V
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
 

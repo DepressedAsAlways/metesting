@@ -1,11 +1,11 @@
 .class final Lkik/android/chat/fragment/VideoMediaItemFragment$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lkik/android/chat/fragment/VideoMediaItemFragment;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lkik/android/chat/fragment/VideoMediaItemFragment;->a(Lkik/android/chat/fragment/VideoMediaItemFragment;Lkik/android/chat/fragment/MediaItemFragment;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/io/File;",
         ">;"
@@ -35,7 +35,7 @@
     .line 234
     iput-object p1, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -90,12 +90,12 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 1244
     iget-object v0, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->r()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->n()V
 
     .line 1246
     iget-object v0, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
@@ -122,7 +122,7 @@
     .line 253
     iget-object v0, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->p()Z
+    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->l()Z
 
     move-result v0
 
@@ -139,7 +139,7 @@
     if-eqz v0, :cond_1
 
     .line 257
-    const v0, 0x7f0901fe
+    const v0, 0x7f090212
 
     invoke-static {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->a(I)V
 
@@ -152,7 +152,7 @@
     .line 263
     iget-object v0, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->r()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->n()V
 
     .line 264
     new-array v0, v1, [Landroid/view/View;
@@ -163,12 +163,12 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lkik/android/util/ch;->g([Landroid/view/View;)V
+    invoke-static {v0}, Lkik/android/util/ca;->g([Landroid/view/View;)V
 
     .line 265
     iget-object v0, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
 
-    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->g()V
+    invoke-virtual {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->f()V
 
     goto :goto_0
 
@@ -176,7 +176,7 @@
     :cond_1
     iget-object v0, p0, Lkik/android/chat/fragment/VideoMediaItemFragment$1;->a:Lkik/android/chat/fragment/VideoMediaItemFragment;
 
-    invoke-static {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->a(Lkik/android/chat/fragment/VideoMediaItemFragment;)V
+    invoke-static {v0}, Lkik/android/chat/fragment/VideoMediaItemFragment;->e(Lkik/android/chat/fragment/VideoMediaItemFragment;)V
 
     goto :goto_1
 .end method

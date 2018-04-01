@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/b/g;
+.implements Lrx/functions/g;
 
 
 # annotations
@@ -19,13 +19,13 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lrx/b/g",
+        "Lrx/functions/g",
         "<",
         "Ljava/util/List",
         "<+",
-        "Lrx/c",
+        "Lrx/d",
         "<*>;>;[",
-        "Lrx/c",
+        "Lrx/d",
         "<*>;>;"
     }
 .end annotation
@@ -56,13 +56,13 @@
 
     move-result v0
 
-    new-array v0, v0, [Lrx/c;
+    new-array v0, v0, [Lrx/d;
 
     invoke-interface {p1, v0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lrx/c;
+    check-cast v0, [Lrx/d;
 
     .line 86
     return-object v0

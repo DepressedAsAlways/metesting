@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 681
+    .line 660
     invoke-direct {p0}, Lcom/google/gson/o;-><init>()V
 
     return-void
@@ -47,8 +47,8 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 681
-    .line 1684
+    .line 660
+    .line 1663
     invoke-virtual {p1}, Lcom/google/gson/stream/a;->f()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
@@ -57,39 +57,39 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 1685
+    .line 1664
     invoke-virtual {p1}, Lcom/google/gson/stream/a;->j()V
 
-    .line 1705
+    .line 1684
     :goto_0
     return-object v1
 
-    .line 1688
+    .line 1667
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/a;->h()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1689
+    .line 1668
     new-instance v3, Ljava/util/StringTokenizer;
 
     const-string v2, "_"
 
     invoke-direct {v3, v0, v2}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1693
+    .line 1672
     invoke-virtual {v3}, Ljava/util/StringTokenizer;->hasMoreElements()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 1694
+    .line 1673
     invoke-virtual {v3}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1696
+    .line 1675
     :goto_1
     invoke-virtual {v3}, Ljava/util/StringTokenizer;->hasMoreElements()Z
 
@@ -97,12 +97,12 @@
 
     if-eqz v2, :cond_4
 
-    .line 1697
+    .line 1676
     invoke-virtual {v3}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1699
+    .line 1678
     :goto_2
     invoke-virtual {v3}, Ljava/util/StringTokenizer;->hasMoreElements()Z
 
@@ -110,38 +110,38 @@
 
     if-eqz v4, :cond_3
 
-    .line 1700
+    .line 1679
     invoke-virtual {v3}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object v1
 
     move-object v3, v1
 
-    .line 1702
+    .line 1681
     :goto_3
     if-nez v2, :cond_1
 
     if-nez v3, :cond_1
 
-    .line 1703
+    .line 1682
     new-instance v1, Ljava/util/Locale;
 
     invoke-direct {v1, v0}, Ljava/util/Locale;-><init>(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1704
+    .line 1683
     :cond_1
     if-nez v3, :cond_2
 
-    .line 1705
+    .line 1684
     new-instance v1, Ljava/util/Locale;
 
     invoke-direct {v1, v0, v2}, Ljava/util/Locale;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1707
+    .line 1686
     :cond_2
     new-instance v1, Ljava/util/Locale;
 
@@ -174,10 +174,10 @@
     .end annotation
 
     .prologue
-    .line 681
+    .line 660
     check-cast p2, Ljava/util/Locale;
 
-    .line 1712
+    .line 1691
     if-nez p2, :cond_0
 
     const/4 v0, 0x0
@@ -185,10 +185,10 @@
     :goto_0
     invoke-virtual {p1, v0}, Lcom/google/gson/stream/b;->b(Ljava/lang/String;)Lcom/google/gson/stream/b;
 
-    .line 681
+    .line 660
     return-void
 
-    .line 1712
+    .line 1691
     :cond_0
     invoke-virtual {p2}, Ljava/util/Locale;->toString()Ljava/lang/String;
 

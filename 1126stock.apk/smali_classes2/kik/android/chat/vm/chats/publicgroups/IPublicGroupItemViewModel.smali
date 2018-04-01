@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkik/android/chat/vm/ag;
-.implements Lkik/android/chat/vm/u;
+.implements Lkik/android/chat/vm/at;
+.implements Lkik/android/chat/vm/bg;
 
 
 # annotations
@@ -16,8 +16,8 @@
 
 
 # virtual methods
-.method public abstract M_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
+.method public abstract N_()Lkik/android/chat/vm/chats/publicgroups/IPublicGroupItemViewModel$LayoutType;
 .end method
 
-.method public abstract N_()V
+.method public abstract h()V
 .end method

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 311
+    .line 345
     iput-object p1, p0, Lkik/android/chat/fragment/ViewPictureFragment$20;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,17 +40,17 @@
     .locals 2
 
     .prologue
-    .line 315
+    .line 349
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$20;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     invoke-virtual {v0}, Lkik/android/chat/fragment/ViewPictureFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 316
+    .line 350
     if-eqz v0, :cond_0
 
-    .line 317
+    .line 351
     iget-object v1, p0, Lkik/android/chat/fragment/ViewPictureFragment$20;->a:Lkik/android/chat/fragment/ViewPictureFragment;
 
     iget-object v0, p0, Lkik/android/chat/fragment/ViewPictureFragment$20;->a:Lkik/android/chat/fragment/ViewPictureFragment;
@@ -66,11 +66,11 @@
     :goto_0
     invoke-static {v1, v0}, Lkik/android/chat/fragment/ViewPictureFragment;->b(Lkik/android/chat/fragment/ViewPictureFragment;Z)V
 
-    .line 319
+    .line 353
     :cond_0
     return-void
 
-    .line 317
+    .line 351
     :cond_1
     const/4 v0, 0x0
 

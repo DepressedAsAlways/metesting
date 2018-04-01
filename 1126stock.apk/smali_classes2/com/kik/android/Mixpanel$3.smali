@@ -1,5 +1,5 @@
 .class final Lcom/kik/android/Mixpanel$3;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 1880
+    .line 1924
     iput-object p1, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,29 +46,29 @@
     .locals 2
 
     .prologue
-    .line 1880
+    .line 1924
     check-cast p1, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;
 
-    .line 2884
+    .line 2928
     if-eqz p1, :cond_1
 
-    .line 2885
-    invoke-virtual {p1}, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;->b()Ljava/lang/String;
+    .line 2929
+    invoke-virtual {p1}, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2886
+    .line 2930
     if-eqz v0, :cond_0
 
-    .line 2887
+    .line 2931
     iget-object v1, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v1, v0}, Lcom/kik/android/Mixpanel;->a(Lcom/kik/android/Mixpanel;Ljava/lang/String;)V
 
-    .line 2888
+    .line 2932
     iget-object v0, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
-    invoke-virtual {p1}, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;->c()Ljava/lang/Boolean;
+    invoke-virtual {p1}, Lcom/kik/xdata/model/mixpanelmetrics/XMixpanelMetrics;->b()Ljava/lang/Boolean;
 
     move-result-object v1
 
@@ -78,17 +78,17 @@
 
     invoke-static {v0, v1}, Lcom/kik/android/Mixpanel;->a(Lcom/kik/android/Mixpanel;Z)V
 
-    .line 2889
+    .line 2933
     iget-object v0, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 
     invoke-static {v0}, Lcom/kik/android/Mixpanel;->h(Lcom/kik/android/Mixpanel;)V
 
-    .line 2891
+    .line 2935
     :cond_0
     :goto_0
     return-void
 
-    .line 2894
+    .line 2938
     :cond_1
     iget-object v0, p0, Lcom/kik/android/Mixpanel$3;->a:Lcom/kik/android/Mixpanel;
 

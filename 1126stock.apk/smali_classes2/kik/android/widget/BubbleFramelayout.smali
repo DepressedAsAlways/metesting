@@ -76,14 +76,14 @@
     iput-object v0, p0, Lkik/android/widget/BubbleFramelayout;->k:Landroid/view/View$OnCreateContextMenuListener;
 
     .line 41
-    invoke-static {p0}, Lkik/android/widget/l;->a(Lkik/android/widget/BubbleFramelayout;)Landroid/view/View$OnCreateContextMenuListener;
+    invoke-static {p0}, Lkik/android/widget/ad;->a(Lkik/android/widget/BubbleFramelayout;)Landroid/view/View$OnCreateContextMenuListener;
 
     move-result-object v0
 
     iput-object v0, p0, Lkik/android/widget/BubbleFramelayout;->l:Landroid/view/View$OnCreateContextMenuListener;
 
     .line 114
-    sget-object v0, Lkik/android/k$a;->q:[I
+    sget-object v0, Lkik/android/R$styleable;->BubbleFramelayout:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -165,28 +165,27 @@
     .locals 1
 
     .prologue
-    .line 0
-    .line 6042
+    .line 42
     iget-object v0, p0, Lkik/android/widget/BubbleFramelayout;->k:Landroid/view/View$OnCreateContextMenuListener;
 
     if-eqz v0, :cond_0
 
-    .line 6043
+    .line 43
     iget-object v0, p0, Lkik/android/widget/BubbleFramelayout;->k:Landroid/view/View$OnCreateContextMenuListener;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/view/View$OnCreateContextMenuListener;->onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
 
-    .line 6045
+    .line 45
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lkik/android/widget/BubbleFramelayout;->i:Z
 
-    .line 0
+    .line 46
     return-void
 .end method
 
-.method public static a(Lkik/android/widget/BubbleFramelayout;Lrx/c;)V
+.method public static a(Lkik/android/widget/BubbleFramelayout;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -198,7 +197,7 @@
         value = {
             "(",
             "Lkik/android/widget/BubbleFramelayout;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -207,11 +206,11 @@
 
     .prologue
     .line 51
-    const v0, 0x7f01005c
+    const v0, 0x7f0100f0
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/g;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/y;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -228,34 +227,28 @@
     move-result-object v2
 
     .line 51
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 53
     return-void
 .end method
 
 .method static synthetic a(Lkik/android/widget/BubbleFramelayout;Z)V
-    .locals 1
+    .locals 0
 
     .prologue
     .line 0
-    .line 2219
-    iget-boolean v0, p0, Lkik/android/widget/BubbleFramelayout;->e:Z
+    .line 2085
+    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->j:Z
 
-    if-eq v0, p1, :cond_0
-
-    .line 2220
-    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->e:Z
-
-    .line 2222
-    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
+    .line 2086
+    invoke-virtual {p0, p1}, Lkik/android/widget/BubbleFramelayout;->setPressed(Z)V
 
     .line 0
-    :cond_0
     return-void
 .end method
 
-.method public static b(Lkik/android/widget/BubbleFramelayout;Lrx/c;)V
+.method public static b(Lkik/android/widget/BubbleFramelayout;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -267,7 +260,7 @@
         value = {
             "(",
             "Lkik/android/widget/BubbleFramelayout;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -276,11 +269,11 @@
 
     .prologue
     .line 58
-    const v0, 0x7f01005d
+    const v0, 0x7f0100f1
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/h;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/z;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -297,33 +290,13 @@
     move-result-object v2
 
     .line 58
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 60
     return-void
 .end method
 
-.method static synthetic b(Lkik/android/widget/BubbleFramelayout;Z)V
-    .locals 1
-
-    .prologue
-    .line 3210
-    iget-boolean v0, p0, Lkik/android/widget/BubbleFramelayout;->d:Z
-
-    if-eq p1, v0, :cond_0
-
-    .line 3211
-    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->d:Z
-
-    .line 3213
-    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
-
-    .line 0
-    :cond_0
-    return-void
-.end method
-
-.method public static c(Lkik/android/widget/BubbleFramelayout;Lrx/c;)V
+.method public static c(Lkik/android/widget/BubbleFramelayout;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -335,7 +308,7 @@
         value = {
             "(",
             "Lkik/android/widget/BubbleFramelayout;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -344,11 +317,11 @@
 
     .prologue
     .line 65
-    const v0, 0x7f010058
+    const v0, 0x7f0100ec
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/i;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/aa;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -365,28 +338,13 @@
     move-result-object v2
 
     .line 65
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 67
     return-void
 .end method
 
-.method static synthetic c(Lkik/android/widget/BubbleFramelayout;Z)V
-    .locals 0
-
-    .prologue
-    .line 0
-    .line 3305
-    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->g:Z
-
-    .line 3306
-    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
-
-    .line 0
-    return-void
-.end method
-
-.method public static d(Lkik/android/widget/BubbleFramelayout;Lrx/c;)V
+.method public static d(Lkik/android/widget/BubbleFramelayout;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -398,7 +356,7 @@
         value = {
             "(",
             "Lkik/android/widget/BubbleFramelayout;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -407,11 +365,11 @@
 
     .prologue
     .line 72
-    const v0, 0x7f01005e
+    const v0, 0x7f0100f2
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/j;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/ab;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -428,28 +386,13 @@
     move-result-object v2
 
     .line 72
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 74
     return-void
 .end method
 
-.method static synthetic d(Lkik/android/widget/BubbleFramelayout;Z)V
-    .locals 0
-
-    .prologue
-    .line 0
-    .line 4299
-    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->f:Z
-
-    .line 4300
-    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
-
-    .line 0
-    return-void
-.end method
-
-.method public static e(Lkik/android/widget/BubbleFramelayout;Lrx/c;)V
+.method public static e(Lkik/android/widget/BubbleFramelayout;Lrx/d;)V
     .locals 3
     .annotation build Landroid/databinding/BindingAdapter;
         value = {
@@ -461,7 +404,7 @@
         value = {
             "(",
             "Lkik/android/widget/BubbleFramelayout;",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Boolean;",
             ">;)V"
@@ -470,11 +413,11 @@
 
     .prologue
     .line 79
-    const v0, 0x7f01005f
+    const v0, 0x7f0100f3
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lkik/android/widget/k;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/b/b;
+    invoke-static {p0}, Lkik/android/widget/ac;->a(Lkik/android/widget/BubbleFramelayout;)Lrx/functions/b;
 
     move-result-object v1
 
@@ -491,24 +434,9 @@
     move-result-object v2
 
     .line 79
-    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bk;->a(ILrx/b/b;Landroid/view/View;Lrx/c;Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0, p1, v2}, Lcom/kik/util/bq;->a(ILrx/functions/b;Landroid/view/View;Lrx/d;Ljava/lang/Object;)V
 
     .line 81
-    return-void
-.end method
-
-.method static synthetic e(Lkik/android/widget/BubbleFramelayout;Z)V
-    .locals 0
-
-    .prologue
-    .line 0
-    .line 5085
-    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->j:Z
-
-    .line 5086
-    invoke-virtual {p0, p1}, Lkik/android/widget/BubbleFramelayout;->setPressed(Z)V
-
-    .line 0
     return-void
 .end method
 
@@ -535,6 +463,46 @@
 .end method
 
 .method public final b(Z)V
+    .locals 1
+
+    .prologue
+    .line 210
+    iget-boolean v0, p0, Lkik/android/widget/BubbleFramelayout;->d:Z
+
+    if-eq p1, v0, :cond_0
+
+    .line 211
+    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->d:Z
+
+    .line 213
+    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
+
+    .line 215
+    :cond_0
+    return-void
+.end method
+
+.method public final c(Z)V
+    .locals 1
+
+    .prologue
+    .line 219
+    iget-boolean v0, p0, Lkik/android/widget/BubbleFramelayout;->e:Z
+
+    if-eq v0, p1, :cond_0
+
+    .line 220
+    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->e:Z
+
+    .line 222
+    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
+
+    .line 224
+    :cond_0
+    return-void
+.end method
+
+.method public final d(Z)V
     .locals 1
 
     .prologue
@@ -655,7 +623,7 @@
     if-eqz v0, :cond_4
 
     .line 1247
-    const v0, 0x7f0202b6
+    const v0, 0x7f0202fd
 
     goto :goto_0
 
@@ -666,13 +634,13 @@
     if-eqz v0, :cond_5
 
     .line 1250
-    const v0, 0x7f0202f8
+    const v0, 0x7f020348
 
     goto :goto_0
 
     .line 1253
     :cond_5
-    const v0, 0x7f020349
+    const v0, 0x7f020397
 
     goto :goto_0
 
@@ -683,7 +651,7 @@
     if-eqz v0, :cond_7
 
     .line 1256
-    const v0, 0x7f0202b7
+    const v0, 0x7f0202fe
 
     goto :goto_0
 
@@ -694,13 +662,13 @@
     if-eqz v0, :cond_8
 
     .line 1259
-    const v0, 0x7f02005f
+    const v0, 0x7f020086
 
     goto :goto_0
 
     .line 1262
     :cond_8
-    const v0, 0x7f020299
+    const v0, 0x7f0202d5
 
     goto :goto_0
 
@@ -716,13 +684,13 @@
     if-eqz v0, :cond_a
 
     .line 1267
-    const v0, 0x7f0202f7
+    const v0, 0x7f020347
 
     goto :goto_0
 
     .line 1270
     :cond_a
-    const v0, 0x7f020348
+    const v0, 0x7f020396
 
     goto :goto_0
 
@@ -733,13 +701,13 @@
     if-eqz v0, :cond_c
 
     .line 1273
-    const v0, 0x7f02005e
+    const v0, 0x7f020085
 
     goto :goto_0
 
     .line 1276
     :cond_c
-    const v0, 0x7f020298
+    const v0, 0x7f0202d4
 
     goto :goto_0
 
@@ -766,13 +734,13 @@
     if-eqz v0, :cond_f
 
     .line 1285
-    const v0, 0x7f0202f6
+    const v0, 0x7f020346
 
     goto/16 :goto_0
 
     .line 1288
     :cond_f
-    const v0, 0x7f020347
+    const v0, 0x7f020395
 
     goto/16 :goto_0
 
@@ -783,13 +751,13 @@
     if-eqz v0, :cond_11
 
     .line 1291
-    const v0, 0x7f02005d
+    const v0, 0x7f020084
 
     goto/16 :goto_0
 
     .line 1294
     :cond_11
-    const v0, 0x7f020297
+    const v0, 0x7f0202d3
 
     goto/16 :goto_0
 .end method
@@ -820,6 +788,34 @@
     move-result v0
 
     return v0
+.end method
+
+.method public final e(Z)V
+    .locals 0
+
+    .prologue
+    .line 299
+    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->f:Z
+
+    .line 300
+    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
+
+    .line 301
+    return-void
+.end method
+
+.method public final f(Z)V
+    .locals 0
+
+    .prologue
+    .line 305
+    iput-boolean p1, p0, Lkik/android/widget/BubbleFramelayout;->g:Z
+
+    .line 306
+    invoke-direct {p0}, Lkik/android/widget/BubbleFramelayout;->a()V
+
+    .line 307
+    return-void
 .end method
 
 .method protected onDetachedFromWindow()V
@@ -897,7 +893,7 @@
 
     move-result-object v0
 
-    const v4, 0x7f0f008c
+    const v4, 0x7f0e009a
 
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -925,7 +921,7 @@
     move-result v0
 
     .line 1096
-    const v5, 0x7f0f0029
+    const v5, 0x7f0e002d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -933,7 +929,7 @@
 
     if-eq v0, v5, :cond_2
 
-    const v5, 0x7f0f002a
+    const v5, 0x7f0e002e
 
     .line 1097
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
@@ -956,7 +952,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0f0045
+    const v4, 0x7f0e0040
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getColor(I)I
 

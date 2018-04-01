@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/kik/profile/ProfileCommon$a;
+.implements Lcom/kik/profile/ProfileCommon$b;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "<",
         "Lcom/kik/profile/ProfileCommon$BioAction$a;",
         ">;",
-        "Lcom/kik/profile/ProfileCommon$a;"
+        "Lcom/kik/profile/ProfileCommon$b;"
     }
 .end annotation
 

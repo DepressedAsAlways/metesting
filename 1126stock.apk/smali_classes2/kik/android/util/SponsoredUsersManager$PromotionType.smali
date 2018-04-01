@@ -52,7 +52,7 @@
 
     const/4 v2, 0x0
 
-    .line 65
+    .line 66
     new-instance v0, Lkik/android/util/SponsoredUsersManager$PromotionType;
 
     const-string v1, "PROMOTED"
@@ -67,7 +67,7 @@
 
     sput-object v0, Lkik/android/util/SponsoredUsersManager$PromotionType;->PROMOTED:Lkik/android/util/SponsoredUsersManager$PromotionType;
 
-    .line 66
+    .line 67
     new-instance v3, Lkik/android/util/SponsoredUsersManager$PromotionType;
 
     const-string v4, "SUGGESTED"
@@ -84,7 +84,7 @@
 
     sput-object v3, Lkik/android/util/SponsoredUsersManager$PromotionType;->SUGGESTED:Lkik/android/util/SponsoredUsersManager$PromotionType;
 
-    .line 67
+    .line 68
     new-instance v3, Lkik/android/util/SponsoredUsersManager$PromotionType;
 
     const-string v4, "PREMIUM"
@@ -136,19 +136,19 @@
     .end annotation
 
     .prologue
-    .line 74
+    .line 75
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 75
+    .line 76
     iput-object p3, p0, Lkik/android/util/SponsoredUsersManager$PromotionType;->segment:Ljava/lang/String;
 
-    .line 76
+    .line 77
     iput-object p4, p0, Lkik/android/util/SponsoredUsersManager$PromotionType;->addedEvent:Ljava/lang/String;
 
-    .line 77
+    .line 78
     iput-object p5, p0, Lkik/android/util/SponsoredUsersManager$PromotionType;->messagedEvent:Ljava/lang/String;
 
-    .line 78
+    .line 79
     return-void
 .end method
 

@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 857
+    .line 869
     invoke-direct {p0}, Lkik/android/chat/fragment/KikPickUsersFragment$a;-><init>()V
 
     return-void
@@ -31,7 +31,7 @@
     .locals 1
 
     .prologue
-    .line 857
+    .line 869
     invoke-virtual {p0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->c(Ljava/util/ArrayList;)Lkik/android/chat/fragment/KikStartGroupFragment$a;
 
     move-result-object v0
@@ -43,12 +43,12 @@
     .locals 1
 
     .prologue
-    .line 889
+    .line 901
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.UserBeingUpgraded"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 890
+    .line 902
     return-object p0
 .end method
 
@@ -56,12 +56,12 @@
     .locals 1
 
     .prologue
-    .line 916
+    .line 928
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.IsCreatingPublicGroup"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 917
+    .line 929
     return-object p0
 .end method
 
@@ -69,12 +69,12 @@
     .locals 1
 
     .prologue
-    .line 922
+    .line 934
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.PrefilledHashtag"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 923
+    .line 935
     return-object p0
 .end method
 
@@ -92,12 +92,12 @@
     .end annotation
 
     .prologue
-    .line 878
+    .line 890
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.PreselectedUsers"
 
     invoke-virtual {p0, v0, p1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->a(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 879
+    .line 891
     return-object p0
 .end method
 
@@ -114,10 +114,10 @@
     .end annotation
 
     .prologue
-    .line 884
+    .line 896
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.PreselectedUsers"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->p(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->k(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -128,14 +128,14 @@
     .locals 2
 
     .prologue
-    .line 867
+    .line 879
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.IsFromTalkTo"
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, v1}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->b(Ljava/lang/String;Z)V
 
-    .line 868
+    .line 880
     return-object p0
 .end method
 
@@ -143,10 +143,10 @@
     .locals 1
 
     .prologue
-    .line 895
+    .line 907
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.UserBeingUpgraded"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -157,10 +157,10 @@
     .locals 1
 
     .prologue
-    .line 911
+    .line 923
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.IsCreatingPublicGroup"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->k(Ljava/lang/String;)Ljava/lang/Boolean;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->g(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -175,10 +175,10 @@
     .locals 1
 
     .prologue
-    .line 928
+    .line 940
     const-string v0, "kik.android.chat.fragment.StartGroupFragment.PrefilledHashtag"
 
-    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->l(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lkik/android/chat/fragment/KikStartGroupFragment$a;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/activity/KActivityLauncher$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Landroid/os/Bundle;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 275
+    .line 279
     iput-object p1, p0, Lkik/android/chat/activity/KActivityLauncher$1;->a:Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,13 +46,13 @@
     .locals 0
 
     .prologue
-    .line 275
+    .line 279
     check-cast p1, Landroid/os/Bundle;
 
-    .line 1280
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Object;)V
+    .line 1284
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Object;)V
 
-    .line 275
+    .line 279
     return-void
 .end method
 
@@ -60,10 +60,10 @@
     .locals 0
 
     .prologue
-    .line 286
-    invoke-super {p0, p1}, Lcom/kik/events/l;->a(Ljava/lang/Throwable;)V
+    .line 290
+    invoke-super {p0, p1}, Lcom/kik/events/k;->a(Ljava/lang/Throwable;)V
 
-    .line 287
+    .line 291
     return-void
 .end method
 
@@ -71,7 +71,7 @@
     .locals 2
 
     .prologue
-    .line 292
+    .line 296
     invoke-static {}, Lkik/android/chat/activity/KActivityLauncher;->g()Ljava/util/HashMap;
 
     move-result-object v0
@@ -80,9 +80,9 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 293
-    invoke-super {p0}, Lcom/kik/events/l;->b()V
+    .line 297
+    invoke-super {p0}, Lcom/kik/events/k;->b()V
 
-    .line 294
+    .line 298
     return-void
 .end method

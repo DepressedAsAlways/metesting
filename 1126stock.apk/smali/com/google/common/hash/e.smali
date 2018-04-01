@@ -6,6 +6,11 @@
 .implements Lcom/google/common/hash/g;
 
 
+# annotations
+.annotation build Lcom/google/errorprone/annotations/CanIgnoreReturnValue;
+.end annotation
+
+
 # virtual methods
 .method public abstract a()Lcom/google/common/hash/HashCode;
 .end method

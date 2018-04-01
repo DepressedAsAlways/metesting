@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 501
+    .line 536
     iput-object p1, p0, Lkik/android/videochat/VideoChatViewController$6;->a:Lkik/android/videochat/VideoChatViewController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,10 +40,10 @@
     .locals 2
 
     .prologue
-    .line 505
+    .line 540
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$6;->a:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->c(Lkik/android/videochat/VideoChatViewController;)Lkik/android/videochat/c;
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->o(Lkik/android/videochat/VideoChatViewController;)Lkik/android/videochat/c;
 
     move-result-object v0
 
@@ -55,6 +55,6 @@
 
     invoke-interface {v0, v1}, Lcom/rounds/kik/analytics/IReporterProxy;->onPermissionsDialogCancel(Lcom/rounds/kik/analytics/IReporterProxy$VideoPermissionType;)V
 
-    .line 507
+    .line 542
     return-void
 .end method

@@ -1,11 +1,11 @@
 .class final Lkik/android/videochat/VideoChatViewController$8;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/videochat/VideoChatViewController;->b(Z)V
+    value = Lkik/android/videochat/VideoChatViewController;->a(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Lcom/kik/video/mobile/KikVideoService$JoinConvoConferenceResponse;",
         ">;"
@@ -34,12 +34,12 @@
     .locals 0
 
     .prologue
-    .line 708
+    .line 744
     iput-object p1, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
     iput-object p2, p0, Lkik/android/videochat/VideoChatViewController$8;->a:Ljava/lang/String;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -50,15 +50,15 @@
     .locals 2
 
     .prologue
-    .line 708
+    .line 744
     check-cast p1, Lcom/kik/video/mobile/KikVideoService$JoinConvoConferenceResponse;
 
-    .line 1712
+    .line 1748
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$8;->a:Ljava/lang/String;
 
     iget-object v1, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->o(Lkik/android/videochat/VideoChatViewController;)Ljava/lang/String;
+    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->A(Lkik/android/videochat/VideoChatViewController;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -68,7 +68,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1715
+    .line 1751
     sget-object v0, Lkik/android/videochat/VideoChatViewController$9;->a:[I
 
     invoke-virtual {p1}, Lcom/kik/video/mobile/KikVideoService$JoinConvoConferenceResponse;->c()Lcom/kik/video/mobile/KikVideoService$JoinConvoConferenceResponse$Result;
@@ -83,17 +83,17 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1726
+    .line 1762
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->q(Lkik/android/videochat/VideoChatViewController;)V
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->C(Lkik/android/videochat/VideoChatViewController;)V
 
-    .line 1722
+    .line 1758
     :cond_0
     :goto_0
     return-void
 
-    .line 1717
+    .line 1753
     :pswitch_0
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
@@ -101,15 +101,15 @@
 
     goto :goto_0
 
-    .line 1721
+    .line 1757
     :pswitch_1
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->p(Lkik/android/videochat/VideoChatViewController;)V
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->B(Lkik/android/videochat/VideoChatViewController;)V
 
     goto :goto_0
 
-    .line 1715
+    .line 1751
     nop
 
     :pswitch_data_0
@@ -123,12 +123,12 @@
     .locals 2
 
     .prologue
-    .line 734
+    .line 770
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$8;->a:Ljava/lang/String;
 
     iget-object v1, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->o(Lkik/android/videochat/VideoChatViewController;)Ljava/lang/String;
+    invoke-static {v1}, Lkik/android/videochat/VideoChatViewController;->A(Lkik/android/videochat/VideoChatViewController;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -138,15 +138,15 @@
 
     if-nez v0, :cond_0
 
-    .line 738
+    .line 774
     :goto_0
     return-void
 
-    .line 737
+    .line 773
     :cond_0
     iget-object v0, p0, Lkik/android/videochat/VideoChatViewController$8;->b:Lkik/android/videochat/VideoChatViewController;
 
-    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->r(Lkik/android/videochat/VideoChatViewController;)V
+    invoke-static {v0}, Lkik/android/videochat/VideoChatViewController;->D(Lkik/android/videochat/VideoChatViewController;)V
 
     goto :goto_0
 .end method

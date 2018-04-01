@@ -24,7 +24,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/d/a;",
+            "Landroid/content/res/Resources;",
             ">;"
         }
     .end annotation
@@ -35,7 +35,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/videochat/c;",
+            "Lkik/core/a/f;",
             ">;"
         }
     .end annotation
@@ -46,13 +46,101 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lkik/android/chat/JoinGifTrayHelper;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private D:Ljavax/inject/Provider;
+.field private D:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/ev;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private E:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/f;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private F:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/l;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private G:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/aa;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private H:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/c/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private I:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/chat/b/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private J:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/videochat/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private K:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private L:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -65,100 +153,12 @@
     .end annotation
 .end field
 
-.field private E:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/AbstractMessageViewModel;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private F:Ljavax/inject/Provider;
+.field private M:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/util/bw;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private G:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/ed;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private H:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/net/http/b;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private I:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private J:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/net/e;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private K:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/util/f;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private L:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/cache/ae;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private M:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/bq;",
+            "Lcom/kik/core/a/h;",
             ">;"
         }
     .end annotation
@@ -169,90 +169,24 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/t;",
+            "Lkik/core/xiphias/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private O:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/en;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private P:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/ea;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private Q:Ljavax/inject/Provider;
+.field private O:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/gifs/c;",
+            "Lcom/kik/core/domain/users/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private R:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/vm/messaging/ct;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private S:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/g/e;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private T:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/ab;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private U:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/chat/profile/m;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private V:Ljavax/inject/Provider;
+.field private P:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -263,12 +197,78 @@
     .end annotation
 .end field
 
+.field private Q:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/util/co;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private R:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/fv;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private S:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/net/http/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private T:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/net/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private U:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/util/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private V:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private W:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/messaging/cl;",
+            "Lkik/android/chat/vm/messaging/ct;",
             ">;"
         }
     .end annotation
@@ -279,29 +279,29 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/aa;",
+            "Lkik/core/interfaces/t;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private Y:Ljavax/inject/Provider;
+.field private Y:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lcom/kik/android/b/g;",
+            "Lkik/android/chat/vm/messaging/gf;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private Z:Ljavax/inject/Provider;
+.field private Z:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/a/a;",
+            "Lkik/android/chat/vm/messaging/fs;",
             ">;"
         }
     .end annotation
@@ -312,7 +312,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;",
+            "Lkik/android/chat/fragment/VideoTrimmingFragment;",
             ">;"
         }
     .end annotation
@@ -323,7 +323,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/activity/KikWelcomeFragmentActivity;",
+            "Lcom/kik/cards/browser/CaptchaWindowFragment;",
             ">;"
         }
     .end annotation
@@ -334,519 +334,13 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/activity/IntroActivity;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aD:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/l;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aE:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/net/communicator/CommunicatorService;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aF:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/activity/KikPlatformLanding;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aG:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/activity/KikActivityBase;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aH:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/activity/KikIqActivityBase;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aI:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/activity/FragmentWrapperActivity;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aJ:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/util/t;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aK:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/activity/KikApiLandingActivity;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aL:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/LEDNotificationPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aM:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/KikModalPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aN:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/HelpPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aO:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/KikPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aP:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/PasswordPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aQ:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/settings/EditPasswordFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aR:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/KikSwitchPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aS:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/NotifyNewPeoplePreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aT:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/ShowKikCodePreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aU:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/UsernamePreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aV:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/NamePreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aW:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/settings/EditNameFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aX:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/AutoplayVideoPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aY:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/KikVideoPrefetchPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aZ:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lcom/kik/e/q;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aa:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lokhttp3/u;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ab:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/manager/g;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ac:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/manager/w;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ad:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/chat/presentation/bw;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ae:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/manager/u;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private af:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/y;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ag:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/o;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ah:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/presentation/MediaTrayPresenterImpl;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ai:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/f/b;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aj:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/f/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ak:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/chat/d;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private al:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/videochat/VideoChatViewController;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private am:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/KikScopedDialogFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private an:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/KikIqFragmentBase;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ao:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/IAddressBookIntegration;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ap:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/AddressbookFragmentBase;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aq:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/challenge/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private ar:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/challenge/f;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private as:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/net/communicator/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private at:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/AbTestsFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private au:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/VideoTrimmingFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private av:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lcom/kik/cards/browser/CaptchaWindowFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private aw:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
             "Lkik/android/video/f;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private ax:Ldagger/b;
+.field private aD:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -857,18 +351,18 @@
     .end annotation
 .end field
 
-.field private ay:Ldagger/b;
+.field private aE:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gallery/vm/j;",
+            "Lkik/android/gallery/vm/k;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private az:Ldagger/b;
+.field private aF:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -879,117 +373,359 @@
     .end annotation
 .end field
 
-.field private b:Ljavax/inject/Provider;
+.field private aG:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/SimpleFragmentWrapperActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aH:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/activity/KikWelcomeFragmentActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aI:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/activity/IntroActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aJ:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/service/BatteryChangeReceiver;",
+            "Lkik/core/interfaces/k;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bA:Ljavax/inject/Provider;
+.field private aK:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/net/communicator/CommunicatorService;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aL:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/activity/KikPlatformLanding;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aM:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/activity/KikActivityBase;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aN:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/activity/KikIqActivityBase;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aO:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/activity/FragmentWrapperActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aP:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/aa;",
+            "Lkik/android/util/s;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bB:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/KikPreregistrationFragmentBase;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bC:Ljavax/inject/Provider;
+.field private aQ:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/q;",
+            "Lcom/kik/core/domain/a/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bD:Ldagger/b;
+.field private aR:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikLoginFragmentAbstract;",
+            "Lkik/android/chat/activity/KikApiLandingActivity;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bE:Ldagger/b;
+.field private aS:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/BaseChatInfoFragment;",
+            "Lkik/android/widget/preferences/LEDNotificationPreference;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bF:Ldagger/b;
+.field private aT:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/EmailConfirmationReminderFragment;",
+            "Lkik/android/widget/preferences/HelpPreference;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bG:Ldagger/b;
+.field private aU:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/ChatBubbleSelectionFragment;",
+            "Lkik/android/widget/preferences/PasswordPreference;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bH:Ldagger/b;
+.field private aV:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/ConversationsBaseFragment;",
+            "Lkik/android/chat/fragment/settings/EditPasswordFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bI:Ljavax/inject/Provider;
+.field private aW:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/preferences/NotifyNewPeoplePreference;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aX:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/preferences/ShowKikCodePreference;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aY:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/preferences/UsernamePreference;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aZ:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/preferences/NamePreference;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aa:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/e/b;",
+            "Lkik/android/gifs/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bJ:Ljavax/inject/Provider;
+.field private ab:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/ea;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ac:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/AbstractMessageViewModel;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ad:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/dq;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ae:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/ab;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private af:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/android/b/g;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ag:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lokhttp3/v;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ah:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/g;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ai:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/z;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aj:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/chat/presentation/bw;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ak:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/x;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private al:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/z;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private am:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1000,7 +736,315 @@
     .end annotation
 .end field
 
+.field private an:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/content/IAttachmentManager;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ao:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/presentation/MediaTrayPresenterImpl;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ap:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/g/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aq:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/g/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ar:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/chat/d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private as:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/videochat/VideoChatViewController;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private at:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/IAddressBookIntegration;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private au:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/AddressbookFragmentBase;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private av:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/challenge/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private aw:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/challenge/f;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ax:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/net/communicator/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ay:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/ab;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private az:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/AbTestsFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private b:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/storage/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bA:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/manager/y;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bB:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/a/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bC:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/xiphias/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bD:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/KikApplication;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bE:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/aa;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bF:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/q;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bG:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/KikLoginFragmentAbstract;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bH:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/KikScopedDialogFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bI:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/UserProfileFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bJ:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/ChatBubbleSelectionFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private bK:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/ConversationsBaseFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bL:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bM:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/d/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bN:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/interfaces/m;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bO:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1011,7 +1055,7 @@
     .end annotation
 .end field
 
-.field private bL:Ldagger/b;
+.field private bP:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1022,7 +1066,7 @@
     .end annotation
 .end field
 
-.field private bM:Ldagger/b;
+.field private bQ:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1033,56 +1077,12 @@
     .end annotation
 .end field
 
-.field private bN:Ldagger/b;
+.field private bR:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/MediaViewerFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bO:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/scan/c;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bP:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/KikChatInfoFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bQ:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/KikContactsListFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bR:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/chat/ConversationCallToActionHelper;",
+            "Lkik/android/chat/fragment/KikIqFragmentBase;",
             ">;"
         }
     .end annotation
@@ -1093,7 +1093,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikConversationsFragment;",
+            "Lkik/android/chat/fragment/KikPreregistrationFragmentBase;",
             ">;"
         }
     .end annotation
@@ -1104,7 +1104,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikDefaultContactsListFragment;",
+            "Lkik/android/chat/fragment/MediaViewerFragment;",
             ">;"
         }
     .end annotation
@@ -1115,18 +1115,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikGroupMembersListFragment;",
+            "Lkik/android/chat/fragment/KikContactsListFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bV:Ldagger/b;
+.field private bV:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/KikMultiselectContactsListFragment;",
+            "Lkik/android/chat/ConversationCallToActionHelper;",
             ">;"
         }
     .end annotation
@@ -1137,7 +1137,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikPermissionsFragment;",
+            "Lkik/android/chat/fragment/KikConversationsFragment;",
             ">;"
         }
     .end annotation
@@ -1148,7 +1148,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikPickUsersFragment;",
+            "Lkik/android/chat/fragment/KikDefaultContactsListFragment;",
             ">;"
         }
     .end annotation
@@ -1159,40 +1159,40 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;",
+            "Lkik/android/chat/fragment/KikGroupMembersListFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bZ:Ljavax/inject/Provider;
+.field private bZ:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/core/b/e;",
+            "Lkik/android/chat/fragment/KikMultiselectContactsListFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private ba:Ljavax/inject/Provider;
+.field private ba:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/android/e/e;",
+            "Lkik/android/chat/fragment/settings/EditNameFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bb:Ljavax/inject/Provider;
+.field private bb:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/core/manager/v;",
+            "Lkik/android/widget/preferences/AutoplayVideoPreference;",
             ">;"
         }
     .end annotation
@@ -1203,7 +1203,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/widget/preferences/KikProfilePicPreference;",
+            "Lkik/android/widget/preferences/KikVideoPrefetchPreference;",
             ">;"
         }
     .end annotation
@@ -1253,12 +1253,12 @@
     .end annotation
 .end field
 
-.field private bh:Ljavax/inject/Provider;
+.field private bh:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/core/interfaces/e;",
+            "Lkik/android/widget/preferences/KikSwitchPreference;",
             ">;"
         }
     .end annotation
@@ -1269,13 +1269,24 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/widget/preferences/ClearPaymentMethodPreference;",
+            "Lkik/android/widget/preferences/KikModalPreference;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bj:Ljavax/inject/Provider;
+.field private bj:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/preferences/KikPreference;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bk:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1286,7 +1297,7 @@
     .end annotation
 .end field
 
-.field private bk:Ldagger/b;
+.field private bl:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1297,51 +1308,7 @@
     .end annotation
 .end field
 
-.field private bl:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/settings/PreferenceFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private bm:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/settings/KikPreferenceFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bn:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/core/interfaces/s;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bo:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/KikPreferenceLaunchpad;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private bp:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1352,7 +1319,7 @@
     .end annotation
 .end field
 
-.field private bq:Ldagger/b;
+.field private bn:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1363,7 +1330,7 @@
     .end annotation
 .end field
 
-.field private br:Ldagger/b;
+.field private bo:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1374,7 +1341,7 @@
     .end annotation
 .end field
 
-.field private bs:Ldagger/b;
+.field private bp:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1385,7 +1352,7 @@
     .end annotation
 .end field
 
-.field private bt:Ldagger/b;
+.field private bq:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1396,7 +1363,7 @@
     .end annotation
 .end field
 
-.field private bu:Ldagger/b;
+.field private br:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1407,7 +1374,7 @@
     .end annotation
 .end field
 
-.field private bv:Ljavax/inject/Provider;
+.field private bs:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1418,12 +1385,45 @@
     .end annotation
 .end field
 
+.field private bt:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/cache/KikVolleyImageLoader;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bu:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/e/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private bv:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/b/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private bw:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/cache/ae;",
+            "Lkik/core/e/b;",
             ">;"
         }
     .end annotation
@@ -1434,7 +1434,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/f/b;",
+            "Lkik/android/chat/m;",
             ">;"
         }
     .end annotation
@@ -1445,18 +1445,18 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/l;",
+            "Lcom/kik/storage/t;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private bz:Ldagger/b;
+.field private bz:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/KikApplication;",
+            "Lkik/android/f/e;",
             ">;"
         }
     .end annotation
@@ -1467,7 +1467,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ac;",
+            "Lkik/android/voice/f;",
             ">;"
         }
     .end annotation
@@ -1478,7 +1478,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/ai;",
+            "Lkik/android/widget/preferences/UsePhoneContactsPreference;",
             ">;"
         }
     .end annotation
@@ -1489,21 +1489,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/c",
-            "<",
-            "Lkik/android/gifs/vm/bn;",
-            "Lkik/android/gifs/api/GifResponseData;",
-            ">;>;"
+            "Lkik/android/widget/preferences/BlockListPreference;",
+            ">;"
         }
     .end annotation
 .end field
 
-.field private cC:Ldagger/b;
+.field private cC:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/gifs/vm/aa;",
+            "Lkik/core/e/e;",
             ">;"
         }
     .end annotation
@@ -1514,11 +1511,8 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/c",
-            "<",
-            "Lkik/android/gifs/vm/bs;",
-            "Lkik/android/gifs/api/f;",
-            ">;>;"
+            "Lkik/android/widget/GifWidget;",
+            ">;"
         }
     .end annotation
 .end field
@@ -1528,7 +1522,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/p;",
+            "Lkik/android/gifs/vm/z;",
             ">;"
         }
     .end annotation
@@ -1539,21 +1533,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/c",
-            "<",
-            "Lkik/android/gifs/vm/bj;",
-            "Lkik/android/gifs/api/b;",
-            ">;>;"
+            "Lkik/android/gifs/vm/aj;",
+            ">;"
         }
     .end annotation
 .end field
 
-.field private cG:Ljavax/inject/Provider;
+.field private cG:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/android/util/am;",
+            "Lkik/android/gifs/vm/ab;",
             ">;"
         }
     .end annotation
@@ -1564,18 +1555,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/d;",
+            "Lkik/android/gifs/vm/p;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cI:Ldagger/b;
+.field private cI:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/gifs/vm/a;",
+            "Lkik/android/util/ah;",
             ">;"
         }
     .end annotation
@@ -1586,7 +1577,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/t;",
+            "Lkik/android/gifs/vm/d;",
             ">;"
         }
     .end annotation
@@ -1597,13 +1588,35 @@
         value = {
             "Ldagger/b",
             "<",
+            "Lkik/android/gifs/vm/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private cL:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/gifs/vm/t;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private cM:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
             "Lkik/android/chat/fragment/TemporaryBanDialog;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cL:Ljavax/inject/Provider;
+.field private cN:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1614,7 +1627,7 @@
     .end annotation
 .end field
 
-.field private cM:Ljavax/inject/Provider;
+.field private cO:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1625,7 +1638,7 @@
     .end annotation
 .end field
 
-.field private cN:Ldagger/b;
+.field private cP:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1636,7 +1649,7 @@
     .end annotation
 .end field
 
-.field private cO:Ljavax/inject/Provider;
+.field private cQ:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1647,7 +1660,7 @@
     .end annotation
 .end field
 
-.field private cP:Ldagger/b;
+.field private cR:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1658,7 +1671,7 @@
     .end annotation
 .end field
 
-.field private cQ:Ljavax/inject/Provider;
+.field private cS:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1669,7 +1682,7 @@
     .end annotation
 .end field
 
-.field private cR:Ldagger/b;
+.field private cT:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1680,7 +1693,7 @@
     .end annotation
 .end field
 
-.field private cS:Ldagger/b;
+.field private cU:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1691,7 +1704,7 @@
     .end annotation
 .end field
 
-.field private cT:Ljavax/inject/Provider;
+.field private cV:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
@@ -1702,7 +1715,7 @@
     .end annotation
 .end field
 
-.field private cU:Ldagger/b;
+.field private cW:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1713,18 +1726,18 @@
     .end annotation
 .end field
 
-.field private cV:Ldagger/b;
+.field private cX:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/messaging/ex;",
+            "Lkik/android/chat/vm/messaging/gl;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cW:Ldagger/b;
+.field private cY:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1735,7 +1748,7 @@
     .end annotation
 .end field
 
-.field private cX:Ldagger/b;
+.field private cZ:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
@@ -1746,34 +1759,12 @@
     .end annotation
 .end field
 
-.field private cY:Ljavax/inject/Provider;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljavax/inject/Provider",
-            "<",
-            "Lkik/android/chat/p;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private cZ:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/chat/fragment/PublicGroupSearchFragment;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private ca:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikStartGroupFragment;",
+            "Lkik/android/chat/fragment/KikPermissionsFragment;",
             ">;"
         }
     .end annotation
@@ -1784,7 +1775,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikWelcomeFragment;",
+            "Lkik/android/chat/fragment/KikPickUsersFragment;",
             ">;"
         }
     .end annotation
@@ -1795,18 +1786,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/MissedConversationsFragment;",
+            "Lkik/android/chat/fragment/KikRegistrationFragmentAbstract;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cd:Ldagger/b;
+.field private cd:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/SendToFragment;",
+            "Lkik/core/a/e;",
             ">;"
         }
     .end annotation
@@ -1817,7 +1808,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/ViewPictureFragment;",
+            "Lkik/android/chat/fragment/KikStartGroupFragment;",
             ">;"
         }
     .end annotation
@@ -1828,7 +1819,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikCodeFragment;",
+            "Lkik/android/chat/fragment/KikWelcomeFragment;",
             ">;"
         }
     .end annotation
@@ -1839,7 +1830,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/MediaItemFragment;",
+            "Lkik/android/chat/fragment/MissedConversationsFragment;",
             ">;"
         }
     .end annotation
@@ -1850,7 +1841,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/scan/fragment/ScanFragment;",
+            "Lkik/android/chat/fragment/SendToFragment;",
             ">;"
         }
     .end annotation
@@ -1861,7 +1852,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/ScanCodeTabFragment;",
+            "Lkik/android/chat/fragment/settings/KikPreferenceFragment;",
             ">;"
         }
     .end annotation
@@ -1872,18 +1863,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/PaymentConfirmationFragment;",
+            "Lkik/android/chat/fragment/ViewPictureFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private ck:Ldagger/b;
+.field private ck:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/AddPaymentMethodFragment;",
+            "Lkik/android/scan/c;",
             ">;"
         }
     .end annotation
@@ -1894,7 +1885,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/FullScreenAddressbookFragment;",
+            "Lkik/android/chat/fragment/KikCodeFragment;",
             ">;"
         }
     .end annotation
@@ -1905,7 +1896,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lcom/kik/cards/web/p;",
+            "Lkik/android/chat/fragment/MediaItemFragment;",
             ">;"
         }
     .end annotation
@@ -1916,7 +1907,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;",
+            "Lkik/android/scan/fragment/ScanFragment;",
             ">;"
         }
     .end annotation
@@ -1927,18 +1918,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment;",
+            "Lkik/android/chat/fragment/ScanCodeTabFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cp:Ljavax/inject/Provider;
+.field private cp:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/presentation/a;",
+            "Lkik/android/chat/fragment/FullScreenAddressbookFragment;",
             ">;"
         }
     .end annotation
@@ -1949,18 +1940,18 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/presentation/c;",
+            "Lcom/kik/core/domain/b/b;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cr:Ljavax/inject/Provider;
+.field private cr:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/android/chat/presentation/ae;",
+            "Lcom/kik/cards/web/n;",
             ">;"
         }
     .end annotation
@@ -1971,7 +1962,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;",
+            "Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment;",
             ">;"
         }
     .end annotation
@@ -1982,51 +1973,51 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/KikComposeFragment;",
+            "Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private cu:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/LetFriendsFindMePreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private cv:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/UsePhoneContactsPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private cw:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/preferences/BlockListPreference;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private cx:Ljavax/inject/Provider;
+.field private cu:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/f/e;",
+            "Lkik/android/chat/presentation/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private cv:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/chat/presentation/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private cw:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/chat/presentation/ac;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private cx:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment;",
             ">;"
         }
     .end annotation
@@ -2037,7 +2028,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/widget/GifWidget;",
+            "Lkik/android/chat/fragment/KikComposeFragment;",
             ">;"
         }
     .end annotation
@@ -2048,18 +2039,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/gifs/vm/y;",
+            "Lkik/android/widget/preferences/LetFriendsFindMePreference;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private d:Ldagger/b;
+.field private d:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/f;",
+            "Lkik/android/voice/e;",
             ">;"
         }
     .end annotation
@@ -2114,19 +2105,21 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/p;",
+            "Lkik/android/chat/vm/chats/publicgroups/q;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private dF:Ldagger/b;
+.field private dF:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/o;",
-            ">;"
+            "Lkik/core/interfaces/af",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;"
         }
     .end annotation
 .end field
@@ -2136,7 +2129,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/s;",
+            "Lkik/android/chat/vm/chats/publicgroups/p;",
             ">;"
         }
     .end annotation
@@ -2147,7 +2140,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/m;",
+            "Lkik/android/chat/vm/chats/publicgroups/t;",
             ">;"
         }
     .end annotation
@@ -2158,7 +2151,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/publicgroups/w;",
+            "Lkik/android/chat/vm/chats/publicgroups/n;",
             ">;"
         }
     .end annotation
@@ -2169,7 +2162,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/aw;",
+            "Lkik/android/chat/vm/chats/publicgroups/y;",
             ">;"
         }
     .end annotation
@@ -2180,7 +2173,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/SmileyItemViewModel;",
+            "Lkik/android/chat/vm/widget/aw;",
             ">;"
         }
     .end annotation
@@ -2191,7 +2184,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/at;",
+            "Lkik/android/chat/vm/widget/SmileyItemViewModel;",
             ">;"
         }
     .end annotation
@@ -2202,7 +2195,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/au;",
+            "Lkik/android/chat/vm/widget/at;",
             ">;"
         }
     .end annotation
@@ -2213,18 +2206,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/bj;",
+            "Lkik/android/chat/vm/widget/au;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private dO:Ljavax/inject/Provider;
+.field private dO:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lkik/core/interfaces/ab;",
+            "Lkik/android/chat/vm/cu;",
             ">;"
         }
     .end annotation
@@ -2235,18 +2228,18 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bm;",
+            "Lkik/android/chat/vm/widget/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private dQ:Ldagger/b;
+.field private dQ:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/bm;",
+            "Lkik/core/interfaces/ac;",
             ">;"
         }
     .end annotation
@@ -2257,7 +2250,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/view/PreviewResultsViewImpl;",
+            "Lkik/android/chat/vm/widget/bm;",
             ">;"
         }
     .end annotation
@@ -2268,7 +2261,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/ch;",
+            "Lkik/android/chat/vm/cx;",
             ">;"
         }
     .end annotation
@@ -2279,7 +2272,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/cg;",
+            "Lkik/android/chat/view/PreviewResultsViewImpl;",
             ">;"
         }
     .end annotation
@@ -2290,7 +2283,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/TrophyCaseFragment;",
+            "Lkik/android/chat/vm/eb;",
             ">;"
         }
     .end annotation
@@ -2301,7 +2294,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/h;",
+            "Lkik/android/chat/vm/ea;",
             ">;"
         }
     .end annotation
@@ -2312,7 +2305,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/profile/k;",
+            "Lkik/android/chat/fragment/TrophyCaseFragment;",
             ">;"
         }
     .end annotation
@@ -2323,40 +2316,42 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/profile/a;",
+            "Lkik/android/chat/vm/n;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private dY:Ldagger/b;
+.field private dY:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/fragment/ProfileEditBioDialogFragment;",
+            "Lkik/core/interfaces/w",
+            "<",
+            "Landroid/graphics/Bitmap;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field private dZ:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/users/UserController;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private dZ:Ldagger/b;
+.field private da:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/chats/profile/r;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private da:Ldagger/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ldagger/b",
-            "<",
-            "Lkik/android/widget/StickerWidget;",
+            "Lkik/android/chat/q;",
             ">;"
         }
     .end annotation
@@ -2367,7 +2362,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/StickerWidgetViewModel;",
+            "Lkik/android/chat/fragment/PublicGroupSearchFragment;",
             ">;"
         }
     .end annotation
@@ -2378,7 +2373,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/a;",
+            "Lkik/android/widget/StickerWidget;",
             ">;"
         }
     .end annotation
@@ -2389,7 +2384,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bb;",
+            "Lkik/android/chat/vm/widget/StickerWidgetViewModel;",
             ">;"
         }
     .end annotation
@@ -2400,7 +2395,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bp;",
+            "Lkik/android/chat/vm/widget/bb;",
             ">;"
         }
     .end annotation
@@ -2411,7 +2406,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bt;",
+            "Lkik/android/chat/vm/widget/bp;",
             ">;"
         }
     .end annotation
@@ -2422,7 +2417,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/ba;",
+            "Lkik/android/chat/vm/widget/bt;",
             ">;"
         }
     .end annotation
@@ -2433,7 +2428,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/widget/SmileyWidget;",
+            "Lkik/android/chat/vm/widget/ba;",
             ">;"
         }
     .end annotation
@@ -2444,7 +2439,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/bl;",
+            "Lkik/android/widget/SmileyWidget;",
             ">;"
         }
     .end annotation
@@ -2455,7 +2450,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/widget/b;",
+            "Lkik/android/chat/vm/widget/bl;",
             ">;"
         }
     .end annotation
@@ -2466,7 +2461,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/cc;",
+            "Lkik/android/chat/vm/widget/b;",
             ">;"
         }
     .end annotation
@@ -2477,7 +2472,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/fragment/PublicGroupIntroFragment;",
+            "Lkik/android/chat/vm/dv;",
             ">;"
         }
     .end annotation
@@ -2488,7 +2483,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/e;",
+            "Lkik/android/chat/fragment/PublicGroupIntroFragment;",
             ">;"
         }
     .end annotation
@@ -2499,7 +2494,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/c;",
+            "Lkik/android/chat/vm/chats/e;",
             ">;"
         }
     .end annotation
@@ -2510,7 +2505,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;",
+            "Lkik/android/chat/vm/chats/c;",
             ">;"
         }
     .end annotation
@@ -2521,7 +2516,7 @@
         value = {
             "Ldagger/b",
             "<",
-            "Lkik/android/chat/vm/chats/search/a;",
+            "Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel;",
             ">;"
         }
     .end annotation
@@ -2642,7 +2637,579 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/f/d;",
+            "Lkik/android/voice/g;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eA:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/cc;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eB:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/voice/d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eC:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/vm/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eD:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/widget/AudioMicLayoutView;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eE:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/gridvm/t;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eF:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/gridvm/ap;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eG:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/gridvm/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eH:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/j;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eI:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/am;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eJ:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eK:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/gridvm/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eL:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/ar;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eM:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/f;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eN:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/ab$a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eO:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/ab$b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eP:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/ab$c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eQ:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/ab$d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eR:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/ao;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eS:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/dv;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eT:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eU:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/gridvm/k;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eV:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eW:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/y;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eX:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/deeplinks/InternalDeeplinkActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eY:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/deeplinks/ChatInfoDeepLinkActivity;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eZ:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/profileactionvm/k;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ea:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/android/chat/vm/profile/by;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eb:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/z;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ec:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/x;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ed:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ee:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/au;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ef:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lcom/kik/core/domain/a/b;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eg:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/xiphias/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eh:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/ca;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ei:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ej:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ek:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private el:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/ProfileEditBioDialogFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private em:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/dl;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private en:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/PicturePickerFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eo:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/av;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ep:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/ai;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eq:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/bw;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private er:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/cp;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private es:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/fq;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private et:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/t;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private eu:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/publicgroups/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ev:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/xiphias/d;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ew:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/chat/profile/IBotProfileCache;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ex:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/chat/profile/IBotProfileRepository;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ey:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/k;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ez:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/dp;",
             ">;"
         }
     .end annotation
@@ -2653,18 +3220,216 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ICommunication;",
+            "Lcom/rounds/kik/analytics/IReporter;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private g:Ljavax/inject/Provider;
+.field private fa:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/bi;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fb:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/gridvm/n;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fc:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/aq;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fd:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/SuggestInterestDialogFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fe:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/bk;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private ff:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/fragment/InterestsPickerFragment;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fg:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/y;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fh:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/chats/profile/ao;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fi:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/ae;",
+            "Lkik/core/xiphias/f;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fj:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/chat/profile/ae;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fk:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider",
+            "<",
+            "Lkik/core/chat/profile/ad;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fl:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/q;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fm:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lcom/kik/view/adapters/j;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fn:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/k;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fo:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lcom/kik/view/adapters/h;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fp:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lcom/kik/view/adapters/p;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fq:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lcom/kik/view/adapters/ContactsCursorAdapter;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private fr:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/profile/l;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private g:Ldagger/b;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/b",
+            "<",
+            "Lkik/android/chat/vm/messaging/cd;",
             ">;"
         }
     .end annotation
@@ -2675,7 +3440,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/r;",
+            "Lkik/android/chat/service/BatteryChangeReceiver;",
             ">;"
         }
     .end annotation
@@ -2686,18 +3451,18 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/performance/metrics/c;",
+            "Lkik/core/interfaces/ad;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private j:Ljavax/inject/Provider;
+.field private j:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Lcom/kik/android/Mixpanel;",
+            "Lkik/android/f;",
             ">;"
         }
     .end annotation
@@ -2708,7 +3473,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/b;",
+            "Lkik/core/e/d;",
             ">;"
         }
     .end annotation
@@ -2719,18 +3484,18 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/f/c;",
+            "Lkik/core/interfaces/ICommunication;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private m:Ldagger/b;
+.field private m:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/conversations/b;",
+            "Lkik/core/interfaces/ag;",
             ">;"
         }
     .end annotation
@@ -2741,7 +3506,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/j;",
+            "Lkik/core/interfaces/r;",
             ">;"
         }
     .end annotation
@@ -2752,7 +3517,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/v;",
+            "Lcom/kik/performance/metrics/c;",
             ">;"
         }
     .end annotation
@@ -2763,7 +3528,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/theming/ChatBubbleManager;",
+            "Lcom/kik/android/Mixpanel;",
             ">;"
         }
     .end annotation
@@ -2774,7 +3539,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/util/an;",
+            "Lkik/core/interfaces/b;",
             ">;"
         }
     .end annotation
@@ -2785,18 +3550,18 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/a/c;",
+            "Lkik/core/e/c;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private s:Ljavax/inject/Provider;
+.field private s:Ldagger/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljavax/inject/Provider",
+            "Ldagger/b",
             "<",
-            "Landroid/content/res/Resources;",
+            "Lkik/android/chat/vm/conversations/b;",
             ">;"
         }
     .end annotation
@@ -2807,7 +3572,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/b/f;",
+            "Lkik/core/interfaces/IConversation;",
             ">;"
         }
     .end annotation
@@ -2818,18 +3583,18 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/JoinGifTrayHelper;",
+            "Lkik/core/interfaces/v;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private v:Ldagger/b;
+.field private v:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ldagger/b",
+            "Ljavax/inject/Provider",
             "<",
-            "Lkik/android/chat/vm/messaging/dj;",
+            "Lkik/android/chat/theming/ChatBubbleManager;",
             ">;"
         }
     .end annotation
@@ -2840,7 +3605,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/f;",
+            "Lkik/android/util/ai;",
             ">;"
         }
     .end annotation
@@ -2851,7 +3616,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/m;",
+            "Lkik/core/interfaces/s;",
             ">;"
         }
     .end annotation
@@ -2862,7 +3627,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lkik/core/interfaces/z;",
+            "Lcom/kik/metrics/c/d;",
             ">;"
         }
     .end annotation
@@ -2873,7 +3638,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/e/p;",
+            "Lkik/core/content/f;",
             ">;"
         }
     .end annotation
@@ -2885,7 +3650,7 @@
     .locals 1
 
     .prologue
-    .line 577
+    .line 732
     const-class v0, Lcom/kik/components/c;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -2908,13 +3673,13 @@
 .end method
 
 .method private constructor <init>(Lcom/kik/components/c$a;)V
-    .locals 23
+    .locals 26
 
     .prologue
-    .line 839
+    .line 1446
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 840
+    .line 1447
     sget-boolean v1, Lcom/kik/components/c;->a:Z
 
     if-nez v1, :cond_0
@@ -2927,17 +3692,13 @@
 
     throw v1
 
-    .line 2852
+    .line 5462
     :cond_0
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->a(Lcom/kik/components/c$a;)Lcom/kik/d/e;
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->a(Lcom/kik/components/c$a;)Lcom/kik/f/o;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/kik/d/f;->a(Lcom/kik/d/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    invoke-static {v1}, Lcom/kik/f/p;->a(Lcom/kik/f/o;)Ldagger/internal/b;
 
     move-result-object v1
 
@@ -2945,8 +3706,139 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
 
-    .line 2853
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5467
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lcom/kik/f/el;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 5466
+    invoke-static {v1, v2}, Lcom/kik/f/em;->a(Lcom/kik/f/el;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5465
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+
+    .line 5472
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->c(Lcom/kik/components/c$a;)Lcom/kik/f/ej;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 5471
+    invoke-static {v1, v2}, Lcom/kik/f/ek;->a(Lcom/kik/f/ej;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5470
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
+
+    .line 5477
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->d(Lcom/kik/components/c$a;)Lcom/kik/f/en;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 5476
+    invoke-static {v1, v2}, Lcom/kik/f/eo;->a(Lcom/kik/f/en;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5475
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
+
+    .line 5480
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->e(Lcom/kik/components/c$a;)Lcom/kik/f/cr;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/cs;->a(Lcom/kik/f/cr;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    .line 5482
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    .line 5483
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/messaging/AudioRecordingViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->g:Ldagger/b;
+
+    .line 5492
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->f(Lcom/kik/components/c$a;)Lcom/kik/f/e;
+
+    move-result-object v1
+
+    .line 5491
+    invoke-static {v1}, Lcom/kik/f/f;->a(Lcom/kik/f/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5490
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->h:Ljavax/inject/Provider;
+
+    .line 5494
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -2956,27 +3848,28 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
-    .line 2854
+    .line 5496
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+    iget-object v1, v0, Lcom/kik/components/c;->h:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
+    .line 5497
     invoke-static {v1, v2}, Lkik/android/BatteryDrainMetricsManager_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->d:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->j:Ldagger/b;
 
-    .line 2855
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5501
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -2986,10 +3879,10 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
 
-    .line 2856
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5504
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -2999,10 +3892,10 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    .line 2857
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5507
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3012,148 +3905,157 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
 
-    .line 2858
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->c(Lcom/kik/components/c$a;)Lcom/kik/d/au;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/av;->a(Lcom/kik/d/au;)Ldagger/internal/b;
+    .line 5512
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->h(Lcom/kik/components/c$a;)Lcom/kik/f/bs;
 
     move-result-object v1
 
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    .line 5511
+    invoke-static {v1}, Lcom/kik/f/bt;->a(Lcom/kik/f/bs;)Ldagger/internal/b;
 
     move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->h:Ljavax/inject/Provider;
-
-    .line 2859
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->d(Lcom/kik/components/c$a;)Lcom/kik/d/bg;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bh;->a(Lcom/kik/d/bg;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    .line 5510
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
 
-    .line 2860
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->e(Lcom/kik/components/c$a;)Lcom/kik/d/ay;
+    .line 5515
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->i(Lcom/kik/components/c$a;)Lcom/kik/f/cg;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/ch;->a(Lcom/kik/f/cg;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
 
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->h:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lcom/kik/d/az;->a(Lcom/kik/d/ay;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    .line 5520
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->j(Lcom/kik/components/c$a;)Lcom/kik/f/by;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
 
-    .line 2861
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->f(Lcom/kik/components/c$a;)Lcom/kik/d/a;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+
+    .line 5519
+    invoke-static/range {v1 .. v7}, Lcom/kik/f/bz;->a(Lcom/kik/f/by;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5518
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
 
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->h:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/b;->a(Lcom/kik/d/a;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    .line 5531
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->k(Lcom/kik/components/c$a;)Lcom/kik/f/a;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
 
-    .line 2862
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lcom/kik/d/be;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+
+    .line 5530
+    invoke-static {v1, v2, v3}, Lcom/kik/f/b;->a(Lcom/kik/f/a;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/kik/d/bf;->a(Lcom/kik/d/be;)Ldagger/internal/b;
+    .line 5529
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 5536
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->l(Lcom/kik/components/c$a;)Lcom/kik/f/ce;
+
+    move-result-object v1
+
+    .line 5535
+    invoke-static {v1}, Lcom/kik/f/cf;->a(Lcom/kik/f/ce;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5534
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
 
-    .line 2863
+    .line 5538
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+    iget-object v1, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
 
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 5539
     invoke-static {v1, v2, v3}, Lkik/android/chat/vm/conversations/HashTagTooltipViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->m:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->s:Ldagger/b;
 
-    .line 2864
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5545
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3163,10 +4065,10 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
 
-    .line 2865
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5547
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3176,108 +4078,50 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    .line 2866
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->h(Lcom/kik/components/c$a;)Lcom/kik/d/g;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/h;->a(Lcom/kik/d/g;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    .line 2867
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->i(Lcom/kik/components/c$a;)Lcom/kik/d/bv;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bw;->a(Lcom/kik/d/bv;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    .line 2868
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->j(Lcom/kik/components/c$a;)Lcom/kik/d/an;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ao;->a(Lcom/kik/d/an;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
-
-    .line 2869
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->k(Lcom/kik/components/c$a;)Lcom/kik/d/br;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bs;->a(Lcom/kik/d/br;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    .line 2870
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->l(Lcom/kik/components/c$a;)Lcom/kik/d/bp;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/bq;->a(Lcom/kik/d/bp;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
-
-    .line 2871
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->m(Lcom/kik/components/c$a;)Lcom/kik/d/al;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/d/am;->a(Lcom/kik/d/al;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
     iput-object v1, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
-    .line 2872
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 5550
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->m(Lcom/kik/components/c$a;)Lcom/kik/f/k;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/l;->a(Lcom/kik/f/k;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    .line 5554
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->n(Lcom/kik/components/c$a;)Lcom/kik/f/da;
+
+    move-result-object v1
+
+    .line 5553
+    invoke-static {v1}, Lcom/kik/f/db;->a(Lcom/kik/f/da;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    .line 5558
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->o(Lcom/kik/components/c$a;)Lcom/kik/f/ca;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/cb;->a(Lcom/kik/f/ca;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
+
+    .line 5563
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->p(Lcom/kik/components/c$a;)Lcom/kik/f/bu;
 
     move-result-object v1
 
@@ -3287,54 +4131,167 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
 
-    move-object/from16 v0, p0
+    .line 5562
+    invoke-static {v1, v2, v3}, Lcom/kik/f/bv;->a(Lcom/kik/f/bu;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
 
-    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+    move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v12}, Lkik/android/chat/vm/messaging/MessageListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5561
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->v:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
-    .line 2873
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5569
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->q(Lcom/kik/components/c$a;)Lcom/kik/f/bl;
+
+    move-result-object v1
+
+    .line 5568
+    invoke-static {v1}, Lcom/kik/f/bm;->a(Lcom/kik/f/bl;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    .line 5572
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->r(Lcom/kik/components/c$a;)Lcom/kik/f/ct;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/cu;->a(Lcom/kik/f/ct;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 5577
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->s(Lcom/kik/components/c$a;)Lcom/kik/f/cp;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 5576
+    invoke-static {v1, v2, v3}, Lcom/kik/f/cq;->a(Lcom/kik/f/cp;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5575
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    .line 5584
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->t(Lcom/kik/components/c$a;)Lcom/kik/f/bf;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 5583
+    invoke-static {v1, v2}, Lcom/kik/f/bg;->a(Lcom/kik/f/bf;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5582
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
+
+    .line 5586
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    .line 5587
+    invoke-static/range {v1 .. v14}, Lkik/android/chat/vm/messaging/MessageListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->D:Ldagger/b;
+
+    .line 5604
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3344,10 +4301,10 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
 
-    .line 2874
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5607
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3357,10 +4314,10 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
 
-    .line 2875
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5609
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3370,248 +4327,28 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
 
-    .line 2876
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->n(Lcom/kik/components/c$a;)Lcom/kik/d/k;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/l;->a(Lcom/kik/d/k;)Ldagger/internal/b;
+    .line 5614
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->u(Lcom/kik/components/c$a;)Lcom/kik/f/eh;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
-    .line 2877
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->o(Lcom/kik/components/c$a;)Lcom/kik/d/cw;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 5613
+    invoke-static {v1, v2, v3}, Lcom/kik/f/ei;->a(Lcom/kik/f/eh;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
 
     move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/cx;->a(Lcom/kik/d/cw;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
-
-    .line 2878
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->p(Lcom/kik/components/c$a;)Lcom/kik/d/cu;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lcom/kik/d/cv;->a(Lcom/kik/d/cu;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    .line 2879
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->q(Lcom/kik/components/c$a;)Lcom/kik/d/ad;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/aj;->a(Lcom/kik/d/ad;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    .line 2880
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->q(Lcom/kik/components/c$a;)Lcom/kik/d/ad;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lcom/kik/d/ah;->a(Lcom/kik/d/ad;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
-
-    .line 2881
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
-
-    move-object/from16 v16, v0
-
-    invoke-static/range {v1 .. v16}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->E:Ldagger/b;
-
-    .line 2882
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->r(Lcom/kik/components/c$a;)Lcom/kik/d/cf;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/cg;->a(Lcom/kik/d/cf;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
-
-    .line 2883
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->E:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/messaging/TextMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->G:Ldagger/b;
-
-    .line 2884
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->s(Lcom/kik/components/c$a;)Lcom/kik/d/y;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/z;->a(Lcom/kik/d/y;)Ldagger/internal/b;
+    .line 5612
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
@@ -3619,33 +4356,332 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->H:Ljavax/inject/Provider;
 
-    .line 2885
-    move-object/from16 v0, p0
+    .line 5618
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->v(Lcom/kik/components/c$a;)Lcom/kik/f/ed;
 
-    iget-object v1, v0, Lcom/kik/components/c;->E:Ldagger/b;
+    move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->H:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/messaging/AbstractContentMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5617
+    invoke-static {v1}, Lcom/kik/f/ee;->a(Lcom/kik/f/ed;)Ldagger/internal/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->I:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->I:Ljavax/inject/Provider;
 
-    .line 2886
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5623
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->w(Lcom/kik/components/c$a;)Lcom/kik/f/ef;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->H:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->I:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 5622
+    invoke-static/range {v1 .. v9}, Lcom/kik/f/eg;->a(Lcom/kik/f/ef;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5621
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    .line 5634
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/f/ar;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/bb;->a(Lcom/kik/f/ar;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    .line 5638
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/f/ar;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 5637
+    invoke-static {v1, v2, v3, v4, v5}, Lcom/kik/f/az;->a(Lcom/kik/f/ar;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    .line 5647
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->y(Lcom/kik/components/c$a;)Lcom/kik/f/cv;
+
+    move-result-object v1
+
+    .line 5646
+    invoke-static {v1}, Lcom/kik/f/cx;->a(Lcom/kik/f/cv;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5645
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->M:Ljavax/inject/Provider;
+
+    .line 5652
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->y(Lcom/kik/components/c$a;)Lcom/kik/f/cv;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 5651
+    invoke-static {v1, v2}, Lcom/kik/f/cw;->a(Lcom/kik/f/cv;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5650
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->N:Ljavax/inject/Provider;
+
+    .line 5657
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->z(Lcom/kik/components/c$a;)Lcom/kik/f/ea;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->M:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->N:Ljavax/inject/Provider;
+
+    .line 5656
+    invoke-static {v1, v2, v3, v4}, Lcom/kik/f/ec;->a(Lcom/kik/f/ea;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5655
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 5665
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->A(Lcom/kik/components/c$a;)Lcom/kik/f/q;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 5664
+    invoke-static {v1, v2}, Lcom/kik/f/r;->a(Lcom/kik/f/q;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5663
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    .line 5668
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->B(Lcom/kik/components/c$a;)Lcom/kik/f/dk;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/dl;->a(Lcom/kik/f/dk;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->Q:Ljavax/inject/Provider;
+
+    .line 5670
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->Q:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    .line 5671
+    invoke-static/range {v1 .. v19}, Lkik/android/chat/vm/messaging/TextMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->R:Ldagger/b;
+
+    .line 5693
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->C(Lcom/kik/components/c$a;)Lcom/kik/f/ah;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/ai;->a(Lcom/kik/f/ah;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    .line 5696
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -3655,208 +4691,14 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    .line 2887
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->r(Lcom/kik/components/c$a;)Lcom/kik/d/cf;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ch;->a(Lcom/kik/d/cf;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
-
-    .line 2888
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->q(Lcom/kik/components/c$a;)Lcom/kik/d/ad;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ak;->a(Lcom/kik/d/ad;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    .line 2889
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->I:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/chat/vm/messaging/ContentMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->M:Ldagger/b;
-
-    .line 2890
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->r(Lcom/kik/components/c$a;)Lcom/kik/d/cf;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ci;->a(Lcom/kik/d/cf;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->N:Ljavax/inject/Provider;
-
-    .line 2891
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->M:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->N:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/messaging/VideoContentMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->O:Ldagger/b;
-
-    .line 2892
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->M:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/messaging/StickerMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->P:Ldagger/b;
-
-    .line 2893
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->t(Lcom/kik/components/c$a;)Lcom/kik/d/aa;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/ab;->a(Lcom/kik/d/aa;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->Q:Ljavax/inject/Provider;
-
-    .line 2894
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->M:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->Q:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/messaging/GifMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->R:Ldagger/b;
-
-    .line 2895
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->u(Lcom/kik/components/c$a;)Lcom/kik/d/m;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/d/p;->a(Lcom/kik/d/m;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
-
-    .line 2896
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/n;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
     iput-object v1, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
 
-    .line 2897
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->u(Lcom/kik/components/c$a;)Lcom/kik/d/m;
+    .line 5699
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->B(Lcom/kik/components/c$a;)Lcom/kik/f/dk;
 
     move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/o;->a(Lcom/kik/d/m;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+    invoke-static {v1}, Lcom/kik/f/dm;->a(Lcom/kik/f/dk;)Ldagger/internal/b;
 
     move-result-object v1
 
@@ -3864,24 +4706,12 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->U:Ljavax/inject/Provider;
 
-    .line 2898
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->u(Lcom/kik/components/c$a;)Lcom/kik/d/m;
+    .line 5702
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/f/ar;
 
     move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->U:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/n;->a(Lcom/kik/d/m;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    invoke-static {v1}, Lcom/kik/f/bc;->a(Lcom/kik/f/ar;)Ldagger/internal/b;
 
     move-result-object v1
 
@@ -3889,16 +4719,123 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
 
-    .line 2899
+    .line 5704
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/kik/components/c;->E:Ldagger/b;
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2}, Lkik/android/chat/vm/messaging/FriendingMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v21, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->U:Ljavax/inject/Provider;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
+
+    move-object/from16 v23, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v24, v0
+
+    .line 5705
+    invoke-static/range {v1 .. v24}, Lkik/android/chat/vm/messaging/ContentMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
@@ -3906,16 +4843,12 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->W:Ldagger/b;
 
-    .line 2900
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->v(Lcom/kik/components/c$a;)Lcom/kik/d/cb;
+    .line 5732
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->B(Lcom/kik/components/c$a;)Lcom/kik/f/dk;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/kik/d/cc;->a(Lcom/kik/d/cb;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    invoke-static {v1}, Lcom/kik/f/dn;->a(Lcom/kik/f/dk;)Ldagger/internal/b;
 
     move-result-object v1
 
@@ -3923,46 +4856,280 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
 
-    .line 2901
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->w(Lcom/kik/components/c$a;)Lcom/kik/d/bx;
+    .line 5734
+    move-object/from16 v0, p0
 
-    move-result-object v1
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
 
-    invoke-static {v1}, Lcom/kik/d/by;->a(Lcom/kik/d/bx;)Ldagger/internal/b;
+    move-object/from16 v0, p0
 
-    move-result-object v1
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v21, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->U:Ljavax/inject/Provider;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
+
+    move-object/from16 v23, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v24, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
+
+    move-object/from16 v25, v0
+
+    .line 5735
+    invoke-static/range {v1 .. v25}, Lkik/android/chat/vm/messaging/VideoContentMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->Y:Ldagger/b;
 
-    .line 2902
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/d/cs;
+    .line 5762
+    move-object/from16 v0, p0
 
-    move-result-object v1
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
 
-    invoke-static {v1}, Lcom/kik/d/ct;->a(Lcom/kik/d/cs;)Ldagger/internal/b;
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v21, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->U:Ljavax/inject/Provider;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
+
+    move-object/from16 v23, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v24, v0
+
+    .line 5763
+    invoke-static/range {v1 .. v24}, Lkik/android/chat/vm/messaging/StickerMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->Z:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->Z:Ldagger/b;
 
-    .line 2903
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->y(Lcom/kik/components/c$a;)Lkik/core/manager/ai;
+    .line 5792
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->D(Lcom/kik/components/c$a;)Lcom/kik/f/aj;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2}, Lkik/core/manager/al;->a(Lkik/core/manager/ai;Ljavax/inject/Provider;)Ldagger/internal/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 5791
+    invoke-static {v1, v2, v3}, Lcom/kik/f/ak;->a(Lcom/kik/f/aj;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5790
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
@@ -3970,91 +5137,323 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->aa:Ljavax/inject/Provider;
 
-    .line 2904
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->z(Lcom/kik/components/c$a;)Lkik/core/manager/h;
+    .line 5794
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v21, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->U:Ljavax/inject/Provider;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
+
+    move-object/from16 v23, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v24, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->aa:Ljavax/inject/Provider;
+
+    move-object/from16 v25, v0
+
+    .line 5795
+    invoke-static/range {v1 .. v25}, Lkik/android/chat/vm/messaging/GifMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->aa:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->ab:Ldagger/b;
 
-    invoke-static {v1, v2}, Lkik/core/manager/i;->a(Lkik/core/manager/h;Ljavax/inject/Provider;)Ldagger/internal/b;
+    .line 5822
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    .line 5823
+    invoke-static/range {v1 .. v18}, Lkik/android/chat/vm/messaging/AbstractMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->ab:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->ac:Ldagger/b;
 
-    .line 2905
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->A(Lcom/kik/components/c$a;)Lkik/core/manager/af;
+    .line 5843
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    .line 5844
+    invoke-static/range {v1 .. v18}, Lkik/android/chat/vm/messaging/FriendingMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->ad:Ldagger/b;
 
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->ab:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/core/manager/ag;->a(Lkik/core/manager/af;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+    .line 5866
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->E(Lcom/kik/components/c$a;)Lcom/kik/f/dg;
 
     move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ac:Ljavax/inject/Provider;
-
-    .line 2906
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->B(Lcom/kik/components/c$a;)Lcom/kik/d/a/f;
+    invoke-static {v1}, Lcom/kik/f/dh;->a(Lcom/kik/f/dg;)Ldagger/internal/b;
 
     move-result-object v1
 
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lcom/kik/d/a/g;->a(Lcom/kik/d/a/f;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ad:Ljavax/inject/Provider;
-
-    .line 2907
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->C(Lcom/kik/components/c$a;)Lcom/kik/d/q;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/d/r;->a(Lcom/kik/d/q;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
+    .line 5865
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
@@ -4062,8 +5461,141 @@
 
     iput-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
 
-    .line 2908
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5870
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->F(Lcom/kik/components/c$a;)Lcom/kik/f/dc;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/dd;->a(Lcom/kik/f/dc;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5869
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    .line 5874
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->G(Lcom/kik/components/c$a;)Lkik/core/manager/al;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 5873
+    invoke-static {v1, v2}, Lkik/core/manager/ao;->a(Lkik/core/manager/al;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
+
+    .line 5878
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->H(Lcom/kik/components/c$a;)Lkik/core/manager/h;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
+
+    .line 5877
+    invoke-static {v1, v2}, Lkik/core/manager/i;->a(Lkik/core/manager/h;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    .line 5882
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->I(Lcom/kik/components/c$a;)Lkik/core/manager/ai;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    .line 5881
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/core/manager/aj;->a(Lkik/core/manager/ai;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ai:Ljavax/inject/Provider;
+
+    .line 5890
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->J(Lcom/kik/components/c$a;)Lcom/kik/f/a/e;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    .line 5889
+    invoke-static {v1, v2, v3, v4}, Lcom/kik/f/a/f;->a(Lcom/kik/f/a/e;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aj:Ljavax/inject/Provider;
+
+    .line 5898
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->K(Lcom/kik/components/c$a;)Lcom/kik/f/u;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 5897
+    invoke-static {v1, v2}, Lcom/kik/f/v;->a(Lcom/kik/f/u;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5896
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ak:Ljavax/inject/Provider;
+
+    .line 5900
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -4073,10 +5605,10 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
 
-    .line 2909
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
+    .line 5903
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
 
     move-result-object v1
 
@@ -4086,4378 +5618,185 @@
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
 
-    .line 2910
-    move-object/from16 v0, p0
+    .line 5908
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->L(Lcom/kik/components/c$a;)Lcom/kik/f/s;
 
-    iget-object v1, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
+    move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->Z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->ac:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->ad:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v16, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
-
-    move-object/from16 v17, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
-
-    move-object/from16 v18, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    move-object/from16 v19, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v20, v0
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v21, v0
-
-    invoke-static/range {v1 .. v21}, Lkik/android/chat/presentation/MediaTrayPresenterImpl_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ah:Ldagger/b;
-
-    .line 2911
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->D(Lcom/kik/components/c$a;)Lcom/kik/d/ar;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/at;->a(Lcom/kik/d/ar;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ai:Ljavax/inject/Provider;
-
-    .line 2912
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->D(Lcom/kik/components/c$a;)Lcom/kik/d/ar;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ai:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/d/as;->a(Lcom/kik/d/ar;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aj:Ljavax/inject/Provider;
-
-    .line 2913
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->E(Lcom/kik/components/c$a;)Lcom/kik/d/c;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/d;->a(Lcom/kik/d/c;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ak:Ljavax/inject/Provider;
-
-    .line 2914
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aj:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->ak:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/videochat/VideoChatViewController_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->al:Ldagger/b;
-
-    .line 2915
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/KikScopedDialogFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    .line 2916
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/KikIqFragmentBase_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    .line 2917
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/f;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    .line 2918
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/AddressbookFragmentBase_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ap:Ldagger/b;
-
-    .line 2919
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->F(Lcom/kik/components/c$a;)Lcom/kik/d/bc;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bd;->a(Lcom/kik/d/bc;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aq:Ljavax/inject/Provider;
-
-    .line 2920
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->G(Lcom/kik/components/c$a;)Lcom/kik/d/cj;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ck;->a(Lcom/kik/d/cj;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ar:Ljavax/inject/Provider;
-
-    .line 2921
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aq:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ar:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/net/communicator/AndroidCommunicator_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->as:Ldagger/b;
-
-    .line 2922
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->h:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
     iget-object v5, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/AbTestsFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->at:Ldagger/b;
-
-    .line 2923
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/VideoTrimmingFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->au:Ldagger/b;
-
-    .line 2924
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/cards/browser/CaptchaWindowFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->av:Ldagger/b;
-
-    .line 2925
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/video/VideoTranscoder_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aw:Ldagger/b;
-
-    .line 2926
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/GalleryWidget_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ax:Ldagger/b;
-
-    .line 2927
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ay:Ldagger/b;
-
-    .line 2928
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/gallery/vm/AbstractGalleryListItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->az:Ldagger/b;
-
-    .line 2929
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/SimpleFragmentWrapperActivity_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aA:Ldagger/b;
-
-    .line 2930
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aA:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/activity/KikWelcomeFragmentActivity_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aB:Ldagger/b;
-
-    .line 2931
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/activity/IntroActivity_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aC:Ldagger/b;
-
-    .line 2932
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/o;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aD:Ljavax/inject/Provider;
-
-    .line 2933
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->aD:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/net/communicator/CommunicatorService_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aE:Ldagger/b;
-
-    .line 2937
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/activity/KikPlatformLanding_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aF:Ldagger/b;
-
-    .line 2938
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->aD:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/activity/KikActivityBase_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aG:Ldagger/b;
-
-    .line 2939
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aG:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/activity/KikIqActivityBase_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aH:Ldagger/b;
-
-    .line 2940
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/activity/FragmentWrapperActivity_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aI:Ldagger/b;
-
-    .line 2941
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->H(Lcom/kik/components/c$a;)Lcom/kik/d/u;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/v;->a(Lcom/kik/d/u;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
-
-    .line 2942
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aH:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/activity/KikApiLandingActivity_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aK:Ldagger/b;
-
-    .line 2943
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/LEDNotificationPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aL:Ldagger/b;
-
-    .line 2944
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/KikModalPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aM:Ldagger/b;
-
-    .line 2945
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aM:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/HelpPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aN:Ldagger/b;
-
-    .line 2946
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/KikPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    .line 2947
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aP:Ldagger/b;
-
-    .line 2948
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/settings/EditPasswordFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aQ:Ldagger/b;
-
-    .line 2949
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/KikSwitchPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aR:Ldagger/b;
-
-    .line 2950
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aR:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/widget/preferences/NotifyNewPeoplePreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aS:Ldagger/b;
-
-    .line 2951
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aT:Ldagger/b;
-
-    .line 2952
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aM:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/widget/preferences/UsernamePreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aU:Ldagger/b;
-
-    .line 2953
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/NamePreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aV:Ldagger/b;
-
-    .line 2954
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/settings/EditNameFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aW:Ldagger/b;
-
-    .line 2955
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/AutoplayVideoPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aX:Ldagger/b;
-
-    .line 2956
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/KikVideoPrefetchPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aY:Ldagger/b;
-
-    .line 2957
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->I(Lcom/kik/components/c$a;)Lcom/kik/d/cn;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/cq;->a(Lcom/kik/d/cn;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->aZ:Ljavax/inject/Provider;
-
-    .line 2958
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->I(Lcom/kik/components/c$a;)Lcom/kik/d/cn;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/co;->a(Lcom/kik/d/cn;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ba:Ljavax/inject/Provider;
-
-    .line 2959
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->I(Lcom/kik/components/c$a;)Lcom/kik/d/cn;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->aZ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->ba:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v9}, Lcom/kik/d/cp;->a(Lcom/kik/d/cn;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bb:Ljavax/inject/Provider;
-
-    .line 2960
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->bb:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/widget/preferences/KikProfilePicPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bc:Ldagger/b;
-
-    .line 2961
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bd:Ldagger/b;
-
-    .line 2962
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/KikEmailPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->be:Ldagger/b;
-
-    .line 2963
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/settings/EditEmailFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bf:Ldagger/b;
-
-    .line 2964
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/WebHistoryPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bg:Ldagger/b;
-
-    .line 2965
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/g;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bh:Ljavax/inject/Provider;
-
-    .line 2966
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aM:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bh:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/widget/preferences/ClearPaymentMethodPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bi:Ldagger/b;
-
-    .line 2967
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->J(Lcom/kik/components/c$a;)Lcom/kik/d/s;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/t;->a(Lcom/kik/d/s;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    .line 2968
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/widget/preferences/ResetKikPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bk:Ldagger/b;
-
-    .line 2969
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/settings/PreferenceFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bl:Ldagger/b;
-
-    .line 2970
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bl:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->Z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/settings/KikPreferenceFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bm:Ldagger/b;
-
-    .line 2971
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->K(Lcom/kik/components/c$a;)Lcom/kik/d/ba;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bb;->a(Lcom/kik/d/ba;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bn:Ljavax/inject/Provider;
-
-    .line 2972
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bm:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bn:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/KikPreferenceLaunchpad_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bo:Ldagger/b;
-
-    .line 2973
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareOtherPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bp:Ldagger/b;
-
-    .line 2974
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareEmailPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bq:Ldagger/b;
-
-    .line 2975
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareSmsPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->br:Ldagger/b;
-
-    .line 2976
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareSocialPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bs:Ldagger/b;
-
-    .line 2977
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aM:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/CommunityGuideLinesPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bt:Ldagger/b;
-
-    .line 2978
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v8}, Lkik/android/KikNotificationHandler_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bu:Ldagger/b;
-
-    .line 2979
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->L(Lcom/kik/components/c$a;)Lcom/kik/d/bz;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ca;->a(Lcom/kik/d/bz;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
-
-    .line 2980
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->q(Lcom/kik/components/c$a;)Lcom/kik/d/ad;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ai;->a(Lcom/kik/d/ad;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
-
-    .line 2981
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->M(Lcom/kik/components/c$a;)Lcom/kik/d/aw;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/ax;->a(Lcom/kik/d/aw;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
-
-    .line 2982
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/o;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->by:Ljavax/inject/Provider;
-
-    .line 2983
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->ac:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/kik/components/c;->by:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/kik/components/c;->bb:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v15, v0, Lcom/kik/components/c;->ak:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v15}, Lkik/android/chat/KikApplication_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bz:Ldagger/b;
-
-    .line 2984
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/m;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
-
-    .line 2985
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v10}, Lkik/android/chat/fragment/KikPreregistrationFragmentBase_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bB:Ldagger/b;
-
-    .line 2986
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->N(Lcom/kik/components/c$a;)Lcom/kik/d/ap;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lcom/kik/d/aq;->a(Lcom/kik/d/ap;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bC:Ljavax/inject/Provider;
-
-    .line 2987
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bB:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bC:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/chat/fragment/KikLoginFragmentAbstract_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bD:Ldagger/b;
-
-    .line 2988
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/BaseChatInfoFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bE:Ldagger/b;
-
-    .line 2989
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/EmailConfirmationReminderFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bF:Ldagger/b;
-
-    .line 2990
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/ChatBubbleSelectionFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bG:Ldagger/b;
-
-    .line 2991
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v12}, Lkik/android/chat/fragment/ConversationsBaseFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bH:Ldagger/b;
-
-    .line 2992
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/h;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bI:Ljavax/inject/Provider;
-
-    .line 2993
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->b(Lcom/kik/components/c$a;)Lkik/core/e;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkik/core/q;->a(Lkik/core/e;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bJ:Ljavax/inject/Provider;
-
-    .line 2994
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bh:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->bI:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->bJ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->bn:Ljavax/inject/Provider;
-
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
+    iget-object v6, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+    iget-object v7, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
+    iget-object v8, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
 
-    move-object/from16 v16, v0
+    iget-object v9, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
 
-    invoke-static/range {v1 .. v16}, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5907
+    invoke-static/range {v1 .. v9}, Lcom/kik/f/t;->a(Lcom/kik/f/s;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
 
     move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bK:Ldagger/b;
-
-    .line 2995
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/KikChangeGroupNameFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5906
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->bL:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->an:Ljavax/inject/Provider;
 
-    .line 2996
+    .line 5918
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v4, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
+    iget-object v5, v0, Lcom/kik/components/c;->I:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
+    iget-object v6, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v7, v0, Lcom/kik/components/c;->ai:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
+    iget-object v8, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+    iget-object v9, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+    iget-object v11, v0, Lcom/kik/components/c;->aj:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v12, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+    iget-object v12, v0, Lcom/kik/components/c;->ak:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
+    iget-object v13, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+    iget-object v14, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+    iget-object v15, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
 
     move-object/from16 v16, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
 
     move-object/from16 v17, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
 
     move-object/from16 v18, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->an:Ljavax/inject/Provider;
 
     move-object/from16 v19, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
 
     move-object/from16 v20, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
 
     move-object/from16 v21, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+    iget-object v0, v0, Lcom/kik/components/c;->d:Ljavax/inject/Provider;
 
     move-object/from16 v22, v0
 
-    invoke-static/range {v1 .. v22}, Lkik/android/chat/fragment/KikChatFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bM:Ldagger/b;
-
-    .line 2997
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bN:Ldagger/b;
-
-    .line 2998
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->O(Lcom/kik/components/c$a;)Lcom/kik/d/bt;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bu;->a(Lcom/kik/d/bt;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bO:Ljavax/inject/Provider;
-
-    .line 2999
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bE:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->bO:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v14, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v14}, Lkik/android/chat/fragment/KikChatInfoFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bP:Ldagger/b;
-
-    .line 3000
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->ab:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v10}, Lkik/android/chat/fragment/KikContactsListFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bQ:Ldagger/b;
-
-    .line 3001
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/b;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bR:Ljavax/inject/Provider;
-
-    .line 3002
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bH:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->ar:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->bR:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v12, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v13, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v13}, Lkik/android/chat/fragment/KikConversationsFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bS:Ldagger/b;
-
-    .line 3003
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bQ:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/KikDefaultContactsListFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bT:Ldagger/b;
-
-    .line 3004
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/chat/fragment/KikGroupMembersListFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bU:Ldagger/b;
-
-    .line 3005
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bQ:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bV:Ldagger/b;
-
-    .line 3006
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/KikPermissionsFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bW:Ldagger/b;
-
-    .line 3007
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bV:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/KikPickUsersFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bX:Ldagger/b;
-
-    .line 3008
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bB:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bY:Ldagger/b;
-
-    .line 3009
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->P(Lcom/kik/components/c$a;)Lcom/kik/d/bn;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bo;->a(Lcom/kik/d/bn;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->bZ:Ljavax/inject/Provider;
-
-    .line 3010
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bX:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->bZ:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v10}, Lkik/android/chat/fragment/KikStartGroupFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ca:Ldagger/b;
-
-    .line 3011
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/KikWelcomeFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cb:Ldagger/b;
-
-    .line 3012
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bH:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/MissedConversationsFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cc:Ldagger/b;
-
-    .line 3013
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v9}, Lkik/android/chat/fragment/SendToFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cd:Ldagger/b;
-
-    .line 3014
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v10}, Lkik/android/chat/fragment/ViewPictureFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ce:Ldagger/b;
-
-    .line 3015
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->bO:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v11}, Lkik/android/chat/fragment/KikCodeFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cf:Ldagger/b;
-
-    .line 3016
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/chat/fragment/MediaItemFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cg:Ldagger/b;
-
-    .line 3017
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bO:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/scan/fragment/ScanFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ch:Ldagger/b;
-
-    .line 3018
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/ScanCodeTabFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ci:Ldagger/b;
-
-    .line 3019
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->bh:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/PaymentConfirmationFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cj:Ldagger/b;
-
-    .line 3020
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/AddPaymentMethodFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ck:Ldagger/b;
-
-    .line 3021
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->ap:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/FullScreenAddressbookFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cl:Ldagger/b;
-
-    .line 3022
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->e:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bh:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bI:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->bJ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v10, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v11, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v11}, Lcom/kik/cards/web/PluginManager_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cm:Ldagger/b;
-
-    .line 3023
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cn:Ldagger/b;
-
-    .line 6027
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->co:Ldagger/b;
-
-    .line 6028
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->Q(Lcom/kik/components/c$a;)Lcom/kik/d/a/a;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lcom/kik/d/a/c;->a(Lcom/kik/d/a/a;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cp:Ljavax/inject/Provider;
-
-    .line 6029
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->Q(Lcom/kik/components/c$a;)Lcom/kik/d/a/a;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/a/d;->a(Lcom/kik/d/a/a;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cq:Ljavax/inject/Provider;
-
-    .line 6030
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->Q(Lcom/kik/components/c$a;)Lcom/kik/d/a/a;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/a/b;->a(Lcom/kik/d/a/a;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cr:Ljavax/inject/Provider;
-
-    .line 6031
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->ap:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->cp:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->cq:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->cr:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v9, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v9}, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cs:Ldagger/b;
-
-    .line 6032
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bT:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ct:Ldagger/b;
-
-    .line 6033
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aR:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/LetFriendsFindMePreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cu:Ldagger/b;
-
-    .line 6034
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aR:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/UsePhoneContactsPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cv:Ldagger/b;
-
-    .line 6035
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/preferences/BlockListPreference_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cw:Ldagger/b;
-
-    .line 6036
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->R(Lcom/kik/components/c$a;)Lcom/kik/d/cl;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/cm;->a(Lcom/kik/d/cl;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cx:Ljavax/inject/Provider;
-
-    .line 6037
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->cx:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/widget/GifWidget_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cy:Ldagger/b;
-
-    .line 6038
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/gifs/vm/GifSearchBarViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cz:Ldagger/b;
-
-    .line 6039
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v8, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v8}, Lkik/android/gifs/vm/GifWidgetViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cA:Ldagger/b;
-
-    .line 6040
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/gifs/vm/AbstractGifPageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cB:Ldagger/b;
-
-    .line 6041
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->cB:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cC:Ldagger/b;
-
-    .line 6042
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/gifs/vm/AbstractGifPageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cD:Ldagger/b;
-
-    .line 6043
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->cD:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifFeaturedResultsViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cE:Ldagger/b;
-
-    .line 6044
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/gifs/vm/AbstractGifPageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cF:Ldagger/b;
-
-    .line 6045
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->S(Lcom/kik/components/c$a;)Lcom/kik/d/w;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lcom/kik/d/x;->a(Lcom/kik/d/w;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cG:Ljavax/inject/Provider;
-
-    .line 6046
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->cF:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->cG:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifEmojiListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cH:Ldagger/b;
-
-    .line 6047
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->Q:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/gifs/vm/AbstractGifItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cI:Ldagger/b;
-
-    .line 6048
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->Q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/gifs/vm/GifPreviewViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cJ:Ldagger/b;
-
-    .line 6049
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/TemporaryBanDialog_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cK:Ldagger/b;
-
-    .line 6050
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->T(Lcom/kik/components/c$a;)Lcom/kik/d/bi;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bl;->a(Lcom/kik/d/bi;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cL:Ljavax/inject/Provider;
-
-    .line 6051
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->T(Lcom/kik/components/c$a;)Lcom/kik/d/bi;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lcom/kik/d/bm;->a(Lcom/kik/d/bi;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cM:Ljavax/inject/Provider;
-
-    .line 6052
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->cL:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->cM:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cN:Ldagger/b;
-
-    .line 6053
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->T(Lcom/kik/components/c$a;)Lcom/kik/d/bi;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bk;->a(Lcom/kik/d/bi;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cO:Ljavax/inject/Provider;
-
-    .line 6054
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->cO:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->cM:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationEnterCodeFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cP:Ldagger/b;
-
-    .line 6055
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->T(Lcom/kik/components/c$a;)Lcom/kik/d/bi;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/kik/d/bj;->a(Lcom/kik/d/bi;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cQ:Ljavax/inject/Provider;
-
-    .line 6056
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->cQ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/PhoneVerificationCountryCodePickerFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cR:Ldagger/b;
-
-    .line 6057
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/net/communicator/RegistrationIntentService_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cS:Ldagger/b;
-
-    .line 6058
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->U(Lcom/kik/components/c$a;)Lcom/kik/d/i;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lcom/kik/d/j;->a(Lcom/kik/d/i;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cT:Ljavax/inject/Provider;
-
-    .line 6059
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->cT:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/CameraFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cU:Ldagger/b;
-
-    .line 6060
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->I:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/messaging/WubbleMessageViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cV:Ldagger/b;
-
-    .line 6061
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->bn:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/widget/WubbleView_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cW:Ldagger/b;
-
-    .line 6062
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->ag:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/widget/BugmeBarView_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cX:Ldagger/b;
-
-    .line 6063
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->bZ:Ljavax/inject/Provider;
-
-    invoke-static {v1}, Lkik/android/chat/r;->a(Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cY:Ljavax/inject/Provider;
-
-    .line 6064
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->cY:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->bZ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/PublicGroupSearchFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->cZ:Ldagger/b;
-
-    .line 6065
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/widget/StickerWidget_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->da:Ldagger/b;
-
-    .line 6066
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/widget/StickerWidgetViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->db:Ldagger/b;
-
-    .line 6067
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/AbstractStickerContentListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dc:Ldagger/b;
-
-    .line 6068
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->dc:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/widget/StickerPackViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dd:Ldagger/b;
-
-    .line 6069
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/StickerTabBarViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->de:Ldagger/b;
-
-    .line 6070
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/StickerTabViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->df:Ldagger/b;
-
-    .line 6071
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/StickerContentViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dg:Ldagger/b;
-
-    .line 6072
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/widget/SmileyWidget_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dh:Ldagger/b;
-
-    .line 6073
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/StickerSettingsViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->di:Ldagger/b;
-
-    .line 6074
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->X:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/widget/AbstractStickerSettingsListItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dj:Ldagger/b;
-
-    .line 6075
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dk:Ldagger/b;
-
-    .line 6076
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->bZ:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/PublicGroupIntroFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dl:Ldagger/b;
-
-    .line 6077
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->by:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/SuggestedChatsListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dm:Ldagger/b;
-
-    .line 6078
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/SuggestedChatViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dn:Ldagger/b;
-
-    .line 6079
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->do:Ldagger/b;
-
-    .line 6080
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/chats/search/AbstractChatsSearchResultViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dp:Ldagger/b;
-
-    .line 6081
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->dp:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/search/OneToOneChatsSearchResultViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dq:Ldagger/b;
-
-    .line 6082
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->dp:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/vm/chats/search/GroupChatsSearchResultViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dr:Ldagger/b;
-
-    .line 6083
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->dp:Ldagger/b;
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/search/UsernameSearchResultViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->ds:Ldagger/b;
-
-    .line 6084
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->bj:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/deeplinks/DeepLinkActivity_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dt:Ldagger/b;
-
-    .line 6085
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->ao:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/conversations/calltoaction/AddressBookCallToActionViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->du:Ldagger/b;
-
-    .line 6086
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/conversations/emptyview/AddressBookEmptyViewViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dv:Ldagger/b;
-
-    .line 6087
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
     move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
 
-    move-object/from16 v0, p0
+    iget-object v0, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
 
-    iget-object v4, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+    move-object/from16 v23, v0
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
+    iget-object v0, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
 
-    iget-object v6, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    move-object/from16 v24, v0
 
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5919
+    invoke-static/range {v1 .. v24}, Lkik/android/chat/presentation/MediaTrayPresenterImpl_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dw:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->ao:Ldagger/b;
 
-    .line 6088
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 5948
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->M(Lcom/kik/components/c$a;)Lcom/kik/f/bp;
 
     move-result-object v1
 
@@ -8467,65 +5806,208 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/conversations/emptyview/PublicGroupsEmptyViewViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5947
+    invoke-static {v1, v2, v3}, Lcom/kik/f/br;->a(Lcom/kik/f/bp;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5946
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dx:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->ap:Ljavax/inject/Provider;
 
-    .line 6089
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->g:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v6, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v7, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/chat/vm/widget/ChatCoverViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 5953
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->M(Lcom/kik/components/c$a;)Lcom/kik/f/bp;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dy:Ldagger/b;
+    iget-object v2, v0, Lcom/kik/components/c;->ap:Ljavax/inject/Provider;
 
-    .line 6090
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 5952
+    invoke-static {v1, v2}, Lcom/kik/f/bq;->a(Lcom/kik/f/bp;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5951
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->aq:Ljavax/inject/Provider;
+
+    .line 5958
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->N(Lcom/kik/components/c$a;)Lcom/kik/f/c;
+
+    move-result-object v1
+
+    .line 5957
+    invoke-static {v1}, Lcom/kik/f/d;->a(Lcom/kik/f/c;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 5956
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->ar:Ljavax/inject/Provider;
+
+    .line 5960
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aq:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ar:Ljavax/inject/Provider;
+
+    .line 5961
+    invoke-static {v1, v2, v3}, Lkik/android/videochat/VideoChatViewController_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->as:Ldagger/b;
+
+    .line 5967
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/f;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    .line 5969
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 5970
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/AddressbookFragmentBase_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->au:Ldagger/b;
+
+    .line 5980
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->O(Lcom/kik/components/c$a;)Lcom/kik/f/cc;
+
+    move-result-object v1
+
+    .line 5979
+    invoke-static {v1}, Lcom/kik/f/cd;->a(Lcom/kik/f/cc;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->av:Ljavax/inject/Provider;
+
+    .line 5984
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->P(Lcom/kik/components/c$a;)Lcom/kik/f/do;
+
+    move-result-object v1
+
+    .line 5983
+    invoke-static {v1}, Lcom/kik/f/dp;->a(Lcom/kik/f/do;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aw:Ljavax/inject/Provider;
+
+    .line 5986
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->av:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->aw:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 5987
+    invoke-static {v1, v2, v3}, Lkik/android/net/communicator/AndroidCommunicator_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ax:Ldagger/b;
+
+    .line 5992
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/n;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    .line 5994
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
@@ -8533,117 +6015,1654 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iget-object v5, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/ReportDialogViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    .line 5995
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/AbTestsFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dz:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->az:Ldagger/b;
 
-    .line 6091
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6003
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 6004
+    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/VideoTrimmingFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->aA:Ldagger/b;
 
-    invoke-static {v1, v2}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6007
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6008
+    invoke-static {v1, v2, v3}, Lcom/kik/cards/browser/CaptchaWindowFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dA:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->aB:Ldagger/b;
 
-    .line 6092
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6011
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6012
+    invoke-static {v1, v2}, Lkik/android/video/VideoTranscoder_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->aC:Ldagger/b;
+
+    .line 6014
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/WebTrayItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 6015
+    invoke-static {v1, v2, v3, v4}, Lkik/android/widget/GalleryWidget_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dB:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->aD:Ldagger/b;
 
-    .line 6093
+    .line 6021
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/kik/components/c;->am:Ldagger/b;
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2}, Lkik/android/widget/WebWidget_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    .line 6022
+    invoke-static {v1, v2, v3}, Lkik/android/gallery/vm/GalleryWidgetViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dC:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->aE:Ldagger/b;
+
+    .line 6025
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    .line 6026
+    invoke-static/range {v1 .. v7}, Lkik/android/gallery/vm/AbstractGalleryListItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aF:Ldagger/b;
+
+    .line 6035
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    .line 6036
+    invoke-static {v1}, Lkik/android/chat/fragment/SimpleFragmentWrapperActivity_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aG:Ldagger/b;
+
+    .line 6038
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 6039
+    invoke-static {v1, v2}, Lkik/android/chat/activity/KikWelcomeFragmentActivity_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aH:Ldagger/b;
+
+    .line 6042
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6043
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/activity/IntroActivity_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aI:Ldagger/b;
+
+    .line 6050
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/o;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
+
+    .line 6052
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
+
+    .line 6053
+    invoke-static {v1, v2, v3}, Lkik/android/net/communicator/CommunicatorService_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aK:Ldagger/b;
+
+    .line 6056
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 6057
+    invoke-static {v1, v2, v3}, Lkik/android/chat/activity/KikPlatformLanding_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aL:Ldagger/b;
+
+    .line 6060
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    .line 6061
+    invoke-static {v1, v2}, Lkik/android/chat/activity/KikActivityBase_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aM:Ldagger/b;
+
+    .line 6064
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6065
+    invoke-static {v1, v2, v3}, Lkik/android/chat/activity/KikIqActivityBase_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aN:Ldagger/b;
+
+    .line 6068
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    .line 6069
+    invoke-static {v1, v2}, Lkik/android/chat/activity/FragmentWrapperActivity_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aO:Ldagger/b;
+
+    .line 6074
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->Q(Lcom/kik/components/c$a;)Lcom/kik/f/y;
+
+    move-result-object v1
+
+    .line 6073
+    invoke-static {v1}, Lcom/kik/f/z;->a(Lcom/kik/f/y;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aP:Ljavax/inject/Provider;
+
+    .line 6079
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->R(Lcom/kik/components/c$a;)Lcom/kik/f/al;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 6078
+    invoke-static {v1, v2}, Lcom/kik/f/ao;->a(Lcom/kik/f/al;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6077
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    .line 6081
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aJ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->aP:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 6082
+    invoke-static/range {v1 .. v10}, Lkik/android/chat/activity/KikApiLandingActivity_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aR:Ldagger/b;
 
     .line 6094
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
-
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/WebTrayViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
-
-    move-object/from16 v0, p0
-
-    iput-object v1, v0, Lcom/kik/components/c;->dD:Ldagger/b;
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     .line 6095
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    invoke-static {v1}, Lkik/android/widget/preferences/LEDNotificationPreference_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->aS:Ldagger/b;
 
-    invoke-static {v1, v2}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSearchBarViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6097
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6098
+    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/HelpPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dE:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->aT:Ldagger/b;
 
-    .line 6096
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6103
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    .line 6104
+    invoke-static {v1}, Lkik/android/widget/preferences/PasswordPreference_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->aU:Ldagger/b;
+
+    .line 6106
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6107
+    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/settings/EditPasswordFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aV:Ldagger/b;
+
+    .line 6110
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 6111
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/widget/preferences/NotifyNewPeoplePreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aW:Ldagger/b;
+
+    .line 6122
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    .line 6123
+    invoke-static {v1}, Lkik/android/widget/preferences/ShowKikCodePreference_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aX:Ldagger/b;
+
+    .line 6125
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    .line 6126
+    invoke-static/range {v1 .. v6}, Lkik/android/widget/preferences/UsernamePreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aY:Ldagger/b;
+
+    .line 6134
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6135
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/NamePreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->aZ:Ldagger/b;
+
+    .line 6138
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 6139
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/settings/EditNameFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ba:Ldagger/b;
+
+    .line 6145
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 6146
+    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/AutoplayVideoPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bb:Ldagger/b;
+
+    .line 6149
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 6150
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/KikVideoPrefetchPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bc:Ldagger/b;
+
+    .line 6152
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    .line 6153
+    invoke-static {v1}, Lkik/android/widget/preferences/KikPreferenceScreen_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bd:Ldagger/b;
+
+    .line 6155
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6156
+    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/KikEmailPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->be:Ldagger/b;
+
+    .line 6161
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6162
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/settings/EditEmailFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bf:Ldagger/b;
+
+    .line 6168
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6169
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/WebHistoryPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bg:Ldagger/b;
+
+    .line 6172
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    .line 6173
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/KikSwitchPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bh:Ldagger/b;
+
+    .line 6176
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 6177
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/KikModalPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bi:Ldagger/b;
+
+    .line 6180
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    .line 6181
+    invoke-static {v1}, Lkik/android/widget/preferences/KikPreference_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bj:Ldagger/b;
+
+    .line 6186
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->S(Lcom/kik/components/c$a;)Lcom/kik/f/w;
+
+    move-result-object v1
+
+    .line 6185
+    invoke-static {v1}, Lcom/kik/f/x;->a(Lcom/kik/f/w;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6184
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    .line 6188
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 6189
+    invoke-static/range {v1 .. v8}, Lkik/android/widget/preferences/ResetKikPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bl:Ldagger/b;
+
+    .line 6199
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6200
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareOtherPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bm:Ldagger/b;
+
+    .line 6203
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6204
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareEmailPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bn:Ldagger/b;
+
+    .line 6207
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6208
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareSmsPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bo:Ldagger/b;
+
+    .line 6211
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6212
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/ShareSocialPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bp:Ldagger/b;
+
+    .line 6215
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6216
+    invoke-static {v1, v2, v3}, Lkik/android/widget/preferences/CommunityGuideLinesPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bq:Ldagger/b;
+
+    .line 6219
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    .line 6220
+    invoke-static/range {v1 .. v7}, Lkik/android/KikNotificationHandler_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->br:Ldagger/b;
+
+    .line 6231
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->T(Lcom/kik/components/c$a;)Lcom/kik/f/de;
+
+    move-result-object v1
+
+    .line 6230
+    invoke-static {v1}, Lcom/kik/f/df;->a(Lcom/kik/f/de;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    .line 6234
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/f/ar;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/ba;->a(Lcom/kik/f/ar;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bt:Ljavax/inject/Provider;
+
+    .line 6239
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->U(Lcom/kik/components/c$a;)Lcom/kik/f/bh;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    .line 6238
+    invoke-static {v1, v2, v3}, Lcom/kik/f/bk;->a(Lcom/kik/f/bh;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6237
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bu:Ljavax/inject/Provider;
+
+    .line 6243
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->U(Lcom/kik/components/c$a;)Lcom/kik/f/bh;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->bu:Ljavax/inject/Provider;
+
+    .line 6242
+    invoke-static {v1, v2}, Lcom/kik/f/bi;->a(Lcom/kik/f/bh;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
+
+    .line 6247
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->V(Lcom/kik/components/c$a;)Lcom/kik/f/bw;
+
+    move-result-object v1
+
+    .line 6246
+    invoke-static {v1}, Lcom/kik/f/bx;->a(Lcom/kik/f/bw;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
+
+    .line 6249
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 6251
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/p;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6250
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
+
+    .line 6259
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->W(Lcom/kik/components/c$a;)Lcom/kik/f/ds;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/dv;->a(Lcom/kik/f/ds;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6258
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->by:Ljavax/inject/Provider;
+
+    .line 6264
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->W(Lcom/kik/components/c$a;)Lcom/kik/f/ds;
+
+    move-result-object v1
+
+    .line 6263
+    invoke-static {v1}, Lcom/kik/f/dt;->a(Lcom/kik/f/ds;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6262
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bz:Ljavax/inject/Provider;
+
+    .line 6269
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->W(Lcom/kik/components/c$a;)Lcom/kik/f/ds;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->by:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->bz:Ljavax/inject/Provider;
+
+    .line 6268
+    invoke-static/range {v1 .. v9}, Lcom/kik/f/du;->a(Lcom/kik/f/ds;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6267
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
+
+    .line 6281
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->X(Lcom/kik/components/c$a;)Lcom/kik/f/ae;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 6280
+    invoke-static {v1, v2}, Lcom/kik/f/ag;->a(Lcom/kik/f/ae;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bB:Ljavax/inject/Provider;
+
+    .line 6285
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->X(Lcom/kik/components/c$a;)Lcom/kik/f/ae;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6284
+    invoke-static {v1, v2}, Lcom/kik/f/af;->a(Lcom/kik/f/ae;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bC:Ljavax/inject/Provider;
+
+    .line 6287
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->bt:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ai:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->ar:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->bB:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->bC:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    .line 6288
+    invoke-static/range {v1 .. v19}, Lkik/android/chat/KikApplication_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bD:Ldagger/b;
+
+    .line 6310
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/m;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bE:Ljavax/inject/Provider;
+
+    .line 6315
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->Y(Lcom/kik/components/c$a;)Lcom/kik/f/bn;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    .line 6314
+    invoke-static {v1, v2, v3, v4}, Lcom/kik/f/bo;->a(Lcom/kik/f/bn;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6313
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bF:Ljavax/inject/Provider;
+
+    .line 6320
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bE:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->bF:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    .line 6321
+    invoke-static/range {v1 .. v17}, Lkik/android/chat/fragment/KikLoginFragmentAbstract_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bG:Ldagger/b;
+
+    .line 6340
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 6341
+    invoke-static {v1, v2}, Lkik/android/chat/fragment/KikScopedDialogFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bH:Ldagger/b;
+
+    .line 6344
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    .line 6345
+    invoke-static/range {v1 .. v9}, Lkik/android/chat/fragment/UserProfileFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bI:Ldagger/b;
+
+    .line 6356
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6357
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/ChatBubbleSelectionFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bJ:Ldagger/b;
+
+    .line 6363
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 6364
+    invoke-static/range {v1 .. v14}, Lkik/android/chat/fragment/ConversationsBaseFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bK:Ldagger/b;
+
+    .line 6381
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/g;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bL:Ljavax/inject/Provider;
+
+    .line 6384
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/h;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bM:Ljavax/inject/Provider;
+
+    .line 6386
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->g(Lcom/kik/components/c$a;)Lkik/core/e;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkik/core/q;->a(Lkik/core/e;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->bN:Ljavax/inject/Provider;
+
+    .line 6388
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
@@ -8651,406 +7670,1986 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupRelatedItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bL:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->bM:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bN:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->bt:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    .line 6389
+    invoke-static/range {v1 .. v16}, Lcom/kik/cards/web/CardsWebViewFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dF:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->bO:Ldagger/b;
 
-    .line 6097
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6407
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 6408
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/KikChangeGroupNameFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->bP:Ldagger/b;
+
+    .line 6416
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->D:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->bt:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSearchingItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->ak:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->H:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v21, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v23, v0
+
+    .line 6417
+    invoke-static/range {v1 .. v23}, Lkik/android/chat/fragment/KikChatFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dG:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->bQ:Ldagger/b;
 
-    .line 6098
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6442
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6443
+    invoke-static {v1, v2, v3}, Lkik/android/chat/fragment/KikIqFragmentBase_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->cY:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->bR:Ldagger/b;
+
+    .line 6446
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bE:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    .line 6447
+    invoke-static/range {v1 .. v10}, Lkik/android/chat/fragment/KikPreregistrationFragmentBase_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dH:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->bS:Ldagger/b;
 
-    .line 6099
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6459
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    .line 6460
+    invoke-static/range {v1 .. v8}, Lkik/android/chat/fragment/MediaViewerFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->bT:Ldagger/b;
+
+    .line 6470
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    .line 6471
+    invoke-static/range {v1 .. v13}, Lkik/android/chat/fragment/KikContactsListFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dI:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->bU:Ldagger/b;
 
-    .line 6100
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6486
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    .line 6487
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/b;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->bV:Ljavax/inject/Provider;
+
+    .line 6493
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/widget/SmileyWidgetViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->aw:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->aP:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->bV:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v21, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    move-object/from16 v22, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v23, v0
+
+    .line 6494
+    invoke-static/range {v1 .. v23}, Lkik/android/chat/fragment/KikConversationsFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dJ:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->bW:Ldagger/b;
 
-    .line 6101
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6519
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 6520
+    invoke-static/range {v1 .. v15}, Lkik/android/chat/fragment/KikDefaultContactsListFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->bX:Ldagger/b;
+
+    .line 6537
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/widget/SmileyItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    .line 6538
+    invoke-static/range {v1 .. v9}, Lkik/android/chat/fragment/KikGroupMembersListFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dK:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->bY:Ldagger/b;
 
-    .line 6102
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6549
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    .line 6550
+    invoke-static/range {v1 .. v13}, Lkik/android/chat/fragment/KikMultiselectContactsListFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->Y:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->bZ:Ldagger/b;
+
+    .line 6565
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/SmileyPopupViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->bt:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6566
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/KikPermissionsFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dL:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->ca:Ldagger/b;
 
-    .line 6103
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6574
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    .line 6575
+    invoke-static/range {v1 .. v14}, Lkik/android/chat/fragment/KikPickUsersFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cb:Ldagger/b;
+
+    .line 6591
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/SmileyShopItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->al:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bE:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    .line 6592
+    invoke-static/range {v1 .. v14}, Lkik/android/chat/fragment/KikRegistrationFragmentAbstract_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dM:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cc:Ldagger/b;
 
-    .line 7107
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6611
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->Z(Lcom/kik/components/c$a;)Lcom/kik/f/cn;
+
+    move-result-object v1
+
+    .line 6610
+    invoke-static {v1}, Lcom/kik/f/co;->a(Lcom/kik/f/cn;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6609
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cd:Ljavax/inject/Provider;
+
+    .line 6613
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->cd:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    .line 6614
+    invoke-static/range {v1 .. v17}, Lkik/android/chat/fragment/KikStartGroupFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dN:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->ce:Ldagger/b;
 
-    .line 7108
-    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->V(Lcom/kik/components/c$a;)Lcom/kik/d/cd;
+    .line 6633
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    .line 6634
+    invoke-static/range {v1 .. v8}, Lkik/android/chat/fragment/KikWelcomeFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cf:Ldagger/b;
+
+    .line 6644
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3}, Lcom/kik/d/ce;->a(Lcom/kik/d/cd;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ldagger/internal/c;->a(Ldagger/internal/b;)Ljavax/inject/Provider;
-
-    move-result-object v1
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dO:Ljavax/inject/Provider;
-
-    .line 7109
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/kik/components/c;->dc:Ldagger/b;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iget-object v6, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v7, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/kik/components/c;->dO:Ljavax/inject/Provider;
+    iget-object v8, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
-
-    invoke-static/range {v1 .. v7}, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
-
-    move-result-object v1
+    iget-object v9, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dP:Ldagger/b;
-
-    .line 7110
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
-
-    move-result-object v1
+    iget-object v10, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v12, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v13, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v14, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/kik/components/c;->o:Ljavax/inject/Provider;
+    iget-object v15, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
 
-    invoke-static/range {v1 .. v6}, Lkik/android/chat/vm/NotificationsViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    .line 6645
+    invoke-static/range {v1 .. v17}, Lkik/android/chat/fragment/MissedConversationsFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dQ:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cg:Ldagger/b;
 
-    .line 7111
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6664
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    .line 6665
+    invoke-static/range {v1 .. v10}, Lkik/android/chat/fragment/SendToFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->ch:Ldagger/b;
+
+    .line 6677
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3}, Lkik/android/chat/view/PreviewResultsViewImpl_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->I:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    .line 6678
+    invoke-static/range {v1 .. v9}, Lkik/android/chat/fragment/settings/KikPreferenceFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dR:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->ci:Ldagger/b;
 
-    .line 7112
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6689
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 6690
+    invoke-static/range {v1 .. v11}, Lkik/android/chat/fragment/ViewPictureFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->bb:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cj:Ldagger/b;
 
-    invoke-static {v1, v2}, Lkik/android/chat/vm/TrophyListViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6705
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->aa(Lcom/kik/components/c$a;)Lcom/kik/f/cy;
+
+    move-result-object v1
+
+    .line 6704
+    invoke-static {v1}, Lcom/kik/f/cz;->a(Lcom/kik/f/cy;)Ldagger/internal/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dS:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->ck:Ljavax/inject/Provider;
 
-    .line 7113
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6707
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->ck:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 6708
+    invoke-static/range {v1 .. v12}, Lkik/android/chat/fragment/KikCodeFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->bb:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cl:Ldagger/b;
+
+    .line 6722
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/TrophyListItemViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 6723
+    invoke-static/range {v1 .. v8}, Lkik/android/chat/fragment/MediaItemFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dT:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cm:Ldagger/b;
 
-    .line 7114
+    .line 6733
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/kik/components/c;->an:Ldagger/b;
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->bb:Ljavax/inject/Provider;
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->ck:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    .line 6734
+    invoke-static/range {v1 .. v9}, Lkik/android/scan/fragment/ScanFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dU:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cn:Ldagger/b;
 
-    .line 7115
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6745
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 6746
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/ScanCodeTabFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->n:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->co:Ldagger/b;
 
-    invoke-static {v1, v2}, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6752
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6753
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/FullScreenAddressbookFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dV:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cp:Ldagger/b;
 
-    .line 7116
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6763
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->U(Lcom/kik/components/c$a;)Lcom/kik/f/bh;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->bu:Ljavax/inject/Provider;
+
+    .line 6762
+    invoke-static {v1, v2}, Lcom/kik/f/bj;->a(Lcom/kik/f/bh;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cq:Ljavax/inject/Provider;
+
+    .line 6765
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->k:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bL:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->bM:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->bN:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->cq:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->bv:Ljavax/inject/Provider;
+
+    .line 6766
+    invoke-static/range {v1 .. v13}, Lcom/kik/cards/web/PluginManager_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cr:Ldagger/b;
+
+    .line 6781
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6782
+    invoke-static {v1}, Lcom/kik/cards/browser/PreCaptchaDescriptiveDialogFragment_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cs:Ldagger/b;
+
+    .line 6784
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6785
+    invoke-static {v1}, Lkik/android/chat/fragment/DeprecatedDescriptiveDialogFragment_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ct:Ldagger/b;
+
+    .line 6789
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ab(Lcom/kik/components/c$a;)Lcom/kik/f/a/a;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6788
+    invoke-static {v1, v2, v3, v4}, Lcom/kik/f/a/c;->a(Lcom/kik/f/a/a;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cu:Ljavax/inject/Provider;
+
+    .line 6796
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ab(Lcom/kik/components/c$a;)Lcom/kik/f/a/a;
+
+    move-result-object v1
+
+    .line 6795
+    invoke-static {v1}, Lcom/kik/f/a/d;->a(Lcom/kik/f/a/a;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cv:Ljavax/inject/Provider;
+
+    .line 6800
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ab(Lcom/kik/components/c$a;)Lcom/kik/f/a/a;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/a/b;->a(Lcom/kik/f/a/a;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cw:Ljavax/inject/Provider;
+
+    .line 6802
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->cu:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->cv:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->cw:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    .line 6803
+    invoke-static/range {v1 .. v12}, Lkik/android/chat/fragment/AddressBookFindPeopleInviteFriendsFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cx:Ldagger/b;
+
+    .line 6817
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ah:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 6818
+    invoke-static/range {v1 .. v15}, Lkik/android/chat/fragment/KikComposeFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cy:Ldagger/b;
+
+    .line 6835
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6836
+    invoke-static {v1, v2, v3, v4}, Lkik/android/widget/preferences/LetFriendsFindMePreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cz:Ldagger/b;
+
+    .line 6842
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6843
+    invoke-static {v1, v2, v3, v4}, Lkik/android/widget/preferences/UsePhoneContactsPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cA:Ldagger/b;
+
+    .line 6849
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6850
+    invoke-static {v1, v2}, Lkik/android/widget/preferences/BlockListPreference_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cB:Ldagger/b;
+
+    .line 6854
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ac(Lcom/kik/components/c$a;)Lcom/kik/f/dq;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/kik/f/dr;->a(Lcom/kik/f/dq;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cC:Ljavax/inject/Provider;
+
+    .line 6856
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->cC:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
+
+    .line 6857
+    invoke-static/range {v1 .. v6}, Lkik/android/widget/GifWidget_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cD:Ldagger/b;
+
+    .line 6865
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6866
+    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifSearchBarViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cE:Ldagger/b;
+
+    .line 6869
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->C:Ljavax/inject/Provider;
+
+    .line 6870
+    invoke-static/range {v1 .. v7}, Lkik/android/gifs/vm/GifWidgetViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cF:Ldagger/b;
+
+    .line 6879
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6880
+    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifSearchResultsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cG:Ldagger/b;
+
+    .line 6883
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 6884
+    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifFeaturedResultsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cH:Ldagger/b;
+
+    .line 6889
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ad(Lcom/kik/components/c$a;)Lcom/kik/f/aa;
 
     move-result-object v1
 
@@ -9060,80 +9659,969 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/profile/ChatInfoBioViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    .line 6888
+    invoke-static {v1, v2, v3, v4, v5}, Lcom/kik/f/ab;->a(Lcom/kik/f/aa;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dW:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cI:Ljavax/inject/Provider;
 
-    .line 7117
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6895
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->cI:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6896
+    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifEmojiListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cJ:Ldagger/b;
 
+    .line 6899
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iget-object v1, v0, Lcom/kik/components/c;->aa:Ljavax/inject/Provider;
 
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/kik/components/c;->s:Ljavax/inject/Provider;
-
-    move-object/from16 v0, p0
-
-    iget-object v5, v0, Lcom/kik/components/c;->c:Ljavax/inject/Provider;
-
-    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/profile/BioEditorViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6900
+    invoke-static {v1}, Lkik/android/gifs/vm/AbstractGifItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dX:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cK:Ldagger/b;
 
-    .line 7118
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6902
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aa:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 6903
+    invoke-static {v1, v2, v3}, Lkik/android/gifs/vm/GifPreviewViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->j:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cL:Ldagger/b;
 
-    invoke-static {v1, v2}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6906
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ay:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6907
+    invoke-static {v1, v2}, Lkik/android/chat/fragment/TemporaryBanDialog_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dY:Ldagger/b;
+    iput-object v1, v0, Lcom/kik/components/c;->cM:Ldagger/b;
 
-    .line 7119
-    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+    .line 6911
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ae(Lcom/kik/components/c$a;)Lcom/kik/f/ci;
+
+    move-result-object v1
+
+    .line 6910
+    invoke-static {v1}, Lcom/kik/f/cl;->a(Lcom/kik/f/ci;)Ldagger/internal/b;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+    iput-object v1, v0, Lcom/kik/components/c;->cN:Ljavax/inject/Provider;
 
-    invoke-static {v1, v2}, Lkik/android/chat/vm/chats/profile/NewToKikViewModel_MembersInjector;->a(Ldagger/b;Ljavax/inject/Provider;)Ldagger/b;
+    .line 6916
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ae(Lcom/kik/components/c$a;)Lcom/kik/f/ci;
 
     move-result-object v1
 
     move-object/from16 v0, p0
 
-    iput-object v1, v0, Lcom/kik/components/c;->dZ:Ldagger/b;
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
 
-    .line 845
+    .line 6915
+    invoke-static {v1, v2}, Lcom/kik/f/cm;->a(Lcom/kik/f/ci;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 6914
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cO:Ljavax/inject/Provider;
+
+    .line 6918
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->cN:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->cO:Ljavax/inject/Provider;
+
+    .line 6919
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cP:Ldagger/b;
+
+    .line 6929
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ae(Lcom/kik/components/c$a;)Lcom/kik/f/ci;
+
+    move-result-object v1
+
+    .line 6928
+    invoke-static {v1}, Lcom/kik/f/ck;->a(Lcom/kik/f/ci;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cQ:Ljavax/inject/Provider;
+
+    .line 6931
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->cQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->cO:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 6932
+    invoke-static/range {v1 .. v7}, Lkik/android/chat/fragment/registration/RegistrationPhoneVerificationEnterCodeFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cR:Ldagger/b;
+
+    .line 6943
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ae(Lcom/kik/components/c$a;)Lcom/kik/f/ci;
+
+    move-result-object v1
+
+    .line 6942
+    invoke-static {v1}, Lcom/kik/f/cj;->a(Lcom/kik/f/ci;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cS:Ljavax/inject/Provider;
+
+    .line 1450
+    invoke-direct/range {p0 .. p1}, Lcom/kik/components/c;->a(Lcom/kik/components/c$a;)V
+
+    .line 7580
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    .line 7581
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_GroupMuteNotificationsItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eP:Ldagger/b;
+
+    .line 7587
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    .line 7588
+    invoke-static {v1, v2}, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_MuteNotificationsItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eQ:Ldagger/b;
+
+    .line 7591
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ck:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    .line 7592
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/profile/profileactionvm/StartChattingActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eR:Ldagger/b;
+
+    .line 7599
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 7600
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/profile/UnblockActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eS:Ldagger/b;
+
+    .line 7607
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 7608
+    invoke-static/range {v1 .. v9}, Lkik/android/chat/vm/profile/profileactionvm/ChangeGroupPhotoActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eT:Ldagger/b;
+
+    .line 7619
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->dF:Ljavax/inject/Provider;
+
+    .line 7620
+    invoke-static {v1, v2}, Lkik/android/chat/vm/profile/gridvm/DisplayMemberItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eU:Ldagger/b;
+
+    .line 7623
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 7624
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/profileactionvm/JoinPublicGroupActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eV:Ldagger/b;
+
+    .line 7630
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    .line 7631
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/profileactionvm/LeaveGroupActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eW:Ldagger/b;
+
+    .line 7637
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    .line 7638
+    invoke-static {v1}, Lkik/android/deeplinks/InternalDeeplinkActivity_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eX:Ldagger/b;
+
+    .line 7640
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    .line 7641
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/deeplinks/ChatInfoDeepLinkActivity_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eY:Ldagger/b;
+
+    .line 7648
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    .line 7649
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/profile/profileactionvm/JoinPrivateGroupActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eZ:Ldagger/b;
+
+    .line 7652
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->ed:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->dF:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    .line 7653
+    invoke-static/range {v1 .. v10}, Lkik/android/chat/vm/profile/DisplayOnlyPrivateGroupProfileViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fa:Ldagger/b;
+
+    .line 7665
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    .line 7666
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/gridvm/DisplayOnlyMemberItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fb:Ldagger/b;
+
+    .line 7672
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 7673
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/DaysOnKikViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fc:Ldagger/b;
+
+    .line 7679
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 7680
+    invoke-static {v1}, Lkik/android/chat/fragment/SuggestInterestDialogFragment_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fd:Ldagger/b;
+
+    .line 7682
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 7683
+    invoke-static {v1}, Lkik/android/chat/vm/chats/profile/SuggestInterestViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fe:Ldagger/b;
+
+    .line 7685
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bB:Ljavax/inject/Provider;
+
+    .line 7686
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/InterestsPickerFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ff:Ldagger/b;
+
+    .line 7692
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 7693
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/profile/ChatInfoInterestsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fg:Ldagger/b;
+
+    .line 7699
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 7700
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/profile/CurrentUserInterestsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fh:Ldagger/b;
+
+    .line 7707
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->al(Lcom/kik/components/c$a;)Lcom/kik/f/dw;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 7706
+    invoke-static {v1, v2}, Lcom/kik/f/dy;->a(Lcom/kik/f/dw;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fi:Ljavax/inject/Provider;
+
+    .line 7711
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->al(Lcom/kik/components/c$a;)Lcom/kik/f/dw;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->bB:Ljavax/inject/Provider;
+
+    .line 7710
+    invoke-static {v1, v2, v3}, Lcom/kik/f/dz;->a(Lcom/kik/f/dw;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fj:Ljavax/inject/Provider;
+
+    .line 7716
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->al(Lcom/kik/components/c$a;)Lcom/kik/f/dw;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->fi:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->fj:Ljavax/inject/Provider;
+
+    .line 7715
+    invoke-static {v1, v2, v3}, Lcom/kik/f/dx;->a(Lcom/kik/f/dw;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 7714
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fk:Ljavax/inject/Provider;
+
+    .line 7720
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->fk:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 7721
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/profile/BotBadgeViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fl:Ldagger/b;
+
+    .line 7726
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 7727
+    invoke-static/range {v1 .. v9}, Lcom/kik/view/adapters/ConversationsAdapter_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fm:Ldagger/b;
+
+    .line 7738
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 7739
+    invoke-static {v1, v2}, Lkik/android/chat/vm/ConversationListItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fn:Ldagger/b;
+
+    .line 7742
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 7743
+    invoke-static {v1, v2, v3}, Lcom/kik/view/adapters/ContactsArrayAdapter_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fo:Ldagger/b;
+
+    .line 7746
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 7747
+    invoke-static {v1, v2, v3}, Lcom/kik/view/adapters/GroupContactArrayAdapter_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fp:Ldagger/b;
+
+    .line 7750
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 7751
+    invoke-static {v1, v2, v3}, Lcom/kik/view/adapters/ContactsCursorAdapter_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fq:Ldagger/b;
+
+    .line 7754
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->fk:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 7755
+    invoke-static {v1, v2}, Lkik/android/chat/vm/profile/BadgeCollectionViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->fr:Ldagger/b;
+
+    .line 1452
     return-void
 .end method
 
@@ -9141,7 +10629,7 @@
     .locals 0
 
     .prologue
-    .line 578
+    .line 736
     invoke-direct {p0, p1}, Lcom/kik/components/c;-><init>(Lcom/kik/components/c$a;)V
 
     return-void
@@ -9151,7 +10639,7 @@
     .locals 2
 
     .prologue
-    .line 848
+    .line 1455
     new-instance v0, Lcom/kik/components/c$a;
 
     const/4 v1, 0x0
@@ -9161,18 +10649,2613 @@
     return-object v0
 .end method
 
+.method private a(Lcom/kik/components/c$a;)V
+    .locals 21
+
+    .prologue
+    .line 2949
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->cS:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 2950
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/PhoneVerificationCountryCodePickerFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cT:Ldagger/b;
+
+    .line 2956
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 2957
+    invoke-static {v1, v2}, Lkik/android/net/communicator/RegistrationIntentService_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cU:Ldagger/b;
+
+    .line 2962
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->af(Lcom/kik/components/c$a;)Lcom/kik/f/m;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    .line 2961
+    invoke-static {v1, v2, v3, v4}, Lcom/kik/f/n;->a(Lcom/kik/f/m;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cV:Ljavax/inject/Provider;
+
+    .line 2967
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->cV:Ljavax/inject/Provider;
+
+    .line 2968
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/fragment/CameraFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cW:Ldagger/b;
+
+    .line 2975
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->E:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->v:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->z:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->G:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->B:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->S:Ljavax/inject/Provider;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v20, v0
+
+    .line 2976
+    invoke-static/range {v1 .. v20}, Lkik/android/chat/vm/messaging/WubbleMessageViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cX:Ldagger/b;
+
+    .line 2998
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->b:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->x:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 2999
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/widget/WubbleView_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cY:Ldagger/b;
+
+    .line 3006
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->T:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3007
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/widget/BugmeBarView_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->cZ:Ldagger/b;
+
+    .line 3014
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->cd:Ljavax/inject/Provider;
+
+    .line 3015
+    invoke-static {v1}, Lkik/android/chat/s;->a(Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->da:Ljavax/inject/Provider;
+
+    .line 3017
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->da:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->cd:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3018
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/PublicGroupSearchFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->db:Ldagger/b;
+
+    .line 3026
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3027
+    invoke-static {v1, v2, v3}, Lkik/android/widget/StickerWidget_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dc:Ldagger/b;
+
+    .line 3030
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->bw:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->w:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 3031
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/widget/StickerWidgetViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dd:Ldagger/b;
+
+    .line 3038
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 3039
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/widget/StickerPackViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->de:Ldagger/b;
+
+    .line 3045
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    .line 3046
+    invoke-static {v1}, Lkik/android/chat/vm/widget/StickerTabBarViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->df:Ldagger/b;
+
+    .line 3048
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    .line 3049
+    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/StickerTabViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dg:Ldagger/b;
+
+    .line 3052
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    .line 3053
+    invoke-static {v1}, Lkik/android/chat/vm/widget/StickerContentViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dh:Ldagger/b;
+
+    .line 3055
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3056
+    invoke-static {v1, v2, v3, v4}, Lkik/android/widget/SmileyWidget_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->di:Ldagger/b;
+
+    .line 3062
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3063
+    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/StickerSettingsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dj:Ldagger/b;
+
+    .line 3066
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3067
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/widget/AbstractStickerSettingsListItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dk:Ldagger/b;
+
+    .line 3072
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3073
+    invoke-static {v1, v2}, Lkik/android/chat/vm/SimpleImageTooltipViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dl:Ldagger/b;
+
+    .line 3076
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->cd:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    .line 3077
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/fragment/PublicGroupIntroFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dm:Ldagger/b;
+
+    .line 3085
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->bx:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    .line 3086
+    invoke-static {v1, v2}, Lkik/android/chat/vm/chats/SuggestedChatsListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dn:Ldagger/b;
+
+    .line 3089
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3090
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/SuggestedChatViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->do:Ldagger/b;
+
+    .line 3096
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 3097
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/search/ChatsSearchResultsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dp:Ldagger/b;
+
+    .line 3100
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    .line 3101
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/search/OneToOneChatsSearchResultViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dq:Ldagger/b;
+
+    .line 3104
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    .line 3105
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/search/GroupChatsSearchResultViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dr:Ldagger/b;
+
+    .line 3112
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3113
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/search/UsernameSearchResultViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ds:Ldagger/b;
+
+    .line 3119
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bk:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    .line 3120
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/deeplinks/DeepLinkActivity_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dt:Ldagger/b;
+
+    .line 3127
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->at:Ljavax/inject/Provider;
+
+    .line 3128
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/conversations/calltoaction/AddressBookCallToActionViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->du:Ldagger/b;
+
+    .line 3131
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3132
+    invoke-static {v1}, Lkik/android/chat/vm/conversations/emptyview/AddressBookEmptyViewViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dv:Ldagger/b;
+
+    .line 3134
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3135
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/conversations/calltoaction/PublicGroupsCallToActionViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dw:Ldagger/b;
+
+    .line 3142
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3143
+    invoke-static {v1, v2}, Lkik/android/chat/vm/conversations/emptyview/PublicGroupsEmptyViewViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dx:Ldagger/b;
+
+    .line 3146
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 3147
+    invoke-static/range {v1 .. v7}, Lkik/android/chat/vm/widget/ChatCoverViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dy:Ldagger/b;
+
+    .line 3156
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 3157
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/ReportDialogViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dz:Ldagger/b;
+
+    .line 3163
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3164
+    invoke-static {v1}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupQuickSearchItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dA:Ldagger/b;
+
+    .line 3166
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3167
+    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/WebTrayItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dB:Ldagger/b;
+
+    .line 3170
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3171
+    invoke-static {v1, v2, v3}, Lkik/android/widget/WebWidget_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dC:Ldagger/b;
+
+    .line 3174
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3175
+    invoke-static {v1}, Lkik/android/chat/vm/widget/WebTrayViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dD:Ldagger/b;
+
+    .line 3177
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3178
+    invoke-static {v1}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSearchBarViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dE:Ldagger/b;
+
+    .line 3182
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/f/ar;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    .line 3181
+    invoke-static {v1, v2}, Lcom/kik/f/bd;->a(Lcom/kik/f/ar;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dF:Ljavax/inject/Provider;
+
+    .line 3184
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->dF:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3185
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupRelatedItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dG:Ldagger/b;
+
+    .line 3192
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->dF:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3193
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSearchingItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dH:Ldagger/b;
+
+    .line 3199
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->da:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3200
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dI:Ldagger/b;
+
+    .line 3203
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3204
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/publicgroups/PublicGroupSuggestionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dJ:Ldagger/b;
+
+    .line 3210
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 3211
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/widget/SmileyWidgetViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dK:Ldagger/b;
+
+    .line 3217
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3218
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/widget/SmileyItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dL:Ldagger/b;
+
+    .line 3224
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->af:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3225
+    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/SmileyPopupViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dM:Ldagger/b;
+
+    .line 3228
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3229
+    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/SmileyShopItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dN:Ldagger/b;
+
+    .line 3231
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3232
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/MediaTabBarViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dO:Ldagger/b;
+
+    .line 3235
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    .line 3236
+    invoke-static {v1, v2}, Lkik/android/chat/vm/widget/AbstractStickerContentListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dP:Ldagger/b;
+
+    .line 3242
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ag(Lcom/kik/components/c$a;)Lcom/kik/f/di;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3241
+    invoke-static {v1, v2, v3}, Lcom/kik/f/dj;->a(Lcom/kik/f/di;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3240
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dQ:Ljavax/inject/Provider;
+
+    .line 3246
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ae:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->V:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->dQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3247
+    invoke-static/range {v1 .. v8}, Lkik/android/chat/vm/widget/StickerStaticListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dR:Ldagger/b;
+
+    .line 3257
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 3258
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/NotificationsViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dS:Ldagger/b;
+
+    .line 3265
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3266
+    invoke-static {v1, v2}, Lkik/android/chat/view/PreviewResultsViewImpl_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dT:Ldagger/b;
+
+    .line 3269
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
+
+    .line 3270
+    invoke-static {v1}, Lkik/android/chat/vm/TrophyListViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dU:Ldagger/b;
+
+    .line 3272
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3273
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/TrophyListItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dV:Ldagger/b;
+
+    .line 3276
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
+
+    .line 3277
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/fragment/TrophyCaseFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dW:Ldagger/b;
+
+    .line 3283
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    .line 3284
+    invoke-static {v1}, Lkik/android/chat/vm/DialogRadioViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dX:Ldagger/b;
+
+    .line 3288
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->x(Lcom/kik/components/c$a;)Lcom/kik/f/ar;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->K:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3287
+    invoke-static {v1, v2, v3, v4, v5}, Lcom/kik/f/be;->a(Lcom/kik/f/ar;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    .line 3297
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->z(Lcom/kik/components/c$a;)Lcom/kik/f/ea;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->N:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 3296
+    invoke-static {v1, v2, v3, v4}, Lcom/kik/f/eb;->a(Lcom/kik/f/ea;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3295
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    .line 3305
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ah(Lcom/kik/components/c$a;)Lcom/kik/f/ac;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3304
+    invoke-static {v1, v2}, Lcom/kik/f/ad;->a(Lcom/kik/f/ac;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3303
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    .line 3307
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->ck:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    .line 3308
+    invoke-static/range {v1 .. v15}, Lkik/android/chat/vm/profile/ContactProfileViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eb:Ldagger/b;
+
+    .line 3325
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->bs:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->ck:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    .line 3326
+    invoke-static/range {v1 .. v15}, Lkik/android/chat/vm/profile/BotProfileViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ec:Ldagger/b;
+
+    .line 3346
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->R(Lcom/kik/components/c$a;)Lcom/kik/f/al;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    .line 3345
+    invoke-static {v1, v2}, Lcom/kik/f/am;->a(Lcom/kik/f/al;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3344
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ed:Ljavax/inject/Provider;
+
+    .line 3348
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->ed:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->dF:Ljavax/inject/Provider;
+
+    .line 3349
+    invoke-static/range {v1 .. v10}, Lkik/android/chat/vm/profile/DisplayOnlyGroupProfileViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ee:Ldagger/b;
+
+    .line 3364
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->R(Lcom/kik/components/c$a;)Lcom/kik/f/al;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->F:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3363
+    invoke-static {v1, v2, v3}, Lcom/kik/f/an;->a(Lcom/kik/f/al;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3362
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    .line 3369
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ai(Lcom/kik/components/c$a;)Lcom/kik/f/ap;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 3368
+    invoke-static {v1, v2}, Lcom/kik/f/aq;->a(Lcom/kik/f/ap;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3367
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eg:Ljavax/inject/Provider;
+
+    .line 3371
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->eg:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v12, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v13, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v14, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v15, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v17, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    move-object/from16 v18, v0
+
+    .line 3372
+    invoke-static/range {v1 .. v18}, Lkik/android/chat/vm/profile/GroupProfileViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eh:Ldagger/b;
+
+    .line 3392
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3393
+    invoke-static {v1}, Lkik/android/chat/vm/AbstractResourceViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ei:Ldagger/b;
+
+    .line 3395
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3396
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/profile/ChatInfoBioViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ej:Ldagger/b;
+
+    .line 3403
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3404
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/profile/BioEditorViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ek:Ldagger/b;
+
+    .line 3410
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3411
+    invoke-static {v1}, Lkik/android/chat/fragment/ProfileEditBioDialogFragment_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->el:Ldagger/b;
+
+    .line 3413
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3414
+    invoke-static {v1}, Lkik/android/chat/vm/profile/ImagePickerViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->em:Ldagger/b;
+
+    .line 3416
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->am:Ljavax/inject/Provider;
+
+    .line 3417
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/profile/PicturePickerFragment_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->en:Ldagger/b;
+
+    .line 3420
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->bA:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->r:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 3421
+    invoke-static/range {v1 .. v10}, Lkik/android/chat/vm/chats/profile/CurrentUserProfileViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eo:Ldagger/b;
+
+    .line 3433
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3434
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/chats/profile/CurrentUserBioViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ep:Ldagger/b;
+
+    .line 3440
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->bB:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->bC:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    .line 3441
+    invoke-static/range {v1 .. v7}, Lkik/android/chat/vm/InterestsListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eq:Ldagger/b;
+
+    .line 3450
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 3451
+    invoke-static {v1}, Lkik/android/chat/vm/messaging/BotMessageRecencyProvider_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->er:Ldagger/b;
+
+    .line 3453
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->u:Ljavax/inject/Provider;
+
+    .line 3454
+    invoke-static {v1}, Lkik/android/chat/vm/messaging/MessageRecencyProvider_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->es:Ldagger/b;
+
+    .line 3456
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->L:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->m:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3457
+    invoke-static/range {v1 .. v6}, Lkik/android/chat/vm/EmojiStatusPickerListViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->et:Ldagger/b;
+
+    .line 3465
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    .line 3466
+    invoke-static {v1}, Lkik/android/chat/vm/chats/publicgroups/AbstractPublicGroupItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eu:Ldagger/b;
+
+    .line 3470
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->aj(Lcom/kik/components/c$a;)Lcom/kik/f/g;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->l:Ljavax/inject/Provider;
+
+    .line 3469
+    invoke-static {v1, v2}, Lcom/kik/f/j;->a(Lcom/kik/f/g;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ev:Ljavax/inject/Provider;
+
+    .line 3474
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->aj(Lcom/kik/components/c$a;)Lcom/kik/f/g;
+
+    move-result-object v1
+
+    .line 3473
+    invoke-static {v1}, Lcom/kik/f/h;->a(Lcom/kik/f/g;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ew:Ljavax/inject/Provider;
+
+    .line 3479
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->aj(Lcom/kik/components/c$a;)Lcom/kik/f/g;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->ev:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ew:Ljavax/inject/Provider;
+
+    .line 3478
+    invoke-static {v1, v2, v3}, Lcom/kik/f/i;->a(Lcom/kik/f/g;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    .line 3477
+    invoke-static {v1}, Ldagger/internal/a;->a(Ljavax/inject/Provider;)Ljavax/inject/Provider;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ex:Ljavax/inject/Provider;
+
+    .line 3483
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ex:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->q:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3484
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/chats/profile/BotChatInfoBioViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ey:Ldagger/b;
+
+    .line 3491
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->ex:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 3492
+    invoke-static {v1, v2}, Lkik/android/chat/vm/profile/RatingViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->ez:Ldagger/b;
+
+    .line 3495
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->i:Ljavax/inject/Provider;
+
+    .line 3496
+    invoke-static {v1, v2}, Lkik/android/chat/vm/messaging/AudioEffectsHintViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eA:Ldagger/b;
+
+    .line 3501
+    invoke-static/range {p1 .. p1}, Lcom/kik/components/c$a;->ak(Lcom/kik/components/c$a;)Lkik/android/voice/i;
+
+    move-result-object v1
+
+    .line 3500
+    invoke-static {v1}, Lkik/android/voice/j;->a(Lkik/android/voice/i;)Ldagger/internal/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eB:Ljavax/inject/Provider;
+
+    .line 3503
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->eB:Ljavax/inject/Provider;
+
+    .line 3504
+    invoke-static {v1, v2}, Lkik/android/widget/vm/VoicePlayerViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eC:Ldagger/b;
+
+    .line 3507
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->f:Ljavax/inject/Provider;
+
+    .line 3508
+    invoke-static {v1}, Lkik/android/widget/AudioMicLayoutView_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eD:Ldagger/b;
+
+    .line 3510
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->dZ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->aQ:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v6, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v7, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v8, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v9, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v10, v0, Lcom/kik/components/c;->y:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/kik/components/c;->P:Ljavax/inject/Provider;
+
+    .line 3511
+    invoke-static/range {v1 .. v11}, Lkik/android/chat/vm/profile/gridvm/MemberItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eE:Ldagger/b;
+
+    .line 3524
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->dY:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 3525
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/gridvm/MyMemberItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eF:Ldagger/b;
+
+    .line 3531
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3532
+    invoke-static {v1, v2}, Lkik/android/chat/vm/profile/gridvm/AbstractMemberItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eG:Ldagger/b;
+
+    .line 3535
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    .line 3536
+    invoke-static {v1, v2}, Lkik/android/chat/vm/profile/profileactionvm/DiscoverBotsActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eH:Ldagger/b;
+
+    .line 3539
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3540
+    invoke-static {v1}, Lkik/android/chat/vm/profile/profileactionvm/OpenChatActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eI:Ldagger/b;
+
+    .line 3542
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    .line 3543
+    invoke-static {v1}, Lkik/android/chat/vm/profile/AbstractActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eJ:Ldagger/b;
+
+    .line 3545
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->ef:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->ea:Ljavax/inject/Provider;
+
+    .line 3546
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/profile/gridvm/AddMemberItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eK:Ldagger/b;
+
+    .line 3553
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 3554
+    invoke-static {v1, v2, v3, v4}, Lkik/android/chat/vm/profile/profileactionvm/StartGroupActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eL:Ldagger/b;
+
+    .line 3560
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->J:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v5, v0, Lcom/kik/components/c;->O:Ljavax/inject/Provider;
+
+    .line 3561
+    invoke-static {v1, v2, v3, v4, v5}, Lkik/android/chat/vm/profile/profileactionvm/DeleteChatActionItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eM:Ldagger/b;
+
+    .line 3568
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    .line 3569
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_BaseMuteToggleItemViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eN:Ldagger/b;
+
+    .line 3572
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/kik/components/c;->A:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/kik/components/c;->p:Ljavax/inject/Provider;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/kik/components/c;->t:Ljavax/inject/Provider;
+
+    .line 3573
+    invoke-static {v1, v2, v3}, Lkik/android/chat/vm/profile/profileactionvm/MuteToggleItemViewModels_ContactMuteToggleViewModel_MembersInjector;->a(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)Ldagger/b;
+
+    move-result-object v1
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/kik/components/c;->eO:Ldagger/b;
+
+    .line 3575
+    return-void
+.end method
+
 
 # virtual methods
 .method public final a(Lcom/kik/cards/browser/CaptchaWindowFragment;)V
     .locals 1
 
     .prologue
-    .line 1209
-    iget-object v0, p0, Lcom/kik/components/c;->av:Ldagger/b;
+    .line 3851
+    iget-object v0, p0, Lcom/kik/components/c;->aB:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1210
+    .line 3852
     return-void
 .end method
 
@@ -9180,12 +13263,12 @@
     .locals 1
 
     .prologue
-    .line 1599
-    iget-object v0, p0, Lcom/kik/components/c;->cn:Ldagger/b;
+    .line 4207
+    iget-object v0, p0, Lcom/kik/components/c;->cs:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1600
+    .line 4209
     return-void
 .end method
 
@@ -9193,25 +13276,77 @@
     .locals 1
 
     .prologue
-    .line 1454
-    iget-object v0, p0, Lcom/kik/components/c;->bK:Ldagger/b;
+    .line 4076
+    iget-object v0, p0, Lcom/kik/components/c;->bO:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1455
+    .line 4077
     return-void
 .end method
 
-.method public final a(Lcom/kik/cards/web/p;)V
+.method public final a(Lcom/kik/cards/web/n;)V
     .locals 1
 
     .prologue
-    .line 1594
-    iget-object v0, p0, Lcom/kik/components/c;->cm:Ldagger/b;
+    .line 4202
+    iget-object v0, p0, Lcom/kik/components/c;->cr:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1595
+    .line 4203
+    return-void
+.end method
+
+.method public final a(Lcom/kik/view/adapters/ContactsCursorAdapter;)V
+    .locals 1
+
+    .prologue
+    .line 4881
+    iget-object v0, p0, Lcom/kik/components/c;->fq:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4882
+    return-void
+.end method
+
+.method public final a(Lcom/kik/view/adapters/h;)V
+    .locals 1
+
+    .prologue
+    .line 4871
+    iget-object v0, p0, Lcom/kik/components/c;->fo:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4872
+    return-void
+.end method
+
+.method public final a(Lcom/kik/view/adapters/j;)V
+    .locals 1
+
+    .prologue
+    .line 4861
+    iget-object v0, p0, Lcom/kik/components/c;->fm:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4862
+    return-void
+.end method
+
+.method public final a(Lcom/kik/view/adapters/p;)V
+    .locals 1
+
+    .prologue
+    .line 4876
+    iget-object v0, p0, Lcom/kik/components/c;->fp:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4877
     return-void
 .end method
 
@@ -9219,12 +13354,12 @@
     .locals 1
 
     .prologue
-    .line 1414
-    iget-object v0, p0, Lcom/kik/components/c;->bu:Ldagger/b;
+    .line 4041
+    iget-object v0, p0, Lcom/kik/components/c;->br:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1415
+    .line 4042
     return-void
 .end method
 
@@ -9232,12 +13367,12 @@
     .locals 1
 
     .prologue
-    .line 1419
-    iget-object v0, p0, Lcom/kik/components/c;->bz:Ldagger/b;
+    .line 4046
+    iget-object v0, p0, Lcom/kik/components/c;->bD:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1420
+    .line 4047
     return-void
 .end method
 
@@ -9245,12 +13380,12 @@
     .locals 1
 
     .prologue
-    .line 1269
-    iget-object v0, p0, Lcom/kik/components/c;->aI:Ldagger/b;
+    .line 3911
+    iget-object v0, p0, Lcom/kik/components/c;->aO:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1270
+    .line 3912
     return-void
 .end method
 
@@ -9258,12 +13393,12 @@
     .locals 1
 
     .prologue
-    .line 1244
-    iget-object v0, p0, Lcom/kik/components/c;->aC:Ldagger/b;
+    .line 3886
+    iget-object v0, p0, Lcom/kik/components/c;->aI:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1245
+    .line 3887
     return-void
 .end method
 
@@ -9271,12 +13406,12 @@
     .locals 1
 
     .prologue
-    .line 1259
-    iget-object v0, p0, Lcom/kik/components/c;->aG:Ldagger/b;
+    .line 3901
+    iget-object v0, p0, Lcom/kik/components/c;->aM:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1260
+    .line 3902
     return-void
 .end method
 
@@ -9284,12 +13419,12 @@
     .locals 1
 
     .prologue
-    .line 1274
-    iget-object v0, p0, Lcom/kik/components/c;->aK:Ldagger/b;
+    .line 3916
+    iget-object v0, p0, Lcom/kik/components/c;->aR:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1275
+    .line 3917
     return-void
 .end method
 
@@ -9297,12 +13432,12 @@
     .locals 1
 
     .prologue
-    .line 1264
-    iget-object v0, p0, Lcom/kik/components/c;->aH:Ldagger/b;
+    .line 3906
+    iget-object v0, p0, Lcom/kik/components/c;->aN:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1265
+    .line 3907
     return-void
 .end method
 
@@ -9310,12 +13445,12 @@
     .locals 1
 
     .prologue
-    .line 1254
-    iget-object v0, p0, Lcom/kik/components/c;->aF:Ldagger/b;
+    .line 3896
+    iget-object v0, p0, Lcom/kik/components/c;->aL:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1255
+    .line 3897
     return-void
 .end method
 
@@ -9323,12 +13458,12 @@
     .locals 1
 
     .prologue
-    .line 1239
-    iget-object v0, p0, Lcom/kik/components/c;->aB:Ldagger/b;
+    .line 3881
+    iget-object v0, p0, Lcom/kik/components/c;->aH:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1240
+    .line 3882
     return-void
 .end method
 
@@ -9336,25 +13471,12 @@
     .locals 1
 
     .prologue
-    .line 1199
-    iget-object v0, p0, Lcom/kik/components/c;->at:Ldagger/b;
+    .line 3841
+    iget-object v0, p0, Lcom/kik/components/c;->az:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1200
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/fragment/AddPaymentMethodFragment;)V
-    .locals 1
-
-    .prologue
-    .line 1584
-    iget-object v0, p0, Lcom/kik/components/c;->ck:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1585
+    .line 3842
     return-void
 .end method
 
@@ -9362,12 +13484,12 @@
     .locals 1
 
     .prologue
-    .line 1609
-    iget-object v0, p0, Lcom/kik/components/c;->cs:Ldagger/b;
+    .line 4220
+    iget-object v0, p0, Lcom/kik/components/c;->cx:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1610
+    .line 4222
     return-void
 .end method
 
@@ -9375,25 +13497,12 @@
     .locals 1
 
     .prologue
-    .line 1189
-    iget-object v0, p0, Lcom/kik/components/c;->ap:Ldagger/b;
+    .line 3831
+    iget-object v0, p0, Lcom/kik/components/c;->au:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1190
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/fragment/BaseChatInfoFragment;)V
-    .locals 1
-
-    .prologue
-    .line 1429
-    iget-object v0, p0, Lcom/kik/components/c;->bE:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1430
+    .line 3832
     return-void
 .end method
 
@@ -9401,12 +13510,12 @@
     .locals 1
 
     .prologue
-    .line 1704
-    iget-object v0, p0, Lcom/kik/components/c;->cU:Ldagger/b;
+    .line 4316
+    iget-object v0, p0, Lcom/kik/components/c;->cW:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1705
+    .line 4317
     return-void
 .end method
 
@@ -9414,12 +13523,12 @@
     .locals 1
 
     .prologue
-    .line 1444
-    iget-object v0, p0, Lcom/kik/components/c;->bG:Ldagger/b;
+    .line 4066
+    iget-object v0, p0, Lcom/kik/components/c;->bJ:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1445
+    .line 4067
     return-void
 .end method
 
@@ -9427,12 +13536,12 @@
     .locals 1
 
     .prologue
-    .line 1449
-    iget-object v0, p0, Lcom/kik/components/c;->bH:Ldagger/b;
+    .line 4071
+    iget-object v0, p0, Lcom/kik/components/c;->bK:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1450
+    .line 4072
     return-void
 .end method
 
@@ -9440,25 +13549,12 @@
     .locals 1
 
     .prologue
-    .line 1604
-    iget-object v0, p0, Lcom/kik/components/c;->co:Ldagger/b;
+    .line 4213
+    iget-object v0, p0, Lcom/kik/components/c;->ct:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1605
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/fragment/EmailConfirmationReminderFragment;)V
-    .locals 1
-
-    .prologue
-    .line 1439
-    iget-object v0, p0, Lcom/kik/components/c;->bF:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1440
+    .line 4215
     return-void
 .end method
 
@@ -9466,12 +13562,25 @@
     .locals 1
 
     .prologue
-    .line 1589
-    iget-object v0, p0, Lcom/kik/components/c;->cl:Ldagger/b;
+    .line 4197
+    iget-object v0, p0, Lcom/kik/components/c;->cp:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1590
+    .line 4198
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/fragment/InterestsPickerFragment;)V
+    .locals 1
+
+    .prologue
+    .line 4841
+    iget-object v0, p0, Lcom/kik/components/c;->ff:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4842
     return-void
 .end method
 
@@ -9479,12 +13588,12 @@
     .locals 1
 
     .prologue
-    .line 1459
-    iget-object v0, p0, Lcom/kik/components/c;->bL:Ldagger/b;
+    .line 4081
+    iget-object v0, p0, Lcom/kik/components/c;->bP:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1460
+    .line 4082
     return-void
 .end method
 
@@ -9492,25 +13601,12 @@
     .locals 1
 
     .prologue
-    .line 1464
-    iget-object v0, p0, Lcom/kik/components/c;->bM:Ldagger/b;
+    .line 4086
+    iget-object v0, p0, Lcom/kik/components/c;->bQ:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1465
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/fragment/KikChatInfoFragment;)V
-    .locals 1
-
-    .prologue
-    .line 1484
-    iget-object v0, p0, Lcom/kik/components/c;->bP:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1485
+    .line 4087
     return-void
 .end method
 
@@ -9518,12 +13614,12 @@
     .locals 1
 
     .prologue
-    .line 1559
-    iget-object v0, p0, Lcom/kik/components/c;->cf:Ldagger/b;
+    .line 4177
+    iget-object v0, p0, Lcom/kik/components/c;->cl:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1560
+    .line 4178
     return-void
 .end method
 
@@ -9531,12 +13627,12 @@
     .locals 1
 
     .prologue
-    .line 1614
-    iget-object v0, p0, Lcom/kik/components/c;->ct:Ldagger/b;
+    .line 4226
+    iget-object v0, p0, Lcom/kik/components/c;->cy:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1615
+    .line 4227
     return-void
 .end method
 
@@ -9544,12 +13640,12 @@
     .locals 1
 
     .prologue
-    .line 1489
-    iget-object v0, p0, Lcom/kik/components/c;->bQ:Ldagger/b;
+    .line 4106
+    iget-object v0, p0, Lcom/kik/components/c;->bU:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1490
+    .line 4107
     return-void
 .end method
 
@@ -9557,12 +13653,12 @@
     .locals 1
 
     .prologue
-    .line 1494
-    iget-object v0, p0, Lcom/kik/components/c;->bS:Ldagger/b;
+    .line 4111
+    iget-object v0, p0, Lcom/kik/components/c;->bW:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1495
+    .line 4112
     return-void
 .end method
 
@@ -9570,12 +13666,12 @@
     .locals 1
 
     .prologue
-    .line 1499
-    iget-object v0, p0, Lcom/kik/components/c;->bT:Ldagger/b;
+    .line 4116
+    iget-object v0, p0, Lcom/kik/components/c;->bX:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1500
+    .line 4117
     return-void
 .end method
 
@@ -9583,12 +13679,12 @@
     .locals 1
 
     .prologue
-    .line 1504
-    iget-object v0, p0, Lcom/kik/components/c;->bU:Ldagger/b;
+    .line 4121
+    iget-object v0, p0, Lcom/kik/components/c;->bY:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1505
+    .line 4122
     return-void
 .end method
 
@@ -9596,12 +13692,12 @@
     .locals 1
 
     .prologue
-    .line 1469
-    iget-object v0, p0, Lcom/kik/components/c;->an:Ldagger/b;
+    .line 4091
+    iget-object v0, p0, Lcom/kik/components/c;->bR:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1470
+    .line 4092
     return-void
 .end method
 
@@ -9609,12 +13705,12 @@
     .locals 1
 
     .prologue
-    .line 1424
-    iget-object v0, p0, Lcom/kik/components/c;->bD:Ldagger/b;
+    .line 4051
+    iget-object v0, p0, Lcom/kik/components/c;->bG:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1425
+    .line 4052
     return-void
 .end method
 
@@ -9622,12 +13718,12 @@
     .locals 1
 
     .prologue
-    .line 1509
-    iget-object v0, p0, Lcom/kik/components/c;->bV:Ldagger/b;
+    .line 4126
+    iget-object v0, p0, Lcom/kik/components/c;->bZ:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1510
+    .line 4128
     return-void
 .end method
 
@@ -9635,12 +13731,12 @@
     .locals 1
 
     .prologue
-    .line 1514
-    iget-object v0, p0, Lcom/kik/components/c;->bW:Ldagger/b;
+    .line 4132
+    iget-object v0, p0, Lcom/kik/components/c;->ca:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1515
+    .line 4133
     return-void
 .end method
 
@@ -9648,25 +13744,12 @@
     .locals 1
 
     .prologue
-    .line 1519
-    iget-object v0, p0, Lcom/kik/components/c;->bX:Ldagger/b;
+    .line 4137
+    iget-object v0, p0, Lcom/kik/components/c;->cb:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1520
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/fragment/KikPreferenceLaunchpad;)V
-    .locals 1
-
-    .prologue
-    .line 1384
-    iget-object v0, p0, Lcom/kik/components/c;->bo:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1385
+    .line 4138
     return-void
 .end method
 
@@ -9674,12 +13757,12 @@
     .locals 1
 
     .prologue
-    .line 1474
-    iget-object v0, p0, Lcom/kik/components/c;->bB:Ldagger/b;
+    .line 4096
+    iget-object v0, p0, Lcom/kik/components/c;->bS:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1475
+    .line 4097
     return-void
 .end method
 
@@ -9687,12 +13770,12 @@
     .locals 1
 
     .prologue
-    .line 1524
-    iget-object v0, p0, Lcom/kik/components/c;->bY:Ldagger/b;
+    .line 4142
+    iget-object v0, p0, Lcom/kik/components/c;->cc:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1525
+    .line 4143
     return-void
 .end method
 
@@ -9700,12 +13783,12 @@
     .locals 1
 
     .prologue
-    .line 1434
-    iget-object v0, p0, Lcom/kik/components/c;->am:Ldagger/b;
+    .line 4056
+    iget-object v0, p0, Lcom/kik/components/c;->bH:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1435
+    .line 4057
     return-void
 .end method
 
@@ -9713,12 +13796,12 @@
     .locals 1
 
     .prologue
-    .line 1529
-    iget-object v0, p0, Lcom/kik/components/c;->ca:Ldagger/b;
+    .line 4147
+    iget-object v0, p0, Lcom/kik/components/c;->ce:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1530
+    .line 4148
     return-void
 .end method
 
@@ -9726,12 +13809,12 @@
     .locals 1
 
     .prologue
-    .line 1534
-    iget-object v0, p0, Lcom/kik/components/c;->cb:Ldagger/b;
+    .line 4152
+    iget-object v0, p0, Lcom/kik/components/c;->cf:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1535
+    .line 4153
     return-void
 .end method
 
@@ -9739,12 +13822,12 @@
     .locals 1
 
     .prologue
-    .line 1564
-    iget-object v0, p0, Lcom/kik/components/c;->cg:Ldagger/b;
+    .line 4182
+    iget-object v0, p0, Lcom/kik/components/c;->cm:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1565
+    .line 4183
     return-void
 .end method
 
@@ -9752,12 +13835,12 @@
     .locals 1
 
     .prologue
-    .line 1479
-    iget-object v0, p0, Lcom/kik/components/c;->bN:Ldagger/b;
+    .line 4101
+    iget-object v0, p0, Lcom/kik/components/c;->bT:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1480
+    .line 4102
     return-void
 .end method
 
@@ -9765,25 +13848,12 @@
     .locals 1
 
     .prologue
-    .line 1539
-    iget-object v0, p0, Lcom/kik/components/c;->cc:Ldagger/b;
+    .line 4157
+    iget-object v0, p0, Lcom/kik/components/c;->cg:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1540
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/fragment/PaymentConfirmationFragment;)V
-    .locals 1
-
-    .prologue
-    .line 1579
-    iget-object v0, p0, Lcom/kik/components/c;->cj:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1580
+    .line 4158
     return-void
 .end method
 
@@ -9791,12 +13861,12 @@
     .locals 1
 
     .prologue
-    .line 1694
-    iget-object v0, p0, Lcom/kik/components/c;->cR:Ldagger/b;
+    .line 4306
+    iget-object v0, p0, Lcom/kik/components/c;->cT:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1695
+    .line 4307
     return-void
 .end method
 
@@ -9804,12 +13874,12 @@
     .locals 1
 
     .prologue
-    .line 1974
-    iget-object v0, p0, Lcom/kik/components/c;->dY:Ldagger/b;
+    .line 4614
+    iget-object v0, p0, Lcom/kik/components/c;->el:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1975
+    .line 4615
     return-void
 .end method
 
@@ -9817,12 +13887,12 @@
     .locals 1
 
     .prologue
-    .line 1784
-    iget-object v0, p0, Lcom/kik/components/c;->dl:Ldagger/b;
+    .line 4396
+    iget-object v0, p0, Lcom/kik/components/c;->dm:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1785
+    .line 4397
     return-void
 .end method
 
@@ -9830,12 +13900,12 @@
     .locals 1
 
     .prologue
-    .line 1729
-    iget-object v0, p0, Lcom/kik/components/c;->cZ:Ldagger/b;
+    .line 4341
+    iget-object v0, p0, Lcom/kik/components/c;->db:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1730
+    .line 4342
     return-void
 .end method
 
@@ -9843,12 +13913,12 @@
     .locals 1
 
     .prologue
-    .line 1574
-    iget-object v0, p0, Lcom/kik/components/c;->ci:Ldagger/b;
+    .line 4192
+    iget-object v0, p0, Lcom/kik/components/c;->co:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1575
+    .line 4193
     return-void
 .end method
 
@@ -9856,12 +13926,12 @@
     .locals 1
 
     .prologue
-    .line 1544
-    iget-object v0, p0, Lcom/kik/components/c;->cd:Ldagger/b;
+    .line 4162
+    iget-object v0, p0, Lcom/kik/components/c;->ch:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1545
+    .line 4163
     return-void
 .end method
 
@@ -9869,12 +13939,25 @@
     .locals 1
 
     .prologue
-    .line 1234
-    iget-object v0, p0, Lcom/kik/components/c;->aA:Ldagger/b;
+    .line 3876
+    iget-object v0, p0, Lcom/kik/components/c;->aG:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1235
+    .line 3877
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/fragment/SuggestInterestDialogFragment;)V
+    .locals 1
+
+    .prologue
+    .line 4831
+    iget-object v0, p0, Lcom/kik/components/c;->fd:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4832
     return-void
 .end method
 
@@ -9882,12 +13965,12 @@
     .locals 1
 
     .prologue
-    .line 1679
-    iget-object v0, p0, Lcom/kik/components/c;->cK:Ldagger/b;
+    .line 4291
+    iget-object v0, p0, Lcom/kik/components/c;->cM:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1680
+    .line 4292
     return-void
 .end method
 
@@ -9895,12 +13978,25 @@
     .locals 1
 
     .prologue
-    .line 1954
-    iget-object v0, p0, Lcom/kik/components/c;->dU:Ldagger/b;
+    .line 4569
+    iget-object v0, p0, Lcom/kik/components/c;->dW:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1955
+    .line 4570
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/fragment/UserProfileFragment;)V
+    .locals 1
+
+    .prologue
+    .line 4061
+    iget-object v0, p0, Lcom/kik/components/c;->bI:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4062
     return-void
 .end method
 
@@ -9908,12 +14004,12 @@
     .locals 1
 
     .prologue
-    .line 1204
-    iget-object v0, p0, Lcom/kik/components/c;->au:Ldagger/b;
+    .line 3846
+    iget-object v0, p0, Lcom/kik/components/c;->aA:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1205
+    .line 3847
     return-void
 .end method
 
@@ -9921,12 +14017,12 @@
     .locals 1
 
     .prologue
-    .line 1554
-    iget-object v0, p0, Lcom/kik/components/c;->ce:Ldagger/b;
+    .line 4172
+    iget-object v0, p0, Lcom/kik/components/c;->cj:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1555
+    .line 4173
     return-void
 .end method
 
@@ -9934,12 +14030,12 @@
     .locals 1
 
     .prologue
-    .line 1689
-    iget-object v0, p0, Lcom/kik/components/c;->cP:Ldagger/b;
+    .line 4301
+    iget-object v0, p0, Lcom/kik/components/c;->cR:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1690
+    .line 4302
     return-void
 .end method
 
@@ -9947,12 +14043,12 @@
     .locals 1
 
     .prologue
-    .line 1684
-    iget-object v0, p0, Lcom/kik/components/c;->cN:Ldagger/b;
+    .line 4296
+    iget-object v0, p0, Lcom/kik/components/c;->cP:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1685
+    .line 4297
     return-void
 .end method
 
@@ -9960,12 +14056,12 @@
     .locals 1
 
     .prologue
-    .line 1349
+    .line 3986
     iget-object v0, p0, Lcom/kik/components/c;->bf:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1350
+    .line 3987
     return-void
 .end method
 
@@ -9973,12 +14069,12 @@
     .locals 1
 
     .prologue
-    .line 1319
-    iget-object v0, p0, Lcom/kik/components/c;->aW:Ldagger/b;
+    .line 3961
+    iget-object v0, p0, Lcom/kik/components/c;->ba:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1320
+    .line 3962
     return-void
 .end method
 
@@ -9986,12 +14082,12 @@
     .locals 1
 
     .prologue
-    .line 1294
-    iget-object v0, p0, Lcom/kik/components/c;->aQ:Ldagger/b;
+    .line 3936
+    iget-object v0, p0, Lcom/kik/components/c;->aV:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1295
+    .line 3937
     return-void
 .end method
 
@@ -9999,12 +14095,12 @@
     .locals 1
 
     .prologue
-    .line 1549
-    iget-object v0, p0, Lcom/kik/components/c;->bm:Ldagger/b;
+    .line 4167
+    iget-object v0, p0, Lcom/kik/components/c;->ci:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1550
+    .line 4168
     return-void
 .end method
 
@@ -10012,12 +14108,12 @@
     .locals 1
 
     .prologue
-    .line 1174
-    iget-object v0, p0, Lcom/kik/components/c;->ah:Ldagger/b;
+    .line 3816
+    iget-object v0, p0, Lcom/kik/components/c;->ao:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1175
+    .line 3817
     return-void
 .end method
 
@@ -10025,12 +14121,12 @@
     .locals 1
 
     .prologue
-    .line 1939
-    iget-object v0, p0, Lcom/kik/components/c;->dR:Ldagger/b;
+    .line 4554
+    iget-object v0, p0, Lcom/kik/components/c;->dT:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1940
+    .line 4555
     return-void
 .end method
 
@@ -10038,77 +14134,25 @@
     .locals 1
 
     .prologue
-    .line 1849
+    .line 4461
     iget-object v0, p0, Lcom/kik/components/c;->dz:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1850
+    .line 4462
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/bj;)V
+.method public final a(Lkik/android/chat/vm/bw;)V
     .locals 1
 
     .prologue
-    .line 1919
-    iget-object v0, p0, Lcom/kik/components/c;->dN:Ldagger/b;
+    .line 4639
+    iget-object v0, p0, Lcom/kik/components/c;->eq:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1920
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/vm/bm;)V
-    .locals 1
-
-    .prologue
-    .line 1934
-    iget-object v0, p0, Lcom/kik/components/c;->dQ:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1935
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/vm/cc;)V
-    .locals 1
-
-    .prologue
-    .line 1779
-    iget-object v0, p0, Lcom/kik/components/c;->dk:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1780
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/vm/cg;)V
-    .locals 1
-
-    .prologue
-    .line 1949
-    iget-object v0, p0, Lcom/kik/components/c;->dT:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1950
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/vm/ch;)V
-    .locals 1
-
-    .prologue
-    .line 1944
-    iget-object v0, p0, Lcom/kik/components/c;->dS:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1945
+    .line 4640
     return-void
 .end method
 
@@ -10116,12 +14160,12 @@
     .locals 1
 
     .prologue
-    .line 1794
-    iget-object v0, p0, Lcom/kik/components/c;->dn:Ldagger/b;
+    .line 4406
+    iget-object v0, p0, Lcom/kik/components/c;->do:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1795
+    .line 4407
     return-void
 .end method
 
@@ -10129,12 +14173,12 @@
     .locals 1
 
     .prologue
-    .line 1789
-    iget-object v0, p0, Lcom/kik/components/c;->dm:Ldagger/b;
+    .line 4401
+    iget-object v0, p0, Lcom/kik/components/c;->dn:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1790
+    .line 4402
     return-void
 .end method
 
@@ -10142,12 +14186,64 @@
     .locals 1
 
     .prologue
-    .line 1969
-    iget-object v0, p0, Lcom/kik/components/c;->dX:Ldagger/b;
+    .line 4609
+    iget-object v0, p0, Lcom/kik/components/c;->ek:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1970
+    .line 4610
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/profile/ai;)V
+    .locals 1
+
+    .prologue
+    .line 4634
+    iget-object v0, p0, Lcom/kik/components/c;->ep:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4635
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/profile/ao;)V
+    .locals 1
+
+    .prologue
+    .line 4851
+    iget-object v0, p0, Lcom/kik/components/c;->fh:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4852
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/profile/av;)V
+    .locals 1
+
+    .prologue
+    .line 4629
+    iget-object v0, p0, Lcom/kik/components/c;->eo:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4630
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/profile/bk;)V
+    .locals 1
+
+    .prologue
+    .line 4836
+    iget-object v0, p0, Lcom/kik/components/c;->fe:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4837
     return-void
 .end method
 
@@ -10155,25 +14251,38 @@
     .locals 1
 
     .prologue
-    .line 1964
-    iget-object v0, p0, Lcom/kik/components/c;->dW:Ldagger/b;
+    .line 4664
+    iget-object v0, p0, Lcom/kik/components/c;->ey:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1965
+    .line 4665
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/chats/profile/r;)V
+.method public final a(Lkik/android/chat/vm/chats/profile/s;)V
     .locals 1
 
     .prologue
-    .line 1979
-    iget-object v0, p0, Lcom/kik/components/c;->dZ:Ldagger/b;
+    .line 4604
+    iget-object v0, p0, Lcom/kik/components/c;->ej:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1980
+    .line 4605
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/profile/y;)V
+    .locals 1
+
+    .prologue
+    .line 4846
+    iget-object v0, p0, Lcom/kik/components/c;->fg:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4847
     return-void
 .end method
 
@@ -10181,38 +14290,38 @@
     .locals 1
 
     .prologue
-    .line 1854
+    .line 4467
     iget-object v0, p0, Lcom/kik/components/c;->dA:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1855
+    .line 4469
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/m;)V
+.method public final a(Lkik/android/chat/vm/chats/publicgroups/a;)V
     .locals 1
 
     .prologue
-    .line 1889
-    iget-object v0, p0, Lcom/kik/components/c;->dH:Ldagger/b;
+    .line 4659
+    iget-object v0, p0, Lcom/kik/components/c;->eu:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1890
+    .line 4660
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/o;)V
+.method public final a(Lkik/android/chat/vm/chats/publicgroups/n;)V
     .locals 1
 
     .prologue
-    .line 1879
-    iget-object v0, p0, Lcom/kik/components/c;->dF:Ldagger/b;
+    .line 4503
+    iget-object v0, p0, Lcom/kik/components/c;->dI:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1880
+    .line 4504
     return-void
 .end method
 
@@ -10220,38 +14329,51 @@
     .locals 1
 
     .prologue
-    .line 1874
-    iget-object v0, p0, Lcom/kik/components/c;->dE:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1875
-    return-void
-.end method
-
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/s;)V
-    .locals 1
-
-    .prologue
-    .line 1884
+    .line 4493
     iget-object v0, p0, Lcom/kik/components/c;->dG:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1885
+    .line 4494
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/chats/publicgroups/w;)V
+.method public final a(Lkik/android/chat/vm/chats/publicgroups/q;)V
     .locals 1
 
     .prologue
-    .line 1894
-    iget-object v0, p0, Lcom/kik/components/c;->dI:Ldagger/b;
+    .line 4488
+    iget-object v0, p0, Lcom/kik/components/c;->dE:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1895
+    .line 4489
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/publicgroups/t;)V
+    .locals 1
+
+    .prologue
+    .line 4498
+    iget-object v0, p0, Lcom/kik/components/c;->dH:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4499
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/chats/publicgroups/y;)V
+    .locals 1
+
+    .prologue
+    .line 4508
+    iget-object v0, p0, Lcom/kik/components/c;->dJ:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4509
     return-void
 .end method
 
@@ -10259,12 +14381,12 @@
     .locals 1
 
     .prologue
-    .line 1799
-    iget-object v0, p0, Lcom/kik/components/c;->do:Ldagger/b;
+    .line 4411
+    iget-object v0, p0, Lcom/kik/components/c;->dp:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1800
+    .line 4412
     return-void
 .end method
 
@@ -10272,12 +14394,12 @@
     .locals 1
 
     .prologue
-    .line 1809
+    .line 4421
     iget-object v0, p0, Lcom/kik/components/c;->dr:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1810
+    .line 4422
     return-void
 .end method
 
@@ -10285,12 +14407,12 @@
     .locals 1
 
     .prologue
-    .line 1804
+    .line 4416
     iget-object v0, p0, Lcom/kik/components/c;->dq:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1805
+    .line 4417
     return-void
 .end method
 
@@ -10298,12 +14420,12 @@
     .locals 1
 
     .prologue
-    .line 1814
+    .line 4426
     iget-object v0, p0, Lcom/kik/components/c;->ds:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1815
+    .line 4427
     return-void
 .end method
 
@@ -10311,12 +14433,12 @@
     .locals 1
 
     .prologue
-    .line 1129
-    iget-object v0, p0, Lcom/kik/components/c;->m:Ldagger/b;
+    .line 3771
+    iget-object v0, p0, Lcom/kik/components/c;->s:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1130
+    .line 3772
     return-void
 .end method
 
@@ -10324,12 +14446,12 @@
     .locals 1
 
     .prologue
-    .line 1834
+    .line 4446
     iget-object v0, p0, Lcom/kik/components/c;->dw:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1835
+    .line 4447
     return-void
 .end method
 
@@ -10337,12 +14459,12 @@
     .locals 1
 
     .prologue
-    .line 1824
+    .line 4436
     iget-object v0, p0, Lcom/kik/components/c;->du:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1825
+    .line 4437
     return-void
 .end method
 
@@ -10350,12 +14472,12 @@
     .locals 1
 
     .prologue
-    .line 1829
+    .line 4441
     iget-object v0, p0, Lcom/kik/components/c;->dv:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1830
+    .line 4442
     return-void
 .end method
 
@@ -10363,25 +14485,119 @@
     .locals 1
 
     .prologue
-    .line 1839
+    .line 4451
     iget-object v0, p0, Lcom/kik/components/c;->dx:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1840
+    .line 4452
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/h;)V
+.method public final a(Lkik/android/chat/vm/cu;)V
     .locals 1
 
     .prologue
-    .line 1959
+    .line 4533
+    iget-object v0, p0, Lcom/kik/components/c;->dO:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4534
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/cx;)V
+    .locals 1
+
+    .prologue
+    .line 4549
+    iget-object v0, p0, Lcom/kik/components/c;->dS:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4550
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/d;)V
+    .locals 1
+
+    .prologue
+    .line 4599
+    iget-object v0, p0, Lcom/kik/components/c;->ei:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4600
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/ds;)V
+    .locals 1
+
+    .prologue
+    .line 4825
+    invoke-static {}, Ldagger/internal/MembersInjectors;->a()Ldagger/b;
+
+    move-result-object v0
+
+    .line 4826
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4827
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/dv;)V
+    .locals 1
+
+    .prologue
+    .line 4391
+    iget-object v0, p0, Lcom/kik/components/c;->dl:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4392
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/ea;)V
+    .locals 1
+
+    .prologue
+    .line 4564
     iget-object v0, p0, Lcom/kik/components/c;->dV:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1960
+    .line 4565
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/eb;)V
+    .locals 1
+
+    .prologue
+    .line 4559
+    iget-object v0, p0, Lcom/kik/components/c;->dU:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4560
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/k;)V
+    .locals 1
+
+    .prologue
+    .line 4866
+    iget-object v0, p0, Lcom/kik/components/c;->fn:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4867
     return-void
 .end method
 
@@ -10389,38 +14605,38 @@
     .locals 1
 
     .prologue
-    .line 1164
-    iget-object v0, p0, Lcom/kik/components/c;->E:Ldagger/b;
+    .line 3806
+    iget-object v0, p0, Lcom/kik/components/c;->ac:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1165
+    .line 3807
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/bq;)V
+.method public final a(Lkik/android/chat/vm/messaging/cc;)V
     .locals 1
 
     .prologue
-    .line 1144
-    iget-object v0, p0, Lcom/kik/components/c;->M:Ldagger/b;
+    .line 4674
+    iget-object v0, p0, Lcom/kik/components/c;->eA:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1145
+    .line 4675
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/cl;)V
+.method public final a(Lkik/android/chat/vm/messaging/cd;)V
     .locals 1
 
     .prologue
-    .line 1169
-    iget-object v0, p0, Lcom/kik/components/c;->W:Ldagger/b;
+    .line 3761
+    iget-object v0, p0, Lcom/kik/components/c;->g:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1170
+    .line 3762
     return-void
 .end method
 
@@ -10428,25 +14644,25 @@
     .locals 1
 
     .prologue
-    .line 1159
-    iget-object v0, p0, Lcom/kik/components/c;->R:Ldagger/b;
+    .line 3786
+    iget-object v0, p0, Lcom/kik/components/c;->W:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1160
+    .line 3787
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/dj;)V
+.method public final a(Lkik/android/chat/vm/messaging/dq;)V
     .locals 1
 
     .prologue
-    .line 1134
-    iget-object v0, p0, Lcom/kik/components/c;->v:Ldagger/b;
+    .line 3811
+    iget-object v0, p0, Lcom/kik/components/c;->ad:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1135
+    .line 3812
     return-void
 .end method
 
@@ -10454,51 +14670,519 @@
     .locals 1
 
     .prologue
-    .line 1154
-    iget-object v0, p0, Lcom/kik/components/c;->P:Ldagger/b;
+    .line 3801
+    iget-object v0, p0, Lcom/kik/components/c;->ab:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1155
+    .line 3802
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/ed;)V
+.method public final a(Lkik/android/chat/vm/messaging/ev;)V
     .locals 1
 
     .prologue
-    .line 1139
-    iget-object v0, p0, Lcom/kik/components/c;->G:Ldagger/b;
+    .line 3776
+    iget-object v0, p0, Lcom/kik/components/c;->D:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1140
+    .line 3777
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/en;)V
+.method public final a(Lkik/android/chat/vm/messaging/fq;)V
     .locals 1
 
     .prologue
-    .line 1149
-    iget-object v0, p0, Lcom/kik/components/c;->O:Ldagger/b;
+    .line 4649
+    iget-object v0, p0, Lcom/kik/components/c;->es:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1150
+    .line 4650
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/vm/messaging/ex;)V
+.method public final a(Lkik/android/chat/vm/messaging/fs;)V
     .locals 1
 
     .prologue
-    .line 1714
-    iget-object v0, p0, Lcom/kik/components/c;->cV:Ldagger/b;
+    .line 3796
+    iget-object v0, p0, Lcom/kik/components/c;->Z:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1715
+    .line 3797
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/messaging/fv;)V
+    .locals 1
+
+    .prologue
+    .line 3781
+    iget-object v0, p0, Lcom/kik/components/c;->R:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 3782
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/messaging/gf;)V
+    .locals 1
+
+    .prologue
+    .line 3791
+    iget-object v0, p0, Lcom/kik/components/c;->Y:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 3792
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/messaging/gl;)V
+    .locals 1
+
+    .prologue
+    .line 4326
+    iget-object v0, p0, Lcom/kik/components/c;->cX:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4327
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/n;)V
+    .locals 1
+
+    .prologue
+    .line 4574
+    iget-object v0, p0, Lcom/kik/components/c;->dX:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4575
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/PicturePickerFragment;)V
+    .locals 1
+
+    .prologue
+    .line 4624
+    iget-object v0, p0, Lcom/kik/components/c;->en:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4625
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/aq;)V
+    .locals 1
+
+    .prologue
+    .line 4820
+    iget-object v0, p0, Lcom/kik/components/c;->fc:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4821
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/au;)V
+    .locals 1
+
+    .prologue
+    .line 4589
+    iget-object v0, p0, Lcom/kik/components/c;->ee:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4590
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/bi;)V
+    .locals 1
+
+    .prologue
+    .line 4809
+    iget-object v0, p0, Lcom/kik/components/c;->fa:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4811
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/ca;)V
+    .locals 1
+
+    .prologue
+    .line 4594
+    iget-object v0, p0, Lcom/kik/components/c;->eh:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4595
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/dl;)V
+    .locals 1
+
+    .prologue
+    .line 4619
+    iget-object v0, p0, Lcom/kik/components/c;->em:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4620
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/dp;)V
+    .locals 1
+
+    .prologue
+    .line 4669
+    iget-object v0, p0, Lcom/kik/components/c;->ez:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4670
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/dv;)V
+    .locals 1
+
+    .prologue
+    .line 4765
+    iget-object v0, p0, Lcom/kik/components/c;->eS:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4766
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/gridvm/a;)V
+    .locals 1
+
+    .prologue
+    .line 4699
+    iget-object v0, p0, Lcom/kik/components/c;->eG:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4700
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/gridvm/ap;)V
+    .locals 1
+
+    .prologue
+    .line 4694
+    iget-object v0, p0, Lcom/kik/components/c;->eF:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4695
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/gridvm/b;)V
+    .locals 1
+
+    .prologue
+    .line 4719
+    iget-object v0, p0, Lcom/kik/components/c;->eK:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4720
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/gridvm/k;)V
+    .locals 1
+
+    .prologue
+    .line 4776
+    iget-object v0, p0, Lcom/kik/components/c;->eU:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4777
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/gridvm/n;)V
+    .locals 1
+
+    .prologue
+    .line 4815
+    iget-object v0, p0, Lcom/kik/components/c;->fb:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4816
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/gridvm/t;)V
+    .locals 1
+
+    .prologue
+    .line 4689
+    iget-object v0, p0, Lcom/kik/components/c;->eE:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4690
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/l;)V
+    .locals 1
+
+    .prologue
+    .line 4886
+    iget-object v0, p0, Lcom/kik/components/c;->fr:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4887
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/ab$a;)V
+    .locals 1
+
+    .prologue
+    .line 4735
+    iget-object v0, p0, Lcom/kik/components/c;->eN:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4736
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/ab$b;)V
+    .locals 1
+
+    .prologue
+    .line 4741
+    iget-object v0, p0, Lcom/kik/components/c;->eO:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4742
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/ab$c;)V
+    .locals 1
+
+    .prologue
+    .line 4748
+    iget-object v0, p0, Lcom/kik/components/c;->eP:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4750
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/ab$d;)V
+    .locals 1
+
+    .prologue
+    .line 4755
+    iget-object v0, p0, Lcom/kik/components/c;->eQ:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4756
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/am;)V
+    .locals 1
+
+    .prologue
+    .line 4709
+    iget-object v0, p0, Lcom/kik/components/c;->eI:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4710
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/ao;)V
+    .locals 1
+
+    .prologue
+    .line 4760
+    iget-object v0, p0, Lcom/kik/components/c;->eR:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4761
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/ar;)V
+    .locals 1
+
+    .prologue
+    .line 4724
+    iget-object v0, p0, Lcom/kik/components/c;->eL:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4725
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/b;)V
+    .locals 1
+
+    .prologue
+    .line 4770
+    iget-object v0, p0, Lcom/kik/components/c;->eT:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4772
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/f;)V
+    .locals 1
+
+    .prologue
+    .line 4729
+    iget-object v0, p0, Lcom/kik/components/c;->eM:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4730
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/j;)V
+    .locals 1
+
+    .prologue
+    .line 4704
+    iget-object v0, p0, Lcom/kik/components/c;->eH:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4705
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/k;)V
+    .locals 1
+
+    .prologue
+    .line 4802
+    iget-object v0, p0, Lcom/kik/components/c;->eZ:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4804
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/r;)V
+    .locals 1
+
+    .prologue
+    .line 4781
+    iget-object v0, p0, Lcom/kik/components/c;->eV:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4783
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/profileactionvm/y;)V
+    .locals 1
+
+    .prologue
+    .line 4787
+    iget-object v0, p0, Lcom/kik/components/c;->eW:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4788
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/q;)V
+    .locals 1
+
+    .prologue
+    .line 4856
+    iget-object v0, p0, Lcom/kik/components/c;->fl:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4857
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/x;)V
+    .locals 1
+
+    .prologue
+    .line 4584
+    iget-object v0, p0, Lcom/kik/components/c;->ec:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4585
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/profile/z;)V
+    .locals 1
+
+    .prologue
+    .line 4579
+    iget-object v0, p0, Lcom/kik/components/c;->eb:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4580
+    return-void
+.end method
+
+.method public final a(Lkik/android/chat/vm/t;)V
+    .locals 1
+
+    .prologue
+    .line 4654
+    iget-object v0, p0, Lcom/kik/components/c;->et:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4655
     return-void
 .end method
 
@@ -10506,12 +15190,12 @@
     .locals 1
 
     .prologue
-    .line 1904
-    iget-object v0, p0, Lcom/kik/components/c;->dK:Ldagger/b;
+    .line 4518
+    iget-object v0, p0, Lcom/kik/components/c;->dL:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1905
+    .line 4519
     return-void
 .end method
 
@@ -10519,12 +15203,12 @@
     .locals 1
 
     .prologue
-    .line 1739
-    iget-object v0, p0, Lcom/kik/components/c;->db:Ldagger/b;
+    .line 4351
+    iget-object v0, p0, Lcom/kik/components/c;->dd:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1740
+    .line 4352
     return-void
 .end method
 
@@ -10532,12 +15216,12 @@
     .locals 1
 
     .prologue
-    .line 1924
-    iget-object v0, p0, Lcom/kik/components/c;->dc:Ldagger/b;
+    .line 4538
+    iget-object v0, p0, Lcom/kik/components/c;->dP:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1925
+    .line 4540
     return-void
 .end method
 
@@ -10545,12 +15229,12 @@
     .locals 1
 
     .prologue
-    .line 1909
-    iget-object v0, p0, Lcom/kik/components/c;->dL:Ldagger/b;
+    .line 4523
+    iget-object v0, p0, Lcom/kik/components/c;->dM:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1910
+    .line 4524
     return-void
 .end method
 
@@ -10558,12 +15242,12 @@
     .locals 1
 
     .prologue
-    .line 1914
-    iget-object v0, p0, Lcom/kik/components/c;->dM:Ldagger/b;
+    .line 4528
+    iget-object v0, p0, Lcom/kik/components/c;->dN:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1915
+    .line 4529
     return-void
 .end method
 
@@ -10571,12 +15255,12 @@
     .locals 1
 
     .prologue
-    .line 1899
-    iget-object v0, p0, Lcom/kik/components/c;->dJ:Ldagger/b;
+    .line 4513
+    iget-object v0, p0, Lcom/kik/components/c;->dK:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1900
+    .line 4514
     return-void
 .end method
 
@@ -10584,12 +15268,12 @@
     .locals 1
 
     .prologue
-    .line 1774
-    iget-object v0, p0, Lcom/kik/components/c;->dj:Ldagger/b;
+    .line 4386
+    iget-object v0, p0, Lcom/kik/components/c;->dk:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1775
+    .line 4387
     return-void
 .end method
 
@@ -10597,12 +15281,12 @@
     .locals 1
 
     .prologue
-    .line 1759
-    iget-object v0, p0, Lcom/kik/components/c;->dg:Ldagger/b;
+    .line 4371
+    iget-object v0, p0, Lcom/kik/components/c;->dh:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1760
+    .line 4372
     return-void
 .end method
 
@@ -10610,12 +15294,12 @@
     .locals 1
 
     .prologue
-    .line 1744
-    iget-object v0, p0, Lcom/kik/components/c;->dd:Ldagger/b;
+    .line 4356
+    iget-object v0, p0, Lcom/kik/components/c;->de:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1745
+    .line 4357
     return-void
 .end method
 
@@ -10623,12 +15307,12 @@
     .locals 1
 
     .prologue
-    .line 1769
-    iget-object v0, p0, Lcom/kik/components/c;->di:Ldagger/b;
+    .line 4381
+    iget-object v0, p0, Lcom/kik/components/c;->dj:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1770
+    .line 4382
     return-void
 .end method
 
@@ -10636,12 +15320,12 @@
     .locals 1
 
     .prologue
-    .line 1929
-    iget-object v0, p0, Lcom/kik/components/c;->dP:Ldagger/b;
+    .line 4544
+    iget-object v0, p0, Lcom/kik/components/c;->dR:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1930
+    .line 4545
     return-void
 .end method
 
@@ -10649,12 +15333,12 @@
     .locals 1
 
     .prologue
-    .line 1749
-    iget-object v0, p0, Lcom/kik/components/c;->de:Ldagger/b;
+    .line 4361
+    iget-object v0, p0, Lcom/kik/components/c;->df:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1750
+    .line 4362
     return-void
 .end method
 
@@ -10662,12 +15346,12 @@
     .locals 1
 
     .prologue
-    .line 1754
-    iget-object v0, p0, Lcom/kik/components/c;->df:Ldagger/b;
+    .line 4366
+    iget-object v0, p0, Lcom/kik/components/c;->dg:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1755
+    .line 4367
     return-void
 .end method
 
@@ -10675,12 +15359,12 @@
     .locals 1
 
     .prologue
-    .line 1844
+    .line 4456
     iget-object v0, p0, Lcom/kik/components/c;->dy:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1845
+    .line 4457
     return-void
 .end method
 
@@ -10688,12 +15372,12 @@
     .locals 1
 
     .prologue
-    .line 1859
+    .line 4473
     iget-object v0, p0, Lcom/kik/components/c;->dB:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1860
+    .line 4474
     return-void
 .end method
 
@@ -10701,12 +15385,12 @@
     .locals 1
 
     .prologue
-    .line 1869
+    .line 4483
     iget-object v0, p0, Lcom/kik/components/c;->dD:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1870
+    .line 4484
     return-void
 .end method
 
@@ -10714,12 +15398,25 @@
     .locals 1
 
     .prologue
-    .line 1819
+    .line 4431
     iget-object v0, p0, Lcom/kik/components/c;->dt:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1820
+    .line 4432
+    return-void
+.end method
+
+.method public final a(Lkik/android/deeplinks/InternalDeeplinkActivity;)V
+    .locals 1
+
+    .prologue
+    .line 4792
+    iget-object v0, p0, Lcom/kik/components/c;->eX:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4793
     return-void
 .end method
 
@@ -10727,12 +15424,12 @@
     .locals 1
 
     .prologue
-    .line 1124
-    iget-object v0, p0, Lcom/kik/components/c;->d:Ldagger/b;
+    .line 3766
+    iget-object v0, p0, Lcom/kik/components/c;->j:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1125
+    .line 3767
     return-void
 .end method
 
@@ -10740,25 +15437,25 @@
     .locals 1
 
     .prologue
-    .line 1229
-    iget-object v0, p0, Lcom/kik/components/c;->az:Ldagger/b;
+    .line 3871
+    iget-object v0, p0, Lcom/kik/components/c;->aF:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1230
+    .line 3872
     return-void
 .end method
 
-.method public final a(Lkik/android/gallery/vm/j;)V
+.method public final a(Lkik/android/gallery/vm/k;)V
     .locals 1
 
     .prologue
-    .line 1224
-    iget-object v0, p0, Lcom/kik/components/c;->ay:Ldagger/b;
+    .line 3866
+    iget-object v0, p0, Lcom/kik/components/c;->aE:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1225
+    .line 3867
     return-void
 .end method
 
@@ -10766,38 +15463,38 @@
     .locals 1
 
     .prologue
-    .line 1664
-    iget-object v0, p0, Lcom/kik/components/c;->cI:Ldagger/b;
+    .line 4276
+    iget-object v0, p0, Lcom/kik/components/c;->cK:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1665
+    .line 4277
     return-void
 .end method
 
-.method public final a(Lkik/android/gifs/vm/aa;)V
+.method public final a(Lkik/android/gifs/vm/ab;)V
     .locals 1
 
     .prologue
-    .line 1649
-    iget-object v0, p0, Lcom/kik/components/c;->cC:Ldagger/b;
+    .line 4261
+    iget-object v0, p0, Lcom/kik/components/c;->cG:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1650
+    .line 4262
     return-void
 .end method
 
-.method public final a(Lkik/android/gifs/vm/ai;)V
+.method public final a(Lkik/android/gifs/vm/aj;)V
     .locals 1
 
     .prologue
-    .line 1644
-    iget-object v0, p0, Lcom/kik/components/c;->cA:Ldagger/b;
+    .line 4256
+    iget-object v0, p0, Lcom/kik/components/c;->cF:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1645
+    .line 4257
     return-void
 .end method
 
@@ -10805,12 +15502,12 @@
     .locals 1
 
     .prologue
-    .line 1659
-    iget-object v0, p0, Lcom/kik/components/c;->cH:Ldagger/b;
+    .line 4271
+    iget-object v0, p0, Lcom/kik/components/c;->cJ:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1660
+    .line 4272
     return-void
 .end method
 
@@ -10818,12 +15515,12 @@
     .locals 1
 
     .prologue
-    .line 1654
-    iget-object v0, p0, Lcom/kik/components/c;->cE:Ldagger/b;
+    .line 4266
+    iget-object v0, p0, Lcom/kik/components/c;->cH:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1655
+    .line 4267
     return-void
 .end method
 
@@ -10831,25 +15528,25 @@
     .locals 1
 
     .prologue
-    .line 1669
-    iget-object v0, p0, Lcom/kik/components/c;->cJ:Ldagger/b;
+    .line 4281
+    iget-object v0, p0, Lcom/kik/components/c;->cL:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1670
+    .line 4282
     return-void
 .end method
 
-.method public final a(Lkik/android/gifs/vm/y;)V
+.method public final a(Lkik/android/gifs/vm/z;)V
     .locals 1
 
     .prologue
-    .line 1639
-    iget-object v0, p0, Lcom/kik/components/c;->cz:Ldagger/b;
+    .line 4251
+    iget-object v0, p0, Lcom/kik/components/c;->cE:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1640
+    .line 4252
     return-void
 .end method
 
@@ -10857,12 +15554,12 @@
     .locals 1
 
     .prologue
-    .line 1249
-    iget-object v0, p0, Lcom/kik/components/c;->aE:Ldagger/b;
+    .line 3891
+    iget-object v0, p0, Lcom/kik/components/c;->aK:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1250
+    .line 3892
     return-void
 .end method
 
@@ -10870,12 +15567,12 @@
     .locals 1
 
     .prologue
-    .line 1699
-    iget-object v0, p0, Lcom/kik/components/c;->cS:Ldagger/b;
+    .line 4311
+    iget-object v0, p0, Lcom/kik/components/c;->cU:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1700
+    .line 4312
     return-void
 .end method
 
@@ -10883,12 +15580,12 @@
     .locals 1
 
     .prologue
-    .line 1194
-    iget-object v0, p0, Lcom/kik/components/c;->as:Ldagger/b;
+    .line 3836
+    iget-object v0, p0, Lcom/kik/components/c;->ax:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1195
+    .line 3837
     return-void
 .end method
 
@@ -10896,12 +15593,12 @@
     .locals 1
 
     .prologue
-    .line 1569
-    iget-object v0, p0, Lcom/kik/components/c;->ch:Ldagger/b;
+    .line 4187
+    iget-object v0, p0, Lcom/kik/components/c;->cn:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1570
+    .line 4188
     return-void
 .end method
 
@@ -10909,12 +15606,12 @@
     .locals 1
 
     .prologue
-    .line 1214
-    iget-object v0, p0, Lcom/kik/components/c;->aw:Ldagger/b;
+    .line 3856
+    iget-object v0, p0, Lcom/kik/components/c;->aC:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1215
+    .line 3857
     return-void
 .end method
 
@@ -10922,12 +15619,25 @@
     .locals 1
 
     .prologue
-    .line 1184
-    iget-object v0, p0, Lcom/kik/components/c;->al:Ldagger/b;
+    .line 3826
+    iget-object v0, p0, Lcom/kik/components/c;->as:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1185
+    .line 3827
+    return-void
+.end method
+
+.method public final a(Lkik/android/widget/AudioMicLayoutView;)V
+    .locals 1
+
+    .prologue
+    .line 4684
+    iget-object v0, p0, Lcom/kik/components/c;->eD:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4685
     return-void
 .end method
 
@@ -10935,12 +15645,12 @@
     .locals 1
 
     .prologue
-    .line 1724
-    iget-object v0, p0, Lcom/kik/components/c;->cX:Ldagger/b;
+    .line 4336
+    iget-object v0, p0, Lcom/kik/components/c;->cZ:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1725
+    .line 4337
     return-void
 .end method
 
@@ -10948,12 +15658,12 @@
     .locals 1
 
     .prologue
-    .line 1219
-    iget-object v0, p0, Lcom/kik/components/c;->ax:Ldagger/b;
+    .line 3861
+    iget-object v0, p0, Lcom/kik/components/c;->aD:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1220
+    .line 3862
     return-void
 .end method
 
@@ -10961,12 +15671,12 @@
     .locals 1
 
     .prologue
-    .line 1634
-    iget-object v0, p0, Lcom/kik/components/c;->cy:Ldagger/b;
+    .line 4246
+    iget-object v0, p0, Lcom/kik/components/c;->cD:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1635
+    .line 4247
     return-void
 .end method
 
@@ -10974,12 +15684,12 @@
     .locals 1
 
     .prologue
-    .line 1764
-    iget-object v0, p0, Lcom/kik/components/c;->dh:Ldagger/b;
+    .line 4376
+    iget-object v0, p0, Lcom/kik/components/c;->di:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1765
+    .line 4377
     return-void
 .end method
 
@@ -10987,12 +15697,12 @@
     .locals 1
 
     .prologue
-    .line 1734
-    iget-object v0, p0, Lcom/kik/components/c;->da:Ldagger/b;
+    .line 4346
+    iget-object v0, p0, Lcom/kik/components/c;->dc:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1735
+    .line 4347
     return-void
 .end method
 
@@ -11000,12 +15710,12 @@
     .locals 1
 
     .prologue
-    .line 1864
+    .line 4478
     iget-object v0, p0, Lcom/kik/components/c;->dC:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1865
+    .line 4479
     return-void
 .end method
 
@@ -11013,12 +15723,12 @@
     .locals 1
 
     .prologue
-    .line 1719
-    iget-object v0, p0, Lcom/kik/components/c;->cW:Ldagger/b;
+    .line 4331
+    iget-object v0, p0, Lcom/kik/components/c;->cY:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1720
+    .line 4332
     return-void
 .end method
 
@@ -11026,12 +15736,12 @@
     .locals 1
 
     .prologue
-    .line 1324
-    iget-object v0, p0, Lcom/kik/components/c;->aX:Ldagger/b;
+    .line 3966
+    iget-object v0, p0, Lcom/kik/components/c;->bb:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1325
+    .line 3967
     return-void
 .end method
 
@@ -11039,25 +15749,12 @@
     .locals 1
 
     .prologue
-    .line 1629
-    iget-object v0, p0, Lcom/kik/components/c;->cw:Ldagger/b;
+    .line 4241
+    iget-object v0, p0, Lcom/kik/components/c;->cB:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1630
-    return-void
-.end method
-
-.method public final a(Lkik/android/widget/preferences/ClearPaymentMethodPreference;)V
-    .locals 1
-
-    .prologue
-    .line 1374
-    iget-object v0, p0, Lcom/kik/components/c;->bi:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1375
+    .line 4242
     return-void
 .end method
 
@@ -11065,12 +15762,12 @@
     .locals 1
 
     .prologue
-    .line 1409
-    iget-object v0, p0, Lcom/kik/components/c;->bt:Ldagger/b;
+    .line 4036
+    iget-object v0, p0, Lcom/kik/components/c;->bq:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1410
+    .line 4037
     return-void
 .end method
 
@@ -11078,12 +15775,12 @@
     .locals 1
 
     .prologue
-    .line 1284
-    iget-object v0, p0, Lcom/kik/components/c;->aN:Ldagger/b;
+    .line 3926
+    iget-object v0, p0, Lcom/kik/components/c;->aT:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1285
+    .line 3927
     return-void
 .end method
 
@@ -11091,12 +15788,12 @@
     .locals 1
 
     .prologue
-    .line 1344
+    .line 3981
     iget-object v0, p0, Lcom/kik/components/c;->be:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1345
+    .line 3982
     return-void
 .end method
 
@@ -11104,12 +15801,12 @@
     .locals 1
 
     .prologue
-    .line 1364
-    iget-object v0, p0, Lcom/kik/components/c;->aM:Ldagger/b;
+    .line 4001
+    iget-object v0, p0, Lcom/kik/components/c;->bi:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1365
+    .line 4002
     return-void
 .end method
 
@@ -11117,12 +15814,12 @@
     .locals 1
 
     .prologue
-    .line 1369
-    iget-object v0, p0, Lcom/kik/components/c;->aO:Ldagger/b;
+    .line 4006
+    iget-object v0, p0, Lcom/kik/components/c;->bj:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1370
+    .line 4007
     return-void
 .end method
 
@@ -11130,25 +15827,12 @@
     .locals 1
 
     .prologue
-    .line 1339
+    .line 3976
     iget-object v0, p0, Lcom/kik/components/c;->bd:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1340
-    return-void
-.end method
-
-.method public final a(Lkik/android/widget/preferences/KikProfilePicPreference;)V
-    .locals 1
-
-    .prologue
-    .line 1334
-    iget-object v0, p0, Lcom/kik/components/c;->bc:Ldagger/b;
-
-    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
-
-    .line 1335
+    .line 3977
     return-void
 .end method
 
@@ -11156,12 +15840,12 @@
     .locals 1
 
     .prologue
-    .line 1359
-    iget-object v0, p0, Lcom/kik/components/c;->aR:Ldagger/b;
+    .line 3996
+    iget-object v0, p0, Lcom/kik/components/c;->bh:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1360
+    .line 3997
     return-void
 .end method
 
@@ -11169,12 +15853,12 @@
     .locals 1
 
     .prologue
-    .line 1329
-    iget-object v0, p0, Lcom/kik/components/c;->aY:Ldagger/b;
+    .line 3971
+    iget-object v0, p0, Lcom/kik/components/c;->bc:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1330
+    .line 3972
     return-void
 .end method
 
@@ -11182,12 +15866,12 @@
     .locals 1
 
     .prologue
-    .line 1279
-    iget-object v0, p0, Lcom/kik/components/c;->aL:Ldagger/b;
+    .line 3921
+    iget-object v0, p0, Lcom/kik/components/c;->aS:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1280
+    .line 3922
     return-void
 .end method
 
@@ -11195,12 +15879,12 @@
     .locals 1
 
     .prologue
-    .line 1619
-    iget-object v0, p0, Lcom/kik/components/c;->cu:Ldagger/b;
+    .line 4231
+    iget-object v0, p0, Lcom/kik/components/c;->cz:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1620
+    .line 4232
     return-void
 .end method
 
@@ -11208,12 +15892,12 @@
     .locals 1
 
     .prologue
-    .line 1314
-    iget-object v0, p0, Lcom/kik/components/c;->aV:Ldagger/b;
+    .line 3956
+    iget-object v0, p0, Lcom/kik/components/c;->aZ:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1315
+    .line 3957
     return-void
 .end method
 
@@ -11221,12 +15905,12 @@
     .locals 1
 
     .prologue
-    .line 1299
-    iget-object v0, p0, Lcom/kik/components/c;->aS:Ldagger/b;
+    .line 3941
+    iget-object v0, p0, Lcom/kik/components/c;->aW:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1300
+    .line 3942
     return-void
 .end method
 
@@ -11234,12 +15918,12 @@
     .locals 1
 
     .prologue
-    .line 1379
-    iget-object v0, p0, Lcom/kik/components/c;->bk:Ldagger/b;
+    .line 4011
+    iget-object v0, p0, Lcom/kik/components/c;->bl:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1380
+    .line 4012
     return-void
 .end method
 
@@ -11247,12 +15931,12 @@
     .locals 1
 
     .prologue
-    .line 1394
-    iget-object v0, p0, Lcom/kik/components/c;->bq:Ldagger/b;
+    .line 4021
+    iget-object v0, p0, Lcom/kik/components/c;->bn:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1395
+    .line 4022
     return-void
 .end method
 
@@ -11260,12 +15944,12 @@
     .locals 1
 
     .prologue
-    .line 1389
-    iget-object v0, p0, Lcom/kik/components/c;->bp:Ldagger/b;
+    .line 4016
+    iget-object v0, p0, Lcom/kik/components/c;->bm:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1390
+    .line 4017
     return-void
 .end method
 
@@ -11273,12 +15957,12 @@
     .locals 1
 
     .prologue
-    .line 1399
-    iget-object v0, p0, Lcom/kik/components/c;->br:Ldagger/b;
+    .line 4026
+    iget-object v0, p0, Lcom/kik/components/c;->bo:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1400
+    .line 4027
     return-void
 .end method
 
@@ -11286,12 +15970,12 @@
     .locals 1
 
     .prologue
-    .line 1404
-    iget-object v0, p0, Lcom/kik/components/c;->bs:Ldagger/b;
+    .line 4031
+    iget-object v0, p0, Lcom/kik/components/c;->bp:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1405
+    .line 4032
     return-void
 .end method
 
@@ -11299,12 +15983,12 @@
     .locals 1
 
     .prologue
-    .line 1304
-    iget-object v0, p0, Lcom/kik/components/c;->aT:Ldagger/b;
+    .line 3946
+    iget-object v0, p0, Lcom/kik/components/c;->aX:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1305
+    .line 3947
     return-void
 .end method
 
@@ -11312,12 +15996,12 @@
     .locals 1
 
     .prologue
-    .line 1624
-    iget-object v0, p0, Lcom/kik/components/c;->cv:Ldagger/b;
+    .line 4236
+    iget-object v0, p0, Lcom/kik/components/c;->cA:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1625
+    .line 4237
     return-void
 .end method
 
@@ -11325,12 +16009,12 @@
     .locals 1
 
     .prologue
-    .line 1309
-    iget-object v0, p0, Lcom/kik/components/c;->aU:Ldagger/b;
+    .line 3951
+    iget-object v0, p0, Lcom/kik/components/c;->aY:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1310
+    .line 3952
     return-void
 .end method
 
@@ -11338,11 +16022,24 @@
     .locals 1
 
     .prologue
-    .line 1354
+    .line 3991
     iget-object v0, p0, Lcom/kik/components/c;->bg:Ldagger/b;
 
     invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
 
-    .line 1355
+    .line 3992
+    return-void
+.end method
+
+.method public final a(Lkik/android/widget/vm/a;)V
+    .locals 1
+
+    .prologue
+    .line 4679
+    iget-object v0, p0, Lcom/kik/components/c;->eC:Ldagger/b;
+
+    invoke-interface {v0, p1}, Ldagger/b;->injectMembers(Ljava/lang/Object;)V
+
+    .line 4680
     return-void
 .end method

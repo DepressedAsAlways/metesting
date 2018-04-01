@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 187
+    .line 189
     iput-object p1, p0, Lkik/android/KikNotificationHandler$3;->a:Lkik/android/KikNotificationHandler;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -37,32 +37,32 @@
     .locals 1
 
     .prologue
-    .line 192
+    .line 194
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 193
+    .line 195
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 199
+    .line 201
     :goto_0
     return-void
 
-    .line 195
+    .line 197
     :pswitch_0
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lkik/android/KikNotificationHandler$3;->removeMessages(I)V
 
-    .line 196
+    .line 198
     iget-object v0, p0, Lkik/android/KikNotificationHandler$3;->a:Lkik/android/KikNotificationHandler;
 
     invoke-static {v0}, Lkik/android/KikNotificationHandler;->b(Lkik/android/KikNotificationHandler;)V
 
     goto :goto_0
 
-    .line 193
+    .line 195
     nop
 
     :pswitch_data_0

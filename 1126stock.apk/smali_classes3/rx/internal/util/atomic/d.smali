@@ -105,7 +105,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lrx/internal/util/a/i;->a(I)I
+    invoke-static {v0}, Lrx/internal/util/a/c;->a(I)I
 
     move-result v0
 

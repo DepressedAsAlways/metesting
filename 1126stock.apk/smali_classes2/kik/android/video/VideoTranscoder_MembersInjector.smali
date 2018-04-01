@@ -28,7 +28,7 @@
         value = {
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/e/p;",
+            "Lcom/kik/storage/s;",
             ">;"
         }
     .end annotation
@@ -80,7 +80,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/e/p;",
+            "Lcom/kik/storage/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -90,10 +90,10 @@
     .end annotation
 
     .prologue
-    .line 14
+    .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
+    .line 20
     sget-boolean v0, Lkik/android/video/VideoTranscoder_MembersInjector;->a:Z
 
     if-nez v0, :cond_0
@@ -106,11 +106,11 @@
 
     throw v0
 
-    .line 16
+    .line 21
     :cond_0
     iput-object p1, p0, Lkik/android/video/VideoTranscoder_MembersInjector;->b:Ljavax/inject/Provider;
 
-    .line 17
+    .line 22
     sget-boolean v0, Lkik/android/video/VideoTranscoder_MembersInjector;->a:Z
 
     if-nez v0, :cond_1
@@ -123,11 +123,11 @@
 
     throw v0
 
-    .line 18
+    .line 23
     :cond_1
     iput-object p2, p0, Lkik/android/video/VideoTranscoder_MembersInjector;->c:Ljavax/inject/Provider;
 
-    .line 19
+    .line 24
     return-void
 .end method
 
@@ -138,7 +138,7 @@
             "(",
             "Ljavax/inject/Provider",
             "<",
-            "Lcom/kik/e/p;",
+            "Lcom/kik/storage/s;",
             ">;",
             "Ljavax/inject/Provider",
             "<",
@@ -152,7 +152,7 @@
     .end annotation
 
     .prologue
-    .line 31
+    .line 28
     new-instance v0, Lkik/android/video/VideoTranscoder_MembersInjector;
 
     invoke-direct {v0, p0, p1}, Lkik/android/video/VideoTranscoder_MembersInjector;-><init>(Ljavax/inject/Provider;Ljavax/inject/Provider;)V
@@ -169,10 +169,10 @@
     .line 9
     check-cast p1, Lkik/android/video/f;
 
-    .line 1023
+    .line 1033
     if-nez p1, :cond_0
 
-    .line 1024
+    .line 1034
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Cannot inject members into a null reference"
@@ -181,7 +181,7 @@
 
     throw v0
 
-    .line 1026
+    .line 1036
     :cond_0
     iget-object v0, p0, Lkik/android/video/VideoTranscoder_MembersInjector;->b:Ljavax/inject/Provider;
 
@@ -189,11 +189,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/kik/e/p;
+    check-cast v0, Lcom/kik/storage/s;
 
-    iput-object v0, p1, Lkik/android/video/f;->a:Lcom/kik/e/p;
+    iput-object v0, p1, Lkik/android/video/f;->a:Lcom/kik/storage/s;
 
-    .line 1027
+    .line 1037
     iget-object v0, p0, Lkik/android/video/VideoTranscoder_MembersInjector;->c:Ljavax/inject/Provider;
 
     invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;

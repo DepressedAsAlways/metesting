@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lkik/android/chat/presentation/br;
-.implements Lkik/android/chat/view/ac$a;
+.implements Lkik/android/chat/view/ad$a;
 
 
 # annotations
@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field private a:Lkik/android/chat/view/ac;
+.field private a:Lkik/android/chat/view/ad;
 
 .field private b:Lkik/android/challenge/PhoneVerificationNetworkProvider;
 
@@ -98,11 +98,11 @@
 
     new-instance v1, Lkik/android/chat/presentation/bs$b;
 
-    iget-object v2, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v2, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     iget-object v3, p0, Lkik/android/chat/presentation/bs;->b:Lkik/android/challenge/PhoneVerificationNetworkProvider;
 
-    invoke-direct {v1, v2, v3}, Lkik/android/chat/presentation/bs$b;-><init>(Lkik/android/chat/view/ac;Lkik/android/challenge/PhoneVerificationNetworkProvider;)V
+    invoke-direct {v1, v2, v3}, Lkik/android/chat/presentation/bs$b;-><init>(Lkik/android/chat/view/ad;Lkik/android/challenge/PhoneVerificationNetworkProvider;)V
 
     const-wide/16 v4, 0x3e8
 
@@ -161,7 +161,7 @@
 
     .prologue
     .line 321
-    invoke-static {p0}, Lkik/core/util/v;->a(Ljava/lang/CharSequence;)Z
+    invoke-static {p0}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -187,12 +187,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ac;
+.method static synthetic d(Lkik/android/chat/presentation/bs;)Lkik/android/chat/view/ad;
     .locals 1
 
     .prologue
     .line 35
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     return-object v0
 .end method
@@ -267,11 +267,11 @@
 
     .line 187
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    const v1, 0x7f090115
+    const v1, 0x7f090116
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->a(I)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->a(I)V
 
     .line 188
     iget-object v0, p0, Lkik/android/chat/presentation/bs;->d:Lkik/android/chat/presentation/br$a;
@@ -293,7 +293,7 @@
 
     invoke-direct {v0, v1}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f09046d
+    const v1, 0x7f090481
 
     .line 193
     invoke-virtual {v0, v1}, Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;->a(I)Lkik/android/chat/fragment/KikIndeterminateProgressDialog$Builder;
@@ -315,7 +315,7 @@
     .line 196
     iget-object v1, p0, Lkik/android/chat/presentation/bs;->e:Lkik/android/chat/presentation/r;
 
-    invoke-interface {v1, v0}, Lkik/android/chat/presentation/r;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/presentation/r;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
     .line 197
     iget-object v0, p0, Lkik/android/chat/presentation/bs;->b:Lkik/android/challenge/PhoneVerificationNetworkProvider;
@@ -332,11 +332,11 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/presentation/bs$1;-><init>(Lkik/android/chat/presentation/bs;)V
 
-    invoke-static {v1}, Lcom/kik/sdkutils/b;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-static {v1}, Lcom/kik/sdkutils/b;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method
@@ -346,7 +346,7 @@
 
     .prologue
     .line 35
-    check-cast p1, Lkik/android/chat/view/ac;
+    check-cast p1, Lkik/android/chat/view/ad;
 
     .line 2127
     if-nez p1, :cond_0
@@ -362,12 +362,12 @@
 
     .line 2130
     :cond_0
-    iput-object p1, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iput-object p1, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     .line 2131
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    invoke-interface {v0, p0}, Lkik/android/chat/view/ac;->a(Lkik/android/chat/view/ac$a;)V
+    invoke-interface {v0, p0}, Lkik/android/chat/view/ad;->a(Lkik/android/chat/view/ad$a;)V
 
     .line 35
     return-void
@@ -408,12 +408,12 @@
     iput-object v0, p0, Lkik/android/chat/presentation/bs;->j:Ljava/util/Timer;
 
     .line 168
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    invoke-interface {v0}, Lkik/android/chat/view/ac;->a()V
+    invoke-interface {v0}, Lkik/android/chat/view/ad;->a()V
 
     .line 169
-    invoke-static {p1}, Lkik/core/util/v;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lkik/core/util/u;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -425,9 +425,9 @@
     if-nez v1, :cond_1
 
     .line 171
-    iget-object v1, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v1, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    invoke-interface {v1, v0}, Lkik/android/chat/view/ac;->b(Ljava/lang/String;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/view/ad;->b(Ljava/lang/String;)V
 
     .line 173
     :cond_1
@@ -459,9 +459,9 @@
 
     new-instance v1, Lkik/android/chat/presentation/bs$a;
 
-    iget-object v2, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v2, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    invoke-direct {v1, v2}, Lkik/android/chat/presentation/bs$a;-><init>(Lkik/android/chat/view/ac;)V
+    invoke-direct {v1, v2}, Lkik/android/chat/presentation/bs$a;-><init>(Lkik/android/chat/view/ad;)V
 
     const-wide/16 v2, 0x1f4
 
@@ -502,7 +502,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     if-eqz v0, :cond_2
 
@@ -528,17 +528,17 @@
     move-result-object v0
 
     .line 1303
-    iget-object v1, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v1, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    invoke-interface {v1, v0}, Lkik/android/chat/view/ac;->a(Ljava/lang/String;)V
+    invoke-interface {v1, v0}, Lkik/android/chat/view/ad;->a(Ljava/lang/String;)V
 
     .line 1306
     :cond_0
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     iget-object v1, p0, Lkik/android/chat/presentation/bs;->h:Ljava/lang/String;
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->b(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->b(Ljava/lang/String;)V
 
     .line 1307
     iget-object v0, p0, Lkik/android/chat/presentation/bs;->c:Lkik/android/util/KeyboardManipulator;
@@ -547,18 +547,18 @@
 
     iget-object v0, p0, Lkik/android/chat/presentation/bs;->h:Ljava/lang/String;
 
-    invoke-static {v0}, Lkik/core/util/v;->a(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Lkik/core/util/u;->a(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 1308
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     iget-object v1, p0, Lkik/android/chat/presentation/bs;->c:Lkik/android/util/KeyboardManipulator;
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->a(Lkik/android/util/KeyboardManipulator;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->a(Lkik/android/util/KeyboardManipulator;)V
 
     .line 1310
     :cond_1
@@ -580,7 +580,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     if-eqz v0, :cond_0
 
@@ -609,22 +609,22 @@
     invoke-interface {v0}, Lkik/android/chat/presentation/br$a;->a()V
 
     .line 236
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    const v1, 0x7f090239
+    const v1, 0x7f09024d
 
     invoke-static {v1}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->c(Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->c(Ljava/lang/String;)V
 
     .line 237
-    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iget-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
-    const v1, 0x7f0f0098
+    const v1, 0x7f0e00a8
 
-    invoke-interface {v0, v1}, Lkik/android/chat/view/ac;->b(I)V
+    invoke-interface {v0, v1}, Lkik/android/chat/view/ad;->b(I)V
 
     .line 238
     iget-object v0, p0, Lkik/android/chat/presentation/bs;->b:Lkik/android/challenge/PhoneVerificationNetworkProvider;
@@ -639,23 +639,23 @@
 
     invoke-direct {v1, p0}, Lkik/android/chat/presentation/bs$2;-><init>(Lkik/android/chat/presentation/bs;)V
 
-    invoke-static {v1}, Lcom/kik/sdkutils/b;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-static {v1}, Lcom/kik/sdkutils/b;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/l;)Lcom/kik/events/l;
+    invoke-virtual {v0, v1}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 .end method
 
-.method public final o_()V
+.method public final m_()V
     .locals 1
 
     .prologue
     .line 137
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ac;
+    iput-object v0, p0, Lkik/android/chat/presentation/bs;->a:Lkik/android/chat/view/ad;
 
     .line 138
     return-void

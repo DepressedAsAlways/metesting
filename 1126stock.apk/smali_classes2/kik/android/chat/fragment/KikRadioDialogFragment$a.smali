@@ -23,21 +23,21 @@
     .locals 1
 
     .prologue
-    .line 99
+    .line 98
     new-instance v0, Lkik/android/chat/fragment/KikRadioDialogFragment;
 
     invoke-direct {v0}, Lkik/android/chat/fragment/KikRadioDialogFragment;-><init>()V
 
     invoke-direct {p0, v0}, Lkik/android/chat/fragment/KikDialogFragment$a;-><init>(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 100
+    .line 99
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment$a;->a:Lkik/android/chat/fragment/KikDialogFragment;
 
     check-cast v0, Lkik/android/chat/fragment/KikRadioDialogFragment;
 
     iput-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment$a;->b:Lkik/android/chat/fragment/KikRadioDialogFragment;
 
-    .line 101
+    .line 100
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .locals 2
 
     .prologue
-    .line 1107
+    .line 1106
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "You must not set a custom view on this builder."
@@ -61,11 +61,11 @@
     .locals 1
 
     .prologue
-    .line 112
+    .line 111
     iget-object v0, p0, Lkik/android/chat/fragment/KikRadioDialogFragment$a;->b:Lkik/android/chat/fragment/KikRadioDialogFragment;
 
     invoke-virtual {v0, p1}, Lkik/android/chat/fragment/KikRadioDialogFragment;->a(Lkik/android/chat/vm/DialogViewModel;)V
 
-    .line 113
+    .line 112
     return-object p0
 .end method

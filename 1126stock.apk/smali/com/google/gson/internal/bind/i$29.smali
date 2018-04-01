@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 275
+    .line 253
     invoke-direct {p0}, Lcom/google/gson/o;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .end annotation
 
     .prologue
-    .line 1277
+    .line 1255
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Lcom/google/gson/stream/a;->i()Z
@@ -54,7 +54,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    .line 275
+    .line 253
     return-object v0
 .end method
 
@@ -67,16 +67,16 @@
     .end annotation
 
     .prologue
-    .line 275
+    .line 253
     check-cast p2, Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 1280
+    .line 1258
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/google/gson/stream/b;->a(Z)Lcom/google/gson/stream/b;
 
-    .line 275
+    .line 253
     return-void
 .end method

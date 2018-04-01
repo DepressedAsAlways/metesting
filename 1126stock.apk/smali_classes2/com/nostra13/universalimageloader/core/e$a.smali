@@ -53,11 +53,11 @@
 
 .field private r:I
 
-.field private s:Lcom/nostra13/universalimageloader/a/b/a;
+.field private s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
-.field private t:Lcom/nostra13/universalimageloader/a/a/a;
+.field private t:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
-.field private u:Lcom/nostra13/universalimageloader/a/a/b/a;
+.field private u:Lcom/nostra13/universalimageloader/cache/disc/a/a;
 
 .field private v:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
@@ -147,13 +147,13 @@
     iput v2, p0, Lcom/nostra13/universalimageloader/core/e$a;->r:I
 
     .line 186
-    iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/a/b/a;
+    iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     .line 187
-    iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/a/a/a;
+    iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     .line 188
-    iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/a/a/b/a;
+    iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/cache/disc/a/a;
 
     .line 189
     iput-object v3, p0, Lcom/nostra13/universalimageloader/core/e$a;->v:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
@@ -285,22 +285,22 @@
     return-object v0
 .end method
 
-.method static synthetic l(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/a/a/a;
+.method static synthetic l(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
     .locals 1
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/a/a/a;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     return-object v0
 .end method
 
-.method static synthetic m(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/a/b/a;
+.method static synthetic m(Lcom/nostra13/universalimageloader/core/e$a;)Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
     .locals 1
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/a/b/a;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     return-object v0
 .end method
@@ -417,42 +417,42 @@
 
     .line 1576
     :goto_1
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/a/a/a;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     if-nez v0, :cond_1
 
     .line 1577
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/a/a/b/a;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/cache/disc/a/a;
 
     if-nez v0, :cond_0
 
     .line 2077
-    new-instance v0, Lcom/nostra13/universalimageloader/a/a/b/b;
+    new-instance v0, Lcom/nostra13/universalimageloader/cache/disc/a/b;
 
-    invoke-direct {v0}, Lcom/nostra13/universalimageloader/a/a/b/b;-><init>()V
+    invoke-direct {v0}, Lcom/nostra13/universalimageloader/cache/disc/a/b;-><init>()V
 
     .line 1578
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/a/a/b/a;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/cache/disc/a/a;
 
     .line 1580
     :cond_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->b:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/a/a/b/a;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/e$a;->u:Lcom/nostra13/universalimageloader/cache/disc/a/a;
 
     iget-wide v4, p0, Lcom/nostra13/universalimageloader/core/e$a;->q:J
 
     iget v6, p0, Lcom/nostra13/universalimageloader/core/e$a;->r:I
 
-    invoke-static {v0, v1, v4, v5, v6}, Lcom/nostra13/universalimageloader/core/a;->a(Landroid/content/Context;Lcom/nostra13/universalimageloader/a/a/b/a;JI)Lcom/nostra13/universalimageloader/a/a/a;
+    invoke-static {v0, v1, v4, v5, v6}, Lcom/nostra13/universalimageloader/core/a;->a(Landroid/content/Context;Lcom/nostra13/universalimageloader/cache/disc/a/a;JI)Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/a/a/a;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->t:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
 
     .line 1583
     :cond_1
-    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/a/b/a;
+    iget-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     if-nez v0, :cond_3
 
@@ -519,12 +519,12 @@
 
     .line 2123
     :cond_2
-    new-instance v1, Lcom/nostra13/universalimageloader/a/b/a/b;
+    new-instance v1, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;
 
-    invoke-direct {v1, v0}, Lcom/nostra13/universalimageloader/a/b/a/b;-><init>(I)V
+    invoke-direct {v1, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;-><init>(I)V
 
     .line 1584
-    iput-object v1, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/a/b/a;
+    iput-object v1, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     .line 1586
     :cond_3
@@ -533,17 +533,17 @@
     if-eqz v0, :cond_4
 
     .line 1587
-    new-instance v0, Lcom/nostra13/universalimageloader/a/b/a/a;
+    new-instance v0, Lcom/nostra13/universalimageloader/cache/memory/impl/FuzzyKeyMemoryCache;
 
-    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/a/b/a;
+    iget-object v1, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
-    invoke-static {}, Lcom/nostra13/universalimageloader/b/d;->a()Ljava/util/Comparator;
+    invoke-static {}, Lcom/nostra13/universalimageloader/a/d;->a()Ljava/util/Comparator;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/a/b/a/a;-><init>(Lcom/nostra13/universalimageloader/a/b/a;Ljava/util/Comparator;)V
+    invoke-direct {v0, v1, v2}, Lcom/nostra13/universalimageloader/cache/memory/impl/FuzzyKeyMemoryCache;-><init>(Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;Ljava/util/Comparator;)V
 
-    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/a/b/a;
+    iput-object v0, p0, Lcom/nostra13/universalimageloader/core/e$a;->s:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
 
     .line 1589
     :cond_4

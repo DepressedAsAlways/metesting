@@ -16,18 +16,14 @@
 
 # instance fields
 .field _countryCode:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1002c6
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10034e
     .end annotation
 .end field
 
 .field _countryDescription:Landroid/widget/TextView;
-    .annotation build Lbutterknife/Bind;
-        value = {
-            0x7f1002c5
-        }
+    .annotation build Lbutterknife/BindView;
+        value = 0x7f10034d
     .end annotation
 .end field
 
@@ -48,7 +44,7 @@
     iput-object p2, p0, Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$CountryCodeViewHolder;->b:Lcom/kik/view/adapters/CountryCodeRecyclerAdapter$a;
 
     .line 52
-    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)V
+    invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     .line 53
     return-void
@@ -85,7 +81,7 @@
     .locals 2
     .annotation build Lbutterknife/OnClick;
         value = {
-            0x7f1002c4
+            0x7f10034c
         }
     .end annotation
 

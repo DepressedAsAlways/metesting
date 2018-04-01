@@ -1,5 +1,5 @@
 .class final Lkik/android/chat/vm/conversations/b$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 57
+    .line 58
     iput-object p1, p0, Lkik/android/chat/vm/conversations/b$1;->a:Lkik/android/chat/vm/conversations/b;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,16 +46,16 @@
     .locals 1
 
     .prologue
-    .line 57
+    .line 58
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 1061
+    .line 1062
     iget-object v0, p0, Lkik/android/chat/vm/conversations/b$1;->a:Lkik/android/chat/vm/conversations/b;
 
     iget-object v0, v0, Lkik/android/chat/vm/conversations/b;->d:Lrx/subjects/a;
 
     invoke-virtual {v0, p1}, Lrx/subjects/a;->a(Ljava/lang/Object;)V
 
-    .line 57
+    .line 58
     return-void
 .end method

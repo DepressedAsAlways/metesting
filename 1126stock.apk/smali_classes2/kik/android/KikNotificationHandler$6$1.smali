@@ -1,5 +1,5 @@
 .class final Lkik/android/KikNotificationHandler$6$1;
-.super Lcom/kik/events/l;
+.super Lcom/kik/events/k;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/kik/events/l",
+        "Lcom/kik/events/k",
         "<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -32,10 +32,10 @@
     .locals 0
 
     .prologue
-    .line 233
+    .line 235
     iput-object p1, p0, Lkik/android/KikNotificationHandler$6$1;->a:Lkik/android/KikNotificationHandler$6;
 
-    invoke-direct {p0}, Lcom/kik/events/l;-><init>()V
+    invoke-direct {p0}, Lcom/kik/events/k;-><init>()V
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 237
+    .line 239
     iget-object v0, p0, Lkik/android/KikNotificationHandler$6$1;->a:Lkik/android/KikNotificationHandler$6;
 
     iget-object v0, v0, Lkik/android/KikNotificationHandler$6;->a:Lkik/android/KikNotificationHandler;
@@ -57,7 +57,7 @@
 
     monitor-enter v1
 
-    .line 238
+    .line 240
     :try_start_0
     iget-object v0, p0, Lkik/android/KikNotificationHandler$6$1;->a:Lkik/android/KikNotificationHandler$6;
 
@@ -67,7 +67,7 @@
 
     invoke-static {v0, v2}, Lkik/android/KikNotificationHandler;->a(Lkik/android/KikNotificationHandler;Lcom/kik/events/Promise;)Lcom/kik/events/Promise;
 
-    .line 239
+    .line 241
     monitor-exit v1
 
     return-void

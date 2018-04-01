@@ -1,789 +1,297 @@
 .class public final Lkik/android/util/as;
-.super Ljava/lang/Object;
+.super Landroid/os/Handler;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Landroid/animation/ArgbEvaluator;
+# instance fields
+.field private a:Lcom/kik/android/Mixpanel;
+
+.field private b:Lkik/core/interfaces/IConversation;
+
+.field private c:Lkik/core/interfaces/ad;
+
+.field private d:Lkik/core/net/e;
+
+.field private e:Lkik/core/interfaces/n;
+
+.field private f:Lkik/core/interfaces/z;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/os/Looper;Lkik/core/interfaces/IConversation;Lkik/core/interfaces/ad;Lcom/kik/android/Mixpanel;Lkik/core/net/e;Lkik/core/interfaces/n;Lkik/core/interfaces/z;)V
+    .locals 0
 
     .prologue
-    .line 41
-    new-instance v0, Landroid/animation/ArgbEvaluator;
+    .line 43
+    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    invoke-direct {v0}, Landroid/animation/ArgbEvaluator;-><init>()V
+    .line 44
+    iput-object p4, p0, Lkik/android/util/as;->a:Lcom/kik/android/Mixpanel;
 
-    sput-object v0, Lkik/android/util/as;->a:Landroid/animation/ArgbEvaluator;
+    .line 45
+    iput-object p2, p0, Lkik/android/util/as;->b:Lkik/core/interfaces/IConversation;
 
-    return-void
-.end method
+    .line 46
+    iput-object p3, p0, Lkik/android/util/as;->c:Lkik/core/interfaces/ad;
 
-.method public static a(Landroid/content/Context;I)I
-    .locals 5
+    .line 47
+    iput-object p5, p0, Lkik/android/util/as;->d:Lkik/core/net/e;
 
-    .prologue
-    const/4 v4, 0x1
+    .line 48
+    iput-object p6, p0, Lkik/android/util/as;->e:Lkik/core/interfaces/n;
 
-    const/4 v0, 0x0
+    .line 49
+    iput-object p7, p0, Lkik/android/util/as;->f:Lkik/core/interfaces/z;
 
-    .line 592
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    .line 603
-    :cond_0
-    :goto_0
-    return v0
-
-    .line 595
-    :cond_1
-    new-instance v1, Landroid/util/TypedValue;
-
-    invoke-direct {v1}, Landroid/util/TypedValue;-><init>()V
-
-    .line 596
-    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
-
-    move-result-object v2
-
-    const v3, 0x10100ae
-
-    invoke-virtual {v2, v3, v1, v4}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
-
-    .line 597
-    iget v1, v1, Landroid/util/TypedValue;->resourceId:I
-
-    new-array v2, v4, [I
-
-    aput p1, v2, v0
-
-    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->obtainStyledAttributes(I[I)Landroid/content/res/TypedArray;
-
-    move-result-object v1
-
-    .line 598
-    if-eqz v1, :cond_0
-
-    .line 601
-    invoke-virtual {v1, v0, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
-
-    move-result v0
-
-    .line 602
-    invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
-
-    goto :goto_0
-.end method
-
-.method public static varargs a(J[Landroid/view/View;)V
-    .locals 8
-
-    .prologue
-    const/4 v1, 0x0
-
-    const/high16 v7, 0x3f800000    # 1.0f
-
-    .line 346
-    array-length v0, p2
-
-    new-array v3, v0, [Landroid/animation/ObjectAnimator;
-
-    move v0, v1
-
-    .line 347
-    :goto_0
-    array-length v2, p2
-
-    if-ge v0, v2, :cond_2
-
-    .line 348
-    aget-object v4, p2, v0
-
-    .line 349
-    if-eqz v4, :cond_0
-
-    .line 352
-    invoke-virtual {v4}, Landroid/view/View;->getAlpha()F
-
-    move-result v2
-
-    cmpl-float v2, v2, v7
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v4}, Landroid/view/View;->getAlpha()F
-
-    move-result v2
-
-    .line 353
-    :goto_1
-    sget-object v5, Landroid/view/View;->ALPHA:Landroid/util/Property;
-
-    const/4 v6, 0x2
-
-    new-array v6, v6, [F
-
-    aput v2, v6, v1
-
-    const/4 v2, 0x1
-
-    aput v7, v6, v2
-
-    invoke-static {v4, v5, v6}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    move-result-object v2
-
-    aput-object v2, v3, v0
-
-    .line 354
-    aget-object v2, v3, v0
-
-    new-instance v4, Landroid/view/animation/AccelerateInterpolator;
-
-    invoke-direct {v4}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
-
-    invoke-virtual {v2, v4}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
-
-    .line 347
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 352
-    :cond_1
-    const/4 v2, 0x0
-
-    goto :goto_1
-
-    .line 356
-    :cond_2
-    invoke-static {p2}, Lkik/android/util/ch;->d([Landroid/view/View;)V
-
-    .line 357
-    new-instance v0, Landroid/animation/AnimatorSet;
-
-    invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
-
-    .line 358
-    invoke-virtual {v0, v3}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
-
-    .line 359
-    invoke-virtual {v0, p0, p1}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
-
-    .line 360
-    invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
-
-    .line 361
-    return-void
-.end method
-
-.method public static a(Landroid/view/View;)V
-    .locals 1
-
-    .prologue
     .line 50
-    if-nez p0, :cond_0
+    return-void
+.end method
+
+.method static synthetic a(Lkik/android/util/as;)Lcom/kik/android/Mixpanel;
+    .locals 1
+
+    .prologue
+    .line 29
+    iget-object v0, p0, Lkik/android/util/as;->a:Lcom/kik/android/Mixpanel;
+
+    return-object v0
+.end method
+
+.method static synthetic b(Lkik/android/util/as;)Lkik/core/net/e;
+    .locals 1
+
+    .prologue
+    .line 29
+    iget-object v0, p0, Lkik/android/util/as;->d:Lkik/core/net/e;
+
+    return-object v0
+.end method
+
+.method static synthetic c(Lkik/android/util/as;)Lkik/core/interfaces/n;
+    .locals 1
+
+    .prologue
+    .line 29
+    iget-object v0, p0, Lkik/android/util/as;->e:Lkik/core/interfaces/n;
+
+    return-object v0
+.end method
+
+.method static synthetic d(Lkik/android/util/as;)Lkik/core/interfaces/ad;
+    .locals 1
+
+    .prologue
+    .line 29
+    iget-object v0, p0, Lkik/android/util/as;->c:Lkik/core/interfaces/ad;
+
+    return-object v0
+.end method
+
+.method static synthetic e(Lkik/android/util/as;)Lkik/core/interfaces/IConversation;
+    .locals 1
+
+    .prologue
+    .line 29
+    iget-object v0, p0, Lkik/android/util/as;->b:Lkik/core/interfaces/IConversation;
+
+    return-object v0
+.end method
+
+.method static synthetic f(Lkik/android/util/as;)Lkik/core/interfaces/z;
+    .locals 1
+
+    .prologue
+    .line 29
+    iget-object v0, p0, Lkik/android/util/as;->f:Lkik/core/interfaces/z;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final handleMessage(Landroid/os/Message;)V
+    .locals 7
+
+    .prologue
+    const/4 v2, 0x0
 
     .line 55
+    invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
+
+    .line 57
+    iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+
+    check-cast v0, Lkik/core/datatypes/Message;
+
+    .line 58
+    iget v1, p1, Landroid/os/Message;->what:I
+
+    packed-switch v1, :pswitch_data_0
+
+    .line 113
+    :cond_0
     :goto_0
     return-void
 
-    .line 53
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/View;->clearAnimation()V
+    .line 60
+    :pswitch_0
+    iget-object v1, p0, Lkik/android/util/as;->b:Lkik/core/interfaces/IConversation;
 
-    .line 54
-    invoke-virtual {p0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->cancel()V
-
-    goto :goto_0
-.end method
-
-.method private static a(Landroid/view/View;FFLandroid/animation/AnimatorListenerAdapter;J)V
-    .locals 6
-
-    .prologue
-    const/4 v5, 0x1
-
-    const/4 v4, 0x0
-
-    const/4 v3, 0x2
-
-    .line 282
-    if-nez p0, :cond_0
-
-    .line 294
-    :goto_0
-    return-void
-
-    .line 285
-    :cond_0
-    sget-object v0, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
-
-    new-array v1, v3, [F
-
-    fill-array-data v1, :array_0
-
-    invoke-static {p0, v0, v1}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    move-result-object v0
-
-    .line 286
-    sget-object v1, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
-
-    new-array v2, v3, [F
-
-    aput p1, v2, v4
-
-    aput p2, v2, v5
-
-    invoke-static {p0, v1, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    invoke-interface {v1, v0}, Lkik/core/interfaces/IConversation;->c(Lkik/core/datatypes/Message;)Lcom/kik/events/Promise;
 
     move-result-object v1
 
-    .line 287
-    new-instance v2, Landroid/animation/AnimatorSet;
+    new-instance v2, Lkik/android/util/as$1;
 
-    invoke-direct {v2}, Landroid/animation/AnimatorSet;-><init>()V
+    invoke-direct {v2, p0, v0}, Lkik/android/util/as$1;-><init>(Lkik/android/util/as;Lkik/core/datatypes/Message;)V
 
-    .line 289
-    new-array v3, v3, [Landroid/animation/Animator;
-
-    aput-object v0, v3, v4
-
-    aput-object v1, v3, v5
-
-    invoke-virtual {v2, v3}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
-
-    .line 290
-    invoke-virtual {v2, p4, p5}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
-
-    .line 291
-    invoke-virtual {v2, p3}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    .line 293
-    invoke-virtual {v2}, Landroid/animation/AnimatorSet;->start()V
+    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 
-    .line 285
-    nop
+    .line 74
+    :pswitch_1
+    const-class v1, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    :array_0
-    .array-data 4
-        0x0
-        0x0
-    .end array-data
-.end method
+    invoke-static {v0, v1}, Lkik/core/datatypes/messageExtensions/MessageAttachment;->getAttachment(Lkik/core/datatypes/Message;Ljava/lang/Class;)Lkik/core/datatypes/messageExtensions/MessageAttachment;
 
-.method public static a(Landroid/view/View;FJ)V
-    .locals 6
+    move-result-object v1
 
-    .prologue
-    .line 244
-    if-nez p0, :cond_0
+    check-cast v1, Lkik/core/datatypes/messageExtensions/ContentMessage;
 
-    .line 256
-    :goto_0
-    return-void
+    .line 76
+    invoke-virtual {v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->E()Z
 
-    .line 247
-    :cond_0
-    const/4 v1, 0x0
+    move-result v3
 
-    new-instance v3, Lkik/android/util/as$2;
+    if-nez v3, :cond_1
 
-    invoke-direct {v3, p0}, Lkik/android/util/as$2;-><init>(Landroid/view/View;)V
+    .line 77
+    iget-object v3, p0, Lkik/android/util/as;->b:Lkik/core/interfaces/IConversation;
 
-    move-object v0, p0
+    invoke-interface {v3, v0}, Lkik/core/interfaces/IConversation;->b(Lkik/core/datatypes/Message;)V
 
-    move v2, p1
-
-    move-wide v4, p2
-
-    invoke-static/range {v0 .. v5}, Lkik/android/util/as;->a(Landroid/view/View;FFLandroid/animation/AnimatorListenerAdapter;J)V
-
-    goto :goto_0
-.end method
-
-.method public static a(Landroid/view/View;I)V
-    .locals 1
-
-    .prologue
-    .line 324
-    const/4 v0, 0x0
-
-    invoke-static {p0, p1, v0}, Lkik/android/util/as;->a(Landroid/view/View;ILandroid/animation/Animator$AnimatorListener;)V
-
-    .line 325
-    return-void
-.end method
-
-.method public static a(Landroid/view/View;ILandroid/animation/Animator$AnimatorListener;)V
-    .locals 4
-
-    .prologue
-    .line 329
-    if-nez p0, :cond_0
-
-    .line 342
-    :goto_0
-    return-void
-
-    .line 333
-    :cond_0
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Landroid/view/View;
-
-    const/4 v1, 0x0
-
-    aput-object p0, v0, v1
-
-    invoke-static {v0}, Lkik/android/util/ch;->d([Landroid/view/View;)V
-
-    .line 335
-    sget-object v0, Landroid/view/View;->ALPHA:Landroid/util/Property;
-
-    const/4 v1, 0x2
-
-    new-array v1, v1, [F
-
-    fill-array-data v1, :array_0
-
-    invoke-static {p0, v0, v1}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    move-result-object v0
-
-    .line 336
-    int-to-long v2, p1
-
-    invoke-virtual {v0, v2, v3}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
-
-    .line 337
-    const-wide/16 v2, 0x0
-
-    invoke-virtual {v0, v2, v3}, Landroid/animation/ObjectAnimator;->setStartDelay(J)V
-
-    .line 338
-    if-eqz p2, :cond_1
-
-    .line 339
-    invoke-virtual {v0, p2}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    .line 341
+    .line 82
     :cond_1
-    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
+    invoke-virtual {v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->j()Ljava/io/File;
 
-    goto :goto_0
+    move-result-object v3
 
-    .line 335
-    :array_0
-    .array-data 4
-        0x0
-        0x3f800000    # 1.0f
-    .end array-data
-.end method
+    if-eqz v3, :cond_5
 
-.method public static a(Landroid/view/View;ILandroid/view/animation/Animation$AnimationListener;)V
-    .locals 1
+    .line 83
+    iget-object v3, p0, Lkik/android/util/as;->b:Lkik/core/interfaces/IConversation;
 
-    .prologue
-    .line 428
-    const/16 v0, 0x8
+    invoke-virtual {v0}, Lkik/core/datatypes/Message;->i()Ljava/lang/String;
 
-    invoke-static {p0, p1, p2, v0}, Lkik/android/util/as;->a(Landroid/view/View;ILandroid/view/animation/Animation$AnimationListener;I)V
+    move-result-object v4
 
-    .line 429
-    return-void
-.end method
+    invoke-interface {v3, v4}, Lkik/core/interfaces/IConversation;->a(Ljava/lang/String;)Lkik/core/datatypes/f;
 
-.method private static a(Landroid/view/View;ILandroid/view/animation/Animation$AnimationListener;I)V
-    .locals 4
+    move-result-object v3
 
-    .prologue
-    .line 439
-    if-nez p0, :cond_0
+    .line 84
+    invoke-static {}, Lkik/android/net/http/b;->a()Lkik/android/net/http/b;
 
-    .line 474
-    :goto_0
-    return-void
+    move-result-object v4
 
-    .line 443
-    :cond_0
-    new-instance v0, Landroid/view/animation/AlphaAnimation;
+    invoke-virtual {v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->n()Ljava/lang/String;
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    move-result-object v5
 
-    const/4 v2, 0x0
+    invoke-virtual {v4, v5}, Lkik/android/net/http/b;->a(Ljava/lang/String;)Ljava/lang/ref/WeakReference;
 
-    invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
+    move-result-object v4
 
-    .line 444
-    int-to-long v2, p1
+    .line 86
+    if-eqz v4, :cond_4
 
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
-
-    .line 445
-    new-instance v1, Lkik/android/util/as$6;
-
-    invoke-direct {v1, p2, p0, p3}, Lkik/android/util/as$6;-><init>(Landroid/view/animation/Animation$AnimationListener;Landroid/view/View;I)V
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
-
-    .line 473
-    invoke-virtual {p0, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    goto :goto_0
-.end method
-
-.method public static a(Landroid/view/View;ILcom/kik/android/animation/ColorFade$FadeDirection;)V
-    .locals 4
-
-    .prologue
-    .line 184
-    .line 1189
-    if-eqz p0, :cond_0
-
-    .line 1192
-    new-instance v0, Lcom/kik/android/animation/ColorFade;
-
-    invoke-direct {v0, p0, p1, p2}, Lcom/kik/android/animation/ColorFade;-><init>(Landroid/view/View;ILcom/kik/android/animation/ColorFade$FadeDirection;)V
-
-    .line 1193
-    const-wide/16 v2, 0x12c
-
-    invoke-virtual {v0, v2, v3}, Lcom/kik/android/animation/ColorFade;->setDuration(J)V
-
-    .line 1217
-    invoke-virtual {p0, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    .line 185
-    :cond_0
-    return-void
-.end method
-
-.method public static a(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;)V
-    .locals 2
-
-    .prologue
-    .line 433
-    const/16 v0, 0x12c
-
-    const/4 v1, 0x4
-
-    invoke-static {p0, v0, p1, v1}, Lkik/android/util/as;->a(Landroid/view/View;ILandroid/view/animation/Animation$AnimationListener;I)V
-
-    .line 434
-    return-void
-.end method
-
-.method public static a(Landroid/view/View;Z)V
-    .locals 2
-
-    .prologue
-    const/16 v1, 0xc8
-
-    .line 305
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    if-nez p1, :cond_1
-
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    if-nez p1, :cond_2
-
-    .line 315
-    :cond_1
-    :goto_0
-    return-void
-
-    .line 309
-    :cond_2
-    if-eqz p1, :cond_3
-
-    .line 1324
-    const/4 v0, 0x0
-
-    invoke-static {p0, v1, v0}, Lkik/android/util/as;->a(Landroid/view/View;ILandroid/animation/Animator$AnimatorListener;)V
-
-    goto :goto_0
-
-    .line 313
-    :cond_3
-    invoke-static {p0, v1}, Lkik/android/util/as;->b(Landroid/view/View;I)V
-
-    goto :goto_0
-.end method
-
-.method public static varargs b(J[Landroid/view/View;)V
-    .locals 8
-
-    .prologue
-    const/4 v1, 0x0
-
-    const/4 v7, 0x0
-
-    .line 365
-    array-length v0, p2
-
-    new-array v3, v0, [Landroid/animation/ObjectAnimator;
-
-    move v0, v1
-
-    .line 366
-    :goto_0
-    array-length v2, p2
-
-    if-ge v0, v2, :cond_2
-
-    .line 367
-    aget-object v4, p2, v0
-
-    .line 368
-    if-eqz v4, :cond_0
-
-    .line 371
-    invoke-virtual {v4}, Landroid/view/View;->getAlpha()F
-
-    move-result v2
-
-    cmpl-float v2, v2, v7
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v4}, Landroid/view/View;->getAlpha()F
-
-    move-result v2
-
-    .line 372
-    :goto_1
-    sget-object v5, Landroid/view/View;->ALPHA:Landroid/util/Property;
-
-    const/4 v6, 0x2
-
-    new-array v6, v6, [F
-
-    aput v2, v6, v1
-
-    const/4 v2, 0x1
-
-    aput v7, v6, v2
-
-    invoke-static {v4, v5, v6}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    .line 87
+    invoke-virtual {v4}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
-    aput-object v2, v3, v0
+    check-cast v2, Lkik/android/net/http/a;
 
-    .line 373
-    aget-object v2, v3, v0
+    move-object v6, v3
 
-    new-instance v4, Landroid/view/animation/AccelerateInterpolator;
+    move-object v3, v2
 
-    invoke-direct {v4}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
+    move-object v2, v6
 
-    invoke-virtual {v2, v4}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+    .line 91
+    :goto_1
+    if-eqz v3, :cond_2
 
-    .line 366
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
+    if-eqz v2, :cond_2
+
+    .line 92
+    invoke-virtual {v0}, Lkik/core/datatypes/Message;->b()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/16 v4, 0x65
+
+    iget-object v5, p0, Lkik/android/util/as;->c:Lkik/core/interfaces/ad;
+
+    invoke-virtual {v2, v1, v4, v5}, Lkik/core/datatypes/f;->a(Ljava/lang/String;ILkik/core/interfaces/ad;)Z
+
+    .line 93
+    invoke-virtual {v3}, Lkik/android/net/http/a;->l()Lcom/kik/events/Promise;
+
+    move-result-object v1
+
+    new-instance v2, Lkik/android/util/as$2;
+
+    invoke-direct {v2, p0, v0}, Lkik/android/util/as$2;-><init>(Lkik/android/util/as;Lkik/core/datatypes/Message;)V
+
+    invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Lcom/kik/events/k;)Lcom/kik/events/k;
 
     goto :goto_0
 
-    .line 371
-    :cond_1
-    const/high16 v2, 0x3f800000    # 1.0f
+    .line 104
+    :cond_2
+    invoke-virtual {v1}, Lkik/core/datatypes/messageExtensions/ContentMessage;->w()Lkik/core/datatypes/messageExtensions/ContentMessage$ContentFileState;
+
+    move-result-object v1
+
+    .line 105
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentFileState;->None:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentFileState;
+
+    if-eq v1, v2, :cond_3
+
+    sget-object v2, Lkik/core/datatypes/messageExtensions/ContentMessage$ContentFileState;->Complete:Lkik/core/datatypes/messageExtensions/ContentMessage$ContentFileState;
+
+    if-ne v1, v2, :cond_0
+
+    .line 107
+    :cond_3
+    iget-object v1, p0, Lkik/android/util/as;->b:Lkik/core/interfaces/IConversation;
+
+    invoke-interface {v1, v0}, Lkik/core/interfaces/IConversation;->c(Lkik/core/datatypes/Message;)Lcom/kik/events/Promise;
+
+    goto :goto_0
+
+    :cond_4
+    move-object v6, v3
+
+    move-object v3, v2
+
+    move-object v2, v6
 
     goto :goto_1
 
-    .line 375
-    :cond_2
-    invoke-static {p2}, Lkik/android/util/ch;->d([Landroid/view/View;)V
+    :cond_5
+    move-object v3, v2
 
-    .line 376
-    new-instance v0, Landroid/animation/AnimatorSet;
+    goto :goto_1
 
-    invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
+    .line 58
+    nop
 
-    .line 377
-    invoke-virtual {v0, v3}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
-
-    .line 378
-    invoke-virtual {v0, p0, p1}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
-
-    .line 379
-    new-instance v1, Lkik/android/util/as$4;
-
-    invoke-direct {v1, p2}, Lkik/android/util/as$4;-><init>([Landroid/view/View;)V
-
-    invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
-
-    .line 388
-    invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
-
-    .line 389
-    return-void
-.end method
-
-.method public static b(Landroid/view/View;)V
-    .locals 4
-
-    .prologue
-    .line 154
-    if-nez p0, :cond_0
-
-    .line 180
-    :goto_0
-    return-void
-
-    .line 157
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    .line 158
-    new-instance v1, Lcom/kik/android/animation/a;
-
-    invoke-direct {v1, p0}, Lcom/kik/android/animation/a;-><init>(Landroid/view/View;)V
-
-    .line 159
-    const-wide/16 v2, 0x12c
-
-    invoke-virtual {v1, v2, v3}, Lcom/kik/android/animation/a;->setDuration(J)V
-
-    .line 160
-    new-instance v2, Lkik/android/util/as$1;
-
-    invoke-direct {v2, p0, v0}, Lkik/android/util/as$1;-><init>(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
-
-    invoke-virtual {v1, v2}, Lcom/kik/android/animation/a;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
-
-    .line 179
-    invoke-virtual {p0, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    goto :goto_0
-.end method
-
-.method public static b(Landroid/view/View;FJ)V
-    .locals 6
-
-    .prologue
-    .line 260
-    const/4 v2, 0x0
-
-    new-instance v3, Lkik/android/util/as$3;
-
-    invoke-direct {v3, p0}, Lkik/android/util/as$3;-><init>(Landroid/view/View;)V
-
-    move-object v0, p0
-
-    move v1, p1
-
-    move-wide v4, p2
-
-    invoke-static/range {v0 .. v5}, Lkik/android/util/as;->a(Landroid/view/View;FFLandroid/animation/AnimatorListenerAdapter;J)V
-
-    .line 269
-    return-void
-.end method
-
-.method public static b(Landroid/view/View;I)V
-    .locals 4
-
-    .prologue
-    .line 398
-    if-eqz p0, :cond_0
-
-    invoke-static {p0}, Lkik/android/util/ch;->b(Landroid/view/View;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 424
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 402
-    :cond_1
-    new-instance v0, Landroid/view/animation/AlphaAnimation;
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
-
-    .line 403
-    int-to-long v2, p1
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
-
-    .line 404
-    new-instance v1, Lkik/android/util/as$5;
-
-    invoke-direct {v1, p0}, Lkik/android/util/as$5;-><init>(Landroid/view/View;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
-
-    .line 423
-    invoke-virtual {p0, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
-
-    goto :goto_0
-.end method
-
-.method public static c(Landroid/view/View;)V
-    .locals 2
-
-    .prologue
-    .line 319
-    .line 2324
-    const/16 v0, 0x1f4
-
-    const/4 v1, 0x0
-
-    invoke-static {p0, v0, v1}, Lkik/android/util/as;->a(Landroid/view/View;ILandroid/animation/Animator$AnimatorListener;)V
-
-    .line 320
-    return-void
-.end method
-
-.method public static d(Landroid/view/View;)V
-    .locals 1
-
-    .prologue
-    .line 393
-    const/16 v0, 0x1f4
-
-    invoke-static {p0, v0}, Lkik/android/util/as;->b(Landroid/view/View;I)V
-
-    .line 394
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x3ff
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
 .end method

@@ -28,14 +28,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/datatypes/aa;Lkik/android/chat/vm/aj;)V
+.method public constructor <init>(Lkik/core/datatypes/z;Lkik/android/chat/vm/bl;)V
     .locals 2
 
     .prologue
     const/4 v1, 0x0
 
     .line 22
-    invoke-direct {p0, p1, p2}, Lkik/android/chat/vm/widget/b;-><init>(Lkik/core/datatypes/aa;Lkik/android/chat/vm/aj;)V
+    invoke-direct {p0, p1, p2}, Lkik/android/chat/vm/widget/b;-><init>(Lkik/core/datatypes/z;Lkik/android/chat/vm/bl;)V
 
     .line 13
     iput v1, p0, Lkik/android/chat/vm/widget/be;->f:F
@@ -72,12 +72,12 @@
 
 
 # virtual methods
-.method public final f()Lrx/c;
+.method public final f()Lrx/d;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Float;",
             ">;"
@@ -88,23 +88,23 @@
     .line 28
     iget-object v0, p0, Lkik/android/chat/vm/widget/be;->j:Lrx/subjects/a;
 
-    invoke-static {p0}, Lkik/android/chat/vm/widget/bf;->a(Lkik/android/chat/vm/widget/be;)Lrx/b/g;
+    invoke-static {p0}, Lkik/android/chat/vm/widget/bf;->a(Lkik/android/chat/vm/widget/be;)Lrx/functions/g;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lrx/subjects/a;->d(Lrx/b/g;)Lrx/c;
+    invoke-virtual {v0, v1}, Lrx/subjects/a;->e(Lrx/functions/g;)Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final g()Lrx/c;
+.method public final h()Lrx/d;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
             "Ljava/lang/Float;",
             ">;"
@@ -115,29 +115,29 @@
     .line 52
     iget-object v0, p0, Lkik/android/chat/vm/widget/be;->j:Lrx/subjects/a;
 
-    invoke-virtual {v0}, Lrx/subjects/a;->e()Lrx/c;
+    invoke-virtual {v0}, Lrx/subjects/a;->f()Lrx/d;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final h()V
+.method public final i()V
     .locals 2
 
     .prologue
     .line 34
-    iget-object v0, p0, Lkik/android/chat/vm/widget/be;->e:Lkik/android/chat/vm/aj;
+    iget-object v0, p0, Lkik/android/chat/vm/widget/be;->e:Lkik/android/chat/vm/bl;
 
-    iget-object v1, p0, Lkik/android/chat/vm/widget/be;->d:Lkik/core/datatypes/aa;
+    iget-object v1, p0, Lkik/android/chat/vm/widget/be;->d:Lkik/core/datatypes/z;
 
-    invoke-interface {v0, v1}, Lkik/android/chat/vm/aj;->b(Lkik/core/datatypes/aa;)V
+    invoke-interface {v0, v1}, Lkik/android/chat/vm/bl;->b(Lkik/core/datatypes/z;)V
 
     .line 35
     return-void
 .end method
 
-.method public final i()V
+.method public final j()V
     .locals 2
 
     .prologue

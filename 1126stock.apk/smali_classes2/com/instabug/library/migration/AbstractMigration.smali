@@ -24,6 +24,12 @@
 
 
 # virtual methods
+.method public abstract doAfterMigration()V
+.end method
+
+.method public abstract doPreMigration()V
+.end method
+
 .method public getMigrationId()Ljava/lang/String;
     .locals 1
 
@@ -40,13 +46,13 @@
 .method public abstract initialize(Landroid/content/Context;)V
 .end method
 
-.method public abstract migrate()Lrx/c;
+.method public abstract migrate()Lrx/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lrx/c",
+            "Lrx/d",
             "<",
-            "Ljava/lang/String;",
+            "Lcom/instabug/library/migration/AbstractMigration;",
             ">;"
         }
     .end annotation

@@ -9,13 +9,13 @@
 # instance fields
 .field final a:Landroid/content/Context;
 
-.field final b:Lkik/core/interfaces/ac;
+.field final b:Lkik/core/interfaces/ad;
 
 .field private c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ac;)V
+.method public constructor <init>(Landroid/content/Context;Lkik/core/interfaces/ad;)V
     .locals 1
 
     .prologue
@@ -31,7 +31,7 @@
     iput-object p1, p0, Lcom/kik/b/a;->a:Landroid/content/Context;
 
     .line 27
-    iput-object p2, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ac;
+    iput-object p2, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ad;
 
     .line 28
     return-void
@@ -83,7 +83,7 @@
     move-result-object v0
 
     .line 44
-    invoke-static {v0}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v0}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -118,14 +118,14 @@
     return-object v0
 .end method
 
-.method public final d()Lkik/core/datatypes/l;
+.method public final d()Lkik/core/datatypes/k;
     .locals 1
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lcom/kik/b/a;->b:Lkik/core/interfaces/ad;
 
-    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ac;)Lkik/core/z;
+    invoke-static {v0}, Lkik/core/z;->b(Lkik/core/interfaces/ad;)Lkik/core/z;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
     if-eqz v0, :cond_0
 
     .line 65
-    invoke-virtual {v0}, Lkik/core/z;->a()Lkik/core/datatypes/l;
+    invoke-virtual {v0}, Lkik/core/z;->a()Lkik/core/datatypes/k;
 
     move-result-object v0
 

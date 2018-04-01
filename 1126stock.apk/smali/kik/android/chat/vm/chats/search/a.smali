@@ -1,5 +1,5 @@
 .class public abstract Lkik/android/chat/vm/chats/search/a;
-.super Lkik/android/chat/vm/c;
+.super Lkik/android/chat/vm/e;
 .source "SourceFile"
 
 # interfaces
@@ -27,7 +27,7 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lkik/android/chat/vm/c;-><init>()V
+    invoke-direct {p0}, Lkik/android/chat/vm/e;-><init>()V
 
     .line 29
     iput-boolean p1, p0, Lkik/android/chat/vm/chats/search/a;->b:Z
@@ -55,21 +55,7 @@
     return-void
 .end method
 
-.method public final a()Z
-    .locals 2
-
-    .prologue
-    .line 48
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "isFirstInSection not implemented for Chats Search Results. Feel free to implement it."
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method protected final ad_()Ljava/lang/String;
+.method protected final aa_()Ljava/lang/String;
     .locals 3
 
     .prologue
@@ -114,6 +100,20 @@
 .end method
 
 .method public final b()Z
+    .locals 2
+
+    .prologue
+    .line 48
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    const-string v1, "isFirstInSection not implemented for Chats Search Results. Feel free to implement it."
+
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final d()Z
     .locals 1
 
     .prologue
@@ -123,7 +123,7 @@
     return v0
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method protected final e()Ljava/lang/String;
     .locals 2
 
     .prologue
@@ -169,7 +169,7 @@
     goto :goto_0
 .end method
 
-.method protected final h()V
+.method protected final j()V
     .locals 6
 
     .prologue
@@ -185,7 +185,7 @@
     .line 97
     iget-object v1, p0, Lkik/android/chat/vm/chats/search/a;->e:Ljava/lang/String;
 
-    invoke-static {v1}, Lkik/android/util/bx;->d(Ljava/lang/String;)Z
+    invoke-static {v1}, Lkik/android/util/bs;->d(Ljava/lang/String;)Z
 
     move-result v1
 

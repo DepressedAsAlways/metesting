@@ -75,7 +75,7 @@
     if-eqz p2, :cond_0
 
     .line 56
-    sget-object v0, Lkik/android/k$a;->z:[I
+    sget-object v0, Lkik/android/R$styleable;->DisappearOnScrollLayout:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -186,7 +186,7 @@
     if-eqz v0, :cond_5
 
     .line 3100
-    invoke-static {p0, v4}, Lkik/android/util/as;->a(Landroid/view/View;I)V
+    invoke-static {p0, v4}, Lkik/android/util/an;->a(Landroid/view/View;I)V
 
     .line 3117
     :cond_1
@@ -246,7 +246,7 @@
     if-eqz v0, :cond_7
 
     .line 3117
-    invoke-static {p0, v4}, Lkik/android/util/as;->b(Landroid/view/View;I)V
+    invoke-static {p0, v4}, Lkik/android/util/an;->b(Landroid/view/View;I)V
 
     goto :goto_2
 

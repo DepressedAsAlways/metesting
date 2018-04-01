@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 155
+    .line 156
     iput-object p1, p0, Lkik/android/net/communicator/CommunicatorService$1;->a:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,10 +50,10 @@
     .locals 4
 
     .prologue
-    .line 155
+    .line 156
     check-cast p2, Ljava/lang/Long;
 
-    .line 1160
+    .line 1161
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$1;->a:Lkik/android/net/communicator/CommunicatorService;
 
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
@@ -62,7 +62,7 @@
 
     invoke-static {v0, v2, v3}, Lkik/android/net/communicator/CommunicatorService;->a(Lkik/android/net/communicator/CommunicatorService;J)J
 
-    .line 1162
+    .line 1163
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -73,7 +73,7 @@
 
     if-lez v0, :cond_0
 
-    .line 1163
+    .line 1164
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$1;->a:Lkik/android/net/communicator/CommunicatorService;
 
     const-string v1, "disconnection after long connection"
@@ -83,7 +83,7 @@
     :goto_0
     return-void
 
-    .line 1166
+    .line 1167
     :cond_0
     iget-object v0, p0, Lkik/android/net/communicator/CommunicatorService$1;->a:Lkik/android/net/communicator/CommunicatorService;
 

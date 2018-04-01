@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <kik.android.widget.EllipsizingTextView android:ellipsize="end" android:id="@id/bio_view_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" style="@style/KikTextView.Profile.Bio" />
-    <kik.android.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/blue_text_button_selector" android:gravity="center_vertical" android:id="@id/bio_view_see_more" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/bio_see_more" android:maxLines="1" android:layout_alignBaseline="@id/bio_view_text" />
-</merge>

@@ -1,58 +1,45 @@
-.class public final Lcom/kik/util/ce;
+.class final synthetic Lcom/kik/util/ce;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
-.implements Landroid/view/ActionMode$Callback;
+.implements Lrx/functions/g;
+
+
+# instance fields
+.field private final a:[Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>([Ljava/lang/Object;)V
     .locals 0
 
-    .prologue
-    .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/kik/util/ce;->a:[Ljava/lang/Object;
+
     return-void
+.end method
+
+.method public static a([Ljava/lang/Object;)Lrx/functions/g;
+    .locals 1
+
+    new-instance v0, Lcom/kik/util/ce;
+
+    invoke-direct {v0, p0}, Lcom/kik/util/ce;-><init>([Ljava/lang/Object;)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
+.method public final call(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .prologue
-    .line 31
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/kik/util/ce;->a:[Ljava/lang/Object;
 
-    return v0
-.end method
+    invoke-static {v0, p1}, Lcom/kik/util/bq;->b([Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Boolean;
 
-.method public final onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
-    .locals 1
+    move-result-object v0
 
-    .prologue
-    .line 25
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final onDestroyActionMode(Landroid/view/ActionMode;)V
-    .locals 0
-
-    .prologue
-    .line 21
-    return-void
-.end method
-
-.method public final onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
-    .locals 1
-
-    .prologue
-    .line 15
-    const/4 v0, 0x0
-
-    return v0
+    return-object v0
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field protected a:Lkik/core/interfaces/ac;
+.field protected a:Lkik/core/interfaces/ad;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
@@ -32,11 +32,11 @@
     invoke-interface {p1, p0}, Lcom/kik/components/CoreComponent;->a(Lkik/android/widget/preferences/LEDNotificationPreference;)V
 
     .line 28
-    iget-object v0, p0, Lkik/android/widget/preferences/LEDNotificationPreference;->a:Lkik/core/interfaces/ac;
+    iget-object v0, p0, Lkik/android/widget/preferences/LEDNotificationPreference;->a:Lkik/core/interfaces/ad;
 
     const-string v1, "kik.led.color"
 
-    invoke-interface {v0, v1}, Lkik/core/interfaces/ac;->r(Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v1}, Lkik/core/interfaces/ad;->s(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

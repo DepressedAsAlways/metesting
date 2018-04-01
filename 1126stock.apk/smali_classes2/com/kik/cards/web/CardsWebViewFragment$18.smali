@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 816
+    .line 825
     iput-object p1, p0, Lcom/kik/cards/web/CardsWebViewFragment$18;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +40,13 @@
     .locals 2
 
     .prologue
-    .line 820
+    .line 829
     iget-object v0, p0, Lcom/kik/cards/web/CardsWebViewFragment$18;->a:Lcom/kik/cards/web/CardsWebViewFragment;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->a(Lkik/android/chat/fragment/KikDialogFragment;)V
+    invoke-virtual {v0, v1}, Lcom/kik/cards/web/CardsWebViewFragment;->replaceDialog(Lkik/android/chat/fragment/KikDialogFragment;)V
 
-    .line 821
+    .line 830
     return-void
 .end method

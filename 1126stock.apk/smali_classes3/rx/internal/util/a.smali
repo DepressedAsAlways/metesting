@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrx/d;
+.implements Lrx/e;
 
 
 # annotations
@@ -13,49 +13,49 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lrx/d",
+        "Lrx/e",
         "<TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final a:Lrx/b/b;
+.field final a:Lrx/functions/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<-TT;>;"
         }
     .end annotation
 .end field
 
-.field final b:Lrx/b/b;
+.field final b:Lrx/functions/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lrx/b/b",
-            "<",
+            "Lrx/functions/b",
+            "<-",
             "Ljava/lang/Throwable;",
             ">;"
         }
     .end annotation
 .end field
 
-.field final c:Lrx/b/a;
+.field final c:Lrx/functions/a;
 
 
 # direct methods
-.method public constructor <init>(Lrx/b/b;Lrx/b/b;Lrx/b/a;)V
+.method public constructor <init>(Lrx/functions/b;Lrx/functions/b;Lrx/functions/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrx/b/b",
+            "Lrx/functions/b",
             "<-TT;>;",
-            "Lrx/b/b",
-            "<",
+            "Lrx/functions/b",
+            "<-",
             "Ljava/lang/Throwable;",
             ">;",
-            "Lrx/b/a;",
+            "Lrx/functions/a;",
             ")V"
         }
     .end annotation
@@ -65,13 +65,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lrx/internal/util/a;->a:Lrx/b/b;
+    iput-object p1, p0, Lrx/internal/util/a;->a:Lrx/functions/b;
 
     .line 33
-    iput-object p2, p0, Lrx/internal/util/a;->b:Lrx/b/b;
+    iput-object p2, p0, Lrx/internal/util/a;->b:Lrx/functions/b;
 
     .line 34
-    iput-object p3, p0, Lrx/internal/util/a;->c:Lrx/b/a;
+    iput-object p3, p0, Lrx/internal/util/a;->c:Lrx/functions/a;
 
     .line 35
     return-void
@@ -89,9 +89,9 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lrx/internal/util/a;->a:Lrx/b/b;
+    iget-object v0, p0, Lrx/internal/util/a;->a:Lrx/functions/b;
 
-    invoke-interface {v0, p1}, Lrx/b/b;->call(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
     .line 40
     return-void
@@ -102,22 +102,22 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lrx/internal/util/a;->b:Lrx/b/b;
+    iget-object v0, p0, Lrx/internal/util/a;->b:Lrx/functions/b;
 
-    invoke-interface {v0, p1}, Lrx/b/b;->call(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lrx/functions/b;->call(Ljava/lang/Object;)V
 
     .line 45
     return-void
 .end method
 
-.method public final bb_()V
+.method public final b()V
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lrx/internal/util/a;->c:Lrx/b/a;
+    iget-object v0, p0, Lrx/internal/util/a;->c:Lrx/functions/a;
 
-    invoke-interface {v0}, Lrx/b/a;->a()V
+    invoke-interface {v0}, Lrx/functions/a;->a()V
 
     .line 50
     return-void

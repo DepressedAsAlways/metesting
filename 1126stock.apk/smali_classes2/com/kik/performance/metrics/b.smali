@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkik/core/datatypes/m;Lkik/core/datatypes/f;ZLjava/lang/String;Z)V
+.method public constructor <init>(Lkik/core/datatypes/l;Lkik/core/datatypes/f;ZLjava/lang/String;Z)V
     .locals 2
 
     .prologue
@@ -40,14 +40,14 @@
     iput-boolean p3, p0, Lcom/kik/performance/metrics/b;->c:Z
 
     .line 69
-    invoke-virtual {p2}, Lkik/core/datatypes/f;->e()Ljava/util/Vector;
+    invoke-virtual {p2}, Lkik/core/datatypes/f;->h()Ljava/util/Vector;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 70
-    invoke-virtual {p2}, Lkik/core/datatypes/f;->e()Ljava/util/Vector;
+    invoke-virtual {p2}, Lkik/core/datatypes/f;->h()Ljava/util/Vector;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
     iput v0, p0, Lcom/kik/performance/metrics/b;->e:I
 
     .line 71
-    invoke-virtual {p2}, Lkik/core/datatypes/f;->i()Ljava/util/Vector;
+    invoke-virtual {p2}, Lkik/core/datatypes/f;->l()Ljava/util/Vector;
 
     move-result-object v0
 
@@ -70,7 +70,7 @@
 
     .line 78
     :goto_0
-    invoke-virtual {p1}, Lkik/core/datatypes/m;->v()Z
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->B()Z
 
     move-result v0
 
@@ -79,16 +79,16 @@
     move-object v0, p1
 
     .line 79
-    check-cast v0, Lkik/core/datatypes/q;
+    check-cast v0, Lkik/core/datatypes/p;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/q;->O()Z
+    invoke-virtual {v0}, Lkik/core/datatypes/p;->P()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 80
-    const-string v0, "public_group"
+    const-string v0, "public-group"
 
     iput-object v0, p0, Lcom/kik/performance/metrics/b;->g:Ljava/lang/String;
 
@@ -96,9 +96,9 @@
     move-object v0, p1
 
     .line 85
-    check-cast v0, Lkik/core/datatypes/q;
+    check-cast v0, Lkik/core/datatypes/p;
 
-    invoke-virtual {v0}, Lkik/core/datatypes/q;->K()I
+    invoke-virtual {v0}, Lkik/core/datatypes/p;->L()I
 
     move-result v0
 
@@ -106,7 +106,7 @@
 
     .line 91
     :goto_2
-    invoke-virtual {p1}, Lkik/core/datatypes/m;->n()Z
+    invoke-virtual {p1}, Lkik/core/datatypes/l;->u()Z
 
     move-result v0
 
@@ -270,7 +270,7 @@
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->b(Ljava/lang/Throwable;)V
 
     goto :goto_1
 

@@ -11,31 +11,31 @@
 
 .field private b:Lkik/android/chat/view/text/d;
 
-.field private c:Lkik/android/chat/view/aj;
+.field private c:Lkik/android/chat/view/ak;
 
 .field private d:Lkik/core/interfaces/v;
 
-.field private e:Lcom/kik/cache/ae;
+.field private e:Lcom/kik/cache/KikVolleyImageLoader;
 
 
 # direct methods
-.method public constructor <init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/v;Lcom/kik/cache/ae;)V
+.method public constructor <init>(Lcom/kik/android/Mixpanel;Lkik/core/interfaces/v;Lcom/kik/cache/KikVolleyImageLoader;)V
     .locals 0
 
     .prologue
-    .line 45
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
+    .line 44
     iput-object p1, p0, Lkik/android/chat/presentation/bx;->a:Lcom/kik/android/Mixpanel;
 
-    .line 47
+    .line 45
     iput-object p2, p0, Lkik/android/chat/presentation/bx;->d:Lkik/core/interfaces/v;
 
-    .line 48
-    iput-object p3, p0, Lkik/android/chat/presentation/bx;->e:Lcom/kik/cache/ae;
+    .line 46
+    iput-object p3, p0, Lkik/android/chat/presentation/bx;->e:Lcom/kik/cache/KikVolleyImageLoader;
 
-    .line 49
+    .line 47
     return-void
 .end method
 
@@ -45,15 +45,15 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 134
+    .line 129
     instance-of v0, p1, Lkik/android/widget/KikNetworkedImageView;
 
     if-eqz v0, :cond_3
 
-    .line 135
+    .line 130
     check-cast p1, Lkik/android/widget/KikNetworkedImageView;
 
-    .line 137
+    .line 132
     invoke-virtual {p1}, Lkik/android/widget/KikNetworkedImageView;->e()Z
 
     move-result v0
@@ -69,22 +69,22 @@
     :cond_0
     move-object v0, v1
 
-    .line 159
+    .line 154
     :goto_0
     return-object v0
 
-    .line 141
+    .line 136
     :cond_1
     invoke-virtual {p1}, Lkik/android/widget/KikNetworkedImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 142
+    .line 137
     instance-of v2, v0, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v2, :cond_2
 
-    .line 143
+    .line 138
     check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -93,31 +93,31 @@
 
     goto :goto_0
 
-    .line 145
+    .line 140
     :cond_2
-    instance-of v2, v0, Lkik/android/widget/ai;
+    instance-of v2, v0, Lkik/android/widget/bh;
 
     if-eqz v2, :cond_5
 
-    .line 146
-    check-cast v0, Lkik/android/widget/ai;
+    .line 141
+    check-cast v0, Lkik/android/widget/bh;
 
-    invoke-virtual {v0}, Lkik/android/widget/ai;->a()Landroid/graphics/Bitmap;
+    invoke-virtual {v0}, Lkik/android/widget/bh;->a()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 149
+    .line 144
     :cond_3
     instance-of v0, p1, Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_5
 
-    .line 150
+    .line 145
     check-cast p1, Landroid/view/ViewGroup;
 
-    .line 151
+    .line 146
     const/4 v0, 0x0
 
     :goto_1
@@ -127,7 +127,7 @@
 
     if-ge v0, v2, :cond_5
 
-    .line 152
+    .line 147
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
@@ -136,15 +136,15 @@
 
     move-result-object v2
 
-    .line 153
+    .line 148
     if-eqz v2, :cond_4
 
     move-object v0, v2
 
-    .line 154
+    .line 149
     goto :goto_0
 
-    .line 151
+    .line 146
     :cond_4
     add-int/lit8 v0, v0, 0x1
 
@@ -153,7 +153,7 @@
     :cond_5
     move-object v0, v1
 
-    .line 159
+    .line 154
     goto :goto_0
 .end method
 
@@ -163,13 +163,13 @@
     .locals 0
 
     .prologue
-    .line 34
+    .line 32
     check-cast p1, Lkik/android/chat/view/text/d;
 
-    .line 2054
+    .line 2052
     iput-object p1, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
-    .line 34
+    .line 32
     return-void
 .end method
 
@@ -177,7 +177,7 @@
     .locals 2
 
     .prologue
-    .line 78
+    .line 76
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "SR Friend Picker Cancelled"
@@ -188,15 +188,15 @@
 
     const-string v1, "Bot Username"
 
-    .line 79
+    .line 77
     invoke-virtual {v0, v1, p1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 80
+    .line 78
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 81
+    .line 79
     return-void
 .end method
 
@@ -216,12 +216,12 @@
     .end annotation
 
     .prologue
-    .line 86
-    iget-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/aj;
+    .line 84
+    iget-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/ak;
 
-    invoke-interface {v0, p3, p4}, Lkik/android/chat/view/aj;->a(Landroid/view/View;I)V
+    invoke-interface {v0, p3, p4}, Lkik/android/chat/view/ak;->a(Landroid/view/View;I)V
 
-    .line 87
+    .line 85
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->a:Lcom/kik/android/Mixpanel;
 
     const-string v1, "SR Friends Picked"
@@ -232,7 +232,7 @@
 
     const-string v1, "Count"
 
-    .line 88
+    .line 86
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result v2
@@ -247,8 +247,8 @@
 
     iget-object v2, p0, Lkik/android/chat/presentation/bx;->d:Lkik/core/interfaces/v;
 
-    .line 89
-    invoke-static {p2, v2}, Lkik/core/util/j;->a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
+    .line 87
+    invoke-static {p2, v2}, Lkik/core/util/i;->a(Ljava/util/List;Lkik/core/interfaces/v;)Ljava/util/List;
 
     move-result-object v2
 
@@ -258,26 +258,26 @@
 
     const-string v1, "Bot Username"
 
-    .line 90
+    .line 88
     invoke-virtual {v0, v1, p1}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
 
     move-result-object v0
 
-    .line 91
+    .line 89
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 92
+    .line 90
     return-void
 .end method
 
-.method public final a(Lkik/android/chat/view/aj;)V
+.method public final a(Lkik/android/chat/view/ak;)V
     .locals 0
 
     .prologue
-    .line 60
-    iput-object p1, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/aj;
+    .line 58
+    iput-object p1, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/ak;
 
-    .line 61
+    .line 59
     return-void
 .end method
 
@@ -285,10 +285,10 @@
     .locals 0
 
     .prologue
-    .line 54
+    .line 52
     iput-object p1, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
-    .line 55
+    .line 53
     return-void
 .end method
 
@@ -298,37 +298,37 @@
     .prologue
     const/16 v1, 0x12c
 
-    .line 195
-    invoke-static {p2}, Lcom/kik/util/ci;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)Z
+    .line 166
+    invoke-static {p2}, Lcom/kik/util/cz;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 206
+    .line 177
     :goto_0
     return-void
 
-    .line 199
+    .line 170
     :cond_0
     invoke-virtual {p1}, Lkik/android/widget/KikNetworkedImageView;->c()V
 
-    .line 201
+    .line 172
     invoke-virtual {p2}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;->f()Lcom/kik/messagepath/model/Keyboards$PictureSuggestedResponse;
 
     move-result-object v0
 
-    .line 203
+    .line 174
     invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PictureSuggestedResponse;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0, v1, v1}, Lcom/kik/cache/an;->a(Ljava/lang/String;II)Lcom/kik/cache/an;
+    invoke-static {v0, v1, v1}, Lcom/kik/cache/SimpleUrlRequest;->getSimpleUrlRequest(Ljava/lang/String;II)Lcom/kik/cache/SimpleUrlRequest;
 
     move-result-object v0
 
-    .line 204
-    new-instance v1, Lcom/android/volley/c;
+    .line 175
+    new-instance v1, Lcom/android/volley/b;
 
     const/16 v2, 0x5dc
 
@@ -336,14 +336,14 @@
 
     const/high16 v4, 0x3f800000    # 1.0f
 
-    invoke-direct {v1, v2, v3, v4}, Lcom/android/volley/c;-><init>(IIF)V
+    invoke-direct {v1, v2, v3, v4}, Lcom/android/volley/b;-><init>(IIF)V
 
-    invoke-virtual {v0, v1}, Lcom/kik/cache/ac;->a(Lcom/android/volley/k;)V
+    invoke-virtual {v0, v1}, Lcom/kik/cache/KikImageRequest;->setRetryPolicy(Lcom/android/volley/j;)V
 
-    .line 205
-    iget-object v1, p0, Lkik/android/chat/presentation/bx;->e:Lcom/kik/cache/ae;
+    .line 176
+    iget-object v1, p0, Lkik/android/chat/presentation/bx;->e:Lcom/kik/cache/KikVolleyImageLoader;
 
-    invoke-virtual {p1, v0, v1}, Lkik/android/widget/KikNetworkedImageView;->a(Lcom/kik/cache/ac;Lcom/kik/cache/ae;)V
+    invoke-virtual {p1, v0, v1}, Lkik/android/widget/KikNetworkedImageView;->a(Lcom/kik/cache/KikImageRequest;Lcom/kik/cache/KikVolleyImageLoader;)V
 
     goto :goto_0
 .end method
@@ -352,7 +352,7 @@
     .locals 1
 
     .prologue
-    .line 165
+    .line 160
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
     if-eqz v0, :cond_0
@@ -368,40 +368,40 @@
 .end method
 
 .method public final a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;Landroid/view/View;I)Z
-    .locals 5
+    .locals 4
 
     .prologue
     const/4 v1, 0x1
 
     const/4 v0, 0x0
 
-    .line 97
-    .line 1072
+    .line 95
+    .line 1070
     iget-object v2, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/aj;
+    iget-object v2, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/ak;
 
     if-eqz v2, :cond_0
 
     move v2, v1
 
-    .line 97
+    .line 95
     :goto_0
     if-nez v2, :cond_1
 
-    .line 128
+    .line 123
     :goto_1
     return v0
 
     :cond_0
     move v2, v0
 
-    .line 1072
+    .line 1070
     goto :goto_0
 
-    .line 101
+    .line 99
     :cond_1
     sget-object v2, Lkik/android/chat/presentation/bx$1;->a:[I
 
@@ -417,7 +417,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 123
+    .line 118
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->a:Lcom/kik/android/Mixpanel;
 
     const-string v2, "Suggested Response Unsupported Type"
@@ -428,75 +428,74 @@
 
     invoke-virtual {v0}, Lcom/kik/android/Mixpanel$d;->b()V
 
-    .line 124
+    .line 119
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
-    invoke-interface {v0}, Lkik/android/chat/view/text/d;->w()V
+    invoke-interface {v0}, Lkik/android/chat/view/text/d;->x()V
 
-    :cond_2
     :goto_2
     move v0, v1
 
-    .line 128
+    .line 123
     goto :goto_1
 
-    .line 103
+    .line 101
     :pswitch_0
     invoke-direct {p0, p2}, Lkik/android/chat/presentation/bx;->a(Landroid/view/View;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 104
-    if-nez v2, :cond_3
+    .line 102
+    if-nez v2, :cond_2
 
-    .line 105
+    .line 103
     iget-object v1, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
-    const v2, 0x7f09058b
+    const v2, 0x7f0905e2
 
     invoke-static {v2}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
     move-result-object v2
 
-    const v3, 0x7f0903e8
+    const v3, 0x7f0903fc
 
-    .line 106
+    .line 104
     invoke-static {v3}, Lkik/android/chat/KikApplication;->e(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 105
+    .line 103
     invoke-interface {v1, v2, v3}, Lkik/android/chat/view/text/d;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 109
-    :cond_3
+    .line 107
+    :cond_2
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
     invoke-interface {v0, p1, v2}, Lkik/android/chat/view/text/d;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;Landroid/graphics/Bitmap;)V
 
-    .line 110
-    iget-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/aj;
+    .line 108
+    iget-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/ak;
 
-    invoke-interface {v0, p2, p3}, Lkik/android/chat/view/aj;->a(Landroid/view/View;I)V
+    invoke-interface {v0, p2, p3}, Lkik/android/chat/view/ak;->a(Landroid/view/View;I)V
 
     goto :goto_2
 
-    .line 113
+    .line 111
     :pswitch_1
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
     invoke-interface {v0, p1}, Lkik/android/chat/view/text/d;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;)V
 
-    .line 114
-    iget-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/aj;
+    .line 112
+    iget-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/ak;
 
-    invoke-interface {v0, p2, p3}, Lkik/android/chat/view/aj;->a(Landroid/view/View;I)V
+    invoke-interface {v0, p2, p3}, Lkik/android/chat/view/ak;->a(Landroid/view/View;I)V
 
     goto :goto_2
 
-    .line 117
+    .line 115
     :pswitch_2
     iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
@@ -504,104 +503,7 @@
 
     goto :goto_2
 
-    .line 120
-    :pswitch_3
-    invoke-virtual {p1}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;->d()Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;
-
-    move-result-object v0
-
-    .line 1170
-    if-eqz v0, :cond_2
-
-    .line 1174
-    iget-object v2, p0, Lkik/android/chat/presentation/bx;->a:Lcom/kik/android/Mixpanel;
-
-    const-string v3, "Payment SR Tapped"
-
-    invoke-virtual {v2, v3}, Lcom/kik/android/Mixpanel;->b(Ljava/lang/String;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v2
-
-    const-string v3, "Has Saved Card"
-
-    .line 1175
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->f()Z
-
-    move-result v4
-
-    invoke-virtual {v2, v3, v4}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Z)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v2
-
-    const-string v3, "Transaction ID"
-
-    .line 1176
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->e()Lcom/kik/ximodel/XiUuid;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lkik/core/g/l;->a(Lcom/kik/ximodel/XiUuid;)Ljava/util/UUID;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v2, v3, v4}, Lcom/kik/android/Mixpanel$d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/kik/android/Mixpanel$d;
-
-    move-result-object v2
-
-    .line 1177
-    invoke-virtual {v2}, Lcom/kik/android/Mixpanel$d;->b()V
-
-    .line 1179
-    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 1181
-    invoke-static {}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;->g()Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v0}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->a(Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;)Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem$a;->a()Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;
-
-    move-result-object v3
-
-    .line 1183
-    invoke-virtual {v0}, Lcom/kik/messagepath/model/Keyboards$PaymentSuggestedResponse;->f()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    .line 1185
-    iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
-
-    const/4 v4, 0x0
-
-    invoke-interface {v0, v4, v3, v2}, Lkik/android/chat/view/text/d;->a(Landroid/os/Bundle;Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;Ljava/lang/String;)V
-
-    goto/16 :goto_2
-
-    .line 1188
-    :cond_4
-    iget-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
-
-    invoke-interface {v0, v3, v2}, Lkik/android/chat/view/text/d;->a(Lcom/kik/messagepath/model/Keyboards$SuggestedResponseItem;Ljava/lang/String;)V
-
-    goto/16 :goto_2
-
-    .line 101
+    .line 99
     nop
 
     :pswitch_data_0
@@ -609,22 +511,21 @@
         :pswitch_0
         :pswitch_1
         :pswitch_2
-        :pswitch_3
     .end packed-switch
 .end method
 
-.method public final o_()V
+.method public final m_()V
     .locals 1
 
     .prologue
     const/4 v0, 0x0
 
-    .line 66
+    .line 64
     iput-object v0, p0, Lkik/android/chat/presentation/bx;->b:Lkik/android/chat/view/text/d;
 
-    .line 67
-    iput-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/aj;
+    .line 65
+    iput-object v0, p0, Lkik/android/chat/presentation/bx;->c:Lkik/android/chat/view/ak;
 
-    .line 68
+    .line 66
     return-void
 .end method

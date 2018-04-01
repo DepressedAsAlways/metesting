@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkik/android/scan/c;->a(Lkik/core/datatypes/ad;I)Lcom/kik/events/Promise;
+    value = Lkik/android/scan/c;->a(Lkik/core/datatypes/ac;I)Lcom/kik/events/Promise;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic a:Lkik/core/datatypes/ad;
+.field final synthetic a:Lkik/core/datatypes/ac;
 
 .field final synthetic b:I
 
@@ -28,14 +28,14 @@
 
 
 # direct methods
-.method constructor <init>(Lkik/android/scan/c;Lkik/core/datatypes/ad;ILcom/kik/events/Promise;)V
+.method constructor <init>(Lkik/android/scan/c;Lkik/core/datatypes/ac;ILcom/kik/events/Promise;)V
     .locals 0
 
     .prologue
-    .line 258
+    .line 263
     iput-object p1, p0, Lkik/android/scan/c$5;->d:Lkik/android/scan/c;
 
-    iput-object p2, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ad;
+    iput-object p2, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ac;
 
     iput p3, p0, Lkik/android/scan/c$5;->b:I
 
@@ -54,19 +54,19 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 262
-    iget-object v0, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ad;
+    .line 267
+    iget-object v0, p0, Lkik/android/scan/c$5;->a:Lkik/core/datatypes/ac;
 
     iget v2, p0, Lkik/android/scan/c$5;->b:I
 
-    invoke-static {v0, v2}, Lkik/android/scan/c;->b(Lkik/core/datatypes/ad;I)Lorg/json/JSONObject;
+    invoke-static {v0, v2}, Lkik/android/scan/c;->b(Lkik/core/datatypes/ac;I)Lorg/json/JSONObject;
 
     move-result-object v2
 
-    .line 263
+    .line 268
     const-string v3, "https://remote-scancode.kik.com/api/v1/codes"
 
-    .line 266
+    .line 271
     :try_start_0
     new-instance v0, Ljava/net/URL;
 
@@ -74,7 +74,7 @@
     :try_end_0
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 273
+    .line 278
     :goto_0
     :try_start_1
     invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
@@ -87,28 +87,28 @@
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 274
+    .line 279
     const/4 v1, 0x1
 
     :try_start_2
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
-    .line 275
+    .line 280
     const-string v1, "POST"
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 276
+    .line 281
     const/16 v1, 0x2710
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
-    .line 277
+    .line 282
     const/16 v1, 0x2710
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
-    .line 278
+    .line 283
     const-string v1, "User-Agent"
 
     const-string v3, "Content"
@@ -119,14 +119,14 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 279
+    .line 284
     const-string v1, "Content-Type"
 
     const-string v3, "application/json"
 
     invoke-virtual {v0, v1, v3}, Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 280
+    .line 285
     new-instance v1, Ljava/io/OutputStreamWriter;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
@@ -135,27 +135,27 @@
 
     invoke-direct {v1, v3}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
 
-    .line 281
+    .line 286
     invoke-virtual {v2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/io/OutputStreamWriter;->write(Ljava/lang/String;)V
 
-    .line 282
+    .line 287
     invoke-virtual {v1}, Ljava/io/OutputStreamWriter;->flush()V
 
-    .line 283
+    .line 288
     invoke-static {v0}, Lkik/android/scan/c;->a(Ljava/net/HttpURLConnection;)Lorg/apache/http/HttpEntity;
 
     move-result-object v1
 
-    .line 284
+    .line 289
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v2
 
-    .line 285
+    .line 290
     const/16 v3, 0xc8
 
     if-eq v2, v3, :cond_0
@@ -164,28 +164,28 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 286
+    .line 291
     :cond_0
     invoke-static {v1}, Lorg/apache/http/util/EntityUtils;->toString(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 287
+    .line 292
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 288
+    .line 293
     const-string v1, "id"
 
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 289
+    .line 294
     iget-object v2, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
-    invoke-static {v1}, Lkik/core/util/v;->a(Ljava/lang/String;)[B
+    invoke-static {v1}, Lkik/core/util/u;->a(Ljava/lang/String;)[B
 
     move-result-object v1
 
@@ -195,7 +195,7 @@
     .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_3
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 300
+    .line 305
     :goto_1
     iget-object v1, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
@@ -205,7 +205,7 @@
 
     if-nez v1, :cond_1
 
-    .line 301
+    .line 306
     iget-object v1, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
     new-instance v2, Ljava/io/IOException;
@@ -216,29 +216,29 @@
 
     invoke-virtual {v1, v2}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 303
+    .line 308
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 304
+    .line 309
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 307
+    .line 312
     :cond_2
     :goto_2
     return-void
 
-    .line 269
+    .line 274
     :catch_0
     move-exception v0
 
-    invoke-static {v0}, Lkik/android/util/bc;->a(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->a(Ljava/lang/Throwable;)V
 
     move-object v0, v1
 
     goto/16 :goto_0
 
-    .line 292
+    .line 297
     :cond_3
     :try_start_3
     iget-object v1, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
@@ -269,7 +269,7 @@
 
     goto :goto_1
 
-    .line 295
+    .line 300
     :catch_1
     move-exception v1
 
@@ -279,19 +279,19 @@
 
     move-object v0, v6
 
-    .line 296
+    .line 301
     :goto_3
     :try_start_4
-    invoke-static {v0}, Lkik/android/util/bc;->d(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lkik/android/util/aw;->e(Ljava/lang/Throwable;)V
 
-    .line 297
+    .line 302
     iget-object v2, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
     invoke-virtual {v2, v0}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 300
+    .line 305
     iget-object v0, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
     invoke-virtual {v0}, Lcom/kik/events/Promise;->h()Z
@@ -300,7 +300,7 @@
 
     if-nez v0, :cond_4
 
-    .line 301
+    .line 306
     iget-object v0, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
     new-instance v2, Ljava/io/IOException;
@@ -311,16 +311,16 @@
 
     invoke-virtual {v0, v2}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 303
+    .line 308
     :cond_4
     if-eqz v1, :cond_2
 
-    .line 304
+    .line 309
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
     goto :goto_2
 
-    .line 300
+    .line 305
     :catchall_0
     move-exception v0
 
@@ -333,7 +333,7 @@
 
     if-nez v2, :cond_5
 
-    .line 301
+    .line 306
     iget-object v2, p0, Lkik/android/scan/c$5;->c:Lcom/kik/events/Promise;
 
     new-instance v3, Ljava/io/IOException;
@@ -344,17 +344,17 @@
 
     invoke-virtual {v2, v3}, Lcom/kik/events/Promise;->a(Ljava/lang/Throwable;)V
 
-    .line 303
+    .line 308
     :cond_5
     if-eqz v1, :cond_6
 
-    .line 304
+    .line 309
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_6
     throw v0
 
-    .line 300
+    .line 305
     :catchall_1
     move-exception v1
 
@@ -366,7 +366,7 @@
 
     goto :goto_4
 
-    .line 295
+    .line 300
     :catch_2
     move-exception v0
 
